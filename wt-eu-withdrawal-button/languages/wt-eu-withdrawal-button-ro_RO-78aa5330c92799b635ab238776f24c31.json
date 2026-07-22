@@ -1,0 +1,515 @@
+{
+    "translation-revision-date": "2026-06-25 14:54+0000",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ro_RO",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n % 100 > 0 && n % 100 < 20)) ? 1 : 2));"
+            },
+            "Pending": [
+                "În așteptare"
+            ],
+            "Approved": [
+                "Aprobat"
+            ],
+            "Rejected": [
+                "Respins"
+            ],
+            "Approve": [
+                "Aprobă"
+            ],
+            "Reject": [
+                "Respinge"
+            ],
+            "Full Withdrawal": [
+                "Retragere completă"
+            ],
+            "Partial Withdrawal": [
+                "Retragere parțială"
+            ],
+            "No withdrawal requests found.": [
+                "Nu s-au găsit cereri de retragere."
+            ],
+            "A reason is required when rejecting a request.": [
+                "Este necesar un motiv pentru respingerea unei cereri."
+            ],
+            "Withdrawals": [
+                "Retrageri"
+            ],
+            "Settings": [
+                "Setări"
+            ],
+            "Leave a review": [
+                "Lăsați o recenzie"
+            ],
+            "Remind me later": [
+                "Amintește-mi mai târziu"
+            ],
+            "Dismiss review request": [
+                "Respinge solicitarea de recenzie"
+            ],
+            "Withdrawal": [
+                "Retragere"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Selectați pagina în care clienții pot trimite cereri de retragere."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Adăugați automat un link către pagina de retragere în subsolul site-ului."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Unde sunt afișate formularul de retragere și linkurile."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Permiteți clienților să retragă articole individuale în loc de întreaga comandă."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Numărul de zile după statusul de început selectat în care poate fi trimisă o solicitare de retragere."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Selectați unul sau mai multe statusuri de comandă. Numărătoarea inversă începe la cea mai devreme dată la care comanda atinge oricare dintre statusurile selectate."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Solicitați clienților să furnizeze un motiv atunci când trimit o cerere de retragere."
+            ],
+            "Virtual": [
+                "Virtual"
+            ],
+            "Downloadable": [
+                "Descărcabil"
+            ],
+            "Grouped": [
+                "Grupat"
+            ],
+            "External \/ Affiliate": [
+                "Extern\/Afiliat"
+            ],
+            "Change order status on submission": [
+                "Modificați starea comenzii la trimitere"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Schimbați automat starea comenzii atunci când este trimisă o cerere de retragere."
+            ],
+            "Change order status on approval": [
+                "Modificați starea comenzii la aprobare"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Schimbați automat starea comenzii atunci când o cerere de retragere este aprobată."
+            ],
+            "Recipient(s)": [
+                "Destinatar(i)"
+            ],
+            "Order created": [
+                "Comandă creată"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Adăugați un buton de solicitare de retragere la orice pagină sau postare. Butonul trimite la pagina de retragere configurată."
+            ],
+            "Examples": [
+                "Examples"
+            ],
+            "Please enter a valid email address.": [
+                "Vă rugăm să introduceți o adresă de email validă."
+            ],
+            "Email notifications": [
+                "Notificări prin e-mail"
+            ],
+            "Cancel": [
+                "Anulează"
+            ],
+            "Guest user": [
+                "Utilizator invitat"
+            ],
+            "Request Withdrawal": [
+                "Solicitați retragerea"
+            ],
+            "Partial": [
+                "Parțial"
+            ],
+            "Full": [
+                "Complet"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Ați primit peste 10 solicitări de retragere. Lăsați o recenzie pentru WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Folosiți WebToffee EU Withdrawal Button de o săptămână. Lăsați o recenzie!"
+            ],
+            "Customer": [
+                "Client"
+            ],
+            "Order": [
+                "Comandă"
+            ],
+            "Date": [
+                "Dată"
+            ],
+            "Type": [
+                "Tip"
+            ],
+            "Status": [
+                "Stare"
+            ],
+            "Customer Email": [
+                "E-mailul clientului"
+            ],
+            "Request Type": [
+                "Tip cerere"
+            ],
+            "Reason": [
+                "Motiv"
+            ],
+            "Quantity": [
+                "Cantitate"
+            ],
+            "Product": [
+                "Produs"
+            ],
+            "Receipt hash": [
+                "Hash chitanță"
+            ],
+            "No activity recorded.": [
+                "Nu a fost înregistrată nicio activitate."
+            ],
+            "Actor": [
+                "Actor"
+            ],
+            "Action": [
+                "Acțiune"
+            ],
+            "Note": [
+                "Notă"
+            ],
+            "No product categories found.": [
+                "Nu s-au găsit categorii de produse."
+            ],
+            "%d selected": [
+                "%d selectat"
+            ],
+            "Clear all": [
+                "Ștergeți totul"
+            ],
+            "Remove category": [
+                "Eliminați categoria"
+            ],
+            "Search categories…": [
+                "Caută categorii..."
+            ],
+            "Type to filter categories…": [
+                "Tastați pentru a filtra categoriile..."
+            ],
+            "No categories match your search.": [
+                "Nicio categorie nu corespunde căutării dvs."
+            ],
+            "This email address is already added.": [
+                "Această adresă de e-mail este deja adăugată."
+            ],
+            "Remove email": [
+                "Eliminați e-mailul"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Adăugați cel puțin un destinatar pentru a salva setările."
+            ],
+            "Enter email address…": [
+                "Introdu adresa de e-mail..."
+            ],
+            "Add": [
+                "Adaugă"
+            ],
+            "All Statuses": [
+                "Toate stările"
+            ],
+            "Date From": [
+                "Data de la"
+            ],
+            "Date To": [
+                "Data la"
+            ],
+            "Search": [
+                "Se caută…"
+            ],
+            "Order # or receipt hash": [
+                "Comandă nr. sau hash chitanță"
+            ],
+            "Reset": [
+                "Resetează"
+            ],
+            "Apply Filters": [
+                "Aplicați filtre"
+            ],
+            "Remove product": [
+                "Scoateți produsul"
+            ],
+            "Search for a product…": [
+                "Cauta un produs..."
+            ],
+            "Searching…": [
+                "Se caută…"
+            ],
+            "No products found.": [
+                "Nu s-au găsit produse."
+            ],
+            "Back to List": [
+                "Înapoi la listă"
+            ],
+            "Not included": [
+                "Nu este inclus"
+            ],
+            "Withdrawal approved": [
+                "Retragerea aprobată"
+            ],
+            "Withdrawal rejected": [
+                "Retragere respinsă"
+            ],
+            "Withdrawal request submitted": [
+                "Solicitare de retragere depusă"
+            ],
+            "Request Information": [
+                "Solicitați informații"
+            ],
+            "Order #": [
+                "Comanda #"
+            ],
+            "No reason provided": [
+                "Niciun motiv furnizat"
+            ],
+            "Created": [
+                "Creat"
+            ],
+            "Processed": [
+                "Procesat"
+            ],
+            "Order Items": [
+                "Comanda articole"
+            ],
+            "Line Total": [
+                "Linia totală"
+            ],
+            "No order items were found for this request.": [
+                "Nu au fost găsite articole de comandă pentru această solicitare."
+            ],
+            "Status Timeline": [
+                "Cronologie de stare"
+            ],
+            "Activity Log": [
+                "Jurnal de activitate"
+            ],
+            "Reject Request": [
+                "Respinge cererea"
+            ],
+            "Rejection Reason": [
+                "Motivul respingerii"
+            ],
+            "No change vs last week": [
+                "Nicio schimbare față de săptămâna trecută"
+            ],
+            "No data": [
+                "Fără date"
+            ],
+            "No change": [
+                "Nicio schimbare"
+            ],
+            "Open Requests": [
+                "Cereri deschise"
+            ],
+            "Approved (30d)": [
+                "Aprobat (30 d)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Acțiuni"
+            ],
+            "View": [
+                "Vizualizează"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Se afișează %1$d–%2$d din %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Se afișează 0 din 0"
+            ],
+            "Review request": [
+                "Solicitare de recenzie"
+            ],
+            "Global": [
+                "Global"
+            ],
+            "WooCommerce only": [
+                "Doar WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Selectați o pagină --"
+            ],
+            "Failed to load settings.": [
+                "Nu s-au încărcat setările."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Adăugați cel puțin un destinatar de notificare de administrator înainte de a salva."
+            ],
+            "Settings saved successfully.": [
+                "Setările au fost salvate cu succes."
+            ],
+            "Failed to save settings.": [
+                "Nu s-au salvat setările."
+            ],
+            "Loading settings...": [
+                "Se încarcă setările..."
+            ],
+            "Unable to load settings.": [
+                "Nu se pot încărca setările."
+            ],
+            "General": [
+                "General"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Comportamentul principal al formularului de retragere și preferințele de afișare."
+            ],
+            "Withdrawal page": [
+                "Pagina de retragere"
+            ],
+            "Embed footer link": [
+                "Încorporați linkul de subsol"
+            ],
+            "Footer link text": [
+                "Textul linkului de subsol"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Textul afișat pentru linkul de retragere din subsol."
+            ],
+            "Display scope": [
+                "Afișează domeniul de aplicare"
+            ],
+            "Allow partial withdrawals": [
+                "Permite retrageri parțiale"
+            ],
+            "Recommended": [
+                "Recommended"
+            ],
+            "Withdrawal period": [
+                "Perioada de retragere"
+            ],
+            "days": [
+                "zile"
+            ],
+            "Start countdown from": [
+                "Începe numărătoarea inversă de la"
+            ],
+            "Reason required": [
+                "Motiv necesar"
+            ],
+            "Exclusions": [
+                "Excluderile"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Excludeți tipurile de produse, categoriile sau anumite produse de la eligibilitatea pentru retragere."
+            ],
+            "Excluded product types": [
+                "Tipuri de produse excluse"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Tipuri de produse care nu pot fi retrase."
+            ],
+            "Excluded categories": [
+                "Categoriile excluse"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Produsele din aceste categorii nu pot fi retrase."
+            ],
+            "Excluded products": [
+                "Produse excluse"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Căutați și selectați anumite produse care nu pot fi retrase."
+            ],
+            "Order status": [
+                "Starea comenzii"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Actualizați automat stările comenzilor atunci când solicitările de retragere sunt trimise sau aprobate."
+            ],
+            "Set status to": [
+                "Setați starea la"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Configurați destinatarii notificărilor pentru administrator și adresa de e-mail de contact a clientului afișată în e-mailurile de retragere respinse."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "Adresele de e-mail care primesc noua notificare privind cererea de retragere."
+            ],
+            "Customer contact email": [
+                "E-mail de contact pentru clienți"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "Adresa de e-mail afișată clienților când o cerere de retragere este respinsă și trebuie să vă contacteze."
+            ],
+            "Withdrawal button shortcode": [
+                "Cod scurt pentru butonul de retragere"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                "— Opțional. Textul butonului personalizat. Folosește eticheta de shortcode implicită când este omisă."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                "— Opțional. Clase CSS suplimentare adăugate la buton."
+            ],
+            "Data management": [
+                "Gestionarea datelor"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Controlați ce se întâmplă cu datele pluginului atunci când pluginul este eliminat."
+            ],
+            "Delete data on uninstall": [
+                "Ștergeți datele la dezinstalare"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Eliminați toate datele pluginului (setări, solicitări de retragere, tabele bazei de date) atunci când pluginul este dezinstalat. Această acțiune este ireversibilă."
+            ],
+            "Destructive": [
+                "Destructive"
+            ],
+            "Add at least one recipient to save": [
+                "Adăugați cel puțin un destinatar pentru a salva"
+            ],
+            "Unsaved changes": [
+                "Modificări nesalvate"
+            ],
+            "All changes saved": [
+                "Toate modificările au fost salvate"
+            ],
+            "Discard": [
+                "Aruncă"
+            ],
+            "Saving...": [
+                "Economisire..."
+            ],
+            "Save settings": [
+                "Salvați setările"
+            ],
+            "No status changes recorded.": [
+                "Nu au fost înregistrate modificări de stare."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Anulări și rambursări parțiale ale comenzilor inițiate de client."
+            ],
+            "Requests": [
+                "Cereri"
+            ],
+            "System": [
+                "Sistem"
+            ],
+            "User": [
+                "Utilizator"
+            ],
+            "Unknown": [
+                "Necunoscut"
+            ]
+        }
+    }
+}

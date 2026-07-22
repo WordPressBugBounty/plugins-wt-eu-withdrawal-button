@@ -1,0 +1,300 @@
+/**
+ * Admin styles for the Withdrawal Consent plugin.
+ *
+ * @package Wbte_Eu_Withdrawal_Button
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Meta Box
+   ========================================================================== */
+
+.wbte-ewb-metabox {
+	padding: 6px 0;
+	min-width: 0;
+	overflow-wrap: break-word;
+}
+
+.wbte-ewb-metabox-request + .wbte-ewb-metabox-request {
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid #dcdcde;
+}
+
+.wbte-ewb-metabox-request__heading {
+	margin-top: 0 !important;
+}
+
+.wbte-ewb-metabox-request__link {
+	margin-bottom: 0;
+}
+
+.wbte-ewb-metabox-request__link a {
+	text-decoration: none;
+}
+
+.wbte-ewb-metabox .wbte-ewb-verification-code-row {
+	margin: 6px 0;
+}
+
+.wbte-ewb-metabox .wbte-ewb-verification-code {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 4px 0 0;
+	padding: 6px 8px;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 11.5px;
+	line-height: 1.5;
+	word-break: break-all;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	color: #50575e;
+}
+
+.wbte-ewb-metabox p {
+	margin: 6px 0;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.wbte-ewb-no-request {
+	color: #666;
+	font-style: italic;
+}
+
+/* ==========================================================================
+   Metabox Review Prompt
+   ========================================================================== */
+
+.wbte-ewb-metabox-review {
+	position: relative;
+	margin-top: 16px;
+	padding: 12px 28px 12px 12px;
+	background: #f6f7fe;
+	border: 1px solid #c5cdf5;
+	border-left: 3px solid #3858e9;
+	border-radius: 4px;
+}
+
+.wbte-ewb-metabox-review__text {
+	margin: 0 0 10px !important;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #1d2327;
+}
+
+.wbte-ewb-metabox-review__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.wbte-ewb-metabox-review__actions .button {
+	margin: 0;
+}
+
+.wbte-ewb-metabox-review__dismiss {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1;
+	color: #646970;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.wbte-ewb-metabox-review__dismiss:hover,
+.wbte-ewb-metabox-review__dismiss:focus {
+	color: #1d2327;
+}
+
+/* ==========================================================================
+   Status Badges
+   ========================================================================== */
+
+.wbte-ewb-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+	white-space: nowrap;
+}
+
+.wbte-ewb-badge--pending {
+	background-color: #fef3e0;
+	color: #f0ad4e;
+	border: 1px solid #f0ad4e;
+}
+
+.wbte-ewb-badge--approved {
+	background-color: #eaf6ec;
+	color: #5cb85c;
+	border: 1px solid #5cb85c;
+}
+
+.wbte-ewb-badge--rejected {
+	background-color: #fdecea;
+	color: #d9534f;
+	border: 1px solid #d9534f;
+}
+
+/* ==========================================================================
+   Meta Box Actions
+   ========================================================================== */
+
+.wbte-ewb-metabox-actions {
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px solid #dcdcde;
+	display: flex;
+	gap: 8px;
+}
+
+.wbte-ewb-metabox-actions .button {
+	flex: 1;
+	text-align: center;
+}
+
+.wbte-ewb-metabox-actions .button.wbte-ewb-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/* ==========================================================================
+   Order List Column
+   ========================================================================== */
+
+.wbte-ewb-order-column {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+th.column-wbte_ewb_withdrawal {
+	width: 100px;
+}
+
+/* ==========================================================================
+   Items Summary
+   ========================================================================== */
+
+.wbte-ewb-items-summary {
+	margin: 8px 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #555;
+}
+
+.wbte-ewb-items-summary ul {
+	margin: 4px 0 0 16px;
+	padding: 0;
+	list-style: disc;
+}
+
+.wbte-ewb-items-summary li {
+	margin-bottom: 2px;
+}
+
+/* ==========================================================================
+   Line Item Withdrawal Badges
+   ========================================================================== */
+
+.wbte-ewb-item-badge {
+	display: inline-block;
+	padding: 1px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.6;
+	margin-left: 4px;
+	vertical-align: middle;
+}
+
+.wbte-ewb-item-badge--requested {
+	background-color: #fef3e0;
+	color: #9e6a03;
+	border: 1px solid #f0ad4e;
+}
+
+.wbte-ewb-item-badge--withdrawn {
+	background-color: #eaf6ec;
+	color: #1a7a2e;
+	border: 1px solid #5cb85c;
+}
+
+/* ==========================================================================
+   Order List Action Buttons (Approve / Reject)
+   ========================================================================== */
+
+.widefat .column-wc_actions a.wbte_ewb_approve,
+.widefat .column-wc_actions a.wbte_ewb_reject,
+.wc-action-button-wbte_ewb_approve,
+.wc-action-button-wbte_ewb_reject {
+	display: inline-block;
+	width: 2em !important;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	border-radius: 3px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: relative;
+}
+
+.widefat .column-wc_actions a.wbte_ewb_approve::after,
+.wc-action-button-wbte_ewb_approve::after {
+	content: "\f147";
+	font-family: dashicons;
+	text-indent: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 2em;
+	font-size: 1.2em;
+	color: #5b841b;
+}
+
+.widefat .column-wc_actions a.wbte_ewb_approve,
+.wc-action-button-wbte_ewb_approve {
+	background: #c6e1c6;
+	border-color: #5b841b;
+}
+
+.widefat .column-wc_actions a.wbte_ewb_reject::after,
+.wc-action-button-wbte_ewb_reject::after {
+	content: "\f158";
+	font-family: dashicons;
+	text-indent: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 2em;
+	font-size: 1.2em;
+	color: #a00;
+}
+
+.widefat .column-wc_actions a.wbte_ewb_reject,
+.wc-action-button-wbte_ewb_reject {
+	background: #f8dada;
+	border-color: #a00;
+}

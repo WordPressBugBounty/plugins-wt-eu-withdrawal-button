@@ -1,0 +1,881 @@
+/**
+ * WebToffee Consent Withdrawal — Frontend Styles
+ *
+ * @package Wbte_Eu_Withdrawal_Button
+ * @since   1.0.0
+ */
+
+/* --------------------------------------------------------
+   Form wrapper
+   -------------------------------------------------------- */
+.wbte-ewb-withdrawal-form {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 24px 0;
+}
+
+.wbte-ewb-form .form-row {
+	margin-bottom: 16px;
+}
+
+.wbte-ewb-form .form-row label {
+	display: block;
+	margin-bottom: 4px;
+	font-weight: 600;
+}
+
+.wbte-ewb-form .form-row .input-text,
+.wbte-ewb-form .form-row select,
+.wbte-ewb-form .form-row textarea {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.wbte-ewb-form .form-row .input-text:focus,
+.wbte-ewb-form .form-row select:focus,
+.wbte-ewb-form .form-row textarea:focus {
+	border-color: #3b82f6;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.wbte-ewb-form .form-row .input-text[readonly] {
+	background-color: #f3f4f6;
+	color: #6b7280;
+	cursor: not-allowed;
+}
+
+/* Name row — flexbox layout */
+.wbte-ewb-name-row {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.wbte-ewb-name-row .form-row {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+/* --------------------------------------------------------
+   Items list (checkboxes)
+   -------------------------------------------------------- */
+.wbte-ewb-items-container {
+	margin-bottom: 16px;
+	padding: 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
+	background: #fafafa;
+}
+
+.wbte-ewb-items-container > label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.wbte-ewb-items-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wbte-ewb-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px 4px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.wbte-ewb-item:last-child {
+	border-bottom: none;
+}
+
+.wbte-ewb-item--disabled {
+	opacity: 0.55;
+	flex-wrap: wrap;
+}
+
+.wbte-ewb-item--disabled .wbte-ewb-item-name {
+	text-decoration: line-through;
+}
+
+.wbte-ewb-item-reason {
+	width: 100%;
+	font-size: 12px;
+	color: #b91c1c;
+	margin-left: 28px;
+	margin-top: 2px;
+	font-style: italic;
+}
+
+.wbte-ewb-item input[type="checkbox"] {
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+}
+
+.wbte-ewb-item-name {
+	flex: 1;
+	font-weight: 500;
+}
+
+.wbte-ewb-item-qty {
+	flex-shrink: 0;
+	color: #6b7280;
+	font-size: 13px;
+}
+
+.wbte-ewb-item-qty--select {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.wbte-ewb-item-qty-select {
+	min-width: 56px;
+	padding: 4px 8px;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	background: #fff;
+	font-size: 13px;
+	color: #374151;
+}
+
+.wbte-ewb-item-qty-select:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.wbte-ewb-item-price {
+	flex-shrink: 0;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.wbte-ewb-items-loading {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 0;
+	color: #6b7280;
+	font-size: 14px;
+}
+
+.wbte-ewb-no-items {
+	margin: 0;
+	padding: 8px 0;
+	color: #6b7280;
+	font-style: italic;
+}
+
+/* --------------------------------------------------------
+   Status badges
+   -------------------------------------------------------- */
+.wbte-ewb-badge {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+	text-transform: capitalize;
+}
+
+.wbte-ewb-badge--pending {
+	background-color: #fff7ed;
+	color: #c2410c;
+	border: 1px solid #fdba74;
+}
+
+.wbte-ewb-badge--approved {
+	background-color: #f0fdf4;
+	color: #15803d;
+	border: 1px solid #86efac;
+}
+
+.wbte-ewb-badge--rejected {
+	background-color: #fef2f2;
+	color: #b91c1c;
+	border: 1px solid #fca5a5;
+}
+
+/* --------------------------------------------------------
+   Messages
+   -------------------------------------------------------- */
+.wbte-ewb-success-message {
+	padding: 12px 16px;
+	margin-bottom: 20px;
+	border: 1px solid #86efac;
+	border-radius: 4px;
+	background-color: #f0fdf4;
+	color: #166534;
+}
+
+.wbte-ewb-success-message p {
+	margin: 0;
+}
+
+/* --------------------------------------------------------
+   Verification success result
+   -------------------------------------------------------- */
+.wbte-ewb-verification-result {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 48px 24px;
+	text-align: center;
+}
+
+.wbte-ewb-verification-result--success {
+	border: 1px solid #bbf7d0;
+	border-radius: 8px;
+	background-color: #f0fdf4;
+}
+
+.wbte-ewb-verification-result__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+	background-color: #22c55e;
+	color: #ffffff;
+}
+
+.wbte-ewb-verification-result__icon svg {
+	display: block;
+	width: 48px;
+	height: 48px;
+}
+
+.wbte-ewb-verification-result__title {
+	margin: 0 0 12px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #166534;
+}
+
+.wbte-ewb-verification-result__message {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #15803d;
+}
+
+.wbte-ewb-error-message {
+	padding: 12px 16px;
+	margin-bottom: 20px;
+	border: 1px solid #fca5a5;
+	border-radius: 4px;
+	background-color: #fef2f2;
+	color: #991b1b;
+}
+
+.wbte-ewb-error-message ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wbte-ewb-error-message li {
+	margin-bottom: 4px;
+}
+
+.wbte-ewb-error-message li:last-child {
+	margin-bottom: 0;
+}
+
+.wbte-ewb-info-message {
+	padding: 12px 16px;
+	margin-bottom: 20px;
+	border: 1px solid #93c5fd;
+	border-radius: 4px;
+	background-color: #eff6ff;
+	color: #1e40af;
+}
+
+.wbte-ewb-info-message p {
+	margin: 0;
+}
+
+/* --------------------------------------------------------
+   Button
+   -------------------------------------------------------- */
+.wbte-ewb-btn--withdrawal {
+	display: inline-block;
+	padding: 10px 24px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #3b82f6;
+	color: #fff;
+	transition: background-color 0.2s ease;
+}
+
+.wbte-ewb-btn--withdrawal:hover,
+.wbte-ewb-btn--withdrawal:focus {
+	background-color: #2563eb;
+	color: #fff;
+}
+
+.wbte-ewb-btn--withdrawal:disabled,
+.wbte-ewb-btn--withdrawal.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.wbte-ewb-btn--secondary {
+	display: inline-block;
+	padding: 10px 24px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	text-align: center;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #fff;
+	color: #374151;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.wbte-ewb-btn--secondary:hover,
+.wbte-ewb-btn--secondary:focus {
+	background-color: #f9fafb;
+	border-color: #9ca3af;
+	color: #111827;
+}
+
+/* --------------------------------------------------------
+   Withdrawal confirmation modal
+   -------------------------------------------------------- */
+body.wbte-ewb-confirm-modal-open {
+	overflow: hidden;
+}
+
+.wbte-ewb-confirm-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.wbte-ewb-confirm-modal.is-active {
+	display: flex;
+}
+
+.wbte-ewb-confirm-modal__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(15, 23, 42, 0.62);
+	backdrop-filter: blur(2px);
+}
+
+.wbte-ewb-confirm-modal__dialog {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 560px;
+	max-height: min(90vh, 720px);
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 14px;
+	box-shadow:
+		0 24px 48px rgba(15, 23, 42, 0.18),
+		0 8px 16px rgba(15, 23, 42, 0.08);
+	animation: wbte-ewb-confirm-enter 0.22s ease;
+}
+
+@keyframes wbte-ewb-confirm-enter {
+	from {
+		opacity: 0;
+		transform: translateY(12px) scale(0.98);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.wbte-ewb-confirm-modal__header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-shrink: 0;
+	padding: 20px 20px 16px;
+	border-bottom: 1px solid #f3f4f6;
+	background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.wbte-ewb-confirm-modal__header-main {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-width: 0;
+}
+
+.wbte-ewb-confirm-modal__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	color: #2563eb;
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	border-radius: 50%;
+}
+
+.wbte-ewb-confirm-modal__title {
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.35;
+	font-weight: 700;
+	color: #111827;
+}
+
+.wbte-ewb-confirm-modal__body {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 18px 20px 12px;
+}
+
+.wbte-ewb-confirm-modal__intro {
+	margin: 0 0 16px;
+	font-size: 0.9375rem;
+	line-height: 1.65;
+	color: #4b5563;
+}
+
+.wbte-ewb-confirm-modal__review {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	background: #f9fafb;
+	overflow: hidden;
+}
+
+.wbte-ewb-confirm-modal__field {
+	display: grid;
+	grid-template-columns: 9.75rem minmax(0, 1fr);
+	gap: 6px 16px;
+	align-items: baseline;
+	padding: 10px 14px;
+	border-bottom: 1px solid #e5e7eb;
+	background: #f9fafb;
+}
+
+.wbte-ewb-confirm-modal__field--items,
+.wbte-ewb-confirm-modal__field--multiline {
+	align-items: start;
+}
+
+.wbte-ewb-confirm-modal__field:last-child {
+	border-bottom: 0;
+}
+
+.wbte-ewb-confirm-modal__label {
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #6b7280;
+	line-height: 1.45;
+}
+
+.wbte-ewb-confirm-modal__value {
+	font-size: 0.9375rem;
+	line-height: 1.45;
+	color: #111827;
+	word-break: break-word;
+	white-space: pre-wrap;
+	text-align: left;
+}
+
+.wbte-ewb-confirm-modal__items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wbte-ewb-confirm-modal__item {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 5px 0;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.wbte-ewb-confirm-modal__item:first-child {
+	padding-top: 0;
+}
+
+.wbte-ewb-confirm-modal__item:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.wbte-ewb-confirm-modal__item-name {
+	flex: 1;
+	min-width: 0;
+	font-weight: 500;
+}
+
+.wbte-ewb-confirm-modal__item-qty {
+	flex-shrink: 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #6b7280;
+	white-space: nowrap;
+}
+
+.wbte-ewb-confirm-modal__footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 10px;
+	flex-shrink: 0;
+	padding: 14px 20px 20px;
+	border-top: 1px solid #f3f4f6;
+	background: #fff;
+}
+
+.wbte-ewb-confirm-modal__footer .wbte-ewb-btn {
+	min-width: 132px;
+}
+
+.wbte-ewb-confirm-modal__footer .wbte-ewb-btn:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b82f6;
+}
+
+@media screen and (max-width: 768px) {
+	.wbte-ewb-confirm-modal {
+		padding: 16px;
+	}
+
+	.wbte-ewb-confirm-modal__dialog {
+		max-width: 100%;
+	}
+
+	.wbte-ewb-confirm-modal__title {
+		font-size: 1.125rem;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.wbte-ewb-confirm-modal {
+		align-items: flex-end;
+		padding: 0;
+	}
+
+	.wbte-ewb-confirm-modal__dialog {
+		max-height: min(92vh, 100%);
+		border-radius: 16px 16px 0 0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
+		animation: wbte-ewb-confirm-slide-up 0.24s ease;
+	}
+
+	@keyframes wbte-ewb-confirm-slide-up {
+		from {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.wbte-ewb-confirm-modal__header {
+		padding: 16px 16px 14px;
+	}
+
+	.wbte-ewb-confirm-modal__body {
+		padding: 14px 16px 10px;
+	}
+
+	.wbte-ewb-confirm-modal__footer {
+		flex-direction: column-reverse;
+		padding: 12px 16px calc(16px + env(safe-area-inset-bottom, 0px));
+	}
+
+	.wbte-ewb-confirm-modal__footer .wbte-ewb-btn {
+		width: 100%;
+		min-width: 0;
+	}
+
+	.wbte-ewb-confirm-modal__field {
+		grid-template-columns: 7.5rem minmax(0, 1fr);
+		gap: 6px 12px;
+		padding: 9px 12px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wbte-ewb-confirm-modal__dialog {
+		animation: none;
+	}
+}
+
+/* --------------------------------------------------------
+   Spinner
+   -------------------------------------------------------- */
+.wbte-ewb-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #d1d5db;
+	border-top-color: #3b82f6;
+	border-radius: 50%;
+	animation: wbte-ewb-spin 0.6s linear infinite;
+}
+
+@keyframes wbte-ewb-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* --------------------------------------------------------
+   Footer link
+   -------------------------------------------------------- */
+.wbte-ewb-footer-link {
+	text-align: center;
+	width: 100%;
+	padding: 12px 0;
+	font-size: 13px;
+	clear: both;
+}
+
+/* --------------------------------------------------------
+   Order details status section
+   -------------------------------------------------------- */
+.wbte-ewb-order-withdrawal-status {
+	margin-top: 24px;
+	padding: 20px;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.wbte-ewb-order-withdrawal-status h3 {
+	margin: 0 0 16px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.wbte-ewb-order-withdrawal-timeline {
+	display: flex;
+	flex-direction: column;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item {
+	display: flex;
+	gap: 14px;
+	position: relative;
+}
+
+.wbte-ewb-order-withdrawal-timeline__marker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+	width: 18px;
+	padding-top: 5px;
+}
+
+.wbte-ewb-order-withdrawal-timeline__dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #2563eb;
+	border: 2px solid #dbeafe;
+	flex-shrink: 0;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item--pending .wbte-ewb-order-withdrawal-timeline__dot {
+	background: #ea580c;
+	border-color: #ffedd5;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item--approved .wbte-ewb-order-withdrawal-timeline__dot {
+	background: #16a34a;
+	border-color: #dcfce7;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item--rejected .wbte-ewb-order-withdrawal-timeline__dot {
+	background: #dc2626;
+	border-color: #fee2e2;
+}
+
+.wbte-ewb-order-withdrawal-timeline__line {
+	width: 2px;
+	flex: 1;
+	background: #e5e7eb;
+	margin-top: 6px;
+	min-height: 24px;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item:last-child .wbte-ewb-order-withdrawal-timeline__line {
+	display: none;
+}
+
+.wbte-ewb-order-withdrawal-timeline__content {
+	flex: 1;
+	min-width: 0;
+	padding-bottom: 22px;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item:last-child .wbte-ewb-order-withdrawal-timeline__content {
+	padding-bottom: 0;
+}
+
+.wbte-ewb-order-withdrawal-timeline__header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+}
+
+.wbte-ewb-order-withdrawal-timeline__title {
+	font-size: 15px;
+	font-weight: 600;
+	color: #111827;
+}
+
+.wbte-ewb-order-withdrawal-timeline__meta {
+	margin: 0 0 10px;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+.wbte-ewb-order-withdrawal-timeline__events {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.wbte-ewb-order-withdrawal-timeline__event {
+	display: grid;
+	grid-template-columns: minmax(88px, 110px) 1fr;
+	gap: 10px;
+	align-items: start;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.wbte-ewb-order-withdrawal-timeline__event-label {
+	font-weight: 600;
+	color: #374151;
+}
+
+.wbte-ewb-order-withdrawal-timeline__event-value {
+	color: #6b7280;
+	word-break: break-word;
+}
+
+.wbte-ewb-order-withdrawal-timeline__note {
+	margin: 10px 0 0;
+	padding: 10px 12px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #374151;
+	background: #f9fafb;
+	border-radius: 6px;
+	border-left: 3px solid #dc2626;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item--approved .wbte-ewb-order-withdrawal-timeline__note {
+	border-left-color: #16a34a;
+}
+
+.wbte-ewb-order-withdrawal-timeline__item--pending .wbte-ewb-order-withdrawal-timeline__note {
+	border-left-color: #ea580c;
+}
+
+.wbte-ewb-withdrawal-date {
+	font-size: 13px;
+	color: #6b7280;
+}
+
+/* --------------------------------------------------------
+   Withdrawals table in My Account
+   -------------------------------------------------------- */
+.wbte-ewb-withdrawals-table {
+	width: 100%;
+}
+
+/* --------------------------------------------------------
+   Responsive — 480px breakpoint
+   -------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+	.wbte-ewb-withdrawal-form {
+		padding: 16px 0;
+	}
+
+	.wbte-ewb-name-row {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.wbte-ewb-name-row .form-row {
+		margin-bottom: 16px;
+	}
+
+	.wbte-ewb-item {
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+
+	.wbte-ewb-item-name {
+		width: calc(100% - 28px);
+	}
+
+	.wbte-ewb-item-qty,
+	.wbte-ewb-item-price {
+		margin-left: 28px;
+	}
+
+	.wbte-ewb-btn--withdrawal {
+		width: 100%;
+	}
+
+	.wbte-ewb-order-withdrawal-timeline__event {
+		grid-template-columns: 1fr;
+		gap: 2px;
+	}
+}

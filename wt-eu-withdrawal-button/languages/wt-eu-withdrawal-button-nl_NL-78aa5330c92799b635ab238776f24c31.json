@@ -1,0 +1,515 @@
+{
+    "translation-revision-date": "2026-06-25 14:54+0000",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Pending": [
+                "In behandeling"
+            ],
+            "Approved": [
+                "Goedgekeurd"
+            ],
+            "Rejected": [
+                "Afgewezen"
+            ],
+            "Approve": [
+                "Goedkeuren"
+            ],
+            "Reject": [
+                "Afwijzen"
+            ],
+            "Full Withdrawal": [
+                "Volledige herroeping"
+            ],
+            "Partial Withdrawal": [
+                "Gedeeltelijke herroeping"
+            ],
+            "No withdrawal requests found.": [
+                "Geen herroepingsverzoeken gevonden."
+            ],
+            "A reason is required when rejecting a request.": [
+                "Bij het afwijzen van een verzoek is een reden vereist."
+            ],
+            "Withdrawals": [
+                "Herroepingen"
+            ],
+            "Settings": [
+                "Instellingen"
+            ],
+            "Leave a review": [
+                "Laat een beoordeling achter"
+            ],
+            "Remind me later": [
+                "Herinner me later"
+            ],
+            "Dismiss review request": [
+                "Beoordelingsverzoek negeren"
+            ],
+            "Withdrawal": [
+                "Herroeping"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Selecteer de pagina waar klanten herroepingsverzoeken kunnen indienen."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Voeg automatisch een link naar de herroepingspagina toe in de voettekst van de site."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Waar het herroepingsformulier en de links worden weergegeven."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Laat klanten individuele artikelen herroepen in plaats van de hele bestelling."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Aantal dagen na de geselecteerde startstatus waarin een herroepingsverzoek kan worden ingediend."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Selecteer een of meer bestelstatussen. De aftelling begint op de vroegste datum waarop de bestelling een geselecteerde status bereikt."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Vereisen dat klanten een reden opgeven bij het indienen van een herroepingsverzoek."
+            ],
+            "Virtual": [
+                "Virtueel"
+            ],
+            "Downloadable": [
+                "Downloadbaar"
+            ],
+            "Grouped": [
+                "Gegroepeerd"
+            ],
+            "External \/ Affiliate": [
+                "Extern \/ aangesloten"
+            ],
+            "Change order status on submission": [
+                "Wijzig de bestelstatus bij verzending"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Wijzig automatisch de bestelstatus wanneer een herroepingsverzoek wordt ingediend."
+            ],
+            "Change order status on approval": [
+                "Wijzig de orderstatus bij goedkeuring"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Wijzig automatisch de bestelstatus wanneer een herroepingsverzoek wordt goedgekeurd."
+            ],
+            "Recipient(s)": [
+                "Ontvanger(s)"
+            ],
+            "Order created": [
+                "Bestelling aangemaakt"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Voeg een knop voor een herroepingsverzoek toe aan elke pagina of post. De knop linkt naar uw geconfigureerde herroepingspagina."
+            ],
+            "Examples": [
+                "Examples"
+            ],
+            "Please enter a valid email address.": [
+                "Voer een geldig e-mailadres in."
+            ],
+            "Email notifications": [
+                "E-mailmeldingen"
+            ],
+            "Cancel": [
+                "Annuleren"
+            ],
+            "Guest user": [
+                "Gastgebruiker"
+            ],
+            "Request Withdrawal": [
+                "Verzoek tot herroeping"
+            ],
+            "Partial": [
+                "Gedeeltelijk"
+            ],
+            "Full": [
+                "Volledig"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Je hebt 10+ herroepingsverzoeken ontvangen. Laat een beoordeling achter voor WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Je gebruikt WebToffee EU Withdrawal Button al een week. Laat een beoordeling achter!"
+            ],
+            "Customer": [
+                "Klant"
+            ],
+            "Order": [
+                "Bestelling"
+            ],
+            "Date": [
+                "Datum"
+            ],
+            "Type": [
+                "Type"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "Customer Email": [
+                "E-mailadres van klant"
+            ],
+            "Request Type": [
+                "Verzoektype"
+            ],
+            "Reason": [
+                "Reden"
+            ],
+            "Quantity": [
+                "Aantal"
+            ],
+            "Product": [
+                "Product"
+            ],
+            "Receipt hash": [
+                "Bonhash"
+            ],
+            "No activity recorded.": [
+                "Geen activiteit geregistreerd."
+            ],
+            "Actor": [
+                "Acteur"
+            ],
+            "Action": [
+                "Actie"
+            ],
+            "Note": [
+                "Notitie"
+            ],
+            "No product categories found.": [
+                "Geen productcategorieën gevonden."
+            ],
+            "%d selected": [
+                "%d geselecteerd"
+            ],
+            "Clear all": [
+                "Alles wissen"
+            ],
+            "Remove category": [
+                "Categorie verwijderen"
+            ],
+            "Search categories…": [
+                "Categorieën zoeken…"
+            ],
+            "Type to filter categories…": [
+                "Typ om categorieën te filteren..."
+            ],
+            "No categories match your search.": [
+                "Er zijn geen categorieën die overeenkomen met uw zoekopdracht."
+            ],
+            "This email address is already added.": [
+                "Dit e-mailadres is al toegevoegd."
+            ],
+            "Remove email": [
+                "E-mail verwijderen"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Voeg ten minste één ontvanger toe om de instellingen op te slaan."
+            ],
+            "Enter email address…": [
+                "E-mailadres invoeren…"
+            ],
+            "Add": [
+                "Toevoegen"
+            ],
+            "All Statuses": [
+                "Alle statussen"
+            ],
+            "Date From": [
+                "Datum vanaf"
+            ],
+            "Date To": [
+                "Datum tot"
+            ],
+            "Search": [
+                "Zoeken…"
+            ],
+            "Order # or receipt hash": [
+                "Bestelnr. of bonhash"
+            ],
+            "Reset": [
+                "Resetten"
+            ],
+            "Apply Filters": [
+                "Filters toepassen"
+            ],
+            "Remove product": [
+                "Product verwijderen"
+            ],
+            "Search for a product…": [
+                "Zoek een product…"
+            ],
+            "Searching…": [
+                "Zoeken…"
+            ],
+            "No products found.": [
+                "Geen producten gevonden."
+            ],
+            "Back to List": [
+                "Terug naar lijst"
+            ],
+            "Not included": [
+                "Niet inbegrepen"
+            ],
+            "Withdrawal approved": [
+                "Herroeping goedgekeurd"
+            ],
+            "Withdrawal rejected": [
+                "Herroeping afgewezen"
+            ],
+            "Withdrawal request submitted": [
+                "Herroepingsverzoek ingediend"
+            ],
+            "Request Information": [
+                "Informatie aanvragen"
+            ],
+            "Order #": [
+                "Volgorde #"
+            ],
+            "No reason provided": [
+                "Geen reden opgegeven"
+            ],
+            "Created": [
+                "Gemaakt"
+            ],
+            "Processed": [
+                "Verwerkt"
+            ],
+            "Order Items": [
+                "Artikelen bestellen"
+            ],
+            "Line Total": [
+                "Lijntotaal"
+            ],
+            "No order items were found for this request.": [
+                "Er zijn geen bestelartikelen gevonden voor dit verzoek."
+            ],
+            "Status Timeline": [
+                "Statustijdlijn"
+            ],
+            "Activity Log": [
+                "Activiteitenlogboek"
+            ],
+            "Reject Request": [
+                "Verzoek afwijzen"
+            ],
+            "Rejection Reason": [
+                "Reden van afwijzing"
+            ],
+            "No change vs last week": [
+                "Geen verandering ten opzichte van vorige week"
+            ],
+            "No data": [
+                "Geen gegevens"
+            ],
+            "No change": [
+                "Geen verandering"
+            ],
+            "Open Requests": [
+                "Openstaande verzoeken"
+            ],
+            "Approved (30d)": [
+                "Goedgekeurd (30d)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Acties"
+            ],
+            "View": [
+                "Bekijken"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Toont %1$d–%2$d van %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Toont 0 van 0"
+            ],
+            "Review request": [
+                "Beoordelingsverzoek"
+            ],
+            "Global": [
+                "Globaal"
+            ],
+            "WooCommerce only": [
+                "Alleen WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Selecteer een pagina --"
+            ],
+            "Failed to load settings.": [
+                "Kan instellingen niet laden."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Voeg ten minste één ontvanger van beheerdersmeldingen toe voordat u opslaat."
+            ],
+            "Settings saved successfully.": [
+                "Instellingen succesvol opgeslagen."
+            ],
+            "Failed to save settings.": [
+                "Kan instellingen niet opslaan."
+            ],
+            "Loading settings...": [
+                "Instellingen laden..."
+            ],
+            "Unable to load settings.": [
+                "Kan instellingen niet laden."
+            ],
+            "General": [
+                "Algemeen"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Kerngedrag van herroepingsformulieren en weergavevoorkeuren."
+            ],
+            "Withdrawal page": [
+                "Herroepingspagina"
+            ],
+            "Embed footer link": [
+                "Voettekstlink insluiten"
+            ],
+            "Footer link text": [
+                "Voettekst linktekst"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "De tekst die wordt weergegeven voor de link voor het herroepen van de voettekst."
+            ],
+            "Display scope": [
+                "Weergavebereik"
+            ],
+            "Allow partial withdrawals": [
+                "Sta gedeeltelijke herroepingen toe"
+            ],
+            "Recommended": [
+                "Recommended"
+            ],
+            "Withdrawal period": [
+                "Herroepingstermijn"
+            ],
+            "days": [
+                "dagen"
+            ],
+            "Start countdown from": [
+                "Start aftelling vanaf"
+            ],
+            "Reason required": [
+                "Reden vereist"
+            ],
+            "Exclusions": [
+                "Uitsluitingen"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Sluit producttypen, categorieën of specifieke producten uit van het recht op herroeping."
+            ],
+            "Excluded product types": [
+                "Uitgesloten productsoorten"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Producttypen die niet kunnen worden herroepen."
+            ],
+            "Excluded categories": [
+                "Uitgesloten categorieën"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Producten in deze categorieën kunnen niet worden herroepen."
+            ],
+            "Excluded products": [
+                "Uitgesloten producten"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Zoek en selecteer specifieke producten die niet kunnen worden herroepen."
+            ],
+            "Order status": [
+                "Bestelstatus"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Update de bestelstatus automatisch wanneer herroepingsverzoeken worden ingediend of goedgekeurd."
+            ],
+            "Set status to": [
+                "Stel de status in op"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Configureer beheerdersontvangers voor meldingen en het klantcontact-e-mailadres dat wordt getoond in afgewezen herroepingsmails."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "E-mailadressen die de melding over het nieuwe herroepingsverzoek ontvangen."
+            ],
+            "Customer contact email": [
+                "Klantcontact-e-mailadres"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "E-mailadres dat aan klanten wordt getoond wanneer een herroepingsverzoek is afgewezen en zij contact met u moeten opnemen."
+            ],
+            "Withdrawal button shortcode": [
+                "Shortcode voor herroepingsknop"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                "— Optioneel. Aangepaste knoptekst. Gebruikt het standaard shortcodelabel wanneer dit wordt weggelaten."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                "— Optioneel. Extra CSS-klassen toegevoegd aan de knop."
+            ],
+            "Data management": [
+                "Gegevensbeheer"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Bepaal wat er gebeurt met plug-ingegevens wanneer de plug-in wordt verwijderd."
+            ],
+            "Delete data on uninstall": [
+                "Verwijder gegevens bij het verwijderen"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Verwijder alle plug-ingegevens (instellingen, herroepingsverzoeken, databasetabellen) wanneer de plug-in wordt verwijderd. Deze actie is onomkeerbaar."
+            ],
+            "Destructive": [
+                "Destructive"
+            ],
+            "Add at least one recipient to save": [
+                "Voeg ten minste één ontvanger toe om op te slaan"
+            ],
+            "Unsaved changes": [
+                "Niet-opgeslagen wijzigingen"
+            ],
+            "All changes saved": [
+                "Alle wijzigingen opgeslagen"
+            ],
+            "Discard": [
+                "Weggooien"
+            ],
+            "Saving...": [
+                "Besparing..."
+            ],
+            "Save settings": [
+                "Instellingen opslaan"
+            ],
+            "No status changes recorded.": [
+                "Er zijn geen statuswijzigingen geregistreerd."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Door de klant geïnitieerde annuleringen van bestellingen en gedeeltelijke terugbetalingen."
+            ],
+            "Requests": [
+                "Verzoeken"
+            ],
+            "System": [
+                "Systeem"
+            ],
+            "User": [
+                "Gebruiker"
+            ],
+            "Unknown": [
+                "Onbekend"
+            ]
+        }
+    }
+}

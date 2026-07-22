@@ -1,0 +1,515 @@
+{
+    "translation-revision-date": "2026-06-25 14:54+0000",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "da_DK",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Pending": [
+                "Afventer"
+            ],
+            "Approved": [
+                "Godkendt"
+            ],
+            "Rejected": [
+                "Afvist"
+            ],
+            "Approve": [
+                "Godkend"
+            ],
+            "Reject": [
+                "Afvis"
+            ],
+            "Full Withdrawal": [
+                "Fuld fortrydelse"
+            ],
+            "Partial Withdrawal": [
+                "Delvis fortrydelse"
+            ],
+            "No withdrawal requests found.": [
+                "Der blev ikke fundet nogen anmodninger om fortrydelse."
+            ],
+            "A reason is required when rejecting a request.": [
+                "Der kræves en begrundelse, når en anmodning afvises."
+            ],
+            "Withdrawals": [
+                "Fortrydelser"
+            ],
+            "Settings": [
+                "Indstillinger"
+            ],
+            "Leave a review": [
+                "Skriv en anmeldelse"
+            ],
+            "Remind me later": [
+                "Påmind mig senere"
+            ],
+            "Dismiss review request": [
+                "Afvis anmeldelsesanmodning"
+            ],
+            "Withdrawal": [
+                "Fortrydelse"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Vælg den side, hvor kunder kan indsende anmodninger om fortrydelse."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Tilføj automatisk et link til fortrydelsessiden i sidefoden."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Hvor fortrydelsesformularen og links vises."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Lad kunder fortryde enkelte varer i stedet for hele ordren."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Antal dage efter den valgte startstatus, hvor en anmodning om fortrydelse kan indsendes."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Vælg en eller flere ordrestatusser. Nedtællingen begynder på den tidligste dato, hvor ordren når en af de valgte statusser."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Kræv, at kunderne angiver en årsag, når de indsender en anmodning om fortrydelse."
+            ],
+            "Virtual": [
+                "Virtuel"
+            ],
+            "Downloadable": [
+                "Downloadbar"
+            ],
+            "Grouped": [
+                "Grupperet"
+            ],
+            "External \/ Affiliate": [
+                "Ekstern \/ Affiliate"
+            ],
+            "Change order status on submission": [
+                "Skift ordrestatus ved indsendelse"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Skift automatisk ordrestatus, når en fortrydelsesanmodning indsendes."
+            ],
+            "Change order status on approval": [
+                "Skift ordrestatus ved godkendelse"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Skift automatisk ordrestatus, når en fortrydelsesanmodning er godkendt."
+            ],
+            "Recipient(s)": [
+                "Modtager(e)"
+            ],
+            "Order created": [
+                "Ordre oprettet"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Tilføj en fortrydelsesanmodningsknap til enhver side eller ethvert indlæg. Knappen linker til din konfigurerede fortrydelsesside."
+            ],
+            "Examples": [
+                "Examples"
+            ],
+            "Please enter a valid email address.": [
+                "Indtast venligst en gyldig e-mailadresse."
+            ],
+            "Email notifications": [
+                "E-mail notifikationer"
+            ],
+            "Cancel": [
+                "Annuller"
+            ],
+            "Guest user": [
+                "Gæstebruger"
+            ],
+            "Request Withdrawal": [
+                "Anmod om fortrydelse"
+            ],
+            "Partial": [
+                "Delvis"
+            ],
+            "Full": [
+                "Fuld"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Du har modtaget 10+ anmodninger om fortrydelse. Skriv en anmeldelse af WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Du har brugt WebToffee EU Withdrawal Button i en uge. Skriv en anmeldelse!"
+            ],
+            "Customer": [
+                "Kunde"
+            ],
+            "Order": [
+                "Ordre"
+            ],
+            "Date": [
+                "Dato"
+            ],
+            "Type": [
+                "Type"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "Customer Email": [
+                "Kunde-e-mail"
+            ],
+            "Request Type": [
+                "Anmodningstype"
+            ],
+            "Reason": [
+                "Årsag"
+            ],
+            "Quantity": [
+                "Antal"
+            ],
+            "Product": [
+                "Produkt"
+            ],
+            "Receipt hash": [
+                "Kvitteringshash"
+            ],
+            "No activity recorded.": [
+                "Ingen aktivitet registreret."
+            ],
+            "Actor": [
+                "Aktør"
+            ],
+            "Action": [
+                "Handling"
+            ],
+            "Note": [
+                "Note"
+            ],
+            "No product categories found.": [
+                "Ingen produktkategorier fundet."
+            ],
+            "%d selected": [
+                "%d valgt"
+            ],
+            "Clear all": [
+                "Ryd alle"
+            ],
+            "Remove category": [
+                "Fjern kategori"
+            ],
+            "Search categories…": [
+                "Søg i kategorier…"
+            ],
+            "Type to filter categories…": [
+                "Skriv for at filtrere kategorier…"
+            ],
+            "No categories match your search.": [
+                "Ingen kategorier matcher din søgning."
+            ],
+            "This email address is already added.": [
+                "Denne e-mailadresse er allerede tilføjet."
+            ],
+            "Remove email": [
+                "Fjern e-mail"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Tilføj mindst én modtager for at gemme indstillingerne."
+            ],
+            "Enter email address…": [
+                "Indtast e-mailadresse…"
+            ],
+            "Add": [
+                "Tilføj"
+            ],
+            "All Statuses": [
+                "Alle statusser"
+            ],
+            "Date From": [
+                "Dato fra"
+            ],
+            "Date To": [
+                "Dato til"
+            ],
+            "Search": [
+                "Søger…"
+            ],
+            "Order # or receipt hash": [
+                "Ordrenr. eller kvitteringshash"
+            ],
+            "Reset": [
+                "Nulstil"
+            ],
+            "Apply Filters": [
+                "Anvend filtre"
+            ],
+            "Remove product": [
+                "Fjern produkt"
+            ],
+            "Search for a product…": [
+                "Søg efter et produkt…"
+            ],
+            "Searching…": [
+                "Søger…"
+            ],
+            "No products found.": [
+                "Ingen produkter fundet."
+            ],
+            "Back to List": [
+                "Tilbage til listen"
+            ],
+            "Not included": [
+                "Ikke inkluderet"
+            ],
+            "Withdrawal approved": [
+                "Fortrydelse godkendt"
+            ],
+            "Withdrawal rejected": [
+                "Fortrydelse afvist"
+            ],
+            "Withdrawal request submitted": [
+                "Anmodning om fortrydelse indsendt"
+            ],
+            "Request Information": [
+                "Anmodningsoplysninger"
+            ],
+            "Order #": [
+                "Ordre #"
+            ],
+            "No reason provided": [
+                "Ingen årsag angivet"
+            ],
+            "Created": [
+                "Oprettet"
+            ],
+            "Processed": [
+                "Behandlet"
+            ],
+            "Order Items": [
+                "Ordrevarer"
+            ],
+            "Line Total": [
+                "Linjetotal"
+            ],
+            "No order items were found for this request.": [
+                "Der blev ikke fundet nogen ordrevarer for denne anmodning."
+            ],
+            "Status Timeline": [
+                "Statustidslinje"
+            ],
+            "Activity Log": [
+                "Aktivitetslog"
+            ],
+            "Reject Request": [
+                "Afvis anmodning"
+            ],
+            "Rejection Reason": [
+                "Afvisningsårsag"
+            ],
+            "No change vs last week": [
+                "Ingen ændring i forhold til sidste uge"
+            ],
+            "No data": [
+                "Ingen data"
+            ],
+            "No change": [
+                "Ingen ændring"
+            ],
+            "Open Requests": [
+                "Åbne anmodninger"
+            ],
+            "Approved (30d)": [
+                "Godkendt (30 dage)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Handlinger"
+            ],
+            "View": [
+                "Vis"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Viser %1$d–%2$d af %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Viser 0 af 0"
+            ],
+            "Review request": [
+                "Anmeldelsesanmodning"
+            ],
+            "Global": [
+                "Global"
+            ],
+            "WooCommerce only": [
+                "Kun WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Vælg en side --"
+            ],
+            "Failed to load settings.": [
+                "Indstillingerne kunne ikke indlæses."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Tilføj mindst én modtager af administratorbeskeder, før du gemmer."
+            ],
+            "Settings saved successfully.": [
+                "Indstillingerne blev gemt."
+            ],
+            "Failed to save settings.": [
+                "Indstillingerne kunne ikke gemmes."
+            ],
+            "Loading settings...": [
+                "Indlæser indstillinger..."
+            ],
+            "Unable to load settings.": [
+                "Kan ikke indlæse indstillinger."
+            ],
+            "General": [
+                "Generelt"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Grundlæggende adfærd og visningsindstillinger for fortrydelsesformularen."
+            ],
+            "Withdrawal page": [
+                "Fortrydelsesside"
+            ],
+            "Embed footer link": [
+                "Indlejr sidefodslink"
+            ],
+            "Footer link text": [
+                "Tekst til sidefodslink"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Teksten, der vises for fortrydelseslinket i sidefoden."
+            ],
+            "Display scope": [
+                "Visningsomfang"
+            ],
+            "Allow partial withdrawals": [
+                "Tillad delvise fortrydelser"
+            ],
+            "Recommended": [
+                "Anbefalet"
+            ],
+            "Withdrawal period": [
+                "Fortrydelsesperiode"
+            ],
+            "days": [
+                "dage"
+            ],
+            "Start countdown from": [
+                "Start nedtælling fra"
+            ],
+            "Reason required": [
+                "Årsag påkrævet"
+            ],
+            "Exclusions": [
+                "Undtagelser"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Udeluk produkttyper, kategorier eller bestemte produkter fra retten til fortrydelse."
+            ],
+            "Excluded product types": [
+                "Udelukkede produkttyper"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Produkttyper, der ikke kan fortrydes."
+            ],
+            "Excluded categories": [
+                "Udelukkede kategorier"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Produkter i disse kategorier kan ikke fortrydes."
+            ],
+            "Excluded products": [
+                "Udelukkede produkter"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Søg efter og vælg bestemte produkter, der ikke kan fortrydes."
+            ],
+            "Order status": [
+                "Ordrestatus"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Opdater automatisk ordrestatusser, når anmodninger om fortrydelse indsendes eller godkendes."
+            ],
+            "Set status to": [
+                "Sæt status til"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Konfigurer modtagere af administratorbeskeder og den kundekontakt-e-mail, der vises i e-mails om afviste fortrydelser."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "E-mailadresser, der modtager besked om nye anmodninger om fortrydelse."
+            ],
+            "Customer contact email": [
+                "Kundekontakt-e-mail"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "E-mailadresse, der vises til kunder, når en anmodning om fortrydelse afvises, og de skal kontakte dig."
+            ],
+            "Withdrawal button shortcode": [
+                "Shortcode til fortrydelsesknap"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                " — Valgfrit. Tilpasset knaptekst. Bruger standardetiketten for shortcoden, hvis den udelades."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                " — Valgfrit. Ekstra CSS-klasser tilføjet til knappen."
+            ],
+            "Data management": [
+                "Datahåndtering"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Bestem, hvad der sker med pluginnets data, når pluginnet fjernes."
+            ],
+            "Delete data on uninstall": [
+                "Slet data ved afinstallation"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Fjern alle plugindata (indstillinger, anmodninger om fortrydelse, databasetabeller), når pluginnet afinstalleres. Denne handling kan ikke fortrydes."
+            ],
+            "Destructive": [
+                "Destruktiv"
+            ],
+            "Add at least one recipient to save": [
+                "Tilføj mindst én modtager for at gemme"
+            ],
+            "Unsaved changes": [
+                "Ikke-gemte ændringer"
+            ],
+            "All changes saved": [
+                "Alle ændringer gemt"
+            ],
+            "Discard": [
+                "Kassér"
+            ],
+            "Saving...": [
+                "Gemmer..."
+            ],
+            "Save settings": [
+                "Gem indstillinger"
+            ],
+            "No status changes recorded.": [
+                "Ingen statusændringer registreret."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Kundeinitierede ordreannulleringer og delvise refusioner."
+            ],
+            "Requests": [
+                "Anmodninger"
+            ],
+            "System": [
+                "System"
+            ],
+            "User": [
+                "Bruger"
+            ],
+            "Unknown": [
+                "Ukendt"
+            ]
+        }
+    }
+}

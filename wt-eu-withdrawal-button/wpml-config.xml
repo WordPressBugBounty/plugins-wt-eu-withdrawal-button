@@ -1,0 +1,10 @@
+<wpml-config>
+	<admin-texts>
+		<key name="wbte_ewb_settings">
+			<key name="footer_link_text" />
+			<key name="my_account_order_button_text" />
+			<key name="shortcode_button_text" />
+			<key name="withdrawal_button_text" />
+		</key>
+	</admin-texts>
+</wpml-config>

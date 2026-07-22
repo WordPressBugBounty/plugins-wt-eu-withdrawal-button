@@ -1,0 +1,2598 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-02T09:48:18+00:00\n"
+"PO-Revision-Date: 2026-07-07 17:20\n"
+"Last-Translator: \n"
+"Language-Team: sv_SE\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr ""
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Hantera ångerbegäranden / begäranden om orderavbeställning för WooCommerce-"
+"order. EU-kompatibel, HPOS-kompatibel."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "webtoffee"
+msgstr ""
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr ""
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:545
+#: includes/frontend/class-wbte-ewb-my-account.php:380
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:233
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Väntande"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:546
+#: includes/frontend/class-wbte-ewb-my-account.php:381
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:230
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Godkänd"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-order-meta-box.php:547
+#: includes/frontend/class-wbte-ewb-my-account.php:382
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:232
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Avvisad"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:170
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+#: react/src/components/RequestDetail.jsx:179
+msgid "Approve"
+msgstr "Godkänn"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-admin-assets.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:234
+#: react/src/components/RequestDetail.jsx:187
+msgid "Reject"
+msgstr "Avvisa"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:161
+#: react/src/components/RequestDetail.jsx:227
+msgid "Full Withdrawal"
+msgstr "Fullständig ånger"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: includes/admin/class-wbte-ewb-order-meta-box.php:159
+#: react/src/components/RequestDetail.jsx:226
+msgid "Partial Withdrawal"
+msgstr "Delvis ånger"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+#: react/src/components/RequestsList.jsx:196
+msgid "No withdrawal requests found."
+msgstr "Inga ångerbegäranden hittades."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+msgid "Loading…"
+msgstr "Läser in…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:177
+#: includes/frontend/class-wbte-ewb-frontend.php:135
+msgid "An error occurred. Please try again."
+msgstr "Ett fel uppstod. Försök igen."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:172
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Är du säker på att du vill godkänna denna ångerbegäran?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:124
+#: includes/admin/class-wbte-ewb-admin-assets.php:173
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Är du säker på att du vill avvisa denna ångerbegäran?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:169
+msgid "Processing…"
+msgstr "Bearbetar…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:174
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Ange en anledning till att denna ångerbegäran avvisas:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:175
+#: react/src/components/RequestDetail.jsx:362
+msgid "A reason is required when rejecting a request."
+msgstr "En anledning krävs när en begäran avvisas."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:176
+msgid "Request updated successfully."
+msgstr "Begäran uppdaterades."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:69
+msgid "Withdrawal Requests"
+msgstr "Ångerbegäranden"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/src/layouts/AdminLayout.jsx:21 react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Ångerbegäranden"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Läser in ångerpanelen…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Inställningar"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Support"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Recension"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:89
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Ordern hittades inte."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:103
+msgid "No withdrawal request for this order."
+msgstr "Ingen ångerbegäran för denna order."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:141
+#, php-format
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Begäran %1$d av %2$d (#%3$d)"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:151
+msgid "Status:"
+msgstr "Status:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:157
+msgid "Type:"
+msgstr "Typ:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:169
+msgid "Items:"
+msgstr "Artiklar:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:172
+#: includes/admin/class-wbte-ewb-order-meta-box.php:306
+#: templates/emails/admin-withdrawal-submitted.php:153
+#: templates/emails/customer-withdrawal-approved.php:137
+#: templates/emails/customer-withdrawal-submitted.php:127
+msgid "Unknown item"
+msgstr "Okänd artikel"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:183
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Anledning:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:190
+msgid "Submitted:"
+msgstr "Inskickad:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:198
+msgid "Receipt hash:"
+msgstr "Kvittohash:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:206
+msgid "Processed:"
+msgstr "Bearbetad:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:212
+msgid "by"
+msgstr "av"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:222
+msgid "View in dashboard"
+msgstr "Visa i kontrollpanelen"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:262
+#: react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Lämna en recension"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:265
+#: react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Påminn mig senare"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:268
+#: react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Avfärda recensionsförfrågan"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:432
+#, php-format
+msgid "Approve withdrawal request #%d"
+msgstr "Godkänn ångerbegäran #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:437
+#, php-format
+msgid "Reject withdrawal request #%d"
+msgstr "Avvisa ångerbegäran #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request"
+msgstr "Godkänn ångerbegäran"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:442
+msgid "Reject withdrawal request"
+msgstr "Avvisa ångerbegäran"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:528
+msgid "Rejected from orders list."
+msgstr "Avvisad från orderlistan."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:633
+#, php-format
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Ångrad %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:644
+#, php-format
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Begärd %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/src/components/RequestDetail.jsx:259
+#: react/src/components/RequestDetail.jsx:293
+msgid "Withdrawal"
+msgstr "Ånger"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Ångerinställningar"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Konfigurera hur ångerbegäranden / begäranden om returrätt fungerar i din "
+"butik."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Ångersida"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/src/components/SettingsPage.jsx:421
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr "Välj sidan där kunder kan skicka in ångerbegäranden."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Bädda in länk i sidfoten"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+#: react/src/components/SettingsPage.jsx:439
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr "Lägg automatiskt till en länk till ångersidan i webbplatsens sidfot."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Visningsomfång"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/src/components/SettingsPage.jsx:461
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Var ångerformuläret och länkarna visas."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globalt (alla sidor)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Endast WooCommerce-sidor"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Tillåt delvis ånger"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/src/components/SettingsPage.jsx:475
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr "Låt kunder ångra enskilda artiklar i stället för hela ordern."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Ångerfrist (dagar)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/src/components/SettingsPage.jsx:481
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Antal dagar efter den valda startstatusen under vilka en ångerbegäran kan "
+"skickas in."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Ångerfristen börjar från"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/src/components/SettingsPage.jsx:511
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Välj en eller flera orderstatusar. Nedräkningen börjar det tidigaste datum "
+"då ordern når någon av de valda statusarna."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Anledning krävs"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/src/components/SettingsPage.jsx:526
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr "Kräv att kunder anger en anledning när de skickar in en ångerbegäran."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Undantagna produkttyper"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Produkttyper som är undantagna från ångerrätt."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/src/components/SettingsPage.jsx:169
+msgid "Virtual"
+msgstr "Virtuell"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/src/components/SettingsPage.jsx:170
+msgid "Downloadable"
+msgstr "Nedladdningsbar"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/src/components/SettingsPage.jsx:171
+msgid "Grouped"
+msgstr "Grupperad"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/src/components/SettingsPage.jsx:172
+msgid "External / Affiliate"
+msgstr "Extern / affiliate"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Undantagna kategorier"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Produktkategorier som är undantagna från ångerrätt."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Undantagna produkter"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Specifika produkter som är undantagna från ångerrätt."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Beteende vid undantag"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Hur undantagna produkter hanteras i ångerformuläret."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Dölj undantagna artiklar"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Visa inaktiverade med notis"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Orderstatus"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr "Styr om orderstatusar ändras automatiskt under ångerprocessen."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/src/components/SettingsPage.jsx:602
+msgid "Change order status on submission"
+msgstr "Ändra orderstatus vid inskickning"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/src/components/SettingsPage.jsx:603
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr "Ändra automatiskt orderstatusen när en ångerbegäran skickas in."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Orderstatus vid inskickning"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr "Orderstatusen som ska anges när en ångerbegäran skickas in."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/src/components/SettingsPage.jsx:627
+msgid "Change order status on approval"
+msgstr "Ändra orderstatus vid godkännande"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/src/components/SettingsPage.jsx:628
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr "Ändra automatiskt orderstatusen när en ångerbegäran godkänns."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Orderstatus vid godkännande"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr "Orderstatusen som ska anges när en ångerbegäran godkänns."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "E-postaviseringar"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr "Konfigurera administratörsmottagare för aviseringsmejl om ånger."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:204
+#: react/src/components/SettingsPage.jsx:665
+msgid "Recipient(s)"
+msgstr "Mottagare"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Kommaseparerade e-postadresser för administratörsaviseringar om ånger."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Kortkod för ångerknapp"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Datahantering"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Radera data vid avinstallation"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Ta bort alla tilläggsdata (inställningar, ångerbegäranden, databastabeller) "
+"när tillägget avinstalleras."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Varning: Denna åtgärd kan inte ångras."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/src/components/SettingsPage.jsx:353
+msgid "Order created"
+msgstr "Order skapad"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/src/components/SettingsPage.jsx:698
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Lägg till en knapp för ångerbegäran på valfri sida eller inlägg. Knappen "
+"länkar till din konfigurerade ångersida."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/src/components/SettingsPage.jsx:703
+msgid "Examples"
+msgstr "Exempel"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Valfritt. Anpassad knapptext. Använder kortkodens standardetikett om den "
+"utelämnas."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Valfritt. Extra CSS-klasser som läggs till på knappen."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Inaktivera"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Bearbetar..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:138
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Ange en giltig e-postadress."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Skicka och inaktivera"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Problem med ångerprocessen"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Ånger för gäst"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Kan du berätta lite mer?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Partial withdrawal"
+msgstr "Delvis ånger"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/src/components/SettingsPage.jsx:657
+msgid "Email notifications"
+msgstr "E-postaviseringar"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "EU-efterlevnad / juridiska frågor"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Annat"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Jag hittade ett bättre tillägg"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Vilket tillägg?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Tillägget är utmärkt, men jag behöver en specifik funktion som ni inte "
+"stöder"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Kan du berätta mer om den funktionen?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Det var inte vad jag letade efter"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "En konflikt med ett annat tillägg"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Om du har en stund, berätta gärna varför du inaktiverar:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee får kontakta mig angående denna feedback."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Ange din e-postadress."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Ange e-postadress"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Vi samlar inte in några personuppgifter när du skickar in detta formulär. "
+"Det är din feedback vi värdesätter."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Integritetspolicy"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Gå till support"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:144
+#: react/src/components/RequestDetail.jsx:375
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Jag avstår hellre"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Du har inte behörighet att utföra denna åtgärd."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr "Ogiltig säkerhetstoken. Uppdatera sidan och försök igen."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr "Inloggade kunder bör skicka in ångerbegäranden från sitt konto."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "Ordernummer och e-post krävs för gäståtkomst."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Ange en giltig e-postadress."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:154
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:158
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/frontend/class-wbte-ewb-guest-verification.php:219
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr "Ingen order hittades som matchar det angivna ordernumret."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:588
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:163
+msgid "The email address does not match the order."
+msgstr "E-postadressen matchar inte ordern."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Ordernumret matchar inte den begärda ordern."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:749
+msgid "WooCommerce order ID."
+msgstr "WooCommerce-order-ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Ordernummer (krävs för gäståtkomst)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "Kundens e-post (krävs för gäståtkomst)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "WooCommerce-order-ID. Ange detta eller order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Kundvänt ordernummer. Ange detta eller order_id."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Kundens e-postadress (krävs för gäster)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Om detta är en fullständig eller delvis ånger."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr "Rader för delvis ånger. Krävs om request_type är partial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "WooCommerce-rad-ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "WooCommerce-produkt-ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Antal att ångra."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:792
+msgid "Customer reason for the withdrawal."
+msgstr "Kundens anledning till ångern."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:349
+msgid "Guest withdrawal service is not available."
+msgstr "Ångertjänsten för gäster är inte tillgänglig."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:360
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:285
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Välj minst en artikel att ångra."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:388
+#: includes/api/class-wbte-ewb-rest-customer.php:521
+msgid "Withdrawal request submitted successfully."
+msgstr "Ångerbegäran skickades in."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:405
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Ångerbegäranden från gäster måste verifieras via e-post innan de skapas."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid "Either order_id or order_number is required."
+msgstr "Antingen order_id eller order_number krävs."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:430
+msgid "Items are required for partial withdrawal requests."
+msgstr "Artiklar krävs för begäranden om delvis ånger."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:449
+#: includes/api/class-wbte-ewb-rest-customer.php:611
+msgid "The specified order could not be found."
+msgstr "Den angivna ordern kunde inte hittas."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:467
+msgid "A reason is required for withdrawal requests."
+msgstr "En anledning krävs för ångerbegäranden."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:500
+#: includes/api/class-wbte-ewb-rest-requests.php:401
+#: includes/api/class-wbte-ewb-rest-requests.php:443
+msgid "Request service is not available."
+msgstr "Begärantjänsten är inte tillgänglig."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:548
+msgid "This order does not belong to your account."
+msgstr "Denna order tillhör inte ditt konto."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:564
+msgid "Order number is required for guest withdrawal requests."
+msgstr "Ordernummer krävs för ångerbegäranden från gäster."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:572
+msgid "Email is required for guest withdrawal requests."
+msgstr "E-post krävs för ångerbegäranden från gäster."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:580
+msgid "The order number does not match this order."
+msgstr "Ordernumret matchar inte denna order."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:628
+msgid "Eligibility service is not available."
+msgstr "Behörighetstjänsten är inte tillgänglig."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:666
+msgid "This item is not eligible for withdrawal."
+msgstr "Denna artikel omfattas inte av ångerrätt."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:676
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr "Denna artikel ingår redan i en väntande eller godkänd ångerbegäran."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:743
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:510
+msgid "Unique identifier for the withdrawal request."
+msgstr "Unik identifierare för ångerbegäran."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:754
+#: includes/api/class-wbte-ewb-rest-requests.php:521
+msgid "Customer-facing order number."
+msgstr "Kundvänt ordernummer."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:759
+msgid "Status of the withdrawal request."
+msgstr "Ångerbegärans status."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:766
+msgid "Full or partial withdrawal."
+msgstr "Fullständig eller delvis ånger."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:772
+msgid "Line items included in the withdrawal."
+msgstr "Rader som ingår i ångern."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:797
+msgid "Date the request was created."
+msgstr "Datum då begäran skapades."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce är inte tillgängligt."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Valfri notis för godkännandet."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Anledning till att ångerbegäran avvisas."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "En notis krävs när en begäran avvisas."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtrera efter begäranstatus."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr ""
+"Filtrera begäranden som skapats på eller efter detta datum (ÅÅÅÅ-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr ""
+"Filtrera begäranden som skapats på eller före detta datum (ÅÅÅÅ-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtrera efter kundens e-post eller namn."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by order number or receipt hash."
+msgstr "Sök efter ordernummer eller kvittohash."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtrera efter ordernummer."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Filtrera efter kvittohash (fullständig eller delvis matchning)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Maximalt antal objekt som returneras per sida."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Aktuell sida i samlingen."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:482
+msgid "Request repository is not available."
+msgstr "Begäranförrådet är inte tillgängligt."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:493
+#: includes/core/class-wbte-ewb-request-service.php:574
+msgid "Withdrawal request not found."
+msgstr "Ångerbegäran hittades inte."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Gästanvändare"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:422
+msgid "Withdrawal request approved successfully."
+msgstr "Ångerbegäran godkändes."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:464
+msgid "Withdrawal request rejected."
+msgstr "Ångerbegäran avvisades."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:516
+msgid "Associated WooCommerce order ID."
+msgstr "Tillhörande WooCommerce-order-ID."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:526
+msgid "Customer email address."
+msgstr "Kundens e-postadress."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:532
+msgid "Customer user ID (0 or null for guests)."
+msgstr "Kundens användar-ID (0 eller null för gäster)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:537
+msgid "Current status of the withdrawal request."
+msgstr "Ångerbegärans aktuella status."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:543
+msgid "Type of withdrawal request."
+msgstr "Typ av ångerbegäran."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:549
+msgid "JSON-encoded array of line items."
+msgstr "JSON-kodad array med rader."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:554
+msgid "Customer-provided reason for withdrawal."
+msgstr "Kundens angivna anledning till ånger."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:559
+msgid "Date the request was created (ISO 8601)."
+msgstr "Datum då begäran skapades (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:566
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Datum då begäran senast uppdaterades (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:573
+msgid "Admin user ID who processed the request."
+msgstr "Administratörens användar-ID som behandlade begäran."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:579
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Datum då begäran behandlades (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:586
+msgid "Activity log entries for this request."
+msgstr "Poster i aktivitetsloggen för denna begäran."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Åtgärd för recensionsbanner."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Recensionsbannern har uppdaterats."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "Sid-ID för ångerformuläret."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Om en ångerlänk ska visas i webbplatsens sidfot."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Var sidfotslänken ska visas."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Om delvis ånger av order ska tillåtas."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Antal dagar inom vilka ånger är tillåten."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+#, php-format
+msgid "%s must be at least 1."
+msgstr "%s måste vara minst 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr "Orderstatusar från vilka nedräkningen av ångerfristen kan börja."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Om en anledning krävs när en ånger skickas in."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Produkttyper undantagna från ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "Produktkategori-ID:n undantagna från ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "Produkt-ID:n undantagna från ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "Hur undantagna artiklar ska hanteras i ångerformuläret."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Om orderstatus ska ändras när en ånger skickas in."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Orderstatus som ska anges vid inskickning av ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Om orderstatus ska ändras när en ånger godkänns."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Orderstatus som ska anges vid godkännande av ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Om alla tilläggsdata ska raderas vid avinstallation."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr "E-postadresser som tar emot administratörsaviseringar om ånger."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr "Kundvänd kontakt-e-post som visas i mejl om avvisad ånger."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+#, php-format
+msgid "%s must be an array of email addresses."
+msgstr "%s måste vara en array med e-postadresser."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Minst en mottagare för administratörsaviseringar krävs."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr ""
+"En eller flera aviseringsmottagare innehåller en ogiltig e-postadress."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "Kundens kontakt-e-postadress är ogiltig."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Startstatusarna för ångerfristen måste vara en array."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr "En eller flera startstatusar för ångerfristen är ogiltiga."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "Inställningsklassen är inte tillgänglig."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Inga giltiga inställningar angavs för uppdatering."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Inställningarna uppdaterades."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "angerbegaran"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Ångerbegäran"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Väntande ånger"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+#, php-format
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Väntande ånger <span class=\"count\">(%s)</span>"
+msgstr[1] "Väntande ånger <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Ångrad"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+#, php-format
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Ångrad <span class=\"count\">(%s)</span>"
+msgstr[1] "Ångrade <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+#, php-format
+msgid "Change status to %s"
+msgstr "Ändra status till %s"
+
+#: includes/class-wbte-ewb-settings.php:316
+#: react/src/components/SettingsPage.jsx:453
+msgid "Request Withdrawal"
+msgstr "Begär ånger"
+
+#: includes/core/class-wbte-ewb-eligibility.php:344
+msgid "This product type cannot be withdrawn."
+msgstr "Denna produkttyp kan inte ångras."
+
+#: includes/core/class-wbte-ewb-eligibility.php:348
+msgid "Virtual products cannot be withdrawn."
+msgstr "Virtuella produkter kan inte ångras."
+
+#: includes/core/class-wbte-ewb-eligibility.php:352
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Nedladdningsbara produkter kan inte ångras."
+
+#: includes/core/class-wbte-ewb-eligibility.php:361
+msgid "This product cannot be withdrawn."
+msgstr "Denna produkt kan inte ångras."
+
+#: includes/core/class-wbte-ewb-eligibility.php:370
+msgid "Products in this category cannot be withdrawn."
+msgstr "Produkter i denna kategori kan inte ångras."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:137
+msgid "Please enter your order number."
+msgstr "Ange ditt ordernummer."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Ange en anledning till din ångerbegäran."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:108
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr "Det gick inte att köa din ångerbegäran. Försök igen."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:167
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:264
+#: includes/frontend/class-wbte-ewb-guest-verification.php:220
+msgid "The email address does not match the billing email on this order."
+msgstr "E-postadressen matchar inte faktura-e-posten på denna order."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:172
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:176
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:271
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid "This order is not eligible for withdrawal."
+msgstr "Denna order omfattas inte av ångerrätt."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:219
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:226
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:605
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:612
+#: includes/frontend/class-wbte-ewb-guest-verification.php:217
+msgid "This verification link is invalid or has already been used."
+msgstr "Denna verifieringslänk är ogiltig eller har redan använts."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:233
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:499
+#: includes/frontend/class-wbte-ewb-guest-verification.php:222
+msgid "This withdrawal request has already been submitted."
+msgstr "Denna ångerbegäran har redan skickats in."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:242
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+msgid "Verification link expired."
+msgstr "Verifieringslänken har upphört att gälla."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:248
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:506
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:627
+#: includes/frontend/class-wbte-ewb-guest-verification.php:218
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Denna verifieringslänk har upphört att gälla. Skicka in en ny ångerbegäran."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:294
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:149
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Ångertjänsten är tillfälligt otillgänglig."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:492
+msgid "This verification session is invalid or has expired."
+msgstr "Denna verifieringssession är ogiltig eller har upphört att gälla."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:537
+#, php-format
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Verifiera din ångerbegäran"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:543
+#, php-format
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Verifiera din ångerbegäran genom att klicka på länken nedan:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "Den angivna ordern finns inte."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Du har inte behörighet att skicka in en ånger för denna order."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Det gick inte att skapa ångerbegäran."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Ångerbegäran skickades in."
+
+#: includes/core/class-wbte-ewb-request-service.php:273
+msgid "The submitted withdrawal items are invalid."
+msgstr "De inskickade ångerartiklarna är ogiltiga."
+
+#: includes/core/class-wbte-ewb-request-service.php:317
+msgid "No items are currently available for withdrawal on this order."
+msgstr ""
+"Det finns för närvarande inga artiklar tillgängliga för ånger på denna "
+"order."
+
+#: includes/core/class-wbte-ewb-request-service.php:396
+#: includes/core/class-wbte-ewb-request-service.php:409
+#: includes/core/class-wbte-ewb-request-service.php:419
+msgid "One or more selected items are invalid for this order."
+msgstr "En eller flera valda artiklar är ogiltiga för denna order."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:429
+#, php-format
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "”%s” omfattas inte av ångerrätt på denna order."
+
+#: includes/core/class-wbte-ewb-request-service.php:430
+#: includes/core/class-wbte-ewb-request-service.php:448
+msgid "This item"
+msgstr "Denna artikel"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:447
+#, php-format
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "”%s” är inte längre tillgänglig för ånger på denna order."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:459
+#, php-format
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "Antalet att ångra för ”%1$s” får inte överstiga %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:460
+msgid "this item"
+msgstr "denna artikel"
+
+#: includes/core/class-wbte-ewb-request-service.php:501
+msgid "Only pending requests can be approved."
+msgstr "Endast väntande begäranden kan godkännas."
+
+#: includes/core/class-wbte-ewb-request-service.php:582
+msgid "Only pending requests can be rejected."
+msgstr "Endast väntande begäranden kan avvisas."
+
+#: includes/core/class-wbte-ewb-request-service.php:670
+msgid "Withdrawal request pending review."
+msgstr "Ångerbegäran väntar på granskning."
+
+#: includes/core/class-wbte-ewb-request-service.php:688
+msgid "Withdrawal request approved."
+msgstr "Ångerbegäran godkändes."
+
+#: includes/core/class-wbte-ewb-request-service.php:731
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Delvis ånger godkänd. Återställer orderstatus för återstående artiklar."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:361
+#, php-format
+msgid "%1$d of %2$d"
+msgstr "%1$d av %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:516
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/src/components/RequestsList.jsx:264
+msgid "Partial"
+msgstr "Delvis"
+
+#: includes/core/class-wbte-ewb-request.php:519
+#: includes/emails/class-wbte-ewb-email-preview.php:94
+#: includes/emails/class-wbte-ewb-email-preview.php:205
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/src/components/RequestsList.jsx:265
+msgid "Full"
+msgstr "Fullständig"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/src/components/ReviewBanner.jsx:71
+msgid ""
+"You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
+"Withdrawal Button!"
+msgstr ""
+"Du har fått 10+ ångerbegäranden. Lämna en recension för WebToffee EU "
+"Withdrawal Button!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. Leave a review!"
+msgstr ""
+"Du har använt WebToffee EU Withdrawal Button i en vecka. Lämna en recension!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Ogiltig åtgärd för recensionsbanner."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Verifiering av ånger för gäst"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Skickas till gästkunder för att verifiera deras ångerbegäran innan den "
+"skapas."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr "[{site_title}]: Verifiera din ångerbegäran för order #{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Verifiera din ångerbegäran"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:167
+#: includes/emails/class-wbte-ewb-email-preview.php:225
+msgid "I would like to return this order."
+msgstr "Jag vill returnera denna order."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:199
+#: includes/emails/class-wbte-ewb-email-preview.php:245
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr "Denna begäran kan inte godkännas eftersom ångerfristen har löpt ut."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:231
+msgid "Sample product"
+msgstr "Exempelprodukt"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Ångerbegäran godkänd"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Skickas till kunden när en ångerbegäran godkänns."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Din ångerbegäran för order #{order_number} har godkänts"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:176
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:197
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:194
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:176
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Tillgängliga platshållare: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:180
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:198
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:180
+msgid "Enable/Disable"
+msgstr "Aktivera/inaktivera"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:182
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:203
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:200
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:182
+msgid "Enable this email notification"
+msgstr "Aktivera denna e-postavisering"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:186
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:186
+msgid "Subject"
+msgstr "Ämne"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:194
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:215
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:221
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:194
+msgid "Email heading"
+msgstr "E-postrubrik"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:202
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:223
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:229
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:202
+msgid "Email type"
+msgstr "E-posttyp"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:204
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:225
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:231
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:204
+msgid "Choose which format of email to send."
+msgstr "Välj vilket format på e-post som ska skickas."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Ångerbegäran avvisad"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Skickas till kunden när en ångerbegäran avvisas."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Din ångerbegäran för order #{order_number} har avvisats"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Ny ångerbegäran (administratör)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Skickas till webbplatsens administratör när en ny ångerbegäran skickas in."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr "[{site_title}]: Ny ångerbegäran för order #{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Ny ångerbegäran"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#, php-format
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Valfri åsidosättning endast för detta mejl. Lämna tomt för att använda "
+"mottagarna som konfigurerats i ångerinställningarna (standard är %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Ångerbegäran inskickad"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Skickas till kunden när en ångerbegäran skickas in."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr "[{site_title}]: Ångerbegäran för order #{order_number} mottagen"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Ångerbegäran mottagen"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Säkerhetskontrollen misslyckades. Försök igen."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:130
+msgid "Please select an order."
+msgstr "Välj en order."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Du har inte behörighet att begära ånger för denna order."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:177
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Din ångerbegäran har skickats in. Du får ett bekräftelsemejl inom kort."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:136
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Din ångerbegäran har skickats in."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:129
+msgid "Loading..."
+msgstr "Läser in..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:131
+msgid "Please select at least one item."
+msgstr "Välj minst en artikel."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:132
+msgid "quantity"
+msgstr "antal"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:133
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Ange ett giltigt antal för varje vald artikel."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:134
+msgid "Please provide a reason for withdrawal."
+msgstr "Ange en anledning till ångern."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:139
+msgid "Fetching eligible items..."
+msgstr "Hämtar behöriga artiklar..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:140
+msgid "No eligible items found for this order."
+msgstr "Inga behöriga artiklar hittades för denna order."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:141
+msgid "Review your withdrawal request"
+msgstr "Granska din ångerbegäran"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:142
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Granska uppgifterna nedan. Klicka på Bekräfta ånger för att slutföra ditt "
+"lagstadgade frånträde."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:143
+msgid "Confirm withdrawal"
+msgstr "Bekräfta ånger"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:145
+#: react/src/components/RequestsList.jsx:207
+msgid "Customer"
+msgstr "Kund"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/src/components/RequestDetail.jsx:264
+msgid "Order"
+msgstr "Order"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:147
+msgid "Withdrawal type"
+msgstr "Ångertyp"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:148
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Artiklar att ångra"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:149
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Anledning till ånger"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Full withdrawal"
+msgstr "Fullständig ånger"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:176
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Begäran inskickad"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:200
+msgid ""
+"Thank you. If the details you provided are correct, you will receive a "
+"verification email to complete your withdrawal request."
+msgstr ""
+"Tack. Om uppgifterna du angav är korrekta får du ett verifieringsmejl för "
+"att slutföra din ångerbegäran."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:229
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr "Vi kunde inte verifiera din ångerbegäran. Försök igen."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Du måste vara inloggad för att se dina ångerbegäranden."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Du har inte skickat in några ångerbegäranden ännu."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Begäran"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/src/components/ActivityLog.jsx:32
+#: react/src/components/RequestsList.jsx:210
+msgid "Date"
+msgstr "Datum"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/src/components/RequestsList.jsx:208
+msgid "Type"
+msgstr "Typ"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:254
+#: react/src/components/RequestsList.jsx:209
+msgid "Status"
+msgstr "Status"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:265
+msgid "Withdrawal Request"
+msgstr "Ångerbegäran"
+
+#. translators: 1: request ID, 2: status badge
+#: includes/frontend/class-wbte-ewb-my-account.php:270
+#, php-format
+msgid "Request #%1$s: %2$s"
+msgstr "Begäran #%1$s: %2$s"
+
+#. translators: %s: date
+#: includes/frontend/class-wbte-ewb-my-account.php:281
+#, php-format
+msgid "Submitted on %s"
+msgstr "Inskickad %s"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Din e-post har verifierats. Välj de artiklar du vill ångra och skicka in din"
+" begäran nedan."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Ordernummer"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Faktura-e-postadress"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Läser in artiklar..."
+
+#: includes/frontend/views/form-guest-verified.php:80
+#: includes/frontend/views/form-guest.php:93
+#: includes/frontend/views/form-logged-in.php:121
+msgid "Submit Withdrawal Request"
+msgstr "Skicka in ångerbegäran"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "obligatoriskt"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive a verification email. After verifying your "
+"email, you can choose which items to withdraw."
+msgstr ""
+"Ange ditt ordernummer och faktura-e-post för att börja. Om dina uppgifter "
+"matchar våra register får du ett verifieringsmejl. När du har verifierat din"
+" e-post kan du välja vilka artiklar du vill ångra."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Du har för närvarande inga order som omfattas av ångerrätt."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Välj en order --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+#, php-format
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-post"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Förnamn"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Efternamn"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+#, php-format
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "En ny ångerbegäran har skickats in för order #%s."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Kundinformation"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Kundnamn"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/src/components/RequestDetail.jsx:219
+msgid "Customer Email"
+msgstr "Kundens e-post"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Begäranuppgifter"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Ordernummer"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/src/components/RequestDetail.jsx:223
+msgid "Request Type"
+msgstr "Begärantyp"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Inskickningsdatum"
+
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/src/components/RequestDetail.jsx:232
+msgid "Reason"
+msgstr "Anledning"
+
+#: templates/emails/admin-withdrawal-submitted.php:136
+msgid "Items Included in This Request"
+msgstr "Artiklar som ingår i denna begäran"
+
+#: templates/emails/admin-withdrawal-submitted.php:142
+msgid "Item"
+msgstr "Artikel"
+
+#: templates/emails/admin-withdrawal-submitted.php:145
+#: templates/emails/customer-withdrawal-approved.php:131
+#: templates/emails/customer-withdrawal-submitted.php:119
+#: react/src/components/RequestDetail.jsx:290
+msgid "Quantity"
+msgstr "Antal"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:173
+#, php-format
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"För att granska och hantera denna begäran, besök <a href=\"%s\">panelen för "
+"ångerbegäranden</a>."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Vi har mottagit din ångerbegäran. För att slutföra den, verifiera din "
+"faktura-e-postadress genom att klicka på knappen nedan."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Ordernummer:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Verifiera ångerbegäran"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Om du inte har begärt en ånger kan du bortse från detta mejl."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+#, php-format
+msgid "Hi %s,"
+msgstr "Hej %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+#, php-format
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr "Goda nyheter! Din ångerbegäran för order #%s har godkänts."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Bearbetningsdatum"
+
+#: templates/emails/customer-withdrawal-approved.php:126
+#: templates/emails/customer-withdrawal-submitted.php:110
+msgid "Items"
+msgstr "Artiklar"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:116
+#: react/src/components/RequestDetail.jsx:289
+msgid "Product"
+msgstr "Produkt"
+
+#: templates/emails/customer-withdrawal-approved.php:146
+msgid "Next Steps"
+msgstr "Nästa steg"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Din ånger har behandlats. Beroende på typen av begäran kan följande gälla:"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Om en återbetalning ska ske behandlas den till din ursprungliga "
+"betalningsmetod. Ge det några arbetsdagar innan den syns."
+
+#: templates/emails/customer-withdrawal-approved.php:155
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Om du behöver returnera några artiklar får du separata returinstruktioner."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Om du har några frågor är du välkommen att kontakta oss."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+#, php-format
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Vi har granskat din ångerbegäran för order #%s. Tyvärr kan vi inte godkänna "
+"denna begäran just nu."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Om du anser att detta beslut fattades av misstag eller om du har ytterligare"
+" information att lämna, kontakta oss så granskar vi gärna ditt ärende igen."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+#, php-format
+msgid "You can reach us at %s."
+msgstr "Du kan nå oss på %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+#, php-format
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Vi har mottagit din ångerbegäran för order #%s. Tack för att du meddelade "
+"oss."
+
+#: templates/emails/customer-withdrawal-submitted.php:139
+msgid "What Happens Next?"
+msgstr "Vad händer härnäst?"
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Vårt team granskar din begäran och återkommer till dig så snart som möjligt."
+" Du får ett nytt mejl när ett beslut har fattats."
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr "Om du har några frågor under tiden är du välkommen att kontakta oss."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/src/components/RequestDetail.jsx:241
+msgid "Receipt hash"
+msgstr "Kvittohash"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Vi har mottagit din ångerbegäran. För att slutföra den, verifiera din "
+"faktura-e-postadress med hjälp av länken nedan."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+#, php-format
+msgid "Order number: %s"
+msgstr "Ordernummer: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+#, php-format
+msgid "Reason: %s"
+msgstr "Anledning: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"WebToffee EU Withdrawal Button for WooCommerce kräver att WooCommerce är "
+"installerat och aktivt."
+
+#: react/src/components/ActivityLog.jsx:23
+msgid "No activity recorded."
+msgstr "Ingen aktivitet registrerad."
+
+#: react/src/components/ActivityLog.jsx:33
+msgid "Actor"
+msgstr "Aktör"
+
+#: react/src/components/ActivityLog.jsx:34
+msgid "Action"
+msgstr "Åtgärd"
+
+#: react/src/components/ActivityLog.jsx:35
+msgid "Note"
+msgstr "Notis"
+
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Inga produktkategorier hittades."
+
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#. translators: %d: number of selected products
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+#, js-format
+msgid "%d selected"
+msgstr "%d valda"
+
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Rensa alla"
+
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Ta bort kategori"
+
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Sök kategorier…"
+
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Skriv för att filtrera kategorier…"
+
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Inga kategorier matchar din sökning."
+
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Denna e-postadress är redan tillagd."
+
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Ta bort e-post"
+
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Lägg till minst en mottagare för att spara inställningarna."
+
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Ange e-postadress…"
+
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Lägg till"
+
+#: react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Alla statusar"
+
+#: react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Datum från"
+
+#: react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Datum till"
+
+#: react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Sök"
+
+#: react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Ordernr eller kvittohash"
+
+#: react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Återställ"
+
+#: react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Använd filter"
+
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Inga orderstatusar hittades."
+
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Ta bort status"
+
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Sök orderstatusar…"
+
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Skriv för att filtrera orderstatusar…"
+
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Inga orderstatusar matchar din sökning."
+
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Ta bort produkt"
+
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Sök efter en produkt…"
+
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Söker…"
+
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Inga produkter hittades."
+
+#: react/src/components/RequestDetail.jsx:103
+#: react/src/components/RequestDetail.jsx:168
+msgid "Back to List"
+msgstr "Tillbaka till listan"
+
+#: react/src/components/RequestDetail.jsx:119
+msgid "Not included"
+msgstr "Ingår inte"
+
+#: react/src/components/RequestDetail.jsx:126
+msgid "Withdrawal approved"
+msgstr "Ånger godkänd"
+
+#: react/src/components/RequestDetail.jsx:133
+msgid "Withdrawal rejected"
+msgstr "Ånger avvisad"
+
+#: react/src/components/RequestDetail.jsx:139
+msgid "Withdrawal request submitted"
+msgstr "Ångerbegäran inskickad"
+
+#: react/src/components/RequestDetail.jsx:197
+msgid "Request Information"
+msgstr "Begäraninformation"
+
+#: react/src/components/RequestDetail.jsx:202
+#: react/src/components/RequestsList.jsx:206
+msgid "Order #"
+msgstr "Ordernr"
+
+#: react/src/components/RequestDetail.jsx:233
+msgid "No reason provided"
+msgstr "Ingen anledning angiven"
+
+#: react/src/components/RequestDetail.jsx:236
+msgid "Created"
+msgstr "Skapad"
+
+#: react/src/components/RequestDetail.jsx:270
+msgid "Processed"
+msgstr "Bearbetad"
+
+#: react/src/components/RequestDetail.jsx:282
+msgid "Order Items"
+msgstr "Orderartiklar"
+
+#: react/src/components/RequestDetail.jsx:291
+msgid "Line Total"
+msgstr "Radsumma"
+
+#: react/src/components/RequestDetail.jsx:326
+msgid "No order items were found for this request."
+msgstr "Inga orderartiklar hittades för denna begäran."
+
+#: react/src/components/RequestDetail.jsx:335
+msgid "Status Timeline"
+msgstr "Statustidslinje"
+
+#: react/src/components/RequestDetail.jsx:345
+msgid "Activity Log"
+msgstr "Aktivitetslogg"
+
+#: react/src/components/RequestDetail.jsx:354
+#: react/src/components/RequestDetail.jsx:384
+msgid "Reject Request"
+msgstr "Avvisa begäran"
+
+#: react/src/components/RequestDetail.jsx:361
+msgid "Rejection Reason"
+msgstr "Anledning till avvisande"
+
+#: react/src/components/RequestsList.jsx:116
+msgid "No change vs last week"
+msgstr "Ingen förändring mot förra veckan"
+
+#: react/src/components/RequestsList.jsx:127
+msgid "No data"
+msgstr "Inga data"
+
+#: react/src/components/RequestsList.jsx:133
+msgid "No change"
+msgstr "Ingen förändring"
+
+#: react/src/components/RequestsList.jsx:149
+msgid "Open Requests"
+msgstr "Öppna begäranden"
+
+#: react/src/components/RequestsList.jsx:163
+msgid "Approved (30d)"
+msgstr "Godkända (30 d)"
+
+#: react/src/components/RequestsList.jsx:205
+msgid "ID"
+msgstr "ID"
+
+#: react/src/components/RequestsList.jsx:211
+msgid "Actions"
+msgstr "Åtgärder"
+
+#: react/src/components/RequestsList.jsx:287
+msgid "View"
+msgstr "Visa"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/src/components/RequestsList.jsx:301
+#, js-format
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Visar %1$d–%2$d av %3$d"
+
+#: react/src/components/RequestsList.jsx:306
+msgid "Showing 0 of 0"
+msgstr "Visar 0 av 0"
+
+#: react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Recensionsförfrågan"
+
+#: react/src/components/SettingsPage.jsx:176
+msgid "Global"
+msgstr "Globalt"
+
+#: react/src/components/SettingsPage.jsx:177
+msgid "WooCommerce only"
+msgstr "Endast WooCommerce"
+
+#: react/src/components/SettingsPage.jsx:239
+msgid "-- Select a page --"
+msgstr "-- Välj en sida --"
+
+#: react/src/components/SettingsPage.jsx:252
+msgid "Failed to load settings."
+msgstr "Det gick inte att läsa in inställningarna."
+
+#: react/src/components/SettingsPage.jsx:293
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Lägg till minst en mottagare för administratörsaviseringar innan du sparar."
+
+#: react/src/components/SettingsPage.jsx:307
+msgid "Settings saved successfully."
+msgstr "Inställningarna sparades."
+
+#: react/src/components/SettingsPage.jsx:312
+msgid "Failed to save settings."
+msgstr "Det gick inte att spara inställningarna."
+
+#: react/src/components/SettingsPage.jsx:332
+msgid "Loading settings..."
+msgstr "Läser in inställningar..."
+
+#: react/src/components/SettingsPage.jsx:341
+msgid "Unable to load settings."
+msgstr "Det går inte att läsa in inställningarna."
+
+#: react/src/components/SettingsPage.jsx:412
+msgid "General"
+msgstr "Allmänt"
+
+#: react/src/components/SettingsPage.jsx:415
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr "Grundläggande beteende och visningsinställningar för ångerformuläret."
+
+#: react/src/components/SettingsPage.jsx:420
+msgid "Withdrawal page"
+msgstr "Ångersida"
+
+#: react/src/components/SettingsPage.jsx:438
+msgid "Embed footer link"
+msgstr "Bädda in länk i sidfoten"
+
+#: react/src/components/SettingsPage.jsx:445
+msgid "Footer link text"
+msgstr "Text för sidfotslänk"
+
+#: react/src/components/SettingsPage.jsx:446
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Texten som visas för ångerlänken i sidfoten."
+
+#: react/src/components/SettingsPage.jsx:460
+msgid "Display scope"
+msgstr "Visningsomfång"
+
+#: react/src/components/SettingsPage.jsx:474
+msgid "Allow partial withdrawals"
+msgstr "Tillåt delvis ånger"
+
+#: react/src/components/SettingsPage.jsx:476
+msgid "Recommended"
+msgstr "Rekommenderas"
+
+#: react/src/components/SettingsPage.jsx:480
+msgid "Withdrawal period"
+msgstr "Ångerfrist"
+
+#: react/src/components/SettingsPage.jsx:492
+msgid "days"
+msgstr "dagar"
+
+#: react/src/components/SettingsPage.jsx:510
+msgid "Start countdown from"
+msgstr "Starta nedräkning från"
+
+#: react/src/components/SettingsPage.jsx:525
+msgid "Reason required"
+msgstr "Anledning krävs"
+
+#: react/src/components/SettingsPage.jsx:538
+msgid "Exclusions"
+msgstr "Undantag"
+
+#: react/src/components/SettingsPage.jsx:541
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Undanta produkttyper, kategorier eller specifika produkter från ångerrätt."
+
+#: react/src/components/SettingsPage.jsx:546
+msgid "Excluded product types"
+msgstr "Undantagna produkttyper"
+
+#: react/src/components/SettingsPage.jsx:547
+msgid "Product types that cannot be withdrawn."
+msgstr "Produkttyper som inte kan ångras."
+
+#: react/src/components/SettingsPage.jsx:562
+msgid "Excluded categories"
+msgstr "Undantagna kategorier"
+
+#: react/src/components/SettingsPage.jsx:563
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Produkter i dessa kategorier kan inte ångras."
+
+#: react/src/components/SettingsPage.jsx:573
+msgid "Excluded products"
+msgstr "Undantagna produkter"
+
+#: react/src/components/SettingsPage.jsx:574
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr "Sök och välj specifika produkter som inte kan ångras."
+
+#: react/src/components/SettingsPage.jsx:591
+msgid "Order status"
+msgstr "Orderstatus"
+
+#: react/src/components/SettingsPage.jsx:594
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Uppdatera orderstatusar automatiskt när ångerbegäranden skickas in eller "
+"godkänns."
+
+#: react/src/components/SettingsPage.jsx:608
+#: react/src/components/SettingsPage.jsx:633
+msgid "Set status to"
+msgstr "Ange status till"
+
+#: react/src/components/SettingsPage.jsx:660
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Konfigurera mottagare för administratörsaviseringar och kundkontakt-e-posten"
+" som visas i mejl om avvisad ånger."
+
+#: react/src/components/SettingsPage.jsx:666
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr "E-postadresser som tar emot aviseringen om nya ångerbegäranden."
+
+#: react/src/components/SettingsPage.jsx:674
+msgid "Customer contact email"
+msgstr "Kundkontakt-e-post"
+
+#: react/src/components/SettingsPage.jsx:675
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"E-postadress som visas för kunder när en ångerbegäran avvisas och de behöver"
+" kontakta dig."
+
+#: react/src/components/SettingsPage.jsx:695
+msgid "Withdrawal button shortcode"
+msgstr "Kortkod för ångerknapp"
+
+#: react/src/components/SettingsPage.jsx:709
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Valfritt. Anpassad knapptext. Använder kortkodens standardetikett om den "
+"utelämnas."
+
+#: react/src/components/SettingsPage.jsx:713
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Valfritt. Extra CSS-klasser som läggs till på knappen."
+
+#: react/src/components/SettingsPage.jsx:727
+msgid "Data management"
+msgstr "Datahantering"
+
+#: react/src/components/SettingsPage.jsx:730
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Styr vad som händer med tilläggsdata när tillägget tas bort."
+
+#: react/src/components/SettingsPage.jsx:738
+msgid "Delete data on uninstall"
+msgstr "Radera data vid avinstallation"
+
+#: react/src/components/SettingsPage.jsx:739
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Ta bort alla tilläggsdata (inställningar, ångerbegäranden, databastabeller) "
+"när tillägget avinstalleras. Denna åtgärd kan inte ångras."
+
+#: react/src/components/SettingsPage.jsx:740
+msgid "Destructive"
+msgstr "Destruktiv"
+
+#: react/src/components/SettingsPage.jsx:754
+msgid "Add at least one recipient to save"
+msgstr "Lägg till minst en mottagare för att spara"
+
+#: react/src/components/SettingsPage.jsx:756
+msgid "Unsaved changes"
+msgstr "Osparade ändringar"
+
+#: react/src/components/SettingsPage.jsx:757
+msgid "All changes saved"
+msgstr "Alla ändringar sparade"
+
+#: react/src/components/SettingsPage.jsx:768
+msgid "Discard"
+msgstr "Kasta"
+
+#: react/src/components/SettingsPage.jsx:778
+msgid "Saving..."
+msgstr "Sparar..."
+
+#: react/src/components/SettingsPage.jsx:779
+msgid "Save settings"
+msgstr "Spara inställningar"
+
+#: react/src/components/StatusTimeline.jsx:29
+msgid "No status changes recorded."
+msgstr "Inga statusändringar registrerade."
+
+#: react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr "Kundinitierade orderavbeställningar och delvisa återbetalningar."
+
+#: react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Begäranden"
+
+#: react/src/utils/getActorLabel.js:11
+msgid "System"
+msgstr "System"
+
+#: react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Användare"
+
+#: react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Okänt"

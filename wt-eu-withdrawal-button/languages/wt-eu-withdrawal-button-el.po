@@ -1,0 +1,2689 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-02T09:48:18+00:00\n"
+"PO-Revision-Date: 2026-07-10 16:13\n"
+"Last-Translator: \n"
+"Language-Team: el\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr ""
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Διαχείριση αιτημάτων υπαναχώρησης από σύμβαση / ακύρωσης παραγγελιών για "
+"παραγγελίες WooCommerce. Συμβατό με την ΕΕ, συμβατό με HPOS."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "webtoffee"
+msgstr ""
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr ""
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:545
+#: includes/frontend/class-wbte-ewb-my-account.php:380
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:233
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Σε εκκρεμότητα"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:546
+#: includes/frontend/class-wbte-ewb-my-account.php:381
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:230
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Εγκεκριμένο"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-order-meta-box.php:547
+#: includes/frontend/class-wbte-ewb-my-account.php:382
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:232
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Απορρίφθηκε"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:170
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+#: react/src/components/RequestDetail.jsx:179
+msgid "Approve"
+msgstr "Έγκριση"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-admin-assets.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:234
+#: react/src/components/RequestDetail.jsx:187
+msgid "Reject"
+msgstr "Απόρριψη"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:161
+#: react/src/components/RequestDetail.jsx:227
+msgid "Full Withdrawal"
+msgstr "Πλήρης υπαναχώρηση"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: includes/admin/class-wbte-ewb-order-meta-box.php:159
+#: react/src/components/RequestDetail.jsx:226
+msgid "Partial Withdrawal"
+msgstr "Μερική υπαναχώρηση"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+#: react/src/components/RequestsList.jsx:196
+msgid "No withdrawal requests found."
+msgstr "Δεν βρέθηκαν αιτήματα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+msgid "Loading…"
+msgstr "Φόρτωση…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:177
+#: includes/frontend/class-wbte-ewb-frontend.php:135
+msgid "An error occurred. Please try again."
+msgstr "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:172
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Είστε βέβαιοι ότι θέλετε να εγκρίνετε αυτό το αίτημα υπαναχώρησης;"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:124
+#: includes/admin/class-wbte-ewb-admin-assets.php:173
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Είστε βέβαιοι ότι θέλετε να απορρίψετε αυτό το αίτημα υπαναχώρησης;"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:169
+msgid "Processing…"
+msgstr "Επεξεργασία…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:174
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr ""
+"Εισαγάγετε έναν λόγο για την απόρριψη αυτού του αιτήματος υπαναχώρησης:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:175
+#: react/src/components/RequestDetail.jsx:362
+msgid "A reason is required when rejecting a request."
+msgstr "Απαιτείται λόγος κατά την απόρριψη ενός αιτήματος."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:176
+msgid "Request updated successfully."
+msgstr "Το αίτημα ενημερώθηκε με επιτυχία."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:69
+msgid "Withdrawal Requests"
+msgstr "Αιτήματα υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/src/layouts/AdminLayout.jsx:21 react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Υπαναχωρήσεις"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Φόρτωση πίνακα υπαναχωρήσεων…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Υποστήριξη"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Αξιολόγηση"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:89
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Η παραγγελία δεν βρέθηκε."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:103
+msgid "No withdrawal request for this order."
+msgstr "Δεν υπάρχει αίτημα υπαναχώρησης για αυτή την παραγγελία."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:141
+#, php-format
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Αίτημα %1$d από %2$d (#%3$d)"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:151
+msgid "Status:"
+msgstr "Κατάσταση:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:157
+msgid "Type:"
+msgstr "Τύπος:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:169
+msgid "Items:"
+msgstr "Προϊόντα:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:172
+#: includes/admin/class-wbte-ewb-order-meta-box.php:306
+#: templates/emails/admin-withdrawal-submitted.php:153
+#: templates/emails/customer-withdrawal-approved.php:137
+#: templates/emails/customer-withdrawal-submitted.php:127
+msgid "Unknown item"
+msgstr "Άγνωστο προϊόν"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:183
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Λόγος:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:190
+msgid "Submitted:"
+msgstr "Υποβλήθηκε:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:198
+msgid "Receipt hash:"
+msgstr "Hash απόδειξης:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:206
+msgid "Processed:"
+msgstr "Επεξεργάστηκε:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:212
+msgid "by"
+msgstr "από"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:222
+msgid "View in dashboard"
+msgstr "Προβολή στον πίνακα ελέγχου"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:262
+#: react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Αφήστε μια αξιολόγηση"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:265
+#: react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Υπενθύμιση αργότερα"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:268
+#: react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Απόρριψη αιτήματος αξιολόγησης"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:432
+#, php-format
+msgid "Approve withdrawal request #%d"
+msgstr "Έγκριση αιτήματος υπαναχώρησης #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:437
+#, php-format
+msgid "Reject withdrawal request #%d"
+msgstr "Απόρριψη αιτήματος υπαναχώρησης #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request"
+msgstr "Έγκριση αιτήματος υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:442
+msgid "Reject withdrawal request"
+msgstr "Απόρριψη αιτήματος υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:528
+msgid "Rejected from orders list."
+msgstr "Απορρίφθηκε από τη λίστα παραγγελιών."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:633
+#, php-format
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Υπαναχωρήθηκαν %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:644
+#, php-format
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Ζητήθηκαν %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/src/components/RequestDetail.jsx:259
+#: react/src/components/RequestDetail.jsx:293
+msgid "Withdrawal"
+msgstr "Υπαναχώρηση"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Ρυθμίσεις υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Διαμορφώστε τον τρόπο λειτουργίας των αιτημάτων υπαναχώρησης / δικαιώματος "
+"επιστροφής στο κατάστημά σας."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Σελίδα υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/src/components/SettingsPage.jsx:421
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr ""
+"Επιλέξτε τη σελίδα όπου οι πελάτες μπορούν να υποβάλλουν αιτήματα "
+"υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Ενσωμάτωση συνδέσμου στο υποσέλιδο"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+#: react/src/components/SettingsPage.jsx:439
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr ""
+"Προσθέστε αυτόματα έναν σύνδεσμο προς τη σελίδα υπαναχώρησης στο υποσέλιδο "
+"του ιστότοπου."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Εύρος εμφάνισης"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/src/components/SettingsPage.jsx:461
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Πού εμφανίζονται η φόρμα υπαναχώρησης και οι σύνδεσμοι."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Καθολικά (όλες οι σελίδες)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Μόνο σελίδες WooCommerce"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Να επιτρέπονται μερικές υπαναχωρήσεις"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/src/components/SettingsPage.jsx:475
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Επιτρέψτε στους πελάτες να υπαναχωρούν για μεμονωμένα προϊόντα αντί για "
+"ολόκληρη την παραγγελία."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Προθεσμία υπαναχώρησης (ημέρες)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/src/components/SettingsPage.jsx:481
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Αριθμός ημερών μετά την επιλεγμένη αρχική κατάσταση κατά τη διάρκεια των "
+"οποίων μπορεί να υποβληθεί αίτημα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Η προθεσμία υπαναχώρησης ξεκινά από"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/src/components/SettingsPage.jsx:511
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Επιλέξτε μία ή περισσότερες καταστάσεις παραγγελίας. Η αντίστροφη μέτρηση "
+"ξεκινά την πρώτη ημερομηνία κατά την οποία η παραγγελία φτάνει σε "
+"οποιαδήποτε επιλεγμένη κατάσταση."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Απαιτείται λόγος"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/src/components/SettingsPage.jsx:526
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr ""
+"Να απαιτείται από τους πελάτες να αναφέρουν έναν λόγο κατά την υποβολή "
+"αιτήματος υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Εξαιρούμενοι τύποι προϊόντων"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Τύποι προϊόντων που εξαιρούνται από το δικαίωμα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/src/components/SettingsPage.jsx:169
+msgid "Virtual"
+msgstr "Εικονικό"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/src/components/SettingsPage.jsx:170
+msgid "Downloadable"
+msgstr "Με δυνατότητα λήψης"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/src/components/SettingsPage.jsx:171
+msgid "Grouped"
+msgstr "Ομαδοποιημένο"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/src/components/SettingsPage.jsx:172
+msgid "External / Affiliate"
+msgstr "Εξωτερικό / συνεργάτη"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Εξαιρούμενες κατηγορίες"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Κατηγορίες προϊόντων που εξαιρούνται από το δικαίωμα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Εξαιρούμενα προϊόντα"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Συγκεκριμένα προϊόντα που εξαιρούνται από το δικαίωμα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Συμπεριφορά εξαίρεσης"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Πώς αντιμετωπίζονται τα εξαιρούμενα προϊόντα στη φόρμα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Απόκρυψη εξαιρούμενων προϊόντων"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Εμφάνιση απενεργοποιημένων με ειδοποίηση"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Κατάσταση παραγγελίας"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Ελέγξτε αν οι καταστάσεις παραγγελίας αλλάζουν αυτόματα κατά τη ροή εργασίας"
+" υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/src/components/SettingsPage.jsx:602
+msgid "Change order status on submission"
+msgstr "Αλλαγή κατάστασης παραγγελίας κατά την υποβολή"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/src/components/SettingsPage.jsx:603
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr ""
+"Αλλαγή αυτόματα της κατάστασης παραγγελίας όταν υποβάλλεται αίτημα "
+"υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Κατάσταση παραγγελίας κατά την υποβολή"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr ""
+"Η κατάσταση παραγγελίας που θα οριστεί όταν υποβάλλεται αίτημα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/src/components/SettingsPage.jsx:627
+msgid "Change order status on approval"
+msgstr "Αλλαγή κατάστασης παραγγελίας κατά την έγκριση"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/src/components/SettingsPage.jsx:628
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Αλλαγή αυτόματα της κατάστασης παραγγελίας όταν εγκρίνεται αίτημα "
+"υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Κατάσταση παραγγελίας κατά την έγκριση"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr ""
+"Η κατάσταση παραγγελίας που θα οριστεί όταν εγκρίνεται αίτημα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "Ειδοποιήσεις email"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr ""
+"Διαμορφώστε τους παραλήπτες διαχειριστή για τα email ειδοποίησης "
+"υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:204
+#: react/src/components/SettingsPage.jsx:665
+msgid "Recipient(s)"
+msgstr "Παραλήπτης(ες)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Διευθύνσεις email διαχωρισμένες με κόμμα για ειδοποιήσεις υπαναχώρησης "
+"διαχειριστή."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Shortcode κουμπιού υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Διαχείριση δεδομένων"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Διαγραφή δεδομένων κατά την απεγκατάσταση"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Αφαίρεση όλων των δεδομένων του πρόσθετου (ρυθμίσεις, αιτήματα υπαναχώρησης,"
+" πίνακες βάσης δεδομένων) κατά την απεγκατάσταση του πρόσθετου."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Προειδοποίηση: Αυτή η ενέργεια είναι μη αναστρέψιμη."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/src/components/SettingsPage.jsx:353
+msgid "Order created"
+msgstr "Η παραγγελία δημιουργήθηκε"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/src/components/SettingsPage.jsx:698
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Προσθέστε ένα κουμπί αιτήματος υπαναχώρησης σε οποιαδήποτε σελίδα ή άρθρο. "
+"Το κουμπί συνδέεται με τη ρυθμισμένη σελίδα υπαναχώρησης."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/src/components/SettingsPage.jsx:703
+msgid "Examples"
+msgstr "Παραδείγματα"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Προαιρετικό. Προσαρμοσμένο κείμενο κουμπιού. Χρησιμοποιεί την προεπιλεγμένη "
+"ετικέτα του shortcode όταν παραλείπεται."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Προαιρετικό. Επιπλέον κλάσεις CSS που προστίθενται στο κουμπί."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Απενεργοποίηση"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Επεξεργασία..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:138
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Εισαγάγετε μια έγκυρη διεύθυνση email."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Υποβολή και απενεργοποίηση"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Πρόβλημα με τη ροή εργασίας υπαναχώρησης"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Υπαναχώρηση επισκέπτη"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Μπορείτε να μας πείτε λίγα περισσότερα;"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Partial withdrawal"
+msgstr "Μερική υπαναχώρηση"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/src/components/SettingsPage.jsx:657
+msgid "Email notifications"
+msgstr "Ειδοποιήσεις email"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "Συμμόρφωση με την ΕΕ / νομικά ζητήματα"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Άλλο"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Βρήκα ένα καλύτερο πρόσθετο"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Ποιο πρόσθετο;"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Το πρόσθετο είναι εξαιρετικό, αλλά χρειάζομαι μια συγκεκριμένη λειτουργία "
+"που δεν υποστηρίζετε"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Μπορείτε να μας πείτε περισσότερα για αυτή τη λειτουργία;"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Δεν είναι αυτό που έψαχνα"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Διένεξη με άλλο πρόσθετο"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Αν έχετε λίγο χρόνο, ενημερώστε μας γιατί απενεργοποιείτε:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr ""
+"Η WebToffee μπορεί να επικοινωνήσει μαζί μου σχετικά με αυτά τα σχόλια."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Εισαγάγετε τη διεύθυνση email σας."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Εισαγάγετε διεύθυνση email"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Δεν συλλέγουμε προσωπικά δεδομένα όταν υποβάλλετε αυτή τη φόρμα. Εκτιμούμε "
+"τα σχόλιά σας."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Πολιτική απορρήτου"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Μετάβαση στην υποστήριξη"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:144
+#: react/src/components/RequestDetail.jsx:375
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Προτιμώ να μην πω"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Δεν έχετε άδεια να εκτελέσετε αυτή την ενέργεια."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr ""
+"Μη έγκυρο διακριτικό ασφαλείας. Ανανεώστε τη σελίδα και δοκιμάστε ξανά."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"Οι συνδεδεμένοι πελάτες πρέπει να υποβάλλουν αιτήματα υπαναχώρησης από τον "
+"λογαριασμό τους."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr ""
+"Ο αριθμός παραγγελίας και το email απαιτούνται για πρόσβαση ως επισκέπτης."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Δώστε μια έγκυρη διεύθυνση email."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:154
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:158
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/frontend/class-wbte-ewb-guest-verification.php:219
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr ""
+"Δεν βρέθηκε παραγγελία που να αντιστοιχεί στον παρεχόμενο αριθμό "
+"παραγγελίας."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:588
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:163
+msgid "The email address does not match the order."
+msgstr "Η διεύθυνση email δεν αντιστοιχεί στην παραγγελία."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Ο αριθμός παραγγελίας δεν αντιστοιχεί στη ζητούμενη παραγγελία."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:749
+msgid "WooCommerce order ID."
+msgstr "Αναγνωριστικό παραγγελίας WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Αριθμός παραγγελίας (απαιτείται για πρόσβαση ως επισκέπτης)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "Email πελάτη (απαιτείται για πρόσβαση ως επισκέπτης)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "Αναγνωριστικό παραγγελίας WooCommerce. Δώστε αυτό ή το order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Αριθμός παραγγελίας ορατός στον πελάτη. Δώστε αυτό ή το order_id."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Διεύθυνση email πελάτη (απαιτείται για επισκέπτες)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Αν πρόκειται για πλήρη ή μερική υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Στοιχεία γραμμής για μερική υπαναχώρηση. Απαιτούνται αν το request_type "
+"είναι partial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "Αναγνωριστικό στοιχείου γραμμής WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "Αναγνωριστικό προϊόντος WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Ποσότητα προς υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:792
+msgid "Customer reason for the withdrawal."
+msgstr "Λόγος πελάτη για την υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:349
+msgid "Guest withdrawal service is not available."
+msgstr "Η υπηρεσία υπαναχώρησης επισκέπτη δεν είναι διαθέσιμη."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:360
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:285
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Επιλέξτε τουλάχιστον ένα προϊόν προς υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:388
+#: includes/api/class-wbte-ewb-rest-customer.php:521
+msgid "Withdrawal request submitted successfully."
+msgstr "Το αίτημα υπαναχώρησης υποβλήθηκε με επιτυχία."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:405
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Τα αιτήματα υπαναχώρησης επισκεπτών πρέπει να επαληθεύονται μέσω email πριν "
+"δημιουργηθούν."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid "Either order_id or order_number is required."
+msgstr "Απαιτείται είτε το order_id είτε το order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:430
+msgid "Items are required for partial withdrawal requests."
+msgstr "Απαιτούνται προϊόντα για αιτήματα μερικής υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:449
+#: includes/api/class-wbte-ewb-rest-customer.php:611
+msgid "The specified order could not be found."
+msgstr "Η καθορισμένη παραγγελία δεν βρέθηκε."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:467
+msgid "A reason is required for withdrawal requests."
+msgstr "Απαιτείται λόγος για τα αιτήματα υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:500
+#: includes/api/class-wbte-ewb-rest-requests.php:401
+#: includes/api/class-wbte-ewb-rest-requests.php:443
+msgid "Request service is not available."
+msgstr "Η υπηρεσία αιτημάτων δεν είναι διαθέσιμη."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:548
+msgid "This order does not belong to your account."
+msgstr "Αυτή η παραγγελία δεν ανήκει στον λογαριασμό σας."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:564
+msgid "Order number is required for guest withdrawal requests."
+msgstr ""
+"Ο αριθμός παραγγελίας απαιτείται για αιτήματα υπαναχώρησης επισκεπτών."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:572
+msgid "Email is required for guest withdrawal requests."
+msgstr "Το email απαιτείται για αιτήματα υπαναχώρησης επισκεπτών."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:580
+msgid "The order number does not match this order."
+msgstr "Ο αριθμός παραγγελίας δεν αντιστοιχεί σε αυτή την παραγγελία."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:628
+msgid "Eligibility service is not available."
+msgstr "Η υπηρεσία ελέγχου επιλεξιμότητας δεν είναι διαθέσιμη."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:666
+msgid "This item is not eligible for withdrawal."
+msgstr "Αυτό το προϊόν δεν είναι επιλέξιμο για υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:676
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Αυτό το προϊόν περιλαμβάνεται ήδη σε ένα εκκρεμές ή εγκεκριμένο αίτημα "
+"υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:743
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:510
+msgid "Unique identifier for the withdrawal request."
+msgstr "Μοναδικό αναγνωριστικό για το αίτημα υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:754
+#: includes/api/class-wbte-ewb-rest-requests.php:521
+msgid "Customer-facing order number."
+msgstr "Αριθμός παραγγελίας ορατός στον πελάτη."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:759
+msgid "Status of the withdrawal request."
+msgstr "Κατάσταση του αιτήματος υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:766
+msgid "Full or partial withdrawal."
+msgstr "Πλήρης ή μερική υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:772
+msgid "Line items included in the withdrawal."
+msgstr "Στοιχεία γραμμής που περιλαμβάνονται στην υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:797
+msgid "Date the request was created."
+msgstr "Ημερομηνία δημιουργίας του αιτήματος."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "Το WooCommerce δεν είναι διαθέσιμο."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Προαιρετική σημείωση για την έγκριση."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Λόγος απόρριψης του αιτήματος υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Απαιτείται σημείωση κατά την απόρριψη ενός αιτήματος."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Φιλτράρισμα κατά κατάσταση αιτήματος."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr ""
+"Φιλτράρισμα αιτημάτων που δημιουργήθηκαν κατά ή μετά από αυτή την ημερομηνία"
+" (ΕΕΕΕ-ΜΜ-ΗΗ)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr ""
+"Φιλτράρισμα αιτημάτων που δημιουργήθηκαν κατά ή πριν από αυτή την ημερομηνία"
+" (ΕΕΕΕ-ΜΜ-ΗΗ)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Φιλτράρισμα κατά email ή όνομα πελάτη."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by order number or receipt hash."
+msgstr "Αναζήτηση κατά αριθμό παραγγελίας ή hash απόδειξης."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Φιλτράρισμα κατά αριθμό παραγγελίας."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Φιλτράρισμα κατά hash απόδειξης (πλήρης ή μερική αντιστοίχιση)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Μέγιστος αριθμός στοιχείων που επιστρέφονται ανά σελίδα."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Τρέχουσα σελίδα της συλλογής."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:482
+msgid "Request repository is not available."
+msgstr "Το αποθετήριο αιτημάτων δεν είναι διαθέσιμο."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:493
+#: includes/core/class-wbte-ewb-request-service.php:574
+msgid "Withdrawal request not found."
+msgstr "Το αίτημα υπαναχώρησης δεν βρέθηκε."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Χρήστης επισκέπτης"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:422
+msgid "Withdrawal request approved successfully."
+msgstr "Το αίτημα υπαναχώρησης εγκρίθηκε με επιτυχία."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:464
+msgid "Withdrawal request rejected."
+msgstr "Το αίτημα υπαναχώρησης απορρίφθηκε."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:516
+msgid "Associated WooCommerce order ID."
+msgstr "Συσχετισμένο αναγνωριστικό παραγγελίας WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:526
+msgid "Customer email address."
+msgstr "Διεύθυνση email πελάτη."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:532
+msgid "Customer user ID (0 or null for guests)."
+msgstr "Αναγνωριστικό χρήστη πελάτη (0 ή null για επισκέπτες)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:537
+msgid "Current status of the withdrawal request."
+msgstr "Τρέχουσα κατάσταση του αιτήματος υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:543
+msgid "Type of withdrawal request."
+msgstr "Τύπος αιτήματος υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:549
+msgid "JSON-encoded array of line items."
+msgstr "Πίνακας στοιχείων γραμμής σε μορφή JSON."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:554
+msgid "Customer-provided reason for withdrawal."
+msgstr "Λόγος υπαναχώρησης που παρέχεται από τον πελάτη."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:559
+msgid "Date the request was created (ISO 8601)."
+msgstr "Ημερομηνία δημιουργίας του αιτήματος (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:566
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Ημερομηνία τελευταίας ενημέρωσης του αιτήματος (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:573
+msgid "Admin user ID who processed the request."
+msgstr "Αναγνωριστικό χρήστη διαχειριστή που επεξεργάστηκε το αίτημα."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:579
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Ημερομηνία επεξεργασίας του αιτήματος (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:586
+msgid "Activity log entries for this request."
+msgstr "Καταχωρίσεις αρχείου δραστηριότητας για αυτό το αίτημα."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Ενέργεια banner αξιολόγησης."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Το banner αξιολόγησης ενημερώθηκε."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "Αναγνωριστικό σελίδας για τη φόρμα υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Αν θα εμφανίζεται σύνδεσμος υπαναχώρησης στο υποσέλιδο του ιστότοπου."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Πού θα εμφανίζεται ο σύνδεσμος υποσέλιδου."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Αν θα επιτρέπονται μερικές υπαναχωρήσεις παραγγελιών."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Αριθμός ημερών εντός των οποίων επιτρέπεται η υπαναχώρηση."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+#, php-format
+msgid "%s must be at least 1."
+msgstr "Το %s πρέπει να είναι τουλάχιστον 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr ""
+"Καταστάσεις παραγγελίας από τις οποίες μπορεί να ξεκινήσει η αντίστροφη "
+"μέτρηση της προθεσμίας υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Αν απαιτείται λόγος κατά την υποβολή υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Τύποι προϊόντων που εξαιρούνται από την υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr ""
+"Αναγνωριστικά κατηγοριών προϊόντων που εξαιρούνται από την υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "Αναγνωριστικά προϊόντων που εξαιρούνται από την υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr ""
+"Πώς να αντιμετωπίζονται τα εξαιρούμενα προϊόντα στη φόρμα υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Αν θα αλλάζει η κατάσταση παραγγελίας όταν υποβάλλεται υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Κατάσταση παραγγελίας που θα οριστεί κατά την υποβολή υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Αν θα αλλάζει η κατάσταση παραγγελίας όταν εγκρίνεται υπαναχώρηση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Κατάσταση παραγγελίας που θα οριστεί κατά την έγκριση υπαναχώρησης."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr ""
+"Αν θα διαγράφονται όλα τα δεδομένα του πρόσθετου κατά την απεγκατάσταση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr ""
+"Διευθύνσεις email που λαμβάνουν ειδοποιήσεις υπαναχώρησης διαχειριστή."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Email επικοινωνίας ορατό στον πελάτη που εμφανίζεται στα email απορριφθείσας"
+" υπαναχώρησης."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+#, php-format
+msgid "%s must be an array of email addresses."
+msgstr "Το %s πρέπει να είναι πίνακας διευθύνσεων email."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Απαιτείται τουλάχιστον ένας παραλήπτης ειδοποιήσεων διαχειριστή."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr ""
+"Ένας ή περισσότεροι παραλήπτες ειδοποιήσεων περιέχουν μη έγκυρη διεύθυνση "
+"email."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "Η διεύθυνση email επικοινωνίας πελάτη είναι μη έγκυρη."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr ""
+"Οι αρχικές καταστάσεις της προθεσμίας υπαναχώρησης πρέπει να είναι πίνακας."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr ""
+"Μία ή περισσότερες αρχικές καταστάσεις της προθεσμίας υπαναχώρησης είναι μη "
+"έγκυρες."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "Η κλάση ρυθμίσεων δεν είναι διαθέσιμη."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Δεν δόθηκαν έγκυρες ρυθμίσεις για ενημέρωση."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Οι ρυθμίσεις ενημερώθηκαν με επιτυχία."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "aitima-ypanachorisis"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Αίτημα υπαναχώρησης"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Εκκρεμής υπαναχώρηση"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+#, php-format
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Εκκρεμής υπαναχώρηση <span class=\"count\">(%s)</span>"
+msgstr[1] "Εκκρεμείς υπαναχωρήσεις <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Υπαναχωρήθηκε"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+#, php-format
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Υπαναχωρήθηκε <span class=\"count\">(%s)</span>"
+msgstr[1] "Υπαναχωρήθηκαν <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+#, php-format
+msgid "Change status to %s"
+msgstr "Αλλαγή κατάστασης σε %s"
+
+#: includes/class-wbte-ewb-settings.php:316
+#: react/src/components/SettingsPage.jsx:453
+msgid "Request Withdrawal"
+msgstr "Ζητήστε υπαναχώρηση"
+
+#: includes/core/class-wbte-ewb-eligibility.php:344
+msgid "This product type cannot be withdrawn."
+msgstr "Αυτός ο τύπος προϊόντος δεν υπόκειται σε υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-eligibility.php:348
+msgid "Virtual products cannot be withdrawn."
+msgstr "Τα εικονικά προϊόντα δεν υπόκεινται σε υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-eligibility.php:352
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Τα προϊόντα με δυνατότητα λήψης δεν υπόκεινται σε υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-eligibility.php:361
+msgid "This product cannot be withdrawn."
+msgstr "Αυτό το προϊόν δεν υπόκειται σε υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-eligibility.php:370
+msgid "Products in this category cannot be withdrawn."
+msgstr "Τα προϊόντα σε αυτή την κατηγορία δεν υπόκεινται σε υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:137
+msgid "Please enter your order number."
+msgstr "Εισαγάγετε τον αριθμό παραγγελίας σας."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Δώστε έναν λόγο για το αίτημα υπαναχώρησής σας."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:108
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Δεν είναι δυνατή η προσθήκη του αιτήματος υπαναχώρησής σας στην ουρά. "
+"Δοκιμάστε ξανά."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:167
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:264
+#: includes/frontend/class-wbte-ewb-guest-verification.php:220
+msgid "The email address does not match the billing email on this order."
+msgstr ""
+"Η διεύθυνση email δεν αντιστοιχεί στο email χρέωσης αυτής της παραγγελίας."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:172
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:176
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:271
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid "This order is not eligible for withdrawal."
+msgstr "Αυτή η παραγγελία δεν είναι επιλέξιμη για υπαναχώρηση."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:219
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:226
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:605
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:612
+#: includes/frontend/class-wbte-ewb-guest-verification.php:217
+msgid "This verification link is invalid or has already been used."
+msgstr ""
+"Αυτός ο σύνδεσμος επαλήθευσης είναι μη έγκυρος ή έχει ήδη χρησιμοποιηθεί."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:233
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:499
+#: includes/frontend/class-wbte-ewb-guest-verification.php:222
+msgid "This withdrawal request has already been submitted."
+msgstr "Αυτό το αίτημα υπαναχώρησης έχει ήδη υποβληθεί."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:242
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+msgid "Verification link expired."
+msgstr "Ο σύνδεσμος επαλήθευσης έληξε."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:248
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:506
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:627
+#: includes/frontend/class-wbte-ewb-guest-verification.php:218
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Αυτός ο σύνδεσμος επαλήθευσης έληξε. Υποβάλετε νέο αίτημα υπαναχώρησης."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:294
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:149
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Η υπηρεσία υπαναχώρησης δεν είναι προσωρινά διαθέσιμη."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:492
+msgid "This verification session is invalid or has expired."
+msgstr "Αυτή η συνεδρία επαλήθευσης είναι μη έγκυρη ή έχει λήξει."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:537
+#, php-format
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Επαληθεύστε το αίτημα υπαναχώρησής σας"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:543
+#, php-format
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Επαληθεύστε το αίτημα υπαναχώρησής σας κάνοντας κλικ στον παρακάτω σύνδεσμο:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Παραγγελία: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "Η καθορισμένη παραγγελία δεν υπάρχει."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr ""
+"Δεν είστε εξουσιοδοτημένοι να υποβάλετε υπαναχώρηση για αυτή την παραγγελία."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Αποτυχία δημιουργίας του αιτήματος υπαναχώρησης."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Το αίτημα υπαναχώρησης υποβλήθηκε."
+
+#: includes/core/class-wbte-ewb-request-service.php:273
+msgid "The submitted withdrawal items are invalid."
+msgstr "Τα υποβληθέντα προϊόντα υπαναχώρησης είναι μη έγκυρα."
+
+#: includes/core/class-wbte-ewb-request-service.php:317
+msgid "No items are currently available for withdrawal on this order."
+msgstr ""
+"Δεν υπάρχουν προς το παρόν διαθέσιμα προϊόντα για υπαναχώρηση σε αυτή την "
+"παραγγελία."
+
+#: includes/core/class-wbte-ewb-request-service.php:396
+#: includes/core/class-wbte-ewb-request-service.php:409
+#: includes/core/class-wbte-ewb-request-service.php:419
+msgid "One or more selected items are invalid for this order."
+msgstr ""
+"Ένα ή περισσότερα επιλεγμένα προϊόντα είναι μη έγκυρα για αυτή την "
+"παραγγελία."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:429
+#, php-format
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "Το «%s» δεν είναι επιλέξιμο για υπαναχώρηση σε αυτή την παραγγελία."
+
+#: includes/core/class-wbte-ewb-request-service.php:430
+#: includes/core/class-wbte-ewb-request-service.php:448
+msgid "This item"
+msgstr "Αυτό το προϊόν"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:447
+#, php-format
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr ""
+"Το «%s» δεν είναι πλέον διαθέσιμο για υπαναχώρηση σε αυτή την παραγγελία."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:459
+#, php-format
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr ""
+"Η ποσότητα υπαναχώρησης για το «%1$s» δεν μπορεί να υπερβαίνει το %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:460
+msgid "this item"
+msgstr "αυτό το προϊόν"
+
+#: includes/core/class-wbte-ewb-request-service.php:501
+msgid "Only pending requests can be approved."
+msgstr "Μόνο τα εκκρεμή αιτήματα μπορούν να εγκριθούν."
+
+#: includes/core/class-wbte-ewb-request-service.php:582
+msgid "Only pending requests can be rejected."
+msgstr "Μόνο τα εκκρεμή αιτήματα μπορούν να απορριφθούν."
+
+#: includes/core/class-wbte-ewb-request-service.php:670
+msgid "Withdrawal request pending review."
+msgstr "Το αίτημα υπαναχώρησης εκκρεμεί για εξέταση."
+
+#: includes/core/class-wbte-ewb-request-service.php:688
+msgid "Withdrawal request approved."
+msgstr "Το αίτημα υπαναχώρησης εγκρίθηκε."
+
+#: includes/core/class-wbte-ewb-request-service.php:731
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Η μερική υπαναχώρηση εγκρίθηκε. Επαναφορά της κατάστασης παραγγελίας για τα "
+"υπόλοιπα προϊόντα."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:361
+#, php-format
+msgid "%1$d of %2$d"
+msgstr "%1$d από %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:516
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/src/components/RequestsList.jsx:264
+msgid "Partial"
+msgstr "Μερική"
+
+#: includes/core/class-wbte-ewb-request.php:519
+#: includes/emails/class-wbte-ewb-email-preview.php:94
+#: includes/emails/class-wbte-ewb-email-preview.php:205
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/src/components/RequestsList.jsx:265
+msgid "Full"
+msgstr "Πλήρης"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/src/components/ReviewBanner.jsx:71
+msgid ""
+"You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
+"Withdrawal Button!"
+msgstr ""
+"Λάβατε 10+ αιτήματα υπαναχώρησης. Αφήστε μια αξιολόγηση για το WebToffee EU "
+"Withdrawal Button!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. Leave a review!"
+msgstr ""
+"Χρησιμοποιείτε το WebToffee EU Withdrawal Button εδώ και μία εβδομάδα. "
+"Αφήστε μια αξιολόγηση!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Μη έγκυρη ενέργεια banner αξιολόγησης."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Επαλήθευση υπαναχώρησης επισκέπτη"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Αποστέλλεται σε πελάτες-επισκέπτες για την επαλήθευση του αιτήματος "
+"υπαναχώρησής τους πριν δημιουργηθεί."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Επαληθεύστε το αίτημα υπαναχώρησής σας για την παραγγελία "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Επαληθεύστε το αίτημα υπαναχώρησής σας"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:167
+#: includes/emails/class-wbte-ewb-email-preview.php:225
+msgid "I would like to return this order."
+msgstr "Θα ήθελα να επιστρέψω αυτή την παραγγελία."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:199
+#: includes/emails/class-wbte-ewb-email-preview.php:245
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr ""
+"Αυτό το αίτημα δεν μπορεί να εγκριθεί επειδή η προθεσμία υπαναχώρησης έχει "
+"λήξει."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:231
+msgid "Sample product"
+msgstr "Δείγμα προϊόντος"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Το αίτημα υπαναχώρησης εγκρίθηκε"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Αποστέλλεται στον πελάτη όταν εγκρίνεται ένα αίτημα υπαναχώρησης."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Το αίτημα υπαναχώρησής σας για την παραγγελία "
+"#{order_number} εγκρίθηκε"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:176
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:197
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:194
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:176
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Διαθέσιμα σύμβολα κράτησης θέσης: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:180
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:198
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:180
+msgid "Enable/Disable"
+msgstr "Ενεργοποίηση/απενεργοποίηση"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:182
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:203
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:200
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:182
+msgid "Enable this email notification"
+msgstr "Ενεργοποίηση αυτής της ειδοποίησης email"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:186
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:186
+msgid "Subject"
+msgstr "Θέμα"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:194
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:215
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:221
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:194
+msgid "Email heading"
+msgstr "Επικεφαλίδα email"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:202
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:223
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:229
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:202
+msgid "Email type"
+msgstr "Τύπος email"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:204
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:225
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:231
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:204
+msgid "Choose which format of email to send."
+msgstr "Επιλέξτε σε ποια μορφή email θα αποσταλεί."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Το αίτημα υπαναχώρησης απορρίφθηκε"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Αποστέλλεται στον πελάτη όταν απορρίπτεται ένα αίτημα υπαναχώρησης."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Το αίτημα υπαναχώρησής σας για την παραγγελία "
+"#{order_number} απορρίφθηκε"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Νέο αίτημα υπαναχώρησης (διαχειριστής)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Αποστέλλεται στον διαχειριστή του ιστότοπου όταν υποβάλλεται νέο αίτημα "
+"υπαναχώρησης."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Νέο αίτημα υπαναχώρησης για την παραγγελία #{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Νέο αίτημα υπαναχώρησης"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#, php-format
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Προαιρετική παράκαμψη μόνο για αυτό το email. Αφήστε το κενό για να "
+"χρησιμοποιηθούν οι παραλήπτες που έχουν διαμορφωθεί στις ρυθμίσεις "
+"υπαναχώρησης (προεπιλογή %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Το αίτημα υπαναχώρησης υποβλήθηκε"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Αποστέλλεται στον πελάτη όταν υποβάλλεται ένα αίτημα υπαναχώρησης."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Λήφθηκε αίτημα υπαναχώρησης για την παραγγελία "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Το αίτημα υπαναχώρησης λήφθηκε"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Ο έλεγχος ασφαλείας απέτυχε. Δοκιμάστε ξανά."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:130
+msgid "Please select an order."
+msgstr "Επιλέξτε μια παραγγελία."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Δεν έχετε άδεια να ζητήσετε υπαναχώρηση για αυτή την παραγγελία."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:177
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Το αίτημα υπαναχώρησής σας υποβλήθηκε με επιτυχία. Θα λάβετε σύντομα ένα "
+"email επιβεβαίωσης."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:136
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Το αίτημα υπαναχώρησής σας υποβλήθηκε με επιτυχία."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:129
+msgid "Loading..."
+msgstr "Φόρτωση..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:131
+msgid "Please select at least one item."
+msgstr "Επιλέξτε τουλάχιστον ένα προϊόν."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:132
+msgid "quantity"
+msgstr "ποσότητα"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:133
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Εισαγάγετε έγκυρη ποσότητα για κάθε επιλεγμένο προϊόν."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:134
+msgid "Please provide a reason for withdrawal."
+msgstr "Δώστε έναν λόγο για την υπαναχώρηση."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:139
+msgid "Fetching eligible items..."
+msgstr "Ανάκτηση επιλέξιμων προϊόντων..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:140
+msgid "No eligible items found for this order."
+msgstr "Δεν βρέθηκαν επιλέξιμα προϊόντα για αυτή την παραγγελία."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:141
+msgid "Review your withdrawal request"
+msgstr "Ελέγξτε το αίτημα υπαναχώρησής σας"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:142
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Ελέγξτε τα παρακάτω στοιχεία. Για να ολοκληρώσετε τη νόμιμη υπαναχώρησή σας,"
+" κάντε κλικ στο «Επιβεβαίωση υπαναχώρησης»."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:143
+msgid "Confirm withdrawal"
+msgstr "Επιβεβαίωση υπαναχώρησης"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:145
+#: react/src/components/RequestsList.jsx:207
+msgid "Customer"
+msgstr "Πελάτης"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/src/components/RequestDetail.jsx:264
+msgid "Order"
+msgstr "Παραγγελία"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:147
+msgid "Withdrawal type"
+msgstr "Τύπος υπαναχώρησης"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:148
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Προϊόντα προς υπαναχώρηση"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:149
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Λόγος υπαναχώρησης"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Full withdrawal"
+msgstr "Πλήρης υπαναχώρηση"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:176
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Το αίτημα υποβλήθηκε"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:200
+msgid ""
+"Thank you. If the details you provided are correct, you will receive a "
+"verification email to complete your withdrawal request."
+msgstr ""
+"Σας ευχαριστούμε. Αν τα στοιχεία που δώσατε είναι σωστά, θα λάβετε ένα email"
+" επαλήθευσης για να ολοκληρώσετε το αίτημα υπαναχώρησής σας."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:229
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"Δεν μπορέσαμε να επαληθεύσουμε το αίτημα υπαναχώρησής σας. Δοκιμάστε ξανά."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr ""
+"Πρέπει να είστε συνδεδεμένοι για να δείτε τα αιτήματα υπαναχώρησής σας."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Δεν έχετε υποβάλει ακόμη κανένα αίτημα υπαναχώρησης."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Αίτημα"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/src/components/ActivityLog.jsx:32
+#: react/src/components/RequestsList.jsx:210
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/src/components/RequestsList.jsx:208
+msgid "Type"
+msgstr "Τύπος"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:254
+#: react/src/components/RequestsList.jsx:209
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:265
+msgid "Withdrawal Request"
+msgstr "Αίτημα υπαναχώρησης"
+
+#. translators: 1: request ID, 2: status badge
+#: includes/frontend/class-wbte-ewb-my-account.php:270
+#, php-format
+msgid "Request #%1$s: %2$s"
+msgstr "Αίτημα #%1$s: %2$s"
+
+#. translators: %s: date
+#: includes/frontend/class-wbte-ewb-my-account.php:281
+#, php-format
+msgid "Submitted on %s"
+msgstr "Υποβλήθηκε στις %s"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Το email σας επαληθεύτηκε. Επιλέξτε τα προϊόντα για τα οποία επιθυμείτε "
+"υπαναχώρηση και υποβάλετε το αίτημά σας παρακάτω."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Αριθμός παραγγελίας"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Διεύθυνση email χρέωσης"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Φόρτωση προϊόντων..."
+
+#: includes/frontend/views/form-guest-verified.php:80
+#: includes/frontend/views/form-guest.php:93
+#: includes/frontend/views/form-logged-in.php:121
+msgid "Submit Withdrawal Request"
+msgstr "Υποβολή αιτήματος υπαναχώρησης"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "υποχρεωτικό"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive a verification email. After verifying your "
+"email, you can choose which items to withdraw."
+msgstr ""
+"Εισαγάγετε τον αριθμό παραγγελίας και το email χρέωσης για να ξεκινήσετε. Αν"
+" τα στοιχεία σας ταιριάζουν με τα αρχεία μας, θα λάβετε ένα email "
+"επαλήθευσης. Αφού επαληθεύσετε το email σας, μπορείτε να επιλέξετε ποια "
+"προϊόντα θα υπαναχωρήσετε."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Προς το παρόν δεν έχετε παραγγελίες επιλέξιμες για υπαναχώρηση."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Επιλέξτε μια παραγγελία --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+#, php-format
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "Email"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Όνομα"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Επώνυμο"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+#, php-format
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "Υποβλήθηκε νέο αίτημα υπαναχώρησης για την παραγγελία #%s."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Στοιχεία πελάτη"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Όνομα πελάτη"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/src/components/RequestDetail.jsx:219
+msgid "Customer Email"
+msgstr "Email πελάτη"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Λεπτομέρειες αιτήματος"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Αριθμός παραγγελίας"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/src/components/RequestDetail.jsx:223
+msgid "Request Type"
+msgstr "Τύπος αιτήματος"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Ημερομηνία υποβολής"
+
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/src/components/RequestDetail.jsx:232
+msgid "Reason"
+msgstr "Λόγος"
+
+#: templates/emails/admin-withdrawal-submitted.php:136
+msgid "Items Included in This Request"
+msgstr "Προϊόντα που περιλαμβάνονται σε αυτό το αίτημα"
+
+#: templates/emails/admin-withdrawal-submitted.php:142
+msgid "Item"
+msgstr "Προϊόν"
+
+#: templates/emails/admin-withdrawal-submitted.php:145
+#: templates/emails/customer-withdrawal-approved.php:131
+#: templates/emails/customer-withdrawal-submitted.php:119
+#: react/src/components/RequestDetail.jsx:290
+msgid "Quantity"
+msgstr "Ποσότητα"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:173
+#, php-format
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Για να ελέγξετε και να διαχειριστείτε αυτό το αίτημα, επισκεφθείτε τον <a "
+"href=\"%s\">πίνακα αιτημάτων υπαναχώρησης</a>."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Λάβαμε το αίτημα υπαναχώρησής σας. Για να το ολοκληρώσετε, επαληθεύστε τη "
+"διεύθυνση email χρέωσής σας κάνοντας κλικ στο παρακάτω κουμπί."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Αριθμός παραγγελίας:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Επαλήθευση αιτήματος υπαναχώρησης"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Αν δεν ζητήσατε υπαναχώρηση, μπορείτε να αγνοήσετε αυτό το email."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+#, php-format
+msgid "Hi %s,"
+msgstr "Γεια σας %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+#, php-format
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Καλά νέα! Το αίτημα υπαναχώρησής σας για την παραγγελία #%s εγκρίθηκε."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Ημερομηνία επεξεργασίας"
+
+#: templates/emails/customer-withdrawal-approved.php:126
+#: templates/emails/customer-withdrawal-submitted.php:110
+msgid "Items"
+msgstr "Προϊόντα"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:116
+#: react/src/components/RequestDetail.jsx:289
+msgid "Product"
+msgstr "Προϊόν"
+
+#: templates/emails/customer-withdrawal-approved.php:146
+msgid "Next Steps"
+msgstr "Επόμενα βήματα"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Η υπαναχώρησή σας επεξεργάστηκε. Ανάλογα με τον τύπο του αιτήματος, μπορεί "
+"να ισχύουν τα εξής:"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Αν οφείλεται επιστροφή χρημάτων, θα διεκπεραιωθεί στην αρχική σας μέθοδο "
+"πληρωμής. Παρακαλούμε αφήστε μερικές εργάσιμες ημέρες για να εμφανιστεί."
+
+#: templates/emails/customer-withdrawal-approved.php:155
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Αν χρειάζεται να επιστρέψετε προϊόντα, θα λάβετε ξεχωριστές οδηγίες "
+"επιστροφής."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr ""
+"Αν έχετε οποιεσδήποτε ερωτήσεις, μη διστάσετε να επικοινωνήσετε μαζί μας."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+#, php-format
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Εξετάσαμε το αίτημα υπαναχώρησής σας για την παραγγελία #%s. Δυστυχώς, δεν "
+"μπορούμε να εγκρίνουμε αυτό το αίτημα αυτή τη στιγμή."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Αν πιστεύετε ότι αυτή η απόφαση ελήφθη κατά λάθος ή αν έχετε πρόσθετες "
+"πληροφορίες να παράσχετε, επικοινωνήστε μαζί μας και θα χαρούμε να "
+"εξετάσουμε ξανά την υπόθεσή σας."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+#, php-format
+msgid "You can reach us at %s."
+msgstr "Μπορείτε να επικοινωνήσετε μαζί μας στο %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+#, php-format
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Λάβαμε το αίτημα υπαναχώρησής σας για την παραγγελία #%s. Σας ευχαριστούμε "
+"που μας ενημερώσατε."
+
+#: templates/emails/customer-withdrawal-submitted.php:139
+msgid "What Happens Next?"
+msgstr "Τι συμβαίνει στη συνέχεια;"
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Η ομάδα μας θα εξετάσει το αίτημά σας και θα επικοινωνήσει μαζί σας το "
+"συντομότερο δυνατό. Θα λάβετε άλλο ένα email μόλις ληφθεί απόφαση."
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr ""
+"Αν έχετε ερωτήσεις στο μεταξύ, μη διστάσετε να επικοινωνήσετε μαζί μας."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/src/components/RequestDetail.jsx:241
+msgid "Receipt hash"
+msgstr "Hash απόδειξης"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Λάβαμε το αίτημα υπαναχώρησής σας. Για να το ολοκληρώσετε, επαληθεύστε τη "
+"διεύθυνση email χρέωσής σας χρησιμοποιώντας τον παρακάτω σύνδεσμο."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+#, php-format
+msgid "Order number: %s"
+msgstr "Αριθμός παραγγελίας: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+#, php-format
+msgid "Reason: %s"
+msgstr "Λόγος: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"Το WebToffee EU Withdrawal Button for WooCommerce απαιτεί την εγκατάσταση "
+"και ενεργοποίηση του WooCommerce."
+
+#: react/src/components/ActivityLog.jsx:23
+msgid "No activity recorded."
+msgstr "Δεν καταγράφηκε δραστηριότητα."
+
+#: react/src/components/ActivityLog.jsx:33
+msgid "Actor"
+msgstr "Δρών"
+
+#: react/src/components/ActivityLog.jsx:34
+msgid "Action"
+msgstr "Ενέργεια"
+
+#: react/src/components/ActivityLog.jsx:35
+msgid "Note"
+msgstr "Σημείωση"
+
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Δεν βρέθηκαν κατηγορίες προϊόντων."
+
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#. translators: %d: number of selected products
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+#, js-format
+msgid "%d selected"
+msgstr "%d επιλεγμένα"
+
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Εκκαθάριση όλων"
+
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Αφαίρεση κατηγορίας"
+
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Αναζήτηση κατηγοριών…"
+
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Πληκτρολογήστε για φιλτράρισμα κατηγοριών…"
+
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Καμία κατηγορία δεν ταιριάζει με την αναζήτησή σας."
+
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Αυτή η διεύθυνση email έχει ήδη προστεθεί."
+
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Αφαίρεση email"
+
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr ""
+"Προσθέστε τουλάχιστον έναν παραλήπτη για να αποθηκεύσετε τις ρυθμίσεις."
+
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Εισαγάγετε διεύθυνση email…"
+
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Όλες οι καταστάσεις"
+
+#: react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Ημερομηνία από"
+
+#: react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Ημερομηνία έως"
+
+#: react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Αρ. παραγγελίας ή hash απόδειξης"
+
+#: react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Επαναφορά"
+
+#: react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Εφαρμογή φίλτρων"
+
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Δεν βρέθηκαν καταστάσεις παραγγελίας."
+
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Αφαίρεση κατάστασης"
+
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Αναζήτηση καταστάσεων παραγγελίας…"
+
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Πληκτρολογήστε για φιλτράρισμα καταστάσεων παραγγελίας…"
+
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Καμία κατάσταση παραγγελίας δεν ταιριάζει με την αναζήτησή σας."
+
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Αφαίρεση προϊόντος"
+
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Αναζήτηση προϊόντος…"
+
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Αναζήτηση…"
+
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Δεν βρέθηκαν προϊόντα."
+
+#: react/src/components/RequestDetail.jsx:103
+#: react/src/components/RequestDetail.jsx:168
+msgid "Back to List"
+msgstr "Επιστροφή στη λίστα"
+
+#: react/src/components/RequestDetail.jsx:119
+msgid "Not included"
+msgstr "Δεν περιλαμβάνεται"
+
+#: react/src/components/RequestDetail.jsx:126
+msgid "Withdrawal approved"
+msgstr "Η υπαναχώρηση εγκρίθηκε"
+
+#: react/src/components/RequestDetail.jsx:133
+msgid "Withdrawal rejected"
+msgstr "Η υπαναχώρηση απορρίφθηκε"
+
+#: react/src/components/RequestDetail.jsx:139
+msgid "Withdrawal request submitted"
+msgstr "Το αίτημα υπαναχώρησης υποβλήθηκε"
+
+#: react/src/components/RequestDetail.jsx:197
+msgid "Request Information"
+msgstr "Πληροφορίες αιτήματος"
+
+#: react/src/components/RequestDetail.jsx:202
+#: react/src/components/RequestsList.jsx:206
+msgid "Order #"
+msgstr "Αρ. παραγγελίας"
+
+#: react/src/components/RequestDetail.jsx:233
+msgid "No reason provided"
+msgstr "Δεν δόθηκε λόγος"
+
+#: react/src/components/RequestDetail.jsx:236
+msgid "Created"
+msgstr "Δημιουργήθηκε"
+
+#: react/src/components/RequestDetail.jsx:270
+msgid "Processed"
+msgstr "Επεξεργάστηκε"
+
+#: react/src/components/RequestDetail.jsx:282
+msgid "Order Items"
+msgstr "Προϊόντα παραγγελίας"
+
+#: react/src/components/RequestDetail.jsx:291
+msgid "Line Total"
+msgstr "Σύνολο γραμμής"
+
+#: react/src/components/RequestDetail.jsx:326
+msgid "No order items were found for this request."
+msgstr "Δεν βρέθηκαν προϊόντα παραγγελίας για αυτό το αίτημα."
+
+#: react/src/components/RequestDetail.jsx:335
+msgid "Status Timeline"
+msgstr "Χρονολόγιο κατάστασης"
+
+#: react/src/components/RequestDetail.jsx:345
+msgid "Activity Log"
+msgstr "Αρχείο δραστηριότητας"
+
+#: react/src/components/RequestDetail.jsx:354
+#: react/src/components/RequestDetail.jsx:384
+msgid "Reject Request"
+msgstr "Απόρριψη αιτήματος"
+
+#: react/src/components/RequestDetail.jsx:361
+msgid "Rejection Reason"
+msgstr "Λόγος απόρριψης"
+
+#: react/src/components/RequestsList.jsx:116
+msgid "No change vs last week"
+msgstr "Καμία μεταβολή σε σχέση με την προηγούμενη εβδομάδα"
+
+#: react/src/components/RequestsList.jsx:127
+msgid "No data"
+msgstr "Χωρίς δεδομένα"
+
+#: react/src/components/RequestsList.jsx:133
+msgid "No change"
+msgstr "Καμία μεταβολή"
+
+#: react/src/components/RequestsList.jsx:149
+msgid "Open Requests"
+msgstr "Ανοιχτά αιτήματα"
+
+#: react/src/components/RequestsList.jsx:163
+msgid "Approved (30d)"
+msgstr "Εγκεκριμένα (30 ημ.)"
+
+#: react/src/components/RequestsList.jsx:205
+msgid "ID"
+msgstr "ID"
+
+#: react/src/components/RequestsList.jsx:211
+msgid "Actions"
+msgstr "Ενέργειες"
+
+#: react/src/components/RequestsList.jsx:287
+msgid "View"
+msgstr "Προβολή"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/src/components/RequestsList.jsx:301
+#, js-format
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Εμφάνιση %1$d–%2$d από %3$d"
+
+#: react/src/components/RequestsList.jsx:306
+msgid "Showing 0 of 0"
+msgstr "Εμφάνιση 0 από 0"
+
+#: react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Αίτημα αξιολόγησης"
+
+#: react/src/components/SettingsPage.jsx:176
+msgid "Global"
+msgstr "Καθολικά"
+
+#: react/src/components/SettingsPage.jsx:177
+msgid "WooCommerce only"
+msgstr "Μόνο WooCommerce"
+
+#: react/src/components/SettingsPage.jsx:239
+msgid "-- Select a page --"
+msgstr "-- Επιλέξτε μια σελίδα --"
+
+#: react/src/components/SettingsPage.jsx:252
+msgid "Failed to load settings."
+msgstr "Αποτυχία φόρτωσης των ρυθμίσεων."
+
+#: react/src/components/SettingsPage.jsx:293
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Προσθέστε τουλάχιστον έναν παραλήπτη ειδοποιήσεων διαχειριστή πριν από την "
+"αποθήκευση."
+
+#: react/src/components/SettingsPage.jsx:307
+msgid "Settings saved successfully."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία."
+
+#: react/src/components/SettingsPage.jsx:312
+msgid "Failed to save settings."
+msgstr "Αποτυχία αποθήκευσης των ρυθμίσεων."
+
+#: react/src/components/SettingsPage.jsx:332
+msgid "Loading settings..."
+msgstr "Φόρτωση ρυθμίσεων..."
+
+#: react/src/components/SettingsPage.jsx:341
+msgid "Unable to load settings."
+msgstr "Δεν είναι δυνατή η φόρτωση των ρυθμίσεων."
+
+#: react/src/components/SettingsPage.jsx:412
+msgid "General"
+msgstr "Γενικά"
+
+#: react/src/components/SettingsPage.jsx:415
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr "Βασική συμπεριφορά και προτιμήσεις εμφάνισης της φόρμας υπαναχώρησης."
+
+#: react/src/components/SettingsPage.jsx:420
+msgid "Withdrawal page"
+msgstr "Σελίδα υπαναχώρησης"
+
+#: react/src/components/SettingsPage.jsx:438
+msgid "Embed footer link"
+msgstr "Ενσωμάτωση συνδέσμου στο υποσέλιδο"
+
+#: react/src/components/SettingsPage.jsx:445
+msgid "Footer link text"
+msgstr "Κείμενο συνδέσμου υποσέλιδου"
+
+#: react/src/components/SettingsPage.jsx:446
+msgid "The text displayed for the footer withdrawal link."
+msgstr ""
+"Το κείμενο που εμφανίζεται για τον σύνδεσμο υπαναχώρησης στο υποσέλιδο."
+
+#: react/src/components/SettingsPage.jsx:460
+msgid "Display scope"
+msgstr "Εύρος εμφάνισης"
+
+#: react/src/components/SettingsPage.jsx:474
+msgid "Allow partial withdrawals"
+msgstr "Να επιτρέπονται μερικές υπαναχωρήσεις"
+
+#: react/src/components/SettingsPage.jsx:476
+msgid "Recommended"
+msgstr "Συνιστάται"
+
+#: react/src/components/SettingsPage.jsx:480
+msgid "Withdrawal period"
+msgstr "Προθεσμία υπαναχώρησης"
+
+#: react/src/components/SettingsPage.jsx:492
+msgid "days"
+msgstr "ημέρες"
+
+#: react/src/components/SettingsPage.jsx:510
+msgid "Start countdown from"
+msgstr "Έναρξη αντίστροφης μέτρησης από"
+
+#: react/src/components/SettingsPage.jsx:525
+msgid "Reason required"
+msgstr "Απαιτείται λόγος"
+
+#: react/src/components/SettingsPage.jsx:538
+msgid "Exclusions"
+msgstr "Εξαιρέσεις"
+
+#: react/src/components/SettingsPage.jsx:541
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Εξαιρέστε τύπους προϊόντων, κατηγορίες ή συγκεκριμένα προϊόντα από το "
+"δικαίωμα υπαναχώρησης."
+
+#: react/src/components/SettingsPage.jsx:546
+msgid "Excluded product types"
+msgstr "Εξαιρούμενοι τύποι προϊόντων"
+
+#: react/src/components/SettingsPage.jsx:547
+msgid "Product types that cannot be withdrawn."
+msgstr "Τύποι προϊόντων που δεν υπόκεινται σε υπαναχώρηση."
+
+#: react/src/components/SettingsPage.jsx:562
+msgid "Excluded categories"
+msgstr "Εξαιρούμενες κατηγορίες"
+
+#: react/src/components/SettingsPage.jsx:563
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Τα προϊόντα σε αυτές τις κατηγορίες δεν υπόκεινται σε υπαναχώρηση."
+
+#: react/src/components/SettingsPage.jsx:573
+msgid "Excluded products"
+msgstr "Εξαιρούμενα προϊόντα"
+
+#: react/src/components/SettingsPage.jsx:574
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr ""
+"Αναζητήστε και επιλέξτε συγκεκριμένα προϊόντα που δεν υπόκεινται σε "
+"υπαναχώρηση."
+
+#: react/src/components/SettingsPage.jsx:591
+msgid "Order status"
+msgstr "Κατάσταση παραγγελίας"
+
+#: react/src/components/SettingsPage.jsx:594
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Αυτόματη ενημέρωση των καταστάσεων παραγγελίας όταν τα αιτήματα υπαναχώρησης"
+" υποβάλλονται ή εγκρίνονται."
+
+#: react/src/components/SettingsPage.jsx:608
+#: react/src/components/SettingsPage.jsx:633
+msgid "Set status to"
+msgstr "Ορισμός κατάστασης σε"
+
+#: react/src/components/SettingsPage.jsx:660
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Διαμορφώστε τους παραλήπτες ειδοποιήσεων διαχειριστή και το email "
+"επικοινωνίας πελάτη που εμφανίζεται στα email απορριφθείσας υπαναχώρησης."
+
+#: react/src/components/SettingsPage.jsx:666
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr ""
+"Διευθύνσεις email που λαμβάνουν την ειδοποίηση για νέο αίτημα υπαναχώρησης."
+
+#: react/src/components/SettingsPage.jsx:674
+msgid "Customer contact email"
+msgstr "Email επικοινωνίας πελάτη"
+
+#: react/src/components/SettingsPage.jsx:675
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"Διεύθυνση email που εμφανίζεται στους πελάτες όταν ένα αίτημα υπαναχώρησης "
+"απορρίπτεται και χρειάζεται να επικοινωνήσουν μαζί σας."
+
+#: react/src/components/SettingsPage.jsx:695
+msgid "Withdrawal button shortcode"
+msgstr "Shortcode κουμπιού υπαναχώρησης"
+
+#: react/src/components/SettingsPage.jsx:709
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Προαιρετικό. Προσαρμοσμένο κείμενο κουμπιού. Χρησιμοποιεί την "
+"προεπιλεγμένη ετικέτα του shortcode όταν παραλείπεται."
+
+#: react/src/components/SettingsPage.jsx:713
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Προαιρετικό. Επιπλέον κλάσεις CSS που προστίθενται στο κουμπί."
+
+#: react/src/components/SettingsPage.jsx:727
+msgid "Data management"
+msgstr "Διαχείριση δεδομένων"
+
+#: react/src/components/SettingsPage.jsx:730
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr ""
+"Ελέγξτε τι συμβαίνει με τα δεδομένα του πρόσθετου όταν αυτό αφαιρείται."
+
+#: react/src/components/SettingsPage.jsx:738
+msgid "Delete data on uninstall"
+msgstr "Διαγραφή δεδομένων κατά την απεγκατάσταση"
+
+#: react/src/components/SettingsPage.jsx:739
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Αφαίρεση όλων των δεδομένων του πρόσθετου (ρυθμίσεις, αιτήματα υπαναχώρησης,"
+" πίνακες βάσης δεδομένων) κατά την απεγκατάσταση του πρόσθετου. Αυτή η "
+"ενέργεια είναι μη αναστρέψιμη."
+
+#: react/src/components/SettingsPage.jsx:740
+msgid "Destructive"
+msgstr "Καταστροφικό"
+
+#: react/src/components/SettingsPage.jsx:754
+msgid "Add at least one recipient to save"
+msgstr "Προσθέστε τουλάχιστον έναν παραλήπτη για αποθήκευση"
+
+#: react/src/components/SettingsPage.jsx:756
+msgid "Unsaved changes"
+msgstr "Μη αποθηκευμένες αλλαγές"
+
+#: react/src/components/SettingsPage.jsx:757
+msgid "All changes saved"
+msgstr "Όλες οι αλλαγές αποθηκεύτηκαν"
+
+#: react/src/components/SettingsPage.jsx:768
+msgid "Discard"
+msgstr "Απόρριψη"
+
+#: react/src/components/SettingsPage.jsx:778
+msgid "Saving..."
+msgstr "Αποθήκευση..."
+
+#: react/src/components/SettingsPage.jsx:779
+msgid "Save settings"
+msgstr "Αποθήκευση ρυθμίσεων"
+
+#: react/src/components/StatusTimeline.jsx:29
+msgid "No status changes recorded."
+msgstr "Δεν καταγράφηκαν αλλαγές κατάστασης."
+
+#: react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr ""
+"Ακυρώσεις παραγγελιών και μερικές επιστροφές χρημάτων που ξεκινούν από τον "
+"πελάτη."
+
+#: react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Αιτήματα"
+
+#: react/src/utils/getActorLabel.js:11
+msgid "System"
+msgstr "Σύστημα"
+
+#: react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Χρήστης"
+
+#: react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Άγνωστο"

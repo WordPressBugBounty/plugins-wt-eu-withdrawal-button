@@ -1,0 +1,128 @@
+.wbte-ewb-uninstall-modal {
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.wbte-ewb-uninstall-modal.is-active {
+	display: block;
+}
+
+.wbte-ewb-uninstall-modal__wrap {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	background: #fff;
+}
+
+.wbte-ewb-uninstall-modal__header {
+	border-bottom: 1px solid #eee;
+	padding: 8px 20px;
+}
+
+.wbte-ewb-uninstall-modal__header h3 {
+	line-height: 150%;
+	margin: 0;
+}
+
+.wbte-ewb-uninstall-modal__body {
+	padding: 5px 20px;
+}
+
+.wbte-ewb-uninstall-modal__body .input-text,
+.wbte-ewb-uninstall-modal__body textarea {
+	width: 75%;
+}
+
+.wbte-ewb-uninstall-modal__body .input-text::placeholder,
+.wbte-ewb-uninstall-modal__body textarea::placeholder {
+	font-size: 12px;
+}
+
+.wbte-ewb-uninstall-modal__body .reason-input {
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+.wbte-ewb-uninstall-modal__footer {
+	border-top: 1px solid #eee;
+	padding: 12px 20px;
+	text-align: left;
+}
+
+.wbte-ewb-uninstall-modal__footer .dashicons-external {
+	margin-top: 3px;
+}
+
+.wbte-ewb-uninstall-policy {
+	font-style: italic;
+	text-align: left;
+	font-size: 12px;
+	color: #aaa;
+	line-height: 14px;
+	margin-top: 15px;
+}
+
+.wbte-ewb-uninstall-policy a {
+	font-size: 11px;
+	color: #4b9cc3;
+	text-decoration-color: #99c3d7;
+}
+
+.wbte-ewb-uninstall-sub-reasons {
+	display: none;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.wbte-ewb-uninstall-skip {
+	color: #939697;
+	text-decoration-color: #d0d3d5;
+	float: right;
+	margin-top: 7px;
+}
+
+.wbte-ewb-uninstall-reasons li {
+	padding-top: 5px;
+}
+
+.wbte-ewb-uninstall-checkbox-top-border {
+	display: block;
+	border-top: 1px solid #ddd;
+	margin-top: 1px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.wbte-ewb-uninstall-contact-label {
+	display: block;
+	margin-bottom: 0;
+}
+
+.wbte-ewb-uninstall-email-wrap {
+	margin-top: 10px;
+}
+
+.wbte-ewb-uninstall-email-label {
+	font-weight: bold;
+}
+
+.wbte-ewb-uninstall-email-input {
+	width: 75%;
+	height: 40px;
+	padding: 2px 15px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 2px solid #2874ba;
+}
+
+.wbte-ewb-uninstall-email-error {
+	color: #d63638;
+	font-size: 12px;
+	margin-top: 5px;
+}

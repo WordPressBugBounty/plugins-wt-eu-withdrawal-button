@@ -1,0 +1,530 @@
+{
+    "translation-revision-date": "2026-07-07T11:50:09+00:00",
+    "generator": "WebToffee EU Withdrawal Button",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Pending": [
+                "Väntande"
+            ],
+            "Approved": [
+                "Godkänd"
+            ],
+            "Rejected": [
+                "Avvisad"
+            ],
+            "Approve": [
+                "Godkänn"
+            ],
+            "Reject": [
+                "Avvisa"
+            ],
+            "Full Withdrawal": [
+                "Fullständig ånger"
+            ],
+            "Partial Withdrawal": [
+                "Delvis ånger"
+            ],
+            "No withdrawal requests found.": [
+                "Inga ångerbegäranden hittades."
+            ],
+            "A reason is required when rejecting a request.": [
+                "En anledning krävs när en begäran avvisas."
+            ],
+            "Withdrawals": [
+                "Ångerbegäranden"
+            ],
+            "Settings": [
+                "Inställningar"
+            ],
+            "Leave a review": [
+                "Lämna en recension"
+            ],
+            "Remind me later": [
+                "Påminn mig senare"
+            ],
+            "Dismiss review request": [
+                "Avfärda recensionsförfrågan"
+            ],
+            "Withdrawal": [
+                "Ånger"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Välj sidan där kunder kan skicka in ångerbegäranden."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Lägg automatiskt till en länk till ångersidan i webbplatsens sidfot."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Var ångerformuläret och länkarna visas."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Låt kunder ångra enskilda artiklar i stället för hela ordern."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Antal dagar efter den valda startstatusen under vilka en ångerbegäran kan skickas in."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Välj en eller flera orderstatusar. Nedräkningen börjar det tidigaste datum då ordern når någon av de valda statusarna."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Kräv att kunder anger en anledning när de skickar in en ångerbegäran."
+            ],
+            "Virtual": [
+                "Virtuell"
+            ],
+            "Downloadable": [
+                "Nedladdningsbar"
+            ],
+            "Grouped": [
+                "Grupperad"
+            ],
+            "External / Affiliate": [
+                "Extern / affiliate"
+            ],
+            "Change order status on submission": [
+                "Ändra orderstatus vid inskickning"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Ändra automatiskt orderstatusen när en ångerbegäran skickas in."
+            ],
+            "Change order status on approval": [
+                "Ändra orderstatus vid godkännande"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Ändra automatiskt orderstatusen när en ångerbegäran godkänns."
+            ],
+            "Recipient(s)": [
+                "Mottagare"
+            ],
+            "Order created": [
+                "Order skapad"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Lägg till en knapp för ångerbegäran på valfri sida eller inlägg. Knappen länkar till din konfigurerade ångersida."
+            ],
+            "Examples": [
+                "Exempel"
+            ],
+            "Please enter a valid email address.": [
+                "Ange en giltig e-postadress."
+            ],
+            "Email notifications": [
+                "E-postaviseringar"
+            ],
+            "Cancel": [
+                "Avbryt"
+            ],
+            "Guest user": [
+                "Gästanvändare"
+            ],
+            "Request Withdrawal": [
+                "Begär ånger"
+            ],
+            "Partial": [
+                "Delvis"
+            ],
+            "Full": [
+                "Fullständig"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Du har fått 10+ ångerbegäranden. Lämna en recension för WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Du har använt WebToffee EU Withdrawal Button i en vecka. Lämna en recension!"
+            ],
+            "Customer": [
+                "Kund"
+            ],
+            "Order": [
+                "Order"
+            ],
+            "Date": [
+                "Datum"
+            ],
+            "Type": [
+                "Typ"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "Customer Email": [
+                "Kundens e-post"
+            ],
+            "Request Type": [
+                "Begärantyp"
+            ],
+            "Reason": [
+                "Anledning"
+            ],
+            "Quantity": [
+                "Antal"
+            ],
+            "Product": [
+                "Produkt"
+            ],
+            "Receipt hash": [
+                "Kvittohash"
+            ],
+            "No activity recorded.": [
+                "Ingen aktivitet registrerad."
+            ],
+            "Actor": [
+                "Aktör"
+            ],
+            "Action": [
+                "Åtgärd"
+            ],
+            "Note": [
+                "Notis"
+            ],
+            "No product categories found.": [
+                "Inga produktkategorier hittades."
+            ],
+            "%d selected": [
+                "%d valda"
+            ],
+            "Clear all": [
+                "Rensa alla"
+            ],
+            "Remove category": [
+                "Ta bort kategori"
+            ],
+            "Search categories…": [
+                "Sök kategorier…"
+            ],
+            "Type to filter categories…": [
+                "Skriv för att filtrera kategorier…"
+            ],
+            "No categories match your search.": [
+                "Inga kategorier matchar din sökning."
+            ],
+            "This email address is already added.": [
+                "Denna e-postadress är redan tillagd."
+            ],
+            "Remove email": [
+                "Ta bort e-post"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Lägg till minst en mottagare för att spara inställningarna."
+            ],
+            "Enter email address…": [
+                "Ange e-postadress…"
+            ],
+            "Add": [
+                "Lägg till"
+            ],
+            "All Statuses": [
+                "Alla statusar"
+            ],
+            "Date From": [
+                "Datum från"
+            ],
+            "Date To": [
+                "Datum till"
+            ],
+            "Search": [
+                "Sök"
+            ],
+            "Order # or receipt hash": [
+                "Ordernr eller kvittohash"
+            ],
+            "Reset": [
+                "Återställ"
+            ],
+            "Apply Filters": [
+                "Använd filter"
+            ],
+            "No order statuses found.": [
+                "Inga orderstatusar hittades."
+            ],
+            "Remove status": [
+                "Ta bort status"
+            ],
+            "Search order statuses…": [
+                "Sök orderstatusar…"
+            ],
+            "Type to filter order statuses…": [
+                "Skriv för att filtrera orderstatusar…"
+            ],
+            "No order statuses match your search.": [
+                "Inga orderstatusar matchar din sökning."
+            ],
+            "Remove product": [
+                "Ta bort produkt"
+            ],
+            "Search for a product…": [
+                "Sök efter en produkt…"
+            ],
+            "Searching…": [
+                "Söker…"
+            ],
+            "No products found.": [
+                "Inga produkter hittades."
+            ],
+            "Back to List": [
+                "Tillbaka till listan"
+            ],
+            "Not included": [
+                "Ingår inte"
+            ],
+            "Withdrawal approved": [
+                "Ånger godkänd"
+            ],
+            "Withdrawal rejected": [
+                "Ånger avvisad"
+            ],
+            "Withdrawal request submitted": [
+                "Ångerbegäran inskickad"
+            ],
+            "Request Information": [
+                "Begäraninformation"
+            ],
+            "Order #": [
+                "Ordernr"
+            ],
+            "No reason provided": [
+                "Ingen anledning angiven"
+            ],
+            "Created": [
+                "Skapad"
+            ],
+            "Processed": [
+                "Bearbetad"
+            ],
+            "Order Items": [
+                "Orderartiklar"
+            ],
+            "Line Total": [
+                "Radsumma"
+            ],
+            "No order items were found for this request.": [
+                "Inga orderartiklar hittades för denna begäran."
+            ],
+            "Status Timeline": [
+                "Statustidslinje"
+            ],
+            "Activity Log": [
+                "Aktivitetslogg"
+            ],
+            "Reject Request": [
+                "Avvisa begäran"
+            ],
+            "Rejection Reason": [
+                "Anledning till avvisande"
+            ],
+            "No change vs last week": [
+                "Ingen förändring mot förra veckan"
+            ],
+            "No data": [
+                "Inga data"
+            ],
+            "No change": [
+                "Ingen förändring"
+            ],
+            "Open Requests": [
+                "Öppna begäranden"
+            ],
+            "Approved (30d)": [
+                "Godkända (30 d)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Åtgärder"
+            ],
+            "View": [
+                "Visa"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Visar %1$d–%2$d av %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Visar 0 av 0"
+            ],
+            "Review request": [
+                "Recensionsförfrågan"
+            ],
+            "Global": [
+                "Globalt"
+            ],
+            "WooCommerce only": [
+                "Endast WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Välj en sida --"
+            ],
+            "Failed to load settings.": [
+                "Det gick inte att läsa in inställningarna."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Lägg till minst en mottagare för administratörsaviseringar innan du sparar."
+            ],
+            "Settings saved successfully.": [
+                "Inställningarna sparades."
+            ],
+            "Failed to save settings.": [
+                "Det gick inte att spara inställningarna."
+            ],
+            "Loading settings...": [
+                "Läser in inställningar..."
+            ],
+            "Unable to load settings.": [
+                "Det går inte att läsa in inställningarna."
+            ],
+            "General": [
+                "Allmänt"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Grundläggande beteende och visningsinställningar för ångerformuläret."
+            ],
+            "Withdrawal page": [
+                "Ångersida"
+            ],
+            "Embed footer link": [
+                "Bädda in länk i sidfoten"
+            ],
+            "Footer link text": [
+                "Text för sidfotslänk"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Texten som visas för ångerlänken i sidfoten."
+            ],
+            "Display scope": [
+                "Visningsomfång"
+            ],
+            "Allow partial withdrawals": [
+                "Tillåt delvis ånger"
+            ],
+            "Recommended": [
+                "Rekommenderas"
+            ],
+            "Withdrawal period": [
+                "Ångerfrist"
+            ],
+            "days": [
+                "dagar"
+            ],
+            "Start countdown from": [
+                "Starta nedräkning från"
+            ],
+            "Reason required": [
+                "Anledning krävs"
+            ],
+            "Exclusions": [
+                "Undantag"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Undanta produkttyper, kategorier eller specifika produkter från ångerrätt."
+            ],
+            "Excluded product types": [
+                "Undantagna produkttyper"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Produkttyper som inte kan ångras."
+            ],
+            "Excluded categories": [
+                "Undantagna kategorier"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Produkter i dessa kategorier kan inte ångras."
+            ],
+            "Excluded products": [
+                "Undantagna produkter"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Sök och välj specifika produkter som inte kan ångras."
+            ],
+            "Order status": [
+                "Orderstatus"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Uppdatera orderstatusar automatiskt när ångerbegäranden skickas in eller godkänns."
+            ],
+            "Set status to": [
+                "Ange status till"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Konfigurera mottagare för administratörsaviseringar och kundkontakt-e-posten som visas i mejl om avvisad ånger."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "E-postadresser som tar emot aviseringen om nya ångerbegäranden."
+            ],
+            "Customer contact email": [
+                "Kundkontakt-e-post"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "E-postadress som visas för kunder när en ångerbegäran avvisas och de behöver kontakta dig."
+            ],
+            "Withdrawal button shortcode": [
+                "Kortkod för ångerknapp"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                " — Valfritt. Anpassad knapptext. Använder kortkodens standardetikett om den utelämnas."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                " — Valfritt. Extra CSS-klasser som läggs till på knappen."
+            ],
+            "Data management": [
+                "Datahantering"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Styr vad som händer med tilläggsdata när tillägget tas bort."
+            ],
+            "Delete data on uninstall": [
+                "Radera data vid avinstallation"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Ta bort alla tilläggsdata (inställningar, ångerbegäranden, databastabeller) när tillägget avinstalleras. Denna åtgärd kan inte ångras."
+            ],
+            "Destructive": [
+                "Destruktiv"
+            ],
+            "Add at least one recipient to save": [
+                "Lägg till minst en mottagare för att spara"
+            ],
+            "Unsaved changes": [
+                "Osparade ändringar"
+            ],
+            "All changes saved": [
+                "Alla ändringar sparade"
+            ],
+            "Discard": [
+                "Kasta"
+            ],
+            "Saving...": [
+                "Sparar..."
+            ],
+            "Save settings": [
+                "Spara inställningar"
+            ],
+            "No status changes recorded.": [
+                "Inga statusändringar registrerade."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Kundinitierade orderavbeställningar och delvisa återbetalningar."
+            ],
+            "Requests": [
+                "Begäranden"
+            ],
+            "System": [
+                "System"
+            ],
+            "User": [
+                "Användare"
+            ],
+            "Unknown": [
+                "Okänt"
+            ]
+        }
+    }
+}

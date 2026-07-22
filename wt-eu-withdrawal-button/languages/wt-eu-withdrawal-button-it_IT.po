@@ -1,0 +1,2669 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Withdrawal Button for WooCommerce 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-"
+"button\n"
+"POT-Creation-Date: 2026-07-02T09:48:18+00:00\n"
+"PO-Revision-Date: 2026-06-25 14:54+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "Pulsante di recesso dell'ordine UE WebToffee per WooCommerce"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Gestire le richieste di recesso dal contratto/annullamento dell'ordine per "
+"gli ordini WooCommerce. Conforme UE, compatibile HPOS."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "webtoffee"
+msgstr "webtoffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:545
+#: includes/frontend/class-wbte-ewb-my-account.php:380
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:233
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "In attesa"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:546
+#: includes/frontend/class-wbte-ewb-my-account.php:381
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:230
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Approvato"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-order-meta-box.php:547
+#: includes/frontend/class-wbte-ewb-my-account.php:382
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:232
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Respinto"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:170
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+#: react/src/components/RequestDetail.jsx:179
+msgid "Approve"
+msgstr "Approvare"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-admin-assets.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:234
+#: react/src/components/RequestDetail.jsx:187
+msgid "Reject"
+msgstr "Rifiutare"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:161
+#: react/src/components/RequestDetail.jsx:227
+msgid "Full Withdrawal"
+msgstr "Recesso totale"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: includes/admin/class-wbte-ewb-order-meta-box.php:159
+#: react/src/components/RequestDetail.jsx:226
+msgid "Partial Withdrawal"
+msgstr "Recesso parziale"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+#: react/src/components/RequestsList.jsx:196
+msgid "No withdrawal requests found."
+msgstr "Nessuna richiesta di recesso trovata."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+msgid "Loading…"
+msgstr "Caricamento…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:177
+#: includes/frontend/class-wbte-ewb-frontend.php:135
+msgid "An error occurred. Please try again."
+msgstr "Si è verificato un errore. Per favore riprova."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:172
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Sei sicuro di voler approvare questa richiesta di recesso?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:124
+#: includes/admin/class-wbte-ewb-admin-assets.php:173
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Sei sicuro di voler rifiutare questa richiesta di recesso?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:169
+msgid "Processing…"
+msgstr "Elaborazione..."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:174
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Inserisci un motivo per rifiutare questa richiesta di recesso:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:175
+#: react/src/components/RequestDetail.jsx:362
+msgid "A reason is required when rejecting a request."
+msgstr "È necessario fornire un motivo quando si rifiuta una richiesta."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:176
+msgid "Request updated successfully."
+msgstr "Richiesta aggiornata con successo."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:69
+msgid "Withdrawal Requests"
+msgstr "Richieste di recesso"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/src/layouts/AdminLayout.jsx:21 react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Recessi"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Caricamento dashboard dei recessi…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Supporto"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Revisione"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:89
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Ordine non trovato."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:103
+msgid "No withdrawal request for this order."
+msgstr "Nessuna richiesta di recesso per questo ordine."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:141
+#, php-format
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Richiesta %1$d di %2$d (#%3$d)"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:151
+msgid "Status:"
+msgstr "Stato:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:157
+msgid "Type:"
+msgstr "Tipo:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:169
+msgid "Items:"
+msgstr "Elementi:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:172
+#: includes/admin/class-wbte-ewb-order-meta-box.php:306
+#: templates/emails/admin-withdrawal-submitted.php:153
+#: templates/emails/customer-withdrawal-approved.php:137
+#: templates/emails/customer-withdrawal-submitted.php:127
+msgid "Unknown item"
+msgstr "Articolo sconosciuto"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:183
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Motivo:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:190
+msgid "Submitted:"
+msgstr "Inserito:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:198
+msgid "Receipt hash:"
+msgstr "Hash ricevuta:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:206
+msgid "Processed:"
+msgstr "Elaborato:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:212
+msgid "by"
+msgstr "di"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:222
+msgid "View in dashboard"
+msgstr "Visualizza nella dashboard"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:262
+#: react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Lascia una recensione"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:265
+#: react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Ricordamelo più tardi"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:268
+#: react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Ignora la richiesta di recensione"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:432
+#, php-format
+msgid "Approve withdrawal request #%d"
+msgstr "Approva la richiesta di recesso #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:437
+#, php-format
+msgid "Reject withdrawal request #%d"
+msgstr "Rifiuta la richiesta di recesso #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request"
+msgstr "Approva la richiesta di recesso"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:442
+msgid "Reject withdrawal request"
+msgstr "Rifiutare la richiesta di recesso"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:528
+msgid "Rejected from orders list."
+msgstr "Rifiutato dall'elenco degli ordini."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:633
+#, php-format
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Recesso %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:644
+#, php-format
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Richiesto %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/src/components/RequestDetail.jsx:259
+#: react/src/components/RequestDetail.jsx:293
+msgid "Withdrawal"
+msgstr "Recesso"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Impostazioni recesso"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid "Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Configura come funzionano le richieste di recesso/diritto di reso nel tuo "
+"negozio."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Pagina di recesso"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/src/components/SettingsPage.jsx:421
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr ""
+"Seleziona la pagina in cui i clienti possono inviare richieste di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Incorpora collegamento a piè di pagina"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+#: react/src/components/SettingsPage.jsx:439
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr ""
+"Aggiungi automaticamente un collegamento alla pagina di recesso nel footer "
+"del sito."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Ambito di visualizzazione"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/src/components/SettingsPage.jsx:461
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Dove vengono visualizzati il ​​modulo di recesso e i link."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globale (tutte le pagine)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Solo pagine WooCommerce"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Consenti recessi parziali"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/src/components/SettingsPage.jsx:475
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Consenti ai clienti di esercitare il recesso su singoli articoli anziché "
+"l'intero ordine."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Periodo di recesso (giorni)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/src/components/SettingsPage.jsx:481
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Numero di giorni dopo lo stato iniziale selezionato durante i quali è "
+"possibile inviare una richiesta di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Il periodo di recesso decorre da"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/src/components/SettingsPage.jsx:511
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date "
+"the order reaches any selected status."
+msgstr ""
+"Seleziona uno o più stati dell'ordine. Il conto alla rovescia inizia alla "
+"data più antica in cui l'ordine raggiunge uno degli stati selezionati."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Motivo obbligatorio"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/src/components/SettingsPage.jsx:526
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr ""
+"Richiedere ai clienti di fornire un motivo quando inviano una richiesta di "
+"recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Tipi di prodotti esclusi"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Tipi di prodotti esclusi dall'idoneità al recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/src/components/SettingsPage.jsx:169
+msgid "Virtual"
+msgstr "Virtuale"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/src/components/SettingsPage.jsx:170
+msgid "Downloadable"
+msgstr "Scaricabile"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/src/components/SettingsPage.jsx:171
+msgid "Grouped"
+msgstr "Raggruppato"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/src/components/SettingsPage.jsx:172
+msgid "External / Affiliate"
+msgstr "Esterno/Affiliato"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Categorie escluse"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Categorie di prodotti escluse dall'idoneità al recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Prodotti Esclusi"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Prodotti specifici esclusi dall'idoneità al recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Comportamento escluso"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Come vengono gestiti i prodotti esclusi nel modulo di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Nascondi gli elementi esclusi"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Mostra disabilitato con preavviso"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Stato dell'ordine"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Controlla se gli stati dell'ordine vengono modificati automaticamente "
+"durante il flusso di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/src/components/SettingsPage.jsx:602
+msgid "Change order status on submission"
+msgstr "Modifica lo stato dell'ordine al momento dell'invio"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/src/components/SettingsPage.jsx:603
+msgid ""
+"Automatically change the order status when a withdrawal request is submitted."
+msgstr ""
+"Modifica automaticamente lo stato dell'ordine quando viene inviata una "
+"richiesta di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Stato dell'ordine di invio"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr ""
+"Lo stato dell'ordine da impostare quando viene inviata una richiesta di "
+"recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/src/components/SettingsPage.jsx:627
+msgid "Change order status on approval"
+msgstr "Modifica lo stato dell'ordine al momento dell'approvazione"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/src/components/SettingsPage.jsx:628
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Modifica automaticamente lo stato dell'ordine quando viene approvata una "
+"richiesta di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Stato dell'ordine di approvazione"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr ""
+"Lo stato dell'ordine da impostare quando viene approvata una richiesta di "
+"recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "Notifiche e-mail"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr ""
+"Configura i destinatari amministratori per le email di notifica di recesso."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:204
+#: react/src/components/SettingsPage.jsx:665
+msgid "Recipient(s)"
+msgstr "Destinatario/i"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Indirizzi email separati da virgole per le notifiche di recesso degli "
+"amministratori."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Codice breve del pulsante recesso"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Gestione dei dati"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Elimina i dati durante la disinstallazione"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when "
+"the plugin is uninstalled."
+msgstr ""
+"Rimuovi tutti i dati del plugin (impostazioni, richieste di recesso, tabelle "
+"del database) quando il plugin viene disinstallato."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Attenzione: questa azione è irreversibile."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/src/components/SettingsPage.jsx:353
+msgid "Order created"
+msgstr "Ordine creato"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/src/components/SettingsPage.jsx:698
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Aggiungi un pulsante di richiesta di recesso a qualsiasi pagina o post. Il "
+"pulsante si collega alla pagina di recesso configurata."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/src/components/SettingsPage.jsx:703
+msgid "Examples"
+msgstr "Esempi"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Opzionale. Testo del pulsante personalizzato. Utilizza l'etichetta dello "
+"shortcode predefinita quando omessa."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Opzionale. Classi CSS extra aggiunte al pulsante."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Disattivare"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Elaborazione..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:138
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Si prega di inserire un indirizzo email valido."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Invia e disattiva"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Problema con il flusso di lavoro dei recessi"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Recesso degli ospiti"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Potresti dirci qualcosa in più?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Partial withdrawal"
+msgstr "Recesso parziale"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/src/components/SettingsPage.jsx:657
+msgid "Email notifications"
+msgstr "Notifiche e-mail"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "Conformità UE/problemi legali"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Altro"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Ho trovato un plugin migliore"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Quale plugin?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Il plugin è fantastico, ma ho bisogno di una funzionalità specifica che non "
+"supporti"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Potresti dirci di più su questa funzionalità?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Non è quello che stavo cercando"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Un conflitto con un altro plugin"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Se hai un momento, facci sapere perché stai disattivando:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee può contattarmi in merito a questo feedback."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Inserisci il tuo indirizzo email."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Inserisci l'indirizzo email"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Non raccogliamo alcun dato personale quando invii questo modulo. È il tuo "
+"feedback che apprezziamo."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "politica sulla riservatezza"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Vai al supporto"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:144
+#: react/src/components/RequestDetail.jsx:375
+msgid "Cancel"
+msgstr "Cancellare"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Preferirei non dirlo"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Non hai l'autorizzazione per eseguire questa azione."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr "Token di sicurezza non valido. Aggiorna la pagina e riprova."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"I clienti registrati devono inviare richieste di recesso dal proprio account."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "Per l'accesso ospite sono necessari il numero dell'ordine e l'e-mail."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Si prega di fornire un indirizzo email valido."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:154
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:158
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/frontend/class-wbte-ewb-guest-verification.php:219
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr "Nessun ordine trovato corrispondente al numero d'ordine fornito."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:588
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:163
+msgid "The email address does not match the order."
+msgstr "L'indirizzo email non corrisponde all'ordine."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Il numero d'ordine non corrisponde all'ordine richiesto."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:749
+msgid "WooCommerce order ID."
+msgstr "ID ordine WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Numero d'ordine (richiesto per l'accesso ospite)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "E-mail del cliente (richiesto per l'accesso ospite)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "ID ordine WooCommerce. Fornisci questo o order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Numero dell'ordine rivolto al cliente. Fornisci questo o order_id."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Indirizzo e-mail del cliente (obbligatorio per gli ospiti)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Se si tratta di un recesso totale o parziale."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid "Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Elementi pubblicitari per recesso parziale. Obbligatorio se request_type è "
+"parziale."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "ID dell'elemento pubblicitario WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "ID prodotto WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Quantità per il recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:792
+msgid "Customer reason for the withdrawal."
+msgstr "Motivo del recesso del cliente."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:349
+msgid "Guest withdrawal service is not available."
+msgstr "Non è disponibile il servizio di recesso ospiti."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:360
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:285
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Seleziona almeno un articolo per il recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:388
+#: includes/api/class-wbte-ewb-rest-customer.php:521
+msgid "Withdrawal request submitted successfully."
+msgstr "Richiesta di recesso inviata con successo."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:405
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Le richieste di recesso degli ospiti devono essere verificate via e-mail "
+"prima di essere create."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid "Either order_id or order_number is required."
+msgstr "È richiesto order_id o order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:430
+msgid "Items are required for partial withdrawal requests."
+msgstr "Gli articoli sono necessari per le richieste di recesso parziale."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:449
+#: includes/api/class-wbte-ewb-rest-customer.php:611
+msgid "The specified order could not be found."
+msgstr "Impossibile trovare l'ordine specificato."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:467
+msgid "A reason is required for withdrawal requests."
+msgstr "Per le richieste di recesso è richiesto un motivo."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:500
+#: includes/api/class-wbte-ewb-rest-requests.php:401
+#: includes/api/class-wbte-ewb-rest-requests.php:443
+msgid "Request service is not available."
+msgstr "Il servizio Richiedi non è disponibile."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:548
+msgid "This order does not belong to your account."
+msgstr "Questo ordine non appartiene al tuo account."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:564
+msgid "Order number is required for guest withdrawal requests."
+msgstr ""
+"Il numero d'ordine è obbligatorio per le richieste di recesso degli ospiti."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:572
+msgid "Email is required for guest withdrawal requests."
+msgstr "L'e-mail è necessaria per le richieste di recesso degli ospiti."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:580
+msgid "The order number does not match this order."
+msgstr "Il numero d'ordine non corrisponde a questo ordine."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:628
+msgid "Eligibility service is not available."
+msgstr "Il servizio di idoneità non è disponibile."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:666
+msgid "This item is not eligible for withdrawal."
+msgstr "Questo articolo non è idoneo al recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:676
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Questo articolo è già incluso in una richiesta di recesso in sospeso o "
+"approvata."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:743
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:510
+msgid "Unique identifier for the withdrawal request."
+msgstr "Identificativo univoco per la richiesta di recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:754
+#: includes/api/class-wbte-ewb-rest-requests.php:521
+msgid "Customer-facing order number."
+msgstr "Numero dell'ordine rivolto al cliente."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:759
+msgid "Status of the withdrawal request."
+msgstr "Stato della richiesta di recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:766
+msgid "Full or partial withdrawal."
+msgstr "Recesso totale o parziale."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:772
+msgid "Line items included in the withdrawal."
+msgstr "Voci incluse nel recesso."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:797
+msgid "Date the request was created."
+msgstr "Data di creazione della richiesta."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce non è disponibile."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Nota facoltativa per l'approvazione."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Motivo del rifiuto della richiesta di recesso."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Una nota è necessaria quando si rifiuta una richiesta."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtra per stato della richiesta."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr "Filtra le richieste create a partire da questa data (AAAA-MM-GG)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr "Filtra le richieste create entro questa data (AAAA-MM-GG)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtra per email o nome del cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+#, fuzzy
+msgid "Search by order number or receipt hash."
+msgstr "Filtra per numero d'ordine."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtra per numero d'ordine."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+#, fuzzy
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Se si tratta di un recesso totale o parziale."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Numero massimo di articoli da restituire per pagina."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Pagina attuale della collezione."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:482
+msgid "Request repository is not available."
+msgstr "L'archivio delle richieste non è disponibile."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:493
+#: includes/core/class-wbte-ewb-request-service.php:574
+msgid "Withdrawal request not found."
+msgstr "Richiesta di recesso non trovata."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Utente ospite"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:422
+msgid "Withdrawal request approved successfully."
+msgstr "Richiesta di recesso approvata con successo."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:464
+msgid "Withdrawal request rejected."
+msgstr "Richiesta di recesso respinta."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:516
+msgid "Associated WooCommerce order ID."
+msgstr "ID ordine WooCommerce associato."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:526
+msgid "Customer email address."
+msgstr "Indirizzo e-mail del cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:532
+msgid "Customer user ID (0 or null for guests)."
+msgstr "ID utente cliente (0 o null per gli ospiti)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:537
+msgid "Current status of the withdrawal request."
+msgstr "Stato attuale della richiesta di recesso."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:543
+msgid "Type of withdrawal request."
+msgstr "Tipologia di richiesta di recesso."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:549
+msgid "JSON-encoded array of line items."
+msgstr "Matrice di elementi pubblicitari con codifica JSON."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:554
+msgid "Customer-provided reason for withdrawal."
+msgstr "Motivo del recesso fornito dal cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:559
+msgid "Date the request was created (ISO 8601)."
+msgstr "Data di creazione della richiesta (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:566
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Data dell'ultimo aggiornamento della richiesta (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:573
+msgid "Admin user ID who processed the request."
+msgstr "ID utente amministratore che ha elaborato la richiesta."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:579
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Data di elaborazione della richiesta (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:586
+msgid "Activity log entries for this request."
+msgstr "Voci del registro attività per questa richiesta."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Azione del banner di recensione."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Banner di recensione aggiornato."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "ID pagina per il modulo di recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Se mostrare un link di recesso nel footer del sito."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Dove visualizzare il collegamento a piè di pagina."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Se consentire recessi parziali degli ordini."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Numero di giorni entro i quali è consentito il recesso."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+#, php-format
+msgid "%s must be at least 1."
+msgstr "%s deve essere almeno 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr ""
+"Stati dell'ordine dai quali può iniziare il conteggio del periodo di recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Se è richiesta una motivazione quando si invia un recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Tipologie di prodotti esclusi dal recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "Identificativi delle categorie di prodotto escluse dal recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "ID prodotto esclusi dal recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "Come gestire gli articoli esclusi nel modulo di recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Se modificare lo stato dell'ordine quando viene inviato un recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Stato dell'ordine da impostare all'invio del recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Se modificare lo stato dell'ordine quando viene approvato un recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Stato dell'ordine da impostare all'approvazione del recesso."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Se eliminare tutti i dati del plugin durante la disinstallazione."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr "Indirizzi email che ricevono notifiche di recesso dell'amministratore."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Indirizzo e-mail di contatto visibile al cliente, mostrato nelle e-mail di "
+"recesso rifiutato."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+#, php-format
+msgid "%s must be an array of email addresses."
+msgstr "%s deve essere un array di indirizzi email."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "È obbligatorio almeno un destinatario della notifica amministrativa."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr ""
+"Uno o più destinatari della notifica contengono un indirizzo email non "
+"valido."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "L'indirizzo e-mail di contatto del cliente non è valido."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Gli stati di inizio del periodo di recesso devono essere un array."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr "Uno o più stati di inizio del periodo di recesso non sono validi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "La classe Impostazioni non è disponibile."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Nessuna impostazione valida fornita per l'aggiornamento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Impostazioni aggiornate con successo."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "richiesta di recesso"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Richiesta di recesso"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Recesso in attesa"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+#, php-format
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Recesso in sospeso <span class=\"count\">(%s)</span>"
+msgstr[1] "Recesso in sospeso <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Recesso"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+#, php-format
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Recesso <span class=\"count\">(%s)</span>"
+msgstr[1] "Recesso <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+#, php-format
+msgid "Change status to %s"
+msgstr "Cambia lo stato in %s"
+
+#: includes/class-wbte-ewb-settings.php:316
+#: react/src/components/SettingsPage.jsx:453
+msgid "Request Withdrawal"
+msgstr "Richiedi il recesso"
+
+#: includes/core/class-wbte-ewb-eligibility.php:344
+msgid "This product type cannot be withdrawn."
+msgstr "Questo tipo di prodotto non può essere oggetto di recesso."
+
+#: includes/core/class-wbte-ewb-eligibility.php:348
+msgid "Virtual products cannot be withdrawn."
+msgstr "I prodotti virtuali non possono essere oggetto di recesso."
+
+#: includes/core/class-wbte-ewb-eligibility.php:352
+msgid "Downloadable products cannot be withdrawn."
+msgstr "I prodotti scaricabili non possono essere oggetto di recesso."
+
+#: includes/core/class-wbte-ewb-eligibility.php:361
+msgid "This product cannot be withdrawn."
+msgstr "Questo prodotto non può essere oggetto di recesso."
+
+#: includes/core/class-wbte-ewb-eligibility.php:370
+msgid "Products in this category cannot be withdrawn."
+msgstr "I prodotti di questa categoria non possono essere oggetto di recesso."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:137
+msgid "Please enter your order number."
+msgstr "Inserisci il numero dell'ordine."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Si prega di fornire un motivo per la richiesta di recesso."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:108
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Impossibile mettere in coda la tua richiesta di recesso. Per favore riprova."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:167
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:264
+#: includes/frontend/class-wbte-ewb-guest-verification.php:220
+msgid "The email address does not match the billing email on this order."
+msgstr ""
+"L'indirizzo e-mail non corrisponde all'e-mail di fatturazione su questo "
+"ordine."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:172
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:176
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:271
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid "This order is not eligible for withdrawal."
+msgstr "Questo ordine non è idoneo al recesso."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:219
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:226
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:605
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:612
+#: includes/frontend/class-wbte-ewb-guest-verification.php:217
+msgid "This verification link is invalid or has already been used."
+msgstr "Questo collegamento di verifica non è valido o è già stato utilizzato."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:233
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:499
+#: includes/frontend/class-wbte-ewb-guest-verification.php:222
+msgid "This withdrawal request has already been submitted."
+msgstr "Questa richiesta di recesso è già stata inviata."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:242
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+msgid "Verification link expired."
+msgstr "Il collegamento di verifica è scaduto."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:248
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:506
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:627
+#: includes/frontend/class-wbte-ewb-guest-verification.php:218
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Questo collegamento di verifica è scaduto. Si prega di inviare una nuova "
+"richiesta di recesso."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:294
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:149
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Il servizio di recesso è momentaneamente non disponibile."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:492
+msgid "This verification session is invalid or has expired."
+msgstr "Questa sessione di verifica non è valida o è scaduta."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:537
+#, php-format
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Verifica la tua richiesta di recesso"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:543
+#, php-format
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Verifica la tua richiesta di recesso facendo clic sul collegamento "
+"seguente:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Ordine: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "L'ordine specificato non esiste."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Non sei autorizzato a inviare un recesso per questo ordine."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Impossibile creare la richiesta di recesso."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Richiesta di recesso inviata."
+
+#: includes/core/class-wbte-ewb-request-service.php:273
+msgid "The submitted withdrawal items are invalid."
+msgstr "Gli articoli di recesso inviati non sono validi."
+
+#: includes/core/class-wbte-ewb-request-service.php:317
+msgid "No items are currently available for withdrawal on this order."
+msgstr ""
+"Al momento non ci sono articoli disponibili per il recesso su questo ordine."
+
+#: includes/core/class-wbte-ewb-request-service.php:396
+#: includes/core/class-wbte-ewb-request-service.php:409
+#: includes/core/class-wbte-ewb-request-service.php:419
+msgid "One or more selected items are invalid for this order."
+msgstr "Uno o più articoli selezionati non sono validi per questo ordine."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:429
+#, php-format
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "«%s» non è idoneo al recesso per questo ordine."
+
+#: includes/core/class-wbte-ewb-request-service.php:430
+#: includes/core/class-wbte-ewb-request-service.php:448
+msgid "This item"
+msgstr "Questo articolo"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:447
+#, php-format
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "\"%s\" non è più disponibile per il recesso di questo ordine."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:459
+#, php-format
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "La quantità di recesso per \"%1$s\" non può superare %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:460
+msgid "this item"
+msgstr "questo articolo"
+
+#: includes/core/class-wbte-ewb-request-service.php:501
+msgid "Only pending requests can be approved."
+msgstr "Possono essere approvate solo le richieste pendenti."
+
+#: includes/core/class-wbte-ewb-request-service.php:582
+msgid "Only pending requests can be rejected."
+msgstr "Solo le richieste pendenti possono essere rifiutate."
+
+#: includes/core/class-wbte-ewb-request-service.php:670
+msgid "Withdrawal request pending review."
+msgstr "Richiesta di recesso in attesa di revisione."
+
+#: includes/core/class-wbte-ewb-request-service.php:688
+msgid "Withdrawal request approved."
+msgstr "Richiesta di recesso approvata."
+
+#: includes/core/class-wbte-ewb-request-service.php:731
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Recesso parziale approvato. Ripristino dello stato dell'ordine per gli "
+"articoli rimanenti."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:361
+#, php-format
+msgid "%1$d of %2$d"
+msgstr "%1$d di %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:516
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/src/components/RequestsList.jsx:264
+msgid "Partial"
+msgstr "Parziale"
+
+#: includes/core/class-wbte-ewb-request.php:519
+#: includes/emails/class-wbte-ewb-email-preview.php:94
+#: includes/emails/class-wbte-ewb-email-preview.php:205
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/src/components/RequestsList.jsx:265
+msgid "Full"
+msgstr "Pieno"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/src/components/ReviewBanner.jsx:71
+msgid ""
+"You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
+"Withdrawal Button!"
+msgstr ""
+"Hai ricevuto oltre 10 richieste di recesso. Lascia una recensione per "
+"WebToffee EU Withdrawal Button!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. Leave a review!"
+msgstr ""
+"Usi WebToffee EU Withdrawal Button da una settimana. Lascia una recensione!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Azione del banner di recensione non valida."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Verifica recesso ospite"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Inviato ai clienti ospiti per verificare la loro richiesta di recesso prima "
+"che venga creata."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: verifica la tua richiesta di recesso per l'ordine n."
+"{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Verifica la tua richiesta di recesso"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:167
+#: includes/emails/class-wbte-ewb-email-preview.php:225
+msgid "I would like to return this order."
+msgstr "Vorrei restituire questo ordine."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:199
+#: includes/emails/class-wbte-ewb-email-preview.php:245
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr ""
+"Questa richiesta non può essere approvata perché il periodo di recesso è "
+"scaduto."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:231
+msgid "Sample product"
+msgstr "Prodotto campione"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Richiesta di recesso approvata"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Inviato al cliente quando viene approvata una richiesta di recesso."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: la tua richiesta di recesso per l'ordine n.{order_number} è "
+"stata approvata"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:176
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:197
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:194
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:176
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Segnaposto disponibili: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:180
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:198
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:180
+msgid "Enable/Disable"
+msgstr "Abilita/Disabilita"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:182
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:203
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:200
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:182
+msgid "Enable this email notification"
+msgstr "Abilita questa notifica email"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:186
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:186
+msgid "Subject"
+msgstr "Soggetto"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:194
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:215
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:221
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:194
+msgid "Email heading"
+msgstr "Intestazione dell'e-mail"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:202
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:223
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:229
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:202
+msgid "Email type"
+msgstr "Tipo di posta elettronica"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:204
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:225
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:231
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:204
+msgid "Choose which format of email to send."
+msgstr "Scegli quale formato di email inviare."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Richiesta di recesso respinta"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Inviato al cliente quando una richiesta di recesso viene respinta."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: la tua richiesta di recesso per l'ordine n.{order_number} è "
+"stata respinta"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Nuova richiesta di recesso (amministratore)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Inviato all'amministratore del sito quando viene inviata una nuova richiesta "
+"di recesso."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Nuova richiesta di recesso per l'ordine n.{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Nuova richiesta di recesso"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#, php-format
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Sostituzione facoltativa solo per questa email. Lascia vuoto per utilizzare "
+"i destinatari configurati nelle Impostazioni recesso (il valore predefinito "
+"è %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Richiesta di recesso inviata"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Inviato al cliente quando viene inviata una richiesta di recesso."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Richiesta di recesso per l'ordine n.{order_number} ricevuta"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Richiesta di recesso ricevuta"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Il controllo di sicurezza non è riuscito. Per favore riprova."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:130
+msgid "Please select an order."
+msgstr "Seleziona un ordine."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr ""
+"Non disponi dell'autorizzazione per richiedere il recesso di questo ordine."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:177
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"La tua richiesta di recesso è stata inviata con successo. A breve riceverai "
+"un'e-mail di conferma."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:136
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "La tua richiesta di recesso è stata inviata con successo."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:129
+msgid "Loading..."
+msgstr "Caricamento..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:131
+msgid "Please select at least one item."
+msgstr "Seleziona almeno un elemento."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:132
+msgid "quantity"
+msgstr "quantità"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:133
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Inserisci una quantità valida per ogni articolo selezionato."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:134
+msgid "Please provide a reason for withdrawal."
+msgstr "Si prega di fornire un motivo per il recesso."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:139
+msgid "Fetching eligible items..."
+msgstr "Recupero degli articoli idonei..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:140
+msgid "No eligible items found for this order."
+msgstr "Nessun articolo idoneo trovato per questo ordine."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:141
+msgid "Review your withdrawal request"
+msgstr "Esamina la tua richiesta di recesso"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:142
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Verifica i dettagli riportati di seguito. Per completare il tuo recesso "
+"legale, fai clic su Conferma recesso."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:143
+msgid "Confirm withdrawal"
+msgstr "Conferma recesso"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:145
+#: react/src/components/RequestsList.jsx:207
+msgid "Customer"
+msgstr "Cliente"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/src/components/RequestDetail.jsx:264
+msgid "Order"
+msgstr "Ordine"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:147
+msgid "Withdrawal type"
+msgstr "Tipo di recesso"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:148
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Articoli per il recesso"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:149
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Motivo del recesso"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Full withdrawal"
+msgstr "Recesso totale"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:176
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Richiesta inviata"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:200
+msgid ""
+"Thank you. If the details you provided are correct, you will receive a "
+"verification email to complete your withdrawal request."
+msgstr ""
+"Grazie. Se i dettagli che hai fornito sono corretti, riceverai un'e-mail di "
+"verifica per completare la tua richiesta di recesso."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:229
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"Non siamo riusciti a verificare la tua richiesta di recesso. Per favore "
+"riprova."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Devi essere loggato per visualizzare le tue richieste di recesso."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Non hai ancora inviato alcuna richiesta di recesso."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Richiesta"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/src/components/ActivityLog.jsx:32
+#: react/src/components/RequestsList.jsx:210
+msgid "Date"
+msgstr "Data"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/src/components/RequestsList.jsx:208
+msgid "Type"
+msgstr "Tipo"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:254
+#: react/src/components/RequestsList.jsx:209
+msgid "Status"
+msgstr "Stato"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:265
+msgid "Withdrawal Request"
+msgstr "Richiesta di recesso"
+
+#. translators: 1: request ID, 2: status badge
+#: includes/frontend/class-wbte-ewb-my-account.php:270
+#, php-format
+msgid "Request #%1$s: %2$s"
+msgstr "Richiesta n.%1$s: %2$s"
+
+#. translators: %s: date
+#: includes/frontend/class-wbte-ewb-my-account.php:281
+#, php-format
+msgid "Submitted on %s"
+msgstr "Inviato il %s"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"La tua email è stata verificata. Seleziona gli articoli per cui desideri "
+"esercitare il recesso e invia la tua richiesta qui sotto."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Numero dell'ordine"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Indirizzo e-mail di fatturazione"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Caricamento elementi..."
+
+#: includes/frontend/views/form-guest-verified.php:80
+#: includes/frontend/views/form-guest.php:93
+#: includes/frontend/views/form-logged-in.php:121
+msgid "Submit Withdrawal Request"
+msgstr "Invia richiesta di recesso"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "necessario"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive a verification email. After verifying your "
+"email, you can choose which items to withdraw."
+msgstr ""
+"Inserisci il numero dell'ordine e l'e-mail di fatturazione per iniziare. Se "
+"i tuoi dati corrispondono ai nostri record, riceverai un'e-mail di verifica. "
+"Dopo aver verificato la tua email, puoi scegliere per quali articoli "
+"esercitare il recesso."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Al momento non hai ordini idonei per il recesso."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Seleziona un ordine --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+#, php-format
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Nome di battesimo"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Cognome"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+#, php-format
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "È stata inviata una nuova richiesta di recesso per l'ordine n.%s."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Informazioni sul cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Nome del cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/src/components/RequestDetail.jsx:219
+msgid "Customer Email"
+msgstr "E-mail del cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Richiedi dettagli"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Numero d'ordine"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/src/components/RequestDetail.jsx:223
+msgid "Request Type"
+msgstr "Tipo di richiesta"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Data di invio"
+
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/src/components/RequestDetail.jsx:232
+msgid "Reason"
+msgstr "Motivo"
+
+#: templates/emails/admin-withdrawal-submitted.php:136
+msgid "Items Included in This Request"
+msgstr "Articoli inclusi in questa richiesta"
+
+#: templates/emails/admin-withdrawal-submitted.php:142
+msgid "Item"
+msgstr "Articolo"
+
+#: templates/emails/admin-withdrawal-submitted.php:145
+#: templates/emails/customer-withdrawal-approved.php:131
+#: templates/emails/customer-withdrawal-submitted.php:119
+#: react/src/components/RequestDetail.jsx:290
+msgid "Quantity"
+msgstr "Quantità"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:173
+#, php-format
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Per esaminare e gestire questa richiesta, visita la <a href=\"%s\">dashboard "
+"delle Richieste di recesso</a>."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Abbiamo ricevuto la tua richiesta di recesso. Per completarlo, verifica il "
+"tuo indirizzo email di fatturazione facendo clic sul pulsante sottostante."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Numero d'ordine:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Verifica la richiesta di recesso"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Se non hai richiesto un recesso, puoi ignorare questa email."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+#, php-format
+msgid "Hi %s,"
+msgstr "Ciao %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+#, php-format
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Grandi notizie! La tua richiesta di recesso per l'ordine n.%s è stata "
+"approvata."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Data di elaborazione"
+
+#: templates/emails/customer-withdrawal-approved.php:126
+#: templates/emails/customer-withdrawal-submitted.php:110
+msgid "Items"
+msgstr "Elementi"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:116
+#: react/src/components/RequestDetail.jsx:289
+msgid "Product"
+msgstr "Prodotto"
+
+#: templates/emails/customer-withdrawal-approved.php:146
+msgid "Next Steps"
+msgstr "Passaggi successivi"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Il tuo recesso è stato elaborato. A seconda del tipo di richiesta, "
+"potrebbero applicarsi:"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Se è necessario un rimborso, verrà elaborato con il metodo di pagamento "
+"originale. Si prega di attendere alcuni giorni lavorativi affinché venga "
+"visualizzato."
+
+#: templates/emails/customer-withdrawal-approved.php:155
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Se devi restituire degli articoli, riceverai istruzioni separate per la "
+"restituzione."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Se avete domande, non esitate a contattarci."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+#, php-format
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Abbiamo esaminato la tua richiesta di recesso per l'ordine n.%s. Purtroppo "
+"al momento non siamo in grado di approvare questa richiesta."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Se ritieni che questa decisione sia stata presa per errore o se hai "
+"ulteriori informazioni da fornire, contattaci e saremo lieti di esaminare "
+"nuovamente il tuo caso."
+
+#. translators: %s: store contact email address or comma-separated list of addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+#, php-format
+msgid "You can reach us at %s."
+msgstr "Puoi contattarci all'indirizzo %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+#, php-format
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Abbiamo ricevuto la tua richiesta di recesso per l'ordine n.%s. Grazie per "
+"avercelo informato."
+
+#: templates/emails/customer-withdrawal-submitted.php:139
+msgid "What Happens Next?"
+msgstr "Cosa succede dopo?"
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Il nostro team esaminerà la tua richiesta e ti ricontatterà il prima "
+"possibile. Riceverai un'altra email una volta presa la decisione."
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact "
+"us."
+msgstr "Se nel frattempo avete domande, non esitate a contattarci."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/src/components/RequestDetail.jsx:241
+msgid "Receipt hash"
+msgstr "Hash ricevuta"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Abbiamo ricevuto la tua richiesta di recesso. Per completarlo, verifica il "
+"tuo indirizzo email di fatturazione utilizzando il link sottostante."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+#, php-format
+msgid "Order number: %s"
+msgstr "Numero ordine: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+#, php-format
+msgid "Reason: %s"
+msgstr "Motivo: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"Il pulsante recesso UE di WebToffee per WooCommerce richiede che WooCommerce "
+"sia installato e attivo."
+
+#: react/src/components/ActivityLog.jsx:23
+msgid "No activity recorded."
+msgstr "Nessuna attività registrata."
+
+#: react/src/components/ActivityLog.jsx:33
+msgid "Actor"
+msgstr "Attore"
+
+#: react/src/components/ActivityLog.jsx:34
+msgid "Action"
+msgstr "Azione"
+
+#: react/src/components/ActivityLog.jsx:35
+msgid "Note"
+msgstr "Nota"
+
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Nessuna categoria di prodotto trovata."
+
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#. translators: %d: number of selected products
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d selezionato"
+
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Cancella tutto"
+
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Rimuovi categoria"
+
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Cerca categorie…"
+
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Digita per filtrare le categorie..."
+
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Nessuna categoria corrisponde alla tua ricerca."
+
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Questo indirizzo email è già stato aggiunto."
+
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Rimuovi l'e-mail"
+
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Aggiungi almeno un destinatario per salvare le impostazioni."
+
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Inserisci l'indirizzo e-mail..."
+
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Aggiungere"
+
+#: react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Tutti gli stati"
+
+#: react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Data da"
+
+#: react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Data a"
+
+#: react/src/components/Filters.jsx:85
+#, fuzzy
+msgid "Search"
+msgstr "Ricerca…"
+
+#: react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Ordine n. o hash ricevuta"
+
+#: react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Reset"
+
+#: react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Applica filtri"
+
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Nessuno stato dell'ordine trovato."
+
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Rimuovi stato"
+
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Cerca stati dell'ordine…"
+
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Digita per filtrare gli stati dell'ordine…"
+
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Nessuno stato dell'ordine corrisponde alla tua ricerca."
+
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Rimuovere il prodotto"
+
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Cerca un prodotto..."
+
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Ricerca…"
+
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Nessun prodotto trovato."
+
+#: react/src/components/RequestDetail.jsx:103
+#: react/src/components/RequestDetail.jsx:168
+msgid "Back to List"
+msgstr "Torna alla lista"
+
+#: react/src/components/RequestDetail.jsx:119
+msgid "Not included"
+msgstr "Non incluso"
+
+#: react/src/components/RequestDetail.jsx:126
+msgid "Withdrawal approved"
+msgstr "Recesso approvato"
+
+#: react/src/components/RequestDetail.jsx:133
+msgid "Withdrawal rejected"
+msgstr "Recesso respinto"
+
+#: react/src/components/RequestDetail.jsx:139
+msgid "Withdrawal request submitted"
+msgstr "Richiesta di recesso inviata"
+
+#: react/src/components/RequestDetail.jsx:197
+msgid "Request Information"
+msgstr "Richiedi informazioni"
+
+#: react/src/components/RequestDetail.jsx:202
+#: react/src/components/RequestsList.jsx:206
+msgid "Order #"
+msgstr "Ordine #"
+
+#: react/src/components/RequestDetail.jsx:233
+msgid "No reason provided"
+msgstr "Nessun motivo fornito"
+
+#: react/src/components/RequestDetail.jsx:236
+msgid "Created"
+msgstr "Creato"
+
+#: react/src/components/RequestDetail.jsx:270
+msgid "Processed"
+msgstr "Elaborato"
+
+#: react/src/components/RequestDetail.jsx:282
+msgid "Order Items"
+msgstr "Ordina articoli"
+
+#: react/src/components/RequestDetail.jsx:291
+msgid "Line Total"
+msgstr "Totale riga"
+
+#: react/src/components/RequestDetail.jsx:326
+msgid "No order items were found for this request."
+msgstr "Non è stato trovato alcun articolo dell'ordine per questa richiesta."
+
+#: react/src/components/RequestDetail.jsx:335
+msgid "Status Timeline"
+msgstr "Cronologia dello stato"
+
+#: react/src/components/RequestDetail.jsx:345
+msgid "Activity Log"
+msgstr "Registro delle attività"
+
+#: react/src/components/RequestDetail.jsx:354
+#: react/src/components/RequestDetail.jsx:384
+msgid "Reject Request"
+msgstr "Rifiuta la richiesta"
+
+#: react/src/components/RequestDetail.jsx:361
+msgid "Rejection Reason"
+msgstr "Motivo del rifiuto"
+
+#: react/src/components/RequestsList.jsx:116
+msgid "No change vs last week"
+msgstr "Nessun cambiamento rispetto alla settimana scorsa"
+
+#: react/src/components/RequestsList.jsx:127
+msgid "No data"
+msgstr "Nessun dato"
+
+#: react/src/components/RequestsList.jsx:133
+msgid "No change"
+msgstr "Nessun cambiamento"
+
+#: react/src/components/RequestsList.jsx:149
+msgid "Open Requests"
+msgstr "Richieste aperte"
+
+#: react/src/components/RequestsList.jsx:163
+msgid "Approved (30d)"
+msgstr "Approvato (30d)"
+
+#: react/src/components/RequestsList.jsx:205
+msgid "ID"
+msgstr "ID"
+
+#: react/src/components/RequestsList.jsx:211
+msgid "Actions"
+msgstr "Azioni"
+
+#: react/src/components/RequestsList.jsx:287
+msgid "View"
+msgstr "Visualizzazione"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3: total item count
+#: react/src/components/RequestsList.jsx:301
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Visualizzazione %1$d–%2$d di %3$d"
+
+#: react/src/components/RequestsList.jsx:306
+msgid "Showing 0 of 0"
+msgstr "Visualizzazione 0 di 0"
+
+#: react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Richiesta di recensione"
+
+#: react/src/components/SettingsPage.jsx:176
+msgid "Global"
+msgstr "Globale"
+
+#: react/src/components/SettingsPage.jsx:177
+msgid "WooCommerce only"
+msgstr "Solo WooCommerce"
+
+#: react/src/components/SettingsPage.jsx:239
+msgid "-- Select a page --"
+msgstr "-- Seleziona una pagina --"
+
+#: react/src/components/SettingsPage.jsx:252
+msgid "Failed to load settings."
+msgstr "Impossibile caricare le impostazioni."
+
+#: react/src/components/SettingsPage.jsx:293
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Aggiungi almeno un destinatario della notifica dell'amministratore prima di "
+"salvare."
+
+#: react/src/components/SettingsPage.jsx:307
+msgid "Settings saved successfully."
+msgstr "Impostazioni salvate con successo."
+
+#: react/src/components/SettingsPage.jsx:312
+msgid "Failed to save settings."
+msgstr "Impossibile salvare le impostazioni."
+
+#: react/src/components/SettingsPage.jsx:332
+msgid "Loading settings..."
+msgstr "Caricamento impostazioni..."
+
+#: react/src/components/SettingsPage.jsx:341
+msgid "Unable to load settings."
+msgstr "Impossibile caricare le impostazioni."
+
+#: react/src/components/SettingsPage.jsx:412
+msgid "General"
+msgstr "Generale"
+
+#: react/src/components/SettingsPage.jsx:415
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr ""
+"Comportamento principale del modulo di recesso e preferenze di "
+"visualizzazione."
+
+#: react/src/components/SettingsPage.jsx:420
+msgid "Withdrawal page"
+msgstr "Pagina del recesso"
+
+#: react/src/components/SettingsPage.jsx:438
+msgid "Embed footer link"
+msgstr "Incorpora collegamento a piè di pagina"
+
+#: react/src/components/SettingsPage.jsx:445
+msgid "Footer link text"
+msgstr "Testo del collegamento a piè di pagina"
+
+#: react/src/components/SettingsPage.jsx:446
+msgid "The text displayed for the footer withdrawal link."
+msgstr ""
+"Il testo visualizzato per il collegamento di recesso del piè di pagina."
+
+#: react/src/components/SettingsPage.jsx:460
+msgid "Display scope"
+msgstr "Visualizza l'ambito"
+
+#: react/src/components/SettingsPage.jsx:474
+msgid "Allow partial withdrawals"
+msgstr "Consenti recessi parziali"
+
+#: react/src/components/SettingsPage.jsx:476
+msgid "Recommended"
+msgstr "Raccomandato"
+
+#: react/src/components/SettingsPage.jsx:480
+msgid "Withdrawal period"
+msgstr "Periodo di recesso"
+
+#: react/src/components/SettingsPage.jsx:492
+msgid "days"
+msgstr "giorni"
+
+#: react/src/components/SettingsPage.jsx:510
+msgid "Start countdown from"
+msgstr "Inizia il conto alla rovescia da"
+
+#: react/src/components/SettingsPage.jsx:525
+msgid "Reason required"
+msgstr "Motivo richiesto"
+
+#: react/src/components/SettingsPage.jsx:538
+msgid "Exclusions"
+msgstr "Esclusioni"
+
+#: react/src/components/SettingsPage.jsx:541
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Escludere tipi di prodotto, categorie o prodotti specifici dall'idoneità al "
+"recesso."
+
+#: react/src/components/SettingsPage.jsx:546
+msgid "Excluded product types"
+msgstr "Tipi di prodotti esclusi"
+
+#: react/src/components/SettingsPage.jsx:547
+msgid "Product types that cannot be withdrawn."
+msgstr "Tipologie di prodotti non ammessi al recesso."
+
+#: react/src/components/SettingsPage.jsx:562
+msgid "Excluded categories"
+msgstr "Categorie escluse"
+
+#: react/src/components/SettingsPage.jsx:563
+msgid "Products in these categories cannot be withdrawn."
+msgstr "I prodotti di queste categorie non possono essere oggetto di recesso."
+
+#: react/src/components/SettingsPage.jsx:573
+msgid "Excluded products"
+msgstr "Prodotti esclusi"
+
+#: react/src/components/SettingsPage.jsx:574
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr ""
+"Cerca e seleziona prodotti specifici che non possono essere oggetto di "
+"recesso."
+
+#: react/src/components/SettingsPage.jsx:591
+msgid "Order status"
+msgstr "Stato dell'ordine"
+
+#: react/src/components/SettingsPage.jsx:594
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Aggiorna automaticamente gli stati degli ordini quando le richieste di "
+"recesso vengono inviate o approvate."
+
+#: react/src/components/SettingsPage.jsx:608
+#: react/src/components/SettingsPage.jsx:633
+msgid "Set status to"
+msgstr "Imposta lo stato su"
+
+#: react/src/components/SettingsPage.jsx:660
+msgid ""
+"Configure admin notification recipients and the customer contact email shown "
+"in rejected withdrawal emails."
+msgstr ""
+"Configura i destinatari delle notifiche amministratore e l'email di contatto "
+"del cliente mostrata nelle email di recesso rifiutate."
+
+#: react/src/components/SettingsPage.jsx:666
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr ""
+"Indirizzi email che ricevono la nuova notifica di richiesta di recesso."
+
+#: react/src/components/SettingsPage.jsx:674
+msgid "Customer contact email"
+msgstr "Email di contatto del cliente"
+
+#: react/src/components/SettingsPage.jsx:675
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"Indirizzo email mostrato ai clienti quando una richiesta di recesso viene "
+"rifiutata e devono contattarti."
+
+#: react/src/components/SettingsPage.jsx:695
+msgid "Withdrawal button shortcode"
+msgstr "Codice breve del pulsante recesso"
+
+#: react/src/components/SettingsPage.jsx:709
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+"— Facoltativo. Testo del pulsante personalizzato. Utilizza l'etichetta dello "
+"shortcode predefinita quando omessa."
+
+#: react/src/components/SettingsPage.jsx:713
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr "— Facoltativo. Classi CSS extra aggiunte al pulsante."
+
+#: react/src/components/SettingsPage.jsx:727
+msgid "Data management"
+msgstr "Gestione dei dati"
+
+#: react/src/components/SettingsPage.jsx:730
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr ""
+"Controlla cosa succede ai dati del plugin quando il plugin viene rimosso."
+
+#: react/src/components/SettingsPage.jsx:738
+msgid "Delete data on uninstall"
+msgstr "Elimina i dati durante la disinstallazione"
+
+#: react/src/components/SettingsPage.jsx:739
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when "
+"the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Rimuovi tutti i dati del plugin (impostazioni, richieste di recesso, tabelle "
+"del database) quando il plugin viene disinstallato. Questa azione è "
+"irreversibile."
+
+#: react/src/components/SettingsPage.jsx:740
+msgid "Destructive"
+msgstr "Distruttivo"
+
+#: react/src/components/SettingsPage.jsx:754
+msgid "Add at least one recipient to save"
+msgstr "Aggiungi almeno un destinatario da salvare"
+
+#: react/src/components/SettingsPage.jsx:756
+msgid "Unsaved changes"
+msgstr "Modifiche non salvate"
+
+#: react/src/components/SettingsPage.jsx:757
+msgid "All changes saved"
+msgstr "Tutte le modifiche salvate"
+
+#: react/src/components/SettingsPage.jsx:768
+msgid "Discard"
+msgstr "Scartare"
+
+#: react/src/components/SettingsPage.jsx:778
+msgid "Saving..."
+msgstr "Risparmio..."
+
+#: react/src/components/SettingsPage.jsx:779
+msgid "Save settings"
+msgstr "Salva impostazioni"
+
+#: react/src/components/StatusTimeline.jsx:29
+msgid "No status changes recorded."
+msgstr "Nessun cambiamento di stato registrato."
+
+#: react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr "Annullamenti di ordini avviati dal cliente e rimborsi parziali."
+
+#: react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Richieste"
+
+#: react/src/utils/getActorLabel.js:11
+msgid "System"
+msgstr "Sistema"
+
+#: react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Utente"
+
+#: react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+#~ msgid "Verification code:"
+#~ msgstr "Codice di verifica:"
+
+#~ msgid "Verification code"
+#~ msgstr "Codice di verifica"
+
+#~ msgid "Search by order #"
+#~ msgstr "Cerca per ordine n."

@@ -1,0 +1,28 @@
+{
+	"name": "wbte-eu-withdrawal-button",
+	"version": "1.0.0",
+	"description": "WebToffee EU Withdrawal Button for WooCommerce",
+	"private": true,
+	"scripts": {
+		"build": "wp-scripts build --config webpack.config.js",
+		"start": "wp-scripts start --config webpack.config.js",
+		"lint:js": "wp-scripts lint-js react/src/",
+		"lint:css": "wp-scripts lint-style assets/css/",
+		"i18n:pot": "wp i18n make-pot . languages/wt-eu-withdrawal-button.pot --domain=wt-eu-withdrawal-button --slug=wt-eu-withdrawal-button --package-name=\"WebToffee EU Withdrawal Button for WooCommerce\" --exclude=node_modules,vendor,build,react/node_modules,.git",
+		"i18n:json": "php bin/generate-jed-json.php",
+		"i18n": "npm run i18n:pot && npm run i18n:json"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^28.0.0"
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "^7.0.0",
+		"@wordpress/components": "^28.0.0",
+		"@wordpress/data": "^10.0.0",
+		"@wordpress/element": "^6.0.0",
+		"@wordpress/i18n": "^5.0.0",
+		"@wordpress/icons": "^10.0.0",
+		"@wordpress/url": "^4.0.0",
+		"wouter": "^3.0.0"
+	}
+}

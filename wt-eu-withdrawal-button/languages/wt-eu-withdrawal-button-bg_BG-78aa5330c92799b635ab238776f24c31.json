@@ -1,0 +1,515 @@
+{
+    "translation-revision-date": "2026-07-01 06:31",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "bg_BG",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Pending": [
+                "Чакащо"
+            ],
+            "Approved": [
+                "Одобрено"
+            ],
+            "Rejected": [
+                "Отхвърлено"
+            ],
+            "Approve": [
+                "Одобри"
+            ],
+            "Reject": [
+                "Отхвърли"
+            ],
+            "Full Withdrawal": [
+                "Пълен отказ"
+            ],
+            "Partial Withdrawal": [
+                "Частичен отказ"
+            ],
+            "No withdrawal requests found.": [
+                "Не са намерени искания за отказ."
+            ],
+            "A reason is required when rejecting a request.": [
+                "При отхвърляне на искане е необходима причина."
+            ],
+            "Withdrawals": [
+                "Откази"
+            ],
+            "Settings": [
+                "Настройки"
+            ],
+            "Leave a review": [
+                "Оставете отзив"
+            ],
+            "Remind me later": [
+                "Напомни ми по-късно"
+            ],
+            "Dismiss review request": [
+                "Отхвърли заявката за отзив"
+            ],
+            "Withdrawal": [
+                "Отказ"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Изберете страницата, на която клиентите могат да подават искания за отказ."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Автоматично добавяне на връзка към страницата за отказ във футъра на сайта."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Къде се показват формулярът за отказ и връзките."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Позволете на клиентите да отказват отделни артикули вместо цялата поръчка."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Брой дни след избрания начален статус, през които може да бъде подадено искане за отказ."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Изберете един или повече статуси на поръчката. Отброяването започва на най-ранната дата, на която поръчката достигне някой от избраните статуси."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Изисквайте от клиентите да посочат причина при подаване на искане за отказ."
+            ],
+            "Virtual": [
+                "Виртуален"
+            ],
+            "Downloadable": [
+                "За изтегляне"
+            ],
+            "Grouped": [
+                "Групиран"
+            ],
+            "External \/ Affiliate": [
+                "Външен \/ партньорски"
+            ],
+            "Change order status on submission": [
+                "Промяна на статуса на поръчката при подаване"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Автоматично променяне на статуса на поръчката при подаване на искане за отказ."
+            ],
+            "Change order status on approval": [
+                "Промяна на статуса на поръчката при одобрение"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Автоматично променяне на статуса на поръчката при одобряване на искане за отказ."
+            ],
+            "Recipient(s)": [
+                "Получател(и)"
+            ],
+            "Order created": [
+                "Поръчката е създадена"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Добавете бутон за искане за отказ към която и да е страница или публикация. Бутонът води към конфигурираната от вас страница за отказ."
+            ],
+            "Examples": [
+                "Примери"
+            ],
+            "Please enter a valid email address.": [
+                "Моля, въведете валиден имейл адрес."
+            ],
+            "Email notifications": [
+                "Известия по имейл"
+            ],
+            "Cancel": [
+                "Отмяна"
+            ],
+            "Guest user": [
+                "Гост потребител"
+            ],
+            "Request Withdrawal": [
+                "Заявете отказ"
+            ],
+            "Partial": [
+                "Частичен"
+            ],
+            "Full": [
+                "Пълен"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Получихте над 10 искания за отказ. Оставете отзив за WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Използвате WebToffee EU Withdrawal Button от седмица. Оставете отзив!"
+            ],
+            "Customer": [
+                "Клиент"
+            ],
+            "Order": [
+                "Поръчка"
+            ],
+            "Date": [
+                "Дата"
+            ],
+            "Type": [
+                "Тип"
+            ],
+            "Status": [
+                "Статус"
+            ],
+            "Customer Email": [
+                "Имейл на клиента"
+            ],
+            "Request Type": [
+                "Тип на искането"
+            ],
+            "Reason": [
+                "Причина"
+            ],
+            "Quantity": [
+                "Количество"
+            ],
+            "Product": [
+                "Продукт"
+            ],
+            "Receipt hash": [
+                "Хеш на разписка"
+            ],
+            "No activity recorded.": [
+                "Няма регистрирана активност."
+            ],
+            "Actor": [
+                "Извършител"
+            ],
+            "Action": [
+                "Действие"
+            ],
+            "Note": [
+                "Бележка"
+            ],
+            "No product categories found.": [
+                "Не са намерени продуктови категории."
+            ],
+            "%d selected": [
+                "%d избрани"
+            ],
+            "Clear all": [
+                "Изчисти всички"
+            ],
+            "Remove category": [
+                "Премахни категорията"
+            ],
+            "Search categories…": [
+                "Търсене на категории…"
+            ],
+            "Type to filter categories…": [
+                "Пишете, за да филтрирате категориите…"
+            ],
+            "No categories match your search.": [
+                "Няма категории, съответстващи на вашето търсене."
+            ],
+            "This email address is already added.": [
+                "Този имейл адрес вече е добавен."
+            ],
+            "Remove email": [
+                "Премахни имейла"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Добавете поне един получател, за да запазите настройките."
+            ],
+            "Enter email address…": [
+                "Въведете имейл адрес…"
+            ],
+            "Add": [
+                "Добави"
+            ],
+            "All Statuses": [
+                "Всички статуси"
+            ],
+            "Date From": [
+                "Дата от"
+            ],
+            "Date To": [
+                "Дата до"
+            ],
+            "Search": [
+                "Търсене…"
+            ],
+            "Order # or receipt hash": [
+                "Поръчка № или хеш на разписка"
+            ],
+            "Reset": [
+                "Нулиране"
+            ],
+            "Apply Filters": [
+                "Приложи филтрите"
+            ],
+            "Remove product": [
+                "Премахни продукта"
+            ],
+            "Search for a product…": [
+                "Търсене на продукт…"
+            ],
+            "Searching…": [
+                "Търсене…"
+            ],
+            "No products found.": [
+                "Не са намерени продукти."
+            ],
+            "Back to List": [
+                "Обратно към списъка"
+            ],
+            "Not included": [
+                "Не е включено"
+            ],
+            "Withdrawal approved": [
+                "Отказът е одобрен"
+            ],
+            "Withdrawal rejected": [
+                "Отказът е отхвърлен"
+            ],
+            "Withdrawal request submitted": [
+                "Искането за отказ е подадено"
+            ],
+            "Request Information": [
+                "Информация за искането"
+            ],
+            "Order #": [
+                "Поръчка #"
+            ],
+            "No reason provided": [
+                "Не е посочена причина"
+            ],
+            "Created": [
+                "Създадено"
+            ],
+            "Processed": [
+                "Обработено"
+            ],
+            "Order Items": [
+                "Артикули от поръчката"
+            ],
+            "Line Total": [
+                "Общо за реда"
+            ],
+            "No order items were found for this request.": [
+                "Не са намерени артикули от поръчката за това искане."
+            ],
+            "Status Timeline": [
+                "Хронология на статусите"
+            ],
+            "Activity Log": [
+                "Дневник на активността"
+            ],
+            "Reject Request": [
+                "Отхвърли искането"
+            ],
+            "Rejection Reason": [
+                "Причина за отхвърляне"
+            ],
+            "No change vs last week": [
+                "Няма промяна спрямо миналата седмица"
+            ],
+            "No data": [
+                "Няма данни"
+            ],
+            "No change": [
+                "Няма промяна"
+            ],
+            "Open Requests": [
+                "Отворени искания"
+            ],
+            "Approved (30d)": [
+                "Одобрени (30 д.)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Действия"
+            ],
+            "View": [
+                "Преглед"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Показани %1$d–%2$d от %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Показани 0 от 0"
+            ],
+            "Review request": [
+                "Заявка за отзив"
+            ],
+            "Global": [
+                "Глобално"
+            ],
+            "WooCommerce only": [
+                "Само WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Изберете страница --"
+            ],
+            "Failed to load settings.": [
+                "Неуспешно зареждане на настройките."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Добавете поне един получател на администраторски известия, преди да запазите."
+            ],
+            "Settings saved successfully.": [
+                "Настройките са запазени успешно."
+            ],
+            "Failed to save settings.": [
+                "Неуспешно запазване на настройките."
+            ],
+            "Loading settings...": [
+                "Зареждане на настройките..."
+            ],
+            "Unable to load settings.": [
+                "Настройките не могат да бъдат заредени."
+            ],
+            "General": [
+                "Общи"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Основно поведение и предпочитания за показване на формуляра за отказ."
+            ],
+            "Withdrawal page": [
+                "Страница за отказ"
+            ],
+            "Embed footer link": [
+                "Вграждане на връзка във футъра"
+            ],
+            "Footer link text": [
+                "Текст на връзката във футъра"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Текстът, показван за връзката за отказ във футъра."
+            ],
+            "Display scope": [
+                "Обхват на показване"
+            ],
+            "Allow partial withdrawals": [
+                "Разрешаване на частични откази"
+            ],
+            "Recommended": [
+                "Препоръчително"
+            ],
+            "Withdrawal period": [
+                "Срок за отказ"
+            ],
+            "days": [
+                "дни"
+            ],
+            "Start countdown from": [
+                "Начало на отброяването от"
+            ],
+            "Reason required": [
+                "Необходима е причина"
+            ],
+            "Exclusions": [
+                "Изключения"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Изключете типове продукти, категории или конкретни продукти от правото на отказ."
+            ],
+            "Excluded product types": [
+                "Изключени типове продукти"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Типове продукти, които не подлежат на отказ."
+            ],
+            "Excluded categories": [
+                "Изключени категории"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Продуктите в тези категории не подлежат на отказ."
+            ],
+            "Excluded products": [
+                "Изключени продукти"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Търсете и изберете конкретни продукти, които не подлежат на отказ."
+            ],
+            "Order status": [
+                "Статус на поръчката"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Автоматично актуализиране на статусите на поръчката при подаване или одобряване на искания за отказ."
+            ],
+            "Set status to": [
+                "Задаване на статус на"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Конфигурирайте получателите на администраторски известия и имейла за контакт с клиента, показван в имейлите за отхвърлен отказ."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "Имейл адреси, които получават известие за ново искане за отказ."
+            ],
+            "Customer contact email": [
+                "Имейл за контакт с клиента"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "Имейл адрес, показван на клиентите, когато искане за отказ бъде отхвърлено и трябва да се свържат с вас."
+            ],
+            "Withdrawal button shortcode": [
+                "Шорткод за бутона за отказ"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                " — По избор. Персонализиран текст на бутона. Използва етикета по подразбиране на шорткода, ако е пропуснат."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                " — По избор. Допълнителни CSS класове, добавени към бутона."
+            ],
+            "Data management": [
+                "Управление на данните"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Контролирайте какво се случва с данните на приставката, когато тя бъде премахната."
+            ],
+            "Delete data on uninstall": [
+                "Изтриване на данните при деинсталиране"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Премахване на всички данни на приставката (настройки, искания за отказ, таблици в базата данни) при деинсталиране на приставката. Това действие е необратимо."
+            ],
+            "Destructive": [
+                "Разрушително"
+            ],
+            "Add at least one recipient to save": [
+                "Добавете поне един получател, за да запазите"
+            ],
+            "Unsaved changes": [
+                "Незапазени промени"
+            ],
+            "All changes saved": [
+                "Всички промени са запазени"
+            ],
+            "Discard": [
+                "Отхвърляне"
+            ],
+            "Saving...": [
+                "Запазване..."
+            ],
+            "Save settings": [
+                "Запази настройките"
+            ],
+            "No status changes recorded.": [
+                "Няма регистрирани промени в статуса."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Анулиране на поръчки и частични възстановявания, инициирани от клиента."
+            ],
+            "Requests": [
+                "Искания"
+            ],
+            "System": [
+                "Система"
+            ],
+            "User": [
+                "Потребител"
+            ],
+            "Unknown": [
+                "Неизвестно"
+            ]
+        }
+    }
+}

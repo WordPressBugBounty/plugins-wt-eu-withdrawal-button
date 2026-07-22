@@ -1,0 +1,530 @@
+{
+    "translation-revision-date": "2026-07-10T10:43:31+00:00",
+    "generator": "WebToffee EU Withdrawal Button",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "el",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Pending": [
+                "Σε εκκρεμότητα"
+            ],
+            "Approved": [
+                "Εγκεκριμένο"
+            ],
+            "Rejected": [
+                "Απορρίφθηκε"
+            ],
+            "Approve": [
+                "Έγκριση"
+            ],
+            "Reject": [
+                "Απόρριψη"
+            ],
+            "Full Withdrawal": [
+                "Πλήρης υπαναχώρηση"
+            ],
+            "Partial Withdrawal": [
+                "Μερική υπαναχώρηση"
+            ],
+            "No withdrawal requests found.": [
+                "Δεν βρέθηκαν αιτήματα υπαναχώρησης."
+            ],
+            "A reason is required when rejecting a request.": [
+                "Απαιτείται λόγος κατά την απόρριψη ενός αιτήματος."
+            ],
+            "Withdrawals": [
+                "Υπαναχωρήσεις"
+            ],
+            "Settings": [
+                "Ρυθμίσεις"
+            ],
+            "Leave a review": [
+                "Αφήστε μια αξιολόγηση"
+            ],
+            "Remind me later": [
+                "Υπενθύμιση αργότερα"
+            ],
+            "Dismiss review request": [
+                "Απόρριψη αιτήματος αξιολόγησης"
+            ],
+            "Withdrawal": [
+                "Υπαναχώρηση"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Επιλέξτε τη σελίδα όπου οι πελάτες μπορούν να υποβάλλουν αιτήματα υπαναχώρησης."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Προσθέστε αυτόματα έναν σύνδεσμο προς τη σελίδα υπαναχώρησης στο υποσέλιδο του ιστότοπου."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Πού εμφανίζονται η φόρμα υπαναχώρησης και οι σύνδεσμοι."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Επιτρέψτε στους πελάτες να υπαναχωρούν για μεμονωμένα προϊόντα αντί για ολόκληρη την παραγγελία."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Αριθμός ημερών μετά την επιλεγμένη αρχική κατάσταση κατά τη διάρκεια των οποίων μπορεί να υποβληθεί αίτημα υπαναχώρησης."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Επιλέξτε μία ή περισσότερες καταστάσεις παραγγελίας. Η αντίστροφη μέτρηση ξεκινά την πρώτη ημερομηνία κατά την οποία η παραγγελία φτάνει σε οποιαδήποτε επιλεγμένη κατάσταση."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Να απαιτείται από τους πελάτες να αναφέρουν έναν λόγο κατά την υποβολή αιτήματος υπαναχώρησης."
+            ],
+            "Virtual": [
+                "Εικονικό"
+            ],
+            "Downloadable": [
+                "Με δυνατότητα λήψης"
+            ],
+            "Grouped": [
+                "Ομαδοποιημένο"
+            ],
+            "External / Affiliate": [
+                "Εξωτερικό / συνεργάτη"
+            ],
+            "Change order status on submission": [
+                "Αλλαγή κατάστασης παραγγελίας κατά την υποβολή"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Αλλαγή αυτόματα της κατάστασης παραγγελίας όταν υποβάλλεται αίτημα υπαναχώρησης."
+            ],
+            "Change order status on approval": [
+                "Αλλαγή κατάστασης παραγγελίας κατά την έγκριση"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Αλλαγή αυτόματα της κατάστασης παραγγελίας όταν εγκρίνεται αίτημα υπαναχώρησης."
+            ],
+            "Recipient(s)": [
+                "Παραλήπτης(ες)"
+            ],
+            "Order created": [
+                "Η παραγγελία δημιουργήθηκε"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Προσθέστε ένα κουμπί αιτήματος υπαναχώρησης σε οποιαδήποτε σελίδα ή άρθρο. Το κουμπί συνδέεται με τη ρυθμισμένη σελίδα υπαναχώρησης."
+            ],
+            "Examples": [
+                "Παραδείγματα"
+            ],
+            "Please enter a valid email address.": [
+                "Εισαγάγετε μια έγκυρη διεύθυνση email."
+            ],
+            "Email notifications": [
+                "Ειδοποιήσεις email"
+            ],
+            "Cancel": [
+                "Ακύρωση"
+            ],
+            "Guest user": [
+                "Χρήστης επισκέπτης"
+            ],
+            "Request Withdrawal": [
+                "Ζητήστε υπαναχώρηση"
+            ],
+            "Partial": [
+                "Μερική"
+            ],
+            "Full": [
+                "Πλήρης"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Λάβατε 10+ αιτήματα υπαναχώρησης. Αφήστε μια αξιολόγηση για το WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Χρησιμοποιείτε το WebToffee EU Withdrawal Button εδώ και μία εβδομάδα. Αφήστε μια αξιολόγηση!"
+            ],
+            "Customer": [
+                "Πελάτης"
+            ],
+            "Order": [
+                "Παραγγελία"
+            ],
+            "Date": [
+                "Ημερομηνία"
+            ],
+            "Type": [
+                "Τύπος"
+            ],
+            "Status": [
+                "Κατάσταση"
+            ],
+            "Customer Email": [
+                "Email πελάτη"
+            ],
+            "Request Type": [
+                "Τύπος αιτήματος"
+            ],
+            "Reason": [
+                "Λόγος"
+            ],
+            "Quantity": [
+                "Ποσότητα"
+            ],
+            "Product": [
+                "Προϊόν"
+            ],
+            "Receipt hash": [
+                "Hash απόδειξης"
+            ],
+            "No activity recorded.": [
+                "Δεν καταγράφηκε δραστηριότητα."
+            ],
+            "Actor": [
+                "Δρών"
+            ],
+            "Action": [
+                "Ενέργεια"
+            ],
+            "Note": [
+                "Σημείωση"
+            ],
+            "No product categories found.": [
+                "Δεν βρέθηκαν κατηγορίες προϊόντων."
+            ],
+            "%d selected": [
+                "%d επιλεγμένα"
+            ],
+            "Clear all": [
+                "Εκκαθάριση όλων"
+            ],
+            "Remove category": [
+                "Αφαίρεση κατηγορίας"
+            ],
+            "Search categories…": [
+                "Αναζήτηση κατηγοριών…"
+            ],
+            "Type to filter categories…": [
+                "Πληκτρολογήστε για φιλτράρισμα κατηγοριών…"
+            ],
+            "No categories match your search.": [
+                "Καμία κατηγορία δεν ταιριάζει με την αναζήτησή σας."
+            ],
+            "This email address is already added.": [
+                "Αυτή η διεύθυνση email έχει ήδη προστεθεί."
+            ],
+            "Remove email": [
+                "Αφαίρεση email"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Προσθέστε τουλάχιστον έναν παραλήπτη για να αποθηκεύσετε τις ρυθμίσεις."
+            ],
+            "Enter email address…": [
+                "Εισαγάγετε διεύθυνση email…"
+            ],
+            "Add": [
+                "Προσθήκη"
+            ],
+            "All Statuses": [
+                "Όλες οι καταστάσεις"
+            ],
+            "Date From": [
+                "Ημερομηνία από"
+            ],
+            "Date To": [
+                "Ημερομηνία έως"
+            ],
+            "Search": [
+                "Αναζήτηση"
+            ],
+            "Order # or receipt hash": [
+                "Αρ. παραγγελίας ή hash απόδειξης"
+            ],
+            "Reset": [
+                "Επαναφορά"
+            ],
+            "Apply Filters": [
+                "Εφαρμογή φίλτρων"
+            ],
+            "No order statuses found.": [
+                "Δεν βρέθηκαν καταστάσεις παραγγελίας."
+            ],
+            "Remove status": [
+                "Αφαίρεση κατάστασης"
+            ],
+            "Search order statuses…": [
+                "Αναζήτηση καταστάσεων παραγγελίας…"
+            ],
+            "Type to filter order statuses…": [
+                "Πληκτρολογήστε για φιλτράρισμα καταστάσεων παραγγελίας…"
+            ],
+            "No order statuses match your search.": [
+                "Καμία κατάσταση παραγγελίας δεν ταιριάζει με την αναζήτησή σας."
+            ],
+            "Remove product": [
+                "Αφαίρεση προϊόντος"
+            ],
+            "Search for a product…": [
+                "Αναζήτηση προϊόντος…"
+            ],
+            "Searching…": [
+                "Αναζήτηση…"
+            ],
+            "No products found.": [
+                "Δεν βρέθηκαν προϊόντα."
+            ],
+            "Back to List": [
+                "Επιστροφή στη λίστα"
+            ],
+            "Not included": [
+                "Δεν περιλαμβάνεται"
+            ],
+            "Withdrawal approved": [
+                "Η υπαναχώρηση εγκρίθηκε"
+            ],
+            "Withdrawal rejected": [
+                "Η υπαναχώρηση απορρίφθηκε"
+            ],
+            "Withdrawal request submitted": [
+                "Το αίτημα υπαναχώρησης υποβλήθηκε"
+            ],
+            "Request Information": [
+                "Πληροφορίες αιτήματος"
+            ],
+            "Order #": [
+                "Αρ. παραγγελίας"
+            ],
+            "No reason provided": [
+                "Δεν δόθηκε λόγος"
+            ],
+            "Created": [
+                "Δημιουργήθηκε"
+            ],
+            "Processed": [
+                "Επεξεργάστηκε"
+            ],
+            "Order Items": [
+                "Προϊόντα παραγγελίας"
+            ],
+            "Line Total": [
+                "Σύνολο γραμμής"
+            ],
+            "No order items were found for this request.": [
+                "Δεν βρέθηκαν προϊόντα παραγγελίας για αυτό το αίτημα."
+            ],
+            "Status Timeline": [
+                "Χρονολόγιο κατάστασης"
+            ],
+            "Activity Log": [
+                "Αρχείο δραστηριότητας"
+            ],
+            "Reject Request": [
+                "Απόρριψη αιτήματος"
+            ],
+            "Rejection Reason": [
+                "Λόγος απόρριψης"
+            ],
+            "No change vs last week": [
+                "Καμία μεταβολή σε σχέση με την προηγούμενη εβδομάδα"
+            ],
+            "No data": [
+                "Χωρίς δεδομένα"
+            ],
+            "No change": [
+                "Καμία μεταβολή"
+            ],
+            "Open Requests": [
+                "Ανοιχτά αιτήματα"
+            ],
+            "Approved (30d)": [
+                "Εγκεκριμένα (30 ημ.)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Ενέργειες"
+            ],
+            "View": [
+                "Προβολή"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Εμφάνιση %1$d–%2$d από %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Εμφάνιση 0 από 0"
+            ],
+            "Review request": [
+                "Αίτημα αξιολόγησης"
+            ],
+            "Global": [
+                "Καθολικά"
+            ],
+            "WooCommerce only": [
+                "Μόνο WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Επιλέξτε μια σελίδα --"
+            ],
+            "Failed to load settings.": [
+                "Αποτυχία φόρτωσης των ρυθμίσεων."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Προσθέστε τουλάχιστον έναν παραλήπτη ειδοποιήσεων διαχειριστή πριν από την αποθήκευση."
+            ],
+            "Settings saved successfully.": [
+                "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία."
+            ],
+            "Failed to save settings.": [
+                "Αποτυχία αποθήκευσης των ρυθμίσεων."
+            ],
+            "Loading settings...": [
+                "Φόρτωση ρυθμίσεων..."
+            ],
+            "Unable to load settings.": [
+                "Δεν είναι δυνατή η φόρτωση των ρυθμίσεων."
+            ],
+            "General": [
+                "Γενικά"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Βασική συμπεριφορά και προτιμήσεις εμφάνισης της φόρμας υπαναχώρησης."
+            ],
+            "Withdrawal page": [
+                "Σελίδα υπαναχώρησης"
+            ],
+            "Embed footer link": [
+                "Ενσωμάτωση συνδέσμου στο υποσέλιδο"
+            ],
+            "Footer link text": [
+                "Κείμενο συνδέσμου υποσέλιδου"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Το κείμενο που εμφανίζεται για τον σύνδεσμο υπαναχώρησης στο υποσέλιδο."
+            ],
+            "Display scope": [
+                "Εύρος εμφάνισης"
+            ],
+            "Allow partial withdrawals": [
+                "Να επιτρέπονται μερικές υπαναχωρήσεις"
+            ],
+            "Recommended": [
+                "Συνιστάται"
+            ],
+            "Withdrawal period": [
+                "Προθεσμία υπαναχώρησης"
+            ],
+            "days": [
+                "ημέρες"
+            ],
+            "Start countdown from": [
+                "Έναρξη αντίστροφης μέτρησης από"
+            ],
+            "Reason required": [
+                "Απαιτείται λόγος"
+            ],
+            "Exclusions": [
+                "Εξαιρέσεις"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Εξαιρέστε τύπους προϊόντων, κατηγορίες ή συγκεκριμένα προϊόντα από το δικαίωμα υπαναχώρησης."
+            ],
+            "Excluded product types": [
+                "Εξαιρούμενοι τύποι προϊόντων"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Τύποι προϊόντων που δεν υπόκεινται σε υπαναχώρηση."
+            ],
+            "Excluded categories": [
+                "Εξαιρούμενες κατηγορίες"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Τα προϊόντα σε αυτές τις κατηγορίες δεν υπόκεινται σε υπαναχώρηση."
+            ],
+            "Excluded products": [
+                "Εξαιρούμενα προϊόντα"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Αναζητήστε και επιλέξτε συγκεκριμένα προϊόντα που δεν υπόκεινται σε υπαναχώρηση."
+            ],
+            "Order status": [
+                "Κατάσταση παραγγελίας"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Αυτόματη ενημέρωση των καταστάσεων παραγγελίας όταν τα αιτήματα υπαναχώρησης υποβάλλονται ή εγκρίνονται."
+            ],
+            "Set status to": [
+                "Ορισμός κατάστασης σε"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Διαμορφώστε τους παραλήπτες ειδοποιήσεων διαχειριστή και το email επικοινωνίας πελάτη που εμφανίζεται στα email απορριφθείσας υπαναχώρησης."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "Διευθύνσεις email που λαμβάνουν την ειδοποίηση για νέο αίτημα υπαναχώρησης."
+            ],
+            "Customer contact email": [
+                "Email επικοινωνίας πελάτη"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "Διεύθυνση email που εμφανίζεται στους πελάτες όταν ένα αίτημα υπαναχώρησης απορρίπτεται και χρειάζεται να επικοινωνήσουν μαζί σας."
+            ],
+            "Withdrawal button shortcode": [
+                "Shortcode κουμπιού υπαναχώρησης"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                " — Προαιρετικό. Προσαρμοσμένο κείμενο κουμπιού. Χρησιμοποιεί την προεπιλεγμένη ετικέτα του shortcode όταν παραλείπεται."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                " — Προαιρετικό. Επιπλέον κλάσεις CSS που προστίθενται στο κουμπί."
+            ],
+            "Data management": [
+                "Διαχείριση δεδομένων"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Ελέγξτε τι συμβαίνει με τα δεδομένα του πρόσθετου όταν αυτό αφαιρείται."
+            ],
+            "Delete data on uninstall": [
+                "Διαγραφή δεδομένων κατά την απεγκατάσταση"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Αφαίρεση όλων των δεδομένων του πρόσθετου (ρυθμίσεις, αιτήματα υπαναχώρησης, πίνακες βάσης δεδομένων) κατά την απεγκατάσταση του πρόσθετου. Αυτή η ενέργεια είναι μη αναστρέψιμη."
+            ],
+            "Destructive": [
+                "Καταστροφικό"
+            ],
+            "Add at least one recipient to save": [
+                "Προσθέστε τουλάχιστον έναν παραλήπτη για αποθήκευση"
+            ],
+            "Unsaved changes": [
+                "Μη αποθηκευμένες αλλαγές"
+            ],
+            "All changes saved": [
+                "Όλες οι αλλαγές αποθηκεύτηκαν"
+            ],
+            "Discard": [
+                "Απόρριψη"
+            ],
+            "Saving...": [
+                "Αποθήκευση..."
+            ],
+            "Save settings": [
+                "Αποθήκευση ρυθμίσεων"
+            ],
+            "No status changes recorded.": [
+                "Δεν καταγράφηκαν αλλαγές κατάστασης."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Ακυρώσεις παραγγελιών και μερικές επιστροφές χρημάτων που ξεκινούν από τον πελάτη."
+            ],
+            "Requests": [
+                "Αιτήματα"
+            ],
+            "System": [
+                "Σύστημα"
+            ],
+            "User": [
+                "Χρήστης"
+            ],
+            "Unknown": [
+                "Άγνωστο"
+            ]
+        }
+    }
+}

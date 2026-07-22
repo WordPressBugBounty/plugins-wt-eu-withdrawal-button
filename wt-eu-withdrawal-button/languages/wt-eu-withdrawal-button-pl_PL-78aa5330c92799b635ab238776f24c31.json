@@ -1,0 +1,515 @@
+{
+    "translation-revision-date": "2026-07-01 06:31",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pl_PL",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);"
+            },
+            "Pending": [
+                "Oczekujące"
+            ],
+            "Approved": [
+                "Zatwierdzone"
+            ],
+            "Rejected": [
+                "Odrzucone"
+            ],
+            "Approve": [
+                "Zatwierdź"
+            ],
+            "Reject": [
+                "Odrzuć"
+            ],
+            "Full Withdrawal": [
+                "Pełne odstąpienie"
+            ],
+            "Partial Withdrawal": [
+                "Częściowe odstąpienie"
+            ],
+            "No withdrawal requests found.": [
+                "Nie znaleziono wniosków o odstąpienie."
+            ],
+            "A reason is required when rejecting a request.": [
+                "Przy odrzucaniu wniosku wymagane jest podanie powodu."
+            ],
+            "Withdrawals": [
+                "Odstąpienia"
+            ],
+            "Settings": [
+                "Ustawienia"
+            ],
+            "Leave a review": [
+                "Zostaw opinię"
+            ],
+            "Remind me later": [
+                "Przypomnij później"
+            ],
+            "Dismiss review request": [
+                "Odrzuć prośbę o opinię"
+            ],
+            "Withdrawal": [
+                "Odstąpienie"
+            ],
+            "Select the page where customers can submit withdrawal requests.": [
+                "Wybierz stronę, na której klienci mogą składać wnioski o odstąpienie."
+            ],
+            "Automatically add a link to the withdrawal page in the site footer.": [
+                "Automatycznie dodaj link do strony odstąpienia w stopce witryny."
+            ],
+            "Where the withdrawal form and links are displayed.": [
+                "Gdzie wyświetlane są formularz odstąpienia i linki."
+            ],
+            "Let customers withdraw individual items instead of the entire order.": [
+                "Pozwól klientom odstąpić od poszczególnych produktów zamiast całego zamówienia."
+            ],
+            "Number of days after the selected start status during which a withdrawal request can be submitted.": [
+                "Liczba dni po wybranym statusie początkowym, w ciągu których można złożyć wniosek o odstąpienie."
+            ],
+            "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status.": [
+                "Wybierz jeden lub więcej statusów zamówienia. Odliczanie rozpoczyna się w najwcześniejszym dniu, w którym zamówienie osiągnie dowolny wybrany status."
+            ],
+            "Require customers to provide a reason when submitting a withdrawal request.": [
+                "Wymagaj od klientów podania powodu przy składaniu wniosku o odstąpienie."
+            ],
+            "Virtual": [
+                "Wirtualny"
+            ],
+            "Downloadable": [
+                "Do pobrania"
+            ],
+            "Grouped": [
+                "Grupowy"
+            ],
+            "External \/ Affiliate": [
+                "Zewnętrzny \/ afiliacyjny"
+            ],
+            "Change order status on submission": [
+                "Zmień status zamówienia przy złożeniu"
+            ],
+            "Automatically change the order status when a withdrawal request is submitted.": [
+                "Automatycznie zmień status zamówienia po złożeniu wniosku o odstąpienie."
+            ],
+            "Change order status on approval": [
+                "Zmień status zamówienia przy zatwierdzeniu"
+            ],
+            "Automatically change the order status when a withdrawal request is approved.": [
+                "Automatycznie zmień status zamówienia po zatwierdzeniu wniosku o odstąpienie."
+            ],
+            "Recipient(s)": [
+                "Odbiorca(y)"
+            ],
+            "Order created": [
+                "Zamówienie utworzone"
+            ],
+            "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page.": [
+                "Dodaj przycisk wniosku o odstąpienie do dowolnej strony lub wpisu. Przycisk prowadzi do skonfigurowanej strony odstąpienia."
+            ],
+            "Examples": [
+                "Przykłady"
+            ],
+            "Please enter a valid email address.": [
+                "Podaj prawidłowy adres e-mail."
+            ],
+            "Email notifications": [
+                "Powiadomienia e-mail"
+            ],
+            "Cancel": [
+                "Anuluj"
+            ],
+            "Guest user": [
+                "Użytkownik gość"
+            ],
+            "Request Withdrawal": [
+                "Złóż wniosek o odstąpienie"
+            ],
+            "Partial": [
+                "Częściowe"
+            ],
+            "Full": [
+                "Pełne"
+            ],
+            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
+                "Otrzymałeś ponad 10 wniosków o odstąpienie. Zostaw opinię o WebToffee EU Withdrawal Button!"
+            ],
+            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
+                "Używasz WebToffee EU Withdrawal Button od tygodnia. Zostaw opinię!"
+            ],
+            "Customer": [
+                "Klient"
+            ],
+            "Order": [
+                "Zamówienie"
+            ],
+            "Date": [
+                "Data"
+            ],
+            "Type": [
+                "Typ"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "Customer Email": [
+                "E-mail klienta"
+            ],
+            "Request Type": [
+                "Typ wniosku"
+            ],
+            "Reason": [
+                "Powód"
+            ],
+            "Quantity": [
+                "Ilość"
+            ],
+            "Product": [
+                "Produkt"
+            ],
+            "Receipt hash": [
+                "Skrót paragonu"
+            ],
+            "No activity recorded.": [
+                "Brak zarejestrowanej aktywności."
+            ],
+            "Actor": [
+                "Wykonawca"
+            ],
+            "Action": [
+                "Akcja"
+            ],
+            "Note": [
+                "Notatka"
+            ],
+            "No product categories found.": [
+                "Nie znaleziono kategorii produktów."
+            ],
+            "%d selected": [
+                "%d wybranych"
+            ],
+            "Clear all": [
+                "Wyczyść wszystko"
+            ],
+            "Remove category": [
+                "Usuń kategorię"
+            ],
+            "Search categories…": [
+                "Szukaj kategorii…"
+            ],
+            "Type to filter categories…": [
+                "Wpisz, aby filtrować kategorie…"
+            ],
+            "No categories match your search.": [
+                "Żadna kategoria nie pasuje do wyszukiwania."
+            ],
+            "This email address is already added.": [
+                "Ten adres e-mail został już dodany."
+            ],
+            "Remove email": [
+                "Usuń e-mail"
+            ],
+            "Add at least one recipient to save settings.": [
+                "Dodaj co najmniej jednego odbiorcę, aby zapisać ustawienia."
+            ],
+            "Enter email address…": [
+                "Wpisz adres e-mail…"
+            ],
+            "Add": [
+                "Dodaj"
+            ],
+            "All Statuses": [
+                "Wszystkie statusy"
+            ],
+            "Date From": [
+                "Data od"
+            ],
+            "Date To": [
+                "Data do"
+            ],
+            "Search": [
+                "Wyszukiwanie…"
+            ],
+            "Order # or receipt hash": [
+                "Nr zamówienia lub skrót paragonu"
+            ],
+            "Reset": [
+                "Resetuj"
+            ],
+            "Apply Filters": [
+                "Zastosuj filtry"
+            ],
+            "Remove product": [
+                "Usuń produkt"
+            ],
+            "Search for a product…": [
+                "Szukaj produktu…"
+            ],
+            "Searching…": [
+                "Wyszukiwanie…"
+            ],
+            "No products found.": [
+                "Nie znaleziono produktów."
+            ],
+            "Back to List": [
+                "Powrót do listy"
+            ],
+            "Not included": [
+                "Nieuwzględnione"
+            ],
+            "Withdrawal approved": [
+                "Odstąpienie zatwierdzone"
+            ],
+            "Withdrawal rejected": [
+                "Odstąpienie odrzucone"
+            ],
+            "Withdrawal request submitted": [
+                "Wniosek o odstąpienie złożony"
+            ],
+            "Request Information": [
+                "Informacje o wniosku"
+            ],
+            "Order #": [
+                "Zamówienie #"
+            ],
+            "No reason provided": [
+                "Nie podano powodu"
+            ],
+            "Created": [
+                "Utworzono"
+            ],
+            "Processed": [
+                "Przetworzono"
+            ],
+            "Order Items": [
+                "Pozycje zamówienia"
+            ],
+            "Line Total": [
+                "Suma pozycji"
+            ],
+            "No order items were found for this request.": [
+                "Nie znaleziono pozycji zamówienia dla tego wniosku."
+            ],
+            "Status Timeline": [
+                "Oś czasu statusów"
+            ],
+            "Activity Log": [
+                "Dziennik aktywności"
+            ],
+            "Reject Request": [
+                "Odrzuć wniosek"
+            ],
+            "Rejection Reason": [
+                "Powód odrzucenia"
+            ],
+            "No change vs last week": [
+                "Bez zmian w stosunku do zeszłego tygodnia"
+            ],
+            "No data": [
+                "Brak danych"
+            ],
+            "No change": [
+                "Bez zmian"
+            ],
+            "Open Requests": [
+                "Otwarte wnioski"
+            ],
+            "Approved (30d)": [
+                "Zatwierdzone (30 dni)"
+            ],
+            "ID": [
+                "ID"
+            ],
+            "Actions": [
+                "Akcje"
+            ],
+            "View": [
+                "Zobacz"
+            ],
+            "Showing %1$d–%2$d of %3$d": [
+                "Wyświetlanie %1$d–%2$d z %3$d"
+            ],
+            "Showing 0 of 0": [
+                "Wyświetlanie 0 z 0"
+            ],
+            "Review request": [
+                "Prośba o opinię"
+            ],
+            "Global": [
+                "Globalnie"
+            ],
+            "WooCommerce only": [
+                "Tylko WooCommerce"
+            ],
+            "-- Select a page --": [
+                "-- Wybierz stronę --"
+            ],
+            "Failed to load settings.": [
+                "Nie udało się załadować ustawień."
+            ],
+            "Add at least one admin notification recipient before saving.": [
+                "Dodaj co najmniej jednego odbiorcę powiadomień administracyjnych przed zapisaniem."
+            ],
+            "Settings saved successfully.": [
+                "Ustawienia zostały pomyślnie zapisane."
+            ],
+            "Failed to save settings.": [
+                "Nie udało się zapisać ustawień."
+            ],
+            "Loading settings...": [
+                "Ładowanie ustawień..."
+            ],
+            "Unable to load settings.": [
+                "Nie można załadować ustawień."
+            ],
+            "General": [
+                "Ogólne"
+            ],
+            "Core withdrawal form behaviour and display preferences.": [
+                "Podstawowe zachowanie i preferencje wyświetlania formularza odstąpienia."
+            ],
+            "Withdrawal page": [
+                "Strona odstąpienia"
+            ],
+            "Embed footer link": [
+                "Osadź link w stopce"
+            ],
+            "Footer link text": [
+                "Tekst linku w stopce"
+            ],
+            "The text displayed for the footer withdrawal link.": [
+                "Tekst wyświetlany dla linku odstąpienia w stopce."
+            ],
+            "Display scope": [
+                "Zakres wyświetlania"
+            ],
+            "Allow partial withdrawals": [
+                "Zezwól na częściowe odstąpienia"
+            ],
+            "Recommended": [
+                "Zalecane"
+            ],
+            "Withdrawal period": [
+                "Termin odstąpienia"
+            ],
+            "days": [
+                "dni"
+            ],
+            "Start countdown from": [
+                "Rozpocznij odliczanie od"
+            ],
+            "Reason required": [
+                "Wymagany powód"
+            ],
+            "Exclusions": [
+                "Wykluczenia"
+            ],
+            "Exclude product types, categories, or specific products from withdrawal eligibility.": [
+                "Wyklucz typy produktów, kategorie lub konkretne produkty z możliwości odstąpienia."
+            ],
+            "Excluded product types": [
+                "Wykluczone typy produktów"
+            ],
+            "Product types that cannot be withdrawn.": [
+                "Typy produktów, które nie podlegają odstąpieniu."
+            ],
+            "Excluded categories": [
+                "Wykluczone kategorie"
+            ],
+            "Products in these categories cannot be withdrawn.": [
+                "Produkty w tych kategoriach nie podlegają odstąpieniu."
+            ],
+            "Excluded products": [
+                "Wykluczone produkty"
+            ],
+            "Search and select specific products that cannot be withdrawn.": [
+                "Wyszukaj i wybierz konkretne produkty, które nie podlegają odstąpieniu."
+            ],
+            "Order status": [
+                "Status zamówienia"
+            ],
+            "Automatically update order statuses when withdrawal requests are submitted or approved.": [
+                "Automatycznie aktualizuj statusy zamówień, gdy wnioski o odstąpienie są składane lub zatwierdzane."
+            ],
+            "Set status to": [
+                "Ustaw status na"
+            ],
+            "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails.": [
+                "Skonfiguruj odbiorców powiadomień administracyjnych oraz kontaktowy adres e-mail klienta pokazywany w e-mailach o odrzuconym odstąpieniu."
+            ],
+            "Email addresses that receive the new withdrawal request notification.": [
+                "Adresy e-mail otrzymujące powiadomienie o nowym wniosku o odstąpienie."
+            ],
+            "Customer contact email": [
+                "Kontaktowy e-mail klienta"
+            ],
+            "Email address shown to customers when a withdrawal request is rejected and they need to contact you.": [
+                "Adres e-mail pokazywany klientom, gdy wniosek o odstąpienie zostanie odrzucony i muszą się z Tobą skontaktować."
+            ],
+            "Withdrawal button shortcode": [
+                "Shortcode przycisku odstąpienia"
+            ],
+            " — Optional. Custom button text. Uses the default shortcode label when omitted.": [
+                " — Opcjonalnie. Niestandardowy tekst przycisku. Używa domyślnej etykiety shortcode, jeśli pominięto."
+            ],
+            " — Optional. Extra CSS classes added to the button.": [
+                " — Opcjonalnie. Dodatkowe klasy CSS dodane do przycisku."
+            ],
+            "Data management": [
+                "Zarządzanie danymi"
+            ],
+            "Control what happens to plugin data when the plugin is removed.": [
+                "Określ, co dzieje się z danymi wtyczki po jej usunięciu."
+            ],
+            "Delete data on uninstall": [
+                "Usuń dane przy odinstalowaniu"
+            ],
+            "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible.": [
+                "Usuń wszystkie dane wtyczki (ustawienia, wnioski o odstąpienie, tabele bazy danych) po odinstalowaniu wtyczki. Tej operacji nie można cofnąć."
+            ],
+            "Destructive": [
+                "Destrukcyjne"
+            ],
+            "Add at least one recipient to save": [
+                "Dodaj co najmniej jednego odbiorcę, aby zapisać"
+            ],
+            "Unsaved changes": [
+                "Niezapisane zmiany"
+            ],
+            "All changes saved": [
+                "Wszystkie zmiany zapisane"
+            ],
+            "Discard": [
+                "Odrzuć"
+            ],
+            "Saving...": [
+                "Zapisywanie..."
+            ],
+            "Save settings": [
+                "Zapisz ustawienia"
+            ],
+            "No status changes recorded.": [
+                "Nie zarejestrowano zmian statusu."
+            ],
+            "WooCommerce": [
+                "WooCommerce"
+            ],
+            "Customer-initiated order cancellations and partial refunds.": [
+                "Anulowania zamówień i częściowe zwroty środków inicjowane przez klienta."
+            ],
+            "Requests": [
+                "Wnioski"
+            ],
+            "System": [
+                "System"
+            ],
+            "User": [
+                "Użytkownik"
+            ],
+            "Unknown": [
+                "Nieznany"
+            ]
+        }
+    }
+}
