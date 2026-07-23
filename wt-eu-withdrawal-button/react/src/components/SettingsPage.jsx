@@ -184,6 +184,17 @@ const QUICK_DAYS = [ 2, 7, 14, 30 ];
    Main Component
    ------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------
+   Tab definitions
+   ------------------------------------------------------------------------- */
+
+const CORE_TABS = [
+	{ key: 'general', label: __( 'General', 'wt-eu-withdrawal-button' ) },
+	{ key: 'rules', label: __( 'Rules & Exclusions', 'wt-eu-withdrawal-button' ) },
+	{ key: 'workflow', label: __( 'Workflow', 'wt-eu-withdrawal-button' ) },
+	{ key: 'advanced', label: __( 'Advanced', 'wt-eu-withdrawal-button' ) },
+];
+
 const SettingsPage = () => {
 	const [ settings, setSettings ] = useState( null );
 	const [ savedSnapshot, setSavedSnapshot ] = useState( null );
@@ -192,6 +203,8 @@ const SettingsPage = () => {
 	const [ notice, setNotice ] = useState( null );
 	const [ pages, setPages ] = useState( [] );
 	const [ categories, setCategories ] = useState( [] );
+	const [ activeTab, setActiveTab ] = useState( 'general' );
+	const [ customizeTab, setCustomizeTab ] = useState( 'footer' );
 	const justSaved = useRef( false );
 
 	const orderStatuses = ( window.wbteEwbAdmin && window.wbteEwbAdmin.order_statuses ) || {};
@@ -365,6 +378,349 @@ const SettingsPage = () => {
 	const hasValidRecipients = adminNotificationRecipients.length > 0;
 	const canSave = isDirty && hasValidRecipients;
 
+	/* --- Render the combined appearance customizer block --- */
+	const renderAppearanceCustomizer = () => {
+		const footerSection = extraSections.find( ( s ) => s.id === 'pro_footer_link_inline' );
+		const myaccountSection = extraSections.find( ( s ) => s.id === 'pro_myaccount_inline' );
+
+		if ( ! footerSection && ! myaccountSection ) return null;
+
+		const myaccountToggle = myaccountSection ? ( myaccountSection.fields || [] ).find( ( f ) => f.key === 'show_myaccount_button' ) : null;
+
+		// Current tab config.
+		const isFooter = customizeTab === 'footer';
+		const prefix = isFooter ? 'footer_link' : 'myaccount_button';
+		const textKey = isFooter ? 'footer_link_text' : 'my_account_order_button_text';
+		const textPlaceholder = 'Request Withdrawal';
+		const displayTypeKey = prefix + '_display_type';
+		const colorModeKey = prefix + '_color_mode';
+		const defaultDisplayType = isFooter ? 'link' : 'button';
+
+		// Disabled when the parent toggle is off.
+		const isDisabled = isFooter
+			? ! toBool( settings.embed_footer_link )
+			: ! toBool( settings.show_myaccount_button );
+
+		const displayType = settings[ displayTypeKey ] || defaultDisplayType;
+		const colorMode = settings[ colorModeKey ] || 'theme';
+		const isBtn = displayType === 'button';
+		const isCustom = colorMode === 'custom';
+		const previewText = settings[ textKey ] || textPlaceholder;
+
+		// Use theme colors for "Theme default" mode, custom colors for "Custom" mode.
+		const tc = window.wbteEwbAdmin?.theme_colors || {};
+		const themeLinkColor = tc.link_color || '#3b54d9';
+		const themeBtnBg = tc.button_bg || '#3b54d9';
+		const themeBtnText = tc.button_color || '#ffffff';
+		const linkDefaultColor = '#1d2327';
+
+		// For links with custom colors, avoid white-on-white by checking lightness.
+		const savedTextColor = settings[ prefix + '_text_color' ] || '';
+		const isLightColor = ( c ) => {
+			if ( ! c || c.length < 4 ) return false;
+			const hex = c.replace( '#', '' );
+			const r = parseInt( hex.substring( 0, 2 ), 16 ) || 0;
+			const g = parseInt( hex.substring( 2, 4 ), 16 ) || 0;
+			const b = parseInt( hex.substring( 4, 6 ), 16 ) || 0;
+			return ( r * 0.299 + g * 0.587 + b * 0.114 ) > 220;
+		};
+		const textColor = isCustom
+			? ( isBtn
+				? ( savedTextColor || '#ffffff' )
+				: ( savedTextColor && ! isLightColor( savedTextColor ) ? savedTextColor : linkDefaultColor ) )
+			: ( isBtn ? themeBtnText : themeLinkColor );
+		const bgColor = isCustom
+			? ( settings[ prefix + '_bg_color' ] || themeBtnBg )
+			: themeBtnBg;
+
+		const pStyle = isBtn
+			? { display: 'inline-block', padding: '10px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 500, background: bgColor, color: textColor }
+			: { textDecoration: 'underline', color: textColor };
+
+		return (
+			<>
+				{ myaccountToggle && (
+					<ToggleRow
+						id="show_myaccount_button"
+						checked={ toBool( settings.show_myaccount_button ) }
+						onChange={ ( val ) => updateField( 'show_myaccount_button', toYesNo( val ) ) }
+						label={ myaccountToggle.label }
+						desc={ myaccountToggle.desc }
+					/>
+				) }
+
+				<div style={ { background: '#fafafa', borderRadius: '10px', border: '1px solid #e5e7eb', padding: '18px 20px', marginTop: '4px' } }>
+					<p className="wbte-ewb-field__label" style={ { margin: '0 0 8px', fontSize: '13.5px' } }>{ __( 'Customize appearance', 'wt-eu-withdrawal-button' ) }</p>
+					<div style={ { marginBottom: '16px' } }>
+						<SegmentedControl
+							options={ [
+								{ value: 'footer', label: __( 'Footer', 'wt-eu-withdrawal-button' ) },
+								{ value: 'myaccount', label: __( 'My account page', 'wt-eu-withdrawal-button' ) },
+							] }
+							value={ customizeTab }
+							onChange={ setCustomizeTab }
+						/>
+					</div>
+
+					{ isDisabled && (
+						<p style={ { fontSize: '13px', color: '#9ca3af', fontStyle: 'italic', margin: '0 0 12px' } }>
+							{ isFooter
+								? __( 'Enable "Show withdrawal button in footer" above to customize.', 'wt-eu-withdrawal-button' )
+								: __( 'Enable "Show withdrawal button in My Account" above to customize.', 'wt-eu-withdrawal-button' )
+							}
+						</p>
+					) }
+
+					<div style={ { display: 'flex', flexWrap: 'wrap', gap: '14px', alignItems: 'start', opacity: isDisabled ? 0.35 : 1, pointerEvents: isDisabled ? 'none' : 'auto', transition: 'opacity .15s' } }>
+						<div style={ { flex: '1 1 140px', minWidth: '140px' } }>
+							<p style={ { fontWeight: 500, fontSize: '12px', margin: '0 0 5px', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.3px' } }>{ isFooter ? __( 'Link text', 'wt-eu-withdrawal-button' ) : __( 'Button text', 'wt-eu-withdrawal-button' ) }</p>
+							<input
+								type="text"
+								className="wbte-ewb-input"
+								value={ settings[ textKey ] || '' }
+								onChange={ ( e ) => updateField( textKey, e.target.value ) }
+								placeholder={ textPlaceholder }
+								style={ { width: '100%' } }
+							/>
+						</div>
+						<div style={ { flex: '0 0 auto' } }>
+							<p style={ { fontWeight: 500, fontSize: '12px', margin: '0 0 5px', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.3px' } }>{ __( 'Display as', 'wt-eu-withdrawal-button' ) }</p>
+							<SegmentedControl
+								options={ [
+									{ value: 'link', label: __( 'Link', 'wt-eu-withdrawal-button' ) },
+									{ value: 'button', label: __( 'Button', 'wt-eu-withdrawal-button' ) },
+								] }
+								value={ displayType }
+								onChange={ ( val ) => updateField( displayTypeKey, val ) }
+							/>
+						</div>
+						<div style={ { flex: '0 0 auto' } }>
+							<p style={ { fontWeight: 500, fontSize: '12px', margin: '0 0 5px', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.3px' } }>{ __( 'Colors', 'wt-eu-withdrawal-button' ) }</p>
+							<SegmentedControl
+								options={ [ { value: 'theme', label: __( 'Theme default', 'wt-eu-withdrawal-button' ) }, { value: 'custom', label: __( 'Custom', 'wt-eu-withdrawal-button' ) } ] }
+								value={ colorMode }
+								onChange={ ( val ) => updateField( colorModeKey, val ) }
+							/>
+						</div>
+						<div style={ { flex: '1 1 180px', minWidth: '180px', padding: '10px 14px', background: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb', textAlign: 'center', minHeight: '60px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' } }>
+							<p style={ { margin: '0 0 6px', fontSize: '10px', fontWeight: 600, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.5px' } }>Preview</p>
+							<span style={ pStyle }>{ previewText }</span>
+						</div>
+					</div>
+
+				{ isCustom && ! isDisabled && ( () => {
+					const defaultTextColor = isBtn ? '#ffffff' : linkDefaultColor;
+					const defaultHoverColor = isBtn ? '#ffffff' : '#3b54d9';
+					const effectiveText = settings[ prefix + '_text_color' ] && ! ( ! isBtn && isLightColor( settings[ prefix + '_text_color' ] ) ) ? settings[ prefix + '_text_color' ] : defaultTextColor;
+					const effectiveHover = settings[ prefix + '_hover_text_color' ] && ! ( ! isBtn && isLightColor( settings[ prefix + '_hover_text_color' ] ) ) ? settings[ prefix + '_hover_text_color' ] : defaultHoverColor;
+
+					return (
+					<div style={ { display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '12px' } }>
+						{ isBtn && (
+							<div>
+								<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Background', 'wt-eu-withdrawal-button' ) }</p>
+								<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
+									<input type="color" value={ settings[ prefix + '_bg_color' ] || '#3b54d9' } onChange={ ( e ) => updateField( prefix + '_bg_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+									<input type="text" className="wbte-ewb-input" value={ settings[ prefix + '_bg_color' ] || '#3b54d9' } onChange={ ( e ) => updateField( prefix + '_bg_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+								</div>
+							</div>
+						) }
+						<div>
+							<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Text', 'wt-eu-withdrawal-button' ) }</p>
+							<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
+								<input type="color" value={ effectiveText } onChange={ ( e ) => updateField( prefix + '_text_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+								<input type="text" className="wbte-ewb-input" value={ effectiveText } onChange={ ( e ) => updateField( prefix + '_text_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+							</div>
+						</div>
+						{ isBtn && (
+							<div>
+								<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Hover bg', 'wt-eu-withdrawal-button' ) }</p>
+								<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
+									<input type="color" value={ settings[ prefix + '_hover_bg_color' ] || '#2d43b5' } onChange={ ( e ) => updateField( prefix + '_hover_bg_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+									<input type="text" className="wbte-ewb-input" value={ settings[ prefix + '_hover_bg_color' ] || '#2d43b5' } onChange={ ( e ) => updateField( prefix + '_hover_bg_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+								</div>
+							</div>
+						) }
+						<div>
+							<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Hover text', 'wt-eu-withdrawal-button' ) }</p>
+							<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
+								<input type="color" value={ effectiveHover } onChange={ ( e ) => updateField( prefix + '_hover_text_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+								<input type="text" className="wbte-ewb-input" value={ effectiveHover } onChange={ ( e ) => updateField( prefix + '_hover_text_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+							</div>
+						</div>
+					</div>
+					);
+				} )() }
+				</div>
+			</>
+		);
+	};
+
+	/* --- Render an extra section (addon-provided) --- */
+	const renderExtraSection = ( section ) => (
+		<div className="wbte-ewb-card" key={ section.id }>
+			<div className="ch">
+				<div className="ch__top" style={ section.header_toggle ? { justifyContent: 'space-between' } : {} }>
+					<span style={ { display: 'flex', alignItems: 'center', gap: '8px' } }>
+						<span className="ch__icon"><IconCog /></span>
+						<h2 style={ { margin: 0 } }>
+							{ section.title }
+							{ section.badge && (
+								<span style={ {
+									display: 'inline-block',
+									marginLeft: '8px',
+									padding: '2px 8px',
+									fontSize: '11px',
+									fontWeight: 600,
+									color: '#fff',
+									background: '#7b2cf5',
+									borderRadius: '3px',
+									verticalAlign: 'middle',
+									textTransform: 'uppercase',
+								} }>{ section.badge }</span>
+							) }
+						</h2>
+					</span>
+					{ section.header_toggle && (
+						<Toggle
+							id={ section.header_toggle }
+							checked={ toBool( settings[ section.header_toggle ] ) }
+							onChange={ ( val ) => updateField( section.header_toggle, toYesNo( val ) ) }
+						/>
+					) }
+				</div>
+				{ section.desc && <p className="ch__sub">{ section.desc }</p> }
+			</div>
+			<div className="cb">
+				{ ( section.fields || [] ).map( ( field ) => {
+					if ( field.show_if ) {
+						const depVal = settings[ field.show_if.key ];
+						if ( field.show_if.value !== undefined && depVal !== field.show_if.value ) return null;
+						if ( field.show_if.truthy && ! toBool( depVal ) ) return null;
+					}
+					if ( field.show_if_also ) {
+						const depVal2 = settings[ field.show_if_also.key ];
+						if ( field.show_if_also.value !== undefined && depVal2 !== field.show_if_also.value ) return null;
+						if ( field.show_if_also.truthy && ! toBool( depVal2 ) ) return null;
+					}
+					if ( field.type === 'heading' ) {
+						return ( <p key={ field.key } style={ { fontWeight: 600, fontSize: '14px', margin: '20px 0 4px', paddingTop: '16px', borderTop: '2px solid #e5e7eb' } }>{ field.label }</p> );
+					}
+					if ( field.type === 'preview' ) {
+						const previewType = field.preview_type || '';
+						let previewStyle = {};
+						let previewText = 'Request Withdrawal';
+						if ( previewType === 'footer_link' ) {
+							previewText = settings.footer_link_text || 'Request Withdrawal';
+							const isBtn = settings.footer_link_display_type === 'button';
+							const isCustom = settings.footer_link_color_mode === 'custom';
+							previewStyle = isBtn
+								? { display: 'inline-block', padding: '10px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 500, background: isCustom ? ( settings.footer_link_bg_color || '#3b54d9' ) : '#3b54d9', color: isCustom ? ( settings.footer_link_text_color || '#fff' ) : '#fff' }
+								: { textDecoration: 'underline', color: isCustom ? ( settings.footer_link_text_color || '#3b54d9' ) : '#3b54d9' };
+						} else if ( previewType === 'myaccount_button' ) {
+							previewText = settings.my_account_order_button_text || 'Request Withdrawal';
+							const isBtn = settings.myaccount_button_display_type !== 'link';
+							const isCustom = settings.myaccount_button_color_mode === 'custom';
+							previewStyle = isBtn
+								? { display: 'inline-block', padding: '8px 18px', borderRadius: '5px', textDecoration: 'none', fontWeight: 500, fontSize: '13px', border: 'none', background: isCustom ? ( settings.myaccount_button_bg_color || '#3b54d9' ) : '#3b54d9', color: isCustom ? ( settings.myaccount_button_text_color || '#fff' ) : '#fff' }
+								: { textDecoration: 'underline', color: isCustom ? ( settings.myaccount_button_text_color || '#3b54d9' ) : '#3b54d9', background: 'none', border: 'none', padding: 0, fontSize: '13px' };
+						}
+						return (
+							<div key={ field.key } style={ { margin: '16px 0 8px', padding: '16px 20px', background: '#f9fafb', borderRadius: '8px', border: '1px dashed #d1d5db' } }>
+								<p style={ { margin: '0 0 8px', fontSize: '12px', fontWeight: 600, color: '#6b7280', textTransform: 'uppercase', letterSpacing: '0.5px' } }>Preview</p>
+								<span style={ previewStyle }>{ previewText }</span>
+							</div>
+						);
+					}
+					if ( field.type === 'warning' ) {
+						return (
+							<div key={ field.key } className="wbte-ewb-warning-banner" role="alert" style={ { margin: '12px 0' } }>
+								<div className="wbte-ewb-warning-banner__main">
+									<div className="wbte-ewb-warning-banner__icon" aria-hidden="true">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19H4.5L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z" /></svg>
+									</div>
+									<div className="wbte-ewb-warning-banner__content">
+										<p className="wbte-ewb-warning-banner__text">{ field.message }</p>
+									</div>
+								</div>
+								<div className="wbte-ewb-warning-banner__actions">
+									{ field.url && <a className="wbte-ewb-warning-banner__link" href={ field.url }>{ field.action }</a> }
+									{ field.doc_url && <a className="wbte-ewb-warning-banner__doc" href={ field.doc_url } target="_blank" rel="noopener noreferrer">{ field.doc }</a> }
+								</div>
+							</div>
+						);
+					}
+					if ( field.type === 'toggle' ) {
+						return ( <ToggleRow key={ field.key } id={ field.key } checked={ toBool( settings[ field.key ] ) } onChange={ ( val ) => updateField( field.key, toYesNo( val ) ) } label={ field.label } desc={ field.desc } /> );
+					}
+					if ( field.type === 'segmented' ) {
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><SegmentedControl options={ ( field.options || [] ).map( ( o ) => ( { value: o.value, label: o.label } ) ) } value={ settings[ field.key ] ?? field.default ?? '' } onChange={ ( val ) => updateField( field.key, val ) } /></Field> );
+					}
+					if ( field.type === 'chips' ) {
+						const selected = Array.isArray( settings[ field.key ] ) ? settings[ field.key ] : [];
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><div className="wbte-ewb-chips">{ ( field.options || [] ).map( ( opt ) => ( <Chip key={ opt.value } label={ opt.label } selected={ selected.includes( opt.value ) } onClick={ () => toggleArrayItem( field.key, opt.value ) } /> ) ) }</div></Field> );
+					}
+					if ( field.type === 'category_search' ) {
+						const catVal = Array.isArray( settings[ field.key ] ) ? settings[ field.key ].map( ( id ) => parseInt( id, 10 ) ) : [];
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><CategoryExclusionField categories={ categories } value={ catVal } onChange={ ( ids ) => updateField( field.key, ids ) } /></Field> );
+					}
+					if ( field.type === 'product_search' ) {
+						const prodVal = Array.isArray( settings[ field.key ] ) ? settings[ field.key ].map( ( id ) => parseInt( id, 10 ) ).filter( Boolean ) : [];
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><ProductSearchField value={ prodVal } onChange={ ( ids ) => updateField( field.key, ids ) } /></Field> );
+					}
+					if ( field.type === 'number' ) {
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="number" className="wbte-ewb-input" value={ settings[ field.key ] ?? field.default ?? '' } min={ field.min } max={ field.max } step={ field.step } onChange={ ( e ) => updateField( field.key, parseFloat( e.target.value ) || 0 ) } style={ { width: '120px' } } /></Field> );
+					}
+					if ( field.type === 'select' ) {
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><select className="wbte-ewb-select" value={ settings[ field.key ] ?? field.default ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) }>{ ( field.options || [] ).map( ( opt ) => ( <option key={ opt.value } value={ opt.value }>{ opt.label }</option> ) ) }</select></Field> );
+					}
+					if ( field.type === 'textarea' ) {
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><textarea className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } rows={ field.rows || 4 } style={ { width: '100%', maxWidth: '400px' } } /></Field> );
+					}
+					if ( field.type === 'text' ) {
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="text" className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } placeholder={ field.placeholder || '' } /></Field> );
+					}
+					if ( field.type === 'color' ) {
+						return (
+							<Field key={ field.key } label={ field.label } desc={ field.desc }>
+								<div style={ { display: 'flex', alignItems: 'center', gap: '8px' } }>
+									<input
+										type="color"
+										value={ settings[ field.key ] ?? field.default ?? '#000000' }
+										onChange={ ( e ) => updateField( field.key, e.target.value ) }
+										style={ { width: '40px', height: '32px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer' } }
+									/>
+									<input
+										type="text"
+										className="wbte-ewb-input"
+										value={ settings[ field.key ] ?? field.default ?? '' }
+										onChange={ ( e ) => updateField( field.key, e.target.value ) }
+										style={ { width: '90px', fontFamily: 'monospace', fontSize: '13px' } }
+									/>
+								</div>
+							</Field>
+						);
+					}
+					return null;
+				} ) }
+			</div>
+		</div>
+	);
+
+	/* --- Build tabs: core + any extra tabs from addon sections --- */
+	const extraSections = window.wbteEwbAdmin?.extra_sections || [];
+	const addonTabKeys = new Set();
+	extraSections.forEach( ( s ) => {
+		if ( s.tab && ! CORE_TABS.find( ( t ) => t.key === s.tab ) ) {
+			addonTabKeys.add( s.tab );
+		}
+	} );
+	const addonTabs = [ ...addonTabKeys ].map( ( key ) => {
+		const first = extraSections.find( ( s ) => s.tab === key );
+		return { key, label: first?.tab_label || key.charAt( 0 ).toUpperCase() + key.slice( 1 ) };
+	} );
+	const allTabs = [ ...CORE_TABS, ...addonTabs ];
+
 	return (
 		<div className="wbte-ewb-settings">
 			{ notice && (
@@ -403,8 +759,27 @@ const SettingsPage = () => {
 			) }
 
 			{ /* ============================================================
-			     General
+			     Tab Navigation
 			     ============================================================ */ }
+			<div className="wbte-ewb-subtabs">
+				{ allTabs.map( ( tab ) => (
+					<button
+						key={ tab.key }
+						type="button"
+						className={ `wbte-ewb-subtabs__btn${ activeTab === tab.key ? ' wbte-ewb-subtabs__btn--active' : '' }` }
+						onClick={ () => setActiveTab( tab.key ) }
+					>
+						{ tab.label }
+					</button>
+				) ) }
+			</div>
+
+			{ /* ============================================================
+			     General (tab: general)
+			     ============================================================ */ }
+			{ activeTab === 'general' && (
+			<>
+
 			<div className="wbte-ewb-card">
 				<div className="ch">
 					<div className="ch__top">
@@ -435,26 +810,30 @@ const SettingsPage = () => {
 						id="embed_footer_link"
 						checked={ toBool( settings.embed_footer_link ) }
 						onChange={ ( val ) => updateField( 'embed_footer_link', toYesNo( val ) ) }
-						label={ __( 'Embed footer link', 'wt-eu-withdrawal-button' ) }
-						desc={ __( 'Automatically add a link to the withdrawal page in the site footer.', 'wt-eu-withdrawal-button' ) }
+						label={ __( 'Show withdrawal button in footer', 'wt-eu-withdrawal-button' ) }
+						desc={ __( 'Display a withdrawal button or link in the site footer.', 'wt-eu-withdrawal-button' ) }
 					/>
 
-					{ toBool( settings.embed_footer_link ) && (
-						<div className="wbte-ewb-toggle-row__child">
-							<Field
-								label={ __( 'Footer link text', 'wt-eu-withdrawal-button' ) }
-								desc={ __( 'The text displayed for the footer withdrawal link.', 'wt-eu-withdrawal-button' ) }
-							>
-								<input
-									type="text"
-									className="wbte-ewb-input"
-									value={ settings.footer_link_text || '' }
-									onChange={ ( e ) => updateField( 'footer_link_text', e.target.value ) }
-									placeholder={ __( 'Request Withdrawal', 'wt-eu-withdrawal-button' ) }
-								/>
-							</Field>
-						</div>
-					) }
+					{ /* Combined appearance customizer (Pro: footer link + My Account) */ }
+					{ extraSections.some( ( s ) => s.id === 'pro_footer_link_inline' || s.id === 'pro_myaccount_inline' )
+						? renderAppearanceCustomizer()
+						: toBool( settings.embed_footer_link ) && (
+							<div className="wbte-ewb-toggle-row__child">
+								<Field
+									label={ __( 'Footer link text', 'wt-eu-withdrawal-button' ) }
+									desc={ __( 'The text displayed for the footer withdrawal link.', 'wt-eu-withdrawal-button' ) }
+								>
+									<input
+										type="text"
+										className="wbte-ewb-input"
+										value={ settings.footer_link_text || '' }
+										onChange={ ( e ) => updateField( 'footer_link_text', e.target.value ) }
+										placeholder={ __( 'Request Withdrawal', 'wt-eu-withdrawal-button' ) }
+									/>
+								</Field>
+							</div>
+						)
+					}
 
 					<Field
 						label={ __( 'Display scope', 'wt-eu-withdrawal-button' ) }
@@ -528,9 +907,19 @@ const SettingsPage = () => {
 				</div>
 			</div>
 
+			{ /* --- Extra sections assigned to "general" tab (excluding inline ones) --- */ }
+			{ extraSections.filter( ( s ) => s.tab === 'general' && s.id !== 'pro_footer_link_inline' && s.id !== 'pro_myaccount_inline' && s.id !== 'pro_button_appearance' ).map( ( section ) => renderExtraSection( section ) ) }
+			</>
+			) }
+
 			{ /* ============================================================
-			     Exclusions
+			     Rules & Exclusions (tab: rules)
 			     ============================================================ */ }
+			{ activeTab === 'rules' && (
+			<>
+			{ /* --- Extra sections assigned to "rules" tab (rendered first, e.g. Pro auto-processing) --- */ }
+			{ extraSections.filter( ( s ) => s.tab === 'rules' ).map( ( section ) => renderExtraSection( section ) ) }
+
 			<div className="wbte-ewb-card">
 				<div className="ch">
 					<div className="ch__top">
@@ -581,9 +970,14 @@ const SettingsPage = () => {
 				</div>
 			</div>
 
+			</>
+			) }
+
 			{ /* ============================================================
-			     Order Status
+			     Workflow (tab: workflow)
 			     ============================================================ */ }
+			{ activeTab === 'workflow' && (
+			<>
 			<div className="wbte-ewb-card">
 				<div className="ch">
 					<div className="ch__top">
@@ -685,9 +1079,16 @@ const SettingsPage = () => {
 				</div>
 			</div>
 
+			{ /* --- Extra sections assigned to "workflow" tab --- */ }
+			{ extraSections.filter( ( s ) => s.tab === 'workflow' ).map( ( section ) => renderExtraSection( section ) ) }
+			</>
+			) }
+
 			{ /* ============================================================
-			     Withdrawal Button Shortcode
+			     Advanced (tab: advanced)
 			     ============================================================ */ }
+			{ activeTab === 'advanced' && (
+			<>
 			<div className="wbte-ewb-card">
 				<div className="ch">
 					<div className="ch__top">
@@ -717,6 +1118,9 @@ const SettingsPage = () => {
 				</div>
 			</div>
 
+			{ /* --- Extra sections assigned to "advanced" tab --- */ }
+			{ extraSections.filter( ( s ) => s.tab === 'advanced' ).map( ( section ) => renderExtraSection( section ) ) }
+
 			{ /* ============================================================
 			     Data Management
 			     ============================================================ */ }
@@ -742,6 +1146,18 @@ const SettingsPage = () => {
 					/>
 				</div>
 			</div>
+
+			</>
+			) }
+
+			{ /* --- Addon tabs (custom tabs created by extra_sections with new tab keys) --- */ }
+			{ addonTabs.map( ( tab ) => (
+				activeTab === tab.key ? (
+					<div key={ tab.key }>
+						{ extraSections.filter( ( s ) => s.tab === tab.key ).map( ( section ) => renderExtraSection( section ) ) }
+					</div>
+				) : null
+			) ) }
 
 			{ /* ============================================================
 			     Sticky Save Bar

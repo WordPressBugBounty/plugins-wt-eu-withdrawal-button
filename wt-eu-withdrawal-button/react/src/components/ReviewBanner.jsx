@@ -68,8 +68,8 @@ const ReviewBanner = () => {
 
 	const message =
 		milestone === 'withdrawals'
-			? __( 'You\'ve received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!', 'wt-eu-withdrawal-button' )
-			: __( 'You\'ve been using WebToffee EU Withdrawal Button for a week. Leave a review!', 'wt-eu-withdrawal-button' );
+			? __( 'Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!', 'wt-eu-withdrawal-button' )
+			: __( 'You\'ve been using WebToffee EU Withdrawal Button for a week. We\'d really appreciate if you could take a moment to leave us a review', 'wt-eu-withdrawal-button' );
 
 	return (
 		<div className="wbte-ewb-review-banner" role="region" aria-label={ __( 'Review request', 'wt-eu-withdrawal-button' ) }>

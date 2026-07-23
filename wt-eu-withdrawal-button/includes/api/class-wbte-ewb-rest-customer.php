@@ -306,9 +306,11 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 			);
 		}
 
+		$order_number = $request->get_param( 'order_number' );
+
 		$result = $guest_service->queue_request(
 			array(
-				'order_number' => $request->get_param( 'order_number' ),
+				'order_number' => $order_number,
 				'email'        => $request->get_param( 'email' ),
 				'reason'       => $request->get_param( 'reason' ),
 			)
@@ -325,11 +327,26 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 			);
 		}
 
-		return $this->success_response(
+		// Switch WPML language to the order's language for the response message.
+		$order = $guest_service->resolve_order_by_number( $order_number );
+		if ( $order instanceof WC_Order ) {
+			$order_lang = $order->get_meta( 'wpml_language' );
+			if ( $order_lang ) {
+				do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+			}
+		}
+
+		$response = $this->success_response(
 			array(),
 			Wbte_Ewb_Guest_Verification::get_queue_success_message(),
 			201
 		);
+
+		if ( ! empty( $order_lang ) ) {
+			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		}
+
+		return $response;
 	}
 
 	/**

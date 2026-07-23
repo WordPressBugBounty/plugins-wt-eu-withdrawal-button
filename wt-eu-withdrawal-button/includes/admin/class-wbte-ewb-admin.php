@@ -73,8 +73,8 @@ class Wbte_Ewb_Admin {
 
 		Wbte_Ewb_Script_Translations::init();
 
-		$this->menu           = new Wbte_Ewb_Admin_Menu();
-		$this->assets         = new Wbte_Ewb_Admin_Assets();
+		$this->menu               = new Wbte_Ewb_Admin_Menu();
+		$this->assets             = new Wbte_Ewb_Admin_Assets();
 		$this->order_meta_box     = new Wbte_Ewb_Order_Meta_Box();
 		$this->uninstall_feedback = new Wbte_Ewb_Uninstall_Feedback();
 

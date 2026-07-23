@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-06-25 14:54+0000",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Selectați pagina în care clienții pot trimite cereri de retragere."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Adăugați automat un link către pagina de retragere în subsolul site-ului."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Unde sunt afișate formularul de retragere și linkurile."
@@ -132,11 +129,11 @@
             "Full": [
                 "Complet"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Ați primit peste 10 solicitări de retragere. Lăsați o recenzie pentru WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Magazinul tău face dreptul de retragere UE simplu pentru clienți. Îți place WebToffee EU Withdrawal Button? Lasă o recenzie!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Folosiți WebToffee EU Withdrawal Button de o săptămână. Lăsați o recenzie!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Utilizați WebToffee EU Withdrawal Button de o săptămână. V-am fi foarte recunoscători dacă ați putea dedica un moment pentru a ne lăsa o recenzie"
             ],
             "Customer": [
                 "Client"
@@ -153,14 +150,17 @@
             "Status": [
                 "Stare"
             ],
+            "Processed": [
+                "Procesat"
+            ],
+            "Reason": [
+                "Motiv"
+            ],
             "Customer Email": [
                 "E-mailul clientului"
             ],
             "Request Type": [
                 "Tip cerere"
-            ],
-            "Reason": [
-                "Motiv"
             ],
             "Quantity": [
                 "Cantitate"
@@ -279,9 +279,6 @@
             "Created": [
                 "Creat"
             ],
-            "Processed": [
-                "Procesat"
-            ],
             "Order Items": [
                 "Comanda articole"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Doar WooCommerce"
             ],
+            "General": [
+                "General"
+            ],
+            "Rules & Exclusions": [
+                "Reguli și excluderi"
+            ],
+            "Workflow": [
+                "Flux de lucru"
+            ],
+            "Advanced": [
+                "Avansat"
+            ],
             "-- Select a page --": [
                 "-- Selectați o pagină --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Nu se pot încărca setările."
             ],
-            "General": [
-                "General"
+            "Customize appearance": [
+                "Personalizează aspectul"
+            ],
+            "Footer": [
+                "Subsol"
+            ],
+            "My account page": [
+                "Pagina Contul meu"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Activează „Afișează butonul de retragere în subsol” de mai sus pentru a personaliza."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Activează „Afișează butonul de retragere în Contul meu” de mai sus pentru a personaliza."
+            ],
+            "Link text": [
+                "Text link"
+            ],
+            "Button text": [
+                "Text buton"
+            ],
+            "Display as": [
+                "Afișează ca"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Buton"
+            ],
+            "Colors": [
+                "Culori"
+            ],
+            "Theme default": [
+                "Implicit din temă"
+            ],
+            "Custom": [
+                "Personalizat"
+            ],
+            "Background": [
+                "Fundal"
+            ],
+            "Text": [
+                "Text"
+            ],
+            "Hover bg": [
+                "Fundal la hover"
+            ],
+            "Hover text": [
+                "Text la hover"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Comportamentul principal al formularului de retragere și preferințele de afișare."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Pagina de retragere"
             ],
-            "Embed footer link": [
-                "Încorporați linkul de subsol"
+            "Show withdrawal button in footer": [
+                "Afișează butonul de retragere în subsol"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Afișează un buton sau un link de retragere în subsolul site-ului."
             ],
             "Footer link text": [
                 "Textul linkului de subsol"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Cereri"
             ],
-            "System": [
-                "Sistem"
+            "Auto-approval": [
+                "Aprobare automată"
             ],
             "User": [
                 "Utilizator"

@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-06-25 14:54+0000",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Seleziona la pagina in cui i clienti possono inviare richieste di recesso."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Aggiungi automaticamente un collegamento alla pagina di recesso nel footer del sito."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Dove vengono visualizzati il ​​modulo di recesso e i link."
@@ -132,11 +129,11 @@
             "Full": [
                 "Pieno"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Hai ricevuto oltre 10 richieste di recesso. Lascia una recensione per WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Il tuo negozio rende semplice il diritto di recesso UE per i clienti. Ti piace WebToffee EU Withdrawal Button? Lascia una recensione!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Usi WebToffee EU Withdrawal Button da una settimana. Lascia una recensione!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Stai utilizzando WebToffee EU Withdrawal Button da una settimana. Ti saremmo molto grati se potessi dedicare un momento per lasciarci una recensione"
             ],
             "Customer": [
                 "Cliente"
@@ -153,14 +150,17 @@
             "Status": [
                 "Stato"
             ],
+            "Processed": [
+                "Elaborato"
+            ],
+            "Reason": [
+                "Motivo"
+            ],
             "Customer Email": [
                 "E-mail del cliente"
             ],
             "Request Type": [
                 "Tipo di richiesta"
-            ],
-            "Reason": [
-                "Motivo"
             ],
             "Quantity": [
                 "Quantità"
@@ -279,9 +279,6 @@
             "Created": [
                 "Creato"
             ],
-            "Processed": [
-                "Elaborato"
-            ],
             "Order Items": [
                 "Ordina articoli"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Solo WooCommerce"
             ],
+            "General": [
+                "Generale"
+            ],
+            "Rules & Exclusions": [
+                "Regole ed esclusioni"
+            ],
+            "Workflow": [
+                "Flusso di lavoro"
+            ],
+            "Advanced": [
+                "Avanzate"
+            ],
             "-- Select a page --": [
                 "-- Seleziona una pagina --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Impossibile caricare le impostazioni."
             ],
-            "General": [
-                "Generale"
+            "Customize appearance": [
+                "Personalizza aspetto"
+            ],
+            "Footer": [
+                "Piè di pagina"
+            ],
+            "My account page": [
+                "Pagina Il mio account"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Abilita «Mostra pulsante di recesso nel piè di pagina» sopra per personalizzare."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Abilita «Mostra pulsante di recesso in Il mio account» sopra per personalizzare."
+            ],
+            "Link text": [
+                "Testo del link"
+            ],
+            "Button text": [
+                "Testo del pulsante"
+            ],
+            "Display as": [
+                "Visualizza come"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Pulsante"
+            ],
+            "Colors": [
+                "Colori"
+            ],
+            "Theme default": [
+                "Predefinito del tema"
+            ],
+            "Custom": [
+                "Personalizzato"
+            ],
+            "Background": [
+                "Sfondo"
+            ],
+            "Text": [
+                "Testo"
+            ],
+            "Hover bg": [
+                "Sfondo al passaggio"
+            ],
+            "Hover text": [
+                "Testo al passaggio"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Comportamento principale del modulo di recesso e preferenze di visualizzazione."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Pagina del recesso"
             ],
-            "Embed footer link": [
-                "Incorpora collegamento a piè di pagina"
+            "Show withdrawal button in footer": [
+                "Mostra pulsante di recesso nel piè di pagina"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Mostra un pulsante o un link di recesso nel piè di pagina del sito."
             ],
             "Footer link text": [
                 "Testo del collegamento a piè di pagina"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Richieste"
             ],
-            "System": [
-                "Sistema"
+            "Auto-approval": [
+                "Approvazione automatica"
             ],
             "User": [
                 "Utente"

@@ -141,13 +141,14 @@
 }
 
 .wbte-ewb-item-qty-select {
-	min-width: 56px;
+	width: 56px;
 	padding: 4px 8px;
 	border: 1px solid #d1d5db;
 	border-radius: 4px;
 	background: #fff;
 	font-size: 13px;
 	color: #374151;
+	text-align: center;
 }
 
 .wbte-ewb-item-qty-select:disabled {

@@ -97,34 +97,46 @@ class Wbte_Ewb_Admin_Assets {
 		}
 
 		// Localize script data.
-		wp_localize_script(
-			'wbte-ewb-admin-dashboard',
-			'wbteEwbAdmin',
-			array(
-				'rest_url'       => esc_url_raw( rest_url( 'wbte-ewb/v1/' ) ),
-				'nonce'          => wp_create_nonce( 'wp_rest' ),
-				'admin_url'      => esc_url_raw( admin_url() ),
-				'plugin_url'     => esc_url_raw( WBTE_EWB_PLUGIN_URL ),
-				'version'        => WBTE_EWB_VERSION,
-				'settings'       => Wbte_Ewb_Settings::get_all(),
-				'order_statuses' => function_exists( 'wc_get_order_statuses' ) ? wc_get_order_statuses() : array(),
-				'default_store_email' => Wbte_Ewb_Settings::get_store_email(),
-				'i18n'           => array(
-					'pending'          => __( 'Pending', 'wt-eu-withdrawal-button' ),
-					'approved'         => __( 'Approved', 'wt-eu-withdrawal-button' ),
-					'rejected'         => __( 'Rejected', 'wt-eu-withdrawal-button' ),
-					'approve'          => __( 'Approve', 'wt-eu-withdrawal-button' ),
-					'reject'           => __( 'Reject', 'wt-eu-withdrawal-button' ),
-					'full_withdrawal'  => __( 'Full Withdrawal', 'wt-eu-withdrawal-button' ),
-					'partial'          => __( 'Partial Withdrawal', 'wt-eu-withdrawal-button' ),
-					'no_requests'      => __( 'No withdrawal requests found.', 'wt-eu-withdrawal-button' ),
-					'loading'          => __( 'Loading…', 'wt-eu-withdrawal-button' ),
-					'error'            => __( 'An error occurred. Please try again.', 'wt-eu-withdrawal-button' ),
-					'confirm_approve'  => __( 'Are you sure you want to approve this withdrawal request?', 'wt-eu-withdrawal-button' ),
-					'confirm_reject'   => __( 'Are you sure you want to reject this withdrawal request?', 'wt-eu-withdrawal-button' ),
-				),
-			)
+		$script_data = array(
+			'rest_url'       => esc_url_raw( rest_url( 'wbte-ewb/v1/' ) ),
+			'nonce'          => wp_create_nonce( 'wp_rest' ),
+			'admin_url'      => esc_url_raw( admin_url() ),
+			'plugin_url'     => esc_url_raw( WBTE_EWB_PLUGIN_URL ),
+			'version'        => WBTE_EWB_VERSION,
+			'settings'       => Wbte_Ewb_Settings::get_all(),
+			'order_statuses' => function_exists( 'wc_get_order_statuses' ) ? wc_get_order_statuses() : array(),
+			'default_store_email' => Wbte_Ewb_Settings::get_store_email(),
+			'extra_sections'  => array(),
+			'admin_warnings'  => array(),
+			'i18n'           => array(
+				'pending'          => __( 'Pending', 'wt-eu-withdrawal-button' ),
+				'approved'         => __( 'Approved', 'wt-eu-withdrawal-button' ),
+				'rejected'         => __( 'Rejected', 'wt-eu-withdrawal-button' ),
+				'approve'          => __( 'Approve', 'wt-eu-withdrawal-button' ),
+				'reject'           => __( 'Reject', 'wt-eu-withdrawal-button' ),
+				'full_withdrawal'  => __( 'Full Withdrawal', 'wt-eu-withdrawal-button' ),
+				'partial'          => __( 'Partial Withdrawal', 'wt-eu-withdrawal-button' ),
+				'no_requests'      => __( 'No withdrawal requests found.', 'wt-eu-withdrawal-button' ),
+				'loading'          => __( 'Loading…', 'wt-eu-withdrawal-button' ),
+				'error'            => __( 'An error occurred. Please try again.', 'wt-eu-withdrawal-button' ),
+				'confirm_approve'  => __( 'Are you sure you want to approve this withdrawal request?', 'wt-eu-withdrawal-button' ),
+				'confirm_reject'   => __( 'Are you sure you want to reject this withdrawal request?', 'wt-eu-withdrawal-button' ),
+			),
 		);
+
+		/**
+		 * Filters the admin dashboard script data before it is localized.
+		 *
+		 * Addons can use this to inject extra_sections (settings UI schema),
+		 * additional i18n strings, or other data for the React dashboard.
+		 *
+		 * @since 1.0.7
+		 *
+		 * @param array $script_data The data array passed to wp_localize_script.
+		 */
+		$script_data = apply_filters( 'wbte_ewb_admin_script_data', $script_data );
+
+		wp_localize_script( 'wbte-ewb-admin-dashboard', 'wbteEwbAdmin', $script_data );
 
 		// Script translations for JS i18n (WPML-aware locale + inline fallback).
 		wp_set_script_translations(

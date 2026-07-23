@@ -8,7 +8,7 @@ import { __ } from '@wordpress/i18n';
 
 const getActorLabel = ( log ) => {
 	if ( log.actor_type === 'system' ) {
-		return __( 'System', 'wt-eu-withdrawal-button' );
+		return log.actor_name || __( 'Auto-approval', 'wt-eu-withdrawal-button' );
 	}
 
 	if ( log.actor_name ) {

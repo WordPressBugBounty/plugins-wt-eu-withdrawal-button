@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-07-01 06:31",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Изберете страницата, на която клиентите могат да подават искания за отказ."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Автоматично добавяне на връзка към страницата за отказ във футъра на сайта."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Къде се показват формулярът за отказ и връзките."
@@ -132,11 +129,11 @@
             "Full": [
                 "Пълен"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Получихте над 10 искания за отказ. Оставете отзив за WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Вашият магазин улеснява правото на отказ в ЕС за клиентите. Харесва ли ви WebToffee EU Withdrawal Button? Оставете отзив!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Използвате WebToffee EU Withdrawal Button от седмица. Оставете отзив!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Използвате WebToffee EU Withdrawal Button от седмица. Ще сме Ви много благодарни, ако отделите малко време да ни оставите отзив"
             ],
             "Customer": [
                 "Клиент"
@@ -153,14 +150,17 @@
             "Status": [
                 "Статус"
             ],
+            "Processed": [
+                "Обработено"
+            ],
+            "Reason": [
+                "Причина"
+            ],
             "Customer Email": [
                 "Имейл на клиента"
             ],
             "Request Type": [
                 "Тип на искането"
-            ],
-            "Reason": [
-                "Причина"
             ],
             "Quantity": [
                 "Количество"
@@ -279,9 +279,6 @@
             "Created": [
                 "Създадено"
             ],
-            "Processed": [
-                "Обработено"
-            ],
             "Order Items": [
                 "Артикули от поръчката"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Само WooCommerce"
             ],
+            "General": [
+                "Общи"
+            ],
+            "Rules & Exclusions": [
+                "Правила и изключения"
+            ],
+            "Workflow": [
+                "Работен процес"
+            ],
+            "Advanced": [
+                "Разширени"
+            ],
             "-- Select a page --": [
                 "-- Изберете страница --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Настройките не могат да бъдат заредени."
             ],
-            "General": [
-                "Общи"
+            "Customize appearance": [
+                "Персонализиране на външния вид"
+            ],
+            "Footer": [
+                "Долен колонтитул"
+            ],
+            "My account page": [
+                "Страница Моят акаунт"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Активирайте „Показване на бутона за отказ в долния колонтитул“ по-горе, за да персонализирате."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Активирайте „Показване на бутона за отказ в Моят акаунт“ по-горе, за да персонализирате."
+            ],
+            "Link text": [
+                "Текст на връзката"
+            ],
+            "Button text": [
+                "Текст на бутона"
+            ],
+            "Display as": [
+                "Показване като"
+            ],
+            "Link": [
+                "Връзка"
+            ],
+            "Button": [
+                "Бутон"
+            ],
+            "Colors": [
+                "Цветове"
+            ],
+            "Theme default": [
+                "По подразбиране от темата"
+            ],
+            "Custom": [
+                "Персонализиран"
+            ],
+            "Background": [
+                "Фон"
+            ],
+            "Text": [
+                "Текст"
+            ],
+            "Hover bg": [
+                "Фон при посочване"
+            ],
+            "Hover text": [
+                "Текст при посочване"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Основно поведение и предпочитания за показване на формуляра за отказ."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Страница за отказ"
             ],
-            "Embed footer link": [
-                "Вграждане на връзка във футъра"
+            "Show withdrawal button in footer": [
+                "Показване на бутона за отказ в долния колонтитул"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Показване на бутон или връзка за отказ в долния колонтитул на сайта."
             ],
             "Footer link text": [
                 "Текст на връзката във футъра"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Искания"
             ],
-            "System": [
-                "Система"
+            "Auto-approval": [
+                "Автоматично одобрение"
             ],
             "User": [
                 "Потребител"

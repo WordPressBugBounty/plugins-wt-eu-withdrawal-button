@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2026-07-10T10:43:31+00:00",
-    "generator": "WebToffee EU Withdrawal Button",
+    "translation-revision-date": "2026-07-23 10:51",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
         "messages": {
@@ -57,9 +57,6 @@
             "Select the page where customers can submit withdrawal requests.": [
                 "Επιλέξτε τη σελίδα όπου οι πελάτες μπορούν να υποβάλλουν αιτήματα υπαναχώρησης."
             ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Προσθέστε αυτόματα έναν σύνδεσμο προς τη σελίδα υπαναχώρησης στο υποσέλιδο του ιστότοπου."
-            ],
             "Where the withdrawal form and links are displayed.": [
                 "Πού εμφανίζονται η φόρμα υπαναχώρησης και οι σύνδεσμοι."
             ],
@@ -84,8 +81,8 @@
             "Grouped": [
                 "Ομαδοποιημένο"
             ],
-            "External / Affiliate": [
-                "Εξωτερικό / συνεργάτη"
+            "External \/ Affiliate": [
+                "Εξωτερικό \/ συνεργάτη"
             ],
             "Change order status on submission": [
                 "Αλλαγή κατάστασης παραγγελίας κατά την υποβολή"
@@ -132,11 +129,11 @@
             "Full": [
                 "Πλήρης"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Λάβατε 10+ αιτήματα υπαναχώρησης. Αφήστε μια αξιολόγηση για το WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Το κατάστημά σας κάνει το δικαίωμα υπαναχώρησης της ΕΕ εύκολο για τους πελάτες. Σας αρέσει το WebToffee EU Withdrawal Button; Αφήστε μια αξιολόγηση!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Χρησιμοποιείτε το WebToffee EU Withdrawal Button εδώ και μία εβδομάδα. Αφήστε μια αξιολόγηση!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Χρησιμοποιείτε το WebToffee EU Withdrawal Button εδώ και μία εβδομάδα. Θα εκτιμούσαμε πολύ αν αφιερώνατε λίγο χρόνο για να μας αφήσετε μια κριτική"
             ],
             "Customer": [
                 "Πελάτης"
@@ -153,14 +150,17 @@
             "Status": [
                 "Κατάσταση"
             ],
+            "Processed": [
+                "Επεξεργάστηκε"
+            ],
+            "Reason": [
+                "Λόγος"
+            ],
             "Customer Email": [
                 "Email πελάτη"
             ],
             "Request Type": [
                 "Τύπος αιτήματος"
-            ],
-            "Reason": [
-                "Λόγος"
             ],
             "Quantity": [
                 "Ποσότητα"
@@ -240,21 +240,6 @@
             "Apply Filters": [
                 "Εφαρμογή φίλτρων"
             ],
-            "No order statuses found.": [
-                "Δεν βρέθηκαν καταστάσεις παραγγελίας."
-            ],
-            "Remove status": [
-                "Αφαίρεση κατάστασης"
-            ],
-            "Search order statuses…": [
-                "Αναζήτηση καταστάσεων παραγγελίας…"
-            ],
-            "Type to filter order statuses…": [
-                "Πληκτρολογήστε για φιλτράρισμα καταστάσεων παραγγελίας…"
-            ],
-            "No order statuses match your search.": [
-                "Καμία κατάσταση παραγγελίας δεν ταιριάζει με την αναζήτησή σας."
-            ],
             "Remove product": [
                 "Αφαίρεση προϊόντος"
             ],
@@ -293,9 +278,6 @@
             ],
             "Created": [
                 "Δημιουργήθηκε"
-            ],
-            "Processed": [
-                "Επεξεργάστηκε"
             ],
             "Order Items": [
                 "Προϊόντα παραγγελίας"
@@ -357,6 +339,18 @@
             "WooCommerce only": [
                 "Μόνο WooCommerce"
             ],
+            "General": [
+                "Γενικά"
+            ],
+            "Rules & Exclusions": [
+                "Κανόνες και εξαιρέσεις"
+            ],
+            "Workflow": [
+                "Ροή εργασίας"
+            ],
+            "Advanced": [
+                "Για προχωρημένους"
+            ],
             "-- Select a page --": [
                 "-- Επιλέξτε μια σελίδα --"
             ],
@@ -378,8 +372,56 @@
             "Unable to load settings.": [
                 "Δεν είναι δυνατή η φόρτωση των ρυθμίσεων."
             ],
-            "General": [
-                "Γενικά"
+            "Customize appearance": [
+                "Προσαρμογή εμφάνισης"
+            ],
+            "Footer": [
+                "Υποσέλιδο"
+            ],
+            "My account page": [
+                "Σελίδα Ο λογαριασμός μου"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Ενεργοποιήστε το «Εμφάνιση κουμπιού υπαναχώρησης στο υποσέλιδο» παραπάνω για προσαρμογή."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Ενεργοποιήστε το «Εμφάνιση κουμπιού υπαναχώρησης στον Λογαριασμό μου» παραπάνω για προσαρμογή."
+            ],
+            "Link text": [
+                "Κείμενο συνδέσμου"
+            ],
+            "Button text": [
+                "Κείμενο κουμπιού"
+            ],
+            "Display as": [
+                "Εμφάνιση ως"
+            ],
+            "Link": [
+                "Σύνδεσμος"
+            ],
+            "Button": [
+                "Κουμπί"
+            ],
+            "Colors": [
+                "Χρώματα"
+            ],
+            "Theme default": [
+                "Προεπιλογή θέματος"
+            ],
+            "Custom": [
+                "Προσαρμοσμένο"
+            ],
+            "Background": [
+                "Φόντο"
+            ],
+            "Text": [
+                "Κείμενο"
+            ],
+            "Hover bg": [
+                "Φόντο εφέ hover"
+            ],
+            "Hover text": [
+                "Κείμενο εφέ hover"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Βασική συμπεριφορά και προτιμήσεις εμφάνισης της φόρμας υπαναχώρησης."
@@ -387,8 +429,11 @@
             "Withdrawal page": [
                 "Σελίδα υπαναχώρησης"
             ],
-            "Embed footer link": [
-                "Ενσωμάτωση συνδέσμου στο υποσέλιδο"
+            "Show withdrawal button in footer": [
+                "Εμφάνιση κουμπιού υπαναχώρησης στο υποσέλιδο"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Εμφάνιση ενός κουμπιού ή συνδέσμου υπαναχώρησης στο υποσέλιδο του ιστότοπου."
             ],
             "Footer link text": [
                 "Κείμενο συνδέσμου υποσέλιδου"
@@ -516,8 +561,8 @@
             "Requests": [
                 "Αιτήματα"
             ],
-            "System": [
-                "Σύστημα"
+            "Auto-approval": [
+                "Αυτόματη έγκριση"
             ],
             "User": [
                 "Χρήστης"

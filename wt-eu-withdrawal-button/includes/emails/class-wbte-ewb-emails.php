@@ -22,12 +22,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Wbte_Ewb_Emails {
 
 	/**
-	 * Template path relative to the theme root.
+	 * WooCommerce template path relative to the active theme root.
+	 *
+	 * This must match the directory used by WC_Email::get_theme_template_file(),
+	 * so copied overrides are loaded from yourtheme/woocommerce/emails/.
 	 *
 	 * @since 1.0.0
 	 * @var string
 	 */
-	const TEMPLATE_PATH = 'woocommerce/wbte-eu-withdrawal-button/';
+	const TEMPLATE_PATH = 'woocommerce/';
 
 	/**
 	 * Hook into WooCommerce.
@@ -83,17 +86,16 @@ class Wbte_Ewb_Emails {
 	 * @return string
 	 */
 	public function locate_template( $template, $template_name, $template_path ) {
-		if ( self::TEMPLATE_PATH !== $template_path ) {
+		// Only handle templates that belong to this plugin.
+		$plugin_template = WBTE_EWB_PLUGIN_DIR . 'templates/' . $template_name;
+
+		if ( ! file_exists( $plugin_template ) ) {
 			return $template;
 		}
 
-		$plugin_template = WBTE_EWB_PLUGIN_DIR . 'templates/' . $template_name;
-
 		// If the theme does not override the template, use the plugin's version.
 		if ( ! $template || ! file_exists( $template ) ) {
-			if ( file_exists( $plugin_template ) ) {
-				$template = $plugin_template;
-			}
+			$template = $plugin_template;
 		}
 
 		return $template;

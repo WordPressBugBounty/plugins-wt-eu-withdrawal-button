@@ -5,8 +5,8 @@ Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 10.9.3
-Stable tag: 1.0.7
+WC tested up to: 10.9.4
+Stable tag: 1.0.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -177,9 +177,18 @@ Available filters:
 4. EU Withdrawal Button plugin general settings
 5. Product Exclusions
 6. Order Status and Email Notifications
+7. EU Withdrawal advanced settings
 
 
 == Changelog ==
+
+= 1.0.8 23-07-2026 =
+
+* [Fix]: Corrected translation issues in withdrawal emails sent to guest users.
+* [Fix]: Resolved inconsistency in the email template override path.
+* [Tweak]: Refined the admin screen interface.
+* [Compatibility]: WPML Multilingual Plugin.
+* [Compatibility]: Tested up to WooCommerce 10.9.4
 
 = 1.0.7 13-07-2026 =
 
@@ -257,10 +266,10 @@ Available filters:
 
 == Upgrade Notice ==
 
-= 1.0.7 =
+= 1.0.8 =
 
-* [Fix]: Footer withdrawal link now inherits the theme's default link color instead of a hardcoded gray.
-* [Fix]: Withdrawal timestamps in customer emails, admin dashboard, and My Account now display in the WordPress site timezone with an explicit UTC offset.
-* [Add]: My Account order view lists all withdrawal requests (including rejected) in a timeline layout with submitted/processed dates and rejection reason.
-* [Add]: Swedish (sv_SE), Belgian Dutch (nl_BE) and Greek (el) translation files.
-* [Compatibility]: Tested up to WooCommerce 10.9.3
+* [Fix]: Corrected translation issues in withdrawal emails sent to guest users.
+* [Fix]: Resolved inconsistency in the email template override path.
+* [Tweak]: Refined the admin screen interface.
+* [Compatibility]: WPML Multilingual Plugin.
+* [Compatibility]: Tested up to WooCommerce 10.9.4

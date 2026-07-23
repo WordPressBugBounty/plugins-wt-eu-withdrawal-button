@@ -184,10 +184,10 @@ class Wbte_Ewb_Review_Banner {
 	 */
 	public static function get_message( $milestone ) {
 		if ( 'withdrawals' === $milestone ) {
-			return __( 'You\'ve received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!', 'wt-eu-withdrawal-button' );
+			return __( 'Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!', 'wt-eu-withdrawal-button' );
 		}
 
-		return __( 'You\'ve been using WebToffee EU Withdrawal Button for a week. Leave a review!', 'wt-eu-withdrawal-button' );
+		return __( 'You\'ve been using WebToffee EU Withdrawal Button for a week. We\'d really appreciate if you could take a moment to leave us a review', 'wt-eu-withdrawal-button' );
 	}
 
 	/**
@@ -248,7 +248,7 @@ class Wbte_Ewb_Review_Banner {
 	private static function get_status() {
 		$status = get_option( self::OPTION_STATUS, 'pending' );
 
-		if ( ! in_array( $status, array( 'pending', 'dismissed', 'review', 'later' ), true ) ) {
+		if ( ! in_array( $status, array( 'pending', 'dismiss', 'dismissed', 'review', 'later' ), true ) ) {
 			return 'pending';
 		}
 
@@ -303,7 +303,7 @@ class Wbte_Ewb_Review_Banner {
 			return false;
 		}
 
-		if ( in_array( $status, array( 'dismissed', 'review' ), true ) ) {
+		if ( in_array( $status, array( 'dismiss', 'dismissed', 'review' ), true ) ) {
 			return false;
 		}
 

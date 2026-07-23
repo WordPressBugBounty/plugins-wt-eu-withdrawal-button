@@ -205,6 +205,7 @@
 			var maxQty       = parseInt( item.quantity || item.qty || 0, 10 ) || 1;
 			var orderedQty   = parseInt( item.ordered_quantity || item.quantity || item.qty || 0, 10 ) || maxQty;
 			var price        = item.total || item.price || '';
+			var unitPrice    = maxQty > 0 ? parseFloat( price ) / maxQty : parseFloat( price );
 			var inputId      = 'wbte-ewb-item-' + itemId;
 			var productId    = item.product_id || 0;
 			var withdrawable = item.withdrawable !== false;
@@ -229,10 +230,9 @@
 					qtyMarkup =
 						'<span class="wbte-ewb-item-qty wbte-ewb-item-qty--select">' +
 							'&times; ' +
-							'<select class="wbte-ewb-item-qty-select" name="item_qty[' + escAttr( itemId ) + ']"' +
-							' aria-label="' + escAttr( name + ' ' + ( i18n.withdraw_qty || 'quantity' ) ) + '">' +
-								buildQtySelectOptions( maxQty, maxQty ) +
-							'</select>' +
+							'<input type="number" class="wbte-ewb-item-qty-select" name="item_qty[' + escAttr( itemId ) + ']"' +
+							' value="' + escAttr( maxQty ) + '" min="1" max="' + escAttr( maxQty ) + '"' +
+							' aria-label="' + escAttr( name + ' ' + ( i18n.withdraw_qty || 'quantity' ) ) + '" />' +
 						'</span>';
 				} else {
 					qtyMarkup = '<span class="wbte-ewb-item-qty">&times; ' + escHtml( maxQty ) + '</span>';
@@ -243,6 +243,7 @@
 					' data-product-id="' + escAttr( productId ) + '"' +
 					' data-max-qty="' + escAttr( maxQty ) + '"' +
 					' data-ordered-qty="' + escAttr( orderedQty ) + '"' +
+					' data-unit-price="' + escAttr( unitPrice ) + '"' +
 					' id="' + escAttr( inputId ) + '"' + checked + ' />' +
 					'<label for="' + escAttr( inputId ) + '" class="wbte-ewb-item-name">' + escHtml( name ) + '</label>' +
 					qtyMarkup +
@@ -301,7 +302,18 @@
 				updateRequestType();
 			} );
 
-			$list.off( 'change.wbtecwQty' ).on( 'change.wbtecwQty', '.wbte-ewb-item-qty-select', updateRequestType );
+			$list.off( 'change.wbtecwQty input.wbtecwQty' ).on( 'change.wbtecwQty input.wbtecwQty', '.wbte-ewb-item-qty-select', function() {
+				var $input = $( this );
+				var max    = parseInt( $input.attr( 'max' ), 10 ) || 1;
+				var val    = parseInt( $input.val(), 10 );
+				if ( val > max ) { $input.val( max ); val = max; }
+				if ( val < 1 )   { $input.val( 1 );   val = 1;   }
+				updateRequestType();
+				var $item     = $( this ).closest( '.wbte-ewb-item' );
+				var $checkbox = $item.find( 'input[type="checkbox"]' );
+				var unitPrice = parseFloat( $checkbox.data( 'unit-price' ) ) || 0;
+				$item.find( '.wbte-ewb-item-price' ).text( formatPrice( unitPrice * val ) );
+			} );
 		}
 	}
 
@@ -429,7 +441,9 @@
 		} )
 			.done( function( response ) {
 				if ( isGuestVerified ) {
-					var successUrl = window.location.pathname + '?wbte_ewb_guest_submitted=1';
+					var currentParams = new URLSearchParams( window.location.search );
+					currentParams.set( 'wbte_ewb_guest_submitted', '1' );
+					var successUrl = window.location.pathname + '?' + currentParams.toString();
 					window.location.href = successUrl;
 					return;
 				}

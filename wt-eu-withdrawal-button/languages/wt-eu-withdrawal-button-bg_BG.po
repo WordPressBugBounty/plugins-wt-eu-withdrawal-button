@@ -2,10 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-"
-"button\n"
-"POT-Creation-Date: 2026-07-02T09:48:18+00:00\n"
-"PO-Revision-Date: 2026-07-01 06:31\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 14:44+0530\n"
+"PO-Revision-Date: 2026-07-23 10:51\n"
 "Last-Translator: \n"
 "Language-Team: bg_BG\n"
 "Language: bg_BG\n"
@@ -15,134 +14,106 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: wt-eu-withdrawal-button\n"
 
-#. Plugin Name of the plugin
-#: wt-eu-withdrawal-button.php
-msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
-msgstr ""
-
-#. Plugin URI of the plugin
-#: wt-eu-withdrawal-button.php
-msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
-msgstr ""
-
-#. Description of the plugin
-#: wt-eu-withdrawal-button.php
-msgid ""
-"Manage withdrawal of contract / order cancellation requests for WooCommerce "
-"orders. EU-compliant, HPOS-compatible."
-msgstr ""
-"Управление на искания за отказ от договор / анулиране на поръчки за поръчки "
-"в WooCommerce. Съвместимо с ЕС, съвместимо с HPOS."
-
-#. Author of the plugin
-#: wt-eu-withdrawal-button.php
-msgid "webtoffee"
-msgstr ""
-
-#. Author URI of the plugin
-#: wt-eu-withdrawal-button.php
-msgid "https://www.webtoffee.com/"
-msgstr ""
-
-#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
 #: includes/admin/class-wbte-ewb-order-meta-box.php:545
-#: includes/frontend/class-wbte-ewb-my-account.php:380
+#: includes/frontend/class-wbte-ewb-my-account.php:456
 #: react/src/components/Filters.jsx:54
-#: react/src/components/RequestsList.jsx:233
+#: react/src/components/RequestsList.jsx:219
 #: react/src/components/StatusBadge.jsx:28
 msgid "Pending"
 msgstr "Чакащо"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
 #: includes/admin/class-wbte-ewb-order-meta-box.php:546
-#: includes/frontend/class-wbte-ewb-my-account.php:381
+#: includes/frontend/class-wbte-ewb-my-account.php:457
 #: templates/emails/customer-withdrawal-approved.php:102
 #: react/src/components/Filters.jsx:55
-#: react/src/components/RequestsList.jsx:230
+#: react/src/components/RequestsList.jsx:216
 #: react/src/components/StatusBadge.jsx:29
 msgid "Approved"
 msgstr "Одобрено"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
 #: includes/admin/class-wbte-ewb-order-meta-box.php:547
-#: includes/frontend/class-wbte-ewb-my-account.php:382
+#: includes/frontend/class-wbte-ewb-my-account.php:458
 #: templates/emails/customer-withdrawal-rejected.php:115
 #: react/src/components/Filters.jsx:56
-#: react/src/components/RequestsList.jsx:232
+#: react/src/components/RequestsList.jsx:218
 #: react/src/components/StatusBadge.jsx:30
 msgid "Rejected"
 msgstr "Отхвърлено"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:116
-#: includes/admin/class-wbte-ewb-admin-assets.php:170
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
 #: includes/admin/class-wbte-ewb-order-meta-box.php:231
-#: react/src/components/RequestDetail.jsx:179
+#: react/src/components/RequestDetail.jsx:180
 msgid "Approve"
 msgstr "Одобри"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:117
-#: includes/admin/class-wbte-ewb-admin-assets.php:171
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
 #: includes/admin/class-wbte-ewb-order-meta-box.php:234
-#: react/src/components/RequestDetail.jsx:187
+#: react/src/components/RequestDetail.jsx:188
 msgid "Reject"
 msgstr "Отхвърли"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
 #: includes/admin/class-wbte-ewb-order-meta-box.php:161
-#: react/src/components/RequestDetail.jsx:227
+#: react/src/components/RequestDetail.jsx:228
 msgid "Full Withdrawal"
 msgstr "Пълен отказ"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
 #: includes/admin/class-wbte-ewb-order-meta-box.php:159
-#: react/src/components/RequestDetail.jsx:226
+#: react/src/components/RequestDetail.jsx:227
 msgid "Partial Withdrawal"
 msgstr "Частичен отказ"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:120
-#: react/src/components/RequestsList.jsx:196
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/src/components/RequestsList.jsx:182
 msgid "No withdrawal requests found."
 msgstr "Не са намерени искания за отказ."
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
 msgid "Loading…"
 msgstr "Зареждане…"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:122
-#: includes/admin/class-wbte-ewb-admin-assets.php:177
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
 #: includes/frontend/class-wbte-ewb-frontend.php:135
 msgid "An error occurred. Please try again."
 msgstr "Възникна грешка. Моля, опитайте отново."
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:123
-#: includes/admin/class-wbte-ewb-admin-assets.php:172
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
 msgid "Are you sure you want to approve this withdrawal request?"
 msgstr "Сигурни ли сте, че искате да одобрите това искане за отказ?"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:124
-#: includes/admin/class-wbte-ewb-admin-assets.php:173
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
 msgid "Are you sure you want to reject this withdrawal request?"
 msgstr "Сигурни ли сте, че искате да отхвърлите това искане за отказ?"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:169
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
 msgid "Processing…"
 msgstr "Обработване…"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:174
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
 msgid "Please enter a reason for rejecting this withdrawal request:"
 msgstr "Моля, въведете причина за отхвърляне на това искане за отказ:"
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:175
-#: react/src/components/RequestDetail.jsx:362
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/src/components/RequestDetail.jsx:363
 msgid "A reason is required when rejecting a request."
 msgstr "При отхвърляне на искане е необходима причина."
 
-#: includes/admin/class-wbte-ewb-admin-assets.php:176
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
 msgid "Request updated successfully."
 msgstr "Искането е актуализирано успешно."
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:50
 #: includes/admin/class-wbte-ewb-order-meta-box.php:69
+#: includes/frontend/class-wbte-ewb-my-account.php:260
 msgid "Withdrawal Requests"
 msgstr "Искания за отказ"
 
@@ -178,11 +149,10 @@ msgstr "Поръчката не е намерена."
 msgid "No withdrawal request for this order."
 msgstr "Няма искане за отказ за тази поръчка."
 
-#. translators: 1: request position, 2: total requests, 3: request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:141
 #, php-format
 msgid "Request %1$d of %2$d (#%3$d)"
-msgstr ""
+msgstr "Искане %1$d от %2$d (#%3$d)"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:151
 msgid "Status:"
@@ -244,17 +214,15 @@ msgstr "Напомни ми по-късно"
 msgid "Dismiss review request"
 msgstr "Отхвърли заявката за отзив"
 
-#. translators: %d: withdrawal request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:432
 #, php-format
 msgid "Approve withdrawal request #%d"
-msgstr ""
+msgstr "Одобри искане за отказ #%d"
 
-#. translators: %d: withdrawal request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:437
 #, php-format
 msgid "Reject withdrawal request #%d"
-msgstr ""
+msgstr "Отхвърли искане за отказ #%d"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:441
 msgid "Approve withdrawal request"
@@ -268,14 +236,12 @@ msgstr "Отхвърли искането за отказ"
 msgid "Rejected from orders list."
 msgstr "Отхвърлено от списъка с поръчки."
 
-#. translators: %s: quantity withdrawn
 #: includes/admin/class-wbte-ewb-order-meta-box.php:633
 #, php-format
 msgctxt "item badge"
 msgid "Withdrawn %sx"
 msgstr "Отказано %sx"
 
-#. translators: %s: quantity requested
 #: includes/admin/class-wbte-ewb-order-meta-box.php:644
 #, php-format
 msgctxt "item badge"
@@ -283,8 +249,8 @@ msgid "Requested %sx"
 msgstr "Заявено %sx"
 
 #: includes/admin/class-wbte-ewb-settings.php:74
-#: react/src/components/RequestDetail.jsx:259
-#: react/src/components/RequestDetail.jsx:293
+#: react/src/components/RequestDetail.jsx:260
+#: react/src/components/RequestDetail.jsx:294
 msgid "Withdrawal"
 msgstr "Отказ"
 
@@ -303,7 +269,7 @@ msgid "Withdrawal Page"
 msgstr "Страница за отказ"
 
 #: includes/admin/class-wbte-ewb-settings.php:135
-#: react/src/components/SettingsPage.jsx:421
+#: react/src/components/SettingsPage.jsx:796
 msgid "Select the page where customers can submit withdrawal requests."
 msgstr ""
 "Изберете страницата, на която клиентите могат да подават искания за отказ."
@@ -313,7 +279,6 @@ msgid "Embed Footer Link"
 msgstr "Вграждане на връзка във футъра"
 
 #: includes/admin/class-wbte-ewb-settings.php:146
-#: react/src/components/SettingsPage.jsx:439
 msgid "Automatically add a link to the withdrawal page in the site footer."
 msgstr ""
 "Автоматично добавяне на връзка към страницата за отказ във футъра на сайта."
@@ -323,7 +288,7 @@ msgid "Display Scope"
 msgstr "Обхват на показване"
 
 #: includes/admin/class-wbte-ewb-settings.php:154
-#: react/src/components/SettingsPage.jsx:461
+#: react/src/components/SettingsPage.jsx:840
 msgid "Where the withdrawal form and links are displayed."
 msgstr "Къде се показват формулярът за отказ и връзките."
 
@@ -340,7 +305,7 @@ msgid "Allow Partial Withdrawals"
 msgstr "Разрешаване на частични откази"
 
 #: includes/admin/class-wbte-ewb-settings.php:169
-#: react/src/components/SettingsPage.jsx:475
+#: react/src/components/SettingsPage.jsx:854
 msgid "Let customers withdraw individual items instead of the entire order."
 msgstr ""
 "Позволете на клиентите да отказват отделни артикули вместо цялата поръчка."
@@ -350,7 +315,7 @@ msgid "Withdrawal Period (days)"
 msgstr "Срок за отказ (дни)"
 
 #: includes/admin/class-wbte-ewb-settings.php:177
-#: react/src/components/SettingsPage.jsx:481
+#: react/src/components/SettingsPage.jsx:860
 msgid ""
 "Number of days after the selected start status during which a withdrawal "
 "request can be submitted."
@@ -363,7 +328,7 @@ msgid "Withdrawal Period Starts From"
 msgstr "Срокът за отказ започва от"
 
 #: includes/admin/class-wbte-ewb-settings.php:191
-#: react/src/components/SettingsPage.jsx:511
+#: react/src/components/SettingsPage.jsx:890
 msgid ""
 "Select one or more order statuses. The countdown begins on the earliest date "
 "the order reaches any selected status."
@@ -376,7 +341,7 @@ msgid "Reason Required"
 msgstr "Необходима е причина"
 
 #: includes/admin/class-wbte-ewb-settings.php:203
-#: react/src/components/SettingsPage.jsx:526
+#: react/src/components/SettingsPage.jsx:905
 msgid ""
 "Require customers to provide a reason when submitting a withdrawal request."
 msgstr ""
@@ -455,12 +420,12 @@ msgstr ""
 "на процеса на отказ."
 
 #: includes/admin/class-wbte-ewb-settings.php:278
-#: react/src/components/SettingsPage.jsx:602
+#: react/src/components/SettingsPage.jsx:996
 msgid "Change order status on submission"
 msgstr "Промяна на статуса на поръчката при подаване"
 
 #: includes/admin/class-wbte-ewb-settings.php:279
-#: react/src/components/SettingsPage.jsx:603
+#: react/src/components/SettingsPage.jsx:997
 msgid ""
 "Automatically change the order status when a withdrawal request is submitted."
 msgstr ""
@@ -477,12 +442,12 @@ msgstr ""
 "Статусът на поръчката, който да се зададе при подаване на искане за отказ."
 
 #: includes/admin/class-wbte-ewb-settings.php:298
-#: react/src/components/SettingsPage.jsx:627
+#: react/src/components/SettingsPage.jsx:1021
 msgid "Change order status on approval"
 msgstr "Промяна на статуса на поръчката при одобрение"
 
 #: includes/admin/class-wbte-ewb-settings.php:299
-#: react/src/components/SettingsPage.jsx:628
+#: react/src/components/SettingsPage.jsx:1022
 msgid ""
 "Automatically change the order status when a withdrawal request is approved."
 msgstr ""
@@ -508,8 +473,8 @@ msgstr ""
 "Конфигурирайте администраторските получатели за имейлите с известия за отказ."
 
 #: includes/admin/class-wbte-ewb-settings.php:331
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:204
-#: react/src/components/SettingsPage.jsx:665
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
+#: react/src/components/SettingsPage.jsx:1059
 msgid "Recipient(s)"
 msgstr "Получател(и)"
 
@@ -543,12 +508,12 @@ msgid "Warning: This action is irreversible."
 msgstr "Внимание: Това действие е необратимо."
 
 #: includes/admin/class-wbte-ewb-settings.php:403
-#: react/src/components/SettingsPage.jsx:353
+#: react/src/components/SettingsPage.jsx:366
 msgid "Order created"
 msgstr "Поръчката е създадена"
 
 #: includes/admin/class-wbte-ewb-settings.php:447
-#: react/src/components/SettingsPage.jsx:698
+#: react/src/components/SettingsPage.jsx:1099
 msgid ""
 "Add a withdrawal request button to any page or post. The button links to "
 "your configured withdrawal page."
@@ -557,7 +522,7 @@ msgstr ""
 "Бутонът води към конфигурираната от вас страница за отказ."
 
 #: includes/admin/class-wbte-ewb-settings.php:448
-#: react/src/components/SettingsPage.jsx:703
+#: react/src/components/SettingsPage.jsx:1104
 msgid "Examples"
 msgstr "Примери"
 
@@ -616,7 +581,7 @@ msgid "Partial withdrawal"
 msgstr "Частичен отказ"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
-#: react/src/components/SettingsPage.jsx:657
+#: react/src/components/SettingsPage.jsx:1051
 msgid "Email notifications"
 msgstr "Известия по имейл"
 
@@ -690,7 +655,7 @@ msgstr "Към поддръжката"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
 #: includes/frontend/class-wbte-ewb-frontend.php:144
-#: react/src/components/RequestDetail.jsx:375
+#: react/src/components/RequestDetail.jsx:376
 msgid "Cancel"
 msgstr "Отмяна"
 
@@ -727,13 +692,13 @@ msgstr "Моля, посочете валиден имейл адрес."
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:154
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:158
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
-#: includes/frontend/class-wbte-ewb-guest-verification.php:219
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
 #: templates/withdrawal-form.php:75
 msgid "No order found matching the provided order number."
 msgstr "Не е намерена поръчка, съответстваща на посочения номер на поръчката."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:181
-#: includes/api/class-wbte-ewb-rest-customer.php:588
+#: includes/api/class-wbte-ewb-rest-customer.php:605
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:163
 msgid "The email address does not match the order."
 msgstr "Имейл адресът не съвпада с поръчката."
@@ -743,7 +708,7 @@ msgid "The order number does not match the requested order."
 msgstr "Номерът на поръчката не съвпада със заявената поръчка."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:155
-#: includes/api/class-wbte-ewb-rest-customer.php:749
+#: includes/api/class-wbte-ewb-rest-customer.php:766
 msgid "WooCommerce order ID."
 msgstr "ID на поръчката в WooCommerce."
 
@@ -788,111 +753,111 @@ msgid "Quantity to withdraw."
 msgstr "Количество за отказ."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:250
-#: includes/api/class-wbte-ewb-rest-customer.php:792
+#: includes/api/class-wbte-ewb-rest-customer.php:809
 msgid "Customer reason for the withdrawal."
 msgstr "Причина на клиента за отказа."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:304
-#: includes/api/class-wbte-ewb-rest-customer.php:349
+#: includes/api/class-wbte-ewb-rest-customer.php:366
 msgid "Guest withdrawal service is not available."
 msgstr "Услугата за отказ от гост не е налична."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:360
+#: includes/api/class-wbte-ewb-rest-customer.php:377
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:285
 #: includes/core/class-wbte-ewb-request-service.php:149
 msgid "Please select at least one item to withdraw."
 msgstr "Моля, изберете поне един артикул за отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:388
-#: includes/api/class-wbte-ewb-rest-customer.php:521
+#: includes/api/class-wbte-ewb-rest-customer.php:405
+#: includes/api/class-wbte-ewb-rest-customer.php:538
 msgid "Withdrawal request submitted successfully."
 msgstr "Искането за отказ е подадено успешно."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:405
+#: includes/api/class-wbte-ewb-rest-customer.php:422
 msgid ""
 "Guest withdrawal requests must be verified by email before they are created."
 msgstr ""
 "Исканията за отказ от гост трябва да бъдат потвърдени по имейл, преди да "
 "бъдат създадени."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:421
+#: includes/api/class-wbte-ewb-rest-customer.php:438
 msgid "Either order_id or order_number is required."
 msgstr "Задължителен е или order_id, или order_number."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:430
+#: includes/api/class-wbte-ewb-rest-customer.php:447
 msgid "Items are required for partial withdrawal requests."
 msgstr "За исканията за частичен отказ са необходими артикули."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:449
-#: includes/api/class-wbte-ewb-rest-customer.php:611
+#: includes/api/class-wbte-ewb-rest-customer.php:466
+#: includes/api/class-wbte-ewb-rest-customer.php:628
 msgid "The specified order could not be found."
 msgstr "Посочената поръчка не може да бъде намерена."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:467
+#: includes/api/class-wbte-ewb-rest-customer.php:484
 msgid "A reason is required for withdrawal requests."
 msgstr "За исканията за отказ е необходима причина."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:500
-#: includes/api/class-wbte-ewb-rest-requests.php:401
-#: includes/api/class-wbte-ewb-rest-requests.php:443
+#: includes/api/class-wbte-ewb-rest-customer.php:517
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
 msgid "Request service is not available."
 msgstr "Услугата за искания не е налична."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:548
+#: includes/api/class-wbte-ewb-rest-customer.php:565
 msgid "This order does not belong to your account."
 msgstr "Тази поръчка не принадлежи на вашия акаунт."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:564
+#: includes/api/class-wbte-ewb-rest-customer.php:581
 msgid "Order number is required for guest withdrawal requests."
 msgstr "За исканията за отказ от гост е необходим номер на поръчката."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:572
+#: includes/api/class-wbte-ewb-rest-customer.php:589
 msgid "Email is required for guest withdrawal requests."
 msgstr "За исканията за отказ от гост е необходим имейл."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:580
+#: includes/api/class-wbte-ewb-rest-customer.php:597
 msgid "The order number does not match this order."
 msgstr "Номерът на поръчката не съвпада с тази поръчка."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:628
+#: includes/api/class-wbte-ewb-rest-customer.php:645
 msgid "Eligibility service is not available."
 msgstr "Услугата за проверка на допустимост не е налична."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:666
+#: includes/api/class-wbte-ewb-rest-customer.php:683
 msgid "This item is not eligible for withdrawal."
 msgstr "Този артикул не подлежи на отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:676
+#: includes/api/class-wbte-ewb-rest-customer.php:693
 msgid ""
 "This item is already included in a pending or approved withdrawal request."
 msgstr "Този артикул вече е включен в чакащо или одобрено искане за отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:743
+#: includes/api/class-wbte-ewb-rest-customer.php:760
 #: includes/api/class-wbte-ewb-rest-requests.php:81
 #: includes/api/class-wbte-ewb-rest-requests.php:104
 #: includes/api/class-wbte-ewb-rest-requests.php:133
-#: includes/api/class-wbte-ewb-rest-requests.php:510
+#: includes/api/class-wbte-ewb-rest-requests.php:512
 msgid "Unique identifier for the withdrawal request."
 msgstr "Уникален идентификатор на искането за отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:754
-#: includes/api/class-wbte-ewb-rest-requests.php:521
+#: includes/api/class-wbte-ewb-rest-customer.php:771
+#: includes/api/class-wbte-ewb-rest-requests.php:523
 msgid "Customer-facing order number."
 msgstr "Номер на поръчката, видим за клиента."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:759
+#: includes/api/class-wbte-ewb-rest-customer.php:776
 msgid "Status of the withdrawal request."
 msgstr "Статус на искането за отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:766
+#: includes/api/class-wbte-ewb-rest-customer.php:783
 msgid "Full or partial withdrawal."
 msgstr "Пълен или частичен отказ."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:772
+#: includes/api/class-wbte-ewb-rest-customer.php:789
 msgid "Line items included in the withdrawal."
 msgstr "Артикули, включени в отказа."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:797
+#: includes/api/class-wbte-ewb-rest-customer.php:814
 msgid "Date the request was created."
 msgstr "Дата на създаване на искането."
 
@@ -929,7 +894,6 @@ msgid "Filter by customer email or name."
 msgstr "Филтриране по имейл или име на клиента."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:202
-#, fuzzy
 msgid "Search by order number or receipt hash."
 msgstr "Филтриране по номер на поръчката."
 
@@ -938,7 +902,6 @@ msgid "Filter by order number."
 msgstr "Филтриране по номер на поръчката."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:216
-#, fuzzy
 msgid "Filter by receipt hash (full or partial match)."
 msgstr "Дали това е пълен или частичен отказ."
 
@@ -952,7 +915,7 @@ msgstr "Текуща страница на колекцията."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:278
 #: includes/api/class-wbte-ewb-rest-requests.php:332
-#: includes/api/class-wbte-ewb-rest-requests.php:482
+#: includes/api/class-wbte-ewb-rest-requests.php:484
 msgid "Request repository is not available."
 msgstr "Хранилището на исканията не е налично."
 
@@ -967,69 +930,69 @@ msgstr "Искането за отказ не е намерено."
 msgid "Guest user"
 msgstr "Гост потребител"
 
-#: includes/api/class-wbte-ewb-rest-requests.php:422
+#: includes/api/class-wbte-ewb-rest-requests.php:424
 msgid "Withdrawal request approved successfully."
 msgstr "Искането за отказ е одобрено успешно."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:464
+#: includes/api/class-wbte-ewb-rest-requests.php:466
 msgid "Withdrawal request rejected."
 msgstr "Искането за отказ е отхвърлено."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:516
+#: includes/api/class-wbte-ewb-rest-requests.php:518
 msgid "Associated WooCommerce order ID."
 msgstr "Свързан ID на поръчка в WooCommerce."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:528
 msgid "Customer email address."
 msgstr "Имейл адрес на клиента."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:532
+#: includes/api/class-wbte-ewb-rest-requests.php:534
 msgid "Customer user ID (0 or null for guests)."
 msgstr "Потребителски ID на клиента (0 или null за гости)."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:537
+#: includes/api/class-wbte-ewb-rest-requests.php:539
 msgid "Current status of the withdrawal request."
 msgstr "Текущ статус на искането за отказ."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:543
+#: includes/api/class-wbte-ewb-rest-requests.php:545
 msgid "Type of withdrawal request."
 msgstr "Тип на искането за отказ."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:549
+#: includes/api/class-wbte-ewb-rest-requests.php:551
 msgid "JSON-encoded array of line items."
 msgstr "JSON-кодиран масив от артикули."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:554
+#: includes/api/class-wbte-ewb-rest-requests.php:556
 msgid "Customer-provided reason for withdrawal."
 msgstr "Причина за отказ, посочена от клиента."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:559
+#: includes/api/class-wbte-ewb-rest-requests.php:561
 msgid "Date the request was created (ISO 8601)."
 msgstr "Дата на създаване на искането (ISO 8601)."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:566
+#: includes/api/class-wbte-ewb-rest-requests.php:568
 msgid "Date the request was last updated (ISO 8601)."
 msgstr "Дата на последна актуализация на искането (ISO 8601)."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:573
+#: includes/api/class-wbte-ewb-rest-requests.php:575
 msgid "Admin user ID who processed the request."
 msgstr "Потребителски ID на администратора, обработил искането."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:579
+#: includes/api/class-wbte-ewb-rest-requests.php:581
 msgid "Date the request was processed (ISO 8601)."
 msgstr "Дата на обработка на искането (ISO 8601)."
 
-#: includes/api/class-wbte-ewb-rest-requests.php:586
+#: includes/api/class-wbte-ewb-rest-requests.php:588
 msgid "Activity log entries for this request."
 msgstr "Записи в дневника на активността за това искане."
 
 #: includes/api/class-wbte-ewb-rest-review-banner.php:51
 msgid "Review banner action."
-msgstr ""
+msgstr "Действие на банера за оценка."
 
 #: includes/api/class-wbte-ewb-rest-review-banner.php:114
 msgid "Review banner updated."
-msgstr ""
+msgstr "Банерът за оценка е актуализиран."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:70
 #: includes/api/class-wbte-ewb-rest-settings.php:522
@@ -1056,7 +1019,6 @@ msgstr "Дали да се разрешават частични откази н
 msgid "Number of days within which withdrawal is allowed."
 msgstr "Брой дни, в рамките на които е разрешен отказ."
 
-#. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:112
 #, php-format
 msgid "%s must be at least 1."
@@ -1128,7 +1090,6 @@ msgid "Customer-facing contact email shown in rejected withdrawal emails."
 msgstr ""
 "Имейл за контакт, видим за клиента, показван в имейлите за отхвърлен отказ."
 
-#. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:295
 #, php-format
 msgid "%s must be an array of email addresses."
@@ -1182,8 +1143,7 @@ msgctxt "Order status"
 msgid "Pending Withdrawal"
 msgstr "Чакащ отказ"
 
-#. translators: %s: number of orders
-#: includes/class-wbte-ewb-post-types.php:61
+#: includes/class-wbte-ewb-post-types.php:62
 #, php-format
 msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
 msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
@@ -1195,22 +1155,20 @@ msgctxt "Order status"
 msgid "Withdrawn"
 msgstr "Отказано"
 
-#. translators: %s: number of orders
-#: includes/class-wbte-ewb-post-types.php:74
+#: includes/class-wbte-ewb-post-types.php:75
 #, php-format
 msgid "Withdrawn <span class=\"count\">(%s)</span>"
 msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
 msgstr[0] "Отказано <span class=\"count\">(%s)</span>"
 msgstr[1] "Отказани <span class=\"count\">(%s)</span>"
 
-#. translators: %s: order status label (e.g. "Withdrawal Requested").
 #: includes/class-wbte-ewb-post-types.php:139
 #, php-format
 msgid "Change status to %s"
 msgstr "Промяна на статуса на %s"
 
 #: includes/class-wbte-ewb-settings.php:316
-#: react/src/components/SettingsPage.jsx:453
+#: react/src/components/SettingsPage.jsx:831
 msgid "Request Withdrawal"
 msgstr "Заявете отказ"
 
@@ -1252,42 +1210,42 @@ msgstr ""
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:167
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:264
-#: includes/frontend/class-wbte-ewb-guest-verification.php:220
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
 msgid "The email address does not match the billing email on this order."
 msgstr "Имейл адресът не съвпада с имейла за фактуриране на тази поръчка."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:172
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:176
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:271
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:524
 #: includes/core/class-wbte-ewb-request-service.php:129
-#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
 msgid "This order is not eligible for withdrawal."
 msgstr "Тази поръчка не подлежи на отказ."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:219
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:226
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:605
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:612
-#: includes/frontend/class-wbte-ewb-guest-verification.php:217
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
 msgid "This verification link is invalid or has already been used."
 msgstr "Тази връзка за потвърждение е невалидна или вече е използвана."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:233
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:499
-#: includes/frontend/class-wbte-ewb-guest-verification.php:222
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:508
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
 msgid "This withdrawal request has already been submitted."
 msgstr "Това искане за отказ вече е подадено."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:242
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:630
 msgid "Verification link expired."
 msgstr "Връзката за потвърждение е изтекла."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:248
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:506
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:627
-#: includes/frontend/class-wbte-ewb-guest-verification.php:218
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:636
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
 msgid ""
 "This verification link has expired. Please submit a new withdrawal request."
 msgstr ""
@@ -1296,22 +1254,20 @@ msgstr ""
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:294
 #: includes/frontend/class-wbte-ewb-form-handler.php:129
 #: includes/frontend/class-wbte-ewb-form-handler.php:178
-#: includes/frontend/class-wbte-ewb-guest-verification.php:149
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
 msgid "The withdrawal service is temporarily unavailable."
 msgstr "Услугата за отказ е временно недостъпна."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:492
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:501
 msgid "This verification session is invalid or has expired."
 msgstr "Тази сесия за потвърждение е невалидна или е изтекла."
 
-#. translators: %s: site name
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:537
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:546
 #, php-format
 msgid "[%s] Verify your withdrawal request"
 msgstr "[%s] Потвърдете вашето искане за отказ"
 
-#. translators: 1: verification URL, 2: order number
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:543
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:552
 #, php-format
 msgid ""
 "Please verify your withdrawal request by clicking the link below:\n"
@@ -1357,7 +1313,6 @@ msgstr "В момента няма налични артикули за отка
 msgid "One or more selected items are invalid for this order."
 msgstr "Един или повече избрани артикули са невалидни за тази поръчка."
 
-#. translators: %s: product name
 #: includes/core/class-wbte-ewb-request-service.php:429
 #, php-format
 msgid "\"%s\" is not eligible for withdrawal on this order."
@@ -1368,13 +1323,11 @@ msgstr "„%s“ не подлежи на отказ по тази поръчк�
 msgid "This item"
 msgstr "Този артикул"
 
-#. translators: %s: product name
 #: includes/core/class-wbte-ewb-request-service.php:447
 #, php-format
 msgid "\"%s\" is no longer available for withdrawal on this order."
 msgstr "„%s“ вече не е наличен за отказ по тази поръчка."
 
-#. translators: 1: product name, 2: maximum quantity
 #: includes/core/class-wbte-ewb-request-service.php:459
 #, php-format
 msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
@@ -1394,7 +1347,7 @@ msgstr "Само чакащи искания могат да бъдат отхв
 
 #: includes/core/class-wbte-ewb-request-service.php:670
 msgid "Withdrawal request pending review."
-msgstr ""
+msgstr "Искането за отказ очаква преглед."
 
 #: includes/core/class-wbte-ewb-request-service.php:688
 msgid "Withdrawal request approved."
@@ -1404,8 +1357,9 @@ msgstr "Искането за отказ е одобрено."
 msgid ""
 "Partial withdrawal approved. Restoring order status for remaining items."
 msgstr ""
+"Частичният отказ е одобрен. Възстановяване на статуса на поръчката за "
+"оставащите артикули."
 
-#. translators: 1: requested quantity, 2: order line quantity
 #: includes/core/class-wbte-ewb-request.php:361
 #, php-format
 msgid "%1$d of %2$d"
@@ -1413,32 +1367,38 @@ msgstr "%1$d от %2$d"
 
 #: includes/core/class-wbte-ewb-request.php:516
 #: includes/frontend/class-wbte-ewb-my-account.php:168
-#: react/src/components/RequestsList.jsx:264
+#: react/src/components/RequestsList.jsx:250
 msgid "Partial"
 msgstr "Частичен"
 
 #: includes/core/class-wbte-ewb-request.php:519
-#: includes/emails/class-wbte-ewb-email-preview.php:94
-#: includes/emails/class-wbte-ewb-email-preview.php:205
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
 #: includes/frontend/class-wbte-ewb-my-account.php:169
-#: react/src/components/RequestsList.jsx:265
+#: react/src/components/RequestsList.jsx:251
 msgid "Full"
 msgstr "Пълен"
+
+#: includes/core/class-wbte-ewb-request.php:542
+#, php-format
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s в %2$s (%3$s)"
 
 #: includes/core/class-wbte-ewb-review-banner.php:187
 #: react/src/components/ReviewBanner.jsx:71
 msgid ""
-"You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
-"Withdrawal Button!"
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
 msgstr ""
-"Получихте над 10 искания за отказ. Оставете отзив за WebToffee EU Withdrawal "
-"Button!"
+"Вашият магазин улеснява правото на отказ в ЕС за клиентите. Харесва ли ви "
+"WebToffee EU Withdrawal Button? Оставете отзив!"
 
 #: includes/core/class-wbte-ewb-review-banner.php:190
 #: react/src/components/ReviewBanner.jsx:72
 msgid ""
-"You've been using WebToffee EU Withdrawal Button for a week. Leave a review!"
-msgstr "Използвате WebToffee EU Withdrawal Button от седмица. Оставете отзив!"
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr "Използвате WebToffee EU Withdrawal Button от седмица. Ще сме Ви много благодарни, ако отделите малко време да ни оставите отзив"
 
 #: includes/core/class-wbte-ewb-review-banner.php:235
 msgid "Invalid review banner action."
@@ -1466,19 +1426,19 @@ msgstr ""
 msgid "Verify your withdrawal request"
 msgstr "Потвърдете вашето искане за отказ"
 
-#: includes/emails/class-wbte-ewb-email-preview.php:167
-#: includes/emails/class-wbte-ewb-email-preview.php:225
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
 msgid "I would like to return this order."
 msgstr "Бих искал да върна тази поръчка."
 
-#: includes/emails/class-wbte-ewb-email-preview.php:199
-#: includes/emails/class-wbte-ewb-email-preview.php:245
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
 msgid ""
 "This request cannot be approved because the withdrawal period has expired."
 msgstr ""
 "Това искане не може да бъде одобрено, защото срокът за отказ е изтекъл."
 
-#: includes/emails/class-wbte-ewb-email-preview.php:231
+#: includes/emails/class-wbte-ewb-email-preview.php:230
 msgid "Sample product"
 msgstr "Примерен продукт"
 
@@ -1499,54 +1459,53 @@ msgstr ""
 "[{site_title}]: Вашето искане за отказ за поръчка #{order_number} беше "
 "одобрено"
 
-#. translators: %s: list of available placeholder tags.
-#: includes/emails/class-wbte-ewb-email-request-approved.php:176
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:197
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:194
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:176
+#: includes/emails/class-wbte-ewb-email-request-approved.php:185
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:206
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:203
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:185
 #, php-format
 msgid "Available placeholders: %s"
 msgstr "Налични заместители: %s"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:180
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:201
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:198
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:180
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
 msgid "Enable/Disable"
 msgstr "Активиране/деактивиране"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:182
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:203
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:200
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:182
+#: includes/emails/class-wbte-ewb-email-request-approved.php:191
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:212
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:209
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:191
 msgid "Enable this email notification"
 msgstr "Активиране на това известие по имейл"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:186
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:207
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:186
+#: includes/emails/class-wbte-ewb-email-request-approved.php:195
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:216
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:195
 msgid "Subject"
 msgstr "Тема"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:194
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:215
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:221
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:194
+#: includes/emails/class-wbte-ewb-email-request-approved.php:203
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:224
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:203
 msgid "Email heading"
 msgstr "Заглавие на имейла"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:202
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:223
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:229
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:202
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
 msgid "Email type"
 msgstr "Тип имейл"
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:204
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:225
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:231
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:204
+#: includes/emails/class-wbte-ewb-email-request-approved.php:213
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:234
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:240
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:213
 msgid "Choose which format of email to send."
 msgstr "Изберете в какъв формат да се изпраща имейлът."
 
@@ -1585,8 +1544,7 @@ msgstr "[{site_title}]: Ново искане за отказ за поръчк�
 msgid "New Withdrawal Request"
 msgstr "Ново искане за отказ"
 
-#. translators: %s: default store email address.
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:216
 #, php-format
 msgid ""
 "Optional override for this email only. Leave blank to use recipients "
@@ -1625,7 +1583,7 @@ msgid "You do not have permission to request withdrawal for this order."
 msgstr "Нямате разрешение да заявите отказ за тази поръчка."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:199
-#: includes/frontend/class-wbte-ewb-guest-verification.php:177
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
 #: includes/frontend/views/verification-success.php:23
 msgid ""
 "Your withdrawal request has been submitted successfully. You will receive a "
@@ -1669,20 +1627,22 @@ msgstr "Не са намерени допустими артикули за та
 
 #: includes/frontend/class-wbte-ewb-frontend.php:141
 msgid "Review your withdrawal request"
-msgstr ""
+msgstr "Прегледайте вашето искане за отказ"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:142
 msgid ""
 "Please review the details below. To complete your statutory withdrawal, "
 "click Confirm withdrawal."
 msgstr ""
+"Моля, прегледайте данните по-долу. За да завършите законния си отказ, "
+"кликнете върху „Потвърди отказа“."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:143
 msgid "Confirm withdrawal"
-msgstr ""
+msgstr "потвърждавам отказаs"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:145
-#: react/src/components/RequestsList.jsx:207
+#: react/src/components/RequestsList.jsx:193
 msgid "Customer"
 msgstr "Клиент"
 
@@ -1690,13 +1650,13 @@ msgstr "Клиент"
 #: includes/frontend/class-wbte-ewb-my-account.php:140
 #: includes/frontend/class-wbte-ewb-my-account.php:159
 #: includes/frontend/views/form-logged-in.php:52
-#: react/src/components/RequestDetail.jsx:264
+#: react/src/components/RequestDetail.jsx:265
 msgid "Order"
 msgstr "Поръчка"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:147
 msgid "Withdrawal type"
-msgstr ""
+msgstr "Тип отказ"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:148
 #: includes/frontend/views/form-guest-verified.php:61
@@ -1713,14 +1673,14 @@ msgstr "Причина за отказа"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:150
 msgid "Full withdrawal"
-msgstr ""
+msgstr "Пълен отказ"
 
-#: includes/frontend/class-wbte-ewb-guest-verification.php:176
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
 #: includes/frontend/views/verification-success.php:19
 msgid "Request submitted"
 msgstr "Искането е подадено"
 
-#: includes/frontend/class-wbte-ewb-guest-verification.php:200
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
 msgid ""
 "Thank you. If the details you provided are correct, you will receive a "
 "verification email to complete your withdrawal request."
@@ -1728,7 +1688,7 @@ msgstr ""
 "Благодарим ви. Ако предоставените от вас данни са верни, ще получите имейл "
 "за потвърждение, за да завършите вашето искане за отказ."
 
-#: includes/frontend/class-wbte-ewb-guest-verification.php:229
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
 msgid "We could not verify your withdrawal request. Please try again."
 msgstr "Не успяхме да потвърдим вашето искане за отказ. Моля, опитайте отново."
 
@@ -1748,14 +1708,14 @@ msgstr "Искане"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:143
 #: includes/frontend/class-wbte-ewb-my-account.php:162
-#: react/src/components/ActivityLog.jsx:32
-#: react/src/components/RequestsList.jsx:210
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:196
 msgid "Date"
 msgstr "Дата"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:146
 #: includes/frontend/class-wbte-ewb-my-account.php:165
-#: react/src/components/RequestsList.jsx:208
+#: react/src/components/RequestsList.jsx:194
 msgid "Type"
 msgstr "Тип"
 
@@ -1764,26 +1724,40 @@ msgstr "Тип"
 #: templates/emails/customer-withdrawal-approved.php:99
 #: templates/emails/customer-withdrawal-rejected.php:112
 #: react/src/components/Filters.jsx:46
-#: react/src/components/RequestDetail.jsx:254
-#: react/src/components/RequestsList.jsx:209
+#: react/src/components/RequestDetail.jsx:255
+#: react/src/components/RequestsList.jsx:195
 msgid "Status"
 msgstr "Статус"
 
-#: includes/frontend/class-wbte-ewb-my-account.php:265
+#: includes/frontend/class-wbte-ewb-my-account.php:261
 msgid "Withdrawal Request"
 msgstr "Искане за отказ"
 
-#. translators: 1: request ID, 2: status badge
-#: includes/frontend/class-wbte-ewb-my-account.php:270
+#: includes/frontend/class-wbte-ewb-my-account.php:302
 #, php-format
-msgid "Request #%1$s: %2$s"
-msgstr "Искане #%1$s: %2$s"
+msgid "Request #%s"
+msgstr "Искане #%s"
 
-#. translators: %s: date
-#: includes/frontend/class-wbte-ewb-my-account.php:281
+#: includes/frontend/class-wbte-ewb-my-account.php:313
 #, php-format
-msgid "Submitted on %s"
-msgstr "Подадено на %s"
+msgid "Type: %s"
+msgstr "Тип: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Подадено"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/src/components/RequestDetail.jsx:271
+msgid "Processed"
+msgstr "Обработено"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Причина"
 
 #: includes/frontend/views/form-guest-verified.php:23
 msgid ""
@@ -1840,7 +1814,6 @@ msgstr "В момента нямате поръчки, които подлежа
 msgid "-- Select an order --"
 msgstr "-- Изберете поръчка --"
 
-#. translators: 1: order number, 2: order date
 #: includes/frontend/views/form-logged-in.php:60
 #, php-format
 msgid "#%1$s — %2$s"
@@ -1858,7 +1831,6 @@ msgstr "Име"
 msgid "Last name"
 msgstr "Фамилия"
 
-#. translators: %s: order number.
 #: templates/emails/admin-withdrawal-submitted.php:32
 #, php-format
 msgid "A new withdrawal request has been submitted for order #%s."
@@ -1873,7 +1845,7 @@ msgid "Customer Name"
 msgstr "Име на клиента"
 
 #: templates/emails/admin-withdrawal-submitted.php:55
-#: react/src/components/RequestDetail.jsx:219
+#: react/src/components/RequestDetail.jsx:220
 msgid "Customer Email"
 msgstr "Имейл на клиента"
 
@@ -1895,7 +1867,7 @@ msgstr "Номер на поръчката"
 #: templates/emails/customer-withdrawal-approved.php:65
 #: templates/emails/customer-withdrawal-rejected.php:78
 #: templates/emails/customer-withdrawal-submitted.php:65
-#: react/src/components/RequestDetail.jsx:223
+#: react/src/components/RequestDetail.jsx:224
 msgid "Request Type"
 msgstr "Тип на искането"
 
@@ -1905,12 +1877,6 @@ msgstr "Тип на искането"
 #: templates/emails/customer-withdrawal-submitted.php:73
 msgid "Date Submitted"
 msgstr "Дата на подаване"
-
-#: templates/emails/admin-withdrawal-submitted.php:108
-#: templates/emails/customer-withdrawal-rejected.php:121
-#: react/src/components/RequestDetail.jsx:232
-msgid "Reason"
-msgstr "Причина"
 
 #: templates/emails/admin-withdrawal-submitted.php:136
 msgid "Items Included in This Request"
@@ -1923,11 +1889,10 @@ msgstr "Артикул"
 #: templates/emails/admin-withdrawal-submitted.php:145
 #: templates/emails/customer-withdrawal-approved.php:131
 #: templates/emails/customer-withdrawal-submitted.php:119
-#: react/src/components/RequestDetail.jsx:290
+#: react/src/components/RequestDetail.jsx:291
 msgid "Quantity"
 msgstr "Количество"
 
-#. translators: %s: admin URL to manage withdrawal requests.
 #: templates/emails/admin-withdrawal-submitted.php:173
 #, php-format
 msgid ""
@@ -1958,7 +1923,6 @@ msgstr "Потвърдете искането за отказ"
 msgid "If you did not request a withdrawal, you can ignore this email."
 msgstr "Ако не сте заявявали отказ, можете да пренебрегнете този имейл."
 
-#. translators: %s: customer first name.
 #: templates/emails/customer-withdrawal-approved.php:32
 #: templates/emails/customer-withdrawal-rejected.php:32
 #: templates/emails/customer-withdrawal-submitted.php:32
@@ -1966,7 +1930,6 @@ msgstr "Ако не сте заявявали отказ, можете да пр
 msgid "Hi %s,"
 msgstr "Здравейте, %s,"
 
-#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-approved.php:42
 #, php-format
 msgid "Great news! Your withdrawal request for order #%s has been approved."
@@ -1984,7 +1947,7 @@ msgstr "Артикули"
 
 #: templates/emails/customer-withdrawal-approved.php:130
 #: templates/emails/customer-withdrawal-submitted.php:116
-#: react/src/components/RequestDetail.jsx:289
+#: react/src/components/RequestDetail.jsx:290
 msgid "Product"
 msgstr "Продукт"
 
@@ -2019,7 +1982,6 @@ msgstr ""
 msgid "If you have any questions, please do not hesitate to contact us."
 msgstr "Ако имате въпроси, не се колебайте да се свържете с нас."
 
-#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-rejected.php:42
 #, php-format
 msgid ""
@@ -2039,13 +2001,11 @@ msgstr ""
 "информация, моля, свържете се с нас и ще прегледаме случая ви отново с "
 "удоволствие."
 
-#. translators: %s: store contact email address or comma-separated list of addresses.
 #: templates/emails/customer-withdrawal-rejected.php:149
 #, php-format
 msgid "You can reach us at %s."
 msgstr "Можете да се свържете с нас на %s."
 
-#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-submitted.php:42
 #, php-format
 msgid ""
@@ -2074,7 +2034,7 @@ msgid ""
 msgstr "Ако междувременно имате въпроси, не се колебайте да се свържете с нас."
 
 #: templates/emails/parts/withdrawal-verification-code-row.php:27
-#: react/src/components/RequestDetail.jsx:241
+#: react/src/components/RequestDetail.jsx:242
 msgid "Receipt hash"
 msgstr "Хеш на разписка"
 
@@ -2086,19 +2046,17 @@ msgstr ""
 "Получихме вашето искане за отказ. За да го завършите, моля, потвърдете имейл "
 "адреса си за фактуриране, като използвате връзката по-долу."
 
-#. translators: %s: order number
 #: templates/emails/plain/customer-guest-verification.php:19
 #, php-format
 msgid "Order number: %s"
 msgstr "Номер на поръчката: %s"
 
-#. translators: %s: reason
 #: templates/emails/plain/customer-guest-verification.php:24
 #, php-format
 msgid "Reason: %s"
 msgstr "Причина: %s"
 
-#: wt-eu-withdrawal-button.php:111
+#: wt-eu-withdrawal-button.php:112
 msgid ""
 "WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
 "installed and active."
@@ -2106,32 +2064,42 @@ msgstr ""
 "WebToffee EU Withdrawal Button for WooCommerce изисква WooCommerce да е "
 "инсталиран и активен."
 
-#: react/src/components/ActivityLog.jsx:23
+#: react/src/components/ActivityLog.jsx:24
 msgid "No activity recorded."
 msgstr "Няма регистрирана активност."
 
-#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/ActivityLog.jsx:34
 msgid "Actor"
 msgstr "Извършител"
 
-#: react/src/components/ActivityLog.jsx:34
+#: react/src/components/ActivityLog.jsx:35
 msgid "Action"
 msgstr "Действие"
 
-#: react/src/components/ActivityLog.jsx:35
+#: react/src/components/ActivityLog.jsx:36
 msgid "Note"
 msgstr "Бележка"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Поправете"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr "Документация"
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr "Отхвърляне на предупреждението"
 
 #: react/src/components/CategoryExclusionField.jsx:73
 msgid "No product categories found."
 msgstr "Не са намерени продуктови категории."
 
-#. translators: %d: number of selected categories
-#. translators: %d: number of selected order statuses
-#. translators: %d: number of selected products
 #: react/src/components/CategoryExclusionField.jsx:86
 #: react/src/components/OrderStatusPickerField.jsx:106
 #: react/src/components/ProductSearchField.jsx:186
+#, javascript-format
 msgid "%d selected"
 msgstr "%d избрани"
 
@@ -2190,7 +2158,6 @@ msgid "Date To"
 msgstr "Дата до"
 
 #: react/src/components/Filters.jsx:85
-#, fuzzy
 msgid "Search"
 msgstr "Търсене…"
 
@@ -2242,115 +2209,111 @@ msgstr "Търсене…"
 msgid "No products found."
 msgstr "Не са намерени продукти."
 
-#: react/src/components/RequestDetail.jsx:103
-#: react/src/components/RequestDetail.jsx:168
+#: react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
 msgid "Back to List"
 msgstr "Обратно към списъка"
 
-#: react/src/components/RequestDetail.jsx:119
+#: react/src/components/RequestDetail.jsx:120
 msgid "Not included"
 msgstr "Не е включено"
 
-#: react/src/components/RequestDetail.jsx:126
+#: react/src/components/RequestDetail.jsx:127
 msgid "Withdrawal approved"
 msgstr "Отказът е одобрен"
 
-#: react/src/components/RequestDetail.jsx:133
+#: react/src/components/RequestDetail.jsx:134
 msgid "Withdrawal rejected"
 msgstr "Отказът е отхвърлен"
 
-#: react/src/components/RequestDetail.jsx:139
+#: react/src/components/RequestDetail.jsx:140
 msgid "Withdrawal request submitted"
 msgstr "Искането за отказ е подадено"
 
-#: react/src/components/RequestDetail.jsx:197
+#: react/src/components/RequestDetail.jsx:198
 msgid "Request Information"
 msgstr "Информация за искането"
 
-#: react/src/components/RequestDetail.jsx:202
-#: react/src/components/RequestsList.jsx:206
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:192
 msgid "Order #"
 msgstr "Поръчка #"
 
-#: react/src/components/RequestDetail.jsx:233
+#: react/src/components/RequestDetail.jsx:234
 msgid "No reason provided"
 msgstr "Не е посочена причина"
 
-#: react/src/components/RequestDetail.jsx:236
+#: react/src/components/RequestDetail.jsx:237
 msgid "Created"
 msgstr "Създадено"
 
-#: react/src/components/RequestDetail.jsx:270
-msgid "Processed"
-msgstr "Обработено"
-
-#: react/src/components/RequestDetail.jsx:282
+#: react/src/components/RequestDetail.jsx:283
 msgid "Order Items"
 msgstr "Артикули от поръчката"
 
-#: react/src/components/RequestDetail.jsx:291
+#: react/src/components/RequestDetail.jsx:292
 msgid "Line Total"
 msgstr "Общо за реда"
 
-#: react/src/components/RequestDetail.jsx:326
+#: react/src/components/RequestDetail.jsx:327
 msgid "No order items were found for this request."
 msgstr "Не са намерени артикули от поръчката за това искане."
 
-#: react/src/components/RequestDetail.jsx:335
+#: react/src/components/RequestDetail.jsx:336
 msgid "Status Timeline"
 msgstr "Хронология на статусите"
 
-#: react/src/components/RequestDetail.jsx:345
+#: react/src/components/RequestDetail.jsx:346
 msgid "Activity Log"
 msgstr "Дневник на активността"
 
-#: react/src/components/RequestDetail.jsx:354
-#: react/src/components/RequestDetail.jsx:384
+#: react/src/components/RequestDetail.jsx:355
+#: react/src/components/RequestDetail.jsx:385
 msgid "Reject Request"
 msgstr "Отхвърли искането"
 
-#: react/src/components/RequestDetail.jsx:361
+#: react/src/components/RequestDetail.jsx:362
 msgid "Rejection Reason"
 msgstr "Причина за отхвърляне"
 
-#: react/src/components/RequestsList.jsx:116
+#: react/src/components/RequestsList.jsx:102
 msgid "No change vs last week"
 msgstr "Няма промяна спрямо миналата седмица"
 
-#: react/src/components/RequestsList.jsx:127
+#: react/src/components/RequestsList.jsx:113
 msgid "No data"
 msgstr "Няма данни"
 
-#: react/src/components/RequestsList.jsx:133
+#: react/src/components/RequestsList.jsx:119
 msgid "No change"
 msgstr "Няма промяна"
 
-#: react/src/components/RequestsList.jsx:149
+#: react/src/components/RequestsList.jsx:135
 msgid "Open Requests"
 msgstr "Отворени искания"
 
-#: react/src/components/RequestsList.jsx:163
+#: react/src/components/RequestsList.jsx:149
 msgid "Approved (30d)"
 msgstr "Одобрени (30 д.)"
 
-#: react/src/components/RequestsList.jsx:205
+#: react/src/components/RequestsList.jsx:191
 msgid "ID"
 msgstr "ID"
 
-#: react/src/components/RequestsList.jsx:211
+#: react/src/components/RequestsList.jsx:197
 msgid "Actions"
 msgstr "Действия"
 
-#: react/src/components/RequestsList.jsx:287
+#: react/src/components/RequestsList.jsx:273
 msgid "View"
 msgstr "Преглед"
 
-#. translators: 1: first visible item number, 2: last visible item number, 3: total item count
-#: react/src/components/RequestsList.jsx:301
+#: react/src/components/RequestsList.jsx:287
+#, javascript-format
 msgid "Showing %1$d–%2$d of %3$d"
 msgstr "Показани %1$d–%2$d от %3$d"
 
-#: react/src/components/RequestsList.jsx:306
+#: react/src/components/RequestsList.jsx:292
 msgid "Showing 0 of 0"
 msgstr "Показани 0 от 0"
 
@@ -2366,92 +2329,181 @@ msgstr "Глобално"
 msgid "WooCommerce only"
 msgstr "Само WooCommerce"
 
-#: react/src/components/SettingsPage.jsx:239
+#: react/src/components/SettingsPage.jsx:192
+#: react/src/components/SettingsPage.jsx:787
+msgid "General"
+msgstr "Общи"
+
+#: react/src/components/SettingsPage.jsx:193
+msgid "Rules & Exclusions"
+msgstr "Правила и изключения"
+
+#: react/src/components/SettingsPage.jsx:194
+msgid "Workflow"
+msgstr "Работен процес"
+
+#: react/src/components/SettingsPage.jsx:195
+msgid "Advanced"
+msgstr "Разширени"
+
+#: react/src/components/SettingsPage.jsx:252
 msgid "-- Select a page --"
 msgstr "-- Изберете страница --"
 
-#: react/src/components/SettingsPage.jsx:252
+#: react/src/components/SettingsPage.jsx:265
 msgid "Failed to load settings."
 msgstr "Неуспешно зареждане на настройките."
 
-#: react/src/components/SettingsPage.jsx:293
+#: react/src/components/SettingsPage.jsx:306
 msgid "Add at least one admin notification recipient before saving."
 msgstr ""
 "Добавете поне един получател на администраторски известия, преди да запазите."
 
-#: react/src/components/SettingsPage.jsx:307
+#: react/src/components/SettingsPage.jsx:320
 msgid "Settings saved successfully."
 msgstr "Настройките са запазени успешно."
 
-#: react/src/components/SettingsPage.jsx:312
+#: react/src/components/SettingsPage.jsx:325
 msgid "Failed to save settings."
 msgstr "Неуспешно запазване на настройките."
 
-#: react/src/components/SettingsPage.jsx:332
+#: react/src/components/SettingsPage.jsx:345
 msgid "Loading settings..."
 msgstr "Зареждане на настройките..."
 
-#: react/src/components/SettingsPage.jsx:341
+#: react/src/components/SettingsPage.jsx:354
 msgid "Unable to load settings."
 msgstr "Настройките не могат да бъдат заредени."
 
-#: react/src/components/SettingsPage.jsx:412
-msgid "General"
-msgstr "Общи"
+#: react/src/components/SettingsPage.jsx:453
+msgid "Customize appearance"
+msgstr "Персонализиране на външния вид"
 
-#: react/src/components/SettingsPage.jsx:415
+#: react/src/components/SettingsPage.jsx:457
+msgid "Footer"
+msgstr "Долен колонтитул"
+
+#: react/src/components/SettingsPage.jsx:458
+msgid "My account page"
+msgstr "Страница Моят акаунт"
+
+#: react/src/components/SettingsPage.jsx:468
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr ""
+"Активирайте „Показване на бутона за отказ в долния колонтитул“ по-горе, за "
+"да персонализирате."
+
+#: react/src/components/SettingsPage.jsx:469
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr ""
+"Активирайте „Показване на бутона за отказ в Моят акаунт“ по-горе, за да "
+"персонализирате."
+
+#: react/src/components/SettingsPage.jsx:476
+msgid "Link text"
+msgstr "Текст на връзката"
+
+#: react/src/components/SettingsPage.jsx:476
+msgid "Button text"
+msgstr "Текст на бутона"
+
+#: react/src/components/SettingsPage.jsx:487
+msgid "Display as"
+msgstr "Показване като"
+
+#: react/src/components/SettingsPage.jsx:490
+msgid "Link"
+msgstr "Връзка"
+
+#: react/src/components/SettingsPage.jsx:491
+msgid "Button"
+msgstr "Бутон"
+
+#: react/src/components/SettingsPage.jsx:498
+msgid "Colors"
+msgstr "Цветове"
+
+#: react/src/components/SettingsPage.jsx:500
+msgid "Theme default"
+msgstr "По подразбиране от темата"
+
+#: react/src/components/SettingsPage.jsx:500
+msgid "Custom"
+msgstr "Персонализиран"
+
+#: react/src/components/SettingsPage.jsx:521
+msgid "Background"
+msgstr "Фон"
+
+#: react/src/components/SettingsPage.jsx:529
+msgid "Text"
+msgstr "Текст"
+
+#: react/src/components/SettingsPage.jsx:537
+msgid "Hover bg"
+msgstr "Фон при посочване"
+
+#: react/src/components/SettingsPage.jsx:545
+msgid "Hover text"
+msgstr "Текст при посочване"
+
+#: react/src/components/SettingsPage.jsx:790
 msgid "Core withdrawal form behaviour and display preferences."
 msgstr "Основно поведение и предпочитания за показване на формуляра за отказ."
 
-#: react/src/components/SettingsPage.jsx:420
+#: react/src/components/SettingsPage.jsx:795
 msgid "Withdrawal page"
 msgstr "Страница за отказ"
 
-#: react/src/components/SettingsPage.jsx:438
-msgid "Embed footer link"
-msgstr "Вграждане на връзка във футъра"
+#: react/src/components/SettingsPage.jsx:813
+msgid "Show withdrawal button in footer"
+msgstr "Показване на бутона за отказ в долния колонтитул"
 
-#: react/src/components/SettingsPage.jsx:445
+#: react/src/components/SettingsPage.jsx:814
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Показване на бутон или връзка за отказ в долния колонтитул на сайта."
+
+#: react/src/components/SettingsPage.jsx:823
 msgid "Footer link text"
 msgstr "Текст на връзката във футъра"
 
-#: react/src/components/SettingsPage.jsx:446
+#: react/src/components/SettingsPage.jsx:824
 msgid "The text displayed for the footer withdrawal link."
 msgstr "Текстът, показван за връзката за отказ във футъра."
 
-#: react/src/components/SettingsPage.jsx:460
+#: react/src/components/SettingsPage.jsx:839
 msgid "Display scope"
 msgstr "Обхват на показване"
 
-#: react/src/components/SettingsPage.jsx:474
+#: react/src/components/SettingsPage.jsx:853
 msgid "Allow partial withdrawals"
 msgstr "Разрешаване на частични откази"
 
-#: react/src/components/SettingsPage.jsx:476
+#: react/src/components/SettingsPage.jsx:855
 msgid "Recommended"
 msgstr "Препоръчително"
 
-#: react/src/components/SettingsPage.jsx:480
+#: react/src/components/SettingsPage.jsx:859
 msgid "Withdrawal period"
 msgstr "Срок за отказ"
 
-#: react/src/components/SettingsPage.jsx:492
+#: react/src/components/SettingsPage.jsx:871
 msgid "days"
 msgstr "дни"
 
-#: react/src/components/SettingsPage.jsx:510
+#: react/src/components/SettingsPage.jsx:889
 msgid "Start countdown from"
 msgstr "Начало на отброяването от"
 
-#: react/src/components/SettingsPage.jsx:525
+#: react/src/components/SettingsPage.jsx:904
 msgid "Reason required"
 msgstr "Необходима е причина"
 
-#: react/src/components/SettingsPage.jsx:538
+#: react/src/components/SettingsPage.jsx:927
 msgid "Exclusions"
 msgstr "Изключения"
 
-#: react/src/components/SettingsPage.jsx:541
+#: react/src/components/SettingsPage.jsx:930
 msgid ""
 "Exclude product types, categories, or specific products from withdrawal "
 "eligibility."
@@ -2459,35 +2511,35 @@ msgstr ""
 "Изключете типове продукти, категории или конкретни продукти от правото на "
 "отказ."
 
-#: react/src/components/SettingsPage.jsx:546
+#: react/src/components/SettingsPage.jsx:935
 msgid "Excluded product types"
 msgstr "Изключени типове продукти"
 
-#: react/src/components/SettingsPage.jsx:547
+#: react/src/components/SettingsPage.jsx:936
 msgid "Product types that cannot be withdrawn."
 msgstr "Типове продукти, които не подлежат на отказ."
 
-#: react/src/components/SettingsPage.jsx:562
+#: react/src/components/SettingsPage.jsx:951
 msgid "Excluded categories"
 msgstr "Изключени категории"
 
-#: react/src/components/SettingsPage.jsx:563
+#: react/src/components/SettingsPage.jsx:952
 msgid "Products in these categories cannot be withdrawn."
 msgstr "Продуктите в тези категории не подлежат на отказ."
 
-#: react/src/components/SettingsPage.jsx:573
+#: react/src/components/SettingsPage.jsx:962
 msgid "Excluded products"
 msgstr "Изключени продукти"
 
-#: react/src/components/SettingsPage.jsx:574
+#: react/src/components/SettingsPage.jsx:963
 msgid "Search and select specific products that cannot be withdrawn."
 msgstr "Търсете и изберете конкретни продукти, които не подлежат на отказ."
 
-#: react/src/components/SettingsPage.jsx:591
+#: react/src/components/SettingsPage.jsx:985
 msgid "Order status"
 msgstr "Статус на поръчката"
 
-#: react/src/components/SettingsPage.jsx:594
+#: react/src/components/SettingsPage.jsx:988
 msgid ""
 "Automatically update order statuses when withdrawal requests are submitted "
 "or approved."
@@ -2495,12 +2547,12 @@ msgstr ""
 "Автоматично актуализиране на статусите на поръчката при подаване или "
 "одобряване на искания за отказ."
 
-#: react/src/components/SettingsPage.jsx:608
-#: react/src/components/SettingsPage.jsx:633
+#: react/src/components/SettingsPage.jsx:1002
+#: react/src/components/SettingsPage.jsx:1027
 msgid "Set status to"
 msgstr "Задаване на статус на"
 
-#: react/src/components/SettingsPage.jsx:660
+#: react/src/components/SettingsPage.jsx:1054
 msgid ""
 "Configure admin notification recipients and the customer contact email shown "
 "in rejected withdrawal emails."
@@ -2508,15 +2560,15 @@ msgstr ""
 "Конфигурирайте получателите на администраторски известия и имейла за контакт "
 "с клиента, показван в имейлите за отхвърлен отказ."
 
-#: react/src/components/SettingsPage.jsx:666
+#: react/src/components/SettingsPage.jsx:1060
 msgid "Email addresses that receive the new withdrawal request notification."
 msgstr "Имейл адреси, които получават известие за ново искане за отказ."
 
-#: react/src/components/SettingsPage.jsx:674
+#: react/src/components/SettingsPage.jsx:1068
 msgid "Customer contact email"
 msgstr "Имейл за контакт с клиента"
 
-#: react/src/components/SettingsPage.jsx:675
+#: react/src/components/SettingsPage.jsx:1069
 msgid ""
 "Email address shown to customers when a withdrawal request is rejected and "
 "they need to contact you."
@@ -2524,11 +2576,11 @@ msgstr ""
 "Имейл адрес, показван на клиентите, когато искане за отказ бъде отхвърлено и "
 "трябва да се свържат с вас."
 
-#: react/src/components/SettingsPage.jsx:695
+#: react/src/components/SettingsPage.jsx:1096
 msgid "Withdrawal button shortcode"
 msgstr "Шорткод за бутона за отказ"
 
-#: react/src/components/SettingsPage.jsx:709
+#: react/src/components/SettingsPage.jsx:1110
 msgid ""
 " — Optional. Custom button text. Uses the default shortcode label when "
 "omitted."
@@ -2536,25 +2588,25 @@ msgstr ""
 " — По избор. Персонализиран текст на бутона. Използва етикета по "
 "подразбиране на шорткода, ако е пропуснат."
 
-#: react/src/components/SettingsPage.jsx:713
+#: react/src/components/SettingsPage.jsx:1114
 msgid " — Optional. Extra CSS classes added to the button."
 msgstr " — По избор. Допълнителни CSS класове, добавени към бутона."
 
-#: react/src/components/SettingsPage.jsx:727
+#: react/src/components/SettingsPage.jsx:1131
 msgid "Data management"
 msgstr "Управление на данните"
 
-#: react/src/components/SettingsPage.jsx:730
+#: react/src/components/SettingsPage.jsx:1134
 msgid "Control what happens to plugin data when the plugin is removed."
 msgstr ""
 "Контролирайте какво се случва с данните на приставката, когато тя бъде "
 "премахната."
 
-#: react/src/components/SettingsPage.jsx:738
+#: react/src/components/SettingsPage.jsx:1142
 msgid "Delete data on uninstall"
 msgstr "Изтриване на данните при деинсталиране"
 
-#: react/src/components/SettingsPage.jsx:739
+#: react/src/components/SettingsPage.jsx:1143
 msgid ""
 "Remove all plugin data (settings, withdrawal requests, database tables) when "
 "the plugin is uninstalled. This action is irreversible."
@@ -2563,35 +2615,35 @@ msgstr ""
 "таблици в базата данни) при деинсталиране на приставката. Това действие е "
 "необратимо."
 
-#: react/src/components/SettingsPage.jsx:740
+#: react/src/components/SettingsPage.jsx:1144
 msgid "Destructive"
 msgstr "Разрушително"
 
-#: react/src/components/SettingsPage.jsx:754
+#: react/src/components/SettingsPage.jsx:1170
 msgid "Add at least one recipient to save"
 msgstr "Добавете поне един получател, за да запазите"
 
-#: react/src/components/SettingsPage.jsx:756
+#: react/src/components/SettingsPage.jsx:1172
 msgid "Unsaved changes"
 msgstr "Незапазени промени"
 
-#: react/src/components/SettingsPage.jsx:757
+#: react/src/components/SettingsPage.jsx:1173
 msgid "All changes saved"
 msgstr "Всички промени са запазени"
 
-#: react/src/components/SettingsPage.jsx:768
+#: react/src/components/SettingsPage.jsx:1184
 msgid "Discard"
 msgstr "Отхвърляне"
 
-#: react/src/components/SettingsPage.jsx:778
+#: react/src/components/SettingsPage.jsx:1194
 msgid "Saving..."
 msgstr "Запазване..."
 
-#: react/src/components/SettingsPage.jsx:779
+#: react/src/components/SettingsPage.jsx:1195
 msgid "Save settings"
 msgstr "Запази настройките"
 
-#: react/src/components/StatusTimeline.jsx:29
+#: react/src/components/StatusTimeline.jsx:30
 msgid "No status changes recorded."
 msgstr "Няма регистрирани промени в статуса."
 
@@ -2609,8 +2661,8 @@ msgid "Requests"
 msgstr "Искания"
 
 #: react/src/utils/getActorLabel.js:11
-msgid "System"
-msgstr "Система"
+msgid "Auto-approval"
+msgstr "Автоматично одобрение"
 
 #: react/src/utils/getActorLabel.js:21
 msgid "User"
@@ -2619,6 +2671,40 @@ msgstr "Потребител"
 #: react/src/utils/getActorLabel.js:28
 msgid "Unknown"
 msgstr "Неизвестно"
+
+#~ msgid ""
+#~ "You've been using WebToffee EU Withdrawal Button for a week. Leave a "
+#~ "review!"
+#~ msgstr ""
+#~ "Използвате WebToffee EU Withdrawal Button от седмица. Оставете отзив!"
+
+#~ msgid ""
+#~ "Manage withdrawal of contract / order cancellation requests for "
+#~ "WooCommerce orders. EU-compliant, HPOS-compatible."
+#~ msgstr ""
+#~ "Управление на искания за отказ от договор / анулиране на поръчки за "
+#~ "поръчки в WooCommerce. Съвместимо с ЕС, съвместимо с HPOS."
+
+#~ msgid ""
+#~ "You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
+#~ "Withdrawal Button!"
+#~ msgstr ""
+#~ "Получихте над 10 искания за отказ. Оставете отзив за WebToffee EU "
+#~ "Withdrawal Button!"
+
+#, php-format
+#~ msgid "Request #%1$s: %2$s"
+#~ msgstr "Искане #%1$s: %2$s"
+
+#, php-format
+#~ msgid "Submitted on %s"
+#~ msgstr "Подадено на %s"
+
+#~ msgid "Embed footer link"
+#~ msgstr "Вграждане на връзка във футъра"
+
+#~ msgid "System"
+#~ msgstr "Система"
 
 #~ msgid "Verification code:"
 #~ msgstr "Код за потвърждение:"

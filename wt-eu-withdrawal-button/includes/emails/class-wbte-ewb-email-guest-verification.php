@@ -77,12 +77,34 @@ class Wbte_Ewb_Email_Guest_Verification extends WC_Email {
 	 * @return void
 	 */
 	public function trigger( $pending ) {
-		$this->setup_locale();
-
 		if ( ! ( $pending instanceof Wbte_Ewb_Pending_Request ) ) {
-			$this->restore_locale();
 			return;
 		}
+
+		// Resolve the order to provide language context for WPML/WCML.
+		$order         = null;
+		$order_lang    = '';
+		$switched_lang = false;
+
+		if ( ! empty( $pending->order_number ) && function_exists( 'wbte_ewb' ) ) {
+			$guest_service = wbte_ewb()->get( 'guest_withdrawal' );
+			if ( $guest_service ) {
+				$order = $guest_service->resolve_order_by_number( $pending->order_number );
+			}
+		}
+
+		if ( $order instanceof WC_Order ) {
+			$this->object = $order;
+			$order_lang   = $order->get_meta( 'wpml_language' );
+
+			// Switch WPML language so gettext and WCML string translations use the order language.
+			if ( $order_lang ) {
+				do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				$switched_lang = true;
+			}
+		}
+
+		$this->setup_locale();
 
 		$this->pending          = $pending;
 		$this->recipient        = $pending->customer_email;
@@ -95,6 +117,11 @@ class Wbte_Ewb_Email_Guest_Verification extends WC_Email {
 		}
 
 		$this->restore_locale();
+
+		// Restore WPML language.
+		if ( $switched_lang ) {
+			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		}
 	}
 
 	/**

@@ -276,9 +276,31 @@ class Wbte_Ewb_Frontend {
 
 		$link_text = Wbte_Ewb_Settings::get_button_label( Wbte_Ewb_Settings::LABEL_FOOTER_LINK );
 
+		/**
+		 * Filters the CSS class for the footer withdrawal link anchor.
+		 *
+		 * @since 1.0.8
+		 *
+		 * @param string $class CSS class attribute value.
+		 */
+		$link_class = apply_filters( 'wbte_ewb_footer_link_class', '' );
+		$class_attr = $link_class ? ' class="' . esc_attr( $link_class ) . '"' : '';
+
+		/**
+		 * Filters the CSS class for the footer withdrawal link wrapper div.
+		 *
+		 * @since 1.0.8
+		 *
+		 * @param string $class CSS class string appended to the wrapper.
+		 */
+		$wrapper_extra = apply_filters( 'wbte_ewb_footer_link_wrapper_class', '' );
+		$wrapper_class = 'wbte-ewb-footer-link' . ( $wrapper_extra ? ' ' . esc_attr( $wrapper_extra ) : '' );
+
 		printf(
-			'<div class="wbte-ewb-footer-link" style="text-align:center;"><a href="%s">%s</a></div>',
+			'<div class="%s" style="text-align:center;"><a href="%s"%s>%s</a></div>',
+			esc_attr( $wrapper_class ),
 			esc_url( $url ),
+			$class_attr, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Built with esc_attr() above.
 			esc_html( $link_text )
 		);
 	}

@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2026-07-10T10:43:31+00:00",
-    "generator": "WebToffee EU Withdrawal Button",
+    "translation-revision-date": "2026-07-23 10:51",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
         "messages": {
@@ -57,9 +57,6 @@
             "Select the page where customers can submit withdrawal requests.": [
                 "Selecteer de pagina waar klanten herroepingsverzoeken kunnen indienen."
             ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Voeg automatisch een link naar de herroepingspagina toe in de voettekst van de site."
-            ],
             "Where the withdrawal form and links are displayed.": [
                 "Waar het herroepingsformulier en de links worden weergegeven."
             ],
@@ -84,8 +81,8 @@
             "Grouped": [
                 "Gegroepeerd"
             ],
-            "External / Affiliate": [
-                "Extern / aangesloten"
+            "External \/ Affiliate": [
+                "Extern \/ aangesloten"
             ],
             "Change order status on submission": [
                 "Wijzig de bestelstatus bij verzending"
@@ -132,11 +129,11 @@
             "Full": [
                 "Volledig"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Je hebt 10+ herroepingsverzoeken ontvangen. Laat een beoordeling achter voor WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Je winkel maakt het EU-herroepingsrecht eenvoudig voor klanten. Tevreden over WebToffee EU Withdrawal Button? Laat een beoordeling achter!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Je gebruikt WebToffee EU Withdrawal Button al een week. Laat een beoordeling achter!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "U gebruikt WebToffee EU Withdrawal Button al een week. We zouden het erg op prijs stellen als u even de tijd zou nemen om ons een beoordeling achter te laten"
             ],
             "Customer": [
                 "Klant"
@@ -153,14 +150,17 @@
             "Status": [
                 "Status"
             ],
+            "Processed": [
+                "Verwerkt"
+            ],
+            "Reason": [
+                "Reden"
+            ],
             "Customer Email": [
                 "E-mailadres van klant"
             ],
             "Request Type": [
                 "Verzoektype"
-            ],
-            "Reason": [
-                "Reden"
             ],
             "Quantity": [
                 "Aantal"
@@ -240,21 +240,6 @@
             "Apply Filters": [
                 "Filters toepassen"
             ],
-            "No order statuses found.": [
-                "Geen bestelstatussen gevonden."
-            ],
-            "Remove status": [
-                "Status verwijderen"
-            ],
-            "Search order statuses…": [
-                "Zoek bestelstatussen…"
-            ],
-            "Type to filter order statuses…": [
-                "Typ om bestelstatussen te filteren…"
-            ],
-            "No order statuses match your search.": [
-                "Geen bestelstatussen komen overeen met uw zoekopdracht."
-            ],
             "Remove product": [
                 "Product verwijderen"
             ],
@@ -293,9 +278,6 @@
             ],
             "Created": [
                 "Gemaakt"
-            ],
-            "Processed": [
-                "Verwerkt"
             ],
             "Order Items": [
                 "Artikelen bestellen"
@@ -357,6 +339,18 @@
             "WooCommerce only": [
                 "Alleen WooCommerce"
             ],
+            "General": [
+                "Algemeen"
+            ],
+            "Rules & Exclusions": [
+                "Regels & uitsluitingen"
+            ],
+            "Workflow": [
+                "Werkstroom"
+            ],
+            "Advanced": [
+                "Geavanceerd"
+            ],
             "-- Select a page --": [
                 "-- Selecteer een pagina --"
             ],
@@ -378,8 +372,56 @@
             "Unable to load settings.": [
                 "Kan instellingen niet laden."
             ],
-            "General": [
-                "Algemeen"
+            "Customize appearance": [
+                "Uiterlijk aanpassen"
+            ],
+            "Footer": [
+                "Footer"
+            ],
+            "My account page": [
+                "Mijn account-pagina"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Schakel hierboven „Herroepingsknop tonen in footer” in om aan te passen."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Schakel hierboven „Herroepingsknop tonen in Mijn account” in om aan te passen."
+            ],
+            "Link text": [
+                "Linktekst"
+            ],
+            "Button text": [
+                "Knoptekst"
+            ],
+            "Display as": [
+                "Weergeven als"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Knop"
+            ],
+            "Colors": [
+                "Kleuren"
+            ],
+            "Theme default": [
+                "Themastandaard"
+            ],
+            "Custom": [
+                "Aangepast"
+            ],
+            "Background": [
+                "Achtergrond"
+            ],
+            "Text": [
+                "Tekst"
+            ],
+            "Hover bg": [
+                "Hover-achtergrond"
+            ],
+            "Hover text": [
+                "Hover-tekst"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Kerngedrag van herroepingsformulieren en weergavevoorkeuren."
@@ -387,8 +429,11 @@
             "Withdrawal page": [
                 "Herroepingspagina"
             ],
-            "Embed footer link": [
-                "Voettekstlink insluiten"
+            "Show withdrawal button in footer": [
+                "Herroepingsknop tonen in footer"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Toon een herroepingsknop of -link in de footer van de site."
             ],
             "Footer link text": [
                 "Voettekst linktekst"
@@ -516,8 +561,8 @@
             "Requests": [
                 "Verzoeken"
             ],
-            "System": [
-                "Systeem"
+            "Auto-approval": [
+                "Automatische goedkeuring"
             ],
             "User": [
                 "Gebruiker"

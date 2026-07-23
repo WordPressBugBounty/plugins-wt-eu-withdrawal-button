@@ -193,21 +193,27 @@ class Wbte_Ewb_Script_Translations {
 	/**
 	 * Find the best Jed JSON file for the current admin request.
 	 *
+	 * Searches WordPress.org language directories first, then the plugin
+	 * languages folder, so community translations work for the React dashboard.
+	 *
 	 * @since 1.0.3
 	 *
 	 * @return string|null
 	 */
 	public static function find_json_file() {
-		$languages_dir = trailingslashit( WBTE_EWB_PLUGIN_DIR ) . 'languages/';
-		$hash          = self::get_bundle_hash();
-		$pattern       = self::TEXT_DOMAIN . '-%s-' . $hash . '.json';
+		$hash    = self::get_bundle_hash();
+		$pattern = self::TEXT_DOMAIN . '-%s-' . $hash . '.json';
 
 		foreach ( self::get_locale_candidates() as $locale ) {
 			foreach ( self::resolve_json_locale_slugs( $locale ) as $json_locale ) {
-				$file = $languages_dir . sprintf( $pattern, $json_locale );
+				$filename = sprintf( $pattern, $json_locale );
 
-				if ( is_readable( $file ) ) {
-					return $file;
+				foreach ( self::get_json_search_directories() as $dir ) {
+					$file = $dir . $filename;
+
+					if ( is_readable( $file ) ) {
+						return $file;
+					}
 				}
 			}
 		}
@@ -216,16 +222,44 @@ class Wbte_Ewb_Script_Translations {
 	}
 
 	/**
-	 * Dashboard msgids taken from any shipped Jed JSON catalog.
+	 * Directories that may contain Jed JSON translation files.
+	 *
+	 * @since 1.0.7
+	 *
+	 * @return string[]
+	 */
+	private static function get_json_search_directories() {
+		$dirs = array();
+
+		if ( defined( 'WP_LANG_DIR' ) && WP_LANG_DIR ) {
+			$dirs[] = trailingslashit( WP_LANG_DIR ) . 'plugins/';
+			$dirs[] = trailingslashit( WP_LANG_DIR );
+		}
+
+		$dirs[] = trailingslashit( WBTE_EWB_PLUGIN_DIR ) . 'languages/';
+
+		return array_values( array_unique( $dirs ) );
+	}
+
+	/**
+	 * Dashboard msgids taken from any available Jed JSON catalog.
 	 *
 	 * @since 1.0.3
 	 *
 	 * @return string[]
 	 */
 	private static function get_dashboard_msgids() {
-		$languages_dir = trailingslashit( WBTE_EWB_PLUGIN_DIR ) . 'languages/';
-		$pattern       = $languages_dir . self::TEXT_DOMAIN . '-*-' . self::get_bundle_hash() . '.json';
-		$files         = glob( $pattern );
+		$hash  = self::get_bundle_hash();
+		$files = array();
+
+		foreach ( self::get_json_search_directories() as $dir ) {
+			$matched = glob( $dir . self::TEXT_DOMAIN . '-*-' . $hash . '.json' );
+			if ( ! empty( $matched ) ) {
+				$files = array_merge( $files, $matched );
+			}
+		}
+
+		$files = array_values( array_unique( $files ) );
 
 		if ( empty( $files ) ) {
 			return array();
@@ -364,12 +398,43 @@ class Wbte_Ewb_Script_Translations {
 		}
 
 		unload_textdomain( self::TEXT_DOMAIN );
-		// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound -- Required after switch_to_locale() for bundled MO files.
+
+		// Prefer WordPress.org / WP_LANG_DIR translations, then bundled plugin files.
+		$locale_for_mo = $locale ? $locale : determine_locale();
+		foreach ( self::get_mo_file_candidates( $locale_for_mo ) as $mofile ) {
+			if ( is_readable( $mofile ) && load_textdomain( self::TEXT_DOMAIN, $mofile ) ) {
+				return;
+			}
+		}
+
+		// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound -- Fallback when no MO was found above.
 		load_plugin_textdomain(
 			self::TEXT_DOMAIN,
 			false,
 			dirname( plugin_basename( WBTE_EWB_PLUGIN_FILE ) ) . '/languages'
 		);
+	}
+
+	/**
+	 * Candidate .mo paths for a locale (WP.org locations first).
+	 *
+	 * @since 1.0.7
+	 *
+	 * @param string $locale Locale slug.
+	 * @return string[]
+	 */
+	private static function get_mo_file_candidates( $locale ) {
+		$filename = self::TEXT_DOMAIN . '-' . $locale . '.mo';
+		$files    = array();
+
+		if ( defined( 'WP_LANG_DIR' ) && WP_LANG_DIR ) {
+			$files[] = trailingslashit( WP_LANG_DIR ) . 'plugins/' . $filename;
+			$files[] = trailingslashit( WP_LANG_DIR ) . $filename;
+		}
+
+		$files[] = trailingslashit( WBTE_EWB_PLUGIN_DIR ) . 'languages/' . $filename;
+
+		return $files;
 	}
 
 	/**

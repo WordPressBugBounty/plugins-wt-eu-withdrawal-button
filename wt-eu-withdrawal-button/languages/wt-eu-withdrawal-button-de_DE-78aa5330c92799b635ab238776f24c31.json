@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-06-25 14:54+0000",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Wählen Sie die Seite aus, auf der Kunden Widerrufsanträge stellen können."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Fügen Sie automatisch einen Link zur Widerrufsseite in der Fußzeile der Website hinzu."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Dort werden das Widerrufsformular und die Links angezeigt."
@@ -132,11 +129,11 @@
             "Full": [
                 "Vollständig"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Sie haben über 10 Widerrufsanträge erhalten. Bewerten Sie WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Ihr Shop macht das EU-Widerrufsrecht für Kunden einfach. Gefällt Ihnen WebToffee EU Withdrawal Button? Hinterlassen Sie eine Bewertung!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Sie nutzen WebToffee EU Withdrawal Button seit einer Woche. Geben Sie eine Bewertung ab!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Sie verwenden WebToffee EU Withdrawal Button seit einer Woche. Wir würden uns sehr freuen, wenn Sie sich einen Moment Zeit nehmen könnten, um uns eine Bewertung zu hinterlassen"
             ],
             "Customer": [
                 "Kunde"
@@ -153,14 +150,17 @@
             "Status": [
                 "Status"
             ],
+            "Processed": [
+                "Verarbeitet"
+            ],
+            "Reason": [
+                "Grund"
+            ],
             "Customer Email": [
                 "Kunden-E-Mail"
             ],
             "Request Type": [
                 "Anfragetyp"
-            ],
-            "Reason": [
-                "Grund"
             ],
             "Quantity": [
                 "Menge"
@@ -279,9 +279,6 @@
             "Created": [
                 "Erstellt"
             ],
-            "Processed": [
-                "Verarbeitet"
-            ],
             "Order Items": [
                 "Artikel bestellen"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Nur WooCommerce"
             ],
+            "General": [
+                "Allgemein"
+            ],
+            "Rules & Exclusions": [
+                "Regeln & Ausschlüsse"
+            ],
+            "Workflow": [
+                "Arbeitsablauf"
+            ],
+            "Advanced": [
+                "Erweitert"
+            ],
             "-- Select a page --": [
                 "-- Wählen Sie eine Seite aus --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Einstellungen können nicht geladen werden."
             ],
-            "General": [
-                "Allgemein"
+            "Customize appearance": [
+                "Erscheinungsbild anpassen"
+            ],
+            "Footer": [
+                "Footer"
+            ],
+            "My account page": [
+                "Mein-Konto-Seite"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Aktivieren Sie oben „Widerruf-Schaltfläche im Footer anzeigen“, um sie anzupassen."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Aktivieren Sie oben „Widerruf-Schaltfläche in Mein Konto anzeigen“, um sie anzupassen."
+            ],
+            "Link text": [
+                "Linktext"
+            ],
+            "Button text": [
+                "Schaltflächentext"
+            ],
+            "Display as": [
+                "Anzeigen als"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Schaltfläche"
+            ],
+            "Colors": [
+                "Farben"
+            ],
+            "Theme default": [
+                "Theme-Standard"
+            ],
+            "Custom": [
+                "Benutzerdefiniert"
+            ],
+            "Background": [
+                "Hintergrund"
+            ],
+            "Text": [
+                "Text"
+            ],
+            "Hover bg": [
+                "Hover-Hintergrund"
+            ],
+            "Hover text": [
+                "Hover-Text"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Grundlegendes Verhalten und Anzeigepräferenzen bei Widerrufsformularen."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Widerrufsseite"
             ],
-            "Embed footer link": [
-                "Fußzeilenlink einbetten"
+            "Show withdrawal button in footer": [
+                "Widerruf-Schaltfläche im Footer anzeigen"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Zeigen Sie eine Widerruf-Schaltfläche oder einen Link im Footer der Website an."
             ],
             "Footer link text": [
                 "Fußzeilen-Linktext"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Anfragen"
             ],
-            "System": [
-                "System"
+            "Auto-approval": [
+                "Automatische Genehmigung"
             ],
             "User": [
                 "Benutzer"

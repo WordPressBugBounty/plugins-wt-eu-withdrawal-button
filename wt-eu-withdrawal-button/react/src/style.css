@@ -169,6 +169,51 @@
 	padding-bottom: 90px;
 }
 
+/* --- Settings sub-tab navigation (pill style matching main Requests/Settings tabs) --- */
+.wbte-ewb-subtabs {
+	display: inline-flex;
+	flex-wrap: wrap;
+	background: #fff;
+	border: 1px solid var(--line-strong);
+	border-radius: 10px;
+	padding: 3px;
+	gap: 2px;
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+
+.wbte-ewb-subtabs__btn {
+	font-size: 13px;
+	font-weight: 500;
+	padding: 7px 16px;
+	border-radius: 7px;
+	border: none;
+	background: transparent;
+	color: var(--muted);
+	cursor: pointer;
+	transition: all 120ms ease;
+	line-height: 1;
+	font-family: inherit;
+	white-space: nowrap;
+}
+
+.wbte-ewb-subtabs__btn:hover {
+	color: var(--ink);
+	background: var(--canvas-2);
+}
+
+.wbte-ewb-subtabs__btn--active {
+	background: var(--ink);
+	font-weight: 600;
+	color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+
+.wbte-ewb-subtabs__btn--active:hover {
+	background: var(--ink);
+	color: #fff;
+}
+
 .wbte-ewb-settings__notice {
 	margin: 0 0 18px !important;
 	border-radius: var(--radius-sm) !important;
@@ -1493,7 +1538,7 @@
 
 .wbte-ewb-req-grid {
 	display: grid;
-	grid-template-columns: 60px 90px minmax(0, 1.6fr) 110px 130px 130px minmax(max-content, auto);
+	grid-template-columns: 60px minmax(110px, max-content) minmax(0, 1.6fr) 110px 130px 130px minmax(max-content, auto);
 	align-items: center;
 	min-width: min(100%, 900px);
 }
@@ -1506,6 +1551,10 @@
 	letter-spacing: 0.08em;
 	color: var(--accent-ink);
 	padding: 12px 18px;
+}
+
+.wbte-ewb-req-grid--header > span {
+	white-space: nowrap;
 }
 
 .wbte-ewb-req-grid--row {
@@ -2295,6 +2344,144 @@
 	}
 
 	.wbte-ewb-review-banner__dismiss {
+		margin-left: auto;
+	}
+}
+
+/* ==========================================================================
+   Admin Warning Banners (addon-injected via admin_warnings)
+   ========================================================================== */
+
+.wbte-ewb-warning-banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	box-sizing: border-box;
+	margin-bottom: 18px;
+	padding: 14px 16px;
+	background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%);
+	border: 1px solid #fcd34d;
+	border-left: 4px solid #f59e0b;
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-card);
+	flex-wrap: wrap;
+}
+
+.wbte-ewb-warning-banner__main {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	flex: 1 1 280px;
+	min-width: 0;
+}
+
+.wbte-ewb-warning-banner__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	min-width: 36px;
+	background: #fef3c7;
+	border-radius: 50%;
+	color: #d97706;
+}
+
+.wbte-ewb-warning-banner__text {
+	margin: 0;
+	font-size: 13.5px;
+	line-height: 1.5;
+	color: var(--ink);
+}
+
+.wbte-ewb-warning-banner__actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+.wbte-ewb-warning-banner__link {
+	display: inline-flex;
+	align-items: center;
+	padding: 7px 14px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #fff;
+	background: #d97706;
+	border-radius: 6px;
+	text-decoration: none;
+	transition: background 0.12s;
+	white-space: nowrap;
+}
+
+.wbte-ewb-warning-banner__link:hover,
+.wbte-ewb-warning-banner__link:focus {
+	background: #b45309;
+	color: #fff;
+}
+
+.wbte-ewb-warning-banner__doc {
+	display: inline-flex;
+	align-items: center;
+	padding: 7px 14px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #92400e;
+	background: #fef3c7;
+	border: 1px solid #fcd34d;
+	border-radius: 6px;
+	text-decoration: none;
+	transition: background 0.12s;
+	white-space: nowrap;
+}
+
+.wbte-ewb-warning-banner__doc:hover,
+.wbte-ewb-warning-banner__doc:focus {
+	background: #fde68a;
+	color: #92400e;
+}
+
+.wbte-ewb-warning-banner__dismiss {
+	background: none;
+	border: none;
+	font-size: 18px;
+	line-height: 1;
+	color: #92400e;
+	cursor: pointer;
+	padding: 2px 6px;
+	border-radius: 4px;
+	transition: background 0.12s;
+}
+
+.wbte-ewb-warning-banner__dismiss:hover,
+.wbte-ewb-warning-banner__dismiss:focus {
+	background: #fde68a;
+}
+
+@media (max-width: 782px) {
+	.wbte-ewb-warning-banner {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.wbte-ewb-warning-banner__actions {
+		width: 100%;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.wbte-ewb-warning-banner__link,
+	.wbte-ewb-warning-banner__doc {
+		flex: 1 1 auto;
+		justify-content: center;
+	}
+
+	.wbte-ewb-warning-banner__dismiss {
 		margin-left: auto;
 	}
 }

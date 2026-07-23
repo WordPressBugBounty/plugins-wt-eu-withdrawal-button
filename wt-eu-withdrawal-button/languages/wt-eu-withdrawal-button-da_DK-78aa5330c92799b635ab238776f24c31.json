@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-06-25 14:54+0000",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Vælg den side, hvor kunder kan indsende anmodninger om fortrydelse."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Tilføj automatisk et link til fortrydelsessiden i sidefoden."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Hvor fortrydelsesformularen og links vises."
@@ -132,11 +129,11 @@
             "Full": [
                 "Fuld"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Du har modtaget 10+ anmodninger om fortrydelse. Skriv en anmeldelse af WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Din butik gør EU-fortrydelsesretten nem for kunderne. Er du glad for WebToffee EU Withdrawal Button? Skriv en anmeldelse!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Du har brugt WebToffee EU Withdrawal Button i en uge. Skriv en anmeldelse!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Du har brugt WebToffee EU Withdrawal Button i en uge. Vi ville virkelig sætte pris på, hvis du kunne tage et øjeblik til at give os en anmeldelse"
             ],
             "Customer": [
                 "Kunde"
@@ -153,14 +150,17 @@
             "Status": [
                 "Status"
             ],
+            "Processed": [
+                "Behandlet"
+            ],
+            "Reason": [
+                "Årsag"
+            ],
             "Customer Email": [
                 "Kunde-e-mail"
             ],
             "Request Type": [
                 "Anmodningstype"
-            ],
-            "Reason": [
-                "Årsag"
             ],
             "Quantity": [
                 "Antal"
@@ -279,9 +279,6 @@
             "Created": [
                 "Oprettet"
             ],
-            "Processed": [
-                "Behandlet"
-            ],
             "Order Items": [
                 "Ordrevarer"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Kun WooCommerce"
             ],
+            "General": [
+                "Generelt"
+            ],
+            "Rules & Exclusions": [
+                "Regler og undtagelser"
+            ],
+            "Workflow": [
+                "Arbejdsgang"
+            ],
+            "Advanced": [
+                "Avanceret"
+            ],
             "-- Select a page --": [
                 "-- Vælg en side --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Kan ikke indlæse indstillinger."
             ],
-            "General": [
-                "Generelt"
+            "Customize appearance": [
+                "Tilpas udseende"
+            ],
+            "Footer": [
+                "Sidefod"
+            ],
+            "My account page": [
+                "Min konto-side"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Aktivér „Vis fortrydelsesknap i sidefod“ ovenfor for at tilpasse."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Aktivér „Vis fortrydelsesknap på Min konto“ ovenfor for at tilpasse."
+            ],
+            "Link text": [
+                "Linktekst"
+            ],
+            "Button text": [
+                "Knaptekst"
+            ],
+            "Display as": [
+                "Vis som"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Knap"
+            ],
+            "Colors": [
+                "Farver"
+            ],
+            "Theme default": [
+                "Temaets standard"
+            ],
+            "Custom": [
+                "Tilpasset"
+            ],
+            "Background": [
+                "Baggrund"
+            ],
+            "Text": [
+                "Tekst"
+            ],
+            "Hover bg": [
+                "Hover-baggrund"
+            ],
+            "Hover text": [
+                "Hover-tekst"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Grundlæggende adfærd og visningsindstillinger for fortrydelsesformularen."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Fortrydelsesside"
             ],
-            "Embed footer link": [
-                "Indlejr sidefodslink"
+            "Show withdrawal button in footer": [
+                "Vis fortrydelsesknap i sidefod"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Vis en fortrydelsesknap eller et link i webstedets sidefod."
             ],
             "Footer link text": [
                 "Tekst til sidefodslink"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Anmodninger"
             ],
-            "System": [
-                "System"
+            "Auto-approval": [
+                "Automatisk godkendelse"
             ],
             "User": [
                 "Bruger"

@@ -444,6 +444,15 @@ class Wbte_Ewb_Guest_Withdrawal_Service {
 			$base = home_url( '/' );
 		}
 
+		// Get the translated URL for the order's language (WPML/Polylang).
+		$order = $this->resolve_order_by_number( $pending->order_number );
+		if ( $order instanceof WC_Order ) {
+			$order_lang = $order->get_meta( 'wpml_language' );
+			if ( $order_lang ) {
+				$base = apply_filters( 'wpml_permalink', $base, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+			}
+		}
+
 		return add_query_arg(
 			array(
 				'wbte_ewb_verify' => rawurlencode( $pending->verify_token ),

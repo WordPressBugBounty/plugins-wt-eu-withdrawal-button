@@ -113,16 +113,21 @@ class Wbte_Ewb_Email_Request_Submitted_Admin extends WC_Email {
 	 * @return void
 	 */
 	public function trigger( $request, $order ) {
-		$this->setup_locale();
-
 		if ( ! ( $request instanceof Wbte_Ewb_Request ) || ! ( $order instanceof WC_Order ) ) {
-			$this->restore_locale();
 			return;
 		}
 
 		$this->request = $request;
 		$this->order   = $order;
 		$this->object  = $order;
+
+		// Admin email: use the site default language, not the order's customer language.
+		$admin_lang = apply_filters( 'wpml_default_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		if ( $admin_lang ) {
+			do_action( 'wpml_switch_language', $admin_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		}
+
+		$this->setup_locale();
 
 		$this->placeholders['{order_number}']  = $order->get_order_number();
 		$this->placeholders['{customer_name}'] = $order->get_formatted_billing_full_name();
@@ -134,6 +139,10 @@ class Wbte_Ewb_Email_Request_Submitted_Admin extends WC_Email {
 		}
 
 		$this->restore_locale();
+
+		if ( $admin_lang ) {
+			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		}
 	}
 
 	/**

@@ -61,6 +61,19 @@ class Wbte_Ewb_Guest_Verification {
 
 		$pending = $this->guest_service->find_pending_by_token( $token );
 
+		// Resolve order language and translate the target URL for WPML.
+		$order_lang = '';
+		if ( $pending && ! empty( $pending->order_number ) ) {
+			$order = $this->guest_service->resolve_order_by_number( $pending->order_number );
+			if ( $order instanceof WC_Order ) {
+				$order_lang = $order->get_meta( 'wpml_language' );
+				if ( $order_lang ) {
+					$target = apply_filters( 'wpml_permalink', $target, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+					do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				}
+			}
+		}
+
 		if ( $pending && 'verified' === $pending->status ) {
 			if ( $pending->withdrawal_id > 0 ) {
 				wp_safe_redirect(
@@ -74,7 +87,11 @@ class Wbte_Ewb_Guest_Verification {
 				exit;
 			}
 
-			wp_safe_redirect( $this->guest_service->get_verified_form_url( $pending ) );
+			$form_url = $this->guest_service->get_verified_form_url( $pending );
+			if ( $order_lang ) {
+				$form_url = apply_filters( 'wpml_permalink', $form_url, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+			}
+			wp_safe_redirect( $form_url );
 			exit;
 		}
 
@@ -92,7 +109,11 @@ class Wbte_Ewb_Guest_Verification {
 			exit;
 		}
 
-		wp_safe_redirect( $this->guest_service->get_verified_form_url( $result ) );
+		$form_url = $this->guest_service->get_verified_form_url( $result );
+		if ( $order_lang ) {
+			$form_url = apply_filters( 'wpml_permalink', $form_url, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		}
+		wp_safe_redirect( $form_url );
 		exit;
 	}
 

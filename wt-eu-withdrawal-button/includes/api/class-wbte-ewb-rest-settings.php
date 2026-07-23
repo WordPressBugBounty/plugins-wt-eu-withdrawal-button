@@ -50,7 +50,7 @@ class Wbte_Ewb_REST_Settings extends Wbte_Ewb_REST_Controller {
 					'methods'             => WP_REST_Server::CREATABLE,
 					'callback'            => array( $this, 'update_items' ),
 					'permission_callback' => array( $this, 'admin_permission_check' ),
-					'args'                => $this->get_update_args(),
+					'args'                => apply_filters( 'wbte_ewb_rest_settings_update_args', $this->get_update_args() ),
 				),
 				'schema' => array( $this, 'get_public_item_schema' ),
 			)

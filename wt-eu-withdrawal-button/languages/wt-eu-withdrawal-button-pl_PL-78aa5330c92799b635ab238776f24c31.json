@@ -1,5 +1,5 @@
 {
-    "translation-revision-date": "2026-07-01 06:31",
+    "translation-revision-date": "2026-07-23 10:51",
     "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
@@ -56,9 +56,6 @@
             ],
             "Select the page where customers can submit withdrawal requests.": [
                 "Wybierz stronę, na której klienci mogą składać wnioski o odstąpienie."
-            ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Automatycznie dodaj link do strony odstąpienia w stopce witryny."
             ],
             "Where the withdrawal form and links are displayed.": [
                 "Gdzie wyświetlane są formularz odstąpienia i linki."
@@ -132,11 +129,11 @@
             "Full": [
                 "Pełne"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Otrzymałeś ponad 10 wniosków o odstąpienie. Zostaw opinię o WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Twój sklep ułatwia klientom korzystanie z unijnego prawa odstąpienia od umowy. Podoba Ci się WebToffee EU Withdrawal Button? Zostaw recenzję!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Używasz WebToffee EU Withdrawal Button od tygodnia. Zostaw opinię!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Używasz WebToffee EU Withdrawal Button od tygodnia. Będziemy bardzo wdzięczni, jeśli poświęcisz chwilę, aby zostawić nam opinię"
             ],
             "Customer": [
                 "Klient"
@@ -153,14 +150,17 @@
             "Status": [
                 "Status"
             ],
+            "Processed": [
+                "Przetworzono"
+            ],
+            "Reason": [
+                "Powód"
+            ],
             "Customer Email": [
                 "E-mail klienta"
             ],
             "Request Type": [
                 "Typ wniosku"
-            ],
-            "Reason": [
-                "Powód"
             ],
             "Quantity": [
                 "Ilość"
@@ -279,9 +279,6 @@
             "Created": [
                 "Utworzono"
             ],
-            "Processed": [
-                "Przetworzono"
-            ],
             "Order Items": [
                 "Pozycje zamówienia"
             ],
@@ -342,6 +339,18 @@
             "WooCommerce only": [
                 "Tylko WooCommerce"
             ],
+            "General": [
+                "Ogólne"
+            ],
+            "Rules & Exclusions": [
+                "Reguły i wykluczenia"
+            ],
+            "Workflow": [
+                "Przepływ pracy"
+            ],
+            "Advanced": [
+                "Zaawansowane"
+            ],
             "-- Select a page --": [
                 "-- Wybierz stronę --"
             ],
@@ -363,8 +372,56 @@
             "Unable to load settings.": [
                 "Nie można załadować ustawień."
             ],
-            "General": [
-                "Ogólne"
+            "Customize appearance": [
+                "Dostosuj wygląd"
+            ],
+            "Footer": [
+                "Stopka"
+            ],
+            "My account page": [
+                "Strona Moje konto"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Włącz powyżej „Pokaż przycisk odstąpienia w stopce”, aby dostosować."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Włącz powyżej „Pokaż przycisk odstąpienia na Moje konto”, aby dostosować."
+            ],
+            "Link text": [
+                "Tekst linku"
+            ],
+            "Button text": [
+                "Tekst przycisku"
+            ],
+            "Display as": [
+                "Wyświetl jako"
+            ],
+            "Link": [
+                "Link"
+            ],
+            "Button": [
+                "Przycisk"
+            ],
+            "Colors": [
+                "Kolory"
+            ],
+            "Theme default": [
+                "Domyślny motywu"
+            ],
+            "Custom": [
+                "Niestandardowy"
+            ],
+            "Background": [
+                "Tło"
+            ],
+            "Text": [
+                "Tekst"
+            ],
+            "Hover bg": [
+                "Tło najechania"
+            ],
+            "Hover text": [
+                "Tekst najechania"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Podstawowe zachowanie i preferencje wyświetlania formularza odstąpienia."
@@ -372,8 +429,11 @@
             "Withdrawal page": [
                 "Strona odstąpienia"
             ],
-            "Embed footer link": [
-                "Osadź link w stopce"
+            "Show withdrawal button in footer": [
+                "Pokaż przycisk odstąpienia w stopce"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Wyświetl przycisk lub link odstąpienia w stopce witryny."
             ],
             "Footer link text": [
                 "Tekst linku w stopce"
@@ -501,8 +561,8 @@
             "Requests": [
                 "Wnioski"
             ],
-            "System": [
-                "System"
+            "Auto-approval": [
+                "Automatyczne zatwierdzanie"
             ],
             "User": [
                 "Użytkownik"

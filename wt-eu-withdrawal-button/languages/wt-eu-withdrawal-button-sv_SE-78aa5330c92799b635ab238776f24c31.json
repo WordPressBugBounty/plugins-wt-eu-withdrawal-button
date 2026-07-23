@@ -1,6 +1,6 @@
 {
-    "translation-revision-date": "2026-07-07T11:50:09+00:00",
-    "generator": "WebToffee EU Withdrawal Button",
+    "translation-revision-date": "2026-07-23 10:51",
+    "generator": "WebToffee EU Withdrawal Button generate-jed-json.php",
     "domain": "messages",
     "locale_data": {
         "messages": {
@@ -57,9 +57,6 @@
             "Select the page where customers can submit withdrawal requests.": [
                 "Välj sidan där kunder kan skicka in ångerbegäranden."
             ],
-            "Automatically add a link to the withdrawal page in the site footer.": [
-                "Lägg automatiskt till en länk till ångersidan i webbplatsens sidfot."
-            ],
             "Where the withdrawal form and links are displayed.": [
                 "Var ångerformuläret och länkarna visas."
             ],
@@ -84,8 +81,8 @@
             "Grouped": [
                 "Grupperad"
             ],
-            "External / Affiliate": [
-                "Extern / affiliate"
+            "External \/ Affiliate": [
+                "Extern \/ affiliate"
             ],
             "Change order status on submission": [
                 "Ändra orderstatus vid inskickning"
@@ -132,11 +129,11 @@
             "Full": [
                 "Fullständig"
             ],
-            "You've received 10+ withdrawal requests. Leave a review for WebToffee EU Withdrawal Button!": [
-                "Du har fått 10+ ångerbegäranden. Lämna en recension för WebToffee EU Withdrawal Button!"
+            "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!": [
+                "Din butik gör EU:s ångerrätt enkel för kunderna. Gillar du WebToffee EU Withdrawal Button? Lämna en recension!"
             ],
-            "You've been using WebToffee EU Withdrawal Button for a week. Leave a review!": [
-                "Du har använt WebToffee EU Withdrawal Button i en vecka. Lämna en recension!"
+            "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review": [
+                "Du har använt WebToffee EU Withdrawal Button i en vecka. Vi skulle verkligen uppskatta om du kunde ta en stund för att lämna oss en recension"
             ],
             "Customer": [
                 "Kund"
@@ -153,14 +150,17 @@
             "Status": [
                 "Status"
             ],
+            "Processed": [
+                "Bearbetad"
+            ],
+            "Reason": [
+                "Anledning"
+            ],
             "Customer Email": [
                 "Kundens e-post"
             ],
             "Request Type": [
                 "Begärantyp"
-            ],
-            "Reason": [
-                "Anledning"
             ],
             "Quantity": [
                 "Antal"
@@ -240,21 +240,6 @@
             "Apply Filters": [
                 "Använd filter"
             ],
-            "No order statuses found.": [
-                "Inga orderstatusar hittades."
-            ],
-            "Remove status": [
-                "Ta bort status"
-            ],
-            "Search order statuses…": [
-                "Sök orderstatusar…"
-            ],
-            "Type to filter order statuses…": [
-                "Skriv för att filtrera orderstatusar…"
-            ],
-            "No order statuses match your search.": [
-                "Inga orderstatusar matchar din sökning."
-            ],
             "Remove product": [
                 "Ta bort produkt"
             ],
@@ -293,9 +278,6 @@
             ],
             "Created": [
                 "Skapad"
-            ],
-            "Processed": [
-                "Bearbetad"
             ],
             "Order Items": [
                 "Orderartiklar"
@@ -357,6 +339,18 @@
             "WooCommerce only": [
                 "Endast WooCommerce"
             ],
+            "General": [
+                "Allmänt"
+            ],
+            "Rules & Exclusions": [
+                "Regler och undantag"
+            ],
+            "Workflow": [
+                "Arbetsflöde"
+            ],
+            "Advanced": [
+                "Avancerat"
+            ],
             "-- Select a page --": [
                 "-- Välj en sida --"
             ],
@@ -378,8 +372,56 @@
             "Unable to load settings.": [
                 "Det går inte att läsa in inställningarna."
             ],
-            "General": [
-                "Allmänt"
+            "Customize appearance": [
+                "Anpassa utseende"
+            ],
+            "Footer": [
+                "Sidfot"
+            ],
+            "My account page": [
+                "Mitt konto-sida"
+            ],
+            "Enable \"Show withdrawal button in footer\" above to customize.": [
+                "Aktivera ”Visa ångerknapp i sidfoten” ovan för att anpassa."
+            ],
+            "Enable \"Show withdrawal button in My Account\" above to customize.": [
+                "Aktivera ”Visa ångerknapp på Mitt konto” ovan för att anpassa."
+            ],
+            "Link text": [
+                "Länktext"
+            ],
+            "Button text": [
+                "Knapptext"
+            ],
+            "Display as": [
+                "Visa som"
+            ],
+            "Link": [
+                "Länk"
+            ],
+            "Button": [
+                "Knapp"
+            ],
+            "Colors": [
+                "Färger"
+            ],
+            "Theme default": [
+                "Temats standard"
+            ],
+            "Custom": [
+                "Anpassad"
+            ],
+            "Background": [
+                "Bakgrund"
+            ],
+            "Text": [
+                "Text"
+            ],
+            "Hover bg": [
+                "Hover-bakgrund"
+            ],
+            "Hover text": [
+                "Hover-text"
             ],
             "Core withdrawal form behaviour and display preferences.": [
                 "Grundläggande beteende och visningsinställningar för ångerformuläret."
@@ -387,8 +429,11 @@
             "Withdrawal page": [
                 "Ångersida"
             ],
-            "Embed footer link": [
-                "Bädda in länk i sidfoten"
+            "Show withdrawal button in footer": [
+                "Visa ångerknapp i sidfoten"
+            ],
+            "Display a withdrawal button or link in the site footer.": [
+                "Visa en ångerknapp eller länk i webbplatsens sidfot."
             ],
             "Footer link text": [
                 "Text för sidfotslänk"
@@ -516,8 +561,8 @@
             "Requests": [
                 "Begäranden"
             ],
-            "System": [
-                "System"
+            "Auto-approval": [
+                "Automatiskt godkännande"
             ],
             "User": [
                 "Användare"
