@@ -135,7 +135,7 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 					'methods'             => WP_REST_Server::CREATABLE,
 					'callback'            => array( $this, 'create_request' ),
 					'permission_callback' => array( $this, 'customer_permission_check' ),
-					'args'                => $this->get_create_request_args(),
+					'args'                => apply_filters( 'wbte_ewb_create_request_args', $this->get_create_request_args() ),
 				),
 				'schema' => array( $this, 'get_public_item_schema' ),
 			)
@@ -509,6 +509,16 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 		 */
 		$submit_data = apply_filters( 'wbte_ewb_before_request_submit', $submit_data, $order, $request );
 
+		if ( is_wp_error( $submit_data ) ) {
+			$error_data = $submit_data->get_error_data();
+			$status     = isset( $error_data['status'] ) ? (int) $error_data['status'] : 400;
+			return $this->error_response(
+				$submit_data->get_error_code(),
+				$submit_data->get_error_message(),
+				$status
+			);
+		}
+
 		$service = function_exists( 'wbte_ewb' ) ? wbte_ewb()->get( 'service' ) : null;
 
 		if ( ! $service ) {
@@ -662,8 +672,28 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 		$remaining_qtys = $eligibility->get_remaining_quantities( $order );
 		$data           = array();
 
-		// Return ALL order items, marking non-eligible ones.
+		// Collect bundled child items indexed by parent bundle cart key.
+		$bundled_children = array();
+		$bundle_key_to_item_id = array();
+
 		foreach ( $order->get_items() as $item_id => $item ) {
+			$bundled_by = $item->get_meta( '_bundled_by', true );
+			if ( $bundled_by ) {
+				$bundled_children[ $bundled_by ][] = $item;
+				continue;
+			}
+			$bundle_key = $item->get_meta( '_bundle_cart_key', true );
+			if ( $bundle_key ) {
+				$bundle_key_to_item_id[ $bundle_key ] = absint( $item_id );
+			}
+		}
+
+		foreach ( $order->get_items() as $item_id => $item ) {
+			// Skip bundled child items — they are nested under their parent below.
+			if ( $item->get_meta( '_bundled_by', true ) ) {
+				continue;
+			}
+
 			$product       = $item->get_product();
 			$thumbnail_url = '';
 			$withdrawable  = in_array( absint( $item_id ), $eligible_ids, true );
@@ -698,6 +728,32 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 
 			$line_total = Wbte_Ewb_Request::get_line_item_total_incl_tax( $item );
 
+			// Collect bundled child names for this parent and include
+			// individually-priced child totals in the parent line total.
+			$children = array();
+			$bundle_key = $item->get_meta( '_bundle_cart_key', true );
+			if ( $bundle_key && ! empty( $bundled_children[ $bundle_key ] ) ) {
+				foreach ( $bundled_children[ $bundle_key ] as $child_item ) {
+					$child_qty = $child_item instanceof \WC_Order_Item_Product ? absint( $child_item->get_quantity() ) : 1;
+					$children[] = array(
+						'name'     => $child_item->get_name(),
+						'quantity' => $child_qty,
+					);
+
+					// Add individually-priced child item totals to the parent.
+					$child_total = Wbte_Ewb_Request::get_line_item_total_incl_tax( $child_item );
+					if ( is_numeric( $child_total ) && (float) $child_total > 0 ) {
+						$line_total = (float) $line_total + (float) $child_total;
+					}
+				}
+				$line_total = wc_format_decimal( $line_total, '' );
+			}
+
+			// Calculate proportional total for the withdrawable quantity.
+			if ( $display_qty < $ordered_qty && $ordered_qty > 0 && is_numeric( $line_total ) ) {
+				$line_total = round( ( (float) $line_total / $ordered_qty ) * $display_qty, 2 );
+			}
+
 			if ( $item instanceof \WC_Order_Item_Product ) {
 				/**
 				 * Filters the line total for order items on the customer withdrawal form.
@@ -712,7 +768,7 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 				$line_total = apply_filters( 'wbte_ewb_frontend_item_line_total', $line_total, $item, $order, $request );
 			}
 
-			$data[] = array(
+			$item_data = array(
 				'line_item_id'     => absint( $item->get_id() ),
 				'product_id'       => absint( $item->get_product_id() ),
 				'name'             => $item->get_name(),
@@ -723,6 +779,12 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 				'withdrawable'     => $withdrawable,
 				'reason'           => $reason,
 			);
+
+			if ( ! empty( $children ) ) {
+				$item_data['bundled_items'] = $children;
+			}
+
+			$data[] = $item_data;
 		}
 
 		/**
@@ -736,7 +798,21 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 		 */
 		$data = apply_filters( 'wbte_ewb_rest_eligible_items', $data, $order, $request );
 
-		return $this->success_response( $data );
+		$response = $this->success_response( $data );
+
+		/**
+		 * Filters the eligible items REST response before it is returned.
+		 *
+		 * Addons can use this to attach additional data (e.g. payment method info)
+		 * to the response envelope without modifying the items array.
+		 *
+		 * @since 1.1.0
+		 *
+		 * @param WP_REST_Response $response The response object.
+		 * @param WC_Order         $order    The WooCommerce order.
+		 * @param WP_REST_Request  $request  The current REST request.
+		 */
+		return apply_filters( 'wbte_ewb_rest_eligible_items_response', $response, $order, $request );
 	}
 
 	/**

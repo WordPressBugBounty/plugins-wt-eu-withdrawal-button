@@ -199,7 +199,7 @@ class Wbte_Ewb_REST_Requests extends Wbte_Ewb_REST_Controller {
 				'validate_callback' => 'rest_validate_request_arg',
 			),
 			'search' => array(
-				'description'       => __( 'Search by order number or receipt hash.', 'wt-eu-withdrawal-button' ),
+				'description'       => __( 'Search by request ID, order number or receipt hash.', 'wt-eu-withdrawal-button' ),
 				'type'              => 'string',
 				'required'          => false,
 				'sanitize_callback' => 'sanitize_text_field',

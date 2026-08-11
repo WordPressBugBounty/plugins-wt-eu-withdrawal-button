@@ -133,19 +133,19 @@ class Wbte_Ewb_My_Account {
 		<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive wbte-ewb-withdrawals-table">
 			<thead>
 				<tr>
-					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--request-id">
+					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--request-id" scope="col">
 						<?php esc_html_e( 'Request', 'wt-eu-withdrawal-button' ); ?>
 					</th>
-					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--order">
+					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--order" scope="col">
 						<?php esc_html_e( 'Order', 'wt-eu-withdrawal-button' ); ?>
 					</th>
-					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--date">
+					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--date" scope="col">
 						<?php esc_html_e( 'Date', 'wt-eu-withdrawal-button' ); ?>
 					</th>
-					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--type">
+					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--type" scope="col">
 						<?php esc_html_e( 'Type', 'wt-eu-withdrawal-button' ); ?>
 					</th>
-					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--status">
+					<th class="wbte-ewb-withdrawals-table__header wbte-ewb-withdrawals-table__header--status" scope="col">
 						<?php esc_html_e( 'Status', 'wt-eu-withdrawal-button' ); ?>
 					</th>
 				</tr>

@@ -1,26 +1,27 @@
-#
+# Portuguese (Portugal) translation for WebToffee EU Withdrawal Button for WooCommerce
+# Copyright (C) 2026 webtoffee
+# This file is distributed under the GPL-3.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: WebToffee EU Withdrawal Button for WooCommerce 1.0.2\n"
+"Project-Id-Version: WebToffee EU Withdrawal Button for WooCommerce 1.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-"
 "button\n"
-"POT-Creation-Date: 2026-08-06T07:46:34+00:00\n"
-"PO-Revision-Date: 2026-07-23 10:51\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ro-RO\n"
+"POT-Creation-Date: 2026-08-07T08:12:27+00:00\n"
+"PO-Revision-Date: 2026-08-04 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Portugal)\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n % 100 > 0 && n % "
-"100 < 20)) ? 1 : 2));\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wt-eu-withdrawal-button\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
 #: wt-eu-withdrawal-button.php
 msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
-msgstr "Butonul de retragere a comenzii UE WebToffee pentru WooCommerce"
+msgstr "WebToffee Botão de Resolução de Encomenda UE para WooCommerce"
 
 #. Plugin URI of the plugin
 #: wt-eu-withdrawal-button.php
@@ -33,8 +34,8 @@ msgid ""
 "Manage withdrawal of contract / order cancellation requests for WooCommerce "
 "orders. EU-compliant, HPOS-compatible."
 msgstr ""
-"Gestionați retragerea contractului / solicitările de anulare a comenzilor "
-"pentru comenzile WooCommerce. Conform UE, compatibil HPOS."
+"Gerir pedidos de resolução de contrato / cancelamento de encomendas "
+"WooCommerce. Conforme com a legislação da UE, compatível com HPOS."
 
 #. Author of the plugin
 #: wt-eu-withdrawal-button.php
@@ -54,7 +55,7 @@ msgstr "https://www.webtoffee.com/"
 #: react/src/components/RequestsList.jsx:219
 #: react/src/components/StatusBadge.jsx:28
 msgid "Pending"
-msgstr "În așteptare"
+msgstr "Pendente"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:113
 #: includes/admin/class-wbte-ewb-order-meta-box.php:562
@@ -65,7 +66,7 @@ msgstr "În așteptare"
 #: react/src/components/RequestsList.jsx:216
 #: react/src/components/StatusBadge.jsx:29
 msgid "Approved"
-msgstr "Aprobat"
+msgstr "Aprovado"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:114
 #: includes/admin/class-wbte-ewb-order-meta-box.php:563
@@ -76,136 +77,136 @@ msgstr "Aprobat"
 #: react/src/components/RequestsList.jsx:218
 #: react/src/components/StatusBadge.jsx:30
 msgid "Rejected"
-msgstr "Respins"
+msgstr "Rejeitado"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:115
 #: includes/admin/class-wbte-ewb-admin-assets.php:182
 #: includes/admin/class-wbte-ewb-order-meta-box.php:247
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
 msgid "Approve"
-msgstr "Aprobă"
+msgstr "Aprovar"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:116
 #: includes/admin/class-wbte-ewb-admin-assets.php:183
 #: includes/admin/class-wbte-ewb-order-meta-box.php:250
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
 msgid "Reject"
-msgstr "Respinge"
+msgstr "Rejeitar"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:117
 #: includes/admin/class-wbte-ewb-order-meta-box.php:167
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
 msgid "Full Withdrawal"
-msgstr "Retragere completă"
+msgstr "Resolução Total"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:118
 #: includes/admin/class-wbte-ewb-order-meta-box.php:165
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
 msgid "Partial Withdrawal"
-msgstr "Retragere parțială"
+msgstr "Resolução Parcial"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:119
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:182
 msgid "No withdrawal requests found."
-msgstr "Nu s-au găsit cereri de retragere."
+msgstr "Nenhum pedido de resolução encontrado."
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:120
 msgid "Loading…"
-msgstr "Încărcare…"
+msgstr "A carregar…"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:121
 #: includes/admin/class-wbte-ewb-admin-assets.php:189
 #: includes/frontend/class-wbte-ewb-frontend.php:155
 msgid "An error occurred. Please try again."
-msgstr "A apărut o eroare. Vă rugăm să încercați din nou."
+msgstr "Ocorreu um erro. Por favor, tente novamente."
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:122
 #: includes/admin/class-wbte-ewb-admin-assets.php:184
 msgid "Are you sure you want to approve this withdrawal request?"
-msgstr "Sigur doriți să aprobați această solicitare de retragere?"
+msgstr "Tem a certeza de que pretende aprovar este pedido de resolução?"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:123
 #: includes/admin/class-wbte-ewb-admin-assets.php:185
 msgid "Are you sure you want to reject this withdrawal request?"
-msgstr "Sigur doriți să respingeți această solicitare de retragere?"
+msgstr "Tem a certeza de que pretende rejeitar este pedido de resolução?"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:181
 msgid "Processing…"
-msgstr "Prelucrare…"
+msgstr "A processar…"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:186
 msgid "Please enter a reason for rejecting this withdrawal request:"
-msgstr "Introduceți un motiv pentru respingerea acestei cereri de retragere:"
+msgstr "Por favor, introduza um motivo para rejeitar este pedido de resolução:"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:187
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:369
 msgid "A reason is required when rejecting a request."
-msgstr "Este necesar un motiv pentru respingerea unei cereri."
+msgstr "É obrigatório indicar um motivo ao rejeitar um pedido."
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:188
 msgid "Request updated successfully."
-msgstr "Solicitarea a fost actualizată cu succes."
+msgstr "Pedido atualizado com sucesso."
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:50
 #: includes/admin/class-wbte-ewb-order-meta-box.php:69
 #: includes/frontend/class-wbte-ewb-my-account.php:260
 msgid "Withdrawal Requests"
-msgstr "Cereri de retragere"
+msgstr "Pedidos de Resolução"
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:51
 #: includes/frontend/class-wbte-ewb-my-account.php:80
 #: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
 #: react/src/layouts/AdminLayout.jsx:24
 msgid "Withdrawals"
-msgstr "Retrageri"
+msgstr "Resoluções"
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:88
 msgid "Loading withdrawal dashboard…"
-msgstr "Se încarcă tabloul de bord pentru retragere..."
+msgstr "A carregar painel de resoluções…"
 
 #: includes/admin/class-wbte-ewb-admin.php:115 react/build/admin-dashboard.js:1
 #: react/src/layouts/AdminLayout.jsx:43
 msgid "Settings"
-msgstr "Setări"
+msgstr "Definições"
 
 #: includes/admin/class-wbte-ewb-admin.php:116
 msgid "Support"
-msgstr "Suport"
+msgstr "Suporte"
 
 #: includes/admin/class-wbte-ewb-admin.php:117
 msgid "Review"
-msgstr "Revizuire"
+msgstr "Avaliação"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:89
 #: includes/frontend/class-wbte-ewb-form-handler.php:111
 msgid "Order not found."
-msgstr "Comanda nu a fost găsită."
+msgstr "Encomenda não encontrada."
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:103
 msgid "No withdrawal request for this order."
-msgstr "Nicio cerere de retragere pentru această comandă."
+msgstr "Nenhum pedido de resolução para esta encomenda."
 
 #. translators: 1: request position, 2: total requests, 3: request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:141
 msgid "Request %1$d of %2$d (#%3$d)"
-msgstr "Solicitarea %1$d din %2$d (#%3$d)"
+msgstr "Pedido %1$d de %2$d (#%3$d)"
 
 #. translators: %d: request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:149
 msgid "Request #%d"
-msgstr "Cerere #%d"
+msgstr "Pedido #%d"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:157
 msgid "Status:"
-msgstr "Stare:"
+msgstr "Estado:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:163
 msgid "Type:"
-msgstr "Tip:"
+msgstr "Tipo:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:175
 msgid "Items:"
-msgstr "articole:"
+msgstr "Itens:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:178
 #: includes/admin/class-wbte-ewb-order-meta-box.php:322
@@ -213,147 +214,149 @@ msgstr "articole:"
 #: templates/emails/customer-withdrawal-approved.php:137
 #: templates/emails/customer-withdrawal-submitted.php:127
 msgid "Unknown item"
-msgstr "Element necunoscut"
+msgstr "Item desconhecido"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:189
 #: templates/emails/customer-guest-verification.php:37
 msgid "Reason:"
-msgstr "Motiv:"
+msgstr "Motivo:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:196
 msgid "Submitted:"
-msgstr "Trimis:"
+msgstr "Submetido:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:204
 msgid "Receipt hash:"
-msgstr "Hash chitanță:"
+msgstr "Hash do recibo:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:222
 msgid "Processed:"
-msgstr "Procesat:"
+msgstr "Processado:"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:228
 msgid "by"
-msgstr "de"
+msgstr "por"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:238
 msgid "View in dashboard"
-msgstr "Vizualizați în tabloul de bord"
+msgstr "Ver no painel"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:278
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
 msgid "Leave a review"
-msgstr "Lăsați o recenzie"
+msgstr "Deixar uma avaliação"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:281
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
 msgid "Remind me later"
-msgstr "Amintește-mi mai târziu"
+msgstr "Lembrar mais tarde"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:284
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
 msgid "Dismiss review request"
-msgstr "Respinge solicitarea de recenzie"
+msgstr "Dispensar pedido de avaliação"
 
 #. translators: %d: withdrawal request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:448
 msgid "Approve withdrawal request #%d"
-msgstr "Aprobă solicitarea de retragere #%d"
+msgstr "Aprovar pedido de resolução #%d"
 
 #. translators: %d: withdrawal request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:453
 msgid "Reject withdrawal request #%d"
-msgstr "Respinge solicitarea de retragere #%d"
+msgstr "Rejeitar pedido de resolução #%d"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:457
 msgid "Approve withdrawal request"
-msgstr "Aprobați cererea de retragere"
+msgstr "Aprovar pedido de resolução"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:458
 msgid "Reject withdrawal request"
-msgstr "Respinge cererea de retragere"
+msgstr "Rejeitar pedido de resolução"
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:544
 msgid "Rejected from orders list."
-msgstr "Respins din lista de comenzi."
+msgstr "Rejeitado a partir da lista de encomendas."
 
 #. translators: %s: quantity withdrawn
 #: includes/admin/class-wbte-ewb-order-meta-box.php:649
 msgctxt "item badge"
 msgid "Withdrawn %sx"
-msgstr "Retras %sx"
+msgstr "Resolvido %sx"
 
 #. translators: %s: quantity requested
 #: includes/admin/class-wbte-ewb-order-meta-box.php:660
 msgctxt "item badge"
 msgid "Requested %sx"
-msgstr "Solicitat %sx"
+msgstr "Pedido %sx"
 
 #: includes/admin/class-wbte-ewb-settings.php:74
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
 #: react/src/components/RequestDetail.jsx:300
 msgid "Withdrawal"
-msgstr "Retragere"
+msgstr "Resolução"
 
 #: includes/admin/class-wbte-ewb-settings.php:127
 msgid "Withdrawal Settings"
-msgstr "Setări de retragere"
+msgstr "Definições de Resolução"
 
 #: includes/admin/class-wbte-ewb-settings.php:129
 msgid "Configure how withdrawal / right-of-return requests work in your store."
 msgstr ""
-"Configurați cum funcționează cererile de retragere/drept de retur în "
-"magazinul dvs."
+"Configure o funcionamento dos pedidos de resolução / direito de livre "
+"resolução na sua loja."
 
 #: includes/admin/class-wbte-ewb-settings.php:134
 msgid "Withdrawal Page"
-msgstr "Pagina de retragere"
+msgstr "Página de Resolução"
 
 #: includes/admin/class-wbte-ewb-settings.php:135
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1297
 msgid "Select the page where customers can submit withdrawal requests."
-msgstr "Selectați pagina în care clienții pot trimite cereri de retragere."
+msgstr ""
+"Selecione a página onde os consumidores podem submeter pedidos de resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:145
 msgid "Embed Footer Link"
-msgstr "Încorporați linkul de subsol"
+msgstr "Incorporar Ligação no Rodapé"
 
 #: includes/admin/class-wbte-ewb-settings.php:146
 msgid "Automatically add a link to the withdrawal page in the site footer."
 msgstr ""
-"Adăugați automat un link către pagina de retragere în subsolul site-ului."
+"Adicionar automaticamente uma ligação para a página de resolução no rodapé "
+"do site."
 
 #: includes/admin/class-wbte-ewb-settings.php:153
 msgid "Display Scope"
-msgstr "Afișare domeniul de aplicare"
+msgstr "Âmbito de Exibição"
 
 #: includes/admin/class-wbte-ewb-settings.php:154
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1341
 msgid "Where the withdrawal form and links are displayed."
-msgstr "Unde sunt afișate formularul de retragere și linkurile."
+msgstr "Onde o formulário de resolução e as ligações são exibidos."
 
 #: includes/admin/class-wbte-ewb-settings.php:158
 msgid "Global (all pages)"
-msgstr "Global (toate paginile)"
+msgstr "Global (todas as páginas)"
 
 #: includes/admin/class-wbte-ewb-settings.php:159
 msgid "WooCommerce pages only"
-msgstr "Numai paginile WooCommerce"
+msgstr "Apenas páginas WooCommerce"
 
 #: includes/admin/class-wbte-ewb-settings.php:168
 msgid "Allow Partial Withdrawals"
-msgstr "Permite retrageri parțiale"
+msgstr "Permitir Resoluções Parciais"
 
 #: includes/admin/class-wbte-ewb-settings.php:169
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1355
 msgid "Let customers withdraw individual items instead of the entire order."
 msgstr ""
-"Permiteți clienților să retragă articole individuale în loc de întreaga "
-"comandă."
+"Permitir que os consumidores resolvam itens individuais em vez de toda a "
+"encomenda."
 
 #: includes/admin/class-wbte-ewb-settings.php:176
 msgid "Withdrawal Period (days)"
-msgstr "Perioada de retragere (zile)"
+msgstr "Prazo de Resolução (dias)"
 
 #: includes/admin/class-wbte-ewb-settings.php:177
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1361
@@ -361,12 +364,12 @@ msgid ""
 "Number of days after the selected start status during which a withdrawal "
 "request can be submitted."
 msgstr ""
-"Numărul de zile după statusul de început selectat în care poate fi trimisă o "
-"solicitare de retragere."
+"Número de dias após o estado de início selecionado durante os quais um "
+"pedido de resolução pode ser submetido."
 
 #: includes/admin/class-wbte-ewb-settings.php:190
 msgid "Withdrawal Period Starts From"
-msgstr "Perioada de retragere începe de la"
+msgstr "O Prazo de Resolução Começa a Partir de"
 
 #: includes/admin/class-wbte-ewb-settings.php:191
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1391
@@ -374,29 +377,28 @@ msgid ""
 "Select one or more order statuses. The countdown begins on the earliest date "
 "the order reaches any selected status."
 msgstr ""
-"Selectați unul sau mai multe statusuri de comandă. Numărătoarea inversă "
-"începe la cea mai devreme dată la care comanda atinge oricare dintre "
-"statusurile selectate."
+"Selecione um ou mais estados de encomenda. A contagem decrescente começa na "
+"data mais antiga em que a encomenda atinge qualquer estado selecionado."
 
 #: includes/admin/class-wbte-ewb-settings.php:202
 msgid "Reason Required"
-msgstr "Motiv necesar"
+msgstr "Motivo Obrigatório"
 
 #: includes/admin/class-wbte-ewb-settings.php:203
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1406
 msgid ""
 "Require customers to provide a reason when submitting a withdrawal request."
 msgstr ""
-"Solicitați clienților să furnizeze un motiv atunci când trimit o cerere de "
-"retragere."
+"Exigir que os consumidores indiquem um motivo ao submeter um pedido de "
+"resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:210
 msgid "Excluded Product Types"
-msgstr "Tipuri de produse excluse"
+msgstr "Tipos de Produto Excluídos"
 
 #: includes/admin/class-wbte-ewb-settings.php:211
 msgid "Product types that are excluded from withdrawal eligibility."
-msgstr "Tipuri de produse care sunt excluse de la eligibilitatea de retragere."
+msgstr "Tipos de produto excluídos da elegibilidade para resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:215
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:230
@@ -406,157 +408,156 @@ msgstr "Virtual"
 #: includes/admin/class-wbte-ewb-settings.php:216
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
 msgid "Downloadable"
-msgstr "Descărcabil"
+msgstr "Descarregável"
 
 #: includes/admin/class-wbte-ewb-settings.php:217
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
 msgid "Grouped"
-msgstr "Grupat"
+msgstr "Agrupado"
 
 #: includes/admin/class-wbte-ewb-settings.php:218
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
 msgid "External / Affiliate"
-msgstr "Extern/Afiliat"
+msgstr "Externo / Afiliado"
 
 #: includes/admin/class-wbte-ewb-settings.php:227
 msgid "Excluded Categories"
-msgstr "Categorii excluse"
+msgstr "Categorias Excluídas"
 
 #: includes/admin/class-wbte-ewb-settings.php:228
 msgid "Product categories that are excluded from withdrawal eligibility."
-msgstr ""
-"Categoriile de produse care sunt excluse de la eligibilitatea de retragere."
+msgstr "Categorias de produto excluídas da elegibilidade para resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:239
 msgid "Excluded Products"
-msgstr "Produse excluse"
+msgstr "Produtos Excluídos"
 
 #: includes/admin/class-wbte-ewb-settings.php:240
 msgid "Specific products that are excluded from withdrawal eligibility."
-msgstr "Produse specifice care sunt excluse de la eligibilitatea de retragere."
+msgstr "Produtos específicos excluídos da elegibilidade para resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:250
 msgid "Excluded Behavior"
-msgstr "Comportament exclus"
+msgstr "Comportamento de Exclusão"
 
 #: includes/admin/class-wbte-ewb-settings.php:251
 msgid "How excluded products are handled in the withdrawal form."
-msgstr "Cum sunt tratate produsele excluse în formularul de retragere."
+msgstr "Como os produtos excluídos são tratados no formulário de resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:255
 msgid "Hide excluded items"
-msgstr "Ascunde elementele excluse"
+msgstr "Ocultar itens excluídos"
 
 #: includes/admin/class-wbte-ewb-settings.php:256
 msgid "Show disabled with notice"
-msgstr "Afișare dezactivată cu notificare"
+msgstr "Mostrar desativados com aviso"
 
 #: includes/admin/class-wbte-ewb-settings.php:271
 msgid "Order Status"
-msgstr "Starea comenzii"
+msgstr "Estado da Encomenda"
 
 #: includes/admin/class-wbte-ewb-settings.php:273
 msgid ""
 "Control whether order statuses are changed automatically during the "
 "withdrawal workflow."
 msgstr ""
-"Controlați dacă stările comenzii sunt modificate automat în timpul fluxului "
-"de lucru de retragere."
+"Controlar se os estados da encomenda são alterados automaticamente durante o "
+"fluxo de resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:278
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1497
 msgid "Change order status on submission"
-msgstr "Modificați starea comenzii la trimitere"
+msgstr "Alterar estado da encomenda na submissão"
 
 #: includes/admin/class-wbte-ewb-settings.php:279
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1498
 msgid ""
 "Automatically change the order status when a withdrawal request is submitted."
 msgstr ""
-"Schimbați automat starea comenzii atunci când este trimisă o cerere de "
-"retragere."
+"Alterar automaticamente o estado da encomenda quando um pedido de resolução "
+"é submetido."
 
 #: includes/admin/class-wbte-ewb-settings.php:286
 msgid "Submission order status"
-msgstr "Starea comenzii de depunere"
+msgstr "Estado da encomenda na submissão"
 
 #: includes/admin/class-wbte-ewb-settings.php:287
 msgid "The order status to set when a withdrawal request is submitted."
 msgstr ""
-"Starea comenzii de setat atunci când este trimisă o cerere de retragere."
+"O estado da encomenda a definir quando um pedido de resolução é submetido."
 
 #: includes/admin/class-wbte-ewb-settings.php:298
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1522
 msgid "Change order status on approval"
-msgstr "Modificați starea comenzii la aprobare"
+msgstr "Alterar estado da encomenda na aprovação"
 
 #: includes/admin/class-wbte-ewb-settings.php:299
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1523
 msgid ""
 "Automatically change the order status when a withdrawal request is approved."
 msgstr ""
-"Schimbați automat starea comenzii atunci când o cerere de retragere este "
-"aprobată."
+"Alterar automaticamente o estado da encomenda quando um pedido de resolução "
+"é aprovado."
 
 #: includes/admin/class-wbte-ewb-settings.php:306
 msgid "Approval order status"
-msgstr "Starea comenzii de aprobare"
+msgstr "Estado da encomenda na aprovação"
 
 #: includes/admin/class-wbte-ewb-settings.php:307
 msgid "The order status to set when a withdrawal request is approved."
 msgstr ""
-"Starea comenzii de setat atunci când o cerere de retragere este aprobată."
+"O estado da encomenda a definir quando um pedido de resolução é aprovado."
 
 #: includes/admin/class-wbte-ewb-settings.php:324
 msgid "Email Notifications"
-msgstr "Notificări prin e-mail"
+msgstr "Notificações por E-mail"
 
 #: includes/admin/class-wbte-ewb-settings.php:326
 msgid "Configure admin recipients for withdrawal notification emails."
 msgstr ""
-"Configurați destinatarii administratori pentru e-mailurile de notificare de "
-"retragere."
+"Configure os destinatários de administração para e-mails de notificação de "
+"resolução."
 
 #: includes/admin/class-wbte-ewb-settings.php:331
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1560
 msgid "Recipient(s)"
-msgstr "Destinatar(i)"
+msgstr "Destinatário(s)"
 
 #: includes/admin/class-wbte-ewb-settings.php:332
 msgid "Comma-separated email addresses for admin withdrawal notifications."
 msgstr ""
-"Adrese de e-mail separate prin virgulă pentru notificările de retragere ale "
-"administratorului."
+"Endereços de e-mail separados por vírgulas para notificações de resolução ao "
+"administrador."
 
 #: includes/admin/class-wbte-ewb-settings.php:348
 msgid "Withdrawal Button Shortcode"
-msgstr "Cod scurt pentru butonul de retragere"
+msgstr "Shortcode do Botão de Resolução"
 
 #: includes/admin/class-wbte-ewb-settings.php:361
 msgid "Data Management"
-msgstr "Managementul datelor"
+msgstr "Gestão de Dados"
 
 #: includes/admin/class-wbte-ewb-settings.php:368
 msgid "Delete Data on Uninstall"
-msgstr "Ștergeți datele la dezinstalare"
+msgstr "Eliminar Dados ao Desinstalar"
 
 #: includes/admin/class-wbte-ewb-settings.php:369
 msgid ""
 "Remove all plugin data (settings, withdrawal requests, database tables) when "
 "the plugin is uninstalled."
 msgstr ""
-"Eliminați toate datele pluginului (setări, solicitări de retragere, tabele "
-"bazei de date) atunci când pluginul este dezinstalat."
+"Remover todos os dados do plugin (definições, pedidos de resolução, tabelas "
+"da base de dados) quando o plugin é desinstalado."
 
 #: includes/admin/class-wbte-ewb-settings.php:371
 msgid "Warning: This action is irreversible."
-msgstr "Avertisment: această acțiune este ireversibilă."
+msgstr "Aviso: Esta ação é irreversível."
 
 #: includes/admin/class-wbte-ewb-settings.php:403
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:832
 msgid "Order created"
-msgstr "Comandă creată"
+msgstr "Encomenda criada"
 
 #: includes/admin/class-wbte-ewb-settings.php:447
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1600
@@ -564,32 +565,32 @@ msgid ""
 "Add a withdrawal request button to any page or post. The button links to "
 "your configured withdrawal page."
 msgstr ""
-"Adăugați un buton de solicitare de retragere la orice pagină sau postare. "
-"Butonul trimite la pagina de retragere configurată."
+"Adicione um botão de pedido de resolução a qualquer página ou artigo. O "
+"botão redireciona para a página de resolução configurada."
 
 #: includes/admin/class-wbte-ewb-settings.php:448
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1605
 msgid "Examples"
-msgstr "Examples"
+msgstr "Exemplos"
 
 #: includes/admin/class-wbte-ewb-settings.php:451
 msgid ""
 "Optional. Custom button text. Uses the default shortcode label when omitted."
 msgstr ""
-"Opțional. Textul butonului personalizat. Folosește eticheta de shortcode "
-"implicită când este omisă."
+"Opcional. Texto personalizado do botão. Utiliza o texto predefinido do "
+"shortcode quando omitido."
 
 #: includes/admin/class-wbte-ewb-settings.php:452
 msgid "Optional. Extra CSS classes added to the button."
-msgstr "Opțional. Clase CSS suplimentare adăugate la buton."
+msgstr "Opcional. Classes CSS adicionais aplicadas ao botão."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
 msgid "Deactivate"
-msgstr "Dezactivați"
+msgstr "Desativar"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
 msgid "Processing..."
-msgstr "Prelucrare..."
+msgstr "A processar..."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
@@ -597,20 +598,20 @@ msgstr "Prelucrare..."
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:34
 msgid "Please enter a valid email address."
-msgstr "Vă rugăm să introduceți o adresă de email validă."
+msgstr "Por favor, introduza um endereço de e-mail válido."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
 msgid "Submit & Deactivate"
-msgstr "Trimiteți și dezactivați"
+msgstr "Submeter e Desativar"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
 msgid "Issue with the withdrawal workflow"
-msgstr "Problemă cu fluxul de lucru de retragere"
+msgstr "Problema com o fluxo de resolução"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
 msgid "Guest withdrawal"
-msgstr "Retragerea invitaților"
+msgstr "Resolução para visitantes"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
@@ -620,86 +621,86 @@ msgstr "Retragerea invitaților"
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
 msgid "Could you tell us a bit more?"
-msgstr "Ne poți spune puțin mai multe?"
+msgstr "Poderia dizer-nos um pouco mais?"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
 #: includes/frontend/class-wbte-ewb-frontend.php:171
 msgid "Partial withdrawal"
-msgstr "Retragere parțială"
+msgstr "Resolução parcial"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1552
 msgid "Email notifications"
-msgstr "Notificări prin e-mail"
+msgstr "Notificações por e-mail"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
 msgid "EU compliance / legal concerns"
-msgstr "Conformitatea UE / preocupări legale"
+msgstr "Conformidade com a UE / preocupações legais"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
 msgid "Other"
-msgstr "Altele"
+msgstr "Outro"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
 msgid "I found a better plugin"
-msgstr "Am găsit un plugin mai bun"
+msgstr "Encontrei um plugin melhor"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
 msgid "Which plugin?"
-msgstr "Care plugin?"
+msgstr "Qual plugin?"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
 msgid ""
 "The plugin is great, but I need a specific feature that you don't support"
 msgstr ""
-"Pluginul este grozav, dar am nevoie de o funcție specifică pe care nu o "
-"acceptați"
+"O plugin é ótimo, mas preciso de uma funcionalidade específica que não "
+"suportam"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
 msgid "Could you tell us more about that feature?"
-msgstr "Ne puteți spune mai multe despre această funcție?"
+msgstr "Poderia dizer-nos mais sobre essa funcionalidade?"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
 msgid "It's not what I was looking for"
-msgstr "Nu este ceea ce căutam"
+msgstr "Não é o que procurava"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
 msgid "A conflict with another plugin"
-msgstr "Un conflict cu un alt plugin"
+msgstr "Um conflito com outro plugin"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
 msgid "If you have a moment, please let us know why you are deactivating:"
-msgstr "Dacă aveți un moment, vă rugăm să ne spuneți de ce dezactivați:"
+msgstr "Se tiver um momento, diga-nos por que está a desativar:"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
 msgid "WebToffee can contact me about this feedback."
-msgstr "WebToffee mă poate contacta în legătură cu acest feedback."
+msgstr "A WebToffee pode contactar-me acerca deste feedback."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
 msgid "Enter your email address."
-msgstr "Introdu adresa ta de e-mail."
+msgstr "Introduza o seu endereço de e-mail."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
 msgid "Enter email address"
-msgstr "Introdu adresa de e-mail"
+msgstr "Introduzir endereço de e-mail"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
 msgid ""
 "We do not collect any personal data when you submit this form. It's your "
 "feedback that we value."
 msgstr ""
-"Nu colectăm date personale atunci când trimiteți acest formular. Feedback-ul "
-"tău este pe care îl prețuim."
+"Não recolhemos quaisquer dados pessoais quando submete este formulário. É o "
+"seu feedback que valorizamos."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
 msgid "Privacy Policy"
-msgstr "Privacy Policy"
+msgstr "Política de Privacidade"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
 msgid "Go to support"
-msgstr "Du-te la suport"
+msgstr "Ir para o suporte"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
 #: includes/frontend/class-wbte-ewb-frontend.php:164
@@ -707,37 +708,37 @@ msgstr "Du-te la suport"
 #: react/src/components/RequestDetail.jsx:382
 #: react/src/components/SettingsPage.jsx:439
 msgid "Cancel"
-msgstr "Anulează"
+msgstr "Cancelar"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
 msgid "I rather wouldn't say"
-msgstr "Mai degrabă nu aș spune"
+msgstr "Prefiro não dizer"
 
 #: includes/api/class-wbte-ewb-rest-controller.php:91
 #: includes/api/class-wbte-ewb-rest-review-banner.php:79
 msgid "You do not have permission to perform this action."
-msgstr "Nu aveți permisiunea de a efectua această acțiune."
+msgstr "Não tem permissão para realizar esta ação."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:110
 msgid "Invalid security token. Please refresh the page and try again."
 msgstr ""
-"Indicativ de securitate nevalid. Vă rugăm să reîmprospătați pagina și să "
-"încercați din nou."
+"Token de segurança inválido. Por favor, atualize a página e tente novamente."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:118
 msgid ""
 "Logged-in customers should submit withdrawal requests from their account."
 msgstr ""
-"Clienții autentificați ar trebui să trimită cereri de retragere din contul "
-"lor."
+"Os consumidores autenticados devem submeter pedidos de resolução a partir da "
+"sua conta."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:149
 msgid "Order number and email are required for guest access."
-msgstr "Numărul comenzii și e-mailul sunt necesare pentru accesul oaspeților."
+msgstr ""
+"O número de encomenda e o e-mail são obrigatórios para acesso de visitante."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:160
 msgid "Please provide a valid email address."
-msgstr "Vă rugăm să furnizați o adresă de e-mail validă."
+msgstr "Por favor, forneça um endereço de e-mail válido."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:171
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
@@ -746,151 +747,147 @@ msgstr "Vă rugăm să furnizați o adresă de e-mail validă."
 #: includes/frontend/class-wbte-ewb-guest-verification.php:240
 #: templates/withdrawal-form.php:75
 msgid "No order found matching the provided order number."
-msgstr ""
-"Nu s-a găsit nicio comandă care să se potrivească cu numărul de comandă "
-"furnizat."
+msgstr "Nenhuma encomenda encontrada com o número de encomenda fornecido."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:181
 #: includes/api/class-wbte-ewb-rest-customer.php:615
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
 msgid "The email address does not match the order."
-msgstr "Adresa de e-mail nu corespunde comenzii."
+msgstr "O endereço de e-mail não corresponde à encomenda."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:191
 msgid "The order number does not match the requested order."
-msgstr "Numărul comenzii nu corespunde comenzii solicitate."
+msgstr "O número de encomenda não corresponde à encomenda solicitada."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:155
 #: includes/api/class-wbte-ewb-rest-customer.php:834
 msgid "WooCommerce order ID."
-msgstr "ID-ul comenzii WooCommerce."
+msgstr "ID da encomenda WooCommerce."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:162
 msgid "Order number (required for guest access)."
-msgstr "Numărul comenzii (necesar pentru accesul oaspeților)."
+msgstr "Número de encomenda (obrigatório para acesso de visitante)."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:169
 msgid "Customer email (required for guest access)."
-msgstr "E-mailul clientului (necesar pentru accesul oaspeților)."
+msgstr "E-mail do consumidor (obrigatório para acesso de visitante)."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:192
 msgid "WooCommerce order ID. Provide this or order_number."
-msgstr "ID-ul comenzii WooCommerce. Furnizați acest lucru sau numărul_comandă."
+msgstr "ID da encomenda WooCommerce. Forneça este ou order_number."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:199
 msgid "Customer-facing order number. Provide this or order_id."
 msgstr ""
-"Număr de comandă orientat către client. Furnizați acest lucru sau order_id."
+"Número de encomenda visível para o consumidor. Forneça este ou order_id."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:206
 msgid "Customer email address (required for guests)."
-msgstr "Adresa de e-mail a clientului (obligatorie pentru oaspeti)."
+msgstr "Endereço de e-mail do consumidor (obrigatório para visitantes)."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:214
 msgid "Whether this is a full or partial withdrawal."
-msgstr "Indiferent dacă aceasta este o retragere totală sau parțială."
+msgstr "Se esta é uma resolução total ou parcial."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:222
 msgid "Line items for partial withdrawal. Required if request_type is partial."
 msgstr ""
-"Elemente rând pentru retragere parțială. Obligatoriu dacă request_type este "
-"parțial."
+"Itens de linha para resolução parcial. Obrigatório se o request_type for "
+"parcial."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:229
 msgid "WooCommerce line item ID."
-msgstr "ID-ul articolului rând WooCommerce."
+msgstr "ID do item de linha WooCommerce."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:234
 msgid "WooCommerce product ID."
-msgstr "ID-ul produsului WooCommerce."
+msgstr "ID do produto WooCommerce."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:239
 msgid "Quantity to withdraw."
-msgstr "Cantitate de retras."
+msgstr "Quantidade a resolver."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:250
 #: includes/api/class-wbte-ewb-rest-customer.php:877
 msgid "Customer reason for the withdrawal."
-msgstr "Motivul clientului pentru retragere."
+msgstr "Motivo do consumidor para a resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:304
 #: includes/api/class-wbte-ewb-rest-customer.php:366
 msgid "Guest withdrawal service is not available."
-msgstr "Serviciul de retragere a oaspeților nu este disponibil."
+msgstr "O serviço de resolução para visitantes não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:377
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
 #: includes/core/class-wbte-ewb-request-service.php:149
 msgid "Please select at least one item to withdraw."
-msgstr "Vă rugăm să selectați cel puțin un articol de retras."
+msgstr "Por favor, selecione pelo menos um item para resolver."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:405
 #: includes/api/class-wbte-ewb-rest-customer.php:548
 msgid "Withdrawal request submitted successfully."
-msgstr "Solicitarea de retragere a fost trimisă cu succes."
+msgstr "Pedido de resolução submetido com sucesso."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:422
 msgid ""
 "Guest withdrawal requests must be verified by email before they are created."
 msgstr ""
-"Solicitările de retragere a invitaților trebuie verificate prin e-mail "
-"înainte de a fi create."
+"Os pedidos de resolução de visitantes devem ser verificados por e-mail antes "
+"de serem criados."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:438
 msgid "Either order_id or order_number is required."
-msgstr "Este obligatoriu fie order_id, fie order_number."
+msgstr "É necessário fornecer order_id ou order_number."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:447
 msgid "Items are required for partial withdrawal requests."
-msgstr "Articolele sunt necesare pentru cererile de retragere parțială."
+msgstr "Os itens são obrigatórios para pedidos de resolução parcial."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:466
 #: includes/api/class-wbte-ewb-rest-customer.php:638
 msgid "The specified order could not be found."
-msgstr "Ordinul specificat nu a putut fi găsit."
+msgstr "A encomenda especificada não foi encontrada."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:484
 msgid "A reason is required for withdrawal requests."
-msgstr "Este necesar un motiv pentru cererile de retragere."
+msgstr "É obrigatório indicar um motivo nos pedidos de resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:527
 #: includes/api/class-wbte-ewb-rest-requests.php:403
 #: includes/api/class-wbte-ewb-rest-requests.php:445
 msgid "Request service is not available."
-msgstr "Solicitați serviciul nu este disponibil."
+msgstr "O serviço de pedidos não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:575
 msgid "This order does not belong to your account."
-msgstr "Această comandă nu aparține contului dvs."
+msgstr "Esta encomenda não pertence à sua conta."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:591
 msgid "Order number is required for guest withdrawal requests."
 msgstr ""
-"Numărul comenzii este obligatoriu pentru solicitările de retragere ale "
-"vizitatorilor."
+"O número de encomenda é obrigatório para pedidos de resolução de visitantes."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:599
 msgid "Email is required for guest withdrawal requests."
-msgstr "E-mailul este necesar pentru cererile de retragere a oaspeților."
+msgstr "O e-mail é obrigatório para pedidos de resolução de visitantes."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:607
 msgid "The order number does not match this order."
-msgstr "Numărul comenzii nu corespunde acestei comenzi."
+msgstr "O número de encomenda não corresponde a esta encomenda."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:655
 msgid "Eligibility service is not available."
-msgstr "Serviciul de eligibilitate nu este disponibil."
+msgstr "O serviço de elegibilidade não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:713
 msgid "This item is not eligible for withdrawal."
-msgstr "Acest articol nu este eligibil pentru retragere."
+msgstr "Este item não é elegível para resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:723
 msgid ""
 "This item is already included in a pending or approved withdrawal request."
 msgstr ""
-"Acest articol este deja inclus într-o cerere de retragere în așteptare sau "
-"aprobată."
+"Este item já está incluído num pedido de resolução pendente ou aprovado."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:828
 #: includes/api/class-wbte-ewb-rest-requests.php:81
@@ -898,394 +895,388 @@ msgstr ""
 #: includes/api/class-wbte-ewb-rest-requests.php:133
 #: includes/api/class-wbte-ewb-rest-requests.php:512
 msgid "Unique identifier for the withdrawal request."
-msgstr "Identificator unic pentru cererea de retragere."
+msgstr "Identificador único do pedido de resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:839
 #: includes/api/class-wbte-ewb-rest-requests.php:523
 msgid "Customer-facing order number."
-msgstr "Număr de comandă orientat către client."
+msgstr "Número de encomenda visível para o consumidor."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:844
 msgid "Status of the withdrawal request."
-msgstr "Starea cererii de retragere."
+msgstr "Estado do pedido de resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:851
 msgid "Full or partial withdrawal."
-msgstr "Retragere totală sau parțială."
+msgstr "Resolução total ou parcial."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:857
 msgid "Line items included in the withdrawal."
-msgstr "Elemente rând incluse în retragere."
+msgstr "Itens de linha incluídos na resolução."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:882
 msgid "Date the request was created."
-msgstr "Data la care a fost creată cererea."
+msgstr "Data de criação do pedido."
 
 #: includes/api/class-wbte-ewb-rest-lookups.php:106
 msgid "WooCommerce is not available."
-msgstr "WooCommerce nu este disponibil."
+msgstr "O WooCommerce não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:111
 msgid "Optional note for the approval."
-msgstr "Nota opțională pentru aprobare."
+msgstr "Nota opcional para a aprovação."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:140
 msgid "Reason for rejecting the withdrawal request."
-msgstr "Motivul respingerii cererii de retragere."
+msgstr "Motivo para rejeitar o pedido de resolução."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:149
 msgid "A note is required when rejecting a request."
-msgstr "Este necesară o notă atunci când respingeți o solicitare."
+msgstr "É obrigatória uma nota ao rejeitar um pedido."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:171
 msgid "Filter by request status."
-msgstr "Filtrați după starea solicitării."
+msgstr "Filtrar por estado do pedido."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:179
 msgid "Filter requests created on or after this date (YYYY-MM-DD)."
-msgstr "Solicitările de filtrare create la sau după această dată (AAAA-LL-ZZ)."
+msgstr "Filtrar pedidos criados nesta data ou após (AAAA-MM-DD)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:187
 msgid "Filter requests created on or before this date (YYYY-MM-DD)."
-msgstr ""
-"Filtrați solicitările create la sau înainte de această dată (AAAA-LL-ZZ)."
+msgstr "Filtrar pedidos criados nesta data ou antes (AAAA-MM-DD)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:195
 msgid "Filter by customer email or name."
-msgstr "Filtrați după e-mail sau nume client."
+msgstr "Filtrar por e-mail ou nome do consumidor."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:202
 msgid "Search by request ID, order number or receipt hash."
-msgstr "Căutați după identificatorul cererii, numărul comenzii sau codul de confirmare."
+msgstr "Pesquisar por ID do pedido, número de encomenda ou hash do recibo."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:209
 msgid "Filter by order number."
-msgstr "Filtrați după numărul de comandă."
+msgstr "Filtrar por número de encomenda."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:216
 msgid "Filter by receipt hash (full or partial match)."
-msgstr "Indiferent dacă aceasta este o retragere totală sau parțială."
+msgstr "Filtrar por hash do recibo (correspondência total ou parcial)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:223
 msgid "Maximum number of items to be returned per page."
-msgstr "Numărul maxim de articole care trebuie returnate pe pagină."
+msgstr "Número máximo de itens a devolver por página."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:233
 msgid "Current page of the collection."
-msgstr "Pagina curentă a colecției."
+msgstr "Página atual da coleção."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:278
 #: includes/api/class-wbte-ewb-rest-requests.php:332
 #: includes/api/class-wbte-ewb-rest-requests.php:484
 msgid "Request repository is not available."
-msgstr "Magazinul de solicitări nu este disponibil."
+msgstr "O repositório de pedidos não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:342
 #: includes/core/class-wbte-ewb-request-service.php:505
 #: includes/core/class-wbte-ewb-request-service.php:599
 msgid "Withdrawal request not found."
-msgstr "Solicitarea de retragere nu a fost găsită."
+msgstr "Pedido de resolução não encontrado."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:360
 #: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
 msgid "Guest user"
-msgstr "Utilizator invitat"
+msgstr "Utilizador visitante"
 
 #: includes/api/class-wbte-ewb-rest-requests.php:424
 msgid "Withdrawal request approved successfully."
-msgstr "Solicitarea de retragere a fost aprobată cu succes."
+msgstr "Pedido de resolução aprovado com sucesso."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:466
 msgid "Withdrawal request rejected."
-msgstr "Solicitarea de retragere a fost respinsă."
+msgstr "Pedido de resolução rejeitado."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:518
 msgid "Associated WooCommerce order ID."
-msgstr "ID-ul comenzii WooCommerce asociat."
+msgstr "ID da encomenda WooCommerce associada."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:528
 msgid "Customer email address."
-msgstr "Adresa de e-mail a clientului."
+msgstr "Endereço de e-mail do consumidor."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:534
 msgid "Customer user ID (0 or null for guests)."
-msgstr "ID utilizator client (0 sau nul pentru oaspeți)."
+msgstr "ID de utilizador do consumidor (0 ou nulo para visitantes)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:539
 msgid "Current status of the withdrawal request."
-msgstr "Starea actuală a cererii de retragere."
+msgstr "Estado atual do pedido de resolução."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:545
 msgid "Type of withdrawal request."
-msgstr "Tipul cererii de retragere."
+msgstr "Tipo de pedido de resolução."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:551
 msgid "JSON-encoded array of line items."
-msgstr "Matrice de elemente rând codificate în JSON."
+msgstr "Array de itens de linha codificado em JSON."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:556
 msgid "Customer-provided reason for withdrawal."
-msgstr "Motivul de retragere furnizat de client."
+msgstr "Motivo indicado pelo consumidor para a resolução."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:561
 msgid "Date the request was created (ISO 8601)."
-msgstr "Data la care a fost creată cererea (ISO 8601)."
+msgstr "Data de criação do pedido (ISO 8601)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:568
 msgid "Date the request was last updated (ISO 8601)."
-msgstr "Data la care cererea a fost actualizată ultima dată (ISO 8601)."
+msgstr "Data da última atualização do pedido (ISO 8601)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:575
 msgid "Admin user ID who processed the request."
-msgstr "ID-ul utilizatorului administrator care a procesat solicitarea."
+msgstr "ID do utilizador administrador que processou o pedido."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:581
 msgid "Date the request was processed (ISO 8601)."
-msgstr "Data la care a fost procesată cererea (ISO 8601)."
+msgstr "Data em que o pedido foi processado (ISO 8601)."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:588
 msgid "Activity log entries for this request."
-msgstr "Intrări din jurnalul de activitate pentru această solicitare."
+msgstr "Entradas do registo de atividade deste pedido."
 
 #: includes/api/class-wbte-ewb-rest-review-banner.php:51
 msgid "Review banner action."
-msgstr "Acțiune pentru bannerul de recenzie."
+msgstr "Ação do banner de avaliação."
 
 #: includes/api/class-wbte-ewb-rest-review-banner.php:114
 msgid "Review banner updated."
-msgstr "Bannerul de recenzie a fost actualizat."
+msgstr "Banner de avaliação atualizado."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:70
 #: includes/api/class-wbte-ewb-rest-settings.php:522
 msgid "Page ID for the withdrawal form."
-msgstr "ID-ul paginii pentru formularul de retragere."
+msgstr "ID da página para o formulário de resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:77
 #: includes/api/class-wbte-ewb-rest-settings.php:527
 msgid "Whether to show a withdrawal link in the site footer."
-msgstr "Dacă să afișați un link de retragere în subsolul site-ului."
+msgstr "Se deve mostrar uma ligação de resolução no rodapé do site."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:85
 #: includes/api/class-wbte-ewb-rest-settings.php:533
 msgid "Where to display the footer link."
-msgstr "Unde să afișați linkul de subsol."
+msgstr "Onde exibir a ligação do rodapé."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:93
 #: includes/api/class-wbte-ewb-rest-settings.php:539
 msgid "Whether to allow partial order withdrawals."
-msgstr "Dacă se permite retragerile parțiale ale comenzilor."
+msgstr "Se deve permitir resoluções parciais de encomendas."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:101
 #: includes/api/class-wbte-ewb-rest-settings.php:545
 msgid "Number of days within which withdrawal is allowed."
-msgstr "Numărul de zile în care este permisă retragerea."
+msgstr "Número de dias dentro dos quais a resolução é permitida."
 
 #. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:112
 msgid "%s must be at least 1."
-msgstr "%s trebuie să fie cel puțin 1."
+msgstr "%s deve ser pelo menos 1."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:119
 #: includes/api/class-wbte-ewb-rest-settings.php:550
 msgid "Order statuses from which the withdrawal period countdown may begin."
 msgstr ""
-"Statusurile comenzii de la care poate începe numărătoarea perioadei de "
-"retragere."
+"Estados de encomenda a partir dos quais a contagem do prazo de resolução "
+"pode começar."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:129
 #: includes/api/class-wbte-ewb-rest-settings.php:558
 msgid "Whether a reason is required when submitting a withdrawal."
-msgstr "Dacă este necesar un motiv atunci când trimiteți o retragere."
+msgstr "Se é obrigatório indicar um motivo ao submeter uma resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:137
 #: includes/api/class-wbte-ewb-rest-settings.php:564
 msgid "Product types excluded from withdrawal."
-msgstr "Tipuri de produse excluse de la retragere."
+msgstr "Tipos de produto excluídos da resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:147
 #: includes/api/class-wbte-ewb-rest-settings.php:572
 msgid "Product category IDs excluded from withdrawal."
-msgstr "ID-urile categoriei de produse excluse de la retragere."
+msgstr "IDs de categorias de produto excluídas da resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:157
 #: includes/api/class-wbte-ewb-rest-settings.php:580
 msgid "Product IDs excluded from withdrawal."
-msgstr "ID-uri de produs excluse de la retragere."
+msgstr "IDs de produtos excluídos da resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:167
 #: includes/api/class-wbte-ewb-rest-settings.php:588
 msgid "How to handle excluded items in the withdrawal form."
-msgstr "Cum să gestionați articolele excluse din formularul de retragere."
+msgstr "Como tratar os itens excluídos no formulário de resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:175
 #: includes/api/class-wbte-ewb-rest-settings.php:594
 msgid "Whether to change order status when a withdrawal is submitted."
-msgstr "Dacă se schimbă starea comenzii atunci când este trimisă o retragere."
+msgstr ""
+"Se deve alterar o estado da encomenda quando uma resolução é submetida."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:183
 #: includes/api/class-wbte-ewb-rest-settings.php:600
 msgid "Order status to set on withdrawal submission."
-msgstr "Starea comenzii de setat la trimiterea retragerii."
+msgstr "Estado da encomenda a definir na submissão da resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:190
 #: includes/api/class-wbte-ewb-rest-settings.php:605
 msgid "Whether to change order status when a withdrawal is approved."
-msgstr "Dacă se schimbă starea comenzii atunci când o retragere este aprobată."
+msgstr "Se deve alterar o estado da encomenda quando uma resolução é aprovada."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:198
 #: includes/api/class-wbte-ewb-rest-settings.php:611
 msgid "Order status to set on withdrawal approval."
-msgstr "Starea comenzii de setat la aprobarea retragerii."
+msgstr "Estado da encomenda a definir na aprovação da resolução."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:205
 #: includes/api/class-wbte-ewb-rest-settings.php:616
 msgid "Whether to delete all plugin data when uninstalling."
-msgstr "Dacă să ștergeți toate datele pluginului la dezinstalare."
+msgstr "Se deve eliminar todos os dados do plugin ao desinstalar."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:213
 msgid "Email addresses that receive admin withdrawal notifications."
 msgstr ""
-"Adresele de e-mail care primesc notificări de retragere ale "
-"administratorului."
+"Endereços de e-mail que recebem notificações de resolução ao administrador."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:223
 msgid "Customer-facing contact email shown in rejected withdrawal emails."
 msgstr ""
-"Adresa de e-mail de contact afișată clienților în e-mailurile privind "
-"retragerile respinse."
+"E-mail de contacto visível para o consumidor exibido nos e-mails de "
+"resolução rejeitada."
 
 #. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:295
 msgid "%s must be an array of email addresses."
-msgstr "%s trebuie să fie o serie de adrese de e-mail."
+msgstr "%s deve ser um array de endereços de e-mail."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:302
 msgid "At least one admin notification recipient is required."
-msgstr "Este necesar cel puțin un destinatar de notificare de administrator."
+msgstr ""
+"É necessário pelo menos um destinatário de notificação de administração."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:312
 msgid "One or more notification recipients contain an invalid email address."
 msgstr ""
-"Unul sau mai mulți destinatari de notificări conțin o adresă de e-mail "
-"nevalidă."
+"Um ou mais destinatários de notificação contêm um endereço de e-mail "
+"inválido."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:340
 msgid "The customer contact email address is invalid."
-msgstr "Adresa de e-mail de contact a clientului este invalidă."
+msgstr "O endereço de e-mail de contacto do consumidor é inválido."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:379
 msgid "Withdrawal period start statuses must be an array."
-msgstr ""
-"Statusurile de început ale perioadei de retragere trebuie să fie un tablou."
+msgstr "Os estados de início do prazo de resolução devem ser um array."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:395
 msgid "One or more withdrawal period start statuses are invalid."
-msgstr ""
-"Unul sau mai multe statusuri de început ale perioadei de retragere sunt "
-"invalide."
+msgstr "Um ou mais estados de início do prazo de resolução são inválidos."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:415
 #: includes/api/class-wbte-ewb-rest-settings.php:450
 msgid "Settings class is not available."
-msgstr "Clasa de setări nu este disponibilă."
+msgstr "A classe de definições não está disponível."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:470
 msgid "No valid settings provided to update."
-msgstr "Nu au fost furnizate setări valide pentru actualizare."
+msgstr "Nenhuma definição válida fornecida para atualizar."
 
 #: includes/api/class-wbte-ewb-rest-settings.php:500
 msgid "Settings updated successfully."
-msgstr "Setările au fost actualizate cu succes."
+msgstr "Definições atualizadas com sucesso."
 
 #: includes/class-wbte-ewb-install.php:268
 msgctxt "Page slug"
 msgid "withdrawal-request"
-msgstr "retragere-cerere"
+msgstr "pedido-de-resolucao"
 
 #: includes/class-wbte-ewb-install.php:270
 msgctxt "Page title"
 msgid "Withdrawal Request"
-msgstr "Cerere de retragere"
+msgstr "Pedido de Resolução"
 
 #: includes/class-wbte-ewb-post-types.php:55
 msgctxt "Order status"
 msgid "Pending Withdrawal"
-msgstr "Retragere în așteptare"
+msgstr "Resolução Pendente"
 
 #. translators: %s: number of orders
 #: includes/class-wbte-ewb-post-types.php:61
 msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
 msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
-msgstr[0] "Retragere în așteptare <span class=\"count\">(%s)</span>"
-msgstr[1] "Retragere în așteptare <span class=\"count\">(%s)</span>"
-msgstr[2] "Retragere în așteptare <span class=\"count\">(%s)</span>"
+msgstr[0] "Resolução Pendente <span class=\"count\">(%s)</span>"
+msgstr[1] "Resoluções Pendentes <span class=\"count\">(%s)</span>"
 
 #: includes/class-wbte-ewb-post-types.php:68
 msgctxt "Order status"
 msgid "Withdrawn"
-msgstr "Retras"
+msgstr "Resolvido"
 
 #. translators: %s: number of orders
 #: includes/class-wbte-ewb-post-types.php:74
 msgid "Withdrawn <span class=\"count\">(%s)</span>"
 msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
-msgstr[0] "Retras <span class=\"count\">(%s)</span>"
-msgstr[1] "Retras <span class=\"count\">(%s)</span>"
-msgstr[2] "Retras <span class=\"count\">(%s)</span>"
+msgstr[0] "Resolvido <span class=\"count\">(%s)</span>"
+msgstr[1] "Resolvidos <span class=\"count\">(%s)</span>"
 
 #. translators: %s: order status label (e.g. "Withdrawal Requested").
 #: includes/class-wbte-ewb-post-types.php:139
 msgid "Change status to %s"
-msgstr "Schimbați starea în %s"
+msgstr "Alterar estado para %s"
 
 #: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1332
 msgid "Request Withdrawal"
-msgstr "Solicitați retragerea"
+msgstr "Solicitar Resolução"
 
 #: includes/core/class-wbte-ewb-eligibility.php:354
 msgid "This product type cannot be withdrawn."
-msgstr "Acest tip de produs nu poate fi retras."
+msgstr "Este tipo de produto não pode ser objeto de resolução."
 
 #: includes/core/class-wbte-ewb-eligibility.php:358
 msgid "Virtual products cannot be withdrawn."
-msgstr "Produsele virtuale nu pot fi retrase."
+msgstr "Os produtos virtuais não podem ser objeto de resolução."
 
 #: includes/core/class-wbte-ewb-eligibility.php:362
 msgid "Downloadable products cannot be withdrawn."
-msgstr "Produsele descărcabile nu pot fi retrase."
+msgstr "Os produtos descarregáveis não podem ser objeto de resolução."
 
 #: includes/core/class-wbte-ewb-eligibility.php:371
 msgid "This product cannot be withdrawn."
-msgstr "Acest produs nu poate fi retras."
+msgstr "Este produto não pode ser objeto de resolução."
 
 #: includes/core/class-wbte-ewb-eligibility.php:380
 msgid "Products in this category cannot be withdrawn."
-msgstr "Produsele din această categorie nu pot fi retrase."
+msgstr "Os produtos desta categoria não podem ser objeto de resolução."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
 #: includes/frontend/class-wbte-ewb-frontend.php:157
 msgid "Please enter your order number."
-msgstr "Vă rugăm să introduceți numărul dvs. de comandă."
+msgstr "Por favor, introduza o seu número de encomenda."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
 #: includes/frontend/class-wbte-ewb-form-handler.php:95
 msgid "Please provide a reason for your withdrawal request."
-msgstr "Vă rugăm să furnizați un motiv pentru cererea dvs. de retragere."
+msgstr "Por favor, indique um motivo para o seu pedido de resolução."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
 msgid "Unable to queue your withdrawal request. Please try again."
 msgstr ""
-"Nu se poate pune în coadă solicitarea dvs. de retragere. Vă rugăm să "
-"încercați din nou."
+"Não foi possível colocar o seu pedido de resolução em fila de espera. Por "
+"favor, tente novamente."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
 #: includes/frontend/class-wbte-ewb-guest-verification.php:241
 msgid "The email address does not match the billing email on this order."
 msgstr ""
-"Adresa de e-mail nu se potrivește cu e-mailul de facturare din această "
-"comandă."
+"O endereço de e-mail não corresponde ao e-mail de faturação desta encomenda."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
@@ -1294,7 +1285,7 @@ msgstr ""
 #: includes/core/class-wbte-ewb-request-service.php:129
 #: includes/frontend/class-wbte-ewb-guest-verification.php:242
 msgid "This order is not eligible for withdrawal."
-msgstr "Această comandă nu este eligibilă pentru retragere."
+msgstr "Esta encomenda não é elegível para resolução."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
@@ -1302,18 +1293,18 @@ msgstr "Această comandă nu este eligibilă pentru retragere."
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
 #: includes/frontend/class-wbte-ewb-guest-verification.php:238
 msgid "This verification link is invalid or has already been used."
-msgstr "Acest link de verificare este nevalid sau a fost deja folosit."
+msgstr "Esta ligação de verificação é inválida ou já foi utilizada."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
 #: includes/frontend/class-wbte-ewb-guest-verification.php:243
 msgid "This withdrawal request has already been submitted."
-msgstr "Această cerere de retragere a fost deja trimisă."
+msgstr "Este pedido de resolução já foi submetido."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
 msgid "Verification link expired."
-msgstr "Linkul de verificare a expirat."
+msgstr "Ligação de verificação expirada."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
@@ -1322,24 +1313,24 @@ msgstr "Linkul de verificare a expirat."
 msgid ""
 "This verification link has expired. Please submit a new withdrawal request."
 msgstr ""
-"Acest link de verificare a expirat. Vă rugăm să trimiteți o nouă cerere de "
-"retragere."
+"Esta ligação de verificação expirou. Por favor, submeta um novo pedido de "
+"resolução."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
 #: includes/frontend/class-wbte-ewb-form-handler.php:129
 #: includes/frontend/class-wbte-ewb-form-handler.php:178
 #: includes/frontend/class-wbte-ewb-guest-verification.php:170
 msgid "The withdrawal service is temporarily unavailable."
-msgstr "Serviciul de retragere este temporar indisponibil."
+msgstr "O serviço de resolução está temporariamente indisponível."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
 msgid "This verification session is invalid or has expired."
-msgstr "Această sesiune de verificare este invalidă sau a expirat."
+msgstr "Esta sessão de verificação é inválida ou expirou."
 
 #. translators: %s: site name
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
 msgid "[%s] Verify your withdrawal request"
-msgstr "[%s] Verificați solicitarea de retragere"
+msgstr "[%s] Verifique o seu pedido de resolução"
 
 #. translators: 1: verification URL, 2: order number
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
@@ -1350,103 +1341,99 @@ msgid ""
 "\n"
 "Order: %2$s"
 msgstr ""
-"Vă rugăm să verificați solicitarea de retragere făcând clic pe linkul de mai "
-"jos:\n"
+"Por favor, verifique o seu pedido de resolução clicando na ligação abaixo:\n"
 "\n"
 "%1$s\n"
 "\n"
-"Comanda: %2$s"
+"Encomenda: %2$s"
 
 #: includes/core/class-wbte-ewb-request-service.php:89
 msgid "The specified order does not exist."
-msgstr "Ordinea specificată nu există."
+msgstr "A encomenda especificada não existe."
 
 #: includes/core/class-wbte-ewb-request-service.php:117
 msgid "You are not authorised to submit a withdrawal for this order."
-msgstr "Nu sunteți autorizat să trimiteți o retragere pentru această comandă."
+msgstr "Não está autorizado a submeter uma resolução para esta encomenda."
 
 #: includes/core/class-wbte-ewb-request-service.php:182
 msgid "Failed to create the withdrawal request."
-msgstr "Nu s-a creat cererea de retragere."
+msgstr "Falha ao criar o pedido de resolução."
 
 #: includes/core/class-wbte-ewb-request-service.php:208
 msgid "Withdrawal request submitted."
-msgstr "Solicitare de retragere depusă."
+msgstr "Pedido de resolução submetido."
 
 #: includes/core/class-wbte-ewb-request-service.php:278
 msgid "The submitted withdrawal items are invalid."
-msgstr "Articolele de retragere trimise sunt invalide."
+msgstr "Os itens de resolução submetidos são inválidos."
 
 #: includes/core/class-wbte-ewb-request-service.php:322
 msgid "No items are currently available for withdrawal on this order."
-msgstr ""
-"În prezent, niciun articol nu este disponibil pentru retragere la această "
-"comandă."
+msgstr "Não há itens atualmente disponíveis para resolução nesta encomenda."
 
 #: includes/core/class-wbte-ewb-request-service.php:408
 #: includes/core/class-wbte-ewb-request-service.php:421
 #: includes/core/class-wbte-ewb-request-service.php:431
 msgid "One or more selected items are invalid for this order."
-msgstr ""
-"Unul sau mai multe articole selectate sunt invalide pentru această comandă."
+msgstr "Um ou mais itens selecionados são inválidos para esta encomenda."
 
 #. translators: %s: product name
 #: includes/core/class-wbte-ewb-request-service.php:441
 msgid "\"%s\" is not eligible for withdrawal on this order."
-msgstr "„%s” nu este eligibil pentru retragere la această comandă."
+msgstr "\"%s\" não é elegível para resolução nesta encomenda."
 
 #: includes/core/class-wbte-ewb-request-service.php:442
 #: includes/core/class-wbte-ewb-request-service.php:460
 msgid "This item"
-msgstr "Acest articol"
+msgstr "Este item"
 
 #. translators: %s: product name
 #: includes/core/class-wbte-ewb-request-service.php:459
 msgid "\"%s\" is no longer available for withdrawal on this order."
-msgstr "„%s” nu mai este disponibil pentru retragere pentru această comandă."
+msgstr "\"%s\" já não está disponível para resolução nesta encomenda."
 
 #. translators: 1: product name, 2: maximum quantity
 #: includes/core/class-wbte-ewb-request-service.php:471
 msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
-msgstr "Cantitatea de retragere pentru „%1$s” nu poate depăși %2$d."
+msgstr "A quantidade de resolução para \"%1$s\" não pode exceder %2$d."
 
 #: includes/core/class-wbte-ewb-request-service.php:472
 msgid "this item"
-msgstr "acest articol"
+msgstr "este item"
 
 #: includes/core/class-wbte-ewb-request-service.php:513
 msgid "Only pending requests can be approved."
-msgstr "Numai cererile în așteptare pot fi aprobate."
+msgstr "Apenas os pedidos pendentes podem ser aprovados."
 
 #: includes/core/class-wbte-ewb-request-service.php:607
 msgid "Only pending requests can be rejected."
-msgstr "Numai cererile în așteptare pot fi respinse."
+msgstr "Apenas os pedidos pendentes podem ser rejeitados."
 
 #: includes/core/class-wbte-ewb-request-service.php:695
 msgid "Withdrawal request pending review."
-msgstr "Solicitarea de retragere este în așteptarea examinării."
+msgstr "Pedido de resolução pendente de análise."
 
 #: includes/core/class-wbte-ewb-request-service.php:724
 msgid "Withdrawal request approved."
-msgstr "Cerere de retragere aprobată."
+msgstr "Pedido de resolução aprovado."
 
 #: includes/core/class-wbte-ewb-request-service.php:767
 msgid ""
 "Partial withdrawal approved. Restoring order status for remaining items."
 msgstr ""
-"Retragere parțială aprobată. Se restabilește statusul comenzii pentru "
-"articolele rămase."
+"Resolução parcial aprovada. A restaurar o estado da encomenda para os itens "
+"restantes."
 
 #. translators: 1: requested quantity, 2: order line quantity
 #: includes/core/class-wbte-ewb-request.php:362
 msgid "%1$d of %2$d"
-msgstr "%1$d din %2$d"
+msgstr "%1$d de %2$d"
 
 #: includes/core/class-wbte-ewb-request.php:534
 #: includes/frontend/class-wbte-ewb-my-account.php:168
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:250
 msgid "Partial"
-msgstr "Parțial"
+msgstr "Parcial"
 
 #: includes/core/class-wbte-ewb-request.php:537
 #: includes/emails/class-wbte-ewb-email-preview.php:93
@@ -1454,12 +1441,12 @@ msgstr "Parțial"
 #: includes/frontend/class-wbte-ewb-my-account.php:169
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:251
 msgid "Full"
-msgstr "Complet"
+msgstr "Total"
 
 #. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone offset label e.g. UTC+10
 #: includes/core/class-wbte-ewb-request.php:560
 msgid "%1$s at %2$s (%3$s)"
-msgstr "%1$s la %2$s (%3$s)"
+msgstr "%1$s às %2$s (%3$s)"
 
 #: includes/core/class-wbte-ewb-review-banner.php:187
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
@@ -1467,8 +1454,9 @@ msgid ""
 "Your store is making EU right-of-withdrawal easy for customers. Enjoying "
 "WebToffee EU Withdrawal Button? Leave a review!"
 msgstr ""
-"Magazinul tău face dreptul de retragere UE simplu pentru clienți. Îți place "
-"WebToffee EU Withdrawal Button? Lasă o recenzie!"
+"A sua loja está a facilitar o direito de livre resolução da UE para os "
+"consumidores. Está a gostar do WebToffee EU Withdrawal Button? Deixe uma "
+"avaliação!"
 
 #: includes/core/class-wbte-ewb-review-banner.php:190
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
@@ -1476,90 +1464,88 @@ msgid ""
 "You've been using WebToffee EU Withdrawal Button for a week. We'd really "
 "appreciate if you could take a moment to leave us a review"
 msgstr ""
-"Utilizați WebToffee EU Withdrawal Button de o săptămână. V-am fi foarte "
-"recunoscători dacă ați putea dedica un moment pentru a ne lăsa o recenzie"
+"Está a utilizar o WebToffee EU Withdrawal Button há uma semana. Agradecíamos "
+"muito se pudesse dedicar um momento para nos deixar uma avaliação"
 
 #: includes/core/class-wbte-ewb-review-banner.php:235
 msgid "Invalid review banner action."
-msgstr "Acțiune invalidă pentru bannerul de recenzie."
+msgstr "Ação de banner de avaliação inválida."
 
 #: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
 msgid "Guest Order Not Eligible"
-msgstr "Comanda oaspetelui neeligibilă"
+msgstr "Encomenda de Visitante Não Elegível"
 
 #: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
 msgid ""
 "Sent to guest customers when their order is not eligible for withdrawal."
 msgstr ""
-"Trimis clienților oaspeți când comanda lor nu este eligibilă pentru retragere."
+"Enviado a consumidores visitantes quando a sua encomenda não é elegível para "
+"resolução."
 
 #: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
 msgid ""
 "[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
 msgstr ""
-"[{site_title}]: Comanda dvs. #{order_number} nu este eligibilă pentru "
-"retragere"
+"[{site_title}]: A sua encomenda #{order_number} não é elegível para resolução"
 
 #: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
 msgid "Order not eligible for withdrawal"
-msgstr "Comanda neeligibilă pentru retragere"
+msgstr "Encomenda não elegível para resolução"
 
 #: includes/emails/class-wbte-ewb-email-guest-verification.php:40
 msgid "Guest Withdrawal Verification"
-msgstr "Verificarea retragerii oaspeților"
+msgstr "Verificação de Resolução de Visitante"
 
 #: includes/emails/class-wbte-ewb-email-guest-verification.php:41
 msgid ""
 "Sent to guest customers to verify their withdrawal request before it is "
 "created."
 msgstr ""
-"Trimis clienților invitați pentru a-și verifica cererea de retragere înainte "
-"de a fi creată."
+"Enviado a consumidores visitantes para verificar o seu pedido de resolução "
+"antes de ser criado."
 
 #: includes/emails/class-wbte-ewb-email-guest-verification.php:61
 msgid ""
 "[{site_title}]: Verify your withdrawal request for order #{order_number}"
 msgstr ""
-"[{site_title}]: Confirmați solicitarea de retragere pentru comanda "
+"[{site_title}]: Verifique o seu pedido de resolução para a encomenda "
 "#{order_number}"
 
 #: includes/emails/class-wbte-ewb-email-guest-verification.php:70
 msgid "Verify your withdrawal request"
-msgstr "Verificați solicitarea de retragere"
+msgstr "Verifique o seu pedido de resolução"
 
 #: includes/emails/class-wbte-ewb-email-preview.php:166
 #: includes/emails/class-wbte-ewb-email-preview.php:224
 msgid "I would like to return this order."
-msgstr "Aș dori să returnez această comandă."
+msgstr "Gostaria de devolver esta encomenda."
 
 #: includes/emails/class-wbte-ewb-email-preview.php:198
 #: includes/emails/class-wbte-ewb-email-preview.php:244
 msgid ""
 "This request cannot be approved because the withdrawal period has expired."
-msgstr ""
-"Această solicitare nu poate fi aprobată deoarece perioada de retragere a "
-"expirat."
+msgstr "Este pedido não pode ser aprovado porque o prazo de resolução expirou."
 
 #: includes/emails/class-wbte-ewb-email-preview.php:230
 msgid "Sample product"
-msgstr "Eșantion de produs"
+msgstr "Produto de exemplo"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:46
 #: includes/emails/class-wbte-ewb-email-request-approved.php:84
 msgid "Withdrawal Request Approved"
-msgstr "Cerere de retragere aprobată"
+msgstr "Pedido de Resolução Aprovado"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:47
 msgid "Sent to the customer when a withdrawal request is approved."
-msgstr "Trimis clientului atunci când o cerere de retragere este aprobată."
+msgstr "Enviado ao consumidor quando um pedido de resolução é aprovado."
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:73
 msgid ""
 "[{site_title}]: Your withdrawal request for order #{order_number} has been "
 "approved"
 msgstr ""
-"[{site_title}]: Solicitarea dvs. de retragere pentru comanda #{order_number} "
-"a fost aprobată"
+"[{site_title}]: O seu pedido de resolução para a encomenda #{order_number} "
+"foi aprovado"
 
 #. translators: %s: list of available placeholder tags.
 #: includes/emails/class-wbte-ewb-email-request-approved.php:185
@@ -1567,86 +1553,86 @@ msgstr ""
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:203
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:185
 msgid "Available placeholders: %s"
-msgstr "Substituenți disponibili: %s"
+msgstr "Placeholders disponíveis: %s"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:189
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:210
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
 msgid "Enable/Disable"
-msgstr "Activare/Dezactivare"
+msgstr "Ativar/Desativar"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:191
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:212
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:209
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:191
 msgid "Enable this email notification"
-msgstr "Activați această notificare prin e-mail"
+msgstr "Ativar esta notificação por e-mail"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:195
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:216
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:222
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:195
 msgid "Subject"
-msgstr "Subiect"
+msgstr "Assunto"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:203
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:224
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:230
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:203
 msgid "Email heading"
-msgstr "Titlu e-mail"
+msgstr "Cabeçalho do e-mail"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:211
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:232
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
 msgid "Email type"
-msgstr "Tipul de e-mail"
+msgstr "Tipo de e-mail"
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:213
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:234
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:240
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:213
 msgid "Choose which format of email to send."
-msgstr "Alegeți ce format de e-mail să trimiteți."
+msgstr "Escolha o formato de e-mail a enviar."
 
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:54
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:92
 msgid "Withdrawal Request Rejected"
-msgstr "Solicitarea de retragere a fost respinsă"
+msgstr "Pedido de Resolução Rejeitado"
 
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:55
 msgid "Sent to the customer when a withdrawal request is rejected."
-msgstr "Trimis clientului atunci când o cerere de retragere este respinsă."
+msgstr "Enviado ao consumidor quando um pedido de resolução é rejeitado."
 
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:81
 msgid ""
 "[{site_title}]: Your withdrawal request for order #{order_number} has been "
 "rejected"
 msgstr ""
-"[{site_title}]: Solicitarea dvs. de retragere pentru comanda #{order_number} "
-"a fost respinsă"
+"[{site_title}]: O seu pedido de resolução para a encomenda #{order_number} "
+"foi rejeitado"
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
 msgid "New Withdrawal Request (Admin)"
-msgstr "Noua solicitare de retragere (administrator)"
+msgstr "Novo Pedido de Resolução (Admin)"
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
 msgid ""
 "Sent to the site administrator when a new withdrawal request is submitted."
 msgstr ""
-"Trimis administratorului site-ului atunci când este trimisă o nouă cerere de "
-"retragere."
+"Enviado ao administrador do site quando um novo pedido de resolução é "
+"submetido."
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
 msgid "[{site_title}]: New withdrawal request for order #{order_number}"
 msgstr ""
-"[{site_title}]: Solicitare nouă de retragere pentru comanda #{order_number}"
+"[{site_title}]: Novo pedido de resolução para a encomenda #{order_number}"
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
 msgid "New Withdrawal Request"
-msgstr "Noua cerere de retragere"
+msgstr "Novo Pedido de Resolução"
 
 #. translators: %s: default store email address.
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:216
@@ -1654,39 +1640,38 @@ msgid ""
 "Optional override for this email only. Leave blank to use recipients "
 "configured in Withdrawal settings (defaults to %s)."
 msgstr ""
-"Suprascriere opțională numai pentru acest e-mail. Lăsați necompletat pentru "
-"a utiliza destinatarii configurați în Setările de retragere (implicit la %s)."
+"Substituição opcional apenas para este e-mail. Deixe em branco para utilizar "
+"os destinatários configurados nas definições de Resolução (predefinido: %s)."
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
 msgid "Withdrawal Request Submitted"
-msgstr "Solicitare de retragere trimisă"
+msgstr "Pedido de Resolução Submetido"
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
 msgid "Sent to the customer when a withdrawal request is submitted."
-msgstr "Trimis clientului atunci când este trimisă o cerere de retragere."
+msgstr "Enviado ao consumidor quando um pedido de resolução é submetido."
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
 msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
 msgstr ""
-"[{site_title}]: Solicitare de retragere pentru comanda #{order_number} "
-"primită"
+"[{site_title}]: Pedido de resolução para a encomenda #{order_number} recebido"
 
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
 msgid "Withdrawal Request Received"
-msgstr "Solicitare de retragere primită"
+msgstr "Pedido de Resolução Recebido"
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:68
 msgid "Security check failed. Please try again."
-msgstr "Verificarea de securitate a eșuat. Vă rugăm să încercați din nou."
+msgstr "Falha na verificação de segurança. Por favor, tente novamente."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:104
 #: includes/frontend/class-wbte-ewb-frontend.php:150
 msgid "Please select an order."
-msgstr "Vă rugăm să selectați o comandă."
+msgstr "Por favor, selecione uma encomenda."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:117
 msgid "You do not have permission to request withdrawal for this order."
-msgstr "Nu aveți permisiunea de a solicita retragerea acestei comenzi."
+msgstr "Não tem permissão para solicitar a resolução desta encomenda."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:199
 #: includes/frontend/class-wbte-ewb-guest-verification.php:198
@@ -1695,69 +1680,68 @@ msgid ""
 "Your withdrawal request has been submitted successfully. You will receive a "
 "confirmation email shortly."
 msgstr ""
-"Solicitarea dvs. de retragere a fost trimisă cu succes. Veți primi un e-mail "
-"de confirmare în curând."
+"O seu pedido de resolução foi submetido com sucesso. Receberá um e-mail de "
+"confirmação em breve."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:263
 #: includes/frontend/class-wbte-ewb-frontend.php:156
 msgid "Your withdrawal request has been submitted successfully."
-msgstr "Solicitarea dvs. de retragere a fost trimisă cu succes."
+msgstr "O seu pedido de resolução foi submetido com sucesso."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:117
 #: includes/frontend/views/form-guest.php:104
 #: includes/frontend/views/form-logged-in.php:131
 msgid "I have read and agree to the withdrawal terms and conditions"
-msgstr "Am citit și sunt de acord cu termenii și condițiile de retragere"
+msgstr "Li e aceito os termos e condições de resolução"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:149
 msgid "Loading..."
-msgstr "Încărcare..."
+msgstr "A carregar..."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:151
 msgid "Please select at least one item."
-msgstr "Vă rugăm să selectați cel puțin un articol."
+msgstr "Por favor, selecione pelo menos um item."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:152
 msgid "quantity"
-msgstr "cantitate"
+msgstr "quantidade"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:153
 msgid "Please enter a valid quantity for each selected item."
-msgstr ""
-"Vă rugăm să introduceți o cantitate validă pentru fiecare articol selectat."
+msgstr "Por favor, introduza uma quantidade válida para cada item selecionado."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:154
 msgid "Please provide a reason for withdrawal."
-msgstr "Vă rugăm să furnizați un motiv pentru retragere."
+msgstr "Por favor, indique um motivo para a resolução."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:159
 msgid "Fetching eligible items..."
-msgstr "Se preiau articole eligibile..."
+msgstr "A obter itens elegíveis..."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:160
 msgid "No eligible items found for this order."
-msgstr "Nu s-au găsit articole eligibile pentru această comandă."
+msgstr "Nenhum item elegível encontrado para esta encomenda."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:161
 msgid "Review your withdrawal request"
-msgstr "Examinați solicitarea dvs. de retragere"
+msgstr "Reveja o seu pedido de resolução"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:162
 msgid ""
 "Please review the details below. To complete your statutory withdrawal, "
 "click Confirm withdrawal."
 msgstr ""
-"Vă rugăm să examinați detaliile de mai jos. Pentru a finaliza retragerea "
-"dvs. legală, faceți clic pe Confirmați retragerea."
+"Por favor, reveja os detalhes abaixo. Para concluir o exercício do seu "
+"direito de livre resolução, clique em Confirmar retratação."
 
 #: includes/frontend/class-wbte-ewb-frontend.php:163
 msgid "Confirm withdrawal"
-msgstr "Confirmați retragerea"
+msgstr "Confirmar retratação"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:165
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:193
 msgid "Customer"
-msgstr "Client"
+msgstr "Consumidor"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:166
 #: includes/frontend/class-wbte-ewb-my-account.php:140
@@ -1765,60 +1749,61 @@ msgstr "Client"
 #: includes/frontend/views/form-logged-in.php:52
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
 msgid "Order"
-msgstr "Comandă"
+msgstr "Encomenda"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:167
 msgid "Withdrawal type"
-msgstr "Tipul de retragere"
+msgstr "Tipo de resolução"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:168
 #: includes/frontend/views/form-guest-verified.php:61
 #: includes/frontend/views/form-logged-in.php:73
 msgid "Items to withdraw"
-msgstr "Articole de retras"
+msgstr "Itens a resolver"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:169
 #: includes/frontend/views/form-guest-verified.php:55
 #: includes/frontend/views/form-guest.php:75
 #: includes/frontend/views/form-logged-in.php:106
 msgid "Reason for withdrawal"
-msgstr "Motivul retragerii"
+msgstr "Motivo da resolução"
 
 #: includes/frontend/class-wbte-ewb-frontend.php:170
 msgid "Full withdrawal"
-msgstr "Retragere completă"
+msgstr "Resolução total"
 
 #: includes/frontend/class-wbte-ewb-guest-verification.php:197
 #: includes/frontend/views/verification-success.php:19
 msgid "Request submitted"
-msgstr "Solicitare transmisă"
+msgstr "Pedido submetido"
 
 #: includes/frontend/class-wbte-ewb-guest-verification.php:221
 msgid ""
 "Thank you. If the details you provided are correct, you will receive an "
 "email regarding your withdrawal request. Please check your inbox."
 msgstr ""
-"Vă mulțumim. Dacă detaliile furnizate sunt corecte, veți primi un e-mail "
-"referitor la cererea dvs. de retragere. Verificați căsuța de e-mail."
+"Obrigado. Se os dados que forneceu estiverem corretos, receberá um e-mail "
+"relativo ao seu pedido de resolução. Por favor, verifique a sua caixa de "
+"entrada."
 
 #: includes/frontend/class-wbte-ewb-guest-verification.php:250
 msgid "We could not verify your withdrawal request. Please try again."
 msgstr ""
-"Nu am putut verifica solicitarea dvs. de retragere. Vă rugăm să încercați "
-"din nou."
+"Não foi possível verificar o seu pedido de resolução. Por favor, tente "
+"novamente."
 
 #: includes/frontend/class-wbte-ewb-my-account.php:113
 msgid "You must be logged in to view your withdrawal requests."
-msgstr "Trebuie să fii autentificat pentru a vedea cererile de retragere."
+msgstr "Deve estar autenticado para ver os seus pedidos de resolução."
 
 #: includes/frontend/class-wbte-ewb-my-account.php:120
 msgid "You have not submitted any withdrawal requests yet."
-msgstr "Nu ați trimis încă nicio solicitare de retragere."
+msgstr "Ainda não submeteu nenhum pedido de resolução."
 
 #: includes/frontend/class-wbte-ewb-my-account.php:137
 #: includes/frontend/class-wbte-ewb-my-account.php:156
 msgid "Request"
-msgstr "Cerere"
+msgstr "Pedido"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:143
 #: includes/frontend/class-wbte-ewb-my-account.php:162
@@ -1826,13 +1811,13 @@ msgstr "Cerere"
 #: react/src/components/ActivityLog.jsx:33
 #: react/src/components/RequestsList.jsx:196
 msgid "Date"
-msgstr "Dată"
+msgstr "Data"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:146
 #: includes/frontend/class-wbte-ewb-my-account.php:165
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:194
 msgid "Type"
-msgstr "Tip"
+msgstr "Tipo"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:149
 #: includes/frontend/class-wbte-ewb-my-account.php:172
@@ -1843,66 +1828,66 @@ msgstr "Tip"
 #: react/src/components/RequestDetail.jsx:261
 #: react/src/components/RequestsList.jsx:195
 msgid "Status"
-msgstr "Stare"
+msgstr "Estado"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:261
 msgid "Withdrawal Request"
-msgstr "Cerere de retragere"
+msgstr "Pedido de Resolução"
 
 #. translators: %s: request ID
 #: includes/frontend/class-wbte-ewb-my-account.php:302
 msgid "Request #%s"
-msgstr "Cerere #%s"
+msgstr "Pedido #%s"
 
 #. translators: %s: withdrawal request type label
 #: includes/frontend/class-wbte-ewb-my-account.php:313
 msgid "Type: %s"
-msgstr "Tip: %s"
+msgstr "Tipo: %s"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:322
 msgid "Submitted"
-msgstr "Trimis"
+msgstr "Submetido"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:332
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
 msgid "Processed"
-msgstr "Procesat"
+msgstr "Processado"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:342
 #: templates/emails/admin-withdrawal-submitted.php:108
 #: templates/emails/customer-withdrawal-rejected.php:121
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
 msgid "Reason"
-msgstr "Motiv"
+msgstr "Motivo"
 
 #: includes/frontend/views/form-guest-verified.php:23
 msgid ""
 "Your email has been verified. Select the items you wish to withdraw and "
 "submit your request below."
 msgstr ""
-"E-mailul dvs. a fost verificat. Selectați articolele pe care doriți să le "
-"retrageți și trimiteți cererea mai jos."
+"O seu e-mail foi verificado. Selecione os itens que pretende resolver e "
+"submeta o seu pedido abaixo."
 
 #: includes/frontend/views/form-guest-verified.php:45
 #: includes/frontend/views/form-guest.php:62
 msgid "Order number"
-msgstr "Număr de ordine"
+msgstr "Número de encomenda"
 
 #: includes/frontend/views/form-guest-verified.php:50
 #: includes/frontend/views/form-guest.php:68
 msgid "Billing email address"
-msgstr "Adresa de e-mail de facturare"
+msgstr "Endereço de e-mail de faturação"
 
 #: includes/frontend/views/form-guest-verified.php:66
 #: includes/frontend/views/form-logged-in.php:80
 msgid "Loading items..."
-msgstr "Se încarcă articole..."
+msgstr "A carregar itens..."
 
 #: includes/frontend/views/form-guest-verified.php:81
 #: includes/frontend/views/form-guest.php:120
 #: includes/frontend/views/form-logged-in.php:148
 msgid "Submit Withdrawal Request"
-msgstr "Trimiteți cererea de retragere"
+msgstr "Submeter Pedido de Resolução"
 
 #: includes/frontend/views/form-guest.php:62
 #: includes/frontend/views/form-guest.php:68
@@ -1910,24 +1895,24 @@ msgstr "Trimiteți cererea de retragere"
 #: includes/frontend/views/form-logged-in.php:52
 #: includes/frontend/views/form-logged-in.php:108
 msgid "required"
-msgstr "necesar"
+msgstr "obrigatório"
 
 #: includes/frontend/views/form-guest.php:84
 msgid ""
 "Enter your order number and billing email to start. If your details match "
 "our records, you will receive an email with further instructions."
 msgstr ""
-"Introduceți numărul comenzii și e-mailul de facturare pentru a începe. Dacă "
-"detaliile dvs. corespund înregistrărilor noastre, veți primi un e-mail cu "
-"instrucțiuni suplimentare."
+"Introduza o seu número de encomenda e e-mail de faturação para começar. Se "
+"os seus dados corresponderem aos nossos registos, receberá um e-mail com "
+"instruções adicionais."
 
 #: includes/frontend/views/form-logged-in.php:45
 msgid "You currently have no orders eligible for withdrawal."
-msgstr "În prezent, nu aveți comenzi eligibile pentru retragere."
+msgstr "Atualmente não tem encomendas elegíveis para resolução."
 
 #: includes/frontend/views/form-logged-in.php:54
 msgid "-- Select an order --"
-msgstr "-- Selectați o comandă --"
+msgstr "-- Selecione uma encomenda --"
 
 #. translators: 1: order number, 2: order date
 #: includes/frontend/views/form-logged-in.php:60
@@ -1940,43 +1925,43 @@ msgstr "E-mail"
 
 #: includes/frontend/views/form-logged-in.php:93
 msgid "First name"
-msgstr "Prenume"
+msgstr "Nome próprio"
 
 #: includes/frontend/views/form-logged-in.php:98
 msgid "Last name"
-msgstr "Nume"
+msgstr "Apelido"
 
 #. translators: %s: order number.
 #: templates/emails/admin-withdrawal-submitted.php:32
 msgid "A new withdrawal request has been submitted for order #%s."
-msgstr "O nouă solicitare de retragere a fost trimisă pentru comanda #%s."
+msgstr "Foi submetido um novo pedido de resolução para a encomenda #%s."
 
 #: templates/emails/admin-withdrawal-submitted.php:39
 msgid "Customer Information"
-msgstr "Informații despre clienți"
+msgstr "Informação do Consumidor"
 
 #: templates/emails/admin-withdrawal-submitted.php:47
 msgid "Customer Name"
-msgstr "Nume client"
+msgstr "Nome do Consumidor"
 
 #: templates/emails/admin-withdrawal-submitted.php:55
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
 msgid "Customer Email"
-msgstr "E-mailul clientului"
+msgstr "E-mail do Consumidor"
 
 #: templates/emails/admin-withdrawal-submitted.php:65
 #: templates/emails/customer-withdrawal-approved.php:49
 #: templates/emails/customer-withdrawal-rejected.php:49
 #: templates/emails/customer-withdrawal-submitted.php:49
 msgid "Request Details"
-msgstr "Solicitare detalii"
+msgstr "Detalhes do Pedido"
 
 #: templates/emails/admin-withdrawal-submitted.php:73
 #: templates/emails/customer-withdrawal-approved.php:57
 #: templates/emails/customer-withdrawal-rejected.php:70
 #: templates/emails/customer-withdrawal-submitted.php:57
 msgid "Order Number"
-msgstr "Număr de ordine"
+msgstr "Número de Encomenda"
 
 #: templates/emails/admin-withdrawal-submitted.php:83
 #: templates/emails/customer-withdrawal-approved.php:65
@@ -1984,29 +1969,29 @@ msgstr "Număr de ordine"
 #: templates/emails/customer-withdrawal-submitted.php:65
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
 msgid "Request Type"
-msgstr "Tip cerere"
+msgstr "Tipo de Pedido"
 
 #: templates/emails/admin-withdrawal-submitted.php:91
 #: templates/emails/customer-withdrawal-approved.php:73
 #: templates/emails/customer-withdrawal-rejected.php:86
 #: templates/emails/customer-withdrawal-submitted.php:73
 msgid "Date Submitted"
-msgstr "Data trimiterii"
+msgstr "Data de Submissão"
 
 #: templates/emails/admin-withdrawal-submitted.php:136
 msgid "Items Included in This Request"
-msgstr "Articole incluse în această solicitare"
+msgstr "Itens Incluídos Neste Pedido"
 
 #: templates/emails/admin-withdrawal-submitted.php:142
 msgid "Item"
-msgstr "Articol"
+msgstr "Item"
 
 #: templates/emails/admin-withdrawal-submitted.php:145
 #: templates/emails/customer-withdrawal-approved.php:131
 #: templates/emails/customer-withdrawal-submitted.php:119
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
 msgid "Quantity"
-msgstr "Cantitate"
+msgstr "Quantidade"
 
 #. translators: %s: admin URL to manage withdrawal requests.
 #: templates/emails/admin-withdrawal-submitted.php:173
@@ -2014,8 +1999,8 @@ msgid ""
 "To review and manage this request, visit the <a href=\"%s\">Withdrawal "
 "Requests dashboard</a>."
 msgstr ""
-"Pentru a examina și a gestiona această solicitare, accesați <a "
-"href=\"%s\">Tabloul de bord Solicitări de retragere</a>."
+"Para analisar e gerir este pedido, visite o <a href=\"%s\">painel de Pedidos "
+"de Resolução</a>."
 
 #. translators: %s: order number
 #: templates/emails/customer-guest-ineligible.php:29
@@ -2024,28 +2009,28 @@ msgid ""
 "We received your withdrawal request for order #%s. Unfortunately, this order "
 "is not currently eligible for withdrawal."
 msgstr ""
-"Am primit cererea dvs. de retragere pentru comanda #%s. Din păcate, această "
-"comandă nu este eligibilă în prezent pentru retragere."
+"Recebemos o seu pedido de resolução para a encomenda #%s. Infelizmente, esta "
+"encomenda não é atualmente elegível para resolução."
 
 #: templates/emails/customer-guest-ineligible.php:36
 #: templates/emails/plain/customer-guest-ineligible.php:30
 msgid "This may be because:"
-msgstr "Aceasta poate fi din cauza:"
+msgstr "Isto pode dever-se a:"
 
 #: templates/emails/customer-guest-ineligible.php:40
 #: templates/emails/plain/customer-guest-ineligible.php:31
 msgid "The withdrawal period for this order has expired."
-msgstr "Perioada de retragere pentru această comandă a expirat."
+msgstr "O prazo de resolução para esta encomenda expirou."
 
 #: templates/emails/customer-guest-ineligible.php:41
 #: templates/emails/plain/customer-guest-ineligible.php:32
 msgid "A withdrawal has already been processed for this order."
-msgstr "O retragere a fost deja procesată pentru această comandă."
+msgstr "Já foi processada uma resolução para esta encomenda."
 
 #: templates/emails/customer-guest-ineligible.php:42
 #: templates/emails/plain/customer-guest-ineligible.php:33
 msgid "There are no remaining items eligible for withdrawal."
-msgstr "Nu mai există articole eligibile pentru retragere."
+msgstr "Não existem itens restantes elegíveis para resolução."
 
 #. translators: %s: store contact email
 #: templates/emails/customer-guest-ineligible.php:53
@@ -2053,92 +2038,90 @@ msgstr "Nu mai există articole eligibile pentru retragere."
 msgid ""
 "If you believe this is an error or have questions, please contact us at %s."
 msgstr ""
-"Dacă considerați că este o eroare sau aveți întrebări, vă rugăm să ne "
-"contactați la %s."
+"Se acredita que se trata de um erro ou tem questões, por favor contacte-nos "
+"em %s."
 
 #: templates/emails/customer-guest-verification.php:27
 msgid ""
 "We received your withdrawal request. To complete it, please verify your "
 "billing email address by clicking the button below."
 msgstr ""
-"Am primit cererea dvs. de retragere. Pentru a finaliza, vă rugăm să "
-"verificați adresa de e-mail de facturare făcând clic pe butonul de mai jos."
+"Recebemos o seu pedido de resolução. Para o concluir, por favor verifique o "
+"seu endereço de e-mail de faturação clicando no botão abaixo."
 
 #: templates/emails/customer-guest-verification.php:31
 msgid "Order number:"
-msgstr "Număr de ordine:"
+msgstr "Número de encomenda:"
 
 #: templates/emails/customer-guest-verification.php:62
 msgid "Verify withdrawal request"
-msgstr "Verificați cererea de retragere"
+msgstr "Verificar pedido de resolução"
 
 #: templates/emails/customer-guest-verification.php:68
 #: templates/emails/plain/customer-guest-verification.php:30
 msgid "If you did not request a withdrawal, you can ignore this email."
-msgstr "Dacă nu ați solicitat o retragere, puteți ignora acest e-mail."
+msgstr "Se não solicitou uma resolução, pode ignorar este e-mail."
 
 #. translators: %s: customer first name.
 #: templates/emails/customer-withdrawal-approved.php:32
 #: templates/emails/customer-withdrawal-rejected.php:32
 #: templates/emails/customer-withdrawal-submitted.php:32
 msgid "Hi %s,"
-msgstr "Bună %s,"
+msgstr "Olá %s,"
 
 #. translators: %s: order number.
 #: templates/emails/customer-withdrawal-approved.php:42
 msgid "Great news! Your withdrawal request for order #%s has been approved."
 msgstr ""
-"Vești grozave! Solicitarea dvs. de retragere pentru comanda #%s a fost "
-"aprobată."
+"Boas notícias! O seu pedido de resolução para a encomenda #%s foi aprovado."
 
 #: templates/emails/customer-withdrawal-approved.php:90
 #: templates/emails/customer-withdrawal-rejected.php:103
 msgid "Date Processed"
-msgstr "Data procesării"
+msgstr "Data de Processamento"
 
 #: templates/emails/customer-withdrawal-approved.php:126
 #: templates/emails/customer-withdrawal-submitted.php:110
 msgid "Items"
-msgstr "Articole"
+msgstr "Itens"
 
 #: templates/emails/customer-withdrawal-approved.php:130
 #: templates/emails/customer-withdrawal-submitted.php:116
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
 msgid "Product"
-msgstr "Produs"
+msgstr "Produto"
 
 #: templates/emails/customer-withdrawal-approved.php:146
 msgid "Next Steps"
-msgstr "Următorii pași"
+msgstr "Próximos Passos"
 
 #: templates/emails/customer-withdrawal-approved.php:150
 msgid ""
 "Your withdrawal has been processed. Depending on the type of request, the "
 "following may apply:"
 msgstr ""
-"Retragerea dvs. a fost procesată. În funcție de tipul de cerere, se pot "
-"aplica următoarele:"
+"A sua resolução foi processada. Dependendo do tipo de pedido, poderá aplicar-"
+"se o seguinte:"
 
 #: templates/emails/customer-withdrawal-approved.php:154
 msgid ""
 "If a refund is due, it will be processed to your original payment method. "
 "Please allow a few business days for it to appear."
 msgstr ""
-"Dacă o rambursare este datorată, aceasta va fi procesată prin metoda dvs. de "
-"plată inițială. Vă rugăm să acordați câteva zile lucrătoare pentru ca acesta "
-"să apară."
+"Se for devido um reembolso, será processado para o seu método de pagamento "
+"original. Por favor, aguarde alguns dias úteis até que apareça."
 
 #: templates/emails/customer-withdrawal-approved.php:155
 msgid ""
 "If you need to return any items, you will receive separate return "
 "instructions."
 msgstr ""
-"Dacă trebuie să returnați articole, veți primi instrucțiuni separate de "
-"returnare."
+"Se precisar de devolver quaisquer itens, receberá instruções de devolução "
+"separadas."
 
 #: templates/emails/customer-withdrawal-approved.php:159
 msgid "If you have any questions, please do not hesitate to contact us."
-msgstr "Dacă aveți întrebări, vă rugăm să nu ezitați să ne contactați."
+msgstr "Se tiver alguma questão, não hesite em contactar-nos."
 
 #. translators: %s: order number.
 #: templates/emails/customer-withdrawal-rejected.php:42
@@ -2146,8 +2129,8 @@ msgid ""
 "We have reviewed your withdrawal request for order #%s. Unfortunately, we "
 "are unable to approve this request at this time."
 msgstr ""
-"Am examinat cererea dvs. de retragere pentru comanda #%s. Din păcate, nu "
-"putem aproba această solicitare în acest moment."
+"Analisámos o seu pedido de resolução para a encomenda #%s. Infelizmente, não "
+"nos é possível aprovar este pedido neste momento."
 
 #: templates/emails/customer-withdrawal-rejected.php:132
 msgid ""
@@ -2155,14 +2138,14 @@ msgid ""
 "information to provide, please contact us and we will be happy to review "
 "your case again."
 msgstr ""
-"Dacă credeți că această decizie a fost luată din greșeală sau dacă aveți "
-"informații suplimentare de furnizat, vă rugăm să ne contactați și vom fi "
-"bucuroși să vă revizuim cazul din nou."
+"Se acredita que esta decisão foi tomada por engano ou se tem informações "
+"adicionais a fornecer, por favor contacte-nos e teremos todo o gosto em "
+"reanalisar o seu caso."
 
 #. translators: %s: store contact email address or comma-separated list of addresses.
 #: templates/emails/customer-withdrawal-rejected.php:149
 msgid "You can reach us at %s."
-msgstr "Ne puteți contacta la %s."
+msgstr "Pode contactar-nos em %s."
 
 #. translators: %s: order number.
 #: templates/emails/customer-withdrawal-submitted.php:42
@@ -2170,58 +2153,57 @@ msgid ""
 "We have received your withdrawal request for order #%s. Thank you for "
 "letting us know."
 msgstr ""
-"Am primit cererea dvs. de retragere pentru comanda #%s. Vă mulțumim că ne-"
-"ați anunțat."
+"Recebemos o seu pedido de resolução para a encomenda #%s. Obrigado por nos "
+"informar."
 
 #: templates/emails/customer-withdrawal-submitted.php:139
 msgid "What Happens Next?"
-msgstr "Ce se întâmplă mai departe?"
+msgstr "O Que Acontece a Seguir?"
 
 #: templates/emails/customer-withdrawal-submitted.php:143
 msgid ""
 "Our team will review your request and get back to you as soon as possible. "
 "You will receive another email once a decision has been made."
 msgstr ""
-"Echipa noastră vă va examina solicitarea și vă va reveni cât mai curând "
-"posibil. Veți primi un alt e-mail odată ce a fost luată o decizie."
+"A nossa equipa irá analisar o seu pedido e responder-lhe-á o mais "
+"rapidamente possível. Receberá outro e-mail assim que uma decisão for tomada."
 
 #: templates/emails/customer-withdrawal-submitted.php:147
 msgid ""
 "If you have any questions in the meantime, please do not hesitate to contact "
 "us."
-msgstr ""
-"Dacă aveți întrebări între timp, vă rugăm să nu ezitați să ne contactați."
+msgstr "Se tiver alguma questão entretanto, não hesite em contactar-nos."
 
 #: templates/emails/parts/withdrawal-verification-code-row.php:27
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
 msgid "Receipt hash"
-msgstr "Hash chitanță"
+msgstr "Hash do recibo"
 
 #: templates/emails/plain/customer-guest-verification.php:15
 msgid ""
 "We received your withdrawal request. To complete it, please verify your "
 "billing email address using the link below."
 msgstr ""
-"Am primit cererea dvs. de retragere. Pentru a o finaliza, vă rugăm să vă "
-"verificați adresa de e-mail de facturare utilizând linkul de mai jos."
+"Recebemos o seu pedido de resolução. Para o concluir, por favor verifique o "
+"seu endereço de e-mail de faturação utilizando a ligação abaixo."
 
 #. translators: %s: order number
 #: templates/emails/plain/customer-guest-verification.php:19
 msgid "Order number: %s"
-msgstr "Număr comandă: %s"
+msgstr "Número de encomenda: %s"
 
 #. translators: %s: reason
 #: templates/emails/plain/customer-guest-verification.php:24
 msgid "Reason: %s"
-msgstr "Motiv: %s"
+msgstr "Motivo: %s"
 
 #: wt-eu-withdrawal-button.php:111
 msgid ""
 "WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
 "installed and active."
 msgstr ""
-"Butonul de retragere WebToffee UE pentru WooCommerce necesită ca WooCommerce "
-"să fie instalat și activ."
+"O WebToffee EU Withdrawal Button para WooCommerce requer que o WooCommerce "
+"esteja instalado e ativo."
 
 #: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
 msgid "WooCommerce"
@@ -2229,63 +2211,64 @@ msgstr "WooCommerce"
 
 #: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
 msgid "Customer-initiated order cancellations and partial refunds."
-msgstr "Anulări și rambursări parțiale ale comenzilor inițiate de client."
+msgstr ""
+"Cancelamentos de encomendas e reembolsos parciais iniciados pelo consumidor."
 
 #: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
 msgid "Requests"
-msgstr "Cereri"
+msgstr "Pedidos"
 
 #: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
 msgid "Review request"
-msgstr "Solicitare de recenzie"
+msgstr "Pedido de avaliação"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
 msgid "All Statuses"
-msgstr "Toate stările"
+msgstr "Todos os Estados"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
 msgid "Date From"
-msgstr "Data de la"
+msgstr "Data De"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
 msgid "Date To"
-msgstr "Data la"
+msgstr "Data Até"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
 msgid "Search"
-msgstr "Se caută…"
+msgstr "Pesquisar"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
 msgid "Order # or receipt hash"
-msgstr "Comandă nr. sau hash chitanță"
+msgstr "Encomenda # ou hash do recibo"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
 msgid "Reset"
-msgstr "Resetează"
+msgstr "Repor"
 
 #: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
 msgid "Apply Filters"
-msgstr "Aplicați filtre"
+msgstr "Aplicar Filtros"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:102
 msgid "No change vs last week"
-msgstr "Nicio schimbare față de săptămâna trecută"
+msgstr "Sem alteração face à semana passada"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:113
 msgid "No data"
-msgstr "Fără date"
+msgstr "Sem dados"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:119
 msgid "No change"
-msgstr "Nicio schimbare"
+msgstr "Sem alteração"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:135
 msgid "Open Requests"
-msgstr "Cereri deschise"
+msgstr "Pedidos em Aberto"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:149
 msgid "Approved (30d)"
-msgstr "Aprobat (30 d)"
+msgstr "Aprovados (30d)"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:191
 msgid "ID"
@@ -2295,122 +2278,122 @@ msgstr "ID"
 #: react/src/components/RequestDetail.jsx:203
 #: react/src/components/RequestsList.jsx:192
 msgid "Order #"
-msgstr "Comanda #"
+msgstr "Encomenda #"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
 msgid "Actions"
-msgstr "Acțiuni"
+msgstr "Ações"
 
 #: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:273
 msgid "View"
-msgstr "Vizualizează"
+msgstr "Ver"
 
 #. translators: 1: first visible item number, 2: last visible item number, 3: total item count
 #: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:287
 msgid "Showing %1$d–%2$d of %3$d"
-msgstr "Se afișează %1$d–%2$d din %3$d"
+msgstr "A mostrar %1$d–%2$d de %3$d"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:292
 msgid "Showing 0 of 0"
-msgstr "Se afișează 0 din 0"
+msgstr "A mostrar 0 de 0"
 
 #: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
 msgid "Auto-approval"
-msgstr "Aprobare automată"
+msgstr "Aprovação automática"
 
 #: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
 msgid "User"
-msgstr "Utilizator"
+msgstr "Utilizador"
 
 #: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
 msgid "Unknown"
-msgstr "Necunoscut"
+msgstr "Desconhecido"
 
 #: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
 msgid "No status changes recorded."
-msgstr "Nu au fost înregistrate modificări de stare."
+msgstr "Nenhuma alteração de estado registada."
 
 #: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
 msgid "No activity recorded."
-msgstr "Nu a fost înregistrată nicio activitate."
+msgstr "Nenhuma atividade registada."
 
 #: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
 msgid "Source"
-msgstr "Sursă"
+msgstr "Origem"
 
 #: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
 msgid "Action"
-msgstr "Acțiune"
+msgstr "Ação"
 
 #: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
 msgid "Note"
-msgstr "Notă"
+msgstr "Nota"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
 #: react/src/components/RequestDetail.jsx:169
 msgid "Back to List"
-msgstr "Înapoi la listă"
+msgstr "Voltar à Lista"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
 msgid "Request Information"
-msgstr "Solicitați informații"
+msgstr "Informação do Pedido"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
 msgid "No reason provided"
-msgstr "Niciun motiv furnizat"
+msgstr "Nenhum motivo indicado"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
 msgid "Refund method details"
-msgstr "Detalii privind metoda de rambursare"
+msgstr "Detalhes do método de reembolso"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
 msgid "Created"
-msgstr "Creat"
+msgstr "Criado"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
 msgid "Order Items"
-msgstr "Comanda articole"
+msgstr "Itens da Encomenda"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
 msgid "Line Total"
-msgstr "Linia totală"
+msgstr "Total da Linha"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
 msgid "Withdrawal approved"
-msgstr "Retragerea aprobată"
+msgstr "Resolução aprovada"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
 msgid "Withdrawal rejected"
-msgstr "Retragere respinsă"
+msgstr "Resolução rejeitada"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
 msgid "Withdrawal request submitted"
-msgstr "Solicitare de retragere depusă"
+msgstr "Pedido de resolução submetido"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
 msgid "Not included"
-msgstr "Nu este inclus"
+msgstr "Não incluído"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:333
 msgid "No order items were found for this request."
-msgstr "Nu au fost găsite articole de comandă pentru această solicitare."
+msgstr "Não foram encontrados itens da encomenda para este pedido."
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:342
 msgid "Status Timeline"
-msgstr "Cronologie de stare"
+msgstr "Cronologia de Estados"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
 msgid "Activity Log"
-msgstr "Jurnal de activitate"
+msgstr "Registo de Atividade"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:361
 #: react/src/components/RequestDetail.jsx:391
 msgid "Reject Request"
-msgstr "Respinge cererea"
+msgstr "Rejeitar Pedido"
 
 #: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:368
 msgid "Rejection Reason"
-msgstr "Motivul respingerii"
+msgstr "Motivo da Rejeição"
 
 #. translators: %d: number of selected products
 #. translators: %d: number of selected categories
@@ -2421,7 +2404,7 @@ msgstr "Motivul respingerii"
 #: react/src/components/OrderStatusPickerField.jsx:106
 #: react/src/components/ProductSearchField.jsx:186
 msgid "%d selected"
-msgstr "%d selectat"
+msgstr "%d selecionado(s)"
 
 #: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
 #: react/build/admin-dashboard.js:5
@@ -2429,102 +2412,102 @@ msgstr "%d selectat"
 #: react/src/components/OrderStatusPickerField.jsx:116
 #: react/src/components/ProductSearchField.jsx:195
 msgid "Clear all"
-msgstr "Ștergeți totul"
+msgstr "Limpar tudo"
 
 #: react/build/admin-dashboard.js:3
 #: react/src/components/ProductSearchField.jsx:206
 msgid "Remove product"
-msgstr "Scoateți produsul"
+msgstr "Remover produto"
 
 #: react/build/admin-dashboard.js:3
 #: react/src/components/ProductSearchField.jsx:221
 msgid "Search for a product…"
-msgstr "Cauta un produs..."
+msgstr "Pesquisar um produto…"
 
 #: react/build/admin-dashboard.js:3
 #: react/src/components/ProductSearchField.jsx:237
 msgid "Searching…"
-msgstr "Se caută…"
+msgstr "A pesquisar…"
 
 #: react/build/admin-dashboard.js:3
 #: react/src/components/ProductSearchField.jsx:239
 msgid "No products found."
-msgstr "Nu s-au găsit produse."
+msgstr "Nenhum produto encontrado."
 
 #: react/build/admin-dashboard.js:4
 #: react/src/components/CategoryExclusionField.jsx:106
 msgid "Remove category"
-msgstr "Eliminați categoria"
+msgstr "Remover categoria"
 
 #: react/build/admin-dashboard.js:4
 #: react/src/components/CategoryExclusionField.jsx:121
 msgid "Search categories…"
-msgstr "Caută categorii..."
+msgstr "Pesquisar categorias…"
 
 #: react/build/admin-dashboard.js:4
 #: react/src/components/CategoryExclusionField.jsx:160
 msgid "No categories match your search."
-msgstr "Nicio categorie nu corespunde căutării dvs."
+msgstr "Nenhuma categoria corresponde à sua pesquisa."
 
 #: react/build/admin-dashboard.js:4
 #: react/src/components/CategoryExclusionField.jsx:136
 msgid "Type to filter categories…"
-msgstr "Tastați pentru a filtra categoriile..."
+msgstr "Escreva para filtrar categorias…"
 
 #: react/build/admin-dashboard.js:4
 #: react/src/components/CategoryExclusionField.jsx:73
 msgid "No product categories found."
-msgstr "Nu s-au găsit categorii de produse."
+msgstr "Nenhuma categoria de produto encontrada."
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/OrderStatusPickerField.jsx:129
 msgid "Remove status"
-msgstr "Eliminați statusul"
+msgstr "Remover estado"
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/OrderStatusPickerField.jsx:144
 msgid "Search order statuses…"
-msgstr "Căutați statusuri ale comenzii…"
+msgstr "Pesquisar estados de encomenda…"
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/OrderStatusPickerField.jsx:183
 msgid "No order statuses match your search."
-msgstr "Niciun status al comenzii nu corespunde căutării dvs."
+msgstr "Nenhum estado de encomenda corresponde à sua pesquisa."
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/OrderStatusPickerField.jsx:159
 msgid "Type to filter order statuses…"
-msgstr "Tastați pentru a filtra statusurile comenzii…"
+msgstr "Escreva para filtrar estados de encomenda…"
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/OrderStatusPickerField.jsx:93
 msgid "No order statuses found."
-msgstr "Nu s-au găsit statusuri ale comenzii."
+msgstr "Nenhum estado de encomenda encontrado."
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:39
 msgid "This email address is already added."
-msgstr "Această adresă de e-mail este deja adăugată."
+msgstr "Este endereço de e-mail já foi adicionado."
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:70
 msgid "Remove email"
-msgstr "Eliminați e-mailul"
+msgstr "Remover e-mail"
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:80
 msgid "Add at least one recipient to save settings."
-msgstr "Adăugați cel puțin un destinatar pentru a salva setările."
+msgstr "Adicione pelo menos um destinatário para guardar as definições."
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:89
 msgid "Enter email address…"
-msgstr "Introdu adresa de e-mail..."
+msgstr "Introduzir endereço de e-mail…"
 
 #: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:103
 msgid "Add"
-msgstr "Adaugă"
+msgstr "Adicionar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:237
 msgid "Global"
@@ -2532,123 +2515,127 @@ msgstr "Global"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
 msgid "WooCommerce only"
-msgstr "Doar WooCommerce"
+msgstr "Apenas WooCommerce"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:253
 #: react/src/components/SettingsPage.jsx:1288
 msgid "General"
-msgstr "General"
+msgstr "Geral"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
 msgid "Rules & Exclusions"
-msgstr "Reguli și excluderi"
+msgstr "Regras e Exclusões"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
 msgid "Workflow"
-msgstr "Flux de lucru"
+msgstr "Fluxo de Trabalho"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
 msgid "Advanced"
-msgstr "Avansat"
+msgstr "Avançado"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:390
 #: react/src/components/SettingsPage.jsx:427
 msgid "Confirm import"
-msgstr "Confirmați importul"
+msgstr "Confirmar importação"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:400
 msgid "Export version:"
-msgstr "Versiunea exportului:"
+msgstr "Versão da exportação:"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:402
 msgid "Current version:"
-msgstr "Versiunea curentă:"
+msgstr "Versão atual:"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:408
 msgid ""
 "The export file is from a newer version. Some settings may not be compatible "
 "with your current version. Consider updating the plugin before importing."
 msgstr ""
-"Fișierul de export provine dintr-o versiune mai nouă. Unele setări pot să nu "
-"fie compatibile cu versiunea dvs. curentă. Luați în considerare actualizarea "
-"pluginului înainte de import."
+"O ficheiro de exportação é de uma versão mais recente. Algumas definições "
+"podem não ser compatíveis com a sua versão atual. Considere atualizar o "
+"plugin antes de importar."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:413
 msgid ""
 "This will overwrite all current plugin settings. This action cannot be "
 "undone."
 msgstr ""
-"Aceasta va suprascrie toate setările curente ale pluginului. Această acțiune "
-"nu poate fi anulată."
+"Isto irá substituir todas as definições atuais do plugin. Esta ação não pode "
+"ser desfeita."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:335
 msgid "Importing settings..."
-msgstr "Se importă setările..."
+msgstr "A importar definições..."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:347
 msgid "Settings imported successfully. Reloading page..."
-msgstr "Setările au fost importate cu succes. Se reîncarcă pagina..."
+msgstr "Definições importadas com sucesso. A recarregar a página..."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:297
 msgid "Settings exported successfully."
-msgstr "Setările au fost exportate cu succes."
+msgstr "Definições exportadas com sucesso."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:456
 msgid "Export settings"
-msgstr "Exportați setările"
+msgstr "Exportar definições"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:463
 msgid "Import settings"
-msgstr "Importați setările"
+msgstr "Importar definições"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:320
 msgid "Invalid settings file. Please select a valid export file."
-msgstr "Fișier de setări nevalid. Vă rugăm să selectați un fișier de export valid."
+msgstr ""
+"Ficheiro de definições inválido. Por favor, selecione um ficheiro de "
+"exportação válido."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:326
 msgid "Could not read the file. Make sure it is a valid JSON file."
-msgstr "Nu s-a putut citi fișierul. Asigurați-vă că este un fișier JSON valid."
+msgstr ""
+"Não foi possível ler o ficheiro. Certifique-se de que é um ficheiro JSON "
+"válido."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:468
 msgid ""
 "Export all plugin settings as a JSON file, or import settings from a "
 "previously exported file."
 msgstr ""
-"Exportați toate setările pluginului ca fișier JSON sau importați setările "
-"dintr-un fișier exportat anterior."
+"Exporte todas as definições do plugin como ficheiro JSON, ou importe "
+"definições de um ficheiro previamente exportado."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:587
 msgid "Withdrawal Terms & Conditions"
-msgstr "Termenii și condițiile de retragere"
+msgstr "Termos e Condições de Resolução"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
 msgid "Published"
-msgstr "Publicată"
+msgstr "Publicado"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:611
 msgid "Preview"
-msgstr "Previzualizare"
+msgstr "Pré-visualizar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:631
 msgid "Edit page"
-msgstr "Editați pagina"
+msgstr "Editar página"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:509
 msgid "Are you sure you want to delete the Terms & Conditions page?"
-msgstr "Sigur doriți să ștergeți pagina de termeni și condiții?"
+msgstr "Tem a certeza de que pretende eliminar a página de Termos e Condições?"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
 #: react/src/components/SettingsPage.jsx:527
 msgid "Failed to delete page."
-msgstr "Nu s-a putut șterge pagina."
+msgstr "Falha ao eliminar a página."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:522
 msgid "Page deleted."
-msgstr "Pagina a fost ștearsă."
+msgstr "Página eliminada."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:650
 msgid "Delete"
-msgstr "Ștergere"
+msgstr "Eliminar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:656
 msgid ""
@@ -2656,7 +2643,7 @@ msgid ""
 "[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
 "[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
 msgstr ""
-"Shortcode-uri disponibile: [wbte_ewb_excluded_product_types], "
+"Shortcodes disponíveis: [wbte_ewb_excluded_product_types], "
 "[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
 "[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
 
@@ -2666,42 +2653,43 @@ msgid ""
 "EU. The page includes dynamic shortcodes for excluded products, categories, "
 "and product types that stay in sync with your settings."
 msgstr ""
-"Generați o pagină de termeni și condiții de retragere bazată pe Directiva UE "
-"2011/83/UE. Pagina include shortcode-uri dinamice pentru produsele, "
-"categoriile și tipurile de produse excluse, sincronizate cu setările dvs."
+"Gere uma página de Termos e Condições de resolução baseada na Diretiva "
+"2011/83/UE. A página inclui shortcodes dinâmicos para produtos, categorias e "
+"tipos de produto excluídos que se mantêm sincronizados com as suas "
+"definições."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:499
 #: react/src/components/SettingsPage.jsx:502
 msgid "Failed to create page."
-msgstr "Nu s-a putut crea pagina."
+msgstr "Falha ao criar a página."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
 msgid "Page created."
-msgstr "Pagina a fost creată."
+msgstr "Página criada."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:572
 msgid "Creating…"
-msgstr "Se creează…"
+msgstr "A criar…"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:572
 msgid "Generate T&C page"
-msgstr "Generare pagină T&C"
+msgstr "Gerar página de T&C"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:718
 msgid "-- Select a page --"
-msgstr "-- Selectați o pagină --"
+msgstr "-- Selecione uma página --"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:731
 msgid "Failed to load settings."
-msgstr "Nu s-au încărcat setările."
+msgstr "Falha ao carregar as definições."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:811
 msgid "Loading settings..."
-msgstr "Se încarcă setările..."
+msgstr "A carregar definições..."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:820
 msgid "Unable to load settings."
-msgstr "Nu se pot încărca setările."
+msgstr "Não foi possível carregar as definições."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1190
 msgid "Shortcode"
@@ -2710,335 +2698,295 @@ msgstr "Shortcode"
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1291
 msgid "Core withdrawal form behaviour and display preferences."
 msgstr ""
-"Comportamentul principal al formularului de retragere și preferințele de "
-"afișare."
+"Comportamento principal do formulário de resolução e preferências de "
+"exibição."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1296
 msgid "Withdrawal page"
-msgstr "Pagina de retragere"
+msgstr "Página de resolução"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1314
 msgid "Show withdrawal button in footer"
-msgstr "Afișează butonul de retragere în subsol"
+msgstr "Mostrar botão de resolução no rodapé"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1315
 msgid "Display a withdrawal button or link in the site footer."
-msgstr "Afișează un buton sau un link de retragere în subsolul site-ului."
+msgstr "Exibir um botão ou ligação de resolução no rodapé do site."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:928
 msgid "Customize appearance"
-msgstr "Personalizează aspectul"
+msgstr "Personalizar aparência"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:932
 msgid "Footer"
-msgstr "Subsol"
+msgstr "Rodapé"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:933
 msgid "My account page"
-msgstr "Pagina Contul meu"
+msgstr "Página da minha conta"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:943
 msgid "Enable \"Show withdrawal button in footer\" above to customize."
 msgstr ""
-"Activează „Afișează butonul de retragere în subsol” de mai sus pentru a "
-"personaliza."
+"Ative \"Mostrar botão de resolução no rodapé\" acima para personalizar."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:944
 msgid "Enable \"Show withdrawal button in My Account\" above to customize."
 msgstr ""
-"Activează „Afișează butonul de retragere în Contul meu” de mai sus pentru a "
-"personaliza."
+"Ative \"Mostrar botão de resolução em A Minha Conta\" acima para "
+"personalizar."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:951
 msgid "Link text"
-msgstr "Text link"
+msgstr "Texto da ligação"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:951
 msgid "Button text"
-msgstr "Text buton"
+msgstr "Texto do botão"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:962
 msgid "Display as"
-msgstr "Afișează ca"
+msgstr "Exibir como"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:965
 msgid "Link"
-msgstr "Link"
+msgstr "Ligação"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:966
 msgid "Button"
-msgstr "Buton"
+msgstr "Botão"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:973
 msgid "Colors"
-msgstr "Culori"
+msgstr "Cores"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:975
 msgid "Theme default"
-msgstr "Implicit din temă"
+msgstr "Predefinição do tema"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:975
 msgid "Custom"
-msgstr "Personalizat"
+msgstr "Personalizado"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:996
 msgid "Background"
-msgstr "Fundal"
+msgstr "Fundo"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1004
 msgid "Text"
-msgstr "Text"
+msgstr "Texto"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1012
 msgid "Hover bg"
-msgstr "Fundal la hover"
+msgstr "Fundo ao passar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1020
 msgid "Hover text"
-msgstr "Text la hover"
+msgstr "Texto ao passar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1324
 msgid "Footer link text"
-msgstr "Textul linkului de subsol"
+msgstr "Texto da ligação do rodapé"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1325
 msgid "The text displayed for the footer withdrawal link."
-msgstr "Textul afișat pentru linkul de retragere din subsol."
+msgstr "O texto exibido para a ligação de resolução no rodapé."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1340
 msgid "Display scope"
-msgstr "Afișează domeniul de aplicare"
+msgstr "Âmbito de exibição"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1354
 msgid "Allow partial withdrawals"
-msgstr "Permite retrageri parțiale"
+msgstr "Permitir resoluções parciais"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1356
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Recomendado"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1360
 msgid "Withdrawal period"
-msgstr "Perioada de retragere"
+msgstr "Prazo de resolução"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1372
 msgid "days"
-msgstr "zile"
+msgstr "dias"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1390
 msgid "Start countdown from"
-msgstr "Începe numărătoarea inversă de la"
+msgstr "Iniciar contagem a partir de"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1405
 msgid "Reason required"
-msgstr "Motiv necesar"
+msgstr "Motivo obrigatório"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1428
 msgid "Exclusions"
-msgstr "Excluderile"
+msgstr "Exclusões"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1431
 msgid ""
 "Exclude product types, categories, or specific products from withdrawal "
 "eligibility."
 msgstr ""
-"Excludeți tipurile de produse, categoriile sau anumite produse de la "
-"eligibilitatea pentru retragere."
+"Excluir tipos de produto, categorias ou produtos específicos da "
+"elegibilidade para resolução."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1436
 msgid "Excluded product types"
-msgstr "Tipuri de produse excluse"
+msgstr "Tipos de produto excluídos"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1437
 msgid "Product types that cannot be withdrawn."
-msgstr "Tipuri de produse care nu pot fi retrase."
+msgstr "Tipos de produto que não podem ser objeto de resolução."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1452
 msgid "Excluded categories"
-msgstr "Categoriile excluse"
+msgstr "Categorias excluídas"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1453
 msgid "Products in these categories cannot be withdrawn."
-msgstr "Produsele din aceste categorii nu pot fi retrase."
+msgstr "Os produtos nestas categorias não podem ser objeto de resolução."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1463
 msgid "Excluded products"
-msgstr "Produse excluse"
+msgstr "Produtos excluídos"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1464
 msgid "Search and select specific products that cannot be withdrawn."
-msgstr "Căutați și selectați anumite produse care nu pot fi retrase."
+msgstr ""
+"Pesquise e selecione produtos específicos que não podem ser objeto de "
+"resolução."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1486
 msgid "Order status"
-msgstr "Starea comenzii"
+msgstr "Estado da encomenda"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1489
 msgid ""
 "Automatically update order statuses when withdrawal requests are submitted "
 "or approved."
 msgstr ""
-"Actualizați automat stările comenzilor atunci când solicitările de retragere "
-"sunt trimise sau aprobate."
+"Atualizar automaticamente os estados da encomenda quando os pedidos de "
+"resolução são submetidos ou aprovados."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1503
 #: react/src/components/SettingsPage.jsx:1528
 msgid "Set status to"
-msgstr "Setați starea la"
+msgstr "Definir estado para"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1555
 msgid ""
 "Configure admin notification recipients and the customer contact email shown "
 "in rejected withdrawal emails."
 msgstr ""
-"Configurați destinatarii notificărilor pentru administrator și adresa de e-"
-"mail de contact a clientului afișată în e-mailurile de retragere respinse."
+"Configure os destinatários de notificação de administração e o e-mail de "
+"contacto do consumidor exibido nos e-mails de resolução rejeitada."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1561
 msgid "Email addresses that receive the new withdrawal request notification."
 msgstr ""
-"Adresele de e-mail care primesc noua notificare privind cererea de retragere."
+"Endereços de e-mail que recebem a notificação de novo pedido de resolução."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1569
 msgid "Customer contact email"
-msgstr "E-mail de contact pentru clienți"
+msgstr "E-mail de contacto do consumidor"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1570
 msgid ""
 "Email address shown to customers when a withdrawal request is rejected and "
 "they need to contact you."
 msgstr ""
-"Adresa de e-mail afișată clienților când o cerere de retragere este respinsă "
-"și trebuie să vă contacteze."
+"Endereço de e-mail exibido aos consumidores quando um pedido de resolução é "
+"rejeitado e precisam de o contactar."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1597
 msgid "Withdrawal button shortcode"
-msgstr "Cod scurt pentru butonul de retragere"
+msgstr "Shortcode do botão de resolução"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
 msgid ""
 " — Optional. Custom button text. Uses the default shortcode label when "
 "omitted."
 msgstr ""
-"— Opțional. Textul butonului personalizat. Folosește eticheta de shortcode "
-"implicită când este omisă."
+" — Opcional. Texto personalizado do botão. Utiliza o texto predefinido do "
+"shortcode quando omitido."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1615
 msgid " — Optional. Extra CSS classes added to the button."
-msgstr "— Opțional. Clase CSS suplimentare adăugate la buton."
+msgstr " — Opcional. Classes CSS adicionais aplicadas ao botão."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1632
 msgid "Data management"
-msgstr "Gestionarea datelor"
+msgstr "Gestão de dados"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1635
 msgid "Control what happens to plugin data when the plugin is removed."
 msgstr ""
-"Controlați ce se întâmplă cu datele pluginului atunci când pluginul este "
-"eliminat."
+"Controle o que acontece aos dados do plugin quando o plugin é removido."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1643
 msgid "Delete data on uninstall"
-msgstr "Ștergeți datele la dezinstalare"
+msgstr "Eliminar dados ao desinstalar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1644
 msgid ""
 "Remove all plugin data (settings, withdrawal requests, database tables) when "
 "the plugin is uninstalled. This action is irreversible."
 msgstr ""
-"Eliminați toate datele pluginului (setări, solicitări de retragere, tabele "
-"bazei de date) atunci când pluginul este dezinstalat. Această acțiune este "
-"ireversibilă."
+"Remover todos os dados do plugin (definições, pedidos de resolução, tabelas "
+"da base de dados) quando o plugin é desinstalado. Esta ação é irreversível."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1645
 msgid "Destructive"
-msgstr "Destructive"
+msgstr "Destrutivo"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1671
 msgid "Add at least one recipient to save"
-msgstr "Adăugați cel puțin un destinatar pentru a salva"
+msgstr "Adicione pelo menos um destinatário para guardar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1673
 msgid "Unsaved changes"
-msgstr "Modificări nesalvate"
+msgstr "Alterações não guardadas"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1674
 msgid "All changes saved"
-msgstr "Toate modificările au fost salvate"
+msgstr "Todas as alterações guardadas"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1685
 msgid "Discard"
-msgstr "Aruncă"
+msgstr "Descartar"
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:786
 msgid "Settings saved successfully."
-msgstr "Setările au fost salvate cu succes."
+msgstr "Definições guardadas com sucesso."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:791
 msgid "Failed to save settings."
-msgstr "Nu s-au salvat setările."
+msgstr "Falha ao guardar as definições."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:772
 msgid "Add at least one admin notification recipient before saving."
 msgstr ""
-"Adăugați cel puțin un destinatar de notificare de administrator înainte de a "
-"salva."
+"Adicione pelo menos um destinatário de notificação de administração antes de "
+"guardar."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1695
 msgid "Saving..."
-msgstr "Economisire..."
+msgstr "A guardar..."
 
 #: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1696
 msgid "Save settings"
-msgstr "Salvați setările"
+msgstr "Guardar definições"
 
 #: react/src/components/AdminWarnings.jsx:59
 msgid "Fix this"
-msgstr "Remediază"
+msgstr "Corrigir isto"
 
 #: react/src/components/AdminWarnings.jsx:69
 msgid "Documentation"
-msgstr "Documentație"
+msgstr "Documentação"
 
 #: react/src/components/AdminWarnings.jsx:76
 msgid "Dismiss warning"
-msgstr "Închide avertismentul"
-
-#~ msgid "Actor"
-#~ msgstr "Actor"
-
-#~ msgid ""
-#~ "You've been using WebToffee EU Withdrawal Button for a week. Leave a "
-#~ "review!"
-#~ msgstr ""
-#~ "Folosiți WebToffee EU Withdrawal Button de o săptămână. Lăsați o recenzie!"
-
-#~ msgid ""
-#~ "You've received 10+ withdrawal requests. Leave a review for WebToffee EU "
-#~ "Withdrawal Button!"
-#~ msgstr ""
-#~ "Ați primit peste 10 solicitări de retragere. Lăsați o recenzie pentru "
-#~ "WebToffee EU Withdrawal Button!"
-
-#, php-format
-#~ msgid "Request #%1$s: %2$s"
-#~ msgstr "Solicitare #%1$s: %2$s"
-
-#, php-format
-#~ msgid "Submitted on %s"
-#~ msgstr "Trimis pe %s"
-
-#~ msgid "Embed footer link"
-#~ msgstr "Încorporați linkul de subsol"
-
-#~ msgid "System"
-#~ msgstr "Sistem"
-
-#~ msgid "Verification code:"
-#~ msgstr "Cod de verificare:"
-
-#~ msgid "Verification code"
-#~ msgstr "Cod de verificare"
-
-#~ msgid "Search by order #"
-#~ msgstr "Căutați după comanda #"
+msgstr "Dispensar aviso"

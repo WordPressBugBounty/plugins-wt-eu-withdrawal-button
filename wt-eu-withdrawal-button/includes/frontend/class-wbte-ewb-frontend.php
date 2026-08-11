@@ -104,6 +104,7 @@ class Wbte_Ewb_Frontend {
 			array(
 				'ajax_url'                  => admin_url( 'admin-ajax.php' ),
 				'rest_url'                  => esc_url_raw( rest_url( 'wbte-ewb/v1/' ) ),
+				'locale'                    => determine_locale(),
 				'nonce'                     => wp_create_nonce( 'wp_rest' ),
 				'currency_symbol'           => html_entity_decode( get_woocommerce_currency_symbol(), ENT_QUOTES, 'UTF-8' ),
 				'currency_position'         => get_option( 'woocommerce_currency_pos', 'left' ),
@@ -112,6 +113,9 @@ class Wbte_Ewb_Frontend {
 				'currency_thousand_sep'     => wc_get_price_thousand_separator(),
 				'allow_partial_withdrawals' => Wbte_Ewb_Settings::get( 'allow_partial_withdrawals', 'yes' ),
 				'reason_required'           => Wbte_Ewb_Settings::get( 'reason_required', 'no' ),
+				'show_terms_checkbox'       => $this->get_addon_setting( 'show_terms_checkbox', 'no' ),
+				'terms_url'                 => class_exists( 'Wbte_Ewb_Terms_Page' ) ? Wbte_Ewb_Terms_Page::get_page_url() : '',
+				'terms_link_text'           => $this->get_addon_setting( 'terms_link_text', __( 'I have read and agree to the withdrawal terms and conditions', 'wt-eu-withdrawal-button' ) ),
 				'i18n'                      => $this->get_frontend_i18n(),
 			)
 		);
@@ -124,6 +128,23 @@ class Wbte_Ewb_Frontend {
 	 *
 	 * @return array<string, string>
 	 */
+	/**
+	 * Get a setting from the pro/marketplace addon.
+	 *
+	 * @param string $key     Setting key.
+	 * @param mixed  $default Default value.
+	 * @return mixed
+	 */
+	private function get_addon_setting( $key, $default = '' ) {
+		if ( class_exists( 'Wbte_Ewb_Advanced_Settings' ) ) {
+			return Wbte_Ewb_Advanced_Settings::get( $key, $default );
+		}
+		if ( class_exists( 'Wbte_Ewb_Pro_Settings' ) ) {
+			return Wbte_Ewb_Pro_Settings::get( $key, $default );
+		}
+		return $default;
+	}
+
 	private function get_frontend_i18n() {
 		$i18n = array(
 			'loading'              => __( 'Loading...', 'wt-eu-withdrawal-button' ),
@@ -149,7 +170,7 @@ class Wbte_Ewb_Frontend {
 			'label_reason'         => __( 'Reason for withdrawal', 'wt-eu-withdrawal-button' ),
 			'request_type_full'    => __( 'Full withdrawal', 'wt-eu-withdrawal-button' ),
 			'request_type_partial' => __( 'Partial withdrawal', 'wt-eu-withdrawal-button' ),
-			'guest_queue_success'  => Wbte_Ewb_Guest_Verification::get_queue_success_message(),
+			'guest_queue_success'      => Wbte_Ewb_Guest_Verification::get_queue_success_message(),
 		);
 
 		/**
@@ -326,4 +347,5 @@ class Wbte_Ewb_Frontend {
 	public function get_my_account() {
 		return $this->my_account;
 	}
+
 }

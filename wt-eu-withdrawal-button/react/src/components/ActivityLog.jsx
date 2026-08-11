@@ -31,7 +31,7 @@ const ActivityLog = ( { logs } ) => {
 			<thead>
 				<tr>
 					<th>{ __( 'Date', 'wt-eu-withdrawal-button' ) }</th>
-					<th>{ __( 'Actor', 'wt-eu-withdrawal-button' ) }</th>
+					<th>{ __( 'Source', 'wt-eu-withdrawal-button' ) }</th>
 					<th>{ __( 'Action', 'wt-eu-withdrawal-button' ) }</th>
 					<th>{ __( 'Note', 'wt-eu-withdrawal-button' ) }</th>
 				</tr>

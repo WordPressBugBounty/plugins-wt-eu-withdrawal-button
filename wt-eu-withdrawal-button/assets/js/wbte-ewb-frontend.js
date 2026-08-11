@@ -16,6 +16,7 @@
 	var i18n    = params.i18n || {};
 	var restUrl = params.rest_url || '';
 	var nonce   = params.nonce || '';
+	var locale  = params.locale || '';
 
 	/**
 	 * Fetch eligible items for a given order from the REST API.
@@ -62,6 +63,11 @@
 			data: {}
 		};
 
+		// Pass locale so the REST API returns translated strings.
+		if ( locale ) {
+			ajaxSettings.data.locale = locale;
+		}
+
 		// Guest requests need order_number + email for permission.
 		if ( isGuest ) {
 			ajaxSettings.data.order_number = orderNumber;
@@ -87,6 +93,10 @@
 				}
 
 				renderItems( items );
+
+				// Allow addons to extend the form after items load.
+				$( document ).trigger( 'wbte_ewb_items_loaded', [ response, items ] );
+
 				itemsValidated = true;
 				setSubmitEnabled( true );
 			} )
@@ -217,11 +227,11 @@
 			if ( ! withdrawable ) {
 				// Non-withdrawable: show disabled with reason.
 				html = '<div class="wbte-ewb-item wbte-ewb-item--disabled">' +
-					'<input type="checkbox" disabled />' +
-					'<label class="wbte-ewb-item-name">' + escHtml( name ) + '</label>' +
+					'<input type="checkbox" id="' + escAttr( inputId ) + '" disabled aria-disabled="true" />' +
+					'<label for="' + escAttr( inputId ) + '" class="wbte-ewb-item-name">' + escHtml( name ) + '</label>' +
 					'<span class="wbte-ewb-item-qty">&times; ' + escHtml( maxQty ) + '</span>' +
 					'<span class="wbte-ewb-item-price">' + formatPrice( price ) + '</span>' +
-					'<span class="wbte-ewb-item-reason">' + escHtml( reason ) + '</span>' +
+					'<span class="wbte-ewb-item-reason" role="alert">' + escHtml( reason ) + '</span>' +
 					'</div>';
 			} else {
 				var checked = ! allowPartial ? ' checked disabled' : ' checked';
@@ -232,7 +242,7 @@
 							'&times; ' +
 							'<input type="number" class="wbte-ewb-item-qty-select" name="item_qty[' + escAttr( itemId ) + ']"' +
 							' value="' + escAttr( maxQty ) + '" min="1" max="' + escAttr( maxQty ) + '"' +
-							' aria-label="' + escAttr( name + ' ' + ( i18n.withdraw_qty || 'quantity' ) ) + '" />' +
+							' aria-label="' + escAttr( name + ' ' + ( i18n.withdraw_qty || 'quantity' ) + ', max ' + maxQty ) + '" />' +
 						'</span>';
 				} else {
 					qtyMarkup = '<span class="wbte-ewb-item-qty">&times; ' + escHtml( maxQty ) + '</span>';
@@ -251,6 +261,18 @@
 					'</div>';
 			}
 
+			// Append bundled child items under the parent.
+			if ( item.bundled_items && item.bundled_items.length ) {
+				html += '<div class="wbte-ewb-bundled-children" data-parent-max-qty="' + escAttr( maxQty ) + '" role="list" aria-label="' + escAttr( name + ' includes' ) + '" style="margin:4px 0 8px 36px;padding:6px 12px;border-left:2px solid #e5e7eb;background:#f9fafb;border-radius:0 4px 4px 0;">';
+				$.each( item.bundled_items, function( ci, child ) {
+					html += '<div class="wbte-ewb-bundled-child" data-base-qty="' + escAttr( child.quantity ) + '" role="listitem" style="font-size:12.5px;color:#4b5563;padding:3px 0;display:flex;justify-content:space-between;align-items:center;">' +
+						'<span>' + escHtml( child.name ) + '</span>' +
+						'<span class="wbte-ewb-bundled-child-qty" style="color:#9ca3af;font-size:12px;white-space:nowrap;margin-left:12px;">&times; ' + escHtml( child.quantity ) + '</span>' +
+						'</div>';
+				} );
+				html += '</div>';
+			}
+
 			$list.append( html );
 		} );
 
@@ -267,11 +289,19 @@
 				return;
 			}
 
-			$qtySelect.prop( 'disabled', ! $checkbox.is( ':checked' ) );
+			if ( $checkbox.is( ':checked' ) ) {
+				$qtySelect.prop( 'disabled', false );
+				$qtySelect[0].removeAttribute( 'aria-disabled' );
+			} else {
+				$qtySelect.prop( 'disabled', true );
+				$qtySelect[0].setAttribute( 'aria-disabled', 'true' );
+			}
 		}
 
 		function updateRequestType() {
-			var eligibleChecked = $list.find( 'input[type="checkbox"]:not(:disabled):checked' ).length;
+			var eligibleChecked = allowPartial
+				? $list.find( 'input[type="checkbox"]:not(:disabled):checked' ).length
+				: $list.find( 'input[type="checkbox"]:checked' ).length;
 			var isPartial       = hasExcluded || eligibleChecked < totalItems;
 
 			if ( ! isPartial ) {
@@ -313,6 +343,17 @@
 				var $checkbox = $item.find( 'input[type="checkbox"]' );
 				var unitPrice = parseFloat( $checkbox.data( 'unit-price' ) ) || 0;
 				$item.find( '.wbte-ewb-item-price' ).text( formatPrice( unitPrice * val ) );
+
+				// Sync bundled child item quantities proportionally.
+				var $children = $item.next( '.wbte-ewb-bundled-children' );
+				if ( $children.length ) {
+					var parentMaxQty = parseInt( $children.data( 'parent-max-qty' ), 10 ) || 1;
+					$children.find( '.wbte-ewb-bundled-child' ).each( function() {
+						var baseQty  = parseInt( $( this ).data( 'base-qty' ), 10 ) || 1;
+						var newQty   = Math.round( ( baseQty / parentMaxQty ) * val );
+						$( this ).find( '.wbte-ewb-bundled-child-qty' ).text( '\u00d7 ' + newQty );
+					} );
+				}
 			} );
 		}
 	}
@@ -365,6 +406,9 @@
 		if ( ! isGuestVerified && params.reason_required === 'yes' && ! ( $( '#wbte_ewb_reason' ).val() || '' ).trim() ) {
 			errors.push( i18n.reason_required || 'Please provide a reason for withdrawal.' );
 		}
+
+		// Allow addons to add validation errors.
+		$( document ).trigger( 'wbte_ewb_validate_form', [ errors ] );
 
 		if ( errors.length ) {
 			showMessages( errors, 'error' );
@@ -430,15 +474,23 @@
 			}
 		}
 
-		$.ajax( {
-			url: submitUrl,
-			method: 'POST',
-			beforeSend: function( xhr ) {
-				xhr.setRequestHeader( 'X-WP-Nonce', nonce );
-			},
-			contentType: 'application/json',
-			data: JSON.stringify( formData )
-		} )
+		// Allow addons to extend formData before submission.
+		$( document ).trigger( 'wbte_ewb_before_submit', [ formData ] );
+
+		function doAjaxSubmit( formData ) {
+			var ajaxUrl = submitUrl;
+			if ( locale ) {
+				ajaxUrl += ( ajaxUrl.indexOf( '?' ) === -1 ? '?' : '&' ) + 'locale=' + encodeURIComponent( locale );
+			}
+			$.ajax( {
+				url: ajaxUrl,
+				method: 'POST',
+				beforeSend: function( xhr ) {
+					xhr.setRequestHeader( 'X-WP-Nonce', nonce );
+				},
+				contentType: 'application/json',
+				data: JSON.stringify( formData )
+			} )
 			.done( function( response ) {
 				if ( isGuestVerified ) {
 					var currentParams = new URLSearchParams( window.location.search );
@@ -475,6 +527,18 @@
 			.always( function() {
 				$btn.prop( 'disabled', false ).removeClass( 'disabled' );
 			} );
+		}
+
+		// Obtain reCAPTCHA token if the pro addon has registered the helper,
+		// then proceed with the AJAX call.
+		if ( typeof window.wbteEwbGetRecaptchaToken === 'function' ) {
+			window.wbteEwbGetRecaptchaToken( function( token ) {
+				formData.recaptcha_token = token;
+				doAjaxSubmit( formData );
+			} );
+		} else {
+			doAjaxSubmit( formData );
+		}
 	}
 
 	/**
@@ -497,7 +561,8 @@
 			cssClass = 'wbte-ewb-info-message';
 		}
 
-		var html = '<div class="' + cssClass + '" role="alert">';
+		var ariaLive = 'error' === type ? 'assertive' : 'polite';
+		var html = '<div class="' + cssClass + '" role="alert" aria-live="' + ariaLive + '">';
 		if ( messages.length === 1 ) {
 			html += '<p>' + escHtml( messages[ 0 ] ) + '</p>';
 		} else {
@@ -509,12 +574,15 @@
 		}
 		html += '</div>';
 
-		$form.before( html );
+		var $msg = $( html );
+		$form.before( $msg );
 
-		// Scroll to the message.
+		// Scroll to the message and focus for screen readers.
 		$( 'html, body' ).animate( {
 			scrollTop: $wrapper.offset().top - 32
-		}, 300 );
+		}, 300, function() {
+			$msg.attr( 'tabindex', '-1' ).focus();
+		} );
 	}
 
 	/**
@@ -546,8 +614,9 @@
 	}
 
 	/** @type {jQuery|null} */
-	var $confirmModal   = null;
-	var confirmCallback = null;
+	var $confirmModal      = null;
+	var confirmCallback    = null;
+	var confirmTriggerEl   = null;
 
 	/**
 	 * Create or return the confirmation modal element.
@@ -613,9 +682,15 @@
 	function closeConfirmModal() {
 		var $modal = getConfirmModal();
 
+		$modal.off( 'keydown.wbteEwbTrap' );
 		$modal.removeClass( 'is-active' ).attr( 'aria-hidden', 'true' ).prop( 'hidden', true );
 		$( 'body' ).removeClass( 'wbte-ewb-confirm-modal-open' );
 		confirmCallback = null;
+
+		if ( confirmTriggerEl ) {
+			confirmTriggerEl.focus();
+			confirmTriggerEl = null;
+		}
 	}
 
 	/**
@@ -728,7 +803,8 @@
 		var $modal     = getConfirmModal();
 		var reviewHtml = '';
 
-		confirmCallback = onConfirm;
+		confirmTriggerEl = document.activeElement;
+		confirmCallback  = onConfirm;
 
 		$modal.find( '#wbte-ewb-confirm-modal-title' ).text( i18n.confirm_title || 'Review your withdrawal request' );
 		$modal.find( '#wbte-ewb-confirm-modal-intro' ).text(
@@ -758,6 +834,30 @@
 		$modal.addClass( 'is-active' ).attr( 'aria-hidden', 'false' ).prop( 'hidden', false );
 		$( 'body' ).addClass( 'wbte-ewb-confirm-modal-open' );
 		$modal.find( '#wbte-ewb-confirm-submit' ).trigger( 'focus' );
+
+		// Focus trap: keep Tab/Shift+Tab within the modal.
+		$modal.off( 'keydown.wbteEwbTrap' ).on( 'keydown.wbteEwbTrap', function( e ) {
+			if ( 'Tab' !== e.key ) {
+				return;
+			}
+			var focusable = $modal.find( 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])' ).filter( ':visible' );
+			if ( ! focusable.length ) {
+				return;
+			}
+			var first = focusable.first()[0];
+			var last  = focusable.last()[0];
+			if ( e.shiftKey ) {
+				if ( document.activeElement === first ) {
+					e.preventDefault();
+					last.focus();
+				}
+			} else {
+				if ( document.activeElement === last ) {
+					e.preventDefault();
+					first.focus();
+				}
+			}
+		} );
 	}
 
 	// -------------------------------------------------------

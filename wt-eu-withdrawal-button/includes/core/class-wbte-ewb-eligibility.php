@@ -125,6 +125,11 @@ class Wbte_Ewb_Eligibility {
 		$eligible_items = array();
 
 		foreach ( $order->get_items() as $item_id => $item ) {
+			// Skip bundled child items (WooCommerce Product Bundles compatibility).
+			if ( $item->get_meta( '_bundled_by', true ) ) {
+				continue;
+			}
+
 			$product = $item->get_product();
 
 			if ( ! $product || '' !== $this->get_product_exclusion_reason( $product ) ) {
@@ -260,6 +265,11 @@ class Wbte_Ewb_Eligibility {
 
 		foreach ( $order->get_items() as $item_id => $item ) {
 			if ( ! $item instanceof \WC_Order_Item_Product ) {
+				continue;
+			}
+
+			// Skip bundled child items (WooCommerce Product Bundles compatibility).
+			if ( $item->get_meta( '_bundled_by', true ) ) {
 				continue;
 			}
 

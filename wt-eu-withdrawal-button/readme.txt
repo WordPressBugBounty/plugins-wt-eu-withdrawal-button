@@ -2,11 +2,11 @@
 Contributors: webtoffee
 Tags: woocommerce, EU withdrawal, right of withdrawal, EU compliance, EU directive
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 10.9.4
-Stable tag: 1.0.8
+WC tested up to: 11.0.0
+Stable tag: 1.0.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,6 +71,13 @@ The directive specifically requires:
 * An **acknowledgement of receipt** sent to the customer on a durable medium (e.g. email)
 
 This plugin implements all of the above.
+
+= Compatible Plugins =
+ 
+* Sequential Order Number plugins
+* Product Bundles by WooCommerce
+* WebToffee eCommerce Marketing Automation
+* WPML
 
 = Getting started =
 
@@ -182,6 +189,17 @@ Available filters:
 
 == Changelog ==
 
+= 1.0.9 11-08-2026 =
+
+* [Add]: Portuguese (pt_PT) and Czech (cs_CZ) translation files.
+* [Add]: Bundle product compatibility for withdrawal requests.
+* [Add]: WCAG accessibility compatibility.
+* [Add]: Withdrawal ID based searching in the admin dashboard.
+* [Improvement]: Guest order withdrawal workflow.
+* [Fix]: Showing wrong line total in withdrawal requests.
+* [Compatibility]: Tested up to WooCommerce 11.0.0
+* [Compatibility]: WordPress up to WooCommerce 7.1
+
 = 1.0.8 23-07-2026 =
 
 * [Fix]: Corrected translation issues in withdrawal emails sent to guest users.
@@ -266,10 +284,13 @@ Available filters:
 
 == Upgrade Notice ==
 
-= 1.0.8 =
+= 1.0.9 =
 
-* [Fix]: Corrected translation issues in withdrawal emails sent to guest users.
-* [Fix]: Resolved inconsistency in the email template override path.
-* [Tweak]: Refined the admin screen interface.
-* [Compatibility]: WPML Multilingual Plugin.
-* [Compatibility]: Tested up to WooCommerce 10.9.4
+* [Add]: Portuguese (pt_PT) and Czech (cs_CZ) translation files.
+* [Add]: Bundle product compatibility for withdrawal requests.
+* [Add]: WCAG accessibility compatibility.
+* [Add]: Withdrawal ID based searching in the admin dashboard.
+* [Improvement]: Guest order withdrawal workflow.
+* [Fix]: Showing wrong line total in withdrawal requests.
+* [Compatibility]: Tested up to WooCommerce 11.0.0
+* [Compatibility]: WordPress up to WooCommerce 7.1

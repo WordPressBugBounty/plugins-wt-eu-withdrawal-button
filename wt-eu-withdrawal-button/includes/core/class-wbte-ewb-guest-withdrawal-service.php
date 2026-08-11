@@ -79,7 +79,31 @@ class Wbte_Ewb_Guest_Withdrawal_Service {
 			);
 		}
 
-		if ( ! $this->can_queue_guest_request( $order_number, $email ) ) {
+		$queue_check = $this->check_guest_queue_eligibility( $order_number, $email );
+
+		if ( 'ineligible' === $queue_check ) {
+			// Send ineligibility email once per order+email (throttled to one per 24h).
+			$throttle_key = 'wbte_ewb_ineligible_' . md5( $order_number . '|' . strtolower( $email ) );
+			if ( ! get_transient( $throttle_key ) ) {
+				$order = $this->resolve_order_by_number( $order_number );
+				if ( $order instanceof WC_Order ) {
+					/**
+					 * Fires when a guest submits a withdrawal for a valid but ineligible order.
+					 *
+					 * @since 1.1.0
+					 *
+					 * @param WC_Order $order        The ineligible order.
+					 * @param string   $email        Guest billing email.
+					 * @param string   $order_number Customer-facing order number.
+					 */
+					do_action( 'wbte_ewb_guest_order_ineligible_notification', $order, $email, $order_number );
+					set_transient( $throttle_key, 1, DAY_IN_SECONDS );
+				}
+			}
+			return true;
+		}
+
+		if ( ! $queue_check ) {
 			return true;
 		}
 
@@ -582,16 +606,39 @@ class Wbte_Ewb_Guest_Withdrawal_Service {
 	 * @return bool
 	 */
 	private function can_queue_guest_request( $order_number, $email ) {
+		$check = $this->check_guest_queue_eligibility( $order_number, $email );
+		return true === $check;
+	}
+
+	/**
+	 * Check guest queue eligibility with reason.
+	 *
+	 * @since 1.1.0
+	 *
+	 * @param string $order_number Order number.
+	 * @param string $email        Billing email.
+	 * @return true|string|false True if eligible, 'ineligible' if order matched but not eligible, false otherwise.
+	 */
+	private function check_guest_queue_eligibility( $order_number, $email ) {
 		$order = $this->resolve_order_by_number( $order_number );
 
-		if ( ! $order ) {
+		if ( ! $order || ! ( $order instanceof WC_Order ) || $order->get_type() === 'shop_order_refund' ) {
 			return false;
 		}
 
+		$email = sanitize_email( $email );
+
+		// Email doesn't match — don't reveal anything.
+		if ( '' === $email || strtolower( $email ) !== strtolower( $order->get_billing_email() ) ) {
+			return false;
+		}
+
+		// Email matches. Check if order is eligible for withdrawal.
 		if ( ! $this->can_guest_submit_withdrawal( $order, $email ) ) {
-			return false;
+			return 'ineligible';
 		}
 
+		// Already has an open verification session.
 		if ( $this->pending_repository->has_open_guest_session( $order_number, $email ) ) {
 			return false;
 		}

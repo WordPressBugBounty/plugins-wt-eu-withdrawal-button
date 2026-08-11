@@ -123,6 +123,10 @@ if ( ! empty( $wbte_ewb_request_items ) ) {
 	$wbte_ewb_display_items = $wbte_ewb_request_items;
 } else {
 	foreach ( $order->get_items() as $wbte_ewb_line_item ) {
+		// Skip bundled child items — they are part of the parent bundle.
+		if ( $wbte_ewb_line_item->get_meta( '_bundled_by', true ) ) {
+			continue;
+		}
 		$wbte_ewb_display_items[] = array(
 			'name' => $wbte_ewb_line_item->get_name(),
 			'qty'  => $wbte_ewb_line_item->get_quantity(),

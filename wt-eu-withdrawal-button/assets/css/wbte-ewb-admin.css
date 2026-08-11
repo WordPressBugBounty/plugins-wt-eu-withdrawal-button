@@ -137,19 +137,19 @@
 
 .wbte-ewb-badge--pending {
 	background-color: #fef3e0;
-	color: #f0ad4e;
+	color: #805900;
 	border: 1px solid #f0ad4e;
 }
 
 .wbte-ewb-badge--approved {
 	background-color: #eaf6ec;
-	color: #5cb85c;
+	color: #1a7a2e;
 	border: 1px solid #5cb85c;
 }
 
 .wbte-ewb-badge--rejected {
 	background-color: #fdecea;
-	color: #d9534f;
+	color: #a02b2b;
 	border: 1px solid #d9534f;
 }
 

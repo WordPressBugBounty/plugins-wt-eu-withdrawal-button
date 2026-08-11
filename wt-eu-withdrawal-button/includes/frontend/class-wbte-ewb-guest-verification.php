@@ -218,7 +218,7 @@ class Wbte_Ewb_Guest_Verification {
 	 * @return string
 	 */
 	public static function get_queue_success_message() {
-		return __( 'Thank you. If the details you provided are correct, you will receive a verification email to complete your withdrawal request.', 'wt-eu-withdrawal-button' );
+		return __( 'Thank you. If the details you provided are correct, you will receive an email regarding your withdrawal request. Please check your inbox.', 'wt-eu-withdrawal-button' );
 	}
 
 	/**

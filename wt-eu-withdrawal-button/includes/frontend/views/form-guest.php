@@ -34,19 +34,19 @@ $wbte_ewb_posted_reason       = isset( $_POST['reason'] ) ? sanitize_textarea_fi
 <div class="wbte-ewb-withdrawal-form wbte-ewb-form--guest">
 
 	<?php if ( ! empty( $wbte_ewb_notice_message ) ) : ?>
-		<div class="<?php echo $wbte_ewb_notice_is_error ? 'wbte-ewb-error-message' : 'wbte-ewb-success-message'; ?>" role="alert">
+		<div class="<?php echo $wbte_ewb_notice_is_error ? 'wbte-ewb-error-message' : 'wbte-ewb-success-message'; ?>" role="alert" aria-live="<?php echo $wbte_ewb_notice_is_error ? 'assertive' : 'polite'; ?>">
 			<p><?php echo esc_html( $wbte_ewb_notice_message ); ?></p>
 		</div>
 	<?php endif; ?>
 
 	<?php if ( ! empty( $wbte_ewb_success_message ) ) : ?>
-		<div class="wbte-ewb-success-message" role="alert">
+		<div class="wbte-ewb-success-message" role="alert" aria-live="polite">
 			<p><?php echo esc_html( $wbte_ewb_success_message ); ?></p>
 		</div>
 	<?php endif; ?>
 
 	<?php if ( is_wp_error( $errors ) && $errors->has_errors() ) : ?>
-		<div class="wbte-ewb-error-message" role="alert">
+		<div class="wbte-ewb-error-message" role="alert" aria-live="assertive">
 			<ul>
 				<?php foreach ( $errors->get_error_messages() as $wbte_ewb_message ) : ?>
 					<li><?php echo esc_html( $wbte_ewb_message ); ?></li>
@@ -60,13 +60,13 @@ $wbte_ewb_posted_reason       = isset( $_POST['reason'] ) ? sanitize_textarea_fi
 		<!-- Order number -->
 		<p class="wbte-ewb-form-row form-row form-row-wide">
 			<label for="wbte_ewb_order_number"><?php esc_html_e( 'Order number', 'wt-eu-withdrawal-button' ); ?>&nbsp;<abbr class="required" title="<?php esc_attr_e( 'required', 'wt-eu-withdrawal-button' ); ?>">*</abbr></label>
-			<input type="text" name="order_number" id="wbte_ewb_order_number" class="input-text wbte-ewb-guest-order-number" value="<?php echo esc_attr( $wbte_ewb_posted_order_number ); ?>" required />
+			<input type="text" name="order_number" id="wbte_ewb_order_number" class="input-text wbte-ewb-guest-order-number" value="<?php echo esc_attr( $wbte_ewb_posted_order_number ); ?>" required aria-required="true" />
 		</p>
 
 		<!-- Billing email -->
 		<p class="wbte-ewb-form-row form-row form-row-wide">
 			<label for="wbte_ewb_guest_email"><?php esc_html_e( 'Billing email address', 'wt-eu-withdrawal-button' ); ?>&nbsp;<abbr class="required" title="<?php esc_attr_e( 'required', 'wt-eu-withdrawal-button' ); ?>">*</abbr></label>
-			<input type="email" name="email" id="wbte_ewb_guest_email" class="input-text wbte-ewb-guest-email" value="<?php echo esc_attr( $wbte_ewb_posted_email ); ?>" required />
+			<input type="email" name="email" id="wbte_ewb_guest_email" class="input-text wbte-ewb-guest-email" value="<?php echo esc_attr( $wbte_ewb_posted_email ); ?>" required aria-required="true" />
 		</p>
 
 		<!-- Reason -->
@@ -77,15 +77,42 @@ $wbte_ewb_posted_reason       = isset( $_POST['reason'] ) ? sanitize_textarea_fi
 					&nbsp;<abbr class="required" title="<?php esc_attr_e( 'required', 'wt-eu-withdrawal-button' ); ?>">*</abbr>
 				<?php endif; ?>
 			</label>
-			<textarea name="reason" id="wbte_ewb_reason" class="input-text" rows="4" <?php echo $wbte_ewb_reason_required ? 'required' : ''; ?>><?php echo esc_textarea( $wbte_ewb_posted_reason ); ?></textarea>
+			<textarea name="reason" id="wbte_ewb_reason" class="input-text" rows="4" <?php echo $wbte_ewb_reason_required ? 'required aria-required="true"' : ''; ?>><?php echo esc_textarea( $wbte_ewb_posted_reason ); ?></textarea>
 		</p>
 
 		<p class="wbte-ewb-form-description">
-			<?php esc_html_e( 'Enter your order number and billing email to start. If your details match our records, you will receive a verification email. After verifying your email, you can choose which items to withdraw.', 'wt-eu-withdrawal-button' ); ?>
+			<?php esc_html_e( 'Enter your order number and billing email to start. If your details match our records, you will receive an email with further instructions.', 'wt-eu-withdrawal-button' ); ?>
 		</p>
+
+		<?php
+		// T&C checkbox (provided by pro/marketplace addon).
+		$wbte_ewb_show_terms = 'no';
+		$wbte_ewb_terms_text_val = '';
+		if ( class_exists( 'Wbte_Ewb_Advanced_Settings' ) ) {
+			$wbte_ewb_show_terms = Wbte_Ewb_Advanced_Settings::get( 'show_terms_checkbox', 'no' );
+			$wbte_ewb_terms_text_val = Wbte_Ewb_Advanced_Settings::get( 'terms_link_text', '' );
+		} elseif ( class_exists( 'Wbte_Ewb_Pro_Settings' ) ) {
+			$wbte_ewb_show_terms = Wbte_Ewb_Pro_Settings::get( 'show_terms_checkbox', 'no' );
+			$wbte_ewb_terms_text_val = Wbte_Ewb_Pro_Settings::get( 'terms_link_text', '' );
+		}
+		if (
+			'yes' === $wbte_ewb_show_terms
+			&& class_exists( 'Wbte_Ewb_Terms_Page' )
+		) :
+			$wbte_ewb_terms_url = Wbte_Ewb_Terms_Page::get_page_url();
+			if ( '' === $wbte_ewb_terms_text_val ) {
+				$wbte_ewb_terms_text_val = __( 'I have read and agree to the withdrawal terms and conditions', 'wt-eu-withdrawal-button' );
+			}
+			if ( $wbte_ewb_terms_url ) :
+		?>
+		<p class="wbte-ewb-form-row form-row form-row-wide wbte-ewb-terms-row">
+			<a href="<?php echo esc_url( $wbte_ewb_terms_url ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( $wbte_ewb_terms_text_val ); ?></a>
+		</p>
+		<?php endif; endif; ?>
 
 		<!-- Hidden fields -->
 		<input type="hidden" name="wbte_ewb_action" value="submit_withdrawal" />
+		<input type="hidden" name="recaptcha_token" id="wbte_ewb_recaptcha_token" value="" />
 		<?php wp_nonce_field( 'wbte_ewb_withdrawal_form_nonce', 'wbte_ewb_nonce' ); ?>
 
 		<p class="wbte-ewb-form-row form-row form-row-wide">

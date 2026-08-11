@@ -197,6 +197,7 @@ final class Wbte_Ewb_Plugin {
 
 		// REST API controllers.
 		add_action( 'rest_api_init', array( $this, 'register_rest_controllers' ) );
+		add_filter( 'rest_pre_dispatch', array( $this, 'switch_rest_locale' ), 10, 3 );
 
 		// Context-aware loading.
 		if ( is_admin() ) {
@@ -262,6 +263,38 @@ final class Wbte_Ewb_Plugin {
 	}
 
 	/**
+	 * Switch WordPress locale for REST API requests when a locale parameter is provided.
+	 *
+	 * Multilingual plugins (Polylang, WPML) may not automatically apply the
+	 * frontend language to REST API calls. This ensures translated strings
+	 * returned by __() match the language the visitor is browsing in.
+	 *
+	 * @since 1.0.9
+	 *
+	 * @param mixed           $result  Response to replace the requested version with.
+	 * @param WP_REST_Server  $server  Server instance.
+	 * @param WP_REST_Request $request Request used to generate the response.
+	 * @return mixed Unmodified $result (pass-through).
+	 */
+	public function switch_rest_locale( $result, $server, $request ) {
+		$route = $request->get_route();
+
+		// Only apply to this plugin's REST routes.
+		if ( strpos( $route, '/wbte-ewb/' ) === false ) {
+			return $result;
+		}
+
+		$locale = sanitize_text_field( $request->get_param( 'locale' ) );
+
+		if ( $locale && $locale !== get_locale() ) {
+			switch_to_locale( $locale );
+			load_plugin_textdomain( 'wt-eu-withdrawal-button', false, dirname( WBTE_EWB_PLUGIN_BASENAME ) . '/languages/' ); // phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
+		}
+
+		return $result;
+	}
+
+	/**
 	 * Load admin-specific classes.
 	 *
 	 * @since 1.0.0
@@ -324,4 +357,5 @@ final class Wbte_Ewb_Plugin {
 			$this->set( 'shortcodes', $shortcodes );
 		}
 	}
+
 }

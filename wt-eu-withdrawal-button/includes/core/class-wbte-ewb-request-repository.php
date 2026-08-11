@@ -260,7 +260,7 @@ class Wbte_Ewb_Request_Repository {
 	 *     @type int    $order_id         Filter by order ID.
 	 *     @type string $order_number      Filter by order number.
 	 *     @type string $verification_code Filter by receipt hash (full or partial match).
-	 *     @type string $search            Search by order number or receipt hash.
+	 *     @type string $search            Search by request ID, order number or receipt hash.
 	 *     @type string $date_from        Filter requests created on or after this date (Y-m-d).
 	 *     @type string $date_to          Filter requests created on or before this date (Y-m-d).
 	 *     @type int    $per_page         Results per page. Default 20.
@@ -322,6 +322,14 @@ class Wbte_Ewb_Request_Repository {
 			$search_conditions   = array( 'w.order_number = %s' );
 			$search_values       = array( $search );
 
+			// Support searching by request ID (e.g. "129" or "#129").
+			// Only match if the search term is purely numeric (or # + numeric).
+			$search_trimmed = ltrim( $search, '#' );
+			if ( ctype_digit( $search_trimmed ) && '' !== $search_trimmed ) {
+				$search_conditions[] = 'w.id = %d';
+				$search_values[]     = absint( $search_trimmed );
+			}
+
 			if ( '' !== $verification_search ) {
 				$search_conditions[] = 'w.meta_json LIKE %s';
 				$search_values[]     = '%"verification_code":"' . $wpdb->esc_like( $verification_search ) . '%';
@@ -376,13 +384,14 @@ class Wbte_Ewb_Request_Repository {
 		$offset = ( $page - 1 ) * $per_page;
 
 		// Count total results.
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, PluginCheck.Security.DirectDB.UnescapedDBParameter -- Custom table, dynamic WHERE.
-		$total = (int) $wpdb->get_var(
-			$wpdb->prepare(
-				"SELECT COUNT(*) FROM {$table} w {$order_sql['join']} WHERE {$where_clause}", // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
-				...$values
-			)
-		);
+		// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Custom table, dynamic WHERE built from safe fragments above.
+		$count_query = "SELECT COUNT(*) FROM {$table} w {$order_sql['join']} WHERE {$where_clause}";
+		if ( ! empty( $values ) ) {
+			// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare -- Dynamic placeholders counted above.
+			$count_query = $wpdb->prepare( $count_query, ...$values );
+		}
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter -- Custom table, query prepared above when needed.
+		$total = (int) $wpdb->get_var( $count_query );
 
 		// Fetch paginated rows.
 		$limit_values   = $values;

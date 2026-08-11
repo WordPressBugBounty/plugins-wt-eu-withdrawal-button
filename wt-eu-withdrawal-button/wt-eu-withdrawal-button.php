@@ -3,7 +3,7 @@
  * Plugin Name:       WebToffee EU Order Withdrawal Button for WooCommerce
  * Plugin URI:        https://www.wordpress.org/plugins/wt-eu-withdrawal-button
  * Description:       Manage withdrawal of contract / order cancellation requests for WooCommerce orders. EU-compliant, HPOS-compatible.
- * Version:           1.0.8
+ * Version:           1.0.9
  * Author:            webtoffee
  * Author URI:        https://www.webtoffee.com/
  * License:           GPL-3.0+
@@ -12,10 +12,10 @@
  * Domain Path:       /languages
  * Requires Plugins:  woocommerce
  * Requires at least: 6.0
- * Tested up to:      7.0
+ * Tested up to:      7.1
  * Requires PHP:      7.4
  * WC requires at least: 7.0
- * WC tested up to:   10.9.4
+ * WC tested up to:   11.0.0
  *
  * @package Wbte_Eu_Withdrawal_Button
  * @since   1.0.0
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-define( 'WBTE_EWB_VERSION', '1.0.8' );
+define( 'WBTE_EWB_VERSION', '1.0.9' );
 
 /**
  * Plugin file path.

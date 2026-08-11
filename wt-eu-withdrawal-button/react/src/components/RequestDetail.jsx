@@ -233,6 +233,12 @@ const RequestDetail = ( { params } ) => {
 								<th>{ __( 'Reason', 'wt-eu-withdrawal-button' ) }</th>
 								<td>{ request.reason || __( 'No reason provided', 'wt-eu-withdrawal-button' ) }</td>
 							</tr>
+							{ request.meta?.refund_preference?.details && (
+								<tr>
+									<th>{ __( 'Refund method details', 'wt-eu-withdrawal-button' ) }</th>
+									<td><span className="wbte-ewb-verification-code" style={ { whiteSpace: 'pre-line', wordBreak: 'break-word', fontFamily: 'inherit' } }>{ request.meta.refund_preference.details }</span></td>
+								</tr>
+							) }
 							<tr>
 								<th>{ __( 'Created', 'wt-eu-withdrawal-button' ) }</th>
 								<td>{ formatWithdrawalDatetime( request ) }</td>
@@ -298,14 +304,24 @@ const RequestDetail = ( { params } ) => {
 						<tbody>
 							{ items.map( ( item, index ) => {
 								const withdrawalBadge = getWithdrawalItemBadge( item );
+								const itemKey = item.line_item_id || item.product_id || index;
 
 								return (
 								<tr
-									key={ item.line_item_id || item.product_id || index }
+									key={ itemKey }
 									className={ getWithdrawalRowClass( item ) }
 								>
 									<td>
 										<span className="wbte-ewb-item-name">{ item.name || item.product_name || '—' }</span>
+										{ item.bundled_items && item.bundled_items.length > 0 && (
+											<div style={ { marginTop: '6px', paddingLeft: '12px' } }>
+												{ item.bundled_items.map( ( child, ci ) => (
+													<div key={ ci } style={ { fontSize: '12.5px', color: '#6b7280', padding: '2px 0' } }>
+														{ child.name } &times; { child.quantity }
+													</div>
+												) ) }
+											</div>
+										) }
 									</td>
 									<td>{ formatItemQuantity( item ) }</td>
 									<td>{ formatItemTotal( item ) }</td>
@@ -349,7 +365,6 @@ const RequestDetail = ( { params } ) => {
 				</div>
 			) }
 
-			{ /* Reject Modal */ }
 			{ showRejectModal && (
 				<Modal
 					title={ __( 'Reject Request', 'wt-eu-withdrawal-button' ) }

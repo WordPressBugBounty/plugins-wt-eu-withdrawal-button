@@ -62,12 +62,14 @@ class Wbte_Ewb_Emails {
 		require_once $dir . 'class-wbte-ewb-email-request-approved.php';
 		require_once $dir . 'class-wbte-ewb-email-request-rejected.php';
 		require_once $dir . 'class-wbte-ewb-email-guest-verification.php';
+		require_once $dir . 'class-wbte-ewb-email-guest-ineligible.php';
 
 		$emails['Wbte_Ewb_Email_Request_Submitted_Customer'] = new Wbte_Ewb_Email_Request_Submitted_Customer();
 		$emails['Wbte_Ewb_Email_Request_Submitted_Admin']    = new Wbte_Ewb_Email_Request_Submitted_Admin();
 		$emails['Wbte_Ewb_Email_Request_Approved']           = new Wbte_Ewb_Email_Request_Approved();
 		$emails['Wbte_Ewb_Email_Request_Rejected']           = new Wbte_Ewb_Email_Request_Rejected();
 		$emails['Wbte_Ewb_Email_Guest_Verification']         = new Wbte_Ewb_Email_Guest_Verification();
+		$emails['Wbte_Ewb_Email_Guest_Ineligible']           = new Wbte_Ewb_Email_Guest_Ineligible();
 
 		return $emails;
 	}

@@ -238,9 +238,9 @@ class Wbte_Ewb_Shortcodes {
 		return wc_get_template_html(
 			'my-account-withdrawal-button.php',
 			array(
-				'withdrawal_url' => $withdrawal_url,
-				'button_label'   => $button_label,
-				'button_class'   => $button_class,
+				'withdrawal_url' => esc_url( $withdrawal_url ),
+				'button_label'   => esc_html( $button_label ),
+				'button_class'   => esc_attr( $button_class ),
 			),
 			'',
 			WBTE_EWB_PLUGIN_DIR . 'templates/'

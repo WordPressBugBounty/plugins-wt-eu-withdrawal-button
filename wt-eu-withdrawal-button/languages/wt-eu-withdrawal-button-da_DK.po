@@ -2,8 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 14:44+0530\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-"
+"button\n"
+"POT-Creation-Date: 2026-08-06T07:46:34+00:00\n"
 "PO-Revision-Date: 2026-07-23 10:51\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,9 +23,39 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-WPHeader: wt-eu-withdrawal-button.php\n"
 
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee EU-fortrydelsesknap til WooCommerce"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Administrer fortrydelse af kontrakt-/ordreannulleringsanmodninger for "
+"WooCommerce-ordrer. EU-kompatibel, HPOS-kompatibel."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "webtoffee"
+msgstr "webtoffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
 #: includes/admin/class-wbte-ewb-admin-assets.php:112
-#: includes/admin/class-wbte-ewb-order-meta-box.php:545
+#: includes/admin/class-wbte-ewb-order-meta-box.php:561
 #: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:54
 #: react/src/components/RequestsList.jsx:219
 #: react/src/components/StatusBadge.jsx:28
@@ -32,9 +63,10 @@ msgid "Pending"
 msgstr "Afventer"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:113
-#: includes/admin/class-wbte-ewb-order-meta-box.php:546
+#: includes/admin/class-wbte-ewb-order-meta-box.php:562
 #: includes/frontend/class-wbte-ewb-my-account.php:457
 #: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:55
 #: react/src/components/RequestsList.jsx:216
 #: react/src/components/StatusBadge.jsx:29
@@ -42,9 +74,10 @@ msgid "Approved"
 msgstr "Godkendt"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:114
-#: includes/admin/class-wbte-ewb-order-meta-box.php:547
+#: includes/admin/class-wbte-ewb-order-meta-box.php:563
 #: includes/frontend/class-wbte-ewb-my-account.php:458
 #: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:56
 #: react/src/components/RequestsList.jsx:218
 #: react/src/components/StatusBadge.jsx:30
@@ -53,32 +86,32 @@ msgstr "Afvist"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:115
 #: includes/admin/class-wbte-ewb-admin-assets.php:182
-#: includes/admin/class-wbte-ewb-order-meta-box.php:231
-#: react/src/components/RequestDetail.jsx:180
+#: includes/admin/class-wbte-ewb-order-meta-box.php:247
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
 msgid "Approve"
 msgstr "Godkend"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:116
 #: includes/admin/class-wbte-ewb-admin-assets.php:183
-#: includes/admin/class-wbte-ewb-order-meta-box.php:234
-#: react/src/components/RequestDetail.jsx:188
+#: includes/admin/class-wbte-ewb-order-meta-box.php:250
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
 msgid "Reject"
 msgstr "Afvis"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:117
-#: includes/admin/class-wbte-ewb-order-meta-box.php:161
-#: react/src/components/RequestDetail.jsx:228
+#: includes/admin/class-wbte-ewb-order-meta-box.php:167
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
 msgid "Full Withdrawal"
 msgstr "Fuld fortrydelse"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:118
-#: includes/admin/class-wbte-ewb-order-meta-box.php:159
-#: react/src/components/RequestDetail.jsx:227
+#: includes/admin/class-wbte-ewb-order-meta-box.php:165
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
 msgid "Partial Withdrawal"
 msgstr "Delvis fortrydelse"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:119
-#: react/src/components/RequestsList.jsx:182
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:182
 msgid "No withdrawal requests found."
 msgstr "Der blev ikke fundet nogen anmodninger om fortrydelse."
 
@@ -88,7 +121,7 @@ msgstr "Indlæser..."
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:121
 #: includes/admin/class-wbte-ewb-admin-assets.php:189
-#: includes/frontend/class-wbte-ewb-frontend.php:135
+#: includes/frontend/class-wbte-ewb-frontend.php:155
 msgid "An error occurred. Please try again."
 msgstr "Der opstod en fejl. Prøv venligst igen."
 
@@ -111,7 +144,7 @@ msgid "Please enter a reason for rejecting this withdrawal request:"
 msgstr "Angiv venligst en grund til at afvise denne anmodning om fortrydelse:"
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:187
-#: react/src/components/RequestDetail.jsx:363
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:369
 msgid "A reason is required when rejecting a request."
 msgstr "Der kræves en begrundelse, når en anmodning afvises."
 
@@ -127,7 +160,8 @@ msgstr "Anmodninger om fortrydelse"
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:51
 #: includes/frontend/class-wbte-ewb-my-account.php:80
-#: react/src/layouts/AdminLayout.jsx:21 react/src/layouts/AdminLayout.jsx:24
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
 msgid "Withdrawals"
 msgstr "Fortrydelser"
 
@@ -135,7 +169,7 @@ msgstr "Fortrydelser"
 msgid "Loading withdrawal dashboard…"
 msgstr "Indlæser fortrydelseskontrolpanel..."
 
-#: includes/admin/class-wbte-ewb-admin.php:115
+#: includes/admin/class-wbte-ewb-admin.php:115 react/build/admin-dashboard.js:1
 #: react/src/layouts/AdminLayout.jsx:43
 msgid "Settings"
 msgstr "Indstillinger"
@@ -157,108 +191,113 @@ msgstr "Ordren blev ikke fundet."
 msgid "No withdrawal request for this order."
 msgstr "Ingen anmodning om fortrydelse af denne ordre."
 
+#. translators: 1: request position, 2: total requests, 3: request ID
 #: includes/admin/class-wbte-ewb-order-meta-box.php:141
-#, php-format
 msgid "Request %1$d of %2$d (#%3$d)"
 msgstr "Anmodning %1$d af %2$d (#%3$d)"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:151
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:149
+msgid "Request #%d"
+msgstr "Anmodning #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:157
 msgid "Status:"
 msgstr "Status:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:157
+#: includes/admin/class-wbte-ewb-order-meta-box.php:163
 msgid "Type:"
 msgstr "Type:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:169
+#: includes/admin/class-wbte-ewb-order-meta-box.php:175
 msgid "Items:"
 msgstr "Varer:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:172
-#: includes/admin/class-wbte-ewb-order-meta-box.php:306
+#: includes/admin/class-wbte-ewb-order-meta-box.php:178
+#: includes/admin/class-wbte-ewb-order-meta-box.php:322
 #: templates/emails/admin-withdrawal-submitted.php:153
 #: templates/emails/customer-withdrawal-approved.php:137
 #: templates/emails/customer-withdrawal-submitted.php:127
 msgid "Unknown item"
 msgstr "Ukendt vare"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
 #: templates/emails/customer-guest-verification.php:37
 msgid "Reason:"
 msgstr "Årsag:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:190
+#: includes/admin/class-wbte-ewb-order-meta-box.php:196
 msgid "Submitted:"
 msgstr "Indsendt:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:198
+#: includes/admin/class-wbte-ewb-order-meta-box.php:204
 msgid "Receipt hash:"
 msgstr "Kvitteringshash:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:206
+#: includes/admin/class-wbte-ewb-order-meta-box.php:222
 msgid "Processed:"
 msgstr "Behandlet:"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:212
+#: includes/admin/class-wbte-ewb-order-meta-box.php:228
 msgid "by"
 msgstr "af"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:222
+#: includes/admin/class-wbte-ewb-order-meta-box.php:238
 msgid "View in dashboard"
 msgstr "Vis i dashboard"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:262
-#: react/src/components/ReviewBanner.jsx:94
+#: includes/admin/class-wbte-ewb-order-meta-box.php:278
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
 msgid "Leave a review"
 msgstr "Skriv en anmeldelse"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:265
-#: react/src/components/ReviewBanner.jsx:101
+#: includes/admin/class-wbte-ewb-order-meta-box.php:281
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
 msgid "Remind me later"
 msgstr "Påmind mig senere"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:268
-#: react/src/components/ReviewBanner.jsx:107
+#: includes/admin/class-wbte-ewb-order-meta-box.php:284
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
 msgid "Dismiss review request"
 msgstr "Afvis anmeldelsesanmodning"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:432
-#, php-format
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:448
 msgid "Approve withdrawal request #%d"
 msgstr "Godkend anmodning om fortrydelse #%d"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:437
-#, php-format
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:453
 msgid "Reject withdrawal request #%d"
 msgstr "Afvis anmodning om fortrydelse #%d"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+#: includes/admin/class-wbte-ewb-order-meta-box.php:457
 msgid "Approve withdrawal request"
 msgstr "Godkend anmodning om fortrydelse"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:442
+#: includes/admin/class-wbte-ewb-order-meta-box.php:458
 msgid "Reject withdrawal request"
 msgstr "Afvis anmodning om fortrydelse"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:528
+#: includes/admin/class-wbte-ewb-order-meta-box.php:544
 msgid "Rejected from orders list."
 msgstr "Afvist fra ordrelisten."
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:633
-#, php-format
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:649
 msgctxt "item badge"
 msgid "Withdrawn %sx"
 msgstr "Fortrudt %sx"
 
-#: includes/admin/class-wbte-ewb-order-meta-box.php:644
-#, php-format
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:660
 msgctxt "item badge"
 msgid "Requested %sx"
 msgstr "Anmodede %sx"
 
 #: includes/admin/class-wbte-ewb-settings.php:74
-#: react/src/components/RequestDetail.jsx:260
-#: react/src/components/RequestDetail.jsx:294
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
 msgid "Withdrawal"
 msgstr "Fortrydelse"
 
@@ -277,7 +316,7 @@ msgid "Withdrawal Page"
 msgstr "Fortrydelsesside"
 
 #: includes/admin/class-wbte-ewb-settings.php:135
-#: react/src/components/SettingsPage.jsx:796
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1297
 msgid "Select the page where customers can submit withdrawal requests."
 msgstr "Vælg den side, hvor kunder kan indsende anmodninger om fortrydelse."
 
@@ -294,7 +333,7 @@ msgid "Display Scope"
 msgstr "Vis omfang"
 
 #: includes/admin/class-wbte-ewb-settings.php:154
-#: react/src/components/SettingsPage.jsx:840
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1341
 msgid "Where the withdrawal form and links are displayed."
 msgstr "Hvor fortrydelsesformularen og links vises."
 
@@ -311,7 +350,7 @@ msgid "Allow Partial Withdrawals"
 msgstr "Tillad delvise fortrydelser"
 
 #: includes/admin/class-wbte-ewb-settings.php:169
-#: react/src/components/SettingsPage.jsx:854
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1355
 msgid "Let customers withdraw individual items instead of the entire order."
 msgstr "Lad kunder fortryde enkelte varer i stedet for hele ordren."
 
@@ -320,7 +359,7 @@ msgid "Withdrawal Period (days)"
 msgstr "Fortrydelsesperiode (dage)"
 
 #: includes/admin/class-wbte-ewb-settings.php:177
-#: react/src/components/SettingsPage.jsx:860
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1361
 msgid ""
 "Number of days after the selected start status during which a withdrawal "
 "request can be submitted."
@@ -333,7 +372,7 @@ msgid "Withdrawal Period Starts From"
 msgstr "Fortrydelsesperiode starter fra"
 
 #: includes/admin/class-wbte-ewb-settings.php:191
-#: react/src/components/SettingsPage.jsx:890
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1391
 msgid ""
 "Select one or more order statuses. The countdown begins on the earliest date "
 "the order reaches any selected status."
@@ -346,7 +385,7 @@ msgid "Reason Required"
 msgstr "Årsag påkrævet"
 
 #: includes/admin/class-wbte-ewb-settings.php:203
-#: react/src/components/SettingsPage.jsx:905
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1406
 msgid ""
 "Require customers to provide a reason when submitting a withdrawal request."
 msgstr ""
@@ -362,22 +401,22 @@ msgid "Product types that are excluded from withdrawal eligibility."
 msgstr "Produkttyper, der er udelukket fra fortrydelsesberettigelse."
 
 #: includes/admin/class-wbte-ewb-settings.php:215
-#: react/src/components/SettingsPage.jsx:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:230
 msgid "Virtual"
 msgstr "Virtuel"
 
 #: includes/admin/class-wbte-ewb-settings.php:216
-#: react/src/components/SettingsPage.jsx:170
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
 msgid "Downloadable"
 msgstr "Downloadbar"
 
 #: includes/admin/class-wbte-ewb-settings.php:217
-#: react/src/components/SettingsPage.jsx:171
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
 msgid "Grouped"
 msgstr "Grupperet"
 
 #: includes/admin/class-wbte-ewb-settings.php:218
-#: react/src/components/SettingsPage.jsx:172
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
 msgid "External / Affiliate"
 msgstr "Ekstern / Affiliate"
 
@@ -425,12 +464,12 @@ msgstr ""
 "Kontroller, om ordrestatusser ændres automatisk under fortrydelsesworkflowet."
 
 #: includes/admin/class-wbte-ewb-settings.php:278
-#: react/src/components/SettingsPage.jsx:996
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1497
 msgid "Change order status on submission"
 msgstr "Skift ordrestatus ved indsendelse"
 
 #: includes/admin/class-wbte-ewb-settings.php:279
-#: react/src/components/SettingsPage.jsx:997
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1498
 msgid ""
 "Automatically change the order status when a withdrawal request is submitted."
 msgstr "Skift automatisk ordrestatus, når en fortrydelsesanmodning indsendes."
@@ -445,12 +484,12 @@ msgstr ""
 "Ordrestatus, der skal indstilles, når en anmodning om fortrydelse indsendes."
 
 #: includes/admin/class-wbte-ewb-settings.php:298
-#: react/src/components/SettingsPage.jsx:1021
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1522
 msgid "Change order status on approval"
 msgstr "Skift ordrestatus ved godkendelse"
 
 #: includes/admin/class-wbte-ewb-settings.php:299
-#: react/src/components/SettingsPage.jsx:1022
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1523
 msgid ""
 "Automatically change the order status when a withdrawal request is approved."
 msgstr ""
@@ -475,7 +514,7 @@ msgstr "Konfigurer admin-modtagere til e-mails med meddelelser om fortrydelse."
 
 #: includes/admin/class-wbte-ewb-settings.php:331
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
-#: react/src/components/SettingsPage.jsx:1059
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1560
 msgid "Recipient(s)"
 msgstr "Modtager(e)"
 
@@ -508,12 +547,12 @@ msgid "Warning: This action is irreversible."
 msgstr "Advarsel: Denne handling er irreversibel."
 
 #: includes/admin/class-wbte-ewb-settings.php:403
-#: react/src/components/SettingsPage.jsx:366
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:832
 msgid "Order created"
 msgstr "Ordre oprettet"
 
 #: includes/admin/class-wbte-ewb-settings.php:447
-#: react/src/components/SettingsPage.jsx:1099
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1600
 msgid ""
 "Add a withdrawal request button to any page or post. The button links to "
 "your configured withdrawal page."
@@ -522,7 +561,7 @@ msgstr ""
 "Knappen linker til din konfigurerede fortrydelsesside."
 
 #: includes/admin/class-wbte-ewb-settings.php:448
-#: react/src/components/SettingsPage.jsx:1104
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1605
 msgid "Examples"
 msgstr "Examples"
 
@@ -547,7 +586,8 @@ msgstr "Forarbejdning..."
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
-#: includes/frontend/class-wbte-ewb-frontend.php:138
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+#: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:34
 msgid "Please enter a valid email address."
 msgstr "Indtast venligst en gyldig e-mailadresse."
@@ -576,12 +616,12 @@ msgid "Could you tell us a bit more?"
 msgstr "Kan du fortælle os lidt mere?"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
-#: includes/frontend/class-wbte-ewb-frontend.php:151
+#: includes/frontend/class-wbte-ewb-frontend.php:171
 msgid "Partial withdrawal"
 msgstr "Delvis fortrydelse"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
-#: react/src/components/SettingsPage.jsx:1051
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1552
 msgid "Email notifications"
 msgstr "E-mail notifikationer"
 
@@ -655,8 +695,10 @@ msgid "Go to support"
 msgstr "Gå til support"
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
-#: includes/frontend/class-wbte-ewb-frontend.php:144
-#: react/src/components/RequestDetail.jsx:376
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:382
+#: react/src/components/SettingsPage.jsx:439
 msgid "Cancel"
 msgstr "Annuller"
 
@@ -688,17 +730,17 @@ msgid "Please provide a valid email address."
 msgstr "Angiv venligst en gyldig e-mailadresse."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:171
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:154
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:158
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
 #: includes/frontend/class-wbte-ewb-guest-verification.php:240
 #: templates/withdrawal-form.php:75
 msgid "No order found matching the provided order number."
 msgstr "Der blev ikke fundet nogen ordre, der matcher det angivne ordrenummer."
 
 #: includes/api/class-wbte-ewb-rest-controller.php:181
-#: includes/api/class-wbte-ewb-rest-customer.php:605
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:163
+#: includes/api/class-wbte-ewb-rest-customer.php:615
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
 msgid "The email address does not match the order."
 msgstr "E-mailadressen stemmer ikke overens med ordren."
 
@@ -707,7 +749,7 @@ msgid "The order number does not match the requested order."
 msgstr "Ordrenummeret stemmer ikke overens med den ønskede ordre."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:155
-#: includes/api/class-wbte-ewb-rest-customer.php:766
+#: includes/api/class-wbte-ewb-rest-customer.php:834
 msgid "WooCommerce order ID."
 msgstr "WooCommerce ordre-id."
 
@@ -753,7 +795,7 @@ msgid "Quantity to withdraw."
 msgstr "Mængde at fortryde."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:250
-#: includes/api/class-wbte-ewb-rest-customer.php:809
+#: includes/api/class-wbte-ewb-rest-customer.php:877
 msgid "Customer reason for the withdrawal."
 msgstr "Kundens årsag til fortrydelseen."
 
@@ -763,13 +805,13 @@ msgid "Guest withdrawal service is not available."
 msgstr "Fortrydelsesservice for gæster er ikke tilgængelig."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:377
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:285
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
 #: includes/core/class-wbte-ewb-request-service.php:149
 msgid "Please select at least one item to withdraw."
 msgstr "Vælg venligst mindst én vare, der skal fortrydes."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:405
-#: includes/api/class-wbte-ewb-rest-customer.php:538
+#: includes/api/class-wbte-ewb-rest-customer.php:548
 msgid "Withdrawal request submitted successfully."
 msgstr "Anmodning om fortrydelse indsendt."
 
@@ -788,7 +830,7 @@ msgid "Items are required for partial withdrawal requests."
 msgstr "Varer er påkrævet for anmodninger om delvis fortrydelse."
 
 #: includes/api/class-wbte-ewb-rest-customer.php:466
-#: includes/api/class-wbte-ewb-rest-customer.php:628
+#: includes/api/class-wbte-ewb-rest-customer.php:638
 msgid "The specified order could not be found."
 msgstr "Den angivne ordre kunne ikke findes."
 
@@ -796,44 +838,44 @@ msgstr "Den angivne ordre kunne ikke findes."
 msgid "A reason is required for withdrawal requests."
 msgstr "Der kræves en begrundelse for anmodninger om fortrydelse."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:517
+#: includes/api/class-wbte-ewb-rest-customer.php:527
 #: includes/api/class-wbte-ewb-rest-requests.php:403
 #: includes/api/class-wbte-ewb-rest-requests.php:445
 msgid "Request service is not available."
 msgstr "Anmodningstjeneste er ikke tilgængelig."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:565
+#: includes/api/class-wbte-ewb-rest-customer.php:575
 msgid "This order does not belong to your account."
 msgstr "Denne ordre hører ikke til din konto."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:581
+#: includes/api/class-wbte-ewb-rest-customer.php:591
 msgid "Order number is required for guest withdrawal requests."
 msgstr "Ordrenummer er påkrævet for gæstefortrydelsesanmodninger."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:589
+#: includes/api/class-wbte-ewb-rest-customer.php:599
 msgid "Email is required for guest withdrawal requests."
 msgstr "E-mail er påkrævet for gæstefortrydelsesanmodninger."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:597
+#: includes/api/class-wbte-ewb-rest-customer.php:607
 msgid "The order number does not match this order."
 msgstr "Ordrenummeret stemmer ikke overens med denne ordre."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:645
+#: includes/api/class-wbte-ewb-rest-customer.php:655
 msgid "Eligibility service is not available."
 msgstr "Kvalificeringsservice er ikke tilgængelig."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:683
+#: includes/api/class-wbte-ewb-rest-customer.php:713
 msgid "This item is not eligible for withdrawal."
 msgstr "Denne vare er ikke berettiget til fortrydelse."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:693
+#: includes/api/class-wbte-ewb-rest-customer.php:723
 msgid ""
 "This item is already included in a pending or approved withdrawal request."
 msgstr ""
 "Denne vare er allerede inkluderet i en afventende eller godkendt "
 "fortrydelsesanmodning."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:760
+#: includes/api/class-wbte-ewb-rest-customer.php:828
 #: includes/api/class-wbte-ewb-rest-requests.php:81
 #: includes/api/class-wbte-ewb-rest-requests.php:104
 #: includes/api/class-wbte-ewb-rest-requests.php:133
@@ -841,24 +883,24 @@ msgstr ""
 msgid "Unique identifier for the withdrawal request."
 msgstr "Unik identifikator for fortrydelsesanmodningen."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:771
+#: includes/api/class-wbte-ewb-rest-customer.php:839
 #: includes/api/class-wbte-ewb-rest-requests.php:523
 msgid "Customer-facing order number."
 msgstr "Kundevendt ordrenummer."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:776
+#: includes/api/class-wbte-ewb-rest-customer.php:844
 msgid "Status of the withdrawal request."
 msgstr "Status for fortrydelsesanmodningen."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:783
+#: includes/api/class-wbte-ewb-rest-customer.php:851
 msgid "Full or partial withdrawal."
 msgstr "Hel eller delvis fortrydelse."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:789
+#: includes/api/class-wbte-ewb-rest-customer.php:857
 msgid "Line items included in the withdrawal."
 msgstr "Linjeposter inkluderet i fortrydelseen."
 
-#: includes/api/class-wbte-ewb-rest-customer.php:814
+#: includes/api/class-wbte-ewb-rest-customer.php:882
 msgid "Date the request was created."
 msgstr "Dato, hvor anmodningen blev oprettet."
 
@@ -895,8 +937,8 @@ msgid "Filter by customer email or name."
 msgstr "Filtrer efter kundens e-mail eller navn."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:202
-msgid "Search by order number or receipt hash."
-msgstr "Filtrer efter ordrenummer."
+msgid "Search by request ID, order number or receipt hash."
+msgstr "Søg efter anmodnings-ID, ordrenummer eller kvitteringshash."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:209
 msgid "Filter by order number."
@@ -921,13 +963,13 @@ msgid "Request repository is not available."
 msgstr "Anmodningslager er ikke tilgængeligt."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:342
-#: includes/core/class-wbte-ewb-request-service.php:493
-#: includes/core/class-wbte-ewb-request-service.php:574
+#: includes/core/class-wbte-ewb-request-service.php:505
+#: includes/core/class-wbte-ewb-request-service.php:599
 msgid "Withdrawal request not found."
 msgstr "Anmodning om fortrydelse ikke fundet."
 
 #: includes/api/class-wbte-ewb-rest-requests.php:360
-#: react/src/utils/getActorLabel.js:25
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
 msgid "Guest user"
 msgstr "Gæstebruger"
 
@@ -1020,8 +1062,8 @@ msgstr "Om delvis ordrefortrydelse skal tillades."
 msgid "Number of days within which withdrawal is allowed."
 msgstr "Antal dage, inden for hvilket fortrydelse er tilladt."
 
+#. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:112
-#, php-format
 msgid "%s must be at least 1."
 msgstr "%s skal være mindst 1."
 
@@ -1089,8 +1131,8 @@ msgstr "E-mail-adresser, der modtager admin-beskeder om fortrydelse."
 msgid "Customer-facing contact email shown in rejected withdrawal emails."
 msgstr "Kunderettet kontakt-e-mail vist i afviste fortrydelses-e-mails."
 
+#. translators: %s: parameter name
 #: includes/api/class-wbte-ewb-rest-settings.php:295
-#, php-format
 msgid "%s must be an array of email addresses."
 msgstr "%s skal være en række e-mailadresser."
 
@@ -1143,8 +1185,8 @@ msgctxt "Order status"
 msgid "Pending Withdrawal"
 msgstr "Afventer fortrydelse"
 
-#: includes/class-wbte-ewb-post-types.php:62
-#, php-format
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
 msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
 msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
 msgstr[0] "Afventende fortrydelse <span class=\"count\">(%s)</span>"
@@ -1155,45 +1197,45 @@ msgctxt "Order status"
 msgid "Withdrawn"
 msgstr "Fortrudt"
 
-#: includes/class-wbte-ewb-post-types.php:75
-#, php-format
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
 msgid "Withdrawn <span class=\"count\">(%s)</span>"
 msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
 msgstr[0] "Fortrudt <span class=\"count\">(%s)</span>"
 msgstr[1] "Fortrudt <span class=\"count\">(%s)</span>"
 
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
 #: includes/class-wbte-ewb-post-types.php:139
-#, php-format
 msgid "Change status to %s"
 msgstr "Skift status til %s"
 
-#: includes/class-wbte-ewb-settings.php:316
-#: react/src/components/SettingsPage.jsx:831
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1332
 msgid "Request Withdrawal"
 msgstr "Anmod om fortrydelse"
 
-#: includes/core/class-wbte-ewb-eligibility.php:344
+#: includes/core/class-wbte-ewb-eligibility.php:354
 msgid "This product type cannot be withdrawn."
 msgstr "Denne produkttype kan ikke fortrydes."
 
-#: includes/core/class-wbte-ewb-eligibility.php:348
+#: includes/core/class-wbte-ewb-eligibility.php:358
 msgid "Virtual products cannot be withdrawn."
 msgstr "Virtuelle produkter kan ikke fortrydes."
 
-#: includes/core/class-wbte-ewb-eligibility.php:352
+#: includes/core/class-wbte-ewb-eligibility.php:362
 msgid "Downloadable products cannot be withdrawn."
 msgstr "Produkter, der kan downloades, kan ikke fortrydes."
 
-#: includes/core/class-wbte-ewb-eligibility.php:361
+#: includes/core/class-wbte-ewb-eligibility.php:371
 msgid "This product cannot be withdrawn."
 msgstr "Dette produkt kan ikke fortrydes."
 
-#: includes/core/class-wbte-ewb-eligibility.php:370
+#: includes/core/class-wbte-ewb-eligibility.php:380
 msgid "Products in this category cannot be withdrawn."
 msgstr "Produkter i denne kategori kan ikke fortrydes."
 
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
-#: includes/frontend/class-wbte-ewb-frontend.php:137
+#: includes/frontend/class-wbte-ewb-frontend.php:157
 msgid "Please enter your order number."
 msgstr "Indtast venligst dit ordrenummer."
 
@@ -1202,48 +1244,48 @@ msgstr "Indtast venligst dit ordrenummer."
 msgid "Please provide a reason for your withdrawal request."
 msgstr "Angiv venligst en årsag til din anmodning om fortrydelse."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:108
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
 msgid "Unable to queue your withdrawal request. Please try again."
 msgstr "Kan ikke stille din fortrydelsesanmodning i kø. Prøv venligst igen."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:167
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:264
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
 #: includes/frontend/class-wbte-ewb-guest-verification.php:241
 msgid "The email address does not match the billing email on this order."
 msgstr ""
 "E-mailadressen stemmer ikke overens med faktureringsmailen på denne ordre."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:172
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:176
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:271
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:524
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
 #: includes/core/class-wbte-ewb-request-service.php:129
 #: includes/frontend/class-wbte-ewb-guest-verification.php:242
 msgid "This order is not eligible for withdrawal."
 msgstr "Denne ordre er ikke berettiget til fortrydelse."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:219
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:226
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:614
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:621
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
 #: includes/frontend/class-wbte-ewb-guest-verification.php:238
 msgid "This verification link is invalid or has already been used."
 msgstr "Dette bekræftelseslink er ugyldigt eller er allerede blevet brugt."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:233
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:508
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
 #: includes/frontend/class-wbte-ewb-guest-verification.php:243
 msgid "This withdrawal request has already been submitted."
 msgstr "Denne anmodning om fortrydelse er allerede blevet indsendt."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:242
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:630
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
 msgid "Verification link expired."
 msgstr "Bekræftelseslinket er udløbet."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:248
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:515
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:636
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
 #: includes/frontend/class-wbte-ewb-guest-verification.php:239
 msgid ""
 "This verification link has expired. Please submit a new withdrawal request."
@@ -1251,24 +1293,24 @@ msgstr ""
 "Dette bekræftelseslink er udløbet. Indsend venligst en ny "
 "fortrydelsesanmodning."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:294
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
 #: includes/frontend/class-wbte-ewb-form-handler.php:129
 #: includes/frontend/class-wbte-ewb-form-handler.php:178
 #: includes/frontend/class-wbte-ewb-guest-verification.php:170
 msgid "The withdrawal service is temporarily unavailable."
 msgstr "Fortrydelsestjenesten er midlertidigt utilgængelig."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:501
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
 msgid "This verification session is invalid or has expired."
 msgstr "Denne bekræftelsessession er ugyldig eller er udløbet."
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:546
-#, php-format
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
 msgid "[%s] Verify your withdrawal request"
 msgstr "[%s] Bekræft din anmodning om fortrydelse"
 
-#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:552
-#, php-format
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
 msgid ""
 "Please verify your withdrawal request by clicking the link below:\n"
 "\n"
@@ -1299,93 +1341,93 @@ msgstr "Kunne ikke oprette fortrydelsesanmodningen."
 msgid "Withdrawal request submitted."
 msgstr "Anmodning om fortrydelse indsendt."
 
-#: includes/core/class-wbte-ewb-request-service.php:273
+#: includes/core/class-wbte-ewb-request-service.php:278
 msgid "The submitted withdrawal items are invalid."
 msgstr "De indsendte fortrydelsesvarer er ugyldige."
 
-#: includes/core/class-wbte-ewb-request-service.php:317
+#: includes/core/class-wbte-ewb-request-service.php:322
 msgid "No items are currently available for withdrawal on this order."
 msgstr ""
 "Der er i øjeblikket ingen varer tilgængelige til fortrydelse på denne ordre."
 
-#: includes/core/class-wbte-ewb-request-service.php:396
-#: includes/core/class-wbte-ewb-request-service.php:409
-#: includes/core/class-wbte-ewb-request-service.php:419
+#: includes/core/class-wbte-ewb-request-service.php:408
+#: includes/core/class-wbte-ewb-request-service.php:421
+#: includes/core/class-wbte-ewb-request-service.php:431
 msgid "One or more selected items are invalid for this order."
 msgstr "En eller flere valgte varer er ugyldige for denne ordre."
 
-#: includes/core/class-wbte-ewb-request-service.php:429
-#, php-format
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:441
 msgid "\"%s\" is not eligible for withdrawal on this order."
 msgstr "\"%s\" kan ikke fortrydes på denne ordre."
 
-#: includes/core/class-wbte-ewb-request-service.php:430
-#: includes/core/class-wbte-ewb-request-service.php:448
+#: includes/core/class-wbte-ewb-request-service.php:442
+#: includes/core/class-wbte-ewb-request-service.php:460
 msgid "This item"
 msgstr "Denne vare"
 
-#: includes/core/class-wbte-ewb-request-service.php:447
-#, php-format
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:459
 msgid "\"%s\" is no longer available for withdrawal on this order."
 msgstr "\"%s\" er ikke længere tilgængelig for fortrydelse på denne ordre."
 
-#: includes/core/class-wbte-ewb-request-service.php:459
-#, php-format
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:471
 msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
 msgstr "Fortrydelsesmængden for \"%1$s\" må ikke overstige %2$d."
 
-#: includes/core/class-wbte-ewb-request-service.php:460
+#: includes/core/class-wbte-ewb-request-service.php:472
 msgid "this item"
 msgstr "denne vare"
 
-#: includes/core/class-wbte-ewb-request-service.php:501
+#: includes/core/class-wbte-ewb-request-service.php:513
 msgid "Only pending requests can be approved."
 msgstr "Kun afventende anmodninger kan godkendes."
 
-#: includes/core/class-wbte-ewb-request-service.php:582
+#: includes/core/class-wbte-ewb-request-service.php:607
 msgid "Only pending requests can be rejected."
 msgstr "Kun afventende anmodninger kan afvises."
 
-#: includes/core/class-wbte-ewb-request-service.php:670
+#: includes/core/class-wbte-ewb-request-service.php:695
 msgid "Withdrawal request pending review."
 msgstr "Anmodning om fortrydelse afventer gennemgang."
 
-#: includes/core/class-wbte-ewb-request-service.php:688
+#: includes/core/class-wbte-ewb-request-service.php:724
 msgid "Withdrawal request approved."
 msgstr "Anmodning om fortrydelse godkendt."
 
-#: includes/core/class-wbte-ewb-request-service.php:731
+#: includes/core/class-wbte-ewb-request-service.php:767
 msgid ""
 "Partial withdrawal approved. Restoring order status for remaining items."
 msgstr ""
 "Delvis fortrydelse godkendt. Gendanner ordrestatus for de resterende varer."
 
-#: includes/core/class-wbte-ewb-request.php:361
-#, php-format
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:362
 msgid "%1$d of %2$d"
 msgstr "%1$d af %2$d"
 
-#: includes/core/class-wbte-ewb-request.php:516
+#: includes/core/class-wbte-ewb-request.php:534
 #: includes/frontend/class-wbte-ewb-my-account.php:168
-#: react/src/components/RequestsList.jsx:250
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:250
 msgid "Partial"
 msgstr "Delvis"
 
-#: includes/core/class-wbte-ewb-request.php:519
+#: includes/core/class-wbte-ewb-request.php:537
 #: includes/emails/class-wbte-ewb-email-preview.php:93
 #: includes/emails/class-wbte-ewb-email-preview.php:204
 #: includes/frontend/class-wbte-ewb-my-account.php:169
-#: react/src/components/RequestsList.jsx:251
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:251
 msgid "Full"
 msgstr "Fuld"
 
-#: includes/core/class-wbte-ewb-request.php:542
-#, php-format
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:560
 msgid "%1$s at %2$s (%3$s)"
 msgstr "%1$s kl. %2$s (%3$s)"
 
 #: includes/core/class-wbte-ewb-review-banner.php:187
-#: react/src/components/ReviewBanner.jsx:71
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
 msgid ""
 "Your store is making EU right-of-withdrawal easy for customers. Enjoying "
 "WebToffee EU Withdrawal Button? Leave a review!"
@@ -1394,15 +1436,39 @@ msgstr ""
 "WebToffee EU Withdrawal Button? Skriv en anmeldelse!"
 
 #: includes/core/class-wbte-ewb-review-banner.php:190
-#: react/src/components/ReviewBanner.jsx:72
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
 msgid ""
 "You've been using WebToffee EU Withdrawal Button for a week. We'd really "
 "appreciate if you could take a moment to leave us a review"
-msgstr "Du har brugt WebToffee EU Withdrawal Button i en uge. Vi ville virkelig sætte pris på, hvis du kunne tage et øjeblik til at give os en anmeldelse"
+msgstr ""
+"Du har brugt WebToffee EU Withdrawal Button i en uge. Vi ville virkelig "
+"sætte pris på, hvis du kunne tage et øjeblik til at give os en anmeldelse"
 
 #: includes/core/class-wbte-ewb-review-banner.php:235
 msgid "Invalid review banner action."
 msgstr "Ugyldig handling for anmeldelsesbanner."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Gæsteordre ikke berettiget"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Sendes til gæstekunder, når deres ordre ikke er berettiget til "
+"fortrydelse."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Din ordre #{order_number} er ikke berettiget til "
+"fortrydelse"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "Ordre ikke berettiget til fortrydelse"
 
 #: includes/emails/class-wbte-ewb-email-guest-verification.php:40
 msgid "Guest Withdrawal Verification"
@@ -1459,11 +1525,11 @@ msgstr ""
 "[{site_title}]: Din fortrydelsesanmodning for ordre #{order_number} er "
 "blevet godkendt"
 
+#. translators: %s: list of available placeholder tags.
 #: includes/emails/class-wbte-ewb-email-request-approved.php:185
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:206
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:203
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:185
-#, php-format
 msgid "Available placeholders: %s"
 msgstr "Tilgængelige pladsholdere: %s"
 
@@ -1545,8 +1611,8 @@ msgstr "[{site_title}]: Ny fortrydelsesanmodning for ordre #{order_number}"
 msgid "New Withdrawal Request"
 msgstr "Ny fortrydelsesanmodning"
 
+#. translators: %s: default store email address.
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:216
-#, php-format
 msgid ""
 "Optional override for this email only. Leave blank to use recipients "
 "configured in Withdrawal settings (defaults to %s)."
@@ -1576,7 +1642,7 @@ msgid "Security check failed. Please try again."
 msgstr "Sikkerhedstjek mislykkedes. Prøv venligst igen."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:104
-#: includes/frontend/class-wbte-ewb-frontend.php:130
+#: includes/frontend/class-wbte-ewb-frontend.php:150
 msgid "Please select an order."
 msgstr "Vælg venligst en ordre."
 
@@ -1595,43 +1661,49 @@ msgstr ""
 "bekræftelsesmail."
 
 #: includes/frontend/class-wbte-ewb-form-handler.php:263
-#: includes/frontend/class-wbte-ewb-frontend.php:136
+#: includes/frontend/class-wbte-ewb-frontend.php:156
 msgid "Your withdrawal request has been submitted successfully."
 msgstr "Din anmodning om fortrydelse er blevet indsendt."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:129
+#: includes/frontend/class-wbte-ewb-frontend.php:117
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "Jeg har læst og accepterer fortrydelsesvilkårene og -betingelserne"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:149
 msgid "Loading..."
 msgstr "Indlæser..."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:131
+#: includes/frontend/class-wbte-ewb-frontend.php:151
 msgid "Please select at least one item."
 msgstr "Vælg venligst mindst ét ​​element."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:132
+#: includes/frontend/class-wbte-ewb-frontend.php:152
 msgid "quantity"
 msgstr "mængde"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:133
+#: includes/frontend/class-wbte-ewb-frontend.php:153
 msgid "Please enter a valid quantity for each selected item."
 msgstr "Indtast venligst et gyldigt antal for hver valgt vare."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:134
+#: includes/frontend/class-wbte-ewb-frontend.php:154
 msgid "Please provide a reason for withdrawal."
 msgstr "Angiv venligst en årsag til fortrydelseen."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:139
+#: includes/frontend/class-wbte-ewb-frontend.php:159
 msgid "Fetching eligible items..."
 msgstr "Henter kvalificerede varer..."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:140
+#: includes/frontend/class-wbte-ewb-frontend.php:160
 msgid "No eligible items found for this order."
 msgstr "Der blev ikke fundet nogen kvalificerede varer til denne ordre."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:141
+#: includes/frontend/class-wbte-ewb-frontend.php:161
 msgid "Review your withdrawal request"
 msgstr "Gennemgå din anmodning om fortrydelse"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:142
+#: includes/frontend/class-wbte-ewb-frontend.php:162
 msgid ""
 "Please review the details below. To complete your statutory withdrawal, "
 "click Confirm withdrawal."
@@ -1639,41 +1711,41 @@ msgstr ""
 "Gennemgå venligst oplysningerne nedenfor. For at gennemføre din lovbestemte "
 "fortrydelse skal du klikke på Bekræft fortrydelse."
 
-#: includes/frontend/class-wbte-ewb-frontend.php:143
+#: includes/frontend/class-wbte-ewb-frontend.php:163
 msgid "Confirm withdrawal"
 msgstr "Bekræft fortrydelse"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:145
-#: react/src/components/RequestsList.jsx:193
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:193
 msgid "Customer"
 msgstr "Kunde"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:146
+#: includes/frontend/class-wbte-ewb-frontend.php:166
 #: includes/frontend/class-wbte-ewb-my-account.php:140
 #: includes/frontend/class-wbte-ewb-my-account.php:159
 #: includes/frontend/views/form-logged-in.php:52
-#: react/src/components/RequestDetail.jsx:265
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
 msgid "Order"
 msgstr "Ordre"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:147
+#: includes/frontend/class-wbte-ewb-frontend.php:167
 msgid "Withdrawal type"
 msgstr "Fortrydelsestype"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:148
+#: includes/frontend/class-wbte-ewb-frontend.php:168
 #: includes/frontend/views/form-guest-verified.php:61
 #: includes/frontend/views/form-logged-in.php:73
 msgid "Items to withdraw"
 msgstr "Ting, der skal fortrydes"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:149
+#: includes/frontend/class-wbte-ewb-frontend.php:169
 #: includes/frontend/views/form-guest-verified.php:55
 #: includes/frontend/views/form-guest.php:75
 #: includes/frontend/views/form-logged-in.php:106
 msgid "Reason for withdrawal"
 msgstr "Årsag til fortrydelse"
 
-#: includes/frontend/class-wbte-ewb-frontend.php:150
+#: includes/frontend/class-wbte-ewb-frontend.php:170
 msgid "Full withdrawal"
 msgstr "Fuld fortrydelse"
 
@@ -1684,11 +1756,12 @@ msgstr "Anmodning indsendt"
 
 #: includes/frontend/class-wbte-ewb-guest-verification.php:221
 msgid ""
-"Thank you. If the details you provided are correct, you will receive a "
-"verification email to complete your withdrawal request."
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
 msgstr ""
-"Tak. Hvis de oplysninger, du har angivet, er korrekte, vil du modtage en "
-"bekræftelses-e-mail for at fuldføre din anmodning om fortrydelse."
+"Tak. Hvis de oplysninger, du har angivet, er korrekte, vil du modtage "
+"en e-mail vedrørende din anmodning om fortrydelse. Tjek venligst din "
+"indbakke."
 
 #: includes/frontend/class-wbte-ewb-guest-verification.php:250
 msgid "We could not verify your withdrawal request. Please try again."
@@ -1710,6 +1783,7 @@ msgstr "Anmodning"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:143
 #: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:33
 #: react/src/components/RequestsList.jsx:196
 msgid "Date"
@@ -1717,7 +1791,7 @@ msgstr "Dato"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:146
 #: includes/frontend/class-wbte-ewb-my-account.php:165
-#: react/src/components/RequestsList.jsx:194
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:194
 msgid "Type"
 msgstr "Type"
 
@@ -1725,8 +1799,9 @@ msgstr "Type"
 #: includes/frontend/class-wbte-ewb-my-account.php:172
 #: templates/emails/customer-withdrawal-approved.php:99
 #: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:46
-#: react/src/components/RequestDetail.jsx:255
+#: react/src/components/RequestDetail.jsx:261
 #: react/src/components/RequestsList.jsx:195
 msgid "Status"
 msgstr "Status"
@@ -1735,13 +1810,13 @@ msgstr "Status"
 msgid "Withdrawal Request"
 msgstr "Anmodning om fortrydelse"
 
+#. translators: %s: request ID
 #: includes/frontend/class-wbte-ewb-my-account.php:302
-#, php-format
 msgid "Request #%s"
 msgstr "Anmodning #%s"
 
+#. translators: %s: withdrawal request type label
 #: includes/frontend/class-wbte-ewb-my-account.php:313
-#, php-format
 msgid "Type: %s"
 msgstr "Type: %s"
 
@@ -1750,14 +1825,14 @@ msgid "Submitted"
 msgstr "Indsendt"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:332
-#: react/src/components/RequestDetail.jsx:271
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
 msgid "Processed"
 msgstr "Behandlet"
 
 #: includes/frontend/class-wbte-ewb-my-account.php:342
 #: templates/emails/admin-withdrawal-submitted.php:108
 #: templates/emails/customer-withdrawal-rejected.php:121
-#: react/src/components/RequestDetail.jsx:233
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
 msgid "Reason"
 msgstr "Årsag"
 
@@ -1784,9 +1859,9 @@ msgstr "Fakturerings-e-mailadresse"
 msgid "Loading items..."
 msgstr "Indlæser elementer..."
 
-#: includes/frontend/views/form-guest-verified.php:80
-#: includes/frontend/views/form-guest.php:93
-#: includes/frontend/views/form-logged-in.php:121
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
 msgid "Submit Withdrawal Request"
 msgstr "Indsend anmodning om fortrydelse"
 
@@ -1801,13 +1876,11 @@ msgstr "påkrævet"
 #: includes/frontend/views/form-guest.php:84
 msgid ""
 "Enter your order number and billing email to start. If your details match "
-"our records, you will receive a verification email. After verifying your "
-"email, you can choose which items to withdraw."
+"our records, you will receive an email with further instructions."
 msgstr ""
 "Indtast dit ordrenummer og faktureringsmail for at starte. Hvis dine "
 "oplysninger stemmer overens med vores optegnelser, vil du modtage en "
-"bekræftelses-e-mail. Efter at have bekræftet din e-mail, kan du vælge, "
-"hvilke varer du vil fortryde."
+"e-mail med yderligere instruktioner."
 
 #: includes/frontend/views/form-logged-in.php:45
 msgid "You currently have no orders eligible for withdrawal."
@@ -1817,8 +1890,8 @@ msgstr "Du har i øjeblikket ingen ordrer, der kan fortrydes."
 msgid "-- Select an order --"
 msgstr "-- Vælg en ordre --"
 
+#. translators: 1: order number, 2: order date
 #: includes/frontend/views/form-logged-in.php:60
-#, php-format
 msgid "#%1$s — %2$s"
 msgstr "#%1$s — %2$s"
 
@@ -1834,8 +1907,8 @@ msgstr "Fornavn"
 msgid "Last name"
 msgstr "Efternavn"
 
+#. translators: %s: order number.
 #: templates/emails/admin-withdrawal-submitted.php:32
-#, php-format
 msgid "A new withdrawal request has been submitted for order #%s."
 msgstr "En ny anmodning om fortrydelse er blevet indsendt for ordre #%s."
 
@@ -1848,7 +1921,7 @@ msgid "Customer Name"
 msgstr "Kundens navn"
 
 #: templates/emails/admin-withdrawal-submitted.php:55
-#: react/src/components/RequestDetail.jsx:220
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
 msgid "Customer Email"
 msgstr "Kunde-e-mail"
 
@@ -1870,7 +1943,7 @@ msgstr "Ordrenummer"
 #: templates/emails/customer-withdrawal-approved.php:65
 #: templates/emails/customer-withdrawal-rejected.php:78
 #: templates/emails/customer-withdrawal-submitted.php:65
-#: react/src/components/RequestDetail.jsx:224
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
 msgid "Request Type"
 msgstr "Anmodningstype"
 
@@ -1892,18 +1965,57 @@ msgstr "Vare"
 #: templates/emails/admin-withdrawal-submitted.php:145
 #: templates/emails/customer-withdrawal-approved.php:131
 #: templates/emails/customer-withdrawal-submitted.php:119
-#: react/src/components/RequestDetail.jsx:291
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
 msgid "Quantity"
 msgstr "Antal"
 
+#. translators: %s: admin URL to manage withdrawal requests.
 #: templates/emails/admin-withdrawal-submitted.php:173
-#, php-format
 msgid ""
 "To review and manage this request, visit the <a href=\"%s\">Withdrawal "
 "Requests dashboard</a>."
 msgstr ""
 "For at gennemgå og administrere denne anmodning skal du besøge dashboardet "
 "<a href=\"%s\">Fortrydelsesanmodninger</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order "
+"is not currently eligible for withdrawal."
+msgstr ""
+"Vi har modtaget din anmodning om fortrydelse af ordre nr. %s. Desværre "
+"er denne ordre i øjeblikket ikke berettiget til fortrydelse."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "Dette kan skyldes:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "Fortrydelsesfristen for denne ordre er udløbet."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Der er allerede behandlet en fortrydelse for denne ordre."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "Der er ingen resterende varer, der er berettiget til fortrydelse."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Hvis du mener, at dette er en fejl, eller har spørgsmål, bedes du "
+"kontakte os på %s."
 
 #: templates/emails/customer-guest-verification.php:27
 msgid ""
@@ -1927,15 +2039,15 @@ msgid "If you did not request a withdrawal, you can ignore this email."
 msgstr ""
 "Hvis du ikke har anmodet om en fortrydelse, kan du ignorere denne e-mail."
 
+#. translators: %s: customer first name.
 #: templates/emails/customer-withdrawal-approved.php:32
 #: templates/emails/customer-withdrawal-rejected.php:32
 #: templates/emails/customer-withdrawal-submitted.php:32
-#, php-format
 msgid "Hi %s,"
 msgstr "Hej %s,"
 
+#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-approved.php:42
-#, php-format
 msgid "Great news! Your withdrawal request for order #%s has been approved."
 msgstr ""
 "Gode ​​nyheder! Din anmodning om fortrydelse af ordre #%s er blevet godkendt."
@@ -1952,7 +2064,7 @@ msgstr "genstande"
 
 #: templates/emails/customer-withdrawal-approved.php:130
 #: templates/emails/customer-withdrawal-submitted.php:116
-#: react/src/components/RequestDetail.jsx:290
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
 msgid "Product"
 msgstr "Produkt"
 
@@ -1988,8 +2100,8 @@ msgstr ""
 msgid "If you have any questions, please do not hesitate to contact us."
 msgstr "Hvis du har spørgsmål, så tøv ikke med at kontakte os."
 
+#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-rejected.php:42
-#, php-format
 msgid ""
 "We have reviewed your withdrawal request for order #%s. Unfortunately, we "
 "are unable to approve this request at this time."
@@ -2007,13 +2119,13 @@ msgstr ""
 "yderligere oplysninger at give, bedes du kontakte os, og vi vil med glæde "
 "gennemgå din sag igen."
 
+#. translators: %s: store contact email address or comma-separated list of addresses.
 #: templates/emails/customer-withdrawal-rejected.php:149
-#, php-format
 msgid "You can reach us at %s."
 msgstr "Du kan kontakte os på %s."
 
+#. translators: %s: order number.
 #: templates/emails/customer-withdrawal-submitted.php:42
-#, php-format
 msgid ""
 "We have received your withdrawal request for order #%s. Thank you for "
 "letting us know."
@@ -2040,7 +2152,7 @@ msgid ""
 msgstr "Hvis du har spørgsmål i mellemtiden, så tøv ikke med at kontakte os."
 
 #: templates/emails/parts/withdrawal-verification-code-row.php:27
-#: react/src/components/RequestDetail.jsx:242
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
 msgid "Receipt hash"
 msgstr "Kvitteringshash"
 
@@ -2052,17 +2164,17 @@ msgstr ""
 "Vi har modtaget din anmodning om fortrydelse. For at fuldføre den skal du "
 "bekræfte din fakturerings-e-mailadresse ved hjælp af linket nedenfor."
 
+#. translators: %s: order number
 #: templates/emails/plain/customer-guest-verification.php:19
-#, php-format
 msgid "Order number: %s"
 msgstr "Ordrenummer: %s"
 
+#. translators: %s: reason
 #: templates/emails/plain/customer-guest-verification.php:24
-#, php-format
 msgid "Reason: %s"
 msgstr "Årsag: %s"
 
-#: wt-eu-withdrawal-button.php:112
+#: wt-eu-withdrawal-button.php:111
 msgid ""
 "WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
 "installed and active."
@@ -2070,21 +2182,766 @@ msgstr ""
 "WebToffee EU-fortrydelsesknap til WooCommerce kræver, at WooCommerce er "
 "installeret og aktiv."
 
-#: react/src/components/ActivityLog.jsx:24
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr "Kundeinitierede ordreannulleringer og delvise refusioner."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Anmodninger"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Anmeldelsesanmodning"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Alle statusser"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Dato fra"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Dato til"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Søger…"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Ordrenr. eller kvitteringshash"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Nulstil"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Anvend filtre"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:102
+msgid "No change vs last week"
+msgstr "Ingen ændring i forhold til sidste uge"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:113
+msgid "No data"
+msgstr "Ingen data"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:119
+msgid "No change"
+msgstr "Ingen ændring"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:135
+msgid "Open Requests"
+msgstr "Åbne anmodninger"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:149
+msgid "Approved (30d)"
+msgstr "Godkendt (30 dage)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:191
+msgid "ID"
+msgstr "ID"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:192
+msgid "Order #"
+msgstr "Ordre #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Actions"
+msgstr "Handlinger"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:273
+msgid "View"
+msgstr "Vis"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3: total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:287
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Viser %1$d–%2$d af %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:292
+msgid "Showing 0 of 0"
+msgstr "Viser 0 af 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Automatisk godkendelse"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Bruger"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Ukendt"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "Ingen statusændringer registreret."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
 msgid "No activity recorded."
 msgstr "Ingen aktivitet registreret."
 
-#: react/src/components/ActivityLog.jsx:34
-msgid "Actor"
-msgstr "Aktør"
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Kilde"
 
-#: react/src/components/ActivityLog.jsx:35
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
 msgid "Action"
 msgstr "Handling"
 
-#: react/src/components/ActivityLog.jsx:36
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
 msgid "Note"
 msgstr "Note"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Tilbage til listen"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Anmodningsoplysninger"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "Ingen årsag angivet"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Oplysninger om refusionsmetode"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Oprettet"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Ordrevarer"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Linjetotal"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Fortrydelse godkendt"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Fortrydelse afvist"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Anmodning om fortrydelse indsendt"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "Ikke inkluderet"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:333
+msgid "No order items were found for this request."
+msgstr "Der blev ikke fundet nogen ordrevarer for denne anmodning."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:342
+msgid "Status Timeline"
+msgstr "Statustidslinje"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Activity Log"
+msgstr "Aktivitetslog"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:361
+#: react/src/components/RequestDetail.jsx:391
+msgid "Reject Request"
+msgstr "Afvis anmodning"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:368
+msgid "Rejection Reason"
+msgstr "Afvisningsårsag"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d valgt"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Ryd alle"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Fjern produkt"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Søg efter et produkt…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Søger…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Ingen produkter fundet."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Fjern kategori"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Søg i kategorier…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Ingen kategorier matcher din søgning."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Skriv for at filtrere kategorier…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Ingen produktkategorier fundet."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Fjern status"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Søg i ordrestatusser…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Ingen ordrestatusser matcher din søgning."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Skriv for at filtrere ordrestatusser…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Ingen ordrestatusser fundet."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Denne e-mailadresse er allerede tilføjet."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Fjern e-mail"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Tilføj mindst én modtager for at gemme indstillingerne."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Indtast e-mailadresse…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Tilføj"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:237
+msgid "Global"
+msgstr "Global"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "WooCommerce only"
+msgstr "Kun WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:253
+#: react/src/components/SettingsPage.jsx:1288
+msgid "General"
+msgstr "Generelt"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+msgid "Rules & Exclusions"
+msgstr "Regler og undtagelser"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Workflow"
+msgstr "Arbejdsgang"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Advanced"
+msgstr "Avanceret"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:390
+#: react/src/components/SettingsPage.jsx:427
+msgid "Confirm import"
+msgstr "Bekræft import"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:400
+msgid "Export version:"
+msgstr "Eksportversion:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:402
+msgid "Current version:"
+msgstr "Aktuel version:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:408
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible "
+"with your current version. Consider updating the plugin before importing."
+msgstr ""
+"Eksportfilen er fra en nyere version. Nogle indstillinger er muligvis "
+"ikke kompatible med din nuværende version. Overvej at opdatere "
+"pluginet, før du importerer."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:413
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"Dette vil overskrive alle nuværende plugin-indstillinger. Denne "
+"handling kan ikke fortrydes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:335
+msgid "Importing settings..."
+msgstr "Importerer indstillinger..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:347
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Indstillingerne blev importeret. Genindlæser side..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:297
+msgid "Settings exported successfully."
+msgstr "Indstillingerne blev eksporteret."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:456
+msgid "Export settings"
+msgstr "Eksportér indstillinger"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:463
+msgid "Import settings"
+msgstr "Importér indstillinger"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:320
+msgid "Invalid settings file. Please select a valid export file."
+msgstr "Ugyldig indstillingsfil. Vælg venligst en gyldig eksportfil."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:326
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr "Filen kunne ikke læses. Sørg for, at det er en gyldig JSON-fil."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:468
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Eksportér alle plugin-indstillinger som en JSON-fil, eller importér "
+"indstillinger fra en tidligere eksporteret fil."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:587
+msgid "Withdrawal Terms & Conditions"
+msgstr "Vilkår og betingelser for fortrydelsesret"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid "Published"
+msgstr "Offentliggjort"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:611
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:631
+msgid "Edit page"
+msgstr "Rediger side"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:509
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr "Er du sikker på, at du vil slette vilkårs- og betingelsessiden?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+#: react/src/components/SettingsPage.jsx:527
+msgid "Failed to delete page."
+msgstr "Siden kunne ikke slettes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:522
+msgid "Page deleted."
+msgstr "Side slettet."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:650
+msgid "Delete"
+msgstr "Slet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:656
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Tilgængelige shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], "
+"[wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:553
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive 2011/83/"
+"EU. The page includes dynamic shortcodes for excluded products, categories, "
+"and product types that stay in sync with your settings."
+msgstr ""
+"Generér en side med vilkår og betingelser for fortrydelsesret baseret "
+"på EU-direktiv 2011/83/EU. Siden indeholder dynamiske shortcodes for "
+"udelukkede produkter, kategorier og produkttyper, der forbliver "
+"synkroniserede med dine indstillinger."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:499
+#: react/src/components/SettingsPage.jsx:502
+msgid "Failed to create page."
+msgstr "Siden kunne ikke oprettes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Page created."
+msgstr "Side oprettet."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:572
+msgid "Creating…"
+msgstr "Opretter…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:572
+msgid "Generate T&C page"
+msgstr "Generér vilkårsside"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:718
+msgid "-- Select a page --"
+msgstr "-- Vælg en side --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:731
+msgid "Failed to load settings."
+msgstr "Indstillingerne kunne ikke indlæses."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:811
+msgid "Loading settings..."
+msgstr "Indlæser indstillinger..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:820
+msgid "Unable to load settings."
+msgstr "Kan ikke indlæse indstillinger."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1190
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1291
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr ""
+"Grundlæggende adfærd og visningsindstillinger for fortrydelsesformularen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1296
+msgid "Withdrawal page"
+msgstr "Fortrydelsesside"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1314
+msgid "Show withdrawal button in footer"
+msgstr "Vis fortrydelsesknap i sidefod"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1315
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Vis en fortrydelsesknap eller et link i webstedets sidefod."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:928
+msgid "Customize appearance"
+msgstr "Tilpas udseende"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:932
+msgid "Footer"
+msgstr "Sidefod"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:933
+msgid "My account page"
+msgstr "Min konto-side"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:943
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr "Aktivér „Vis fortrydelsesknap i sidefod“ ovenfor for at tilpasse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:944
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr "Aktivér „Vis fortrydelsesknap på Min konto“ ovenfor for at tilpasse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:951
+msgid "Link text"
+msgstr "Linktekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:951
+msgid "Button text"
+msgstr "Knaptekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:962
+msgid "Display as"
+msgstr "Vis som"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:965
+msgid "Link"
+msgstr "Link"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:966
+msgid "Button"
+msgstr "Knap"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:973
+msgid "Colors"
+msgstr "Farver"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:975
+msgid "Theme default"
+msgstr "Temaets standard"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:975
+msgid "Custom"
+msgstr "Tilpasset"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:996
+msgid "Background"
+msgstr "Baggrund"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1004
+msgid "Text"
+msgstr "Tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1012
+msgid "Hover bg"
+msgstr "Hover-baggrund"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1020
+msgid "Hover text"
+msgstr "Hover-tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1324
+msgid "Footer link text"
+msgstr "Tekst til sidefodslink"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1325
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Teksten, der vises for fortrydelseslinket i sidefoden."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1340
+msgid "Display scope"
+msgstr "Visningsomfang"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1354
+msgid "Allow partial withdrawals"
+msgstr "Tillad delvise fortrydelser"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1356
+msgid "Recommended"
+msgstr "Anbefalet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1360
+msgid "Withdrawal period"
+msgstr "Fortrydelsesperiode"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1372
+msgid "days"
+msgstr "dage"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1390
+msgid "Start countdown from"
+msgstr "Start nedtælling fra"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1405
+msgid "Reason required"
+msgstr "Årsag påkrævet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1428
+msgid "Exclusions"
+msgstr "Undtagelser"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1431
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Udeluk produkttyper, kategorier eller bestemte produkter fra retten til "
+"fortrydelse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1436
+msgid "Excluded product types"
+msgstr "Udelukkede produkttyper"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1437
+msgid "Product types that cannot be withdrawn."
+msgstr "Produkttyper, der ikke kan fortrydes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1452
+msgid "Excluded categories"
+msgstr "Udelukkede kategorier"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1453
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Produkter i disse kategorier kan ikke fortrydes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1463
+msgid "Excluded products"
+msgstr "Udelukkede produkter"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1464
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr "Søg efter og vælg bestemte produkter, der ikke kan fortrydes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1486
+msgid "Order status"
+msgstr "Ordrestatus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1489
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Opdater automatisk ordrestatusser, når anmodninger om fortrydelse indsendes "
+"eller godkendes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1503
+#: react/src/components/SettingsPage.jsx:1528
+msgid "Set status to"
+msgstr "Sæt status til"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1555
+msgid ""
+"Configure admin notification recipients and the customer contact email shown "
+"in rejected withdrawal emails."
+msgstr ""
+"Konfigurer modtagere af administratorbeskeder og den kundekontakt-e-mail, "
+"der vises i e-mails om afviste fortrydelser."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1561
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr "E-mailadresser, der modtager besked om nye anmodninger om fortrydelse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1569
+msgid "Customer contact email"
+msgstr "Kundekontakt-e-mail"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1570
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"E-mailadresse, der vises til kunder, når en anmodning om fortrydelse "
+"afvises, og de skal kontakte dig."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1597
+msgid "Withdrawal button shortcode"
+msgstr "Shortcode til fortrydelsesknap"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Valgfrit. Tilpasset knaptekst. Bruger standardetiketten for shortcoden, "
+"hvis den udelades."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1615
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Valgfrit. Ekstra CSS-klasser tilføjet til knappen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1632
+msgid "Data management"
+msgstr "Datahåndtering"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1635
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Bestem, hvad der sker med pluginnets data, når pluginnet fjernes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1643
+msgid "Delete data on uninstall"
+msgstr "Slet data ved afinstallation"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1644
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when "
+"the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Fjern alle plugindata (indstillinger, anmodninger om fortrydelse, "
+"databasetabeller), når pluginnet afinstalleres. Denne handling kan ikke "
+"fortrydes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1645
+msgid "Destructive"
+msgstr "Destruktiv"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1671
+msgid "Add at least one recipient to save"
+msgstr "Tilføj mindst én modtager for at gemme"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1673
+msgid "Unsaved changes"
+msgstr "Ikke-gemte ændringer"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1674
+msgid "All changes saved"
+msgstr "Alle ændringer gemt"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1685
+msgid "Discard"
+msgstr "Kassér"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:786
+msgid "Settings saved successfully."
+msgstr "Indstillingerne blev gemt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:791
+msgid "Failed to save settings."
+msgstr "Indstillingerne kunne ikke gemmes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:772
+msgid "Add at least one admin notification recipient before saving."
+msgstr "Tilføj mindst én modtager af administratorbeskeder, før du gemmer."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1695
+msgid "Saving..."
+msgstr "Gemmer..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1696
+msgid "Save settings"
+msgstr "Gem indstillinger"
 
 #: react/src/components/AdminWarnings.jsx:59
 msgid "Fix this"
@@ -2098,603 +2955,14 @@ msgstr "Dokumentation"
 msgid "Dismiss warning"
 msgstr "Afvis advarsel"
 
-#: react/src/components/CategoryExclusionField.jsx:73
-msgid "No product categories found."
-msgstr "Ingen produktkategorier fundet."
-
-#: react/src/components/CategoryExclusionField.jsx:86
-#: react/src/components/OrderStatusPickerField.jsx:106
-#: react/src/components/ProductSearchField.jsx:186
-#, javascript-format
-msgid "%d selected"
-msgstr "%d valgt"
-
-#: react/src/components/CategoryExclusionField.jsx:95
-#: react/src/components/OrderStatusPickerField.jsx:116
-#: react/src/components/ProductSearchField.jsx:195
-msgid "Clear all"
-msgstr "Ryd alle"
-
-#: react/src/components/CategoryExclusionField.jsx:106
-msgid "Remove category"
-msgstr "Fjern kategori"
-
-#: react/src/components/CategoryExclusionField.jsx:121
-msgid "Search categories…"
-msgstr "Søg i kategorier…"
-
-#: react/src/components/CategoryExclusionField.jsx:136
-msgid "Type to filter categories…"
-msgstr "Skriv for at filtrere kategorier…"
-
-#: react/src/components/CategoryExclusionField.jsx:160
-msgid "No categories match your search."
-msgstr "Ingen kategorier matcher din søgning."
-
-#: react/src/components/EmailRecipientsField.jsx:39
-msgid "This email address is already added."
-msgstr "Denne e-mailadresse er allerede tilføjet."
-
-#: react/src/components/EmailRecipientsField.jsx:70
-msgid "Remove email"
-msgstr "Fjern e-mail"
-
-#: react/src/components/EmailRecipientsField.jsx:80
-msgid "Add at least one recipient to save settings."
-msgstr "Tilføj mindst én modtager for at gemme indstillingerne."
-
-#: react/src/components/EmailRecipientsField.jsx:89
-msgid "Enter email address…"
-msgstr "Indtast e-mailadresse…"
-
-#: react/src/components/EmailRecipientsField.jsx:103
-msgid "Add"
-msgstr "Tilføj"
-
-#: react/src/components/Filters.jsx:53
-msgid "All Statuses"
-msgstr "Alle statusser"
-
-#: react/src/components/Filters.jsx:61
-msgid "Date From"
-msgstr "Dato fra"
-
-#: react/src/components/Filters.jsx:73
-msgid "Date To"
-msgstr "Dato til"
-
-#: react/src/components/Filters.jsx:85
-msgid "Search"
-msgstr "Søger…"
-
-#: react/src/components/Filters.jsx:92
-msgid "Order # or receipt hash"
-msgstr "Ordrenr. eller kvitteringshash"
-
-#: react/src/components/Filters.jsx:109
-msgid "Reset"
-msgstr "Nulstil"
-
-#: react/src/components/Filters.jsx:120
-msgid "Apply Filters"
-msgstr "Anvend filtre"
-
-#: react/src/components/OrderStatusPickerField.jsx:93
-msgid "No order statuses found."
-msgstr "Ingen ordrestatusser fundet."
-
-#: react/src/components/OrderStatusPickerField.jsx:129
-msgid "Remove status"
-msgstr "Fjern status"
-
-#: react/src/components/OrderStatusPickerField.jsx:144
-msgid "Search order statuses…"
-msgstr "Søg i ordrestatusser…"
-
-#: react/src/components/OrderStatusPickerField.jsx:159
-msgid "Type to filter order statuses…"
-msgstr "Skriv for at filtrere ordrestatusser…"
-
-#: react/src/components/OrderStatusPickerField.jsx:183
-msgid "No order statuses match your search."
-msgstr "Ingen ordrestatusser matcher din søgning."
-
-#: react/src/components/ProductSearchField.jsx:206
-msgid "Remove product"
-msgstr "Fjern produkt"
-
-#: react/src/components/ProductSearchField.jsx:221
-msgid "Search for a product…"
-msgstr "Søg efter et produkt…"
-
-#: react/src/components/ProductSearchField.jsx:237
-msgid "Searching…"
-msgstr "Søger…"
-
-#: react/src/components/ProductSearchField.jsx:239
-msgid "No products found."
-msgstr "Ingen produkter fundet."
-
-#: react/src/components/RequestDetail.jsx:104
-#: react/src/components/RequestDetail.jsx:169
-msgid "Back to List"
-msgstr "Tilbage til listen"
-
-#: react/src/components/RequestDetail.jsx:120
-msgid "Not included"
-msgstr "Ikke inkluderet"
-
-#: react/src/components/RequestDetail.jsx:127
-msgid "Withdrawal approved"
-msgstr "Fortrydelse godkendt"
-
-#: react/src/components/RequestDetail.jsx:134
-msgid "Withdrawal rejected"
-msgstr "Fortrydelse afvist"
-
-#: react/src/components/RequestDetail.jsx:140
-msgid "Withdrawal request submitted"
-msgstr "Anmodning om fortrydelse indsendt"
-
-#: react/src/components/RequestDetail.jsx:198
-msgid "Request Information"
-msgstr "Anmodningsoplysninger"
-
-#: react/src/components/RequestDetail.jsx:203
-#: react/src/components/RequestsList.jsx:192
-msgid "Order #"
-msgstr "Ordre #"
-
-#: react/src/components/RequestDetail.jsx:234
-msgid "No reason provided"
-msgstr "Ingen årsag angivet"
-
-#: react/src/components/RequestDetail.jsx:237
-msgid "Created"
-msgstr "Oprettet"
-
-#: react/src/components/RequestDetail.jsx:283
-msgid "Order Items"
-msgstr "Ordrevarer"
-
-#: react/src/components/RequestDetail.jsx:292
-msgid "Line Total"
-msgstr "Linjetotal"
-
-#: react/src/components/RequestDetail.jsx:327
-msgid "No order items were found for this request."
-msgstr "Der blev ikke fundet nogen ordrevarer for denne anmodning."
-
-#: react/src/components/RequestDetail.jsx:336
-msgid "Status Timeline"
-msgstr "Statustidslinje"
-
-#: react/src/components/RequestDetail.jsx:346
-msgid "Activity Log"
-msgstr "Aktivitetslog"
-
-#: react/src/components/RequestDetail.jsx:355
-#: react/src/components/RequestDetail.jsx:385
-msgid "Reject Request"
-msgstr "Afvis anmodning"
-
-#: react/src/components/RequestDetail.jsx:362
-msgid "Rejection Reason"
-msgstr "Afvisningsårsag"
-
-#: react/src/components/RequestsList.jsx:102
-msgid "No change vs last week"
-msgstr "Ingen ændring i forhold til sidste uge"
-
-#: react/src/components/RequestsList.jsx:113
-msgid "No data"
-msgstr "Ingen data"
-
-#: react/src/components/RequestsList.jsx:119
-msgid "No change"
-msgstr "Ingen ændring"
-
-#: react/src/components/RequestsList.jsx:135
-msgid "Open Requests"
-msgstr "Åbne anmodninger"
-
-#: react/src/components/RequestsList.jsx:149
-msgid "Approved (30d)"
-msgstr "Godkendt (30 dage)"
-
-#: react/src/components/RequestsList.jsx:191
-msgid "ID"
-msgstr "ID"
-
-#: react/src/components/RequestsList.jsx:197
-msgid "Actions"
-msgstr "Handlinger"
-
-#: react/src/components/RequestsList.jsx:273
-msgid "View"
-msgstr "Vis"
-
-#: react/src/components/RequestsList.jsx:287
-#, javascript-format
-msgid "Showing %1$d–%2$d of %3$d"
-msgstr "Viser %1$d–%2$d af %3$d"
-
-#: react/src/components/RequestsList.jsx:292
-msgid "Showing 0 of 0"
-msgstr "Viser 0 af 0"
-
-#: react/src/components/ReviewBanner.jsx:75
-msgid "Review request"
-msgstr "Anmeldelsesanmodning"
-
-#: react/src/components/SettingsPage.jsx:176
-msgid "Global"
-msgstr "Global"
-
-#: react/src/components/SettingsPage.jsx:177
-msgid "WooCommerce only"
-msgstr "Kun WooCommerce"
-
-#: react/src/components/SettingsPage.jsx:192
-#: react/src/components/SettingsPage.jsx:787
-msgid "General"
-msgstr "Generelt"
-
-#: react/src/components/SettingsPage.jsx:193
-msgid "Rules & Exclusions"
-msgstr "Regler og undtagelser"
-
-#: react/src/components/SettingsPage.jsx:194
-msgid "Workflow"
-msgstr "Arbejdsgang"
-
-#: react/src/components/SettingsPage.jsx:195
-msgid "Advanced"
-msgstr "Avanceret"
-
-#: react/src/components/SettingsPage.jsx:252
-msgid "-- Select a page --"
-msgstr "-- Vælg en side --"
-
-#: react/src/components/SettingsPage.jsx:265
-msgid "Failed to load settings."
-msgstr "Indstillingerne kunne ikke indlæses."
-
-#: react/src/components/SettingsPage.jsx:306
-msgid "Add at least one admin notification recipient before saving."
-msgstr "Tilføj mindst én modtager af administratorbeskeder, før du gemmer."
-
-#: react/src/components/SettingsPage.jsx:320
-msgid "Settings saved successfully."
-msgstr "Indstillingerne blev gemt."
-
-#: react/src/components/SettingsPage.jsx:325
-msgid "Failed to save settings."
-msgstr "Indstillingerne kunne ikke gemmes."
-
-#: react/src/components/SettingsPage.jsx:345
-msgid "Loading settings..."
-msgstr "Indlæser indstillinger..."
-
-#: react/src/components/SettingsPage.jsx:354
-msgid "Unable to load settings."
-msgstr "Kan ikke indlæse indstillinger."
-
-#: react/src/components/SettingsPage.jsx:453
-msgid "Customize appearance"
-msgstr "Tilpas udseende"
-
-#: react/src/components/SettingsPage.jsx:457
-msgid "Footer"
-msgstr "Sidefod"
-
-#: react/src/components/SettingsPage.jsx:458
-msgid "My account page"
-msgstr "Min konto-side"
-
-#: react/src/components/SettingsPage.jsx:468
-msgid "Enable \"Show withdrawal button in footer\" above to customize."
-msgstr "Aktivér „Vis fortrydelsesknap i sidefod“ ovenfor for at tilpasse."
-
-#: react/src/components/SettingsPage.jsx:469
-msgid "Enable \"Show withdrawal button in My Account\" above to customize."
-msgstr "Aktivér „Vis fortrydelsesknap på Min konto“ ovenfor for at tilpasse."
-
-#: react/src/components/SettingsPage.jsx:476
-msgid "Link text"
-msgstr "Linktekst"
-
-#: react/src/components/SettingsPage.jsx:476
-msgid "Button text"
-msgstr "Knaptekst"
-
-#: react/src/components/SettingsPage.jsx:487
-msgid "Display as"
-msgstr "Vis som"
-
-#: react/src/components/SettingsPage.jsx:490
-msgid "Link"
-msgstr "Link"
-
-#: react/src/components/SettingsPage.jsx:491
-msgid "Button"
-msgstr "Knap"
-
-#: react/src/components/SettingsPage.jsx:498
-msgid "Colors"
-msgstr "Farver"
-
-#: react/src/components/SettingsPage.jsx:500
-msgid "Theme default"
-msgstr "Temaets standard"
-
-#: react/src/components/SettingsPage.jsx:500
-msgid "Custom"
-msgstr "Tilpasset"
-
-#: react/src/components/SettingsPage.jsx:521
-msgid "Background"
-msgstr "Baggrund"
-
-#: react/src/components/SettingsPage.jsx:529
-msgid "Text"
-msgstr "Tekst"
-
-#: react/src/components/SettingsPage.jsx:537
-msgid "Hover bg"
-msgstr "Hover-baggrund"
-
-#: react/src/components/SettingsPage.jsx:545
-msgid "Hover text"
-msgstr "Hover-tekst"
-
-#: react/src/components/SettingsPage.jsx:790
-msgid "Core withdrawal form behaviour and display preferences."
-msgstr ""
-"Grundlæggende adfærd og visningsindstillinger for fortrydelsesformularen."
-
-#: react/src/components/SettingsPage.jsx:795
-msgid "Withdrawal page"
-msgstr "Fortrydelsesside"
-
-#: react/src/components/SettingsPage.jsx:813
-msgid "Show withdrawal button in footer"
-msgstr "Vis fortrydelsesknap i sidefod"
-
-#: react/src/components/SettingsPage.jsx:814
-msgid "Display a withdrawal button or link in the site footer."
-msgstr "Vis en fortrydelsesknap eller et link i webstedets sidefod."
-
-#: react/src/components/SettingsPage.jsx:823
-msgid "Footer link text"
-msgstr "Tekst til sidefodslink"
-
-#: react/src/components/SettingsPage.jsx:824
-msgid "The text displayed for the footer withdrawal link."
-msgstr "Teksten, der vises for fortrydelseslinket i sidefoden."
-
-#: react/src/components/SettingsPage.jsx:839
-msgid "Display scope"
-msgstr "Visningsomfang"
-
-#: react/src/components/SettingsPage.jsx:853
-msgid "Allow partial withdrawals"
-msgstr "Tillad delvise fortrydelser"
-
-#: react/src/components/SettingsPage.jsx:855
-msgid "Recommended"
-msgstr "Anbefalet"
-
-#: react/src/components/SettingsPage.jsx:859
-msgid "Withdrawal period"
-msgstr "Fortrydelsesperiode"
-
-#: react/src/components/SettingsPage.jsx:871
-msgid "days"
-msgstr "dage"
-
-#: react/src/components/SettingsPage.jsx:889
-msgid "Start countdown from"
-msgstr "Start nedtælling fra"
-
-#: react/src/components/SettingsPage.jsx:904
-msgid "Reason required"
-msgstr "Årsag påkrævet"
-
-#: react/src/components/SettingsPage.jsx:927
-msgid "Exclusions"
-msgstr "Undtagelser"
-
-#: react/src/components/SettingsPage.jsx:930
-msgid ""
-"Exclude product types, categories, or specific products from withdrawal "
-"eligibility."
-msgstr ""
-"Udeluk produkttyper, kategorier eller bestemte produkter fra retten til "
-"fortrydelse."
-
-#: react/src/components/SettingsPage.jsx:935
-msgid "Excluded product types"
-msgstr "Udelukkede produkttyper"
-
-#: react/src/components/SettingsPage.jsx:936
-msgid "Product types that cannot be withdrawn."
-msgstr "Produkttyper, der ikke kan fortrydes."
-
-#: react/src/components/SettingsPage.jsx:951
-msgid "Excluded categories"
-msgstr "Udelukkede kategorier"
-
-#: react/src/components/SettingsPage.jsx:952
-msgid "Products in these categories cannot be withdrawn."
-msgstr "Produkter i disse kategorier kan ikke fortrydes."
-
-#: react/src/components/SettingsPage.jsx:962
-msgid "Excluded products"
-msgstr "Udelukkede produkter"
-
-#: react/src/components/SettingsPage.jsx:963
-msgid "Search and select specific products that cannot be withdrawn."
-msgstr "Søg efter og vælg bestemte produkter, der ikke kan fortrydes."
-
-#: react/src/components/SettingsPage.jsx:985
-msgid "Order status"
-msgstr "Ordrestatus"
-
-#: react/src/components/SettingsPage.jsx:988
-msgid ""
-"Automatically update order statuses when withdrawal requests are submitted "
-"or approved."
-msgstr ""
-"Opdater automatisk ordrestatusser, når anmodninger om fortrydelse indsendes "
-"eller godkendes."
-
-#: react/src/components/SettingsPage.jsx:1002
-#: react/src/components/SettingsPage.jsx:1027
-msgid "Set status to"
-msgstr "Sæt status til"
-
-#: react/src/components/SettingsPage.jsx:1054
-msgid ""
-"Configure admin notification recipients and the customer contact email shown "
-"in rejected withdrawal emails."
-msgstr ""
-"Konfigurer modtagere af administratorbeskeder og den kundekontakt-e-mail, "
-"der vises i e-mails om afviste fortrydelser."
-
-#: react/src/components/SettingsPage.jsx:1060
-msgid "Email addresses that receive the new withdrawal request notification."
-msgstr "E-mailadresser, der modtager besked om nye anmodninger om fortrydelse."
-
-#: react/src/components/SettingsPage.jsx:1068
-msgid "Customer contact email"
-msgstr "Kundekontakt-e-mail"
-
-#: react/src/components/SettingsPage.jsx:1069
-msgid ""
-"Email address shown to customers when a withdrawal request is rejected and "
-"they need to contact you."
-msgstr ""
-"E-mailadresse, der vises til kunder, når en anmodning om fortrydelse "
-"afvises, og de skal kontakte dig."
-
-#: react/src/components/SettingsPage.jsx:1096
-msgid "Withdrawal button shortcode"
-msgstr "Shortcode til fortrydelsesknap"
-
-#: react/src/components/SettingsPage.jsx:1110
-msgid ""
-" — Optional. Custom button text. Uses the default shortcode label when "
-"omitted."
-msgstr ""
-" — Valgfrit. Tilpasset knaptekst. Bruger standardetiketten for shortcoden, "
-"hvis den udelades."
-
-#: react/src/components/SettingsPage.jsx:1114
-msgid " — Optional. Extra CSS classes added to the button."
-msgstr " — Valgfrit. Ekstra CSS-klasser tilføjet til knappen."
-
-#: react/src/components/SettingsPage.jsx:1131
-msgid "Data management"
-msgstr "Datahåndtering"
-
-#: react/src/components/SettingsPage.jsx:1134
-msgid "Control what happens to plugin data when the plugin is removed."
-msgstr "Bestem, hvad der sker med pluginnets data, når pluginnet fjernes."
-
-#: react/src/components/SettingsPage.jsx:1142
-msgid "Delete data on uninstall"
-msgstr "Slet data ved afinstallation"
-
-#: react/src/components/SettingsPage.jsx:1143
-msgid ""
-"Remove all plugin data (settings, withdrawal requests, database tables) when "
-"the plugin is uninstalled. This action is irreversible."
-msgstr ""
-"Fjern alle plugindata (indstillinger, anmodninger om fortrydelse, "
-"databasetabeller), når pluginnet afinstalleres. Denne handling kan ikke "
-"fortrydes."
-
-#: react/src/components/SettingsPage.jsx:1144
-msgid "Destructive"
-msgstr "Destruktiv"
-
-#: react/src/components/SettingsPage.jsx:1170
-msgid "Add at least one recipient to save"
-msgstr "Tilføj mindst én modtager for at gemme"
-
-#: react/src/components/SettingsPage.jsx:1172
-msgid "Unsaved changes"
-msgstr "Ikke-gemte ændringer"
-
-#: react/src/components/SettingsPage.jsx:1173
-msgid "All changes saved"
-msgstr "Alle ændringer gemt"
-
-#: react/src/components/SettingsPage.jsx:1184
-msgid "Discard"
-msgstr "Kassér"
-
-#: react/src/components/SettingsPage.jsx:1194
-msgid "Saving..."
-msgstr "Gemmer..."
-
-#: react/src/components/SettingsPage.jsx:1195
-msgid "Save settings"
-msgstr "Gem indstillinger"
-
-#: react/src/components/StatusTimeline.jsx:30
-msgid "No status changes recorded."
-msgstr "Ingen statusændringer registreret."
-
-#: react/src/layouts/AdminLayout.jsx:19
-msgid "WooCommerce"
-msgstr "WooCommerce"
-
-#: react/src/layouts/AdminLayout.jsx:27
-msgid "Customer-initiated order cancellations and partial refunds."
-msgstr "Kundeinitierede ordreannulleringer og delvise refusioner."
-
-#: react/src/layouts/AdminLayout.jsx:36
-msgid "Requests"
-msgstr "Anmodninger"
-
-#: react/src/utils/getActorLabel.js:11
-msgid "Auto-approval"
-msgstr "Automatisk godkendelse"
-
-#: react/src/utils/getActorLabel.js:21
-msgid "User"
-msgstr "Bruger"
-
-#: react/src/utils/getActorLabel.js:28
-msgid "Unknown"
-msgstr "Ukendt"
+#~ msgid "Actor"
+#~ msgstr "Aktør"
 
 #~ msgid ""
 #~ "You've been using WebToffee EU Withdrawal Button for a week. Leave a "
 #~ "review!"
 #~ msgstr ""
 #~ "Du har brugt WebToffee EU Withdrawal Button i en uge. Skriv en anmeldelse!"
-
-#~ msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
-#~ msgstr "WebToffee EU-fortrydelsesknap til WooCommerce"
-
-#~ msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
-#~ msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
-
-#~ msgid ""
-#~ "Manage withdrawal of contract / order cancellation requests for "
-#~ "WooCommerce orders. EU-compliant, HPOS-compatible."
-#~ msgstr ""
-#~ "Administrer fortrydelse af kontrakt-/ordreannulleringsanmodninger for "
-#~ "WooCommerce-ordrer. EU-kompatibel, HPOS-kompatibel."
-
-#~ msgid "webtoffee"
-#~ msgstr "webtoffee"
-
-#~ msgid "https://www.webtoffee.com/"
-#~ msgstr "https://www.webtoffee.com/"
 
 #~ msgid ""
 #~ "You've received 10+ withdrawal requests. Leave a review for WebToffee EU "

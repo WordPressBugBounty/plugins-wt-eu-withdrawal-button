@@ -252,8 +252,29 @@ class Wbte_Ewb_Request {
 
 		$items = array();
 
+		// Collect bundled child items indexed by parent bundle cart key.
+		$bundled_children      = array();
+		$bundle_key_to_item_id = array();
+
+		foreach ( $order->get_items() as $item_id => $item ) {
+			$bundled_by = $item->get_meta( '_bundled_by', true );
+			if ( $bundled_by ) {
+				$bundled_children[ $bundled_by ][] = $item;
+				continue;
+			}
+			$bundle_key = $item->get_meta( '_bundle_cart_key', true );
+			if ( $bundle_key ) {
+				$bundle_key_to_item_id[ $bundle_key ] = absint( $item_id );
+			}
+		}
+
 		foreach ( $order->get_items() as $line_item_id => $line_item ) {
 			if ( ! $line_item instanceof \WC_Order_Item_Product ) {
+				continue;
+			}
+
+			// Skip bundled child items — they are nested under their parent below.
+			if ( $line_item->get_meta( '_bundled_by', true ) ) {
 				continue;
 			}
 
@@ -273,7 +294,7 @@ class Wbte_Ewb_Request {
 			 */
 			$total = apply_filters( 'wbte_ewb_dashboard_item_line_total', $total, $line_item, $order, $request );
 
-			$items[] = array(
+			$item_data = array(
 				'line_item_id'    => (int) $line_item_id,
 				'product_id'      => (int) $line_item->get_product_id(),
 				'name'            => $line_item->get_name(),
@@ -283,6 +304,35 @@ class Wbte_Ewb_Request {
 				'line_total'      => $total,
 				'total_formatted' => self::format_price_plain( $total, $order->get_currency() ),
 			);
+
+			// Attach bundled child names for display and include
+			// individually-priced child totals in the parent line total.
+			$bundle_key = $line_item->get_meta( '_bundle_cart_key', true );
+			if ( $bundle_key && ! empty( $bundled_children[ $bundle_key ] ) ) {
+				$children        = array();
+				$child_total_sum = 0;
+				foreach ( $bundled_children[ $bundle_key ] as $child_item ) {
+					$child_qty  = $child_item instanceof \WC_Order_Item_Product ? absint( $child_item->get_quantity() ) : 1;
+					$children[] = array(
+						'name'     => $child_item->get_name(),
+						'quantity' => $child_qty,
+					);
+
+					$child_total = self::get_line_item_total_incl_tax( $child_item );
+					if ( is_numeric( $child_total ) && (float) $child_total > 0 ) {
+						$child_total_sum += (float) $child_total;
+					}
+				}
+				if ( $child_total_sum > 0 ) {
+					$total                        = wc_format_decimal( (float) $total + $child_total_sum, '' );
+					$item_data['total']           = $total;
+					$item_data['line_total']      = $total;
+					$item_data['total_formatted'] = self::format_price_plain( $total, $order->get_currency() );
+				}
+				$item_data['bundled_items'] = $children;
+			}
+
+			$items[] = $item_data;
 		}
 
 		return $items;
@@ -353,8 +403,9 @@ class Wbte_Ewb_Request {
 
 			if ( $in_request ) {
 				$requested_qty = $request_lines[ $line_id ]['qty'];
+				$full_qty      = (int) $item['quantity'];
 
-				if ( $requested_qty > 0 && $requested_qty !== (int) $item['quantity'] ) {
+				if ( $requested_qty > 0 && $requested_qty !== $full_qty ) {
 					$item['withdrawal_qty']  = $requested_qty;
 					$item['quantity_label']  = sprintf(
 						/* translators: 1: requested quantity, 2: order line quantity */
@@ -362,6 +413,22 @@ class Wbte_Ewb_Request {
 						$requested_qty,
 						$item['quantity']
 					);
+
+					// Proportional total for partial line withdrawals.
+					if ( $full_qty > 0 && is_numeric( $item['total'] ) ) {
+						$proportional                = round( ( (float) $item['total'] / $full_qty ) * $requested_qty, 2 );
+						$item['withdrawal_total']    = $proportional;
+						$currency                    = $order ? $order->get_currency() : '';
+						$item['total_formatted']     = self::format_price_plain( $proportional, $currency );
+					}
+
+					// Adjust bundled child quantities proportionally.
+					if ( $full_qty > 0 && ! empty( $item['bundled_items'] ) ) {
+						foreach ( $item['bundled_items'] as &$child ) {
+							$child['quantity'] = (int) round( ( $child['quantity'] / $full_qty ) * $requested_qty );
+						}
+						unset( $child );
+					}
 				}
 			}
 		}
@@ -443,16 +510,25 @@ class Wbte_Ewb_Request {
 				$line_item = $order->get_item( $line_item_id );
 
 				if ( $line_item instanceof \WC_Order_Item_Product ) {
+					$ordered_qty = (int) $line_item->get_quantity();
+
 					if ( '' === $name ) {
 						$name = $line_item->get_name();
 					}
 
 					if ( '' === $total ) {
-						$total = self::get_line_item_total_incl_tax( $line_item );
+						$full_total = self::get_line_item_total_incl_tax( $line_item );
+
+						// Calculate proportional total for partial withdrawals.
+						if ( $qty > 0 && $qty < $ordered_qty && $ordered_qty > 0 && is_numeric( $full_total ) ) {
+							$total = round( ( (float) $full_total / $ordered_qty ) * $qty, 2 );
+						} else {
+							$total = $full_total;
+						}
 					}
 
 					if ( empty( $qty ) ) {
-						$qty = (int) $line_item->get_quantity();
+						$qty = $ordered_qty;
 					}
 				} else {
 					$line_item = null;

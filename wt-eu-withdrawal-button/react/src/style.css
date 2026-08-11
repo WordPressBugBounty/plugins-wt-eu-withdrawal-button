@@ -41,7 +41,7 @@
 	--accent-ink: #1f2d8c;
 	--ok: #1f7a4c;
 	--ok-soft: #e3f2ea;
-	--warn: #9a6713;
+	--warn: #805900;
 	--warn-soft: #fbf0d6;
 	--danger: #a02b2b;
 	--danger-soft: #f6e1df;
@@ -1649,19 +1649,19 @@
 }
 
 .wbte-ewb-type-badge--full .wbte-ewb-type-badge__dot {
-	background: #7a5af8;
+	background: #5b3ec0;
 }
 
 .wbte-ewb-type-badge--full {
-	color: #7a5af8;
+	color: #5b3ec0;
 }
 
 .wbte-ewb-type-badge--partial .wbte-ewb-type-badge__dot {
-	background: #13a4a4;
+	background: #0b7272;
 }
 
 .wbte-ewb-type-badge--partial {
-	color: #13a4a4;
+	color: #0b7272;
 }
 
 /* Status pill */
@@ -1927,7 +1927,7 @@
 }
 
 .wbte-ewb-info-table th {
-	width: 140px;
+	width: 170px;
 	white-space: nowrap;
 	font-weight: 600;
 	color: var(--ink-2);
@@ -2060,7 +2060,7 @@
 
 .wbte-ewb-item-badge--rejected {
 	background: #fde8e8;
-	color: #c93c37;
+	color: #a12b2b;
 	border: 1px solid #f5a5a5;
 }
 

@@ -47,7 +47,7 @@
 
 .wbte-ewb-form .form-row .input-text[readonly] {
 	background-color: #f3f4f6;
-	color: #6b7280;
+	color: #4b5563;
 	cursor: not-allowed;
 }
 
@@ -121,6 +121,13 @@
 	width: 16px;
 	height: 16px;
 	margin: 0;
+	accent-color: #3b54d9;
+	cursor: pointer;
+}
+
+.wbte-ewb-item input[type="checkbox"]:disabled {
+	cursor: default;
+	opacity: 0.5;
 }
 
 .wbte-ewb-item-name {
@@ -570,6 +577,7 @@ body.wbte-ewb-confirm-modal-open {
 	min-width: 132px;
 }
 
+.wbte-ewb-confirm-modal__footer .wbte-ewb-btn:focus,
 .wbte-ewb-confirm-modal__footer .wbte-ewb-btn:focus-visible {
 	outline: none;
 	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b82f6;
@@ -663,6 +671,12 @@ body.wbte-ewb-confirm-modal-open {
 @keyframes wbte-ewb-spin {
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wbte-ewb-spinner {
+		animation: none;
 	}
 }
 

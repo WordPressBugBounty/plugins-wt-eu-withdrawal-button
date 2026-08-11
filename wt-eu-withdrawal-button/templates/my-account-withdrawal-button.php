@@ -30,6 +30,6 @@ if ( ! isset( $button_class ) || '' === $button_class ) { // phpcs:ignore WordPr
 }
 ?>
 
-<a href="<?php echo esc_url( $withdrawal_url ); ?>" class="<?php echo esc_attr( $button_class ); ?>">
+<a href="<?php echo esc_url( $withdrawal_url ); ?>" class="<?php echo esc_attr( $button_class ); ?>" role="button">
 	<?php echo esc_html( $button_label ); ?>
 </a>

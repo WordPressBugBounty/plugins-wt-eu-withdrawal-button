@@ -223,6 +223,23 @@ class Wbte_Ewb_Request_Service {
 			)
 		);
 
+		// Ensure WC mailer is initialised so email classes are loaded.
+		WC()->mailer();
+
+		/**
+		 * Fires the notification action for WC_Email classes.
+		 *
+		 * Sent before the general `wbte_ewb_request_submitted` hook so that
+		 * "request received" emails arrive before any auto-approval /
+		 * auto-refund emails triggered by listeners on that hook.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param Wbte_Ewb_Request $request The submitted request.
+		 * @param \WC_Order       $order   The associated order.
+		 */
+		do_action( 'wbte_ewb_request_submitted_notification', $request, $order );
+
 		/**
 		 * Fires after a withdrawal request is submitted.
 		 *
@@ -232,18 +249,6 @@ class Wbte_Ewb_Request_Service {
 		 * @param \WC_Order       $order   The associated order.
 		 */
 		do_action( 'wbte_ewb_request_submitted', $request, $order );
-
-		/**
-		 * Fires the notification action for WC_Email classes.
-		 *
-		 * @since 1.0.0
-		 *
-		 * @param Wbte_Ewb_Request $request The submitted request.
-		 * @param \WC_Order       $order   The associated order.
-		 */
-		// Ensure WC mailer is initialised so email classes are loaded.
-		WC()->mailer();
-		do_action( 'wbte_ewb_request_submitted_notification', $request, $order );
 
 		return $request;
 	}
@@ -371,6 +376,21 @@ class Wbte_Ewb_Request_Service {
 			if ( ! in_array( (int) $eligible_id, $requested_ids, true ) ) {
 				return 'partial';
 			}
+		}
+
+		// If the order has items that are not eligible (excluded products/types),
+		// the withdrawal is effectively partial even if all eligible items are included.
+		// Exclude bundled child items from the count — they are not independently
+		// withdrawable and are always handled together with their parent bundle.
+		$order_item_count = 0;
+		foreach ( $order->get_items() as $oi ) {
+			if ( $oi->get_meta( '_bundled_by', true ) ) {
+				continue;
+			}
+			++$order_item_count;
+		}
+		if ( count( $eligible_items ) < $order_item_count ) {
+			return 'partial';
 		}
 
 		return 'full';
@@ -537,6 +557,23 @@ class Wbte_Ewb_Request_Service {
 			)
 		);
 
+		// Ensure WC mailer is initialised so email classes are loaded.
+		WC()->mailer();
+
+		/**
+		 * Fires the approved notification for WC_Email classes.
+		 *
+		 * Sent before the general `wbte_ewb_request_approved` hook so that
+		 * the "request approved" email arrives before any auto-refund email
+		 * triggered by listeners on that hook.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param Wbte_Ewb_Request  $request The approved request.
+		 * @param \WC_Order|false  $order   The associated order.
+		 */
+		do_action( 'wbte_ewb_request_approved_notification', $request, $order );
+
 		/**
 		 * Fires after a withdrawal request is approved.
 		 *
@@ -547,10 +584,6 @@ class Wbte_Ewb_Request_Service {
 		 * @param int               $admin_id The admin who approved it.
 		 */
 		do_action( 'wbte_ewb_request_approved', $request, $order, $admin_id );
-
-		// Ensure WC mailer is initialised so email classes are loaded.
-		WC()->mailer();
-		do_action( 'wbte_ewb_request_approved_notification', $request, $order );
 
 		return $request;
 	}
@@ -682,6 +715,25 @@ class Wbte_Ewb_Request_Service {
 		$eligibility = new Wbte_Ewb_Eligibility();
 
 		if ( ! $eligibility->has_remaining_withdrawable_quantity( $order ) ) {
+			// Check if the order has excluded items — if so, it's a partial withdrawal
+			// and the order should not move to "Withdrawn" status.
+			// Exclude bundled child items from the count — they are not independently
+			// withdrawable and are always handled together with their parent bundle.
+			$eligible_count   = count( $eligibility->get_eligible_items( $order ) );
+			$order_item_count = 0;
+			foreach ( $order->get_items() as $oi ) {
+				if ( $oi->get_meta( '_bundled_by', true ) ) {
+					continue;
+				}
+				++$order_item_count;
+			}
+			$has_exclusions   = $eligible_count < $order_item_count;
+
+			if ( $has_exclusions ) {
+				$this->restore_order_status_after_partial_approval( $order );
+				return;
+			}
+
 			$approval_status = str_replace( 'wc-', '', Wbte_Ewb_Settings::get( 'approval_order_status', 'wc-withdrawn' ) );
 
 			if ( $order->get_status() !== $approval_status ) {

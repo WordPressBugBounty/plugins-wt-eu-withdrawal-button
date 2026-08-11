@@ -9,7 +9,7 @@ import { __ } from '@wordpress/i18n';
 const STATUS_STYLES = {
 	pending: {
 		backgroundColor: '#fcf0e3',
-		color: '#9a6700',
+		color: '#805900',
 		border: '1px solid #f0c674',
 	},
 	approved: {
@@ -19,7 +19,7 @@ const STATUS_STYLES = {
 	},
 	rejected: {
 		backgroundColor: '#fde8e8',
-		color: '#c93c37',
+		color: '#a12b2b',
 		border: '1px solid #f5a5a5',
 	},
 };

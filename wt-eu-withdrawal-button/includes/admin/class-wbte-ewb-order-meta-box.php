@@ -32,13 +32,6 @@ class Wbte_Ewb_Order_Meta_Box {
 		// Meta box — HPOS orders.
 		add_action( 'add_meta_boxes_woocommerce_page_wc-orders', array( $this, 'register_meta_box' ) );
 
-		// Add approve/reject action buttons on orders list.
-		add_filter( 'woocommerce_admin_order_actions', array( $this, 'add_order_actions' ), 10, 2 );
-
-		// Handle approve/reject AJAX actions from orders list.
-		add_action( 'wp_ajax_wbte_ewb_approve_withdrawal', array( $this, 'ajax_approve_withdrawal' ) );
-		add_action( 'wp_ajax_wbte_ewb_reject_withdrawal', array( $this, 'ajax_reject_withdrawal' ) );
-
 		// Withdrawal badge next to order line items.
 		add_action( 'woocommerce_after_order_itemmeta', array( $this, 'display_item_withdrawal_badge' ), 10, 3 );
 	}
@@ -134,8 +127,8 @@ class Wbte_Ewb_Order_Meta_Box {
 
 		echo '<div class="wbte-ewb-metabox-request" data-request-id="' . esc_attr( $request->id ) . '">';
 
+		echo '<p class="wbte-ewb-metabox-request__heading">';
 		if ( $total > 1 ) {
-			echo '<p class="wbte-ewb-metabox-request__heading">';
 			echo '<strong>' . esc_html( sprintf(
 				/* translators: 1: request position, 2: total requests, 3: request ID */
 				__( 'Request %1$d of %2$d (#%3$d)', 'wt-eu-withdrawal-button' ),
@@ -143,8 +136,14 @@ class Wbte_Ewb_Order_Meta_Box {
 				$total,
 				$request->id
 			) ) . '</strong>';
-			echo '</p>';
+		} else {
+			echo '<strong>' . esc_html( sprintf(
+				/* translators: %d: request ID */
+				__( 'Request #%d', 'wt-eu-withdrawal-button' ),
+				$request->id
+			) ) . '</strong>';
 		}
+		echo '</p>';
 
 		// Status badge.
 		echo '<p>';
@@ -199,6 +198,16 @@ class Wbte_Ewb_Order_Meta_Box {
 			echo '<span class="wbte-ewb-verification-code">' . esc_html( $verification_code ) . '</span>';
 			echo '</p>';
 		}
+
+		/**
+		 * Fires after the core request details in the order meta box.
+		 *
+		 * @since 1.1.0
+		 *
+		 * @param Wbte_Ewb_Request $request The withdrawal request.
+		 * @param WC_Order         $order   The WooCommerce order.
+		 */
+		do_action( 'wbte_ewb_order_meta_box_after_details', $request, wc_get_order( $request->order_id ) );
 
 		// Processed info for non-pending requests.
 		if ( ! $request->is_pending() && ! empty( $request->processed_at ) ) {

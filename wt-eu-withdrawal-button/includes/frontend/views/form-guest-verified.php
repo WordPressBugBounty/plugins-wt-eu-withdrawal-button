@@ -24,13 +24,13 @@ $errors                 = Wbte_Ewb_Form_Handler::get_errors();
 	</div>
 
 	<?php if ( ! empty( $wbte_ewb_success_message ) ) : ?>
-		<div class="wbte-ewb-success-message" role="alert">
+		<div class="wbte-ewb-success-message" role="alert" aria-live="polite">
 			<p><?php echo esc_html( $wbte_ewb_success_message ); ?></p>
 		</div>
 	<?php endif; ?>
 
 	<?php if ( is_wp_error( $errors ) && $errors->has_errors() ) : ?>
-		<div class="wbte-ewb-error-message" role="alert">
+		<div class="wbte-ewb-error-message" role="alert" aria-live="assertive">
 			<ul>
 				<?php foreach ( $errors->get_error_messages() as $wbte_ewb_message ) : ?>
 					<li><?php echo esc_html( $wbte_ewb_message ); ?></li>
@@ -73,6 +73,7 @@ $errors                 = Wbte_Ewb_Form_Handler::get_errors();
 		<input type="hidden" name="request_type" id="wbte_ewb_request_type" value="full" />
 		<input type="hidden" name="wbte_ewb_guest_token" id="wbte_ewb_guest_token" value="<?php echo esc_attr( $wbte_ewb_verified_pending->verify_token ); ?>" />
 		<input type="hidden" name="wbte_ewb_action" value="submit_withdrawal" />
+		<input type="hidden" name="recaptcha_token" id="wbte_ewb_recaptcha_token" value="" />
 		<?php wp_nonce_field( 'wbte_ewb_withdrawal_form_nonce', 'wbte_ewb_nonce' ); ?>
 
 		<p class="wbte-ewb-form-row form-row form-row-wide">

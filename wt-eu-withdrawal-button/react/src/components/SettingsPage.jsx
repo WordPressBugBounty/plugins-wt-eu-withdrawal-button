@@ -74,6 +74,67 @@ const IconCode = () => (
 	</svg>
 );
 
+const IconFileText = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+		<polyline points="14 2 14 8 20 8" />
+		<line x1="16" y1="13" x2="8" y2="13" />
+		<line x1="16" y1="17" x2="8" y2="17" />
+		<polyline points="10 9 9 9 8 9" />
+	</svg>
+);
+
+const IconLayout = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+		<line x1="3" y1="9" x2="21" y2="9" />
+		<line x1="9" y1="21" x2="9" y2="9" />
+	</svg>
+);
+
+const IconGlobe = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<circle cx="12" cy="12" r="10" />
+		<line x1="2" y1="12" x2="22" y2="12" />
+		<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+	</svg>
+);
+
+const IconShield = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+	</svg>
+);
+
+const IconZap = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+	</svg>
+);
+
+const IconCreditCard = () => (
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+		<line x1="1" y1="10" x2="23" y2="10" />
+	</svg>
+);
+
+const SECTION_ICONS = {
+	pro_terms_conditions: IconFileText,
+	pro_form_display: IconLayout,
+	pro_auto_processing: IconZap,
+	pro_geo_targeting: IconGlobe,
+	pro_recaptcha: IconShield,
+	pro_refund_preference: IconCreditCard,
+	pro_import_export: () => (
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+			<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+			<polyline points="7 10 12 15 17 10" />
+			<line x1="12" y1="15" x2="12" y2="3" />
+		</svg>
+	),
+};
+
 const CheckIcon = () => (
 	<svg className="wbte-ewb-chip__check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
 		<polyline points="20 6 9 17 4 12" />
@@ -195,6 +256,587 @@ const CORE_TABS = [
 	{ key: 'advanced', label: __( 'Advanced', 'wt-eu-withdrawal-button' ) },
 ];
 
+/** License tab component. */
+const LicenseTab = ( { onStatusChange } ) => {
+	const licenseData = window.wbteEwbAdmin?.license || {};
+	const li = licenseData.i18n || {};
+	const [ key, setKey ] = useState( '' );
+	const [ busy, setBusy ] = useState( false );
+	const [ msg, setMsg ] = useState( null );
+	const [ status, setStatus ] = useState( licenseData.status || '' );
+	const [ maskedKey, setMaskedKey ] = useState( licenseData.key || '' );
+	const [ licEmail, setLicEmail ] = useState( licenseData.email || '' );
+
+	const isActive = status === 'active';
+
+	const handleActivate = async () => {
+		if ( ! key.trim() ) {
+			setMsg( { ok: false, text: li.enter_key_error || 'Please enter a license key.' } );
+			return;
+		}
+		setBusy( true );
+		setMsg( null );
+		try {
+			const res = await apiFetch( { path: '/wbte-ewb-pro/v1/license/activate', method: 'POST', data: { key } } );
+			if ( res.success ) {
+				const masked = key.substring( 0, 4 ) + '****' + key.substring( key.length - 4 );
+				setStatus( 'active' );
+				setMaskedKey( masked );
+				setLicEmail( res.email || '' );
+				setKey( '' );
+				setMsg( { ok: true, text: res.message } );
+				if ( window.wbteEwbAdmin?.license ) {
+					window.wbteEwbAdmin.license.status = 'active';
+					window.wbteEwbAdmin.license.is_active = true;
+					window.wbteEwbAdmin.license.key = masked;
+					window.wbteEwbAdmin.license.email = res.email || '';
+				}
+				if ( onStatusChange ) onStatusChange( true );
+			} else {
+				setMsg( { ok: false, text: res.message } );
+			}
+		} catch ( err ) {
+			setMsg( { ok: false, text: err.message || li.activation_failed || 'Activation failed.' } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	const handleDeactivate = async () => {
+		setBusy( true );
+		setMsg( null );
+		try {
+			const res = await apiFetch( { path: '/wbte-ewb-pro/v1/license/deactivate', method: 'POST' } );
+			setStatus( '' );
+			setMaskedKey( '' );
+			setLicEmail( '' );
+			setMsg( { ok: true, text: res.message } );
+			if ( window.wbteEwbAdmin?.license ) {
+				window.wbteEwbAdmin.license.status = '';
+				window.wbteEwbAdmin.license.is_active = false;
+				window.wbteEwbAdmin.license.key = '';
+				window.wbteEwbAdmin.license.email = '';
+			}
+			if ( onStatusChange ) onStatusChange( false );
+		} catch ( err ) {
+			setMsg( { ok: false, text: err.message || li.deactivation_failed || 'Deactivation failed.' } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	return (
+		<div className="wbte-ewb-card">
+			<div className="ch">
+				<div className="ch__top">
+					<span className="ch__icon"><IconShield /></span>
+					<h2>{ li.license || 'License' }</h2>
+				</div>
+				<p className="ch__sub">
+					{ li.activate_desc || 'Activate your license key to receive plugin updates and premium support.' }
+				</p>
+			</div>
+			<div className="cb">
+				{ msg && (
+					<div style={ {
+						padding: '10px 16px', marginBottom: '16px', borderRadius: '8px', fontSize: '13px',
+						background: msg.ok ? '#ecfdf5' : '#fef2f2',
+						color: msg.ok ? '#047857' : '#dc2626',
+						border: `1px solid ${ msg.ok ? '#a7f3d0' : '#fca5a5' }`,
+					} }>{ msg.text }</div>
+				) }
+
+				{ isActive ? (
+					<div style={ { padding: '18px 22px', background: '#fafffe', borderRadius: '8px', border: '1px solid #e0f2e9' } }>
+						<div style={ { display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' } }>
+							<div style={ { minWidth: 0 } }>
+								<div style={ { display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' } }>
+									<span style={ { width: '9px', height: '9px', borderRadius: '50%', background: '#22c55e', flexShrink: 0 } } />
+									<span style={ { fontSize: '14px', fontWeight: 600, color: '#1a1a1a' } }>
+										{ li.license_active || 'License Active' }
+									</span>
+								</div>
+								<table style={ { borderCollapse: 'collapse', fontSize: '13px', color: '#374151' } }>
+									<tbody>
+										{ maskedKey && (
+											<tr>
+												<td style={ { padding: '2px 0', paddingRight: '12px', color: '#6b7280', whiteSpace: 'nowrap' } }>{ li.key_label || 'Key' }</td>
+												<td style={ { padding: '2px 0', fontFamily: 'ui-monospace, monospace', fontSize: '12.5px', color: '#374151' } }>{ maskedKey }</td>
+											</tr>
+										) }
+										{ licEmail && (
+											<tr>
+												<td style={ { padding: '2px 0', paddingRight: '12px', color: '#6b7280', whiteSpace: 'nowrap' } }>{ li.licensed_to || 'Licensed to' }</td>
+												<td style={ { padding: '2px 0', color: '#374151' } }>{ licEmail }</td>
+											</tr>
+										) }
+									</tbody>
+								</table>
+							</div>
+							<button
+								type="button"
+								onClick={ handleDeactivate }
+								disabled={ busy }
+								style={ {
+									padding: '6px 16px', borderRadius: '6px', border: '1px solid #e5e7eb',
+									background: '#fff', color: '#9ca3af', fontWeight: 500, fontSize: '12px',
+									cursor: busy ? 'wait' : 'pointer', opacity: busy ? 0.6 : 1,
+									alignSelf: 'flex-start', transition: 'all 0.2s ease',
+								} }
+								onMouseEnter={ ( e ) => { e.currentTarget.style.color = '#ef4444'; e.currentTarget.style.borderColor = '#fca5a5'; e.currentTarget.style.background = '#fef2f2'; } }
+								onMouseLeave={ ( e ) => { e.currentTarget.style.color = '#9ca3af'; e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.background = '#fff'; } }
+							>
+								{ li.deactivate || 'Deactivate' }
+							</button>
+						</div>
+					</div>
+				) : (
+					<div style={ { padding: '18px 22px', background: '#fafafa', borderRadius: '8px', border: '1px solid #e5e7eb' } }>
+						<div style={ { display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '10px' } }>
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
+							<span style={ { fontSize: '14px', fontWeight: 600, color: '#374151' } }>
+								{ li.not_activated || 'License not activated' }
+							</span>
+						</div>
+						<p style={ { margin: '0 0 14px', fontSize: '13px', color: '#6b7280', lineHeight: '1.5' } }>
+							{ li.not_activated_desc || 'Enter your license key to enable automatic updates and premium support.' }
+						</p>
+						<div style={ { display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' } }>
+							<input
+								type="text"
+								className="wbte-ewb-input"
+								value={ key }
+								onChange={ ( e ) => setKey( e.target.value ) }
+								placeholder={ li.enter_key_placeholder || 'Enter license key' }
+								style={ { maxWidth: '360px', flex: '1 1 200px' } }
+								onKeyDown={ ( e ) => { if ( e.key === 'Enter' ) handleActivate(); } }
+							/>
+							<button
+								type="button"
+								onClick={ handleActivate }
+								disabled={ busy }
+								style={ {
+									padding: '0 22px', borderRadius: '6px', border: 'none',
+									background: '#3b54d9', color: '#fff', fontWeight: 500, fontSize: '13px',
+									cursor: busy ? 'wait' : 'pointer', opacity: busy ? 0.6 : 1,
+									height: '36px', whiteSpace: 'nowrap',
+								} }
+							>
+								{ busy ? ( li.activating || 'Activating...' ) : ( li.activate || 'Activate' ) }
+							</button>
+						</div>
+					</div>
+				) }
+			</div>
+		</div>
+	);
+};
+
+/** Import/Export settings component. */
+const ImportExportSettings = () => {
+	const [ busy, setBusy ] = useState( false );
+	const [ msg, setMsg ] = useState( null );
+	const [ importData, setImportData ] = useState( null ); // staged file data awaiting confirmation
+	const [ progress, setProgress ] = useState( '' ); // status text during import
+	const ajaxUrl = window.wbteEwbAdmin?.admin_url ? window.wbteEwbAdmin.admin_url + 'admin-ajax.php' : '/wp-admin/admin-ajax.php';
+	const nonce = window.wbteEwbAdmin?.nonce || '';
+	const currentVersion = window.wbteEwbAdmin?.version || '0.0.0';
+
+	const compareVersions = ( a, b ) => {
+		const pa = ( a || '0' ).split( '.' ).map( Number );
+		const pb = ( b || '0' ).split( '.' ).map( Number );
+		for ( let i = 0; i < Math.max( pa.length, pb.length ); i++ ) {
+			const diff = ( pa[ i ] || 0 ) - ( pb[ i ] || 0 );
+			if ( diff !== 0 ) return diff;
+		}
+		return 0;
+	};
+
+	const handleExport = async () => {
+		setBusy( true );
+		setMsg( null );
+		setImportData( null );
+		try {
+			const body = new FormData();
+			body.append( 'action', 'wbte_ewb_export_settings' );
+			body.append( '_wpnonce', nonce );
+			const raw = await fetch( ajaxUrl, { method: 'POST', credentials: 'same-origin', body } );
+			const json = await raw.json();
+			if ( json.success && json.data ) {
+				const blob = new Blob( [ JSON.stringify( json.data, null, 2 ) ], { type: 'application/json' } );
+				const url = URL.createObjectURL( blob );
+				const a = document.createElement( 'a' );
+				a.href = url;
+				a.download = 'ewb-settings-' + new Date().toISOString().slice( 0, 10 ) + '.json';
+				a.click();
+				URL.revokeObjectURL( url );
+				setMsg( { ok: true, text: __( 'Settings exported successfully.', 'wt-eu-withdrawal-button' ) } );
+			} else {
+				throw new Error( json.data?.message || 'Export failed.' );
+			}
+		} catch ( err ) {
+			setMsg( { ok: false, text: err.message } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	const handleFileSelect = async ( e ) => {
+		const file = e.target.files?.[ 0 ];
+		if ( ! file ) return;
+		e.target.value = '';
+		setMsg( null );
+		setProgress( '' );
+
+		try {
+			const text = await file.text();
+			const parsed = JSON.parse( text );
+
+			if ( ! parsed.plugin || parsed.plugin !== 'wbte-ewb' ) {
+				setMsg( { ok: false, text: __( 'Invalid settings file. Please select a valid export file.', 'wt-eu-withdrawal-button' ) } );
+				return;
+			}
+
+			setImportData( { parsed, fileName: file.name } );
+		} catch {
+			setMsg( { ok: false, text: __( 'Could not read the file. Make sure it is a valid JSON file.', 'wt-eu-withdrawal-button' ) } );
+		}
+	};
+
+	const confirmImport = async () => {
+		if ( ! importData ) return;
+
+		setBusy( true );
+		setMsg( null );
+		setProgress( __( 'Importing settings...', 'wt-eu-withdrawal-button' ) );
+
+		try {
+			const body = new FormData();
+			body.append( 'action', 'wbte_ewb_import_settings' );
+			body.append( '_wpnonce', nonce );
+			body.append( 'settings_json', JSON.stringify( importData.parsed ) );
+			const raw = await fetch( ajaxUrl, { method: 'POST', credentials: 'same-origin', body } );
+			const json = await raw.json();
+			if ( json.success ) {
+				setProgress( '' );
+				setImportData( null );
+				setMsg( { ok: true, text: __( 'Settings imported successfully. Reloading page...', 'wt-eu-withdrawal-button' ) } );
+				setTimeout( () => window.location.reload(), 1500 );
+			} else {
+				throw new Error( json.data?.message || 'Import failed.' );
+			}
+		} catch ( err ) {
+			setProgress( '' );
+			setMsg( { ok: false, text: err.message } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	const cancelImport = () => {
+		setImportData( null );
+		setMsg( null );
+		setProgress( '' );
+	};
+
+	const exportVersion = importData?.parsed?.version || '';
+	const isOlderVersion = exportVersion && compareVersions( currentVersion, exportVersion ) < 0;
+
+	return (
+		<div style={ { padding: '8px 0' } }>
+			{ msg && (
+				<div style={ {
+					padding: '8px 14px', marginBottom: '12px', borderRadius: '6px', fontSize: '13px',
+					background: msg.ok ? 'var(--ok-soft, #ecfdf5)' : 'var(--danger-soft, #fef2f2)',
+					color: msg.ok ? 'var(--ok, #047857)' : 'var(--danger, #dc2626)',
+					border: `1px solid ${ msg.ok ? '#b3dcc5' : '#e8c4c0' }`,
+				} }>{ msg.text }</div>
+			) }
+
+			{ progress && (
+				<div style={ { padding: '10px 14px', marginBottom: '12px', borderRadius: '6px', fontSize: '13px', background: '#eff6ff', color: '#1d4ed8', border: '1px solid #bfdbfe', display: 'flex', alignItems: 'center', gap: '10px' } }>
+					<span className="wbte-ewb-modal__spinner" style={ { width: '16px', height: '16px', borderWidth: '2px', display: 'inline-block', flexShrink: 0 } } />
+					{ progress }
+				</div>
+			) }
+
+			{ importData ? (
+				<div style={ { padding: '14px 16px', background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '8px' } }>
+					<p style={ { margin: '0 0 6px', fontWeight: 600, fontSize: '14px', color: '#111827' } }>
+						{ __( 'Confirm import', 'wt-eu-withdrawal-button' ) }
+					</p>
+					<p style={ { margin: '0 0 4px', fontSize: '13px', color: '#4b5563' } }>
+						{ importData.fileName }
+						{ importData.parsed.exported_at && (
+							<span style={ { color: '#9ca3af', marginLeft: '8px' } }>({ importData.parsed.exported_at })</span>
+						) }
+					</p>
+					{ exportVersion && (
+						<p style={ { margin: '0 0 4px', fontSize: '12px', color: '#6b7280' } }>
+							{ __( 'Export version:', 'wt-eu-withdrawal-button' ) } { exportVersion }
+							{ ' — ' }
+							{ __( 'Current version:', 'wt-eu-withdrawal-button' ) } { currentVersion }
+						</p>
+					) }
+
+					{ isOlderVersion && (
+						<div style={ { margin: '8px 0', padding: '8px 12px', borderRadius: '6px', fontSize: '12.5px', background: '#fffbeb', color: '#92400e', border: '1px solid #fde68a' } }>
+							{ __( 'The export file is from a newer version. Some settings may not be compatible with your current version. Consider updating the plugin before importing.', 'wt-eu-withdrawal-button' ) }
+						</div>
+					) }
+
+					<p style={ { margin: '8px 0 12px', fontSize: '12.5px', color: '#dc2626' } }>
+						{ __( 'This will overwrite all current plugin settings. This action cannot be undone.', 'wt-eu-withdrawal-button' ) }
+					</p>
+
+					<div style={ { display: 'flex', gap: '10px' } }>
+						<button
+							type="button"
+							onClick={ confirmImport }
+							disabled={ busy }
+							style={ {
+								padding: '7px 18px', borderRadius: '6px', border: 'none',
+								background: '#3b54d9', color: '#fff', fontWeight: 500, fontSize: '13px',
+								cursor: busy ? 'wait' : 'pointer', opacity: busy ? 0.6 : 1,
+							} }
+						>
+							{ __( 'Confirm import', 'wt-eu-withdrawal-button' ) }
+						</button>
+						<button
+							type="button"
+							onClick={ cancelImport }
+							disabled={ busy }
+							style={ {
+								padding: '7px 18px', borderRadius: '6px', border: '1px solid #d1d5db',
+								background: '#fff', color: '#374151', fontWeight: 500, fontSize: '13px',
+								cursor: 'pointer',
+							} }
+						>
+							{ __( 'Cancel', 'wt-eu-withdrawal-button' ) }
+						</button>
+					</div>
+				</div>
+			) : (
+				<>
+					<div style={ { display: 'flex', gap: '12px', flexWrap: 'wrap' } }>
+						<button
+							type="button"
+							onClick={ handleExport }
+							disabled={ busy }
+							style={ {
+								padding: '8px 20px', borderRadius: '6px', border: '1px solid #d1d5db',
+								background: '#fff', color: '#374151', fontWeight: 500, fontSize: '13px',
+								cursor: busy ? 'wait' : 'pointer', opacity: busy ? 0.6 : 1,
+							} }
+						>
+							{ __( 'Export settings', 'wt-eu-withdrawal-button' ) }
+						</button>
+						<label style={ {
+							padding: '8px 20px', borderRadius: '6px', border: '1px solid #d1d5db',
+							background: '#fff', color: '#374151', fontWeight: 500, fontSize: '13px',
+							cursor: busy ? 'wait' : 'pointer', opacity: busy ? 0.6 : 1, display: 'inline-block',
+						} }>
+							{ __( 'Import settings', 'wt-eu-withdrawal-button' ) }
+							<input type="file" accept=".json" onChange={ handleFileSelect } disabled={ busy } style={ { display: 'none' } } />
+						</label>
+					</div>
+					<p style={ { margin: '8px 0 0', fontSize: '12px', color: '#9ca3af' } }>
+						{ __( 'Export all plugin settings as a JSON file, or import settings from a previously exported file.', 'wt-eu-withdrawal-button' ) }
+					</p>
+				</>
+			) }
+		</div>
+	);
+};
+
+/** Terms & Conditions page manager component. */
+const TermsPageManager = () => {
+	const initData = ( window.wbteEwbAdmin && window.wbteEwbAdmin.terms_page ) || {};
+	const [ pageData, setPageData ] = useState( initData );
+	const [ busy, setBusy ] = useState( false );
+	const [ msg, setMsg ] = useState( null );
+
+	const ajaxUrl = window.wbteEwbAdmin?.admin_url ? window.wbteEwbAdmin.admin_url + 'admin-ajax.php' : '/wp-admin/admin-ajax.php';
+	const nonce = window.wbteEwbAdmin?.nonce || '';
+
+	const generate = async () => {
+		setBusy( true );
+		setMsg( null );
+		try {
+			const body = new FormData();
+			body.append( 'action', 'wbte_ewb_generate_terms_page' );
+			body.append( '_wpnonce', nonce );
+			const raw = await fetch( ajaxUrl, { method: 'POST', credentials: 'same-origin', body } );
+			const json = await raw.json();
+			if ( json.success ) {
+				setPageData( json.data );
+				setMsg( { ok: true, text: json.data.message || __( 'Page created.', 'wt-eu-withdrawal-button' ) } );
+			} else {
+				throw new Error( json.data?.message || __( 'Failed to create page.', 'wt-eu-withdrawal-button' ) );
+			}
+		} catch ( err ) {
+			setMsg( { ok: false, text: err.message || __( 'Failed to create page.', 'wt-eu-withdrawal-button' ) } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	const remove = async () => {
+		if ( ! window.confirm( __( 'Are you sure you want to delete the Terms & Conditions page?', 'wt-eu-withdrawal-button' ) ) ) {
+			return;
+		}
+		setBusy( true );
+		setMsg( null );
+		try {
+			const body = new FormData();
+			body.append( 'action', 'wbte_ewb_delete_terms_page' );
+			body.append( '_wpnonce', nonce );
+			const raw = await fetch( ajaxUrl, { method: 'POST', credentials: 'same-origin', body } );
+			const json = await raw.json();
+			if ( json.success ) {
+				setPageData( json.data );
+				setMsg( { ok: true, text: json.data.message || __( 'Page deleted.', 'wt-eu-withdrawal-button' ) } );
+			} else {
+				throw new Error( json.data?.message || __( 'Failed to delete page.', 'wt-eu-withdrawal-button' ) );
+			}
+		} catch ( err ) {
+			setMsg( { ok: false, text: err.message || __( 'Failed to delete page.', 'wt-eu-withdrawal-button' ) } );
+		} finally {
+			setBusy( false );
+		}
+	};
+
+	const exists = pageData && pageData.exists;
+
+	return (
+		<div className="wbte-ewb-field" style={ { padding: '16px 0 8px' } }>
+			{ msg && (
+				<div style={ {
+					padding: '8px 14px',
+					marginBottom: '12px',
+					borderRadius: '6px',
+					fontSize: '13px',
+					background: msg.ok ? 'var(--ok-soft, #ecfdf5)' : 'var(--danger-soft, #fef2f2)',
+					color: msg.ok ? 'var(--ok, #047857)' : 'var(--danger, #dc2626)',
+					border: `1px solid ${ msg.ok ? '#b3dcc5' : '#e8c4c0' }`,
+				} }>
+					{ msg.text }
+				</div>
+			) }
+			{ ! exists ? (
+				<div>
+					<p className="wbte-ewb-field__desc" style={ { marginBottom: '12px' } }>
+						{ __( 'Generate a withdrawal Terms & Conditions page based on EU Directive 2011/83/EU. The page includes dynamic shortcodes for excluded products, categories, and product types that stay in sync with your settings.', 'wt-eu-withdrawal-button' ) }
+					</p>
+					<button
+						type="button"
+						className="wbte-ewb-btn wbte-ewb-btn--primary"
+						onClick={ generate }
+						disabled={ busy }
+						style={ {
+							padding: '8px 20px',
+							borderRadius: '6px',
+							border: 'none',
+							background: '#3b54d9',
+							color: '#fff',
+							fontWeight: 500,
+							fontSize: '13px',
+							cursor: busy ? 'wait' : 'pointer',
+							opacity: busy ? 0.6 : 1,
+						} }
+					>
+						{ busy ? __( 'Creating…', 'wt-eu-withdrawal-button' ) : __( 'Generate T&C page', 'wt-eu-withdrawal-button' ) }
+					</button>
+				</div>
+			) : (
+				<div>
+					<div style={ {
+						padding: '16px 20px',
+						background: '#f9fafb',
+						borderRadius: '8px',
+						border: '1px solid #e5e7eb',
+						marginBottom: '12px',
+					} }>
+						<div style={ { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } }>
+							<div>
+								<p style={ { margin: '0 0 4px', fontWeight: 600, fontSize: '14px', color: '#111827' } }>
+									{ pageData.title || __( 'Withdrawal Terms & Conditions', 'wt-eu-withdrawal-button' ) }
+								</p>
+								<p style={ { margin: 0, fontSize: '12px', color: '#6b7280' } }>
+									{ __( 'Published', 'wt-eu-withdrawal-button' ) }
+								</p>
+							</div>
+							<div style={ { display: 'flex', gap: '8px' } }>
+								{ pageData.view_url && (
+									<a
+										href={ pageData.view_url }
+										target="_blank"
+										rel="noopener noreferrer"
+										style={ {
+											padding: '6px 14px',
+											borderRadius: '5px',
+											border: '1px solid #d1d5db',
+											background: '#fff',
+											color: '#374151',
+											fontSize: '12px',
+											fontWeight: 500,
+											textDecoration: 'none',
+											cursor: 'pointer',
+										} }
+									>
+										{ __( 'Preview', 'wt-eu-withdrawal-button' ) }
+									</a>
+								) }
+								{ pageData.edit_url && (
+									<a
+										href={ pageData.edit_url }
+										target="_blank"
+										rel="noopener noreferrer"
+										style={ {
+											padding: '6px 14px',
+											borderRadius: '5px',
+											border: '1px solid #d1d5db',
+											background: '#fff',
+											color: '#374151',
+											fontSize: '12px',
+											fontWeight: 500,
+											textDecoration: 'none',
+											cursor: 'pointer',
+										} }
+									>
+										{ __( 'Edit page', 'wt-eu-withdrawal-button' ) }
+									</a>
+								) }
+								<button
+									type="button"
+									onClick={ remove }
+									disabled={ busy }
+									style={ {
+										padding: '6px 14px',
+										borderRadius: '5px',
+										border: '1px solid #fca5a5',
+										background: '#fff',
+										color: '#dc2626',
+										fontSize: '12px',
+										fontWeight: 500,
+										cursor: busy ? 'wait' : 'pointer',
+										opacity: busy ? 0.6 : 1,
+									} }
+								>
+									{ __( 'Delete', 'wt-eu-withdrawal-button' ) }
+								</button>
+							</div>
+						</div>
+					</div>
+					<p className="wbte-ewb-field__desc" style={ { fontSize: '12px', color: '#9ca3af' } }>
+						{ __( 'Available shortcodes: [wbte_ewb_excluded_product_types], [wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], [wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]', 'wt-eu-withdrawal-button' ) }
+					</p>
+				</div>
+			) }
+		</div>
+	);
+};
+
 const SettingsPage = () => {
 	const [ settings, setSettings ] = useState( null );
 	const [ savedSnapshot, setSavedSnapshot ] = useState( null );
@@ -205,6 +847,7 @@ const SettingsPage = () => {
 	const [ categories, setCategories ] = useState( [] );
 	const [ activeTab, setActiveTab ] = useState( 'general' );
 	const [ customizeTab, setCustomizeTab ] = useState( 'footer' );
+	const [ licenseActive, setLicenseActive ] = useState( window.wbteEwbAdmin?.license?.is_active || false );
 	const justSaved = useRef( false );
 
 	const orderStatuses = ( window.wbteEwbAdmin && window.wbteEwbAdmin.order_statuses ) || {};
@@ -396,6 +1039,15 @@ const SettingsPage = () => {
 		const colorModeKey = prefix + '_color_mode';
 		const defaultDisplayType = isFooter ? 'link' : 'button';
 
+		// Separate text color keys for button vs link display.
+		const displayType_ = settings[ displayTypeKey ] || defaultDisplayType;
+		const textColorKey = ( isFooter && displayType_ === 'button' ) ? 'footer_button_text_color'
+			: ( isFooter ? 'footer_link_text_color'
+			: ( displayType_ === 'link' ? 'myaccount_link_text_color' : 'myaccount_button_text_color' ) );
+		const hoverTextColorKey = ( isFooter && displayType_ === 'button' ) ? 'footer_button_hover_text_color'
+			: ( isFooter ? 'footer_link_hover_text_color'
+			: ( displayType_ === 'link' ? 'myaccount_link_hover_text_color' : 'myaccount_button_hover_text_color' ) );
+
 		// Disabled when the parent toggle is off.
 		const isDisabled = isFooter
 			? ! toBool( settings.embed_footer_link )
@@ -415,7 +1067,7 @@ const SettingsPage = () => {
 		const linkDefaultColor = '#1d2327';
 
 		// For links with custom colors, avoid white-on-white by checking lightness.
-		const savedTextColor = settings[ prefix + '_text_color' ] || '';
+		const savedTextColor = settings[ textColorKey ] || '';
 		const isLightColor = ( c ) => {
 			if ( ! c || c.length < 4 ) return false;
 			const hex = c.replace( '#', '' );
@@ -437,6 +1089,8 @@ const SettingsPage = () => {
 			? { display: 'inline-block', padding: '10px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 500, background: bgColor, color: textColor }
 			: { textDecoration: 'underline', color: textColor };
 
+		const isAppearanceLocked = ! licenseActive && window.wbteEwbAdmin?.license !== undefined;
+
 		return (
 			<>
 				{ myaccountToggle && (
@@ -449,7 +1103,32 @@ const SettingsPage = () => {
 					/>
 				) }
 
-				<div style={ { background: '#fafafa', borderRadius: '10px', border: '1px solid #e5e7eb', padding: '18px 20px', marginTop: '4px' } }>
+				<div style={ { background: '#fafafa', borderRadius: '10px', border: '1px solid #e5e7eb', padding: '18px 20px', marginTop: '4px', position: isAppearanceLocked ? 'relative' : 'static' } }>
+					{ isAppearanceLocked && (
+						<div
+							onClick={ () => setActiveTab( 'license' ) }
+							style={ {
+							position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+							background: 'rgba(255,255,255,0.8)', zIndex: 10,
+							display: 'flex', alignItems: 'center', justifyContent: 'center',
+							borderRadius: '10px', cursor: 'pointer',
+						} }>
+							<div style={ {
+								textAlign: 'center', padding: '16px 24px',
+								background: '#fff', borderRadius: '8px',
+								boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+								maxWidth: '300px',
+							} }>
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={ { marginBottom: '4px' } }><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+								<p style={ { fontWeight: 600, fontSize: '13px', margin: '4px 0 2px', color: '#374151' } }>
+									{ window.wbteEwbAdmin?.license?.i18n?.license_required || 'License Required' }
+								</p>
+								<p style={ { fontSize: '12px', color: '#6b7280', margin: 0 } }>
+									{ window.wbteEwbAdmin?.license?.i18n?.activate_to_use || 'Activate your license key to use this feature.' }
+								</p>
+							</div>
+						</div>
+					) }
 					<p className="wbte-ewb-field__label" style={ { margin: '0 0 8px', fontSize: '13.5px' } }>{ __( 'Customize appearance', 'wt-eu-withdrawal-button' ) }</p>
 					<div style={ { marginBottom: '16px' } }>
 						<SegmentedControl
@@ -511,8 +1190,8 @@ const SettingsPage = () => {
 				{ isCustom && ! isDisabled && ( () => {
 					const defaultTextColor = isBtn ? '#ffffff' : linkDefaultColor;
 					const defaultHoverColor = isBtn ? '#ffffff' : '#3b54d9';
-					const effectiveText = settings[ prefix + '_text_color' ] && ! ( ! isBtn && isLightColor( settings[ prefix + '_text_color' ] ) ) ? settings[ prefix + '_text_color' ] : defaultTextColor;
-					const effectiveHover = settings[ prefix + '_hover_text_color' ] && ! ( ! isBtn && isLightColor( settings[ prefix + '_hover_text_color' ] ) ) ? settings[ prefix + '_hover_text_color' ] : defaultHoverColor;
+					const effectiveText = settings[ textColorKey ] && ! ( ! isBtn && isLightColor( settings[ textColorKey ] ) ) ? settings[ textColorKey ] : defaultTextColor;
+					const effectiveHover = settings[ hoverTextColorKey ] && ! ( ! isBtn && isLightColor( settings[ hoverTextColorKey ] ) ) ? settings[ hoverTextColorKey ] : defaultHoverColor;
 
 					return (
 					<div style={ { display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '12px' } }>
@@ -528,8 +1207,8 @@ const SettingsPage = () => {
 						<div>
 							<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Text', 'wt-eu-withdrawal-button' ) }</p>
 							<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
-								<input type="color" value={ effectiveText } onChange={ ( e ) => updateField( prefix + '_text_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
-								<input type="text" className="wbte-ewb-input" value={ effectiveText } onChange={ ( e ) => updateField( prefix + '_text_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+								<input type="color" value={ effectiveText } onChange={ ( e ) => updateField( textColorKey, e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+								<input type="text" className="wbte-ewb-input" value={ effectiveText } onChange={ ( e ) => updateField( textColorKey, e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
 							</div>
 						</div>
 						{ isBtn && (
@@ -544,8 +1223,8 @@ const SettingsPage = () => {
 						<div>
 							<p style={ { fontSize: '12px', fontWeight: 500, margin: '0 0 4px', color: '#374151' } }>{ __( 'Hover text', 'wt-eu-withdrawal-button' ) }</p>
 							<div style={ { display: 'flex', alignItems: 'center', gap: '6px' } }>
-								<input type="color" value={ effectiveHover } onChange={ ( e ) => updateField( prefix + '_hover_text_color', e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
-								<input type="text" className="wbte-ewb-input" value={ effectiveHover } onChange={ ( e ) => updateField( prefix + '_hover_text_color', e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
+								<input type="color" value={ effectiveHover } onChange={ ( e ) => updateField( hoverTextColorKey, e.target.value ) } style={ { width: '40px', height: '40px', padding: '2px', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', boxSizing: 'border-box' } } />
+								<input type="text" className="wbte-ewb-input" value={ effectiveHover } onChange={ ( e ) => updateField( hoverTextColorKey, e.target.value ) } style={ { width: '80px', height: '40px', fontFamily: 'monospace', fontSize: '12px', boxSizing: 'border-box' } } />
 							</div>
 						</div>
 					</div>
@@ -557,12 +1236,37 @@ const SettingsPage = () => {
 	};
 
 	/* --- Render an extra section (addon-provided) --- */
-	const renderExtraSection = ( section ) => (
-		<div className="wbte-ewb-card" key={ section.id }>
+	const renderExtraSection = ( section ) => {
+		const SectionIcon = SECTION_ICONS[ section.id ] || IconCog;
+		const isLocked = ! licenseActive && window.wbteEwbAdmin?.license !== undefined;
+		return (
+		<div className="wbte-ewb-card" key={ section.id } style={ isLocked ? { position: 'relative', overflow: 'hidden' } : {} }>
+			{ isLocked && (
+				<div
+					onClick={ () => setActiveTab( 'license' ) }
+					style={ {
+					position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+					background: 'rgba(255,255,255,0.8)', zIndex: 10,
+					display: 'flex', alignItems: 'center', justifyContent: 'center',
+					borderRadius: '12px', cursor: 'pointer',
+				} }>
+					<div style={ {
+						textAlign: 'center', padding: '10px 20px',
+					} }>
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+						<p style={ { fontWeight: 600, fontSize: '13px', margin: '4px 0 2px', color: '#374151' } }>
+							{ window.wbteEwbAdmin?.license?.i18n?.license_required || 'License Required' }
+						</p>
+						<p style={ { fontSize: '12px', color: '#6b7280', margin: 0 } }>
+							{ window.wbteEwbAdmin?.license?.i18n?.activate_to_use || 'Activate your license key to use this feature.' }
+						</p>
+					</div>
+				</div>
+			) }
 			<div className="ch">
 				<div className="ch__top" style={ section.header_toggle ? { justifyContent: 'space-between' } : {} }>
 					<span style={ { display: 'flex', alignItems: 'center', gap: '8px' } }>
-						<span className="ch__icon"><IconCog /></span>
+						<span className="ch__icon"><SectionIcon /></span>
 						<h2 style={ { margin: 0 } }>
 							{ section.title }
 							{ section.badge && (
@@ -678,7 +1382,7 @@ const SettingsPage = () => {
 						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><textarea className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } rows={ field.rows || 4 } style={ { width: '100%', maxWidth: '400px' } } /></Field> );
 					}
 					if ( field.type === 'text' ) {
-						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="text" className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } placeholder={ field.placeholder || '' } /></Field> );
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="text" className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } placeholder={ field.placeholder || '' } style={ { maxWidth: '480px' } } /></Field> );
 					}
 					if ( field.type === 'color' ) {
 						return (
@@ -701,11 +1405,35 @@ const SettingsPage = () => {
 							</Field>
 						);
 					}
+					if ( field.type === 'terms_page_manager' ) {
+						return ( <TermsPageManager key={ field.key } /> );
+					}
+					if ( field.type === 'import_export' ) {
+						return ( <ImportExportSettings key={ field.key } /> );
+					}
+					if ( field.type === 'shortcode_help' ) {
+						return (
+							<div key={ field.key } className="wbte-ewb-shortcode-help" style={ { marginTop: '8px' } }>
+								<p className="wbte-ewb-shortcode-help__label">{ field.label || __( 'Shortcode', 'wt-eu-withdrawal-button' ) }</p>
+								{ ( field.examples || [] ).map( ( ex, i ) => (
+									<code key={ i } className="wbte-ewb-shortcode-help__code">{ ex }</code>
+								) ) }
+								{ field.attrs && (
+									<ul className="wbte-ewb-shortcode-help__attrs">
+										{ field.attrs.map( ( attr, i ) => (
+											<li key={ i }><strong>{ attr.name }</strong>{ ' — ' + attr.desc }</li>
+										) ) }
+									</ul>
+								) }
+							</div>
+						);
+					}
 					return null;
 				} ) }
 			</div>
 		</div>
 	);
+	};
 
 	/* --- Build tabs: core + any extra tabs from addon sections --- */
 	const extraSections = window.wbteEwbAdmin?.extra_sections || [];
@@ -719,7 +1447,8 @@ const SettingsPage = () => {
 		const first = extraSections.find( ( s ) => s.tab === key );
 		return { key, label: first?.tab_label || key.charAt( 0 ).toUpperCase() + key.slice( 1 ) };
 	} );
-	const allTabs = [ ...CORE_TABS, ...addonTabs ];
+	const extraTabs = ( window.wbteEwbAdmin?.extra_tabs || [] ).filter( ( t ) => ! CORE_TABS.find( ( c ) => c.key === t.key ) && ! addonTabs.find( ( a ) => a.key === t.key ) );
+	const allTabs = [ ...CORE_TABS, ...addonTabs, ...extraTabs ];
 
 	return (
 		<div className="wbte-ewb-settings">
@@ -762,16 +1491,24 @@ const SettingsPage = () => {
 			     Tab Navigation
 			     ============================================================ */ }
 			<div className="wbte-ewb-subtabs">
-				{ allTabs.map( ( tab ) => (
-					<button
-						key={ tab.key }
-						type="button"
-						className={ `wbte-ewb-subtabs__btn${ activeTab === tab.key ? ' wbte-ewb-subtabs__btn--active' : '' }` }
-						onClick={ () => setActiveTab( tab.key ) }
-					>
-						{ tab.label }
-					</button>
-				) ) }
+				{ allTabs.map( ( tab ) => {
+					let icon = null;
+					if ( tab.key === 'license' && window.wbteEwbAdmin?.license ) {
+						icon = licenseActive
+							? <span style={ { marginLeft: '5px', color: '#10b981', fontSize: '11px' } }>&#9679;</span>
+							: <span style={ { marginLeft: '5px', color: '#f59e0b', fontSize: '13px', lineHeight: 1 } }>&#9888;</span>;
+					}
+					return (
+						<button
+							key={ tab.key }
+							type="button"
+							className={ `wbte-ewb-subtabs__btn${ activeTab === tab.key ? ' wbte-ewb-subtabs__btn--active' : '' }` }
+							onClick={ () => setActiveTab( tab.key ) }
+						>
+							{ tab.label }{ icon }
+						</button>
+					);
+				} ) }
 			</div>
 
 			{ /* ============================================================
@@ -1158,6 +1895,11 @@ const SettingsPage = () => {
 					</div>
 				) : null
 			) ) }
+
+			{ /* --- License tab --- */ }
+			{ activeTab === 'license' && window.wbteEwbAdmin?.license && (
+				<LicenseTab onStatusChange={ setLicenseActive } />
+			) }
 
 			{ /* ============================================================
 			     Sticky Save Bar
