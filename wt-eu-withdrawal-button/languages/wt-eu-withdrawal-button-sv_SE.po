@@ -2947,3 +2947,47 @@ msgstr "Avfärda varning"
 
 #~ msgid "System"
 #~ msgstr "System"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Godkänn ångerförfrågningar automatiskt"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Utfärda återbetalning och återfyll lager automatiskt"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Visa ångerknappen endast för EU-kunder"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Generera en sida med ångervillkor"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Samla in bankuppgifter för återbetalningar vid postförskott och banköverföring"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Öppna ångerformuläret i ett popup-fönster"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blockera skräppostinlämningar med reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Kopiera dina inställningar mellan staging och live"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "EU-ångerknapp"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatisera ångerprocessen med Premium-uppgradering"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Hämta plugin nu"

@@ -288,7 +288,8 @@ final class Wbte_Ewb_Plugin {
 
 		if ( $locale && $locale !== get_locale() ) {
 			switch_to_locale( $locale );
-			load_plugin_textdomain( 'wt-eu-withdrawal-button', false, dirname( WBTE_EWB_PLUGIN_BASENAME ) . '/languages/' ); // phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
+			// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound -- Fallback when no MO was found above.
+			load_plugin_textdomain( 'wt-eu-withdrawal-button', false, dirname( WBTE_EWB_PLUGIN_BASENAME ) . '/languages/' );
 		}
 
 		return $result;

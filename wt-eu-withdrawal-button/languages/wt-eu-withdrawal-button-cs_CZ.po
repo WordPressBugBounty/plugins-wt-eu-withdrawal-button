@@ -2968,3 +2968,47 @@ msgstr "Zobrazit tlačítko pro odstoupení v Můj účet"
 
 msgid "Display a withdrawal button in the My Account sidebar."
 msgstr "Zobrazit tlačítko pro odstoupení v postranním panelu Můj účet."
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Automatické schvalování žádostí o odstoupení"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Automatické vystavení vrácení peněz a doplnění zásob"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Zobrazení tlačítka pro odstoupení pouze zákazníkům z EU"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Vygenerování stránky s podmínkami odstoupení"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Sběr bankovních údajů pro vrácení peněz při dobírce a bankovním převodem"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Otevření formuláře pro odstoupení ve vyskakovacím okně"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blokování spamových žádostí pomocí reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Kopírování nastavení mezi testovacím a produkčním prostředím"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "Tlačítko pro odstoupení od smlouvy v EU"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatizujte proces odstoupení s Premium upgradem"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Získat plugin nyní"

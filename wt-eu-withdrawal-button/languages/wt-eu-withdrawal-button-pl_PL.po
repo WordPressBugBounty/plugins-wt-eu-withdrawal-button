@@ -3009,3 +3009,47 @@ msgstr "Odrzuć ostrzeżenie"
 
 #~ msgid "Are you sure you want to submit this withdrawal request?"
 #~ msgstr "Czy na pewno chcesz złożyć ten wniosek o odstąpienie?"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Automatyczne zatwierdzanie wniosków o odstąpienie"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Automatyczne wystawianie zwrotu i uzupełnianie zapasów"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Wyświetlanie przycisku odstąpienia tylko klientom z UE"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Generowanie strony z warunkami odstąpienia"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Zbieranie danych bankowych do zwrotów przy pobraniu i przelewie bankowym"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Otwieranie formularza odstąpienia w wyskakującym oknie"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blokowanie spamowych zgłoszeń za pomocą reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Kopiowanie ustawień między środowiskiem testowym a produkcyjnym"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "Przycisk odstąpienia od umowy w UE"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Zautomatyzuj proces odstąpienia z ulepszeniem Premium"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Pobierz wtyczkę teraz"

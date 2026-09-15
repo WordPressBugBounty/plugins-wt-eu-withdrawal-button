@@ -3004,3 +3004,47 @@ msgstr "Отхвърляне на предупреждението"
 
 #~ msgid "Are you sure you want to submit this withdrawal request?"
 #~ msgstr "Сигурни ли сте, че искате да подадете това искане за отказ?"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Автоматично одобряване на заявки за отказ"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Автоматично издаване на възстановяване и презареждане на наличности"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Показване на бутона за отказ само за клиенти от ЕС"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Генериране на страница с условия за отказ"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Събиране на банкови данни за възстановяване чрез наложен платеж и банков превод"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Отваряне на формуляра за отказ в изскачащ прозорец"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Блокиране на спам заявки с reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Копиране на настройките между тестова и реална среда"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "Бутон за отказ от поръчка в ЕС"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Автоматизирайте процеса на отказ с Premium надграждане"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Вземете плъгина сега"

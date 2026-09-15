@@ -5,8 +5,8 @@ Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 11.0.0
-Stable tag: 1.0.9
+WC tested up to: 11.1
+Stable tag: 1.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,6 +71,22 @@ The directive specifically requires:
 * An **acknowledgement of receipt** sent to the customer on a durable medium (e.g. email)
 
 This plugin implements all of the above.
+
+= WebToffee EU Order Withdrawal Plugin for WooCommerce - Premium Features =
+ 
+The free version covers the core legal requirements. The premium version adds automation, targeting, and customization options for stores that want to handle withdrawal requests with less manual effort:
+ 
+* **Automatic refund processing**: Auto-approve eligible withdrawal requests, issue the WooCommerce refund, and restock inventory without opening the order manually
+* **EU geo-targeting**: Show the withdrawal button only to shoppers in EU countries, detected via billing address for logged-in customers and WooCommerce geolocation for guests
+* **Withdrawal Terms & Conditions page generator**: Auto-generate a withdrawal policy page built on EU consumer rights requirements, with shortcodes that stay in sync with your exclusion settings
+* **WooCommerce Subscriptions support**: Enable order withdrawal for subscription orders and allow customers to request withdrawal on a subscription within the active window
+* **Button style customization**: Set separate button text for footer and My Account placements, choose a plain text link or full button, and customize colors to match your theme
+* **Popup modal or dedicated page display** Let the withdrawal form open in an accessible popup modal instead of sending customers to a separate page
+* **Google reCAPTCHA v3 support**: Filter spam submissions on the public withdrawal form without adding friction for real customers
+* **Refund details collection for offline payments**: Add a bank account/IBAN field to the withdrawal form for orders paid via cash on delivery, bank transfer, or cheque
+* **Settings export/import**: Move your full plugin configuration between sites as a JSON file, useful when rolling out the same setup across staging, live, or multiple stores
+ 
+[Get the premium version](https://www.webtoffee.com/product/eu-withdrawal-button/)
 
 = Compatible Plugins =
  
@@ -189,6 +205,11 @@ Available filters:
 
 == Changelog ==
 
+= 1.1.0 15-09-2026 =
+
+* [Compatibility]: Tested up to Plugin checker 2.1.0
+* [Compatibility]: Tested up to WooCommerce 11.1.0
+
 = 1.0.9 11-08-2026 =
 
 * [Add]: Portuguese (pt_PT) and Czech (cs_CZ) translation files.
@@ -198,7 +219,7 @@ Available filters:
 * [Improvement]: Guest order withdrawal workflow.
 * [Fix]: Showing wrong line total in withdrawal requests.
 * [Compatibility]: Tested up to WooCommerce 11.0.0
-* [Compatibility]: WordPress up to WooCommerce 7.1
+* [Compatibility]: Tested up to WordPress 7.1
 
 = 1.0.8 23-07-2026 =
 
@@ -284,13 +305,7 @@ Available filters:
 
 == Upgrade Notice ==
 
-= 1.0.9 =
+= 1.1.0 =
 
-* [Add]: Portuguese (pt_PT) and Czech (cs_CZ) translation files.
-* [Add]: Bundle product compatibility for withdrawal requests.
-* [Add]: WCAG accessibility compatibility.
-* [Add]: Withdrawal ID based searching in the admin dashboard.
-* [Improvement]: Guest order withdrawal workflow.
-* [Fix]: Showing wrong line total in withdrawal requests.
-* [Compatibility]: Tested up to WooCommerce 11.0.0
-* [Compatibility]: WordPress up to WooCommerce 7.1
+* [Compatibility]: Tested up to Plugin checker 2.1.0
+* [Compatibility]: Tested up to WooCommerce 11.1.0

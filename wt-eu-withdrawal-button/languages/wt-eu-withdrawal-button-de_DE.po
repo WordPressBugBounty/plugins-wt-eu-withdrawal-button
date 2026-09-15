@@ -3084,3 +3084,47 @@ msgstr "Warnung ausblenden"
 
 #~ msgid "Search by order #"
 #~ msgstr "Suche nach Bestellnummer"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Widerrufsanträge automatisch genehmigen"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Rückerstattung und Lagerauffüllung automatisch durchführen"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Widerrufstaste nur für EU-Kunden anzeigen"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Seite mit Widerrufsbedingungen generieren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Bankdaten für Nachnahme- und Überweisungsrückerstattungen erfassen"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Widerrufsformular in einem Pop-up öffnen"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Spam-Einreichungen mit reCAPTCHA v3 blockieren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Einstellungen zwischen Staging und Live kopieren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "EU-Widerrufstaste"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Widerrufsprozess mit Premium-Upgrade automatisieren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Plugin jetzt holen"

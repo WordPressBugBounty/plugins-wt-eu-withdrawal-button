@@ -16,6 +16,7 @@ import ProductSearchField from './ProductSearchField';
 import CategoryExclusionField from './CategoryExclusionField';
 import OrderStatusPickerField from './OrderStatusPickerField';
 import EmailRecipientsField from './EmailRecipientsField';
+import UpgradeBanner, { shouldShowUpgradeBanner } from './UpgradeBanner';
 
 /* -------------------------------------------------------------------------
    Helpers
@@ -1382,7 +1383,63 @@ const SettingsPage = () => {
 						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><textarea className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } rows={ field.rows || 4 } style={ { width: '100%', maxWidth: '400px' } } /></Field> );
 					}
 					if ( field.type === 'text' ) {
-						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="text" className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ ( e ) => updateField( field.key, e.target.value ) } placeholder={ field.placeholder || '' } style={ { maxWidth: '480px' } } /></Field> );
+						const isReadOnly = field.readonly_if && toBool( settings[ field.readonly_if ] );
+						return ( <Field key={ field.key } label={ field.label } desc={ field.desc }><input type="text" className="wbte-ewb-input" value={ settings[ field.key ] ?? '' } onChange={ isReadOnly ? undefined : ( e ) => updateField( field.key, e.target.value ) } readOnly={ isReadOnly } placeholder={ field.placeholder || '' } style={ { maxWidth: field.max_width || '480px', ...(isReadOnly ? { background: '#f3f4f6', color: '#6b7280', cursor: 'not-allowed' } : {}) } } /></Field> );
+					}
+					if ( field.type === 'verify_button' ) {
+						const isVerified = toBool( settings.recaptcha_verified );
+						const siteKeyField = field.site_key_field || 'recaptcha_site_key';
+						const secretKeyField = field.secret_key_field || 'recaptcha_secret_key';
+						return (
+							<div key={ field.key } style={ { margin: '16px 0' } }>
+								{ ! isVerified ? (
+									<button
+										type="button"
+										className="wbte-ewb-btn wbte-ewb-btn--primary"
+										style={ { padding: '8px 20px', fontSize: '13px', fontWeight: 500, borderRadius: '6px', border: 'none', background: '#3b54d9', color: '#fff', cursor: 'pointer' } }
+										onClick={ async () => {
+											const sk = settings[ siteKeyField ] || '';
+											const sec = settings[ secretKeyField ] || '';
+											if ( ! sk || ! sec ) {
+												setNotice( { status: 'error', message: __( 'Please enter both site key and secret key.', 'wt-eu-withdrawal-button' ) } );
+												return;
+											}
+											try {
+												const updated = { ...settings, recaptcha_verified: 'yes', [ siteKeyField ]: sk, [ secretKeyField ]: sec };
+												updateField( 'recaptcha_verified', 'yes' );
+												await updateSettings( updated );
+												setSavedSnapshot( JSON.stringify( updated ) );
+												setNotice( { status: 'success', message: __( 'reCAPTCHA keys saved successfully.', 'wt-eu-withdrawal-button' ) } );
+											} catch ( err ) {
+												setNotice( { status: 'error', message: err.message || __( 'Failed to save keys.', 'wt-eu-withdrawal-button' ) } );
+											}
+										} }
+									>
+										{ field.label || __( 'Save keys', 'wt-eu-withdrawal-button' ) }
+									</button>
+								) : (
+									<button
+										type="button"
+										className="wbte-ewb-btn wbte-ewb-btn--secondary"
+										style={ { padding: '8px 20px', fontSize: '13px', fontWeight: 500, borderRadius: '6px', border: '1px solid #dc2626', background: '#fff', color: '#dc2626', cursor: 'pointer' } }
+										onClick={ async () => {
+											updateField( 'recaptcha_verified', 'no' );
+											updateField( siteKeyField, '' );
+											updateField( secretKeyField, '' );
+											try {
+												await updateSettings( { ...settings, recaptcha_verified: 'no', [ siteKeyField ]: '', [ secretKeyField ]: '' } );
+												setSavedSnapshot( JSON.stringify( { ...settings, recaptcha_verified: 'no', [ siteKeyField ]: '', [ secretKeyField ]: '' } ) );
+												setNotice( { status: 'success', message: __( 'reCAPTCHA keys disconnected.', 'wt-eu-withdrawal-button' ) } );
+											} catch ( err ) {
+												setNotice( { status: 'error', message: err.message || __( 'Failed to disconnect.', 'wt-eu-withdrawal-button' ) } );
+											}
+										} }
+									>
+										{ __( 'Disconnect', 'wt-eu-withdrawal-button' ) }
+									</button>
+								) }
+							</div>
+						);
 					}
 					if ( field.type === 'color' ) {
 						return (
@@ -1449,6 +1506,7 @@ const SettingsPage = () => {
 	} );
 	const extraTabs = ( window.wbteEwbAdmin?.extra_tabs || [] ).filter( ( t ) => ! CORE_TABS.find( ( c ) => c.key === t.key ) && ! addonTabs.find( ( a ) => a.key === t.key ) );
 	const allTabs = [ ...CORE_TABS, ...addonTabs, ...extraTabs ];
+	const showUpgradeBanner = shouldShowUpgradeBanner();
 
 	return (
 		<div className="wbte-ewb-settings">
@@ -1510,6 +1568,9 @@ const SettingsPage = () => {
 					);
 				} ) }
 			</div>
+
+			<div className={ `wbte-ewb-settings__body${ showUpgradeBanner ? ' wbte-ewb-settings__body--has-sidebar' : '' }` }>
+			<div className="wbte-ewb-settings__main">
 
 			{ /* ============================================================
 			     General (tab: general)
@@ -1900,6 +1961,15 @@ const SettingsPage = () => {
 			{ activeTab === 'license' && window.wbteEwbAdmin?.license && (
 				<LicenseTab onStatusChange={ setLicenseActive } />
 			) }
+
+			</div>{ /* /.wbte-ewb-settings__main */ }
+
+			{ showUpgradeBanner && (
+				<aside className="wbte-ewb-settings__sidebar">
+					<UpgradeBanner />
+				</aside>
+			) }
+			</div>{ /* /.wbte-ewb-settings__body */ }
 
 			{ /* ============================================================
 			     Sticky Save Bar

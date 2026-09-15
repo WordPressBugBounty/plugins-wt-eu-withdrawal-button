@@ -2993,3 +2993,47 @@ msgstr "Afvis advarsel"
 
 #~ msgid "Search by order #"
 #~ msgstr "Søg efter ordrenr."
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Godkend fortrydelsesanmodninger automatisk"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Udsted refusion og genopfyld lager automatisk"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Vis fortrydelseknappen kun for EU-kunder"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Generer en side med fortrydelsesbetingelser"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Indsaml bankoplysninger til refusion ved efterkrav og bankoverførsel"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Åbn fortrydelsesformularen i et pop op-vindue"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Bloker spam-indsendelser med reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Kopiér dine indstillinger mellem staging og live"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "EU-fortrydelseknap"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatisér fortrydelsesprocessen med Premium-opgradering"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Hent plugin nu"

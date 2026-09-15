@@ -109,7 +109,7 @@ class Wbte_Ewb_Admin {
 	 */
 	public function add_action_links( $links ) {
 		$settings_url = admin_url( 'admin.php?page=wbte-ewb-withdrawals#/settings' );
-		$support_url  = 'https://wordpress.org/support/plugin/wt-eu-withdrawal-button/';
+		$support_url  = 'https://wordpress.org/support/plugin/wt-eu-withdrawal-button/#new-topic-0';
 		$review_url   = 'https://wordpress.org/support/plugin/wt-eu-withdrawal-button/reviews/#new-post';
 		$custom_links = array(
 			'settings' => '<a href="' . esc_url( $settings_url ) . '">' . esc_html__( 'Settings', 'wt-eu-withdrawal-button' ) . '</a>',

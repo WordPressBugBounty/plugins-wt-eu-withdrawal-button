@@ -11,6 +11,7 @@ import { useLocation } from 'wouter';
 import useRequests from '../hooks/useRequests';
 import { fetchStats } from '../services/api';
 import Filters from './Filters';
+import UpgradeBanner, { shouldShowUpgradeBanner } from './UpgradeBanner';
 import formatWithdrawalDatetime from '../utils/formatWithdrawalDatetime';
 
 const PER_PAGE = 20;
@@ -125,8 +126,11 @@ const RequestsList = () => {
 		}
 	}
 
+	const showUpgradeBanner = shouldShowUpgradeBanner();
+
 	return (
-		<div className="wbte-ewb-requests-list">
+		<div className={ `wbte-ewb-requests-list${ showUpgradeBanner ? ' wbte-ewb-requests-list--has-sidebar' : '' }` }>
+		<div className="wbte-ewb-requests-list__main">
 			{ /* ── Stat Strip ── */ }
 			<div className="wbte-ewb-stats">
 				<div className="wbte-ewb-stat-card">
@@ -313,6 +317,13 @@ const RequestsList = () => {
 					</div>
 				</div>
 			) }
+		</div>{ /* /.wbte-ewb-requests-list__main */ }
+
+		{ showUpgradeBanner && (
+			<aside className="wbte-ewb-requests-list__sidebar">
+				<UpgradeBanner />
+			</aside>
+		) }
 		</div>
 	);
 };

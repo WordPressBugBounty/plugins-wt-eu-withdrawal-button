@@ -3032,3 +3032,47 @@ msgstr "Waarschuwing sluiten"
 
 #~ msgid "System"
 #~ msgstr "Systeem"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Herroepingsverzoeken automatisch goedkeuren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Automatisch terugbetaling en voorraadherstel uitvoeren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "De herroepingsknop alleen tonen aan EU-klanten"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Een pagina met herroepingsvoorwaarden genereren"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Bankgegevens verzamelen voor terugbetalingen bij rembours en overschrijving"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Het herroepingsformulier openen in een pop-up"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Spaminzendingen blokkeren met reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Instellingen kopiëren tussen staging en live"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "EU-herroepingsknop"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatiseer het herroepingsproces met Premium-upgrade"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Plugin nu downloaden"

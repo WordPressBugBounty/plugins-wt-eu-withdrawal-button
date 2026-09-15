@@ -26,7 +26,7 @@
 
 #wbte-ewb-root {
 	padding: 24px 32px 0;
-	max-width: 1180px;
+	max-width: 1500px;
 	--canvas: #f5f3ef;
 	--canvas-2: #efece6;
 	--ink: #1a1a17;
@@ -59,7 +59,7 @@
    ========================================================================== */
 
 .wbte-ewb-admin {
-	max-width: 1180px;
+	max-width: 1500px;
 	width: 100%;
 	padding: 0;
 }
@@ -167,6 +167,125 @@
 .wbte-ewb-settings {
 	width: 100%;
 	padding-bottom: 90px;
+}
+
+.wbte-ewb-settings__body {
+	display: block;
+}
+
+.wbte-ewb-settings__body--has-sidebar {
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+}
+
+.wbte-ewb-settings__main {
+	flex: 1;
+	min-width: 0;
+}
+
+.wbte-ewb-settings__sidebar {
+	width: 300px;
+	flex-shrink: 0;
+}
+
+/* --- Upgrade Banner --- */
+.wbte-ewb-upgrade-banner {
+	background: #fff;
+	border: 1px solid var(--line-strong);
+	border-radius: var(--radius);
+	overflow: hidden;
+	position: sticky;
+	top: 52px;
+}
+
+.wbte-ewb-upgrade-banner__header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 16px 20px;
+	background: #eef1fb;
+}
+
+.wbte-ewb-upgrade-banner__flag {
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wbte-ewb-upgrade-banner__flag img {
+	width: 36px;
+	height: 36px;
+}
+
+.wbte-ewb-upgrade-banner__title {
+	font-size: 13.5px;
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--ink);
+}
+
+.wbte-ewb-upgrade-banner__features {
+	list-style: none;
+	margin: 0;
+	padding: 20px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.wbte-ewb-upgrade-banner__features li {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: var(--ink);
+}
+
+.wbte-ewb-upgrade-banner__features li svg {
+	flex-shrink: 0;
+	margin-top: 1px;
+}
+
+.wbte-ewb-upgrade-banner__cta {
+	display: block;
+	width: 100%;
+	padding: 14px 16px;
+	background: #3b54d9;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 0;
+	text-decoration: none;
+	transition: background 150ms ease;
+	box-sizing: border-box;
+}
+
+.wbte-ewb-upgrade-banner__cta:hover,
+.wbte-ewb-upgrade-banner__cta:focus,
+.wbte-ewb-upgrade-banner__cta:active {
+	background: #2d43b5;
+	color: #fff;
+}
+
+@media ( max-width: 960px ) {
+	.wbte-ewb-settings__body--has-sidebar {
+		flex-direction: column;
+	}
+	.wbte-ewb-settings__sidebar {
+		width: 100%;
+		order: -1;
+	}
+	.wbte-ewb-upgrade-banner {
+		position: static;
+	}
 }
 
 /* --- Settings sub-tab navigation (pill style matching main Requests/Settings tabs) --- */
@@ -1357,6 +1476,36 @@
 	.wbte-ewb-savebar__actions .wbte-ewb-btn--primary {
 		width: 100%;
 		justify-content: center;
+	}
+}
+
+/* ==========================================================================
+   Requests Tab – Sidebar Layout
+   ========================================================================== */
+
+.wbte-ewb-requests-list--has-sidebar {
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+}
+
+.wbte-ewb-requests-list__main {
+	flex: 1;
+	min-width: 0;
+}
+
+.wbte-ewb-requests-list__sidebar {
+	width: 300px;
+	flex-shrink: 0;
+}
+
+@media ( max-width: 960px ) {
+	.wbte-ewb-requests-list--has-sidebar {
+		flex-direction: column;
+	}
+	.wbte-ewb-requests-list__sidebar {
+		width: 100%;
+		order: -1;
 	}
 }
 

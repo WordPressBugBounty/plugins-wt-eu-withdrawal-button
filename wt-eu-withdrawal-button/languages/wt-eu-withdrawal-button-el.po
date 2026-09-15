@@ -3056,3 +3056,47 @@ msgstr "Απόρριψη προειδοποίησης"
 
 #~ msgid "System"
 #~ msgstr "Σύστημα"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Αυτόματη έγκριση αιτημάτων υπαναχώρησης"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Αυτόματη έκδοση επιστροφής χρημάτων και ανανέωση αποθέματος"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Εμφάνιση του κουμπιού υπαναχώρησης μόνο σε πελάτες της ΕΕ"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Δημιουργία σελίδας όρων και προϋποθέσεων υπαναχώρησης"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Συλλογή τραπεζικών στοιχείων για επιστροφές μέσω αντικαταβολής και τραπεζικού εμβάσματος"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Άνοιγμα της φόρμας υπαναχώρησης σε αναδυόμενο παράθυρο"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Αποκλεισμός ανεπιθύμητων υποβολών με reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Αντιγραφή ρυθμίσεων μεταξύ δοκιμαστικού και παραγωγικού περιβάλλοντος"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "Κουμπί υπαναχώρησης ΕΕ"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Αυτοματοποιήστε τη διαδικασία υπαναχώρησης με Premium αναβάθμιση"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Αποκτήστε το plugin τώρα"

@@ -3042,3 +3042,47 @@ msgstr "Închide avertismentul"
 
 #~ msgid "Search by order #"
 #~ msgstr "Căutați după comanda #"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Auto-approve withdrawal requests"
+msgstr "Aprobarea automată a cererilor de retragere"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Issue refund and restock inventory automatically"
+msgstr "Emiterea automată a rambursării și reaprovizionarea stocului"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Afișarea butonului de retragere doar pentru clienții din UE"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Generarea unei pagini cu termenii și condițiile de retragere"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Colectarea datelor bancare pentru rambursări prin ramburs și transfer bancar"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Open the withdrawal form in a popup"
+msgstr "Deschiderea formularului de retragere într-o fereastră pop-up"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blocarea trimiterilor de spam cu reCAPTCHA v3"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Copy your settings between staging and live"
+msgstr "Copierea setărilor între mediul de testare și cel de producție"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "EU Withdrawal Button"
+msgstr "Buton de retragere UE"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatizați procesul de retragere cu upgrade-ul Premium"
+
+#: react/src/components/UpgradeBanner.jsx
+msgid "Get Plugin Now"
+msgstr "Obțineți plugin-ul acum"
