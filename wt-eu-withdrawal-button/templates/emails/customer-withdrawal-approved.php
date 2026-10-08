@@ -119,7 +119,7 @@ if ( ! empty( $wbte_ewb_request_items ) ) {
 			continue;
 		}
 		$wbte_ewb_display_items[] = array(
-			'name' => $wbte_ewb_line_item->get_name(),
+			'name' => wp_strip_all_tags( $wbte_ewb_line_item->get_name() ),
 			'qty'  => $wbte_ewb_line_item->get_quantity(),
 		);
 	}
@@ -138,7 +138,7 @@ if ( ! empty( $wbte_ewb_display_items ) ) :
 		<tbody>
 			<?php foreach ( $wbte_ewb_display_items as $wbte_ewb_item ) : ?>
 				<tr>
-					<td style="<?php echo esc_attr( Wbte_Ewb_Email_Template::items_td_style() ); ?>"><?php echo esc_html( isset( $wbte_ewb_item['name'] ) ? $wbte_ewb_item['name'] : __( 'Unknown item', 'wt-eu-withdrawal-button' ) ); ?></td>
+					<td style="<?php echo esc_attr( Wbte_Ewb_Email_Template::items_td_style() ); ?>"><?php echo esc_html( isset( $wbte_ewb_item['name'] ) ? wp_strip_all_tags( $wbte_ewb_item['name'] ) : __( 'Unknown item', 'wt-eu-withdrawal-button' ) ); ?></td>
 					<td style="<?php echo esc_attr( Wbte_Ewb_Email_Template::items_td_style() ); ?>"><?php echo esc_html( isset( $wbte_ewb_item['qty'] ) ? $wbte_ewb_item['qty'] : '1' ); ?></td>
 				</tr>
 			<?php endforeach; ?>

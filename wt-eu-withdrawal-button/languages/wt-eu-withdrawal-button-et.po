@@ -1,0 +1,3009 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
+"PO-Revision-Date: 2026-10-06 15:18+0000\n"
+"Last-Translator: WebToffee <info@webtoffee.com>\n"
+"Language-Team: et\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WebToffee Translation Generator\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee EL-i tellimuse taganemise nupp WooCommerce'i jaoks"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Hallake lepingust taganemise / tellimuse tühistamise taotlusi WooCommerce'i "
+"tellimuste jaoks. EL-i nõuetele vastav, HPOS-ühilduv."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
+#: includes/admin/class-wbte-ewb-order-meta-box.php:554
+#: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:223
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Ootel"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:555
+#: includes/frontend/class-wbte-ewb-my-account.php:457
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:220
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Kinnitatud"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:556
+#: includes/frontend/class-wbte-ewb-my-account.php:458
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:222
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Tagasi lükatud"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
+#: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
+msgid "Approve"
+msgstr "Kinnita"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
+msgid "Reject"
+msgstr "Lükka tagasi"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
+msgid "Full Withdrawal"
+msgstr "Täielik taganemine"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
+msgid "Partial Withdrawal"
+msgstr "Osaline taganemine"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:186
+msgid "No withdrawal requests found."
+msgstr "Taganemisavaldusi ei leitud."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+msgid "Loading…"
+msgstr "Laadimine…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
+#: includes/frontend/class-wbte-ewb-frontend.php:156
+msgid "An error occurred. Please try again."
+msgstr "Ilmnes viga. Palun proovige uuesti."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Kas olete kindel, et soovite selle taganemisavalduse kinnitada?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Kas olete kindel, et soovite selle taganemisavalduse tagasi lükata?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
+msgid "Processing…"
+msgstr "Töötlemine…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Palun sisestage selle taganemisavalduse tagasilükkamise põhjus:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:378
+msgid "A reason is required when rejecting a request."
+msgstr "Avalduse tagasilükkamisel on põhjus kohustuslik."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
+msgid "Request updated successfully."
+msgstr "Avaldus edukalt uuendatud."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:62
+#: includes/frontend/class-wbte-ewb-my-account.php:260
+msgid "Withdrawal Requests"
+msgstr "Taganemisavaldused"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Taganemised"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Taganemiste juhtpaneeli laadimine…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Seaded"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Tugi"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Arvustus"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:82
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Tellimust ei leitud."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:96
+msgid "No withdrawal request for this order."
+msgstr "Selle tellimuse jaoks taganemisavaldust ei ole."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:134
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Avaldus %1$d / %2$d (#%3$d)"
+
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:142
+msgid "Request #%d"
+msgstr "Avaldus #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:150
+msgid "Status:"
+msgstr "Olek:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:156
+msgid "Type:"
+msgstr "Tüüp:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:168
+msgid "Items:"
+msgstr "Tooted:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:315
+#: templates/emails/admin-withdrawal-submitted.php:157
+#: templates/emails/customer-withdrawal-approved.php:141
+#: templates/emails/customer-withdrawal-submitted.php:131
+msgid "Unknown item"
+msgstr "Tundmatu toode"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:182
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Põhjus:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
+msgid "Submitted:"
+msgstr "Esitatud:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:197
+msgid "Receipt hash:"
+msgstr "Kviitungi räsi:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:215
+msgid "Processed:"
+msgstr "Töödeldud:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:221
+msgid "by"
+msgstr "poolt"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+msgid "View in dashboard"
+msgstr "Vaata juhtpaneelil"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Jäta arvustus"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Tuleta hiljem meelde"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Lükka arvustuse taotlus kõrvale"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request #%d"
+msgstr "Kinnita taganemisavaldus #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:446
+msgid "Reject withdrawal request #%d"
+msgstr "Lükka tagasi taganemisavaldus #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:450
+msgid "Approve withdrawal request"
+msgstr "Kinnita taganemisavaldus"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:451
+msgid "Reject withdrawal request"
+msgstr "Lükka tagasi taganemisavaldus"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:537
+msgid "Rejected from orders list."
+msgstr "Tagasi lükatud tellimuste loendist."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:642
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Taganetud %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:653
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Taotletud %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
+msgid "Withdrawal"
+msgstr "Taganemine"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Taganemise seaded"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Seadistage, kuidas taganemis-/tagastusõiguse taotlused teie poes töötavad."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Taganemise leht"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1594
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr "Valige leht, kus kliendid saavad esitada taganemisavaldusi."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Jaluse link"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr "Lisage automaatselt link taganemise lehele saidi jalusesse."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Kuvamise ulatus"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1638
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Kus taganemisvormi ja linke kuvatakse."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globaalne (kõik lehed)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Ainult WooCommerce lehed"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Luba osalised taganemised"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1652
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Lubage klientidel taganeda üksikutest toodetest terve tellimuse asemel."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Taganemistähtaeg (päeva)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1658
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Päevade arv pärast valitud algolekut, mille jooksul saab taganemisavalduse "
+"esitada."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Taganemistähtaeg algab alates"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1688
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Valige üks või mitu tellimuse olekut. Loendus algab kõige varasemast "
+"kuupäevast, mil tellimus jõuab valitud olekusse."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Põhjus kohustuslik"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1703
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr "Nõudke klientidelt põhjuse esitamist taganemisavalduse esitamisel."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Välistatud tootetüübid"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Tootetüübid, mis on taganemisõigusest välistatud."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
+msgid "Virtual"
+msgstr "Virtuaalne"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
+msgid "Downloadable"
+msgstr "Allalaaditav"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
+msgid "Grouped"
+msgstr "Grupeeritud"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:234
+msgid "External / Affiliate"
+msgstr "Väline / Partnerturg"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Välistatud kategooriad"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Tootekategooriad, mis on taganemisõigusest välistatud."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Välistatud tooted"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Konkreetsed tooted, mis on taganemisõigusest välistatud."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Välistamise käitumine"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Kuidas välistatud tooteid taganeemisvormis käsitletakse."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Peida välistatud tooted"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Näita keelatud koos teatega"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Tellimuse olek"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Juhtige, kas tellimuse olekuid muudetakse taganemise töövoos automaatselt."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1794
+msgid "Change order status on submission"
+msgstr "Muuda tellimuse olekut esitamisel"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1795
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr "Muuda automaatselt tellimuse olekut, kui taganemisavaldus esitatakse."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Esitamise tellimuse olek"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr "Tellimuse olek, mis määratakse taganemisavalduse esitamisel."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1819
+msgid "Change order status on approval"
+msgstr "Muuda tellimuse olekut kinnitamisel"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1820
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Muuda automaatselt tellimuse olekut, kui taganemisavaldus kinnitatakse."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Kinnitamise tellimuse olek"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr "Tellimuse olek, mis määratakse taganemisavalduse kinnitamisel."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "E-posti teavitused"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr "Seadistage taganemise teavituste e-kirjade administraatori saajad."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1857
+msgid "Recipient(s)"
+msgstr "Saaja(d)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Komadega eraldatud e-posti aadressid administraatori taganemise teavituste "
+"jaoks."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Taganemisnupu lühikood"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Andmehaldus"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Kustuta andmed desinstallimisel"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Eemaldage kõik plugina andmed (seaded, taganemisavaldused, andmebaasi "
+"tabelid) plugina desinstallimisel."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Hoiatus: See toiming on pöördumatu."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1010
+msgid "Order created"
+msgstr "Tellimus loodud"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1897
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Lisage taganemisavalduse nupp mis tahes lehele või postitusele. Nupp suunab "
+"teie seadistatud taganemise lehele."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1902
+msgid "Examples"
+msgstr "Näited"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Valikuline. Kohandatud nupu tekst. Kasutab vaikimisi lühikoodi silti, kui "
+"jäetud."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Valikuline. Nupule lisatud täiendavad CSS klassid."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Deaktiveeri"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Töötlemine..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Palun sisestage kehtiv e-posti aadress."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Esita ja deaktiveeri"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Probleem taganemise töövooga"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Külalise taganemine"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Kas saaksite meile veidi rohkem rääkida?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:172
+msgid "Partial withdrawal"
+msgstr "Osaline taganemine"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1849
+msgid "Email notifications"
+msgstr "E-posti teavitused"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "EL-i vastavus / õiguslikud küsimused"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Muu"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Leidsin parema plugina"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Milline plugin?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Plugin on suurepärane, aga mul on vaja konkreetset funktsiooni, mida te ei "
+"toeta"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Kas saaksite meile sellest funktsioonist rohkem rääkida?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "See pole see, mida otsisin"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Konflikt teise pluginaga"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Kui teil on hetk, palun andke meile teada, miks te deaktiveerite:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee võib minuga selle tagasiside osas ühendust võtta."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Sisestage oma e-posti aadress."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Sisestage e-posti aadress"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Me ei kogu isikuandmeid selle vormi esitamisel. Hindame teie tagasisidet."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Privaatsuspoliitika"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Mine tugiteenusesse"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:391
+#: react/src/components/SettingsPage.jsx:616
+msgid "Cancel"
+msgstr "Tühista"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Ma pigem ei ütleks"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Teil puudub õigus selle toimingu sooritamiseks."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr "Kehtetu turvatoken. Palun värskendage lehte ja proovige uuesti."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr "Sisse logitud kliendid peaksid esitama taganemisavaldusi oma kontolt."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "Külalise juurdepääsuks on vajalik tellimuse number ja e-post."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Palun sisestage kehtiv e-posti aadress."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr "Esitatud tellimuse numbrile vastavat tellimust ei leitud."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
+msgid "The email address does not match the order."
+msgstr "E-posti aadress ei vasta tellimusele."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Tellimuse number ei vasta taotletud tellimusele."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:841
+msgid "WooCommerce order ID."
+msgstr "WooCommerce tellimuse ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Tellimuse number (kohustuslik külalise juurdepääsuks)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "Kliendi e-post (kohustuslik külalise juurdepääsuks)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "WooCommerce tellimuse ID. Esitage see või tellimuse number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Kliendile nähtav tellimuse number. Esitage see või tellimuse ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Kliendi e-posti aadress (kohustuslik külalistele)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Kas tegemist on täieliku või osalise taganemisega."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Rea tooted osalise taganemise jaoks. Kohustuslik, kui avalduse tüüp on "
+"osaline."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "WooCommerce rea toote ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "WooCommerce toote ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Taganemise kogus."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:884
+msgid "Customer reason for the withdrawal."
+msgstr "Kliendi taganemise põhjus."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:365
+msgid "Guest withdrawal service is not available."
+msgstr "Külalise taganemisteenus ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:376
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Palun valige vähemalt üks toode, millest taganeda."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
+msgid "Withdrawal request submitted successfully."
+msgstr "Taganemisavaldus edukalt esitatud."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Külalise taganemisavaldused tuleb enne loomist e-posti teel kinnitada."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:437
+msgid "Either order_id or order_number is required."
+msgstr "Vajalik on tellimuse ID või tellimuse number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:446
+msgid "Items are required for partial withdrawal requests."
+msgstr "Osalise taganemise avalduste jaoks on tooted kohustuslikud."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
+msgid "The specified order could not be found."
+msgstr "Määratud tellimust ei leitud."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:483
+msgid "A reason is required for withdrawal requests."
+msgstr "Taganemisavalduste jaoks on põhjus kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
+msgid "Request service is not available."
+msgstr "Avalduseteenus ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:574
+msgid "This order does not belong to your account."
+msgstr "See tellimus ei kuulu teie kontole."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:590
+msgid "Order number is required for guest withdrawal requests."
+msgstr "Külalise taganemisavalduste jaoks on tellimuse number kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:598
+msgid "Email is required for guest withdrawal requests."
+msgstr "Külalise taganemisavalduste jaoks on e-post kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:606
+msgid "The order number does not match this order."
+msgstr "Tellimuse number ei vasta sellele tellimusele."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:654
+msgid "Eligibility service is not available."
+msgstr "Sobivusteenus ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:712
+msgid "This item is not eligible for withdrawal."
+msgstr "See toode ei ole taganemiseks sobilik."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:722
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr "See toode on juba ootel või kinnitatud taganemisavalduses."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:835
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:512
+msgid "Unique identifier for the withdrawal request."
+msgstr "Taganemisavalduse kordumatu identifikaator."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:846
+#: includes/api/class-wbte-ewb-rest-requests.php:523
+msgid "Customer-facing order number."
+msgstr "Kliendile nähtav tellimuse number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:851
+msgid "Status of the withdrawal request."
+msgstr "Taganemisavalduse olek."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:858
+msgid "Full or partial withdrawal."
+msgstr "Täielik või osaline taganemine."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:864
+msgid "Line items included in the withdrawal."
+msgstr "Taganemisesse kaasatud rea tooted."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:889
+msgid "Date the request was created."
+msgstr "Avalduse loomise kuupäev."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Valikuline märkus kinnitamiseks."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Taganemisavalduse tagasilükkamise põhjus."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Avalduse tagasilükkamisel on märkus kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtreeri avalduse oleku järgi."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr ""
+"Filtreeri avaldused, mis on loodud sellel kuupäeval või pärast seda (AAAA-"
+"KK-PP)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr ""
+"Filtreeri avaldused, mis on loodud sellel kuupäeval või enne seda (AAAA-KK-"
+"PP)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtreeri kliendi e-posti või nime järgi."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by request ID, order number or receipt hash."
+msgstr "Otsi avalduse ID, tellimuse numbri või kviitungi räsi järgi."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtreeri tellimuse numbri järgi."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Filtreeri kviitungi räsi järgi (täielik või osaline vaste)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Maksimaalne toodete arv lehekülje kohta."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Kogu praegune lehekülg."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:484
+msgid "Request repository is not available."
+msgstr "Avalduste hoidla ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:513
+#: includes/core/class-wbte-ewb-request-service.php:607
+msgid "Withdrawal request not found."
+msgstr "Taganemisavaldust ei leitud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Külaliskasutaja"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:424
+msgid "Withdrawal request approved successfully."
+msgstr "Taganemisavaldus edukalt kinnitatud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:466
+msgid "Withdrawal request rejected."
+msgstr "Taganemisavaldus tagasi lükatud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:518
+msgid "Associated WooCommerce order ID."
+msgstr "Seotud WooCommerce tellimuse ID."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:528
+msgid "Customer email address."
+msgstr "Kliendi e-posti aadress."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:534
+msgid "Customer user ID (0 or null for guests)."
+msgstr "Kliendi kasutaja ID (0 või null külaliste jaoks)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:539
+msgid "Current status of the withdrawal request."
+msgstr "Taganemisavalduse praegune olek."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:545
+msgid "Type of withdrawal request."
+msgstr "Taganemisavalduse tüüp."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:551
+msgid "JSON-encoded array of line items."
+msgstr "JSON-kodeeritud rea toodete massiiv."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:556
+msgid "Customer-provided reason for withdrawal."
+msgstr "Kliendi esitatud taganemise põhjus."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:561
+msgid "Date the request was created (ISO 8601)."
+msgstr "Avalduse loomise kuupäev (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:568
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Avalduse viimase uuendamise kuupäev (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:575
+msgid "Admin user ID who processed the request."
+msgstr "Avalduse töödelnud administraatori kasutaja ID."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:581
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Avalduse töötlemise kuupäev (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:588
+msgid "Activity log entries for this request."
+msgstr "Selle avalduse tegevuslogi kirjed."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Arvustuse bänneri toiming."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Arvustuse bänner uuendatud."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "Taganemisvormi lehe ID."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Kas näidata taganemise linki saidi jaluses."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Kus kuvada jaluse linki."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Kas lubada osalisi tellimuse taganemisi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Päevade arv, mille jooksul on taganemine lubatud."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+msgid "%s must be at least 1."
+msgstr "%s peab olema vähemalt 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr "Tellimuse olekud, millest taganemistähtaja loendus võib alata."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Kas taganemise esitamisel on põhjus kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Taganemisest välistatud tootetüübid."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "Taganemisest välistatud tootekategooriate ID-d."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "Taganemisest välistatud toodete ID-d."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "Kuidas käsitleda välistatud tooteid taganeemisvormis."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Kas muuta tellimuse olekut taganemise esitamisel."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Tellimuse olek, mis määratakse taganemise esitamisel."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Kas muuta tellimuse olekut taganemise kinnitamisel."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Tellimuse olek, mis määratakse taganemise kinnitamisel."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Kas kustutada kõik plugina andmed desinstallimisel."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr "E-posti aadressid, mis saavad administraatori taganemise teavitusi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Kliendile nähtav kontakt-e-post, mis kuvatakse tagasilükatud taganemise "
+"e-kirjades."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+msgid "%s must be an array of email addresses."
+msgstr "%s peab olema e-posti aadresside loend."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Vähemalt üks administraatori teavituse saaja on kohustuslik."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr "Üks või mitu teavituse saajat sisaldab kehtetut e-posti aadressi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "Kliendi kontakt-e-posti aadress on kehtetu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Taganemistähtaja algolekud peavad olema loend."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr "Üks või mitu taganemistähtaja algolekut on kehtetud."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "Seadete klass ei ole saadaval."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Uuendamiseks ei esitatud kehtivaid seadeid."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Seaded edukalt uuendatud."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "taganemisavaldus"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Taganemisavaldus"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Ootel taganemine"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Ootel taganemine <span class=\"count\">(%s)</span>"
+msgstr[1] "Ootel taganemine <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Taganetud"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Taganetud <span class=\"count\">(%s)</span>"
+msgstr[1] "Taganetud <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+msgid "Change status to %s"
+msgstr "Muuda olekuks %s"
+
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1629
+msgid "Request Withdrawal"
+msgstr "Taotle taganemist"
+
+#: includes/core/class-wbte-ewb-eligibility.php:354
+msgid "This product type cannot be withdrawn."
+msgstr "Sellest tootetüübist ei saa taganeda."
+
+#: includes/core/class-wbte-ewb-eligibility.php:358
+msgid "Virtual products cannot be withdrawn."
+msgstr "Virtuaalsetest toodetest ei saa taganeda."
+
+#: includes/core/class-wbte-ewb-eligibility.php:362
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Allalaaditavatest toodetest ei saa taganeda."
+
+#: includes/core/class-wbte-ewb-eligibility.php:371
+msgid "This product cannot be withdrawn."
+msgstr "Sellest tootest ei saa taganeda."
+
+#: includes/core/class-wbte-ewb-eligibility.php:380
+msgid "Products in this category cannot be withdrawn."
+msgstr "Selle kategooria toodetest ei saa taganeda."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+msgid "Please enter your order number."
+msgstr "Palun sisestage oma tellimuse number."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Palun esitage oma taganemisavalduse põhjus."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Teie taganemisavaldust ei õnnestunud järjekorda lisada. Palun proovige "
+"uuesti."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
+msgid "The email address does not match the billing email on this order."
+msgstr "E-posti aadress ei vasta selle tellimuse arveldamise e-postile."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
+msgid "This order is not eligible for withdrawal."
+msgstr "See tellimus ei ole taganemiseks sobilik."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
+msgid "This verification link is invalid or has already been used."
+msgstr "See kinnituslink on kehtetu või juba kasutatud."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
+msgid "This withdrawal request has already been submitted."
+msgstr "See taganemisavaldus on juba esitatud."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
+msgid "Verification link expired."
+msgstr "Kinnituslink on aegunud."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr "See kinnituslink on aegunud. Palun esitage uus taganemisavaldus."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Taganemisteenus on ajutiselt kättesaamatu."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
+msgid "This verification session is invalid or has expired."
+msgstr "See kinnitusseanss on kehtetu või aegunud."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Kinnitage oma taganemisavaldus"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Palun kinnitage oma taganemisavaldus, klõpsates allolevat linki:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Tellimus: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "Määratud tellimust ei eksisteeri."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Teil puudub volitus selle tellimuse taganemise esitamiseks."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Taganemisavalduse loomine ebaõnnestus."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Taganemisavaldus esitatud."
+
+#: includes/core/class-wbte-ewb-request-service.php:278
+msgid "The submitted withdrawal items are invalid."
+msgstr "Esitatud taganemise tooted on kehtetud."
+
+#: includes/core/class-wbte-ewb-request-service.php:322
+msgid "No items are currently available for withdrawal on this order."
+msgstr "Sellel tellimusel pole hetkel taganemiseks saadaval olevaid tooteid."
+
+#: includes/core/class-wbte-ewb-request-service.php:416
+#: includes/core/class-wbte-ewb-request-service.php:429
+#: includes/core/class-wbte-ewb-request-service.php:439
+msgid "One or more selected items are invalid for this order."
+msgstr "Üks või mitu valitud toodet on selle tellimuse jaoks kehtetud."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:449
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "\"%s\" ei ole selle tellimuse taganemiseks sobilik."
+
+#: includes/core/class-wbte-ewb-request-service.php:450
+#: includes/core/class-wbte-ewb-request-service.php:468
+msgid "This item"
+msgstr "See toode"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:467
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "\"%s\" ei ole selle tellimuse taganemiseks enam saadaval."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:479
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "Taganemise kogus toote \"%1$s\" jaoks ei tohi ületada %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:480
+msgid "this item"
+msgstr "see toode"
+
+#: includes/core/class-wbte-ewb-request-service.php:521
+msgid "Only pending requests can be approved."
+msgstr "Kinnitada saab ainult ootel avaldusi."
+
+#: includes/core/class-wbte-ewb-request-service.php:615
+msgid "Only pending requests can be rejected."
+msgstr "Tagasi lükata saab ainult ootel avaldusi."
+
+#: includes/core/class-wbte-ewb-request-service.php:703
+msgid "Withdrawal request pending review."
+msgstr "Taganemisavaldus ootab ülevaatust."
+
+#: includes/core/class-wbte-ewb-request-service.php:740
+msgid "Withdrawal request approved."
+msgstr "Taganemisavaldus kinnitatud."
+
+#: includes/core/class-wbte-ewb-request-service.php:783
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Osaline taganemine kinnitatud. Ülejäänud toodete tellimuse olek taastatakse."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:412
+msgid "%1$d of %2$d"
+msgstr "%1$d / %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:592
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:254
+msgid "Partial"
+msgstr "Osaline"
+
+#: includes/core/class-wbte-ewb-request.php:595
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:255
+msgid "Full"
+msgstr "Täielik"
+
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone
+#. offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:618
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s kell %2$s (%3$s)"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
+msgid ""
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
+msgstr ""
+"Teie pood muudab EL-i taganemisõiguse klientidele lihtsaks. Kas teile "
+"meeldib WebToffee EU Withdrawal Button? Jätke arvustus!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr ""
+"Olete kasutanud WebToffee EU Withdrawal Button'it nädal aega. Oleksime väga "
+"tänulikud, kui leiaksite hetke meile arvustuse jätmiseks"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Kehtetu arvustuse bänneri toiming."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Külalise tellimus ei ole sobilik"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Saadetakse külalisklientidele, kui nende tellimus ei ole taganemiseks "
+"sobilik."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Teie tellimus #{order_number} ei ole taganemiseks sobilik"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "Tellimus ei ole taganemiseks sobilik"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Külalise taganemise kinnitamine"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Saadetakse külalisklientidele nende taganemisavalduse kinnitamiseks enne "
+"selle loomist."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Kinnitage oma taganemisavaldus tellimuse #{order_number} "
+"jaoks"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Kinnitage oma taganemisavaldus"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
+msgid "I would like to return this order."
+msgstr "Soovin selle tellimuse tagastada."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr "Seda avaldust ei saa kinnitada, kuna taganemistähtaeg on möödunud."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:230
+msgid "Sample product"
+msgstr "Näidistoode"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Taganemisavaldus kinnitatud"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Saadetakse kliendile, kui taganemisavaldus kinnitatakse."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Teie taganemisavaldus tellimuse #{order_number} jaoks on "
+"kinnitatud"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
+msgid "Available placeholders: %s"
+msgstr "Saadaolevad kohatäited: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
+msgstr "Luba/Keela"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
+msgid "Enable this email notification"
+msgstr "Luba see e-posti teavitus"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
+msgid "Subject"
+msgstr "Teema"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
+msgid "Email heading"
+msgstr "E-kirja pealkiri"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
+msgstr "E-kirja tüüp"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
+msgid "Choose which format of email to send."
+msgstr "Valige, millises vormingus e-kiri saata."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Taganemisavaldus tagasi lükatud"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Saadetakse kliendile, kui taganemisavaldus lükatakse tagasi."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Teie taganemisavaldus tellimuse #{order_number} jaoks on "
+"tagasi lükatud"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Uus taganemisavaldus (Administraator)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Saadetakse saidi administraatorile, kui uus taganemisavaldus esitatakse."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr "[{site_title}]: Uus taganemisavaldus tellimuse #{order_number} jaoks"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Uus taganemisavaldus"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Valikuline alistamine ainult selle e-kirja jaoks. Jätke tühjaks, et kasutada"
+" taganemise seadetes seadistatud saajaid (vaikimisi %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Taganemisavaldus esitatud"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Saadetakse kliendile, kui taganemisavaldus esitatakse."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Taganemisavaldus tellimuse #{order_number} jaoks vastu "
+"võetud"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Taganemisavaldus vastu võetud"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Turvakontroll ebaõnnestus. Palun proovige uuesti."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Please select an order."
+msgstr "Palun valige tellimus."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Teil puudub õigus selle tellimuse taganemise taotlemiseks."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Teie taganemisavaldus on edukalt esitatud. Saate peagi kinnitus-e-kirja."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:157
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Teie taganemisavaldus on edukalt esitatud."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:118
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "Olen lugenud ja nõustun taganemise tingimustega"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Loading..."
+msgstr "Laadimine..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:152
+msgid "Please select at least one item."
+msgstr "Palun valige vähemalt üks toode."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:153
+msgid "quantity"
+msgstr "kogus"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:154
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Palun sisestage iga valitud toote jaoks kehtiv kogus."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:155
+msgid "Please provide a reason for withdrawal."
+msgstr "Palun esitage taganemise põhjus."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:160
+msgid "Fetching eligible items..."
+msgstr "Sobivate toodete toomine..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:161
+msgid "No eligible items found for this order."
+msgstr "Selle tellimuse jaoks ei leitud sobivaid tooteid."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:162
+msgid "Review your withdrawal request"
+msgstr "Vaadake oma taganemisavaldus üle"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:163
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Palun vaadake allpool olevad üksikasjad üle. Seadusjärgse taganemise "
+"lõpuleviimiseks klõpsake nuppu Kinnita taganemine."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+msgid "Confirm withdrawal"
+msgstr "Kinnita taganemine"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Customer"
+msgstr "Klient"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:167
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
+msgid "Order"
+msgstr "Tellimus"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:168
+msgid "Withdrawal type"
+msgstr "Taganemise tüüp"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:169
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Tooted, millest taganeda"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:170
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Taganemise põhjus"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:171
+msgid "Full withdrawal"
+msgstr "Täielik taganemine"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Avaldus esitatud"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid ""
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
+msgstr ""
+"Täname. Kui teie esitatud andmed on õiged, saate e-kirja oma "
+"taganemisavalduse kohta. Palun kontrollige oma postkasti."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr "Me ei saanud teie taganemisavaldust kinnitada. Palun proovige uuesti."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Taganemisavalduste vaatamiseks peate olema sisse logitud."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Te pole veel ühtegi taganemisavaldust esitanud."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Avaldus"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:200
+msgid "Date"
+msgstr "Kuupäev"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:198
+msgid "Type"
+msgstr "Tüüp"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:261
+#: react/src/components/RequestsList.jsx:199
+msgid "Status"
+msgstr "Olek"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:261
+msgid "Withdrawal Request"
+msgstr "Taganemisavaldus"
+
+#. translators: %s: request ID
+#: includes/frontend/class-wbte-ewb-my-account.php:302
+msgid "Request #%s"
+msgstr "Avaldus #%s"
+
+#. translators: %s: withdrawal request type label
+#: includes/frontend/class-wbte-ewb-my-account.php:313
+msgid "Type: %s"
+msgstr "Tüüp: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Esitatud"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
+msgid "Processed"
+msgstr "Töödeldud"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Põhjus"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Teie e-post on kinnitatud. Valige tooted, millest soovite taganeda, ja "
+"esitage oma avaldus allpool."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Tellimuse number"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Arveldamise e-posti aadress"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Toodete laadimine..."
+
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
+msgid "Submit Withdrawal Request"
+msgstr "Esita taganemisavaldus"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "kohustuslik"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive an email with further instructions."
+msgstr ""
+"Sisestage alustamiseks oma tellimuse number ja arveldamise e-post. Kui teie "
+"andmed vastavad meie kirjetele, saate e-kirja edasiste juhistega."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Teil pole hetkel taganemiseks sobivaid tellimusi."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Valige tellimus --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-post"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Eesnimi"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Perekonnanimi"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "Tellimuse #%s jaoks on esitatud uus taganemisavaldus."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Kliendi teave"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Kliendi nimi"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
+msgid "Customer Email"
+msgstr "Kliendi e-post"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Avalduse üksikasjad"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Tellimuse number"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
+msgid "Request Type"
+msgstr "Avalduse tüüp"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Esitamise kuupäev"
+
+#: templates/emails/admin-withdrawal-submitted.php:140
+msgid "Items Included in This Request"
+msgstr "Selles avalduses sisalduvad tooted"
+
+#: templates/emails/admin-withdrawal-submitted.php:146
+msgid "Item"
+msgstr "Toode"
+
+#: templates/emails/admin-withdrawal-submitted.php:149
+#: templates/emails/customer-withdrawal-approved.php:135
+#: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
+msgid "Quantity"
+msgstr "Kogus"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:177
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Selle avalduse ülevaatamiseks ja haldamiseks külastage <a "
+"href=\"%s\">taganemisavalduste juhtpaneeli</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order"
+" is not currently eligible for withdrawal."
+msgstr ""
+"Saime teie taganemisavalduse tellimuse #%s jaoks. Kahjuks ei ole see "
+"tellimus hetkel taganemiseks sobilik."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "See võib olla tingitud järgmisest:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "Selle tellimuse taganemistähtaeg on möödunud."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Selle tellimuse taganemine on juba töödeldud."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "Taganemiseks sobivaid tooteid pole enam alles."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Kui arvate, et tegemist on veaga, või teil on küsimusi, võtke meiega "
+"ühendust aadressil %s."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Saime teie taganemisavalduse. Selle lõpuleviimiseks kinnitage oma "
+"arveldamise e-posti aadress, klõpsates allolevat nuppu."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Tellimuse number:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Kinnitage taganemisavaldus"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Kui te ei taotlenud taganemist, võite selle e-kirja ignoreerida."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+msgid "Hi %s,"
+msgstr "Tere %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Suurepärane uudis! Teie taganemisavaldus tellimuse #%s jaoks on kinnitatud."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Töötlemise kuupäev"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:114
+msgid "Items"
+msgstr "Tooted"
+
+#: templates/emails/customer-withdrawal-approved.php:134
+#: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
+msgid "Product"
+msgstr "Toode"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid "Next Steps"
+msgstr "Järgmised sammud"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Teie taganemine on töödeldud. Sõltuvalt avalduse tüübist võib kehtida "
+"järgmine:"
+
+#: templates/emails/customer-withdrawal-approved.php:158
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Kui tagasimakse on vajalik, töödeldakse see teie algse makseviisiga. Palun "
+"arvestage mõne tööpäevaga selle ilmumiseks."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr "Kui teil on vaja tooteid tagastada, saate eraldi tagastusjuhised."
+
+#: templates/emails/customer-withdrawal-approved.php:163
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Kui teil on küsimusi, ärge kõhelge meiega ühendust võtmast."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Oleme teie taganemisavalduse tellimuse #%s jaoks üle vaadanud. Kahjuks ei "
+"saa me seda avaldust praegu kinnitada."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Kui arvate, et see otsus tehti ekslikult, või kui teil on lisateavet, võtke "
+"meiega ühendust ja vaatame teie juhtumi hea meelega uuesti üle."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+msgid "You can reach us at %s."
+msgstr "Saate meiega ühendust aadressil %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Oleme teie taganemisavalduse tellimuse #%s jaoks vastu võtnud. Täname "
+"teavitamast."
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid "What Happens Next?"
+msgstr "Mis juhtub edasi?"
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Meie meeskond vaatab teie avalduse üle ja vastab teile esimesel võimalusel. "
+"Saate teise e-kirja, kui otsus on tehtud."
+
+#: templates/emails/customer-withdrawal-submitted.php:151
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr "Kui teil on vahepeal küsimusi, ärge kõhelge meiega ühendust võtmast."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
+msgid "Receipt hash"
+msgstr "Kviitungi räsi"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Saime teie taganemisavalduse. Selle lõpuleviimiseks kinnitage oma "
+"arveldamise e-posti aadress, kasutades allolevat linki."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+msgid "Order number: %s"
+msgstr "Tellimuse number: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+msgid "Reason: %s"
+msgstr "Põhjus: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"WebToffee EU Withdrawal Button WooCommerce'i jaoks nõuab, et WooCommerce "
+"oleks installitud ja aktiivne."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr "Kliendi algatatud tellimuse tühistamised ja osalised tagasimaksed."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Avaldused"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Arvustuse taotlus"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Kõik olekud"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Kuupäev alates"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Kuupäev kuni"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Otsi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Tellimuse # või kviitungi räsi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Lähtesta"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Rakenda filtrid"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr "Kinnita taganemisavaldused automaatselt"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr "Tagasimakse ja laovarude taastamine automaatselt"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Näita taganemisnuppu ainult EL-i klientidele"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Genereeri taganemise tingimuste leht"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Kogu pangaandmed järelmaksu ja pangaülekande tagasimaksete jaoks"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr "Ava taganeemisvorm hüpikaknas"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blokeeri rämpsesitused reCAPTCHA v3-ga"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr "Kopeerige oma seaded arendus- ja tootmiskeskkonna vahel"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr "EL-i taganemisnupp"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatiseerige taganemise töövoog Premium uuendusega"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr "Hankige plugin kohe"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr "Muutusteta võrreldes eelmise nädalaga"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr "Andmed puuduvad"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr "Muutusteta"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr "Avatud avaldused"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr "Kinnitatud (30p)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr "ID"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr "Tellimus #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr "Toimingud"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr "Vaata"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Näidatakse %1$d–%2$d / %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr "Näidatakse 0 / 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Automaatne kinnitamine"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Kasutaja"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "Olekumuutusi pole registreeritud."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
+msgid "No activity recorded."
+msgstr "Tegevust pole registreeritud."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Allikas"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
+msgid "Action"
+msgstr "Toiming"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
+msgid "Note"
+msgstr "Märkus"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Tagasi loendisse"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Avalduse teave"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "Põhjust pole esitatud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Tagasimakse meetodi üksikasjad"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Loodud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Tellimuse tooted"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Rea summa"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Taganemine kinnitatud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Taganemine tagasi lükatud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Taganemisavaldus esitatud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "Pole kaasatud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr "Selle avalduse jaoks ei leitud tellimuse tooteid."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr "Oleku ajajoon"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr "Tegevuslogi"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr "Lükka avaldus tagasi"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr "Tagasilükkamise põhjus"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d valitud"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Tühjenda kõik"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Eemalda toode"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Otsi toodet…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Otsimine…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Tooteid ei leitud."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Eemalda kategooria"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Otsi kategooriaid…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Ükski kategooria ei vasta teie otsingule."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Tippige kategooriate filtreerimiseks…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Tootekategooriaid ei leitud."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Eemalda olek"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Otsi tellimuse olekuid…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Ükski tellimuse olek ei vasta teie otsingule."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Tippige tellimuse olekute filtreerimiseks…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Tellimuse olekuid ei leitud."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "See e-posti aadress on juba lisatud."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Eemalda e-post"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Lisage seadete salvestamiseks vähemalt üks saaja."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Sisestage e-posti aadress…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Lisa"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr "Globaalne"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr "Ainult WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr "Üldine"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr "Reeglid ja välistused"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr "Töövoog"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr "Täpsemad"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr "Kinnita import"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr "Ekspordi versioon:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr "Praegune versioon:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:585
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible"
+" with your current version. Consider updating the plugin before importing."
+msgstr ""
+"Ekspordifail on uuemast versioonist. Mõned seaded ei pruugi teie praeguse "
+"versiooniga ühilduda. Kaaluge plugina uuendamist enne importimist."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"See kirjutab kõik praegused plugina seaded üle. Seda toimingut ei saa tagasi"
+" võtta."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr "Seadete importimine..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Seaded edukalt imporditud. Lehe uuesti laadimine..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr "Seaded edukalt eksporditud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr "Ekspordi seaded"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr "Impordi seaded"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr "Kehtetu seadefail. Palun valige kehtiv ekspordifail."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr ""
+"Faili ei saanud lugeda. Veenduge, et tegemist on kehtiva JSON-failiga."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:645
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Eksportige kõik plugina seaded JSON-failina või importige seaded varem "
+"eksporditud failist."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr "Taganemise tingimused"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr "Avaldatud"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr "Eelvaade"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr "Muuda lehte"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr "Kas olete kindel, et soovite tingimuste lehe kustutada?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr "Lehe kustutamine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr "Leht kustutatud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr "Kustuta"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:833
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Saadaolevad lühikoodid: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:730
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive "
+"2011/83/EU. The page includes dynamic shortcodes for excluded products, "
+"categories, and product types that stay in sync with your settings."
+msgstr ""
+"Genereerige taganemise tingimuste leht, mis põhineb EL-i direktiivil "
+"2011/83/EL. Leht sisaldab dünaamilisi lühikoode välistatud toodete, "
+"kategooriate ja tootetüüpide jaoks, mis sünkroniseeritakse teie seadetega."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr "Lehe loomine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr "Leht loodud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr "Loomine…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr "Genereeri tingimuste leht"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr "-- Valige leht --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr "Seadete laadimine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr "Seadete laadimine..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr "Seadeid ei saa laadida."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr "reCAPTCHA võtmed lahti ühendatud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr "Lahtiühendamine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr "Ühenda lahti"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr "reCAPTCHA võtmed edukalt salvestatud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr "Võtmete salvestamine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr "Palun sisestage nii saidi võti kui ka salajane võti."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr "Salvesta võtmed"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr "Lühikood"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr "Taganemisvormi põhikäitumine ja kuvamise eelistused."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr "Taganemise leht"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr "Näita taganemisnuppu jaluses"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Kuva taganemisnupp või -link saidi jaluses."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr "Kohanda välimust"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr "Jalus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr "Minu konto leht"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr "Kohandamiseks lubage ülal \"Näita taganemisnuppu jaluses\"."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr "Kohandamiseks lubage ülal \"Näita taganemisnuppu Minu kontol\"."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr "Lingi tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr "Nupu tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr "Kuva kui"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr "Link"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr "Nupp"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr "Värvid"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr "Teema vaikeväärtus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr "Kohandatud"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr "Taust"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr "Tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr "Hõljumise taust"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr "Hõljumise tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr "Jaluse lingi tekst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Jaluse taganemise lingi jaoks kuvatav tekst."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr "Kuvamise ulatus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr "Luba osalised taganemised"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr "Soovitatav"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr "Taganemistähtaeg"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr "päeva"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr "Alusta loendust alates"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr "Põhjus kohustuslik"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr "Välistused"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1728
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Välistage taganemisõigusest tootetüübid, kategooriad või konkreetsed tooted."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr "Välistatud tootetüübid"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr "Tootetüübid, millest ei saa taganeda."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr "Välistatud kategooriad"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Nende kategooriate toodetest ei saa taganeda."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr "Välistatud tooted"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr "Otsige ja valige konkreetsed tooted, millest ei saa taganeda."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr "Tellimuse olek"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1786
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Uuendage tellimuse olekuid automaatselt, kui taganemisavaldused esitatakse "
+"või kinnitatakse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr "Määra olekuks"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1852
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Seadistage administraatori teavituste saajad ja kliendi kontakt-e-post, mis "
+"kuvatakse tagasilükatud taganemise e-kirjades."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr "E-posti aadressid, mis saavad uue taganemisavalduse teavituse."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr "Kliendi kontakt-e-post"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1867
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"E-posti aadress, mis kuvatakse klientidele, kui taganemisavaldus lükatakse "
+"tagasi ja nad peavad teiega ühendust võtma."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr "Taganemisnupu lühikood"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1908
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Valikuline. Kohandatud nupu tekst. Kasutab vaikimisi lühikoodi silti, kui"
+" jäetud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Valikuline. Nupule lisatud täiendavad CSS klassid."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr "Andmehaldus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Juhtige, mis juhtub plugina andmetega plugina eemaldamisel."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr "Kustuta andmed desinstallimisel"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1941
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Eemaldage kõik plugina andmed (seaded, taganemisavaldused, andmebaasi "
+"tabelid) plugina desinstallimisel. See toiming on pöördumatu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr "Hävitav"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr "Salvestamiseks lisage vähemalt üks saaja"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr "Salvestamata muudatused"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr "Kõik muudatused salvestatud"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr "Loobu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr "Seaded edukalt salvestatud."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr "Seadete salvestamine ebaõnnestus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Lisage enne salvestamist vähemalt üks administraatori teavituse saaja."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr "Salvestamine..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
+msgstr "Salvesta seaded"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Paranda see"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr "Dokumentatsioon"
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr "Lükka hoiatus kõrvale"

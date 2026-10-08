@@ -61,15 +61,15 @@ class Wbte_Ewb_Guest_Verification {
 
 		$pending = $this->guest_service->find_pending_by_token( $token );
 
-		// Resolve order language and translate the target URL for WPML.
+		// Resolve order language and translate the target URL for multilingual plugins.
 		$order_lang = '';
 		if ( $pending && ! empty( $pending->order_number ) ) {
 			$order = $this->guest_service->resolve_order_by_number( $pending->order_number );
 			if ( $order instanceof WC_Order ) {
-				$order_lang = $order->get_meta( 'wpml_language' );
+				$order_lang = Wbte_Ewb_Multilingual::get_order_language( $order );
 				if ( $order_lang ) {
 					$target = apply_filters( 'wpml_permalink', $target, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-					do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+					Wbte_Ewb_Multilingual::switch_email_language( $order_lang );
 				}
 			}
 		}

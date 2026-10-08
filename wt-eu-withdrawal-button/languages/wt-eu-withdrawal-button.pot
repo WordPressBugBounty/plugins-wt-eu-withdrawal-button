@@ -1,15 +1,15 @@
-# Copyright (C) 2026 webtoffee
+# Copyright (C) 2026 WebToffee
 # This file is distributed under the GPL-3.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: WebToffee EU Withdrawal Button for WooCommerce 1.1.0\n"
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-15T10:52:07+00:00\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wt-eu-withdrawal-button\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #. Author of the plugin
 #: wt-eu-withdrawal-button.php
-msgid "webtoffee"
+msgid "WebToffee"
 msgstr ""
 
 #. Author URI of the plugin
@@ -42,6 +42,8 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-admin-assets.php:112
 #: includes/admin/class-wbte-ewb-order-meta-box.php:554
 #: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:54
 #: react/src/components/RequestsList.jsx:223
 #: react/src/components/StatusBadge.jsx:28
@@ -52,6 +54,8 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-order-meta-box.php:555
 #: includes/frontend/class-wbte-ewb-my-account.php:457
 #: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:55
 #: react/src/components/RequestsList.jsx:220
 #: react/src/components/StatusBadge.jsx:29
@@ -62,6 +66,8 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-order-meta-box.php:556
 #: includes/frontend/class-wbte-ewb-my-account.php:458
 #: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:56
 #: react/src/components/RequestsList.jsx:222
 #: react/src/components/StatusBadge.jsx:30
@@ -71,6 +77,7 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-admin-assets.php:115
 #: includes/admin/class-wbte-ewb-admin-assets.php:182
 #: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:180
 msgid "Approve"
 msgstr ""
@@ -78,23 +85,27 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-admin-assets.php:116
 #: includes/admin/class-wbte-ewb-admin-assets.php:183
 #: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:188
 msgid "Reject"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:117
 #: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:228
 msgid "Full Withdrawal"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:118
 #: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:227
 msgid "Partial Withdrawal"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1
 #: react/src/components/RequestsList.jsx:186
 msgid "No withdrawal requests found."
 msgstr ""
@@ -128,6 +139,7 @@ msgid "Please enter a reason for rejecting this withdrawal request:"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:378
 msgid "A reason is required when rejecting a request."
 msgstr ""
@@ -144,6 +156,7 @@ msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin-menu.php:51
 #: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1
 #: react/src/layouts/AdminLayout.jsx:21
 #: react/src/layouts/AdminLayout.jsx:24
 msgid "Withdrawals"
@@ -154,6 +167,7 @@ msgid "Loading withdrawal dashboard…"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1
 #: react/src/layouts/AdminLayout.jsx:43
 msgid "Settings"
 msgstr ""
@@ -231,16 +245,19 @@ msgid "View in dashboard"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1
 #: react/src/components/ReviewBanner.jsx:94
 msgid "Leave a review"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1
 #: react/src/components/ReviewBanner.jsx:101
 msgid "Remind me later"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1
 #: react/src/components/ReviewBanner.jsx:107
 msgid "Dismiss review request"
 msgstr ""
@@ -280,6 +297,7 @@ msgid "Requested %sx"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:266
 #: react/src/components/RequestDetail.jsx:300
 msgid "Withdrawal"
@@ -298,6 +316,7 @@ msgid "Withdrawal Page"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1594
 msgid "Select the page where customers can submit withdrawal requests."
 msgstr ""
@@ -315,6 +334,7 @@ msgid "Display Scope"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1638
 msgid "Where the withdrawal form and links are displayed."
 msgstr ""
@@ -332,6 +352,7 @@ msgid "Allow Partial Withdrawals"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1652
 msgid "Let customers withdraw individual items instead of the entire order."
 msgstr ""
@@ -341,6 +362,7 @@ msgid "Withdrawal Period (days)"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1658
 msgid "Number of days after the selected start status during which a withdrawal request can be submitted."
 msgstr ""
@@ -350,6 +372,7 @@ msgid "Withdrawal Period Starts From"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1688
 msgid "Select one or more order statuses. The countdown begins on the earliest date the order reaches any selected status."
 msgstr ""
@@ -359,6 +382,7 @@ msgid "Reason Required"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1703
 msgid "Require customers to provide a reason when submitting a withdrawal request."
 msgstr ""
@@ -372,21 +396,25 @@ msgid "Product types that are excluded from withdrawal eligibility."
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:231
 msgid "Virtual"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:232
 msgid "Downloadable"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:233
 msgid "Grouped"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:234
 msgid "External / Affiliate"
 msgstr ""
@@ -432,11 +460,13 @@ msgid "Control whether order statuses are changed automatically during the withd
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1794
 msgid "Change order status on submission"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1795
 msgid "Automatically change the order status when a withdrawal request is submitted."
 msgstr ""
@@ -450,11 +480,13 @@ msgid "The order status to set when a withdrawal request is submitted."
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1819
 msgid "Change order status on approval"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1820
 msgid "Automatically change the order status when a withdrawal request is approved."
 msgstr ""
@@ -476,7 +508,8 @@ msgid "Configure admin recipients for withdrawal notification emails."
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:331
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:213
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1857
 msgid "Recipient(s)"
 msgstr ""
@@ -506,16 +539,19 @@ msgid "Warning: This action is irreversible."
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1010
 msgid "Order created"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1897
 msgid "Add a withdrawal request button to any page or post. The button links to your configured withdrawal page."
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1902
 msgid "Examples"
 msgstr ""
@@ -539,6 +575,7 @@ msgstr ""
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
 #: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
 #: react/src/components/EmailRecipientsField.jsx:34
 msgid "Please enter a valid email address."
 msgstr ""
@@ -572,6 +609,7 @@ msgid "Partial withdrawal"
 msgstr ""
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1849
 msgid "Email notifications"
 msgstr ""
@@ -640,6 +678,8 @@ msgstr ""
 
 #: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
 #: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2
+#: react/build/admin-dashboard.js:5
 #: react/src/components/RequestDetail.jsx:391
 #: react/src/components/SettingsPage.jsx:616
 msgid "Cancel"
@@ -680,7 +720,7 @@ msgid "No order found matching the provided order number."
 msgstr ""
 
 #: includes/api/class-wbte-ewb-rest-controller.php:181
-#: includes/api/class-wbte-ewb-rest-customer.php:615
+#: includes/api/class-wbte-ewb-rest-customer.php:614
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
 msgid "The email address does not match the order."
 msgstr ""
@@ -690,7 +730,7 @@ msgid "The order number does not match the requested order."
 msgstr ""
 
 #: includes/api/class-wbte-ewb-rest-customer.php:155
-#: includes/api/class-wbte-ewb-rest-customer.php:842
+#: includes/api/class-wbte-ewb-rest-customer.php:841
 msgid "WooCommerce order ID."
 msgstr ""
 
@@ -735,82 +775,82 @@ msgid "Quantity to withdraw."
 msgstr ""
 
 #: includes/api/class-wbte-ewb-rest-customer.php:250
-#: includes/api/class-wbte-ewb-rest-customer.php:885
+#: includes/api/class-wbte-ewb-rest-customer.php:884
 msgid "Customer reason for the withdrawal."
 msgstr ""
 
 #: includes/api/class-wbte-ewb-rest-customer.php:304
-#: includes/api/class-wbte-ewb-rest-customer.php:366
+#: includes/api/class-wbte-ewb-rest-customer.php:365
 msgid "Guest withdrawal service is not available."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:377
+#: includes/api/class-wbte-ewb-rest-customer.php:376
 #: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
 #: includes/core/class-wbte-ewb-request-service.php:149
 msgid "Please select at least one item to withdraw."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:405
-#: includes/api/class-wbte-ewb-rest-customer.php:548
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
 msgid "Withdrawal request submitted successfully."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:422
+#: includes/api/class-wbte-ewb-rest-customer.php:421
 msgid "Guest withdrawal requests must be verified by email before they are created."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:438
+#: includes/api/class-wbte-ewb-rest-customer.php:437
 msgid "Either order_id or order_number is required."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:447
+#: includes/api/class-wbte-ewb-rest-customer.php:446
 msgid "Items are required for partial withdrawal requests."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:466
-#: includes/api/class-wbte-ewb-rest-customer.php:638
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
 msgid "The specified order could not be found."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:484
+#: includes/api/class-wbte-ewb-rest-customer.php:483
 msgid "A reason is required for withdrawal requests."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:527
+#: includes/api/class-wbte-ewb-rest-customer.php:526
 #: includes/api/class-wbte-ewb-rest-requests.php:403
 #: includes/api/class-wbte-ewb-rest-requests.php:445
 msgid "Request service is not available."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:575
+#: includes/api/class-wbte-ewb-rest-customer.php:574
 msgid "This order does not belong to your account."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:591
+#: includes/api/class-wbte-ewb-rest-customer.php:590
 msgid "Order number is required for guest withdrawal requests."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:599
+#: includes/api/class-wbte-ewb-rest-customer.php:598
 msgid "Email is required for guest withdrawal requests."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:607
+#: includes/api/class-wbte-ewb-rest-customer.php:606
 msgid "The order number does not match this order."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:655
+#: includes/api/class-wbte-ewb-rest-customer.php:654
 msgid "Eligibility service is not available."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:713
+#: includes/api/class-wbte-ewb-rest-customer.php:712
 msgid "This item is not eligible for withdrawal."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:723
+#: includes/api/class-wbte-ewb-rest-customer.php:722
 msgid "This item is already included in a pending or approved withdrawal request."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:836
+#: includes/api/class-wbte-ewb-rest-customer.php:835
 #: includes/api/class-wbte-ewb-rest-requests.php:81
 #: includes/api/class-wbte-ewb-rest-requests.php:104
 #: includes/api/class-wbte-ewb-rest-requests.php:133
@@ -818,24 +858,24 @@ msgstr ""
 msgid "Unique identifier for the withdrawal request."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:847
+#: includes/api/class-wbte-ewb-rest-customer.php:846
 #: includes/api/class-wbte-ewb-rest-requests.php:523
 msgid "Customer-facing order number."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:852
+#: includes/api/class-wbte-ewb-rest-customer.php:851
 msgid "Status of the withdrawal request."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:859
+#: includes/api/class-wbte-ewb-rest-customer.php:858
 msgid "Full or partial withdrawal."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:865
+#: includes/api/class-wbte-ewb-rest-customer.php:864
 msgid "Line items included in the withdrawal."
 msgstr ""
 
-#: includes/api/class-wbte-ewb-rest-customer.php:890
+#: includes/api/class-wbte-ewb-rest-customer.php:889
 msgid "Date the request was created."
 msgstr ""
 
@@ -904,6 +944,7 @@ msgid "Withdrawal request not found."
 msgstr ""
 
 #: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2
 #: react/src/utils/getActorLabel.js:25
 msgid "Guest user"
 msgstr ""
@@ -1143,6 +1184,7 @@ msgid "Change status to %s"
 msgstr ""
 
 #: includes/class-wbte-ewb-settings.php:316
+#: react/build/admin-dashboard.js:5
 #: react/src/components/SettingsPage.jsx:1629
 msgid "Request Withdrawal"
 msgstr ""
@@ -1329,6 +1371,7 @@ msgstr ""
 
 #: includes/core/class-wbte-ewb-request.php:592
 #: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1
 #: react/src/components/RequestsList.jsx:254
 msgid "Partial"
 msgstr ""
@@ -1337,6 +1380,7 @@ msgstr ""
 #: includes/emails/class-wbte-ewb-email-preview.php:93
 #: includes/emails/class-wbte-ewb-email-preview.php:204
 #: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1
 #: react/src/components/RequestsList.jsx:255
 msgid "Full"
 msgstr ""
@@ -1347,11 +1391,13 @@ msgid "%1$s at %2$s (%3$s)"
 msgstr ""
 
 #: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1
 #: react/src/components/ReviewBanner.jsx:71
 msgid "Your store is making EU right-of-withdrawal easy for customers. Enjoying WebToffee EU Withdrawal Button? Leave a review!"
 msgstr ""
 
 #: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1
 #: react/src/components/ReviewBanner.jsx:72
 msgid "You've been using WebToffee EU Withdrawal Button for a week. We'd really appreciate if you could take a moment to leave us a review"
 msgstr ""
@@ -1420,52 +1466,52 @@ msgid "[{site_title}]: Your withdrawal request for order #{order_number} has bee
 msgstr ""
 
 #. translators: %s: list of available placeholder tags.
-#: includes/emails/class-wbte-ewb-email-request-approved.php:185
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:206
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:203
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:185
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
 msgid "Available placeholders: %s"
+msgstr ""
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
 msgstr ""
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:189
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:210
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
-msgid "Enable/Disable"
-msgstr ""
-
-#: includes/emails/class-wbte-ewb-email-request-approved.php:191
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:212
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:209
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:191
 msgid "Enable this email notification"
 msgstr ""
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:195
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:216
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:222
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:195
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
 msgid "Subject"
 msgstr ""
 
-#: includes/emails/class-wbte-ewb-email-request-approved.php:203
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:224
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:230
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:203
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
 msgid "Email heading"
+msgstr ""
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
 msgstr ""
 
 #: includes/emails/class-wbte-ewb-email-request-approved.php:211
 #: includes/emails/class-wbte-ewb-email-request-rejected.php:232
 #: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
 #: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
-msgid "Email type"
-msgstr ""
-
-#: includes/emails/class-wbte-ewb-email-request-approved.php:213
-#: includes/emails/class-wbte-ewb-email-request-rejected.php:234
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:240
-#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:213
 msgid "Choose which format of email to send."
 msgstr ""
 
@@ -1499,7 +1545,7 @@ msgid "New Withdrawal Request"
 msgstr ""
 
 #. translators: %s: default store email address.
-#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:216
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
 msgid "Optional override for this email only. Leave blank to use recipients configured in Withdrawal settings (defaults to %s)."
 msgstr ""
 
@@ -1590,6 +1636,7 @@ msgid "Confirm withdrawal"
 msgstr ""
 
 #: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1
 #: react/src/components/RequestsList.jsx:197
 msgid "Customer"
 msgstr ""
@@ -1598,6 +1645,7 @@ msgstr ""
 #: includes/frontend/class-wbte-ewb-my-account.php:140
 #: includes/frontend/class-wbte-ewb-my-account.php:159
 #: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:271
 msgid "Order"
 msgstr ""
@@ -1651,6 +1699,8 @@ msgstr ""
 
 #: includes/frontend/class-wbte-ewb-my-account.php:143
 #: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:33
 #: react/src/components/RequestsList.jsx:200
 msgid "Date"
@@ -1658,6 +1708,7 @@ msgstr ""
 
 #: includes/frontend/class-wbte-ewb-my-account.php:146
 #: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1
 #: react/src/components/RequestsList.jsx:198
 msgid "Type"
 msgstr ""
@@ -1666,6 +1717,8 @@ msgstr ""
 #: includes/frontend/class-wbte-ewb-my-account.php:172
 #: templates/emails/customer-withdrawal-approved.php:99
 #: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
 #: react/src/components/Filters.jsx:46
 #: react/src/components/RequestDetail.jsx:261
 #: react/src/components/RequestsList.jsx:199
@@ -1691,6 +1744,7 @@ msgid "Submitted"
 msgstr ""
 
 #: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:277
 msgid "Processed"
 msgstr ""
@@ -1698,6 +1752,7 @@ msgstr ""
 #: includes/frontend/class-wbte-ewb-my-account.php:342
 #: templates/emails/admin-withdrawal-submitted.php:108
 #: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:233
 msgid "Reason"
 msgstr ""
@@ -1778,6 +1833,7 @@ msgid "Customer Name"
 msgstr ""
 
 #: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:220
 msgid "Customer Email"
 msgstr ""
@@ -1800,6 +1856,7 @@ msgstr ""
 #: templates/emails/customer-withdrawal-approved.php:65
 #: templates/emails/customer-withdrawal-rejected.php:78
 #: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:224
 msgid "Request Type"
 msgstr ""
@@ -1822,6 +1879,7 @@ msgstr ""
 #: templates/emails/admin-withdrawal-submitted.php:149
 #: templates/emails/customer-withdrawal-approved.php:135
 #: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:297
 msgid "Quantity"
 msgstr ""
@@ -1904,6 +1962,7 @@ msgstr ""
 
 #: templates/emails/customer-withdrawal-approved.php:134
 #: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:296
 msgid "Product"
 msgstr ""
@@ -1960,6 +2019,7 @@ msgid "If you have any questions in the meantime, please do not hesitate to cont
 msgstr ""
 
 #: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2
 #: react/src/components/RequestDetail.jsx:248
 msgid "Receipt hash"
 msgstr ""
@@ -1982,20 +2042,950 @@ msgstr ""
 msgid "WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
 msgstr ""
 
+#: react/build/admin-dashboard.js:1
+#: react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr ""
+
+#: react/build/admin-dashboard.js:1
+#: react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr ""
+
+#. translators: 1: first visible item number, 2: last visible item number, 3: total item count
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:24
 msgid "No activity recorded."
 msgstr ""
 
+#: react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:34
 msgid "Source"
 msgstr ""
 
+#: react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:35
 msgid "Action"
 msgstr ""
 
+#: react/build/admin-dashboard.js:2
 #: react/src/components/ActivityLog.jsx:36
 msgid "Note"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr ""
+
+#: react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr ""
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3
+#: react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr ""
+
+#: react/build/admin-dashboard.js:3
+#: react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr ""
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr ""
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr ""
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr ""
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr ""
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:585
+msgid "The export file is from a newer version. Some settings may not be compatible with your current version. Consider updating the plugin before importing."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:590
+msgid "This will overwrite all current plugin settings. This action cannot be undone."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:645
+msgid "Export all plugin settings as a JSON file, or import settings from a previously exported file."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:833
+msgid "Available shortcodes: [wbte_ewb_excluded_product_types], [wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], [wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:730
+msgid "Generate a withdrawal Terms & Conditions page based on EU Directive 2011/83/EU. The page includes dynamic shortcodes for excluded products, categories, and product types that stay in sync with your settings."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1728
+msgid "Exclude product types, categories, or specific products from withdrawal eligibility."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1786
+msgid "Automatically update order statuses when withdrawal requests are submitted or approved."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1852
+msgid "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1867
+msgid "Email address shown to customers when a withdrawal request is rejected and they need to contact you."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1908
+msgid " — Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1941
+msgid "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr ""
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
 msgstr ""
 
 #: react/src/components/AdminWarnings.jsx:59
@@ -2008,744 +2998,4 @@ msgstr ""
 
 #: react/src/components/AdminWarnings.jsx:76
 msgid "Dismiss warning"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:73
-msgid "No product categories found."
-msgstr ""
-
-#. translators: %d: number of selected categories
-#. translators: %d: number of selected order statuses
-#. translators: %d: number of selected products
-#: react/src/components/CategoryExclusionField.jsx:86
-#: react/src/components/OrderStatusPickerField.jsx:106
-#: react/src/components/ProductSearchField.jsx:186
-msgid "%d selected"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:95
-#: react/src/components/OrderStatusPickerField.jsx:116
-#: react/src/components/ProductSearchField.jsx:195
-msgid "Clear all"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:106
-msgid "Remove category"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:121
-msgid "Search categories…"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:136
-msgid "Type to filter categories…"
-msgstr ""
-
-#: react/src/components/CategoryExclusionField.jsx:160
-msgid "No categories match your search."
-msgstr ""
-
-#: react/src/components/EmailRecipientsField.jsx:39
-msgid "This email address is already added."
-msgstr ""
-
-#: react/src/components/EmailRecipientsField.jsx:70
-msgid "Remove email"
-msgstr ""
-
-#: react/src/components/EmailRecipientsField.jsx:80
-msgid "Add at least one recipient to save settings."
-msgstr ""
-
-#: react/src/components/EmailRecipientsField.jsx:89
-msgid "Enter email address…"
-msgstr ""
-
-#: react/src/components/EmailRecipientsField.jsx:103
-msgid "Add"
-msgstr ""
-
-#: react/src/components/Filters.jsx:53
-msgid "All Statuses"
-msgstr ""
-
-#: react/src/components/Filters.jsx:61
-msgid "Date From"
-msgstr ""
-
-#: react/src/components/Filters.jsx:73
-msgid "Date To"
-msgstr ""
-
-#: react/src/components/Filters.jsx:85
-msgid "Search"
-msgstr ""
-
-#: react/src/components/Filters.jsx:92
-msgid "Order # or receipt hash"
-msgstr ""
-
-#: react/src/components/Filters.jsx:109
-msgid "Reset"
-msgstr ""
-
-#: react/src/components/Filters.jsx:120
-msgid "Apply Filters"
-msgstr ""
-
-#: react/src/components/OrderStatusPickerField.jsx:93
-msgid "No order statuses found."
-msgstr ""
-
-#: react/src/components/OrderStatusPickerField.jsx:129
-msgid "Remove status"
-msgstr ""
-
-#: react/src/components/OrderStatusPickerField.jsx:144
-msgid "Search order statuses…"
-msgstr ""
-
-#: react/src/components/OrderStatusPickerField.jsx:159
-msgid "Type to filter order statuses…"
-msgstr ""
-
-#: react/src/components/OrderStatusPickerField.jsx:183
-msgid "No order statuses match your search."
-msgstr ""
-
-#: react/src/components/ProductSearchField.jsx:206
-msgid "Remove product"
-msgstr ""
-
-#: react/src/components/ProductSearchField.jsx:221
-msgid "Search for a product…"
-msgstr ""
-
-#: react/src/components/ProductSearchField.jsx:237
-msgid "Searching…"
-msgstr ""
-
-#: react/src/components/ProductSearchField.jsx:239
-msgid "No products found."
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:104
-#: react/src/components/RequestDetail.jsx:169
-msgid "Back to List"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:120
-msgid "Not included"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:127
-msgid "Withdrawal approved"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:134
-msgid "Withdrawal rejected"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:140
-msgid "Withdrawal request submitted"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:198
-msgid "Request Information"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:203
-#: react/src/components/RequestsList.jsx:196
-msgid "Order #"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:234
-msgid "No reason provided"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:238
-msgid "Refund method details"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:243
-msgid "Created"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:289
-msgid "Order Items"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:298
-msgid "Line Total"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:343
-msgid "No order items were found for this request."
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:352
-msgid "Status Timeline"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:362
-msgid "Activity Log"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:370
-#: react/src/components/RequestDetail.jsx:400
-msgid "Reject Request"
-msgstr ""
-
-#: react/src/components/RequestDetail.jsx:377
-msgid "Rejection Reason"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:103
-msgid "No change vs last week"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:114
-msgid "No data"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:120
-msgid "No change"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:139
-msgid "Open Requests"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:153
-msgid "Approved (30d)"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:195
-msgid "ID"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:201
-msgid "Actions"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:277
-msgid "View"
-msgstr ""
-
-#. translators: 1: first visible item number, 2: last visible item number, 3: total item count
-#: react/src/components/RequestsList.jsx:291
-msgid "Showing %1$d–%2$d of %3$d"
-msgstr ""
-
-#: react/src/components/RequestsList.jsx:296
-msgid "Showing 0 of 0"
-msgstr ""
-
-#: react/src/components/ReviewBanner.jsx:75
-msgid "Review request"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:238
-msgid "Global"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:239
-msgid "WooCommerce only"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:254
-#: react/src/components/SettingsPage.jsx:1585
-msgid "General"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:255
-msgid "Rules & Exclusions"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:256
-msgid "Workflow"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:257
-msgid "Advanced"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:474
-msgid "Settings exported successfully."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:497
-msgid "Invalid settings file. Please select a valid export file."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:503
-msgid "Could not read the file. Make sure it is a valid JSON file."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:512
-msgid "Importing settings..."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:524
-msgid "Settings imported successfully. Reloading page..."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:567
-#: react/src/components/SettingsPage.jsx:604
-msgid "Confirm import"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:577
-msgid "Export version:"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:579
-msgid "Current version:"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:585
-msgid "The export file is from a newer version. Some settings may not be compatible with your current version. Consider updating the plugin before importing."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:590
-msgid "This will overwrite all current plugin settings. This action cannot be undone."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:633
-msgid "Export settings"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:640
-msgid "Import settings"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:645
-msgid "Export all plugin settings as a JSON file, or import settings from a previously exported file."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:674
-msgid "Page created."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:676
-#: react/src/components/SettingsPage.jsx:679
-msgid "Failed to create page."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:686
-msgid "Are you sure you want to delete the Terms & Conditions page?"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:699
-msgid "Page deleted."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:701
-#: react/src/components/SettingsPage.jsx:704
-msgid "Failed to delete page."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:730
-msgid "Generate a withdrawal Terms & Conditions page based on EU Directive 2011/83/EU. The page includes dynamic shortcodes for excluded products, categories, and product types that stay in sync with your settings."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:749
-msgid "Creating…"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:749
-msgid "Generate T&C page"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:764
-msgid "Withdrawal Terms & Conditions"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:767
-msgid "Published"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:788
-msgid "Preview"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:808
-msgid "Edit page"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:827
-msgid "Delete"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:833
-msgid "Available shortcodes: [wbte_ewb_excluded_product_types], [wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], [wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:896
-msgid "-- Select a page --"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:909
-msgid "Failed to load settings."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:950
-msgid "Add at least one admin notification recipient before saving."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:964
-msgid "Settings saved successfully."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:969
-msgid "Failed to save settings."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:989
-msgid "Loading settings..."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:998
-msgid "Unable to load settings."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1133
-msgid "Customize appearance"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1137
-msgid "Footer"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1138
-msgid "My account page"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1148
-msgid "Enable \"Show withdrawal button in footer\" above to customize."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1149
-msgid "Enable \"Show withdrawal button in My Account\" above to customize."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1156
-msgid "Link text"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1156
-msgid "Button text"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1167
-msgid "Display as"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1170
-msgid "Link"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1171
-msgid "Button"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1178
-msgid "Colors"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1180
-msgid "Theme default"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1180
-msgid "Custom"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1201
-msgid "Background"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1209
-msgid "Text"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1217
-msgid "Hover bg"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1225
-msgid "Hover text"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1404
-msgid "Please enter both site key and secret key."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1412
-msgid "reCAPTCHA keys saved successfully."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1414
-msgid "Failed to save keys."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1418
-msgid "Save keys"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1432
-msgid "reCAPTCHA keys disconnected."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1434
-msgid "Failed to disconnect."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1438
-msgid "Disconnect"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1474
-msgid "Shortcode"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1588
-msgid "Core withdrawal form behaviour and display preferences."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1593
-msgid "Withdrawal page"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1611
-msgid "Show withdrawal button in footer"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1612
-msgid "Display a withdrawal button or link in the site footer."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1621
-msgid "Footer link text"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1622
-msgid "The text displayed for the footer withdrawal link."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1637
-msgid "Display scope"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1651
-msgid "Allow partial withdrawals"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1653
-msgid "Recommended"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1657
-msgid "Withdrawal period"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1669
-msgid "days"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1687
-msgid "Start countdown from"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1702
-msgid "Reason required"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1725
-msgid "Exclusions"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1728
-msgid "Exclude product types, categories, or specific products from withdrawal eligibility."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1733
-msgid "Excluded product types"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1734
-msgid "Product types that cannot be withdrawn."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1749
-msgid "Excluded categories"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1750
-msgid "Products in these categories cannot be withdrawn."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1760
-msgid "Excluded products"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1761
-msgid "Search and select specific products that cannot be withdrawn."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1783
-msgid "Order status"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1786
-msgid "Automatically update order statuses when withdrawal requests are submitted or approved."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1800
-#: react/src/components/SettingsPage.jsx:1825
-msgid "Set status to"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1852
-msgid "Configure admin notification recipients and the customer contact email shown in rejected withdrawal emails."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1858
-msgid "Email addresses that receive the new withdrawal request notification."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1866
-msgid "Customer contact email"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1867
-msgid "Email address shown to customers when a withdrawal request is rejected and they need to contact you."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1894
-msgid "Withdrawal button shortcode"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1908
-msgid " — Optional. Custom button text. Uses the default shortcode label when omitted."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1912
-msgid " — Optional. Extra CSS classes added to the button."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1929
-msgid "Data management"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1932
-msgid "Control what happens to plugin data when the plugin is removed."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1940
-msgid "Delete data on uninstall"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1941
-msgid "Remove all plugin data (settings, withdrawal requests, database tables) when the plugin is uninstalled. This action is irreversible."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1942
-msgid "Destructive"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1982
-msgid "Add at least one recipient to save"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1984
-msgid "Unsaved changes"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1985
-msgid "All changes saved"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:1996
-msgid "Discard"
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:2006
-msgid "Saving..."
-msgstr ""
-
-#: react/src/components/SettingsPage.jsx:2007
-msgid "Save settings"
-msgstr ""
-
-#: react/src/components/StatusTimeline.jsx:30
-msgid "No status changes recorded."
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:14
-msgid "Auto-approve withdrawal requests"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:15
-msgid "Issue refund and restock inventory automatically"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:16
-msgid "Show the withdrawal button only to EU customers"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:17
-msgid "Generate a withdrawal terms and conditions page"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:18
-msgid "Collect bank details for COD and bank transfer refunds"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:19
-msgid "Open the withdrawal form in a popup"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:20
-msgid "Block spam submissions with reCAPTCHA v3"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:21
-msgid "Copy your settings between staging and live"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:34
-msgid "EU Withdrawal Button"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:47
-msgid "Automate Withdrawal Workflow With Premium Upgrade"
-msgstr ""
-
-#: react/src/components/UpgradeBanner.jsx:65
-msgid "Get Plugin Now"
-msgstr ""
-
-#: react/src/layouts/AdminLayout.jsx:19
-msgid "WooCommerce"
-msgstr ""
-
-#: react/src/layouts/AdminLayout.jsx:27
-msgid "Customer-initiated order cancellations and partial refunds."
-msgstr ""
-
-#: react/src/layouts/AdminLayout.jsx:36
-msgid "Requests"
-msgstr ""
-
-#: react/src/utils/getActorLabel.js:11
-msgid "Auto-approval"
-msgstr ""
-
-#: react/src/utils/getActorLabel.js:21
-msgid "User"
-msgstr ""
-
-#: react/src/utils/getActorLabel.js:28
-msgid "Unknown"
 msgstr ""

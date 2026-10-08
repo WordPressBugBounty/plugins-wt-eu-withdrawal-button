@@ -293,7 +293,13 @@ class Wbte_Ewb_REST_Requests extends Wbte_Ewb_REST_Controller {
 
 		$data = array();
 		foreach ( $items as $item ) {
-			$data[] = is_object( $item ) && method_exists( $item, 'to_array' ) ? $item->to_array() : (array) $item;
+			if ( is_object( $item ) && method_exists( $item, 'to_list_array' ) ) {
+				$data[] = $item->to_list_array();
+			} elseif ( is_object( $item ) && method_exists( $item, 'to_array' ) ) {
+				$data[] = $item->to_array();
+			} else {
+				$data[] = (array) $item;
+			}
 		}
 
 		/**

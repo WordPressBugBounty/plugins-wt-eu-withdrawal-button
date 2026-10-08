@@ -5,8 +5,8 @@ Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 11.1
-Stable tag: 1.1.0
+WC tested up to: 11.2
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -88,12 +88,19 @@ The free version covers the core legal requirements. The premium version adds au
  
 [Get the premium version](https://www.webtoffee.com/product/eu-withdrawal-button/)
 
+= Supported Languages =
+
+The plugin is translated into all 24 official EU languages:
+
+Bulgarian, Croatian, Czech, Danish, Dutch (Belgium), Dutch (Netherlands), Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish.
+
 = Compatible Plugins =
  
 * Sequential Order Number plugins
 * Product Bundles by WooCommerce
 * WebToffee eCommerce Marketing Automation
 * WPML
+* TranslatePress
 
 = Getting started =
 
@@ -205,6 +212,12 @@ Available filters:
 
 == Changelog ==
 
+= 1.1.1 08-10-2026 =
+
+* [Add]: Spanish (es_ES), Estonian (et), Finnish (fi), French (fr_FR), Irish (ga), Croatian (hr), Hungarian (hu_HU), Lithuanian (lt_LT), Latvian (lv), Maltese (mt_MT), Slovak (sk_SK), and Slovenian (sl_SI) translation files — all 24 official EU languages now supported.
+* [Add]: Compatibility with TranslatePress multilingual plugin.
+* [Compatibility]: Tested up to WooCommerce 11.2
+
 = 1.1.0 15-09-2026 =
 
 * [Compatibility]: Tested up to Plugin checker 2.1.0
@@ -305,7 +318,8 @@ Available filters:
 
 == Upgrade Notice ==
 
-= 1.1.0 =
+= 1.1.1 =
 
-* [Compatibility]: Tested up to Plugin checker 2.1.0
-* [Compatibility]: Tested up to WooCommerce 11.1.0
+* [Add]: Spanish (es_ES), Estonian (et), Finnish (fi), French (fr_FR), Irish (ga), Croatian (hr), Hungarian (hu_HU), Lithuanian (lt_LT), Latvian (lv), Maltese (mt_MT), Slovak (sk_SK), and Slovenian (sl_SI) translation files — all 24 official EU languages now supported.
+* [Add]: Compatibility with TranslatePress multilingual plugin.
+* [Compatibility]: Tested up to WooCommerce 11.2

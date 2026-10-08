@@ -1,0 +1,3048 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
+"PO-Revision-Date: 2026-10-06 15:29+0000\n"
+"Last-Translator: WebToffee <info@webtoffee.com>\n"
+"Language-Team: hu_HU\n"
+"Language: hu-HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WebToffee Translation Generator\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee EU Elállási Gomb WooCommerce-hez"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Szerződéstől való elállás / rendelés-visszavonási kérelmek kezelése "
+"WooCommerce rendelésekhez. EU-kompatibilis, HPOS-kompatibilis."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
+#: includes/admin/class-wbte-ewb-order-meta-box.php:554
+#: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:223
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Függőben"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:555
+#: includes/frontend/class-wbte-ewb-my-account.php:457
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:220
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Jóváhagyva"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:556
+#: includes/frontend/class-wbte-ewb-my-account.php:458
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:222
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Elutasítva"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
+#: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
+msgid "Approve"
+msgstr "Jóváhagy"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
+msgid "Reject"
+msgstr "Elutasít"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
+msgid "Full Withdrawal"
+msgstr "Teljes elállás"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
+msgid "Partial Withdrawal"
+msgstr "Részleges elállás"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:186
+msgid "No withdrawal requests found."
+msgstr "Nem található elállási kérelem."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+msgid "Loading…"
+msgstr "Betöltés…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
+#: includes/frontend/class-wbte-ewb-frontend.php:156
+msgid "An error occurred. Please try again."
+msgstr "Hiba történt. Kérjük, próbálja újra."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Biztosan jóváhagyja ezt az elállási kérelmet?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Biztosan elutasítja ezt az elállási kérelmet?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
+msgid "Processing…"
+msgstr "Feldolgozás…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Kérjük, adja meg az elállási kérelem elutasításának okát:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:378
+msgid "A reason is required when rejecting a request."
+msgstr "Elutasításkor kötelező megadni az indokot."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
+msgid "Request updated successfully."
+msgstr "A kérelem sikeresen frissítve."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:62
+#: includes/frontend/class-wbte-ewb-my-account.php:260
+msgid "Withdrawal Requests"
+msgstr "Elállási kérelmek"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Elállások"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Elállási vezérlőpult betöltése…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Beállítások"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Támogatás"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Értékelés"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:82
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "A rendelés nem található."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:96
+msgid "No withdrawal request for this order."
+msgstr "Ehhez a rendeléshez nincs elállási kérelem."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:134
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "%1$d. kérelem, összesen %2$d (#%3$d)"
+
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:142
+msgid "Request #%d"
+msgstr "#%d kérelem"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:150
+msgid "Status:"
+msgstr "Állapot:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:156
+msgid "Type:"
+msgstr "Típus:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:168
+msgid "Items:"
+msgstr "Tételek:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:315
+#: templates/emails/admin-withdrawal-submitted.php:157
+#: templates/emails/customer-withdrawal-approved.php:141
+#: templates/emails/customer-withdrawal-submitted.php:131
+msgid "Unknown item"
+msgstr "Ismeretlen tétel"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:182
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Indok:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
+msgid "Submitted:"
+msgstr "Beküldve:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:197
+msgid "Receipt hash:"
+msgstr "Visszaigazolási hash:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:215
+msgid "Processed:"
+msgstr "Feldolgozva:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:221
+msgid "by"
+msgstr "által"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+msgid "View in dashboard"
+msgstr "Megtekintés a vezérlőpulton"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Értékelés írása"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Emlékeztessen később"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Értékelési kérés elvetése"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request #%d"
+msgstr "#%d elállási kérelem jóváhagyása"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:446
+msgid "Reject withdrawal request #%d"
+msgstr "#%d elállási kérelem elutasítása"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:450
+msgid "Approve withdrawal request"
+msgstr "Elállási kérelem jóváhagyása"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:451
+msgid "Reject withdrawal request"
+msgstr "Elállási kérelem elutasítása"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:537
+msgid "Rejected from orders list."
+msgstr "Elutasítva a rendeléslistáról."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:642
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Elállás: %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:653
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Kérelmezve: %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
+msgid "Withdrawal"
+msgstr "Elállás"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Elállási beállítások"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Állítsa be, hogyan működjenek az elállási / visszaküldési kérelmek az "
+"áruházban."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Elállási oldal"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1594
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr ""
+"Válassza ki azt az oldalt, ahol a vásárlók beküldhetik elállási kérelmüket."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Lábléc-hivatkozás beágyazása"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr ""
+"Automatikusan hivatkozás hozzáadása az elállási oldalra a weboldal "
+"láblécében."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Megjelenítési hatókör"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1638
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Hol jelenjen meg az elállási nyilatkozat és a hivatkozások."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globális (minden oldal)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Csak WooCommerce oldalak"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Részleges elállás engedélyezése"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1652
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"A vásárlók az egyes tételektől is elállhatnak a teljes rendelés helyett."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Elállási határidő (nap)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1658
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"A kiválasztott kezdő állapot utáni napok száma, ameddig elállási kérelmet "
+"lehet benyújtani."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Az elállási határidő kezdete"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1688
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Válasszon ki egy vagy több rendelési állapotot. A visszaszámlálás azon a "
+"napon kezdődik, amikor a rendelés először eléri a kiválasztott állapotok "
+"valamelyikét."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Indok kötelező"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1703
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr ""
+"A vásárlóknak kötelező indokot megadniuk az elállási kérelem benyújtásakor."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Kizárt terméktípusok"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Az elállási jogból kizárt terméktípusok."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
+msgid "Virtual"
+msgstr "Virtuális"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
+msgid "Downloadable"
+msgstr "Letölthető"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
+msgid "Grouped"
+msgstr "Csoportos"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:234
+msgid "External / Affiliate"
+msgstr "Külső / Affiliate"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Kizárt kategóriák"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Az elállási jogból kizárt termékkategóriák."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Kizárt termékek"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Az elállási jogból kizárt egyes termékek."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Kizárás viselkedése"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Hogyan kezeli az elállási nyilatkozat a kizárt termékeket."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Kizárt tételek elrejtése"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Letiltva megjelenítés értesítéssel"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Rendelés állapota"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Beállíthatja, hogy a rendelési állapotok automatikusan változzanak-e az "
+"elállási folyamat során."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1794
+msgid "Change order status on submission"
+msgstr "Rendelés állapotának módosítása beküldéskor"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1795
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr ""
+"A rendelés állapotának automatikus módosítása elállási kérelem beküldésekor."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Beküldéskori rendelési állapot"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr "A beállítandó rendelési állapot elállási kérelem beküldésekor."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1819
+msgid "Change order status on approval"
+msgstr "Rendelés állapotának módosítása jóváhagyáskor"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1820
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"A rendelés állapotának automatikus módosítása elállási kérelem "
+"jóváhagyásakor."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Jóváhagyáskori rendelési állapot"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr "A beállítandó rendelési állapot elállási kérelem jóváhagyásakor."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "E-mail értesítések"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr "Állítsa be az elállási értesítő e-mailek adminisztrátori címzettjeit."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1857
+msgid "Recipient(s)"
+msgstr "Címzett(ek)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Vesszővel elválasztott e-mail címek az adminisztrátori elállási "
+"értesítésekhez."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Elállási gomb rövidkód"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Adatkezelés"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Adatok törlése eltávolításkor"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Az összes bővítményadat (beállítások, elállási kérelmek, adatbázistáblák) "
+"törlése a bővítmény eltávolításakor."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Figyelmeztetés: Ez a művelet visszafordíthatatlan."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1010
+msgid "Order created"
+msgstr "Rendelés létrehozva"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1897
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Elállási kérelem gomb hozzáadása bármely oldalhoz vagy bejegyzéshez. A gomb "
+"az Ön által beállított elállási oldalra mutat."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1902
+msgid "Examples"
+msgstr "Példák"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Opcionális. Egyéni gombszöveg. Elhagyása esetén az alapértelmezett rövidkód-"
+"címkét használja."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Opcionális. További CSS osztályok hozzáadása a gombhoz."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Deaktiválás"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Feldolgozás..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Kérjük, adjon meg egy érvényes e-mail címet."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Beküldés és deaktiválás"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Probléma az elállási folyamattal"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Vendég elállás"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Tudna egy kicsit többet mondani?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:172
+msgid "Partial withdrawal"
+msgstr "Részleges elállás"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1849
+msgid "Email notifications"
+msgstr "E-mail értesítések"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "EU megfelelőség / jogi aggályok"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Egyéb"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Találtam egy jobb bővítményt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Melyik bővítményt?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"A bővítmény nagyszerű, de szükségem van egy olyan funkcióra, amelyet nem "
+"támogat"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Tudna többet mondani erről a funkcióról?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Nem ezt kerestem"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Ütközés egy másik bővítménnyel"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr ""
+"Ha van egy perce, kérjük, tudassa velünk, miért deaktiválja a bővítményt:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr ""
+"A WebToffee felveheti velem a kapcsolatot ezzel a visszajelzéssel "
+"kapcsolatban."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Adja meg az e-mail címét."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "E-mail cím megadása"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Nem gyűjtünk személyes adatokat ezen űrlap beküldésekor. Az Ön visszajelzése"
+" az, ami számunkra értékes."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Adatvédelmi irányelvek"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Ugrás a támogatáshoz"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:391
+#: react/src/components/SettingsPage.jsx:616
+msgid "Cancel"
+msgstr "Mégse"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Inkább nem mondanám meg"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Nincs jogosultsága a művelet végrehajtásához."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr ""
+"Érvénytelen biztonsági token. Kérjük, frissítse az oldalt, és próbálja újra."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"A bejelentkezett vásárlóknak a fiókjukból kell benyújtaniuk az elállási "
+"kérelmet."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "A vendég hozzáféréshez a rendelésszám és az e-mail cím szükséges."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Kérjük, adjon meg egy érvényes e-mail címet."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr "Nem található rendelés a megadott rendelésszámmal."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
+msgid "The email address does not match the order."
+msgstr "Az e-mail cím nem egyezik a rendeléshez tartozóval."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "A rendelésszám nem egyezik a kért rendeléssel."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:841
+msgid "WooCommerce order ID."
+msgstr "WooCommerce rendelésazonosító."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Rendelésszám (vendég hozzáféréshez szükséges)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "Vásárló e-mail címe (vendég hozzáféréshez szükséges)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "WooCommerce rendelésazonosító. Adja meg ezt vagy az order_number-t."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Vásárlónak megjelenő rendelésszám. Adja meg ezt vagy az order_id-t."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Vásárló e-mail címe (vendégek számára kötelező)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Teljes vagy részleges elállás."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Sortételek részleges elálláshoz. Kötelező, ha a request_type értéke partial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "WooCommerce sortétel-azonosító."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "WooCommerce termékazonosító."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Elállandó mennyiség."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:884
+msgid "Customer reason for the withdrawal."
+msgstr "A fogyasztó elállási indoka."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:365
+msgid "Guest withdrawal service is not available."
+msgstr "A vendég elállási szolgáltatás nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:376
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Kérjük, válasszon ki legalább egy tételt az elálláshoz."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
+msgid "Withdrawal request submitted successfully."
+msgstr "Az elállási kérelem sikeresen beküldve."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"A vendég elállási kérelmeket e-mailben kell hitelesíteni a létrehozásuk "
+"előtt."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:437
+msgid "Either order_id or order_number is required."
+msgstr "Az order_id vagy az order_number megadása kötelező."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:446
+msgid "Items are required for partial withdrawal requests."
+msgstr "A részleges elállási kérelmekhez meg kell adni a tételeket."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
+msgid "The specified order could not be found."
+msgstr "A megadott rendelés nem található."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:483
+msgid "A reason is required for withdrawal requests."
+msgstr "Az elállási kérelmekhez kötelező megadni az indokot."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
+msgid "Request service is not available."
+msgstr "A kérelemszolgáltatás nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:574
+msgid "This order does not belong to your account."
+msgstr "Ez a rendelés nem tartozik az Ön fiókjához."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:590
+msgid "Order number is required for guest withdrawal requests."
+msgstr "A vendég elállási kérelmekhez szükséges a rendelésszám."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:598
+msgid "Email is required for guest withdrawal requests."
+msgstr "A vendég elállási kérelmekhez szükséges az e-mail cím."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:606
+msgid "The order number does not match this order."
+msgstr "A rendelésszám nem egyezik ezzel a rendeléssel."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:654
+msgid "Eligibility service is not available."
+msgstr "A jogosultsági szolgáltatás nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:712
+msgid "This item is not eligible for withdrawal."
+msgstr "Ez a tétel nem jogosult elállásra."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:722
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Ez a tétel már szerepel egy függőben lévő vagy jóváhagyott elállási "
+"kérelemben."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:835
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:512
+msgid "Unique identifier for the withdrawal request."
+msgstr "Az elállási kérelem egyedi azonosítója."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:846
+#: includes/api/class-wbte-ewb-rest-requests.php:523
+msgid "Customer-facing order number."
+msgstr "Vásárlónak megjelenő rendelésszám."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:851
+msgid "Status of the withdrawal request."
+msgstr "Az elállási kérelem állapota."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:858
+msgid "Full or partial withdrawal."
+msgstr "Teljes vagy részleges elállás."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:864
+msgid "Line items included in the withdrawal."
+msgstr "Az elállásban szereplő sortételek."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:889
+msgid "Date the request was created."
+msgstr "A kérelem létrehozásának dátuma."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "A WooCommerce nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Opcionális megjegyzés a jóváhagyáshoz."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Az elállási kérelem elutasításának indoka."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Elutasításkor kötelező megjegyzést megadni."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Szűrés kérelem állapota szerint."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr "A megadott dátumtól kezdődő kérelmek szűrése (ÉÉÉÉ-HH-NN)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr "A megadott dátumig beérkezett kérelmek szűrése (ÉÉÉÉ-HH-NN)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Szűrés vásárló e-mail címe vagy neve szerint."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by request ID, order number or receipt hash."
+msgstr ""
+"Keresés kérelem-azonosító, rendelésszám vagy visszaigazolási hash alapján."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Szűrés rendelésszám szerint."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Szűrés visszaigazolási hash alapján (teljes vagy részleges egyezés)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Az oldalanként visszaadott tételek maximális száma."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "A gyűjtemény aktuális oldala."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:484
+msgid "Request repository is not available."
+msgstr "A kérelemtár nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:513
+#: includes/core/class-wbte-ewb-request-service.php:607
+msgid "Withdrawal request not found."
+msgstr "Az elállási kérelem nem található."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Vendég felhasználó"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:424
+msgid "Withdrawal request approved successfully."
+msgstr "Az elállási kérelem sikeresen jóváhagyva."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:466
+msgid "Withdrawal request rejected."
+msgstr "Az elállási kérelem elutasítva."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:518
+msgid "Associated WooCommerce order ID."
+msgstr "A társított WooCommerce rendelésazonosító."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:528
+msgid "Customer email address."
+msgstr "Vásárló e-mail címe."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:534
+msgid "Customer user ID (0 or null for guests)."
+msgstr "Vásárló felhasználói azonosítója (vendégeknél 0 vagy null)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:539
+msgid "Current status of the withdrawal request."
+msgstr "Az elállási kérelem aktuális állapota."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:545
+msgid "Type of withdrawal request."
+msgstr "Az elállási kérelem típusa."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:551
+msgid "JSON-encoded array of line items."
+msgstr "Sortételek JSON-kódolású tömbje."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:556
+msgid "Customer-provided reason for withdrawal."
+msgstr "A fogyasztó által megadott elállási indok."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:561
+msgid "Date the request was created (ISO 8601)."
+msgstr "A kérelem létrehozásának dátuma (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:568
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "A kérelem utolsó frissítésének dátuma (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:575
+msgid "Admin user ID who processed the request."
+msgstr "A kérelmet feldolgozó adminisztrátor felhasználói azonosítója."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:581
+msgid "Date the request was processed (ISO 8601)."
+msgstr "A kérelem feldolgozásának dátuma (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:588
+msgid "Activity log entries for this request."
+msgstr "A kérelem tevékenységnapló-bejegyzései."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Értékelési banner művelet."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Értékelési banner frissítve."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "Az elállási nyilatkozat oldalának azonosítója."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Megjelenjen-e elállási hivatkozás a weboldal láblécében."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Hol jelenjen meg a lábléc-hivatkozás."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Engedélyezze-e a részleges rendelés-elállást."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Azon napok száma, amelyen belül az elállás megengedett."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+msgid "%s must be at least 1."
+msgstr "%s értéke legalább 1 kell legyen."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr ""
+"Azon rendelési állapotok, amelyektől az elállási határidő visszaszámlálása "
+"megkezdődhet."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Kötelező-e indok megadása elállási kérelem benyújtásakor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Az elállásból kizárt terméktípusok."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "Az elállásból kizárt termékkategória-azonosítók."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "Az elállásból kizárt termékazonosítók."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "A kizárt tételek kezelésének módja az elállási nyilatkozatban."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Módosuljon-e a rendelés állapota elállási kérelem beküldésekor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "A beállítandó rendelési állapot elállási kérelem beküldésekor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Módosuljon-e a rendelés állapota elállási kérelem jóváhagyásakor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "A beállítandó rendelési állapot elállási kérelem jóváhagyásakor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Törölni kell-e az összes bővítményadatot eltávolításkor."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr "Az adminisztrátori elállási értesítéseket fogadó e-mail címek."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Az elutasított elállási e-mailekben a vásárlónak megjelenő kapcsolattartási "
+"e-mail cím."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+msgid "%s must be an array of email addresses."
+msgstr "%s e-mail címek tömbje kell legyen."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Legalább egy adminisztrátori értesítési címzett megadása kötelező."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr "Egy vagy több értesítési címzett érvénytelen e-mail címet tartalmaz."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "A vásárlói kapcsolattartási e-mail cím érvénytelen."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Az elállási határidő kezdő állapotainak tömbnek kell lenniük."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr "Egy vagy több elállási határidő kezdő állapot érvénytelen."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "A beállítások osztály nem érhető el."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Nem áll rendelkezésre érvényes beállítás a frissítéshez."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "A beállítások sikeresen frissítve."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "elallasi-kerelem"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Elállási kérelem"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Elállás függőben"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Elállás függőben <span class=\"count\">(%s)</span>"
+msgstr[1] "Elállás függőben <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Elállva"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Elállva <span class=\"count\">(%s)</span>"
+msgstr[1] "Elállva <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+msgid "Change status to %s"
+msgstr "Állapot módosítása erre: %s"
+
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1629
+msgid "Request Withdrawal"
+msgstr "Elállási kérelem benyújtása"
+
+#: includes/core/class-wbte-ewb-eligibility.php:354
+msgid "This product type cannot be withdrawn."
+msgstr "Ez a terméktípus nem vonható elállás alá."
+
+#: includes/core/class-wbte-ewb-eligibility.php:358
+msgid "Virtual products cannot be withdrawn."
+msgstr "Virtuális termékek nem vonhatók elállás alá."
+
+#: includes/core/class-wbte-ewb-eligibility.php:362
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Letölthető termékek nem vonhatók elállás alá."
+
+#: includes/core/class-wbte-ewb-eligibility.php:371
+msgid "This product cannot be withdrawn."
+msgstr "Ez a termék nem vonható elállás alá."
+
+#: includes/core/class-wbte-ewb-eligibility.php:380
+msgid "Products in this category cannot be withdrawn."
+msgstr "Az ebben a kategóriában található termékek nem vonhatók elállás alá."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+msgid "Please enter your order number."
+msgstr "Kérjük, adja meg a rendelésszámát."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Kérjük, adja meg az elállási kérelme indokát."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Az elállási kérelem sorba állítása nem sikerült. Kérjük, próbálja újra."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
+msgid "The email address does not match the billing email on this order."
+msgstr "Az e-mail cím nem egyezik a rendelés számlázási e-mail címével."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
+msgid "This order is not eligible for withdrawal."
+msgstr "Ez a rendelés nem jogosult elállásra."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
+msgid "This verification link is invalid or has already been used."
+msgstr "Ez a hitelesítési hivatkozás érvénytelen vagy már felhasználták."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
+msgid "This withdrawal request has already been submitted."
+msgstr "Ez az elállási kérelem már be lett nyújtva."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
+msgid "Verification link expired."
+msgstr "A hitelesítési hivatkozás lejárt."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Ez a hitelesítési hivatkozás lejárt. Kérjük, nyújtson be új elállási "
+"kérelmet."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Az elállási szolgáltatás átmenetileg nem elérhető."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
+msgid "This verification session is invalid or has expired."
+msgstr "Ez a hitelesítési munkamenet érvénytelen vagy lejárt."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Elállási kérelem hitelesítése"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Kérjük, hitelesítse elállási kérelmét az alábbi hivatkozásra kattintva:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Rendelés: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "A megadott rendelés nem létezik."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Ön nem jogosult elállási kérelem benyújtására ehhez a rendeléshez."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Az elállási kérelem létrehozása sikertelen."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Elállási kérelem beküldve."
+
+#: includes/core/class-wbte-ewb-request-service.php:278
+msgid "The submitted withdrawal items are invalid."
+msgstr "A beküldött elállási tételek érvénytelenek."
+
+#: includes/core/class-wbte-ewb-request-service.php:322
+msgid "No items are currently available for withdrawal on this order."
+msgstr "Jelenleg nincsenek elérhető tételek elállásra ennél a rendelésnél."
+
+#: includes/core/class-wbte-ewb-request-service.php:416
+#: includes/core/class-wbte-ewb-request-service.php:429
+#: includes/core/class-wbte-ewb-request-service.php:439
+msgid "One or more selected items are invalid for this order."
+msgstr "Egy vagy több kiválasztott tétel érvénytelen ehhez a rendeléshez."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:449
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "A(z) „%s” nem jogosult elállásra ennél a rendelésnél."
+
+#: includes/core/class-wbte-ewb-request-service.php:450
+#: includes/core/class-wbte-ewb-request-service.php:468
+msgid "This item"
+msgstr "Ez a tétel"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:467
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "A(z) „%s” már nem elérhető elállásra ennél a rendelésnél."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:479
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "A(z) „%1$s” elállási mennyisége nem haladhatja meg a(z) %2$d értéket."
+
+#: includes/core/class-wbte-ewb-request-service.php:480
+msgid "this item"
+msgstr "ez a tétel"
+
+#: includes/core/class-wbte-ewb-request-service.php:521
+msgid "Only pending requests can be approved."
+msgstr "Csak a függőben lévő kérelmek hagyhatók jóvá."
+
+#: includes/core/class-wbte-ewb-request-service.php:615
+msgid "Only pending requests can be rejected."
+msgstr "Csak a függőben lévő kérelmek utasíthatók el."
+
+#: includes/core/class-wbte-ewb-request-service.php:703
+msgid "Withdrawal request pending review."
+msgstr "Elállási kérelem elbírálásra vár."
+
+#: includes/core/class-wbte-ewb-request-service.php:740
+msgid "Withdrawal request approved."
+msgstr "Elállási kérelem jóváhagyva."
+
+#: includes/core/class-wbte-ewb-request-service.php:783
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Részleges elállás jóváhagyva. A fennmaradó tételek rendelési állapotának "
+"visszaállítása."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:412
+msgid "%1$d of %2$d"
+msgstr "%1$d / %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:592
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:254
+msgid "Partial"
+msgstr "Részleges"
+
+#: includes/core/class-wbte-ewb-request.php:595
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:255
+msgid "Full"
+msgstr "Teljes"
+
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone
+#. offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:618
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s, %2$s (%3$s)"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
+msgid ""
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
+msgstr ""
+"Az Ön áruháza megkönnyíti a vásárlók számára az EU elállási jog gyakorlását."
+" Elégedett a WebToffee EU Elállási Gombbal? Írjon értékelést!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr ""
+"Már egy hete használja a WebToffee EU Elállási Gombot. Nagyon hálásak "
+"lennénk, ha szánna egy pillanatot egy értékelés írására"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Érvénytelen értékelési banner művelet."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Vendég rendelés nem jogosult"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Vendég vásárlóknak küldött e-mail, ha a rendelésük nem jogosult elállásra."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Az Ön #{order_number} számú rendelése nem jogosult elállásra"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "A rendelés nem jogosult elállásra"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Vendég elállási hitelesítés"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Vendég vásárlóknak küldött e-mail az elállási kérelmük hitelesítésére a "
+"létrehozás előtt."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Hitelesítse elállási kérelmét a #{order_number} számú "
+"rendeléshez"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Elállási kérelem hitelesítése"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
+msgid "I would like to return this order."
+msgstr "Szeretném visszaküldeni ezt a rendelést."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr "Ez a kérelem nem hagyható jóvá, mert az elállási határidő lejárt."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:230
+msgid "Sample product"
+msgstr "Mintatermék"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Elállási kérelem jóváhagyva"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "A vásárlónak küldött e-mail az elállási kérelem jóváhagyásakor."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Az Ön elállási kérelme a #{order_number} számú rendeléshez "
+"jóváhagyásra került"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
+msgid "Available placeholders: %s"
+msgstr "Elérhető helyőrzők: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
+msgstr "Engedélyezés/Letiltás"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
+msgid "Enable this email notification"
+msgstr "E-mail értesítés engedélyezése"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
+msgid "Subject"
+msgstr "Tárgy"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
+msgid "Email heading"
+msgstr "E-mail fejléc"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
+msgstr "E-mail típus"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
+msgid "Choose which format of email to send."
+msgstr "Válassza ki az e-mail küldési formátumát."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Elállási kérelem elutasítva"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "A vásárlónak küldött e-mail az elállási kérelem elutasításakor."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Az Ön elállási kérelme a #{order_number} számú rendeléshez "
+"elutasításra került"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Új elállási kérelem (Adminisztrátor)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"A webhely adminisztrátorának küldött e-mail új elállási kérelem "
+"beküldésekor."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Új elállási kérelem a #{order_number} számú rendeléshez"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Új elállási kérelem"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Opcionális felülírás kizárólag ehhez az e-mailhez. Hagyja üresen az Elállási"
+" beállításokban megadott címzettek használatához (alapértelmezett: %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Elállási kérelem beküldve"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "A vásárlónak küldött e-mail az elállási kérelem beküldésekor."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Elállási kérelem beérkezett a #{order_number} számú "
+"rendeléshez"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Elállási kérelem beérkezett"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "A biztonsági ellenőrzés sikertelen. Kérjük, próbálja újra."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Please select an order."
+msgstr "Kérjük, válasszon egy rendelést."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Nincs jogosultsága elállási kérelmet benyújtani ehhez a rendeléshez."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Az elállási kérelme sikeresen beküldésre került. Hamarosan visszaigazoló "
+"e-mailt kap."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:157
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Az elállási kérelme sikeresen beküldésre került."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:118
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "Elolvastam és elfogadom az elállási feltételeket"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:152
+msgid "Please select at least one item."
+msgstr "Kérjük, válasszon ki legalább egy tételt."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:153
+msgid "quantity"
+msgstr "mennyiség"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:154
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Kérjük, adjon meg érvényes mennyiséget minden kiválasztott tételhez."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:155
+msgid "Please provide a reason for withdrawal."
+msgstr "Kérjük, adja meg az elállás indokát."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:160
+msgid "Fetching eligible items..."
+msgstr "Jogosult tételek lekérése..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:161
+msgid "No eligible items found for this order."
+msgstr "Nem található jogosult tétel ehhez a rendeléshez."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:162
+msgid "Review your withdrawal request"
+msgstr "Elállási kérelem áttekintése"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:163
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Kérjük, tekintse át az alábbi részleteket. A törvényes elállás "
+"végrehajtásához kattintson az Elállás megerősítése gombra."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+msgid "Confirm withdrawal"
+msgstr "Elállás megerősítése"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Customer"
+msgstr "Vásárló"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:167
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
+msgid "Order"
+msgstr "Rendelés"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:168
+msgid "Withdrawal type"
+msgstr "Elállás típusa"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:169
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Elállandó tételek"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:170
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Elállás indoka"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:171
+msgid "Full withdrawal"
+msgstr "Teljes elállás"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Kérelem beküldve"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid ""
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
+msgstr ""
+"Köszönjük. Ha a megadott adatok helyesek, e-mailt kap az elállási kérelmével"
+" kapcsolatban. Kérjük, ellenőrizze a postafiókját."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"Nem sikerült hitelesíteni az elállási kérelmét. Kérjük, próbálja újra."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Az elállási kérelmeinek megtekintéséhez be kell jelentkeznie."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Még nem nyújtott be elállási kérelmet."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Kérelem"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:200
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:198
+msgid "Type"
+msgstr "Típus"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:261
+#: react/src/components/RequestsList.jsx:199
+msgid "Status"
+msgstr "Állapot"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:261
+msgid "Withdrawal Request"
+msgstr "Elállási kérelem"
+
+#. translators: %s: request ID
+#: includes/frontend/class-wbte-ewb-my-account.php:302
+msgid "Request #%s"
+msgstr "#%s kérelem"
+
+#. translators: %s: withdrawal request type label
+#: includes/frontend/class-wbte-ewb-my-account.php:313
+msgid "Type: %s"
+msgstr "Típus: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Beküldve"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
+msgid "Processed"
+msgstr "Feldolgozva"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Indok"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Az e-mail címe hitelesítve. Válassza ki az elállandó tételeket, és nyújtsa "
+"be kérelmét alább."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Rendelésszám"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Számlázási e-mail cím"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Tételek betöltése..."
+
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
+msgid "Submit Withdrawal Request"
+msgstr "Elállási kérelem beküldése"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "kötelező"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive an email with further instructions."
+msgstr ""
+"Adja meg a rendelésszámát és a számlázási e-mail címét a kezdéshez. Ha az "
+"adatai egyeznek a nyilvántartásunkkal, e-mailt kap a további utasításokkal."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Jelenleg nincs elállásra jogosult rendelése."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Válasszon rendelést --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Keresztnév"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "Új elállási kérelem érkezett a(z) #%s számú rendeléshez."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Vásárlói adatok"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Vásárló neve"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
+msgid "Customer Email"
+msgstr "Vásárló e-mail címe"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Kérelem részletei"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Rendelésszám"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
+msgid "Request Type"
+msgstr "Kérelem típusa"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Beküldés dátuma"
+
+#: templates/emails/admin-withdrawal-submitted.php:140
+msgid "Items Included in This Request"
+msgstr "A kérelemben szereplő tételek"
+
+#: templates/emails/admin-withdrawal-submitted.php:146
+msgid "Item"
+msgstr "Tétel"
+
+#: templates/emails/admin-withdrawal-submitted.php:149
+#: templates/emails/customer-withdrawal-approved.php:135
+#: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
+msgid "Quantity"
+msgstr "Mennyiség"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:177
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"A kérelem áttekintéséhez és kezeléséhez látogasson el az <a "
+"href=\"%s\">Elállási kérelmek vezérlőpultra</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order"
+" is not currently eligible for withdrawal."
+msgstr ""
+"Megkaptuk az elállási kérelmét a(z) #%s számú rendeléshez. Sajnos ez a "
+"rendelés jelenleg nem jogosult elállásra."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "Ennek oka a következő lehet:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "A rendelés elállási határideje lejárt."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Ehhez a rendeléshez már feldolgoztak egy elállást."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "Nincs több elállásra jogosult tétel."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Ha úgy véli, hogy ez hiba, vagy kérdése van, kérjük, lépjen kapcsolatba "
+"velünk a %s címen."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Megkaptuk az elállási kérelmét. A folyamat befejezéséhez kérjük, hitelesítse"
+" a számlázási e-mail címét az alábbi gombra kattintva."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Rendelésszám:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Elállási kérelem hitelesítése"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Ha nem kérelmezett elállást, hagyja figyelmen kívül ezt az e-mailt."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+msgid "Hi %s,"
+msgstr "Kedves %s!"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Jó hír! Az Ön elállási kérelme a(z) #%s számú rendeléshez jóváhagyásra "
+"került."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Feldolgozás dátuma"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:114
+msgid "Items"
+msgstr "Tételek"
+
+#: templates/emails/customer-withdrawal-approved.php:134
+#: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
+msgid "Product"
+msgstr "Termék"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid "Next Steps"
+msgstr "Következő lépések"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Az elállását feldolgoztuk. A kérelem típusától függően a következők lehetnek"
+" érvényesek:"
+
+#: templates/emails/customer-withdrawal-approved.php:158
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Ha visszatérítés jár, azt az eredeti fizetési módra dolgozzuk fel. Kérjük, "
+"számítson néhány munkanap átfutási időre."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Ha bármilyen terméket vissza kell küldenie, külön visszaküldési útmutatót "
+"kap."
+
+#: templates/emails/customer-withdrawal-approved.php:163
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Ha kérdése van, kérjük, ne habozzon kapcsolatba lépni velünk."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Áttekintettük az Ön elállási kérelmét a(z) #%s számú rendeléshez. Sajnos "
+"jelenleg nem tudjuk jóváhagyni ezt a kérelmet."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Ha úgy véli, hogy ez a döntés téves, vagy további információval rendelkezik,"
+" kérjük, lépjen kapcsolatba velünk, és szívesen felülvizsgáljuk az ügyét."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+msgid "You can reach us at %s."
+msgstr "Elérhet minket a %s címen."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Megkaptuk az elállási kérelmét a(z) #%s számú rendeléshez. Köszönjük, hogy "
+"értesített minket."
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid "What Happens Next?"
+msgstr "Mi történik ezután?"
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Csapatunk áttekinti a kérelmét, és a lehető leghamarabb válaszol. Újabb "
+"e-mailt kap, amint döntés születik."
+
+#: templates/emails/customer-withdrawal-submitted.php:151
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr ""
+"Ha addig is kérdése van, kérjük, ne habozzon kapcsolatba lépni velünk."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
+msgid "Receipt hash"
+msgstr "Visszaigazolási hash"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Megkaptuk az elállási kérelmét. A folyamat befejezéséhez kérjük, hitelesítse"
+" a számlázási e-mail címét az alábbi hivatkozás segítségével."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+msgid "Order number: %s"
+msgstr "Rendelésszám: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+msgid "Reason: %s"
+msgstr "Indok: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"A WebToffee EU Elállási Gomb WooCommerce-hez bővítmény használatához a "
+"WooCommerce telepítése és aktiválása szükséges."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr ""
+"Vásárló által kezdeményezett rendelés-visszavonások és részleges "
+"visszatérítések."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Kérelmek"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Értékelési kérés"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Minden állapot"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Dátum -tól"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Dátum -ig"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Keresés"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Rendelésszám vagy visszaigazolási hash"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Szűrők alkalmazása"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr "Elállási kérelmek automatikus jóváhagyása"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr "Visszatérítés és készlet-visszatöltés automatikusan"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Az elállási gomb megjelenítése csak EU-s vásárlóknak"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Elállási feltételek oldal generálása"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Bankadatok gyűjtése utánvétes és banki átutalásos visszatérítésekhez"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr "Az elállási nyilatkozat megnyitása felugró ablakban"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Spam beküldések blokkolása reCAPTCHA v3-mal"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr "Beállítások másolása a tesztkörnyezet és az éles rendszer között"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr "EU Elállási Gomb"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatizálja az elállási munkafolyamatot a prémium frissítéssel"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr "Bővítmény beszerzése most"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr "Nincs változás a múlt héthez képest"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr "Nincs adat"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr "Nincs változás"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr "Nyitott kérelmek"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr "Jóváhagyva (30 nap)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr "Azonosító"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr "Rendelés #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr "Műveletek"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr "Megtekintés"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "%1$d–%2$d megjelenítése, összesen %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr "0 megjelenítése, összesen 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Automatikus jóváhagyás"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Felhasználó"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "Nem rögzítettek állapotváltozást."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
+msgid "No activity recorded."
+msgstr "Nem rögzítettek tevékenységet."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Forrás"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
+msgid "Action"
+msgstr "Művelet"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
+msgid "Note"
+msgstr "Megjegyzés"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Vissza a listához"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Kérelem adatai"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "Nem adtak meg indokot"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Visszatérítési mód részletei"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Létrehozva"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Rendelési tételek"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Sor összesen"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Elállás jóváhagyva"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Elállás elutasítva"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Elállási kérelem beküldve"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "Nem tartalmazza"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr "Nem található rendelési tétel ehhez a kérelemhez."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr "Állapot idővonal"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr "Tevékenységnapló"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr "Kérelem elutasítása"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr "Elutasítás indoka"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d kiválasztva"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Összes törlése"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Termék eltávolítása"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Termék keresése…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Keresés…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Nem található termék."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Kategória eltávolítása"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Kategóriák keresése…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Nincs a keresésnek megfelelő kategória."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Írjon a kategóriák szűréséhez…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Nem található termékkategória."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Állapot eltávolítása"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Rendelési állapotok keresése…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Nincs a keresésnek megfelelő rendelési állapot."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Írjon a rendelési állapotok szűréséhez…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Nem található rendelési állapot."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Ez az e-mail cím már hozzá van adva."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "E-mail eltávolítása"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "A beállítások mentéséhez adjon hozzá legalább egy címzettet."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "E-mail cím megadása…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr "Globális"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr "Csak WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr "Általános"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr "Szabályok és kizárások"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr "Munkafolyamat"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr "Haladó"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr "Importálás megerősítése"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr "Exportált verzió:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr "Jelenlegi verzió:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:585
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible"
+" with your current version. Consider updating the plugin before importing."
+msgstr ""
+"Az exportált fájl egy újabb verzióból származik. Egyes beállítások nem "
+"kompatibilisek a jelenlegi verzióval. Fontolja meg a bővítmény frissítését "
+"az importálás előtt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"Ez felülírja az összes jelenlegi bővítménybeállítást. Ez a művelet nem "
+"vonható vissza."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr "Beállítások importálása..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Beállítások sikeresen importálva. Oldal újratöltése..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr "Beállítások sikeresen exportálva."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr "Beállítások exportálása"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr "Beállítások importálása"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr "Érvénytelen beállításfájl. Kérjük, válasszon érvényes exportfájlt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr "A fájl nem olvasható. Győződjön meg arról, hogy érvényes JSON fájl."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:645
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Az összes bővítménybeállítás exportálása JSON fájlként, vagy beállítások "
+"importálása egy korábban exportált fájlból."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr "Elállási feltételek"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr "Közzétéve"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr "Előnézet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr "Oldal szerkesztése"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr "Biztosan törölni szeretné az Elállási feltételek oldalt?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr "Az oldal törlése sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr "Oldal törölve."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr "Törlés"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:833
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Elérhető rövidkódok: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:730
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive "
+"2011/83/EU. The page includes dynamic shortcodes for excluded products, "
+"categories, and product types that stay in sync with your settings."
+msgstr ""
+"Elállási Feltételek oldal generálása az EU 2011/83/EU irányelve alapján. Az "
+"oldal dinamikus rövidkódokat tartalmaz a kizárt termékekhez, kategóriákhoz "
+"és terméktípusokhoz, amelyek szinkronban maradnak a beállításaival."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr "Az oldal létrehozása sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr "Oldal létrehozva."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr "Létrehozás…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr "Feltételek oldal generálása"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr "-- Válasszon oldalt --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr "A beállítások betöltése sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr "Beállítások betöltése..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr "A beállítások nem tölthetők be."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr "reCAPTCHA kulcsok leválasztva."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr "A leválasztás sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr "Leválasztás"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr "reCAPTCHA kulcsok sikeresen mentve."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr "A kulcsok mentése sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr "Kérjük, adja meg a webhelykulcsot és a titkos kulcsot is."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr "Kulcsok mentése"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr "Rövidkód"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr ""
+"Az elállási nyilatkozat alapvető viselkedése és megjelenítési beállításai."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr "Elállási oldal"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr "Elállási gomb megjelenítése a láblécben"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Elállási gomb vagy hivatkozás megjelenítése a weboldal láblécében."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr "Megjelenés testreszabása"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr "Lábléc"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr "Fiókom oldal"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr ""
+"A testreszabáshoz engedélyezze az „Elállási gomb megjelenítése a láblécben\""
+" opciót fent."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr ""
+"A testreszabáshoz engedélyezze az „Elállási gomb megjelenítése a Fiókom "
+"oldalon\" opciót fent."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr "Hivatkozás szövege"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr "Gomb szövege"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr "Megjelenítés mint"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr "Hivatkozás"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr "Gomb"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr "Színek"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr "Sablon alapértelmezett"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr "Egyéni"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr "Háttér"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr "Szöveg"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr "Egérmutató háttér"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr "Egérmutató szöveg"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr "Lábléc-hivatkozás szövege"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Az elállási lábléc-hivatkozáshoz megjelenített szöveg."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr "Megjelenítési hatókör"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr "Részleges elállás engedélyezése"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr "Ajánlott"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr "Elállási határidő"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr "nap"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr "Visszaszámlálás kezdete"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr "Indok kötelező"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr "Kizárások"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1728
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Terméktípusok, kategóriák vagy egyedi termékek kizárása az elállási "
+"jogosultságból."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr "Kizárt terméktípusok"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr "Olyan terméktípusok, amelyeknél nem gyakorolható elállási jog."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr "Kizárt kategóriák"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr ""
+"Az ezekben a kategóriákban található termékek nem vonhatók elállás alá."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr "Kizárt termékek"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr ""
+"Keressen és válasszon ki olyan termékeket, amelyeknél nem gyakorolható "
+"elállási jog."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr "Rendelés állapota"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1786
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Rendelési állapotok automatikus frissítése elállási kérelmek beküldésekor "
+"vagy jóváhagyásakor."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr "Állapot beállítása erre:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1852
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Állítsa be az adminisztrátori értesítési címzetteket és az elutasított "
+"elállási e-mailekben megjelenő vásárlói kapcsolattartási e-mail címet."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr "Az új elállási kérelem értesítését fogadó e-mail címek."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr "Vásárlói kapcsolattartási e-mail"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1867
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"A vásárlóknak megjelenő e-mail cím, amikor az elállási kérelmüket "
+"elutasítják, és fel kell venniük Önnel a kapcsolatot."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr "Elállási gomb rövidkód"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1908
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Opcionális. Egyéni gombszöveg. Elhagyása esetén az alapértelmezett "
+"rövidkód-címkét használja."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Opcionális. További CSS osztályok hozzáadása a gombhoz."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr "Adatkezelés"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr ""
+"Beállíthatja, mi történjen a bővítmény adataival a bővítmény "
+"eltávolításakor."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr "Adatok törlése eltávolításkor"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1941
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Az összes bővítményadat (beállítások, elállási kérelmek, adatbázistáblák) "
+"törlése a bővítmény eltávolításakor. Ez a művelet visszafordíthatatlan."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr "Destruktív"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr "A mentéshez adjon hozzá legalább egy címzettet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr "Mentetlen módosítások"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr "Minden módosítás mentve"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr "Elvetés"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr "Beállítások sikeresen mentve."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr "A beállítások mentése sikertelen."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Mentés előtt adjon hozzá legalább egy adminisztrátori értesítési címzettet."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr "Mentés..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
+msgstr "Beállítások mentése"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Javítás"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr "Figyelmeztetés elvetése"

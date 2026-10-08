@@ -1,0 +1,3094 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
+"PO-Revision-Date: 2026-10-06 15:18+0000\n"
+"Last-Translator: WebToffee <info@webtoffee.com>\n"
+"Language-Team: es_ES\n"
+"Language: es-ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WebToffee Translation Generator\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee Botón de Desistimiento de Pedido UE para WooCommerce"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Gestionar solicitudes de desistimiento de contrato / cancelación de pedidos "
+"para pedidos de WooCommerce. Compatible con la UE y HPOS."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
+#: includes/admin/class-wbte-ewb-order-meta-box.php:554
+#: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:223
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Pendiente"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:555
+#: includes/frontend/class-wbte-ewb-my-account.php:457
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:220
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Aprobada"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:556
+#: includes/frontend/class-wbte-ewb-my-account.php:458
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:222
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Rechazada"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
+#: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
+msgid "Approve"
+msgstr "Aprobar"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
+msgid "Reject"
+msgstr "Rechazar"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
+msgid "Full Withdrawal"
+msgstr "Desistimiento completo"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
+msgid "Partial Withdrawal"
+msgstr "Desistimiento parcial"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:186
+msgid "No withdrawal requests found."
+msgstr "No se encontraron solicitudes de desistimiento."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+msgid "Loading…"
+msgstr "Cargando…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
+#: includes/frontend/class-wbte-ewb-frontend.php:156
+msgid "An error occurred. Please try again."
+msgstr "Se ha producido un error. Inténtelo de nuevo."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "¿Está seguro de que desea aprobar esta solicitud de desistimiento?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "¿Está seguro de que desea rechazar esta solicitud de desistimiento?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
+msgid "Processing…"
+msgstr "Procesando…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Introduzca un motivo para rechazar esta solicitud de desistimiento:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:378
+msgid "A reason is required when rejecting a request."
+msgstr "Se requiere un motivo al rechazar una solicitud."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
+msgid "Request updated successfully."
+msgstr "Solicitud actualizada correctamente."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:62
+#: includes/frontend/class-wbte-ewb-my-account.php:260
+msgid "Withdrawal Requests"
+msgstr "Solicitudes de desistimiento"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Desistimientos"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Cargando panel de desistimientos…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Ajustes"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Soporte"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Valoración"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:82
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Pedido no encontrado."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:96
+msgid "No withdrawal request for this order."
+msgstr "No hay solicitud de desistimiento para este pedido."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:134
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Solicitud %1$d de %2$d (#%3$d)"
+
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:142
+msgid "Request #%d"
+msgstr "Solicitud #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:150
+msgid "Status:"
+msgstr "Estado:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:156
+msgid "Type:"
+msgstr "Tipo:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:168
+msgid "Items:"
+msgstr "Artículos:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:315
+#: templates/emails/admin-withdrawal-submitted.php:157
+#: templates/emails/customer-withdrawal-approved.php:141
+#: templates/emails/customer-withdrawal-submitted.php:131
+msgid "Unknown item"
+msgstr "Artículo desconocido"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:182
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Motivo:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
+msgid "Submitted:"
+msgstr "Enviada:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:197
+msgid "Receipt hash:"
+msgstr "Hash de recibo:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:215
+msgid "Processed:"
+msgstr "Procesada:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:221
+msgid "by"
+msgstr "por"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+msgid "View in dashboard"
+msgstr "Ver en el panel"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Dejar una valoración"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Recordármelo más tarde"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Descartar solicitud de valoración"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request #%d"
+msgstr "Aprobar solicitud de desistimiento #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:446
+msgid "Reject withdrawal request #%d"
+msgstr "Rechazar solicitud de desistimiento #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:450
+msgid "Approve withdrawal request"
+msgstr "Aprobar solicitud de desistimiento"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:451
+msgid "Reject withdrawal request"
+msgstr "Rechazar solicitud de desistimiento"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:537
+msgid "Rejected from orders list."
+msgstr "Rechazada desde la lista de pedidos."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:642
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Desistimiento %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:653
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Solicitado %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
+msgid "Withdrawal"
+msgstr "Desistimiento"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Ajustes de desistimiento"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Configure cómo funcionan las solicitudes de desistimiento / derecho de "
+"devolución en su tienda."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Página de desistimiento"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1594
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr ""
+"Seleccione la página donde los clientes pueden enviar solicitudes de "
+"desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Enlace en el pie de página"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr ""
+"Añadir automáticamente un enlace a la página de desistimiento en el pie de "
+"página del sitio."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Ámbito de visualización"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1638
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Dónde se muestran el formulario y los enlaces de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Global (todas las páginas)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Solo páginas de WooCommerce"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Permitir desistimientos parciales"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1652
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Permitir a los clientes desistir de artículos individuales en lugar de todo "
+"el pedido."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Plazo de desistimiento (días)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1658
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Número de días después del estado de inicio seleccionado durante los cuales "
+"se puede enviar una solicitud de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "El plazo de desistimiento comienza desde"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1688
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Seleccione uno o más estados de pedido. La cuenta atrás comienza en la fecha"
+" más temprana en que el pedido alcanza cualquiera de los estados "
+"seleccionados."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Motivo obligatorio"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1703
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr ""
+"Requerir a los clientes que indiquen un motivo al enviar una solicitud de "
+"desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Tipos de producto excluidos"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Tipos de producto excluidos del derecho de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
+msgid "Virtual"
+msgstr "Virtual"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
+msgid "Downloadable"
+msgstr "Descargable"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
+msgid "Grouped"
+msgstr "Agrupado"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:234
+msgid "External / Affiliate"
+msgstr "Externo / Afiliado"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Categorías excluidas"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Categorías de productos excluidas del derecho de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Productos excluidos"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Productos específicos excluidos del derecho de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Comportamiento de exclusión"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr ""
+"Cómo se gestionan los productos excluidos en el formulario de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Ocultar artículos excluidos"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Mostrar deshabilitados con aviso"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Estado del pedido"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Controlar si los estados de pedido se cambian automáticamente durante el "
+"proceso de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1794
+msgid "Change order status on submission"
+msgstr "Cambiar estado del pedido al enviar"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1795
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr ""
+"Cambiar automáticamente el estado del pedido cuando se envía una solicitud "
+"de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Estado del pedido al enviar"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr ""
+"El estado del pedido a establecer cuando se envía una solicitud de "
+"desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1819
+msgid "Change order status on approval"
+msgstr "Cambiar estado del pedido al aprobar"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1820
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Cambiar automáticamente el estado del pedido cuando se aprueba una solicitud"
+" de desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Estado del pedido al aprobar"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr ""
+"El estado del pedido a establecer cuando se aprueba una solicitud de "
+"desistimiento."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "Notificaciones por correo electrónico"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr ""
+"Configure los destinatarios de las notificaciones de desistimiento por "
+"correo electrónico."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1857
+msgid "Recipient(s)"
+msgstr "Destinatario(s)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Direcciones de correo electrónico separadas por comas para notificaciones de"
+" desistimiento al administrador."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Shortcode del botón de desistimiento"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Gestión de datos"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Eliminar datos al desinstalar"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Eliminar todos los datos del plugin (ajustes, solicitudes de desistimiento, "
+"tablas de base de datos) al desinstalar el plugin."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Advertencia: Esta acción es irreversible."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1010
+msgid "Order created"
+msgstr "Pedido creado"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1897
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Añadir un botón de solicitud de desistimiento a cualquier página o entrada. "
+"El botón enlaza a la página de desistimiento configurada."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1902
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Opcional. Texto personalizado del botón. Usa la etiqueta predeterminada del "
+"shortcode si se omite."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Opcional. Clases CSS adicionales añadidas al botón."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Procesando..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Introduzca una dirección de correo electrónico válida."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Enviar y desactivar"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Problema con el proceso de desistimiento"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Desistimiento de invitado"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "¿Podría contarnos un poco más?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:172
+msgid "Partial withdrawal"
+msgstr "Desistimiento parcial"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1849
+msgid "Email notifications"
+msgstr "Notificaciones por correo electrónico"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "Cumplimiento UE / cuestiones legales"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Otro"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Encontré un plugin mejor"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "¿Qué plugin?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"El plugin es genial, pero necesito una función específica que no está "
+"disponible"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "¿Podría contarnos más sobre esa función?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "No es lo que estaba buscando"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Un conflicto con otro plugin"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr ""
+"Si tiene un momento, háganos saber por qué está desactivando el plugin:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee puede contactarme sobre este comentario."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Introduzca su dirección de correo electrónico."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Introduzca correo electrónico"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"No recopilamos datos personales al enviar este formulario. Es su opinión lo "
+"que valoramos."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Ir a soporte"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:391
+#: react/src/components/SettingsPage.jsx:616
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Prefiero no decirlo"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "No tiene permisos para realizar esta acción."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr ""
+"Token de seguridad no válido. Actualice la página e inténtelo de nuevo."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"Los clientes registrados deben enviar solicitudes de desistimiento desde su "
+"cuenta."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr ""
+"Se requieren el número de pedido y el correo electrónico para acceso de "
+"invitados."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Proporcione una dirección de correo electrónico válida."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr ""
+"No se encontró ningún pedido que coincida con el número proporcionado."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
+msgid "The email address does not match the order."
+msgstr "La dirección de correo electrónico no coincide con el pedido."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "El número de pedido no coincide con el pedido solicitado."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:841
+msgid "WooCommerce order ID."
+msgstr "ID de pedido de WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Número de pedido (obligatorio para acceso de invitados)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr ""
+"Correo electrónico del cliente (obligatorio para acceso de invitados)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "ID de pedido de WooCommerce. Proporcione esto o el número de pedido."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Número de pedido del cliente. Proporcione esto o el ID del pedido."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr ""
+"Dirección de correo electrónico del cliente (obligatorio para invitados)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Si se trata de un desistimiento completo o parcial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Artículos para desistimiento parcial. Obligatorio si el tipo de solicitud es"
+" parcial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "ID de línea de artículo de WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "ID de producto de WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Cantidad a desistir."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:884
+msgid "Customer reason for the withdrawal."
+msgstr "Motivo del cliente para el desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:365
+msgid "Guest withdrawal service is not available."
+msgstr "El servicio de desistimiento para invitados no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:376
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Seleccione al menos un artículo para desistir."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
+msgid "Withdrawal request submitted successfully."
+msgstr "Solicitud de desistimiento enviada correctamente."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Las solicitudes de desistimiento de invitados deben verificarse por correo "
+"electrónico antes de ser creadas."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:437
+msgid "Either order_id or order_number is required."
+msgstr "Se requiere el ID de pedido o el número de pedido."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:446
+msgid "Items are required for partial withdrawal requests."
+msgstr "Se requieren artículos para solicitudes de desistimiento parcial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
+msgid "The specified order could not be found."
+msgstr "No se pudo encontrar el pedido especificado."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:483
+msgid "A reason is required for withdrawal requests."
+msgstr "Se requiere un motivo para las solicitudes de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
+msgid "Request service is not available."
+msgstr "El servicio de solicitudes no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:574
+msgid "This order does not belong to your account."
+msgstr "Este pedido no pertenece a su cuenta."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:590
+msgid "Order number is required for guest withdrawal requests."
+msgstr ""
+"Se requiere el número de pedido para solicitudes de desistimiento de "
+"invitados."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:598
+msgid "Email is required for guest withdrawal requests."
+msgstr ""
+"Se requiere correo electrónico para solicitudes de desistimiento de "
+"invitados."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:606
+msgid "The order number does not match this order."
+msgstr "El número de pedido no coincide con este pedido."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:654
+msgid "Eligibility service is not available."
+msgstr "El servicio de elegibilidad no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:712
+msgid "This item is not eligible for withdrawal."
+msgstr "Este artículo no es elegible para desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:722
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Este artículo ya está incluido en una solicitud de desistimiento pendiente o"
+" aprobada."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:835
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:512
+msgid "Unique identifier for the withdrawal request."
+msgstr "Identificador único de la solicitud de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:846
+#: includes/api/class-wbte-ewb-rest-requests.php:523
+msgid "Customer-facing order number."
+msgstr "Número de pedido del cliente."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:851
+msgid "Status of the withdrawal request."
+msgstr "Estado de la solicitud de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:858
+msgid "Full or partial withdrawal."
+msgstr "Desistimiento completo o parcial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:864
+msgid "Line items included in the withdrawal."
+msgstr "Artículos incluidos en el desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:889
+msgid "Date the request was created."
+msgstr "Fecha de creación de la solicitud."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Nota opcional para la aprobación."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Motivo para rechazar la solicitud de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Se requiere una nota al rechazar una solicitud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtrar por estado de solicitud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr "Filtrar solicitudes creadas en o después de esta fecha (AAAA-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr "Filtrar solicitudes creadas en o antes de esta fecha (AAAA-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtrar por correo electrónico o nombre del cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by request ID, order number or receipt hash."
+msgstr "Buscar por ID de solicitud, número de pedido o hash de recibo."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtrar por número de pedido."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Filtrar por hash de recibo (coincidencia completa o parcial)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Número máximo de elementos por página."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Página actual de la colección."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:484
+msgid "Request repository is not available."
+msgstr "El repositorio de solicitudes no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:513
+#: includes/core/class-wbte-ewb-request-service.php:607
+msgid "Withdrawal request not found."
+msgstr "Solicitud de desistimiento no encontrada."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Usuario invitado"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:424
+msgid "Withdrawal request approved successfully."
+msgstr "Solicitud de desistimiento aprobada correctamente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:466
+msgid "Withdrawal request rejected."
+msgstr "Solicitud de desistimiento rechazada."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:518
+msgid "Associated WooCommerce order ID."
+msgstr "ID de pedido de WooCommerce asociado."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:528
+msgid "Customer email address."
+msgstr "Dirección de correo electrónico del cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:534
+msgid "Customer user ID (0 or null for guests)."
+msgstr "ID de usuario del cliente (0 o nulo para invitados)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:539
+msgid "Current status of the withdrawal request."
+msgstr "Estado actual de la solicitud de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:545
+msgid "Type of withdrawal request."
+msgstr "Tipo de solicitud de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:551
+msgid "JSON-encoded array of line items."
+msgstr "Matriz de artículos codificada en JSON."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:556
+msgid "Customer-provided reason for withdrawal."
+msgstr "Motivo de desistimiento proporcionado por el cliente."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:561
+msgid "Date the request was created (ISO 8601)."
+msgstr "Fecha de creación de la solicitud (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:568
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Fecha de última actualización de la solicitud (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:575
+msgid "Admin user ID who processed the request."
+msgstr "ID del usuario administrador que procesó la solicitud."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:581
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Fecha de procesamiento de la solicitud (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:588
+msgid "Activity log entries for this request."
+msgstr "Entradas del registro de actividad de esta solicitud."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Acción del banner de valoración."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Banner de valoración actualizado."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "ID de página del formulario de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr ""
+"Si se muestra un enlace de desistimiento en el pie de página del sitio."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Dónde mostrar el enlace del pie de página."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Si se permiten desistimientos parciales de pedidos."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Número de días dentro de los cuales se permite el desistimiento."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+msgid "%s must be at least 1."
+msgstr "%s debe ser al menos 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr ""
+"Estados de pedido a partir de los cuales puede comenzar el plazo de "
+"desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Si se requiere un motivo al enviar un desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Tipos de producto excluidos del desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "IDs de categorías de productos excluidas del desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "IDs de productos excluidos del desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr ""
+"Cómo gestionar los artículos excluidos en el formulario de desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Si se cambia el estado del pedido cuando se envía un desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Estado del pedido a establecer al enviar un desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Si se cambia el estado del pedido cuando se aprueba un desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Estado del pedido a establecer al aprobar un desistimiento."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Si se eliminan todos los datos del plugin al desinstalar."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr ""
+"Direcciones de correo electrónico que reciben notificaciones de "
+"desistimiento del administrador."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Correo electrónico de contacto mostrado en los correos de desistimiento "
+"rechazado."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+msgid "%s must be an array of email addresses."
+msgstr "%s debe ser una lista de direcciones de correo electrónico."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr ""
+"Se requiere al menos un destinatario de notificaciones de administrador."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr ""
+"Uno o más destinatarios contienen una dirección de correo electrónico no "
+"válida."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr ""
+"La dirección de correo electrónico de contacto del cliente no es válida."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Los estados de inicio del plazo de desistimiento deben ser una lista."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr ""
+"Uno o más estados de inicio del plazo de desistimiento no son válidos."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "La clase de ajustes no está disponible."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "No se han proporcionado ajustes válidos para actualizar."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Ajustes actualizados correctamente."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "solicitud-de-desistimiento"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Solicitud de desistimiento"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Desistimiento pendiente"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Desistimiento pendiente <span class=\"count\">(%s)</span>"
+msgstr[1] "Desistimiento pendiente <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Desistido"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Desistido <span class=\"count\">(%s)</span>"
+msgstr[1] "Desistido <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+msgid "Change status to %s"
+msgstr "Cambiar estado a %s"
+
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1629
+msgid "Request Withdrawal"
+msgstr "Solicitar desistimiento"
+
+#: includes/core/class-wbte-ewb-eligibility.php:354
+msgid "This product type cannot be withdrawn."
+msgstr "No se puede desistir de este tipo de producto."
+
+#: includes/core/class-wbte-ewb-eligibility.php:358
+msgid "Virtual products cannot be withdrawn."
+msgstr "No se puede desistir de productos virtuales."
+
+#: includes/core/class-wbte-ewb-eligibility.php:362
+msgid "Downloadable products cannot be withdrawn."
+msgstr "No se puede desistir de productos descargables."
+
+#: includes/core/class-wbte-ewb-eligibility.php:371
+msgid "This product cannot be withdrawn."
+msgstr "No se puede desistir de este producto."
+
+#: includes/core/class-wbte-ewb-eligibility.php:380
+msgid "Products in this category cannot be withdrawn."
+msgstr "No se puede desistir de productos de esta categoría."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+msgid "Please enter your order number."
+msgstr "Introduzca su número de pedido."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Proporcione un motivo para su solicitud de desistimiento."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"No se pudo poner en cola su solicitud de desistimiento. Inténtelo de nuevo."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
+msgid "The email address does not match the billing email on this order."
+msgstr ""
+"La dirección de correo electrónico no coincide con el correo de facturación "
+"de este pedido."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
+msgid "This order is not eligible for withdrawal."
+msgstr "Este pedido no es elegible para desistimiento."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
+msgid "This verification link is invalid or has already been used."
+msgstr "Este enlace de verificación no es válido o ya ha sido utilizado."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
+msgid "This withdrawal request has already been submitted."
+msgstr "Esta solicitud de desistimiento ya ha sido enviada."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
+msgid "Verification link expired."
+msgstr "Enlace de verificación caducado."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Este enlace de verificación ha caducado. Envíe una nueva solicitud de "
+"desistimiento."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "El servicio de desistimiento no está disponible temporalmente."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
+msgid "This verification session is invalid or has expired."
+msgstr "Esta sesión de verificación no es válida o ha caducado."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Verifique su solicitud de desistimiento"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Verifique su solicitud de desistimiento haciendo clic en el enlace a continuación:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Pedido: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "El pedido especificado no existe."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "No está autorizado para enviar un desistimiento de este pedido."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Error al crear la solicitud de desistimiento."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Solicitud de desistimiento enviada."
+
+#: includes/core/class-wbte-ewb-request-service.php:278
+msgid "The submitted withdrawal items are invalid."
+msgstr "Los artículos de desistimiento enviados no son válidos."
+
+#: includes/core/class-wbte-ewb-request-service.php:322
+msgid "No items are currently available for withdrawal on this order."
+msgstr ""
+"No hay artículos disponibles actualmente para desistimiento en este pedido."
+
+#: includes/core/class-wbte-ewb-request-service.php:416
+#: includes/core/class-wbte-ewb-request-service.php:429
+#: includes/core/class-wbte-ewb-request-service.php:439
+msgid "One or more selected items are invalid for this order."
+msgstr "Uno o más artículos seleccionados no son válidos para este pedido."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:449
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "\"%s\" no es elegible para desistimiento en este pedido."
+
+#: includes/core/class-wbte-ewb-request-service.php:450
+#: includes/core/class-wbte-ewb-request-service.php:468
+msgid "This item"
+msgstr "Este artículo"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:467
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "\"%s\" ya no está disponible para desistimiento en este pedido."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:479
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "La cantidad de desistimiento para \"%1$s\" no puede superar %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:480
+msgid "this item"
+msgstr "este artículo"
+
+#: includes/core/class-wbte-ewb-request-service.php:521
+msgid "Only pending requests can be approved."
+msgstr "Solo se pueden aprobar solicitudes pendientes."
+
+#: includes/core/class-wbte-ewb-request-service.php:615
+msgid "Only pending requests can be rejected."
+msgstr "Solo se pueden rechazar solicitudes pendientes."
+
+#: includes/core/class-wbte-ewb-request-service.php:703
+msgid "Withdrawal request pending review."
+msgstr "Solicitud de desistimiento pendiente de revisión."
+
+#: includes/core/class-wbte-ewb-request-service.php:740
+msgid "Withdrawal request approved."
+msgstr "Solicitud de desistimiento aprobada."
+
+#: includes/core/class-wbte-ewb-request-service.php:783
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Desistimiento parcial aprobado. Restaurando estado del pedido para los "
+"artículos restantes."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:412
+msgid "%1$d of %2$d"
+msgstr "%1$d de %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:592
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:254
+msgid "Partial"
+msgstr "Parcial"
+
+#: includes/core/class-wbte-ewb-request.php:595
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:255
+msgid "Full"
+msgstr "Completo"
+
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone
+#. offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:618
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s a las %2$s (%3$s)"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
+msgid ""
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
+msgstr ""
+"Su tienda facilita el derecho de desistimiento de la UE a los clientes. ¿Le "
+"gusta WebToffee EU Withdrawal Button? ¡Deje una valoración!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr ""
+"Lleva una semana usando WebToffee EU Withdrawal Button. Le agradeceríamos "
+"que se tomara un momento para dejarnos una valoración"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Acción de banner de valoración no válida."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Pedido de invitado no elegible"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Enviado a clientes invitados cuando su pedido no es elegible para "
+"desistimiento."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Su pedido #{order_number} no es elegible para desistimiento"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "Pedido no elegible para desistimiento"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Verificación de desistimiento de invitado"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Enviado a clientes invitados para verificar su solicitud de desistimiento "
+"antes de crearla."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Verifique su solicitud de desistimiento para el pedido "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Verifique su solicitud de desistimiento"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
+msgid "I would like to return this order."
+msgstr "Me gustaría devolver este pedido."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr ""
+"Esta solicitud no puede ser aprobada porque el plazo de desistimiento ha "
+"expirado."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:230
+msgid "Sample product"
+msgstr "Producto de ejemplo"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Solicitud de desistimiento aprobada"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Enviado al cliente cuando se aprueba una solicitud de desistimiento."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Su solicitud de desistimiento para el pedido #{order_number}"
+" ha sido aprobada"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
+msgid "Available placeholders: %s"
+msgstr "Marcadores disponibles: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
+msgstr "Activar/Desactivar"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
+msgid "Enable this email notification"
+msgstr "Activar esta notificación por correo electrónico"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
+msgid "Subject"
+msgstr "Asunto"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
+msgid "Email heading"
+msgstr "Encabezado del correo electrónico"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
+msgstr "Tipo de correo electrónico"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
+msgid "Choose which format of email to send."
+msgstr "Elija qué formato de correo electrónico enviar."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Solicitud de desistimiento rechazada"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Enviado al cliente cuando se rechaza una solicitud de desistimiento."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Su solicitud de desistimiento para el pedido #{order_number}"
+" ha sido rechazada"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Nueva solicitud de desistimiento (Administrador)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Enviado al administrador del sitio cuando se envía una nueva solicitud de "
+"desistimiento."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Nueva solicitud de desistimiento para el pedido "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Nueva solicitud de desistimiento"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Anulación opcional solo para este correo. Deje en blanco para usar los "
+"destinatarios configurados en los ajustes de desistimiento (por defecto %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Solicitud de desistimiento enviada"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Enviado al cliente cuando se envía una solicitud de desistimiento."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Solicitud de desistimiento para el pedido #{order_number} "
+"recibida"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Solicitud de desistimiento recibida"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "La verificación de seguridad ha fallado. Inténtelo de nuevo."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Please select an order."
+msgstr "Seleccione un pedido."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "No tiene permisos para solicitar el desistimiento de este pedido."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Su solicitud de desistimiento se ha enviado correctamente. Recibirá un "
+"correo de confirmación en breve."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:157
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Su solicitud de desistimiento se ha enviado correctamente."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:118
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "He leído y acepto los términos y condiciones de desistimiento"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:152
+msgid "Please select at least one item."
+msgstr "Seleccione al menos un artículo."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:153
+msgid "quantity"
+msgstr "cantidad"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:154
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Introduzca una cantidad válida para cada artículo seleccionado."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:155
+msgid "Please provide a reason for withdrawal."
+msgstr "Proporcione un motivo para el desistimiento."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:160
+msgid "Fetching eligible items..."
+msgstr "Obteniendo artículos elegibles..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:161
+msgid "No eligible items found for this order."
+msgstr "No se encontraron artículos elegibles para este pedido."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:162
+msgid "Review your withdrawal request"
+msgstr "Revise su solicitud de desistimiento"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:163
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Revise los detalles a continuación. Para completar su desistimiento legal, "
+"haga clic en Confirmar desistimiento."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+msgid "Confirm withdrawal"
+msgstr "Confirmar desistimiento"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Customer"
+msgstr "Cliente"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:167
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
+msgid "Order"
+msgstr "Pedido"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:168
+msgid "Withdrawal type"
+msgstr "Tipo de desistimiento"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:169
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Artículos a desistir"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:170
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Motivo del desistimiento"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:171
+msgid "Full withdrawal"
+msgstr "Desistimiento completo"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Solicitud enviada"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid ""
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
+msgstr ""
+"Gracias. Si los datos proporcionados son correctos, recibirá un correo "
+"electrónico sobre su solicitud de desistimiento. Revise su bandeja de "
+"entrada."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"No pudimos verificar su solicitud de desistimiento. Inténtelo de nuevo."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Debe iniciar sesión para ver sus solicitudes de desistimiento."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Aún no ha enviado ninguna solicitud de desistimiento."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Solicitud"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:200
+msgid "Date"
+msgstr "Fecha"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:198
+msgid "Type"
+msgstr "Tipo"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:261
+#: react/src/components/RequestsList.jsx:199
+msgid "Status"
+msgstr "Estado"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:261
+msgid "Withdrawal Request"
+msgstr "Solicitud de desistimiento"
+
+#. translators: %s: request ID
+#: includes/frontend/class-wbte-ewb-my-account.php:302
+msgid "Request #%s"
+msgstr "Solicitud #%s"
+
+#. translators: %s: withdrawal request type label
+#: includes/frontend/class-wbte-ewb-my-account.php:313
+msgid "Type: %s"
+msgstr "Tipo: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Enviada"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
+msgid "Processed"
+msgstr "Procesada"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Motivo"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Su correo electrónico ha sido verificado. Seleccione los artículos de los "
+"que desea desistir y envíe su solicitud a continuación."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Número de pedido"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Dirección de correo de facturación"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Cargando artículos..."
+
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
+msgid "Submit Withdrawal Request"
+msgstr "Enviar solicitud de desistimiento"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "obligatorio"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive an email with further instructions."
+msgstr ""
+"Introduzca su número de pedido y correo de facturación para comenzar. Si sus"
+" datos coinciden con nuestros registros, recibirá un correo con más "
+"instrucciones."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Actualmente no tiene pedidos elegibles para desistimiento."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Seleccione un pedido --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Nombre"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Apellidos"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr ""
+"Se ha enviado una nueva solicitud de desistimiento para el pedido #%s."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Información del cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Nombre del cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
+msgid "Customer Email"
+msgstr "Correo electrónico del cliente"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Detalles de la solicitud"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Número de pedido"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
+msgid "Request Type"
+msgstr "Tipo de solicitud"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Fecha de envío"
+
+#: templates/emails/admin-withdrawal-submitted.php:140
+msgid "Items Included in This Request"
+msgstr "Artículos incluidos en esta solicitud"
+
+#: templates/emails/admin-withdrawal-submitted.php:146
+msgid "Item"
+msgstr "Artículo"
+
+#: templates/emails/admin-withdrawal-submitted.php:149
+#: templates/emails/customer-withdrawal-approved.php:135
+#: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:177
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Para revisar y gestionar esta solicitud, visite el <a href=\"%s\">panel de "
+"solicitudes de desistimiento</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order"
+" is not currently eligible for withdrawal."
+msgstr ""
+"Hemos recibido su solicitud de desistimiento para el pedido #%s. "
+"Lamentablemente, este pedido no es elegible para desistimiento actualmente."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "Esto puede deberse a:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "El plazo de desistimiento de este pedido ha expirado."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Ya se ha procesado un desistimiento para este pedido."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "No quedan artículos elegibles para desistimiento."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Si cree que se trata de un error o tiene preguntas, póngase en contacto con "
+"nosotros en %s."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Hemos recibido su solicitud de desistimiento. Para completarla, verifique su"
+" dirección de correo de facturación haciendo clic en el botón de abajo."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Número de pedido:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Verificar solicitud de desistimiento"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr ""
+"Si no solicitó un desistimiento, puede ignorar este correo electrónico."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+msgid "Hi %s,"
+msgstr "Hola %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"¡Buenas noticias! Su solicitud de desistimiento para el pedido #%s ha sido "
+"aprobada."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Fecha de procesamiento"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:114
+msgid "Items"
+msgstr "Artículos"
+
+#: templates/emails/customer-withdrawal-approved.php:134
+#: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
+msgid "Product"
+msgstr "Producto"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid "Next Steps"
+msgstr "Próximos pasos"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Su desistimiento ha sido procesado. Según el tipo de solicitud, puede "
+"aplicarse lo siguiente:"
+
+#: templates/emails/customer-withdrawal-approved.php:158
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Si corresponde un reembolso, se procesará a su método de pago original. "
+"Espere unos días hábiles para que aparezca."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Si necesita devolver algún artículo, recibirá instrucciones de devolución "
+"por separado."
+
+#: templates/emails/customer-withdrawal-approved.php:163
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr ""
+"Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Hemos revisado su solicitud de desistimiento para el pedido #%s. "
+"Lamentablemente, no podemos aprobar esta solicitud en este momento."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Si cree que esta decisión es errónea o si tiene información adicional que "
+"proporcionar, póngase en contacto con nosotros y estaremos encantados de "
+"revisar su caso de nuevo."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+msgid "You can reach us at %s."
+msgstr "Puede contactarnos en %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Hemos recibido su solicitud de desistimiento para el pedido #%s. Gracias por"
+" informarnos."
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid "What Happens Next?"
+msgstr "¿Qué sucede a continuación?"
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Nuestro equipo revisará su solicitud y le responderá lo antes posible. "
+"Recibirá otro correo electrónico cuando se haya tomado una decisión."
+
+#: templates/emails/customer-withdrawal-submitted.php:151
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr ""
+"Si tiene alguna pregunta mientras tanto, no dude en ponerse en contacto con "
+"nosotros."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
+msgid "Receipt hash"
+msgstr "Hash de recibo"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Hemos recibido su solicitud de desistimiento. Para completarla, verifique su"
+" dirección de correo de facturación usando el enlace a continuación."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+msgid "Order number: %s"
+msgstr "Número de pedido: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+msgid "Reason: %s"
+msgstr "Motivo: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"WebToffee EU Withdrawal Button para WooCommerce requiere que WooCommerce "
+"esté instalado y activo."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr ""
+"Cancelaciones de pedidos y reembolsos parciales iniciados por el cliente."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Solicitudes"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Solicitar valoración"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Todos los estados"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Fecha desde"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Fecha hasta"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Buscar"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "N.º de pedido o hash de recibo"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Restablecer"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Aplicar filtros"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr "Aprobar automáticamente las solicitudes de desistimiento"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr "Emitir reembolso y reponer inventario automáticamente"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Mostrar el botón de desistimiento solo a clientes de la UE"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Generar una página de términos y condiciones de desistimiento"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr ""
+"Recopilar datos bancarios para reembolsos de contrareembolso y transferencia"
+" bancaria"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr "Abrir el formulario de desistimiento en una ventana emergente"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Bloquear envíos de spam con reCAPTCHA v3"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr "Copiar sus ajustes entre staging y producción"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr "Botón de desistimiento UE"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatice el proceso de desistimiento con la actualización Premium"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr "Obtener plugin ahora"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr "Sin cambios respecto a la semana pasada"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr "Sin datos"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr "Sin cambios"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr "Solicitudes abiertas"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr "Aprobadas (30d)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr "ID"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr "Pedido #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr "Acciones"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr "Ver"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Mostrando %1$d–%2$d de %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr "Mostrando 0 de 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Aprobación automática"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Usuario"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "No se han registrado cambios de estado."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
+msgid "No activity recorded."
+msgstr "No se ha registrado actividad."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Origen"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
+msgid "Action"
+msgstr "Acción"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
+msgid "Note"
+msgstr "Nota"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Volver a la lista"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Información de la solicitud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "No se proporcionó motivo"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Detalles del método de reembolso"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Creada"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Artículos del pedido"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Total de línea"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Desistimiento aprobado"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Desistimiento rechazado"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Solicitud de desistimiento enviada"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "No incluido"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr "No se encontraron artículos de pedido para esta solicitud."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr "Cronología de estados"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr "Registro de actividad"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr "Rechazar solicitud"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr "Motivo de rechazo"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d seleccionados"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Borrar todo"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Eliminar producto"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Buscar un producto…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Buscando…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "No se encontraron productos."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Eliminar categoría"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Buscar categorías…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Ninguna categoría coincide con su búsqueda."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Escriba para filtrar categorías…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "No se encontraron categorías de productos."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Eliminar estado"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Buscar estados de pedido…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Ningún estado de pedido coincide con su búsqueda."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Escriba para filtrar estados de pedido…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "No se encontraron estados de pedido."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Esta dirección de correo electrónico ya ha sido añadida."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Eliminar correo electrónico"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Añada al menos un destinatario para guardar los ajustes."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Introduzca dirección de correo…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Añadir"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr "Global"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr "Solo WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr "General"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr "Reglas y exclusiones"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr "Flujo de trabajo"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr "Confirmar importación"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr "Versión de exportación:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr "Versión actual:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:585
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible"
+" with your current version. Consider updating the plugin before importing."
+msgstr ""
+"El archivo de exportación es de una versión más reciente. Algunos ajustes "
+"pueden no ser compatibles con su versión actual. Considere actualizar el "
+"plugin antes de importar."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"Esto sobrescribirá todos los ajustes actuales del plugin. Esta acción no se "
+"puede deshacer."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr "Importando ajustes..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Ajustes importados correctamente. Recargando página..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr "Ajustes exportados correctamente."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr "Exportar ajustes"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr "Importar ajustes"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr ""
+"Archivo de ajustes no válido. Seleccione un archivo de exportación válido."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr ""
+"No se pudo leer el archivo. Asegúrese de que es un archivo JSON válido."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:645
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Exporte todos los ajustes del plugin como archivo JSON, o importe ajustes "
+"desde un archivo previamente exportado."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr "Términos y condiciones de desistimiento"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr "Publicado"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr "Vista previa"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr "Editar página"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr ""
+"¿Está seguro de que desea eliminar la página de términos y condiciones?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr "Error al eliminar la página."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr "Página eliminada."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr "Eliminar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:833
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Shortcodes disponibles: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:730
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive "
+"2011/83/EU. The page includes dynamic shortcodes for excluded products, "
+"categories, and product types that stay in sync with your settings."
+msgstr ""
+"Genere una página de términos y condiciones de desistimiento basada en la "
+"Directiva 2011/83/UE. La página incluye shortcodes dinámicos para productos "
+"excluidos, categorías y tipos de producto que se sincronizan con sus "
+"ajustes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr "Error al crear la página."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr "Página creada."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr "Creando…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr "Generar página de T&C"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr "-- Seleccione una página --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr "Error al cargar los ajustes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr "Cargando ajustes..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr "No se pueden cargar los ajustes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr "Claves reCAPTCHA desconectadas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr "Error al desconectar."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr "Claves reCAPTCHA guardadas correctamente."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr "Error al guardar las claves."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr "Introduzca tanto la clave del sitio como la clave secreta."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr "Guardar claves"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr ""
+"Comportamiento del formulario de desistimiento y preferencias de "
+"visualización."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr "Página de desistimiento"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr "Mostrar botón de desistimiento en el pie de página"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr ""
+"Mostrar un botón o enlace de desistimiento en el pie de página del sitio."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr "Personalizar apariencia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr "Pie de página"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr "Página de mi cuenta"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr ""
+"Active \"Mostrar botón de desistimiento en el pie de página\" para "
+"personalizar."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr "Active \"Mostrar botón de desistimiento en Mi cuenta\" para personalizar."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr "Texto del enlace"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr "Texto del botón"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr "Mostrar como"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr "Enlace"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr "Botón"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr "Colores"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr "Predeterminado del tema"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr "Personalizado"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr "Fondo"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr "Texto"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr "Fondo al pasar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr "Texto al pasar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr "Texto del enlace del pie de página"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr "El texto mostrado para el enlace de desistimiento del pie de página."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr "Ámbito de visualización"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr "Permitir desistimientos parciales"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr "Plazo de desistimiento"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr "días"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr "Iniciar cuenta atrás desde"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr "Motivo obligatorio"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr "Exclusiones"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1728
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Excluir tipos de producto, categorías o productos específicos del derecho de"
+" desistimiento."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr "Tipos de producto excluidos"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr "Tipos de producto de los que no se puede desistir."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr "Categorías excluidas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr "No se puede desistir de productos de estas categorías."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr "Productos excluidos"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr ""
+"Busque y seleccione productos específicos de los que no se puede desistir."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr "Estado del pedido"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1786
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Actualizar automáticamente los estados de pedido cuando se envían o aprueban"
+" solicitudes de desistimiento."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr "Establecer estado a"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1852
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Configure los destinatarios de notificaciones de administrador y el correo "
+"de contacto del cliente en los correos de desistimiento rechazado."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr ""
+"Direcciones de correo electrónico que reciben la notificación de nueva "
+"solicitud de desistimiento."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr "Correo de contacto del cliente"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1867
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"Dirección de correo mostrada a los clientes cuando se rechaza una solicitud "
+"de desistimiento y necesitan contactarle."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr "Shortcode del botón de desistimiento"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1908
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Opcional. Texto personalizado del botón. Usa la etiqueta predeterminada "
+"del shortcode si se omite."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Opcional. Clases CSS adicionales añadidas al botón."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr "Gestión de datos"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Controle qué sucede con los datos del plugin al eliminarlo."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr "Eliminar datos al desinstalar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1941
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Eliminar todos los datos del plugin (ajustes, solicitudes de desistimiento, "
+"tablas de base de datos) al desinstalar el plugin. Esta acción es "
+"irreversible."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr "Destructivo"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr "Añada al menos un destinatario para guardar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr "Cambios sin guardar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr "Todos los cambios guardados"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr "Descartar"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr "Ajustes guardados correctamente."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr "Error al guardar los ajustes."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Añada al menos un destinatario de notificaciones de administrador antes de "
+"guardar."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr "Guardando..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Corregir esto"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr "Documentación"
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr "Descartar advertencia"

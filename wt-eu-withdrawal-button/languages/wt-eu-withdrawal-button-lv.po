@@ -1,0 +1,3032 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
+"PO-Revision-Date: 2026-10-06 15:29+0000\n"
+"Last-Translator: WebToffee <info@webtoffee.com>\n"
+"Language-Team: lv\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WebToffee Translation Generator\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee ES pasūtījumu atteikuma poga WooCommerce"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Pārvaldiet līguma atteikuma / pasūtījumu atcelšanas pieteikumus WooCommerce "
+"pasūtījumiem. Atbilst ES prasībām, saderīgs ar HPOS."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
+#: includes/admin/class-wbte-ewb-order-meta-box.php:554
+#: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:223
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Gaida"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:555
+#: includes/frontend/class-wbte-ewb-my-account.php:457
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:220
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Apstiprināts"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:556
+#: includes/frontend/class-wbte-ewb-my-account.php:458
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:222
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Noraidīts"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
+#: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
+msgid "Approve"
+msgstr "Apstiprināt"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
+msgid "Reject"
+msgstr "Noraidīt"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
+msgid "Full Withdrawal"
+msgstr "Pilnīgs atteikums"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
+msgid "Partial Withdrawal"
+msgstr "Daļējs atteikums"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:186
+msgid "No withdrawal requests found."
+msgstr "Nav atrasts neviens atteikuma pieteikums."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+msgid "Loading…"
+msgstr "Ielādē…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
+#: includes/frontend/class-wbte-ewb-frontend.php:156
+msgid "An error occurred. Please try again."
+msgstr "Radās kļūda. Lūdzu, mēģiniet vēlreiz."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Vai tiešām vēlaties apstiprināt šo atteikuma pieteikumu?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Vai tiešām vēlaties noraidīt šo atteikuma pieteikumu?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
+msgid "Processing…"
+msgstr "Apstrādā…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Lūdzu, ievadiet iemeslu šī atteikuma pieteikuma noraidīšanai:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:378
+msgid "A reason is required when rejecting a request."
+msgstr "Noraidot pieteikumu, ir jānorāda iemesls."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
+msgid "Request updated successfully."
+msgstr "Pieteikums veiksmīgi atjaunināts."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:62
+#: includes/frontend/class-wbte-ewb-my-account.php:260
+msgid "Withdrawal Requests"
+msgstr "Atteikuma pieteikumi"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Atteikumi"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Ielādē atteikumu paneli…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Atbalsts"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Atsauksme"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:82
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Pasūtījums nav atrasts."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:96
+msgid "No withdrawal request for this order."
+msgstr "Šim pasūtījumam nav atteikuma pieteikuma."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:134
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Pieteikums %1$d no %2$d (#%3$d)"
+
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:142
+msgid "Request #%d"
+msgstr "Pieteikums #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:150
+msgid "Status:"
+msgstr "Statuss:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:156
+msgid "Type:"
+msgstr "Veids:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:168
+msgid "Items:"
+msgstr "Preces:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:315
+#: templates/emails/admin-withdrawal-submitted.php:157
+#: templates/emails/customer-withdrawal-approved.php:141
+#: templates/emails/customer-withdrawal-submitted.php:131
+msgid "Unknown item"
+msgstr "Nezināma prece"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:182
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Iemesls:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
+msgid "Submitted:"
+msgstr "Iesniegts:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:197
+msgid "Receipt hash:"
+msgstr "Kvīts jaucējkods:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:215
+msgid "Processed:"
+msgstr "Apstrādāts:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:221
+msgid "by"
+msgstr "veica"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+msgid "View in dashboard"
+msgstr "Skatīt panelī"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Atstāt atsauksmi"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Atgādināt vēlāk"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Noraidīt atsauksmes pieprasījumu"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request #%d"
+msgstr "Apstiprināt atteikuma pieteikumu #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:446
+msgid "Reject withdrawal request #%d"
+msgstr "Noraidīt atteikuma pieteikumu #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:450
+msgid "Approve withdrawal request"
+msgstr "Apstiprināt atteikuma pieteikumu"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:451
+msgid "Reject withdrawal request"
+msgstr "Noraidīt atteikuma pieteikumu"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:537
+msgid "Rejected from orders list."
+msgstr "Noraidīts no pasūtījumu saraksta."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:642
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Atteikts %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:653
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Pieprasīts %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
+msgid "Withdrawal"
+msgstr "Atteikums"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Atteikuma iestatījumi"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Konfigurējiet, kā atteikuma / atgriešanas pieteikumi darbojas jūsu veikalā."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Atteikuma lapa"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1594
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr "Izvēlieties lapu, kurā klienti var iesniegt atteikuma pieteikumus."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Iegult saiti kājenē"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr "Automātiski pievienot saiti uz atteikuma lapu vietnes kājenē."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Attēlošanas tvērums"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1638
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Kur tiek attēlota atteikuma veidlapa un saites."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globāli (visas lapas)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Tikai WooCommerce lapas"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Atļaut daļējus atteikumus"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1652
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Ļaut klientiem atteikties no atsevišķām precēm, nevis no visa pasūtījuma."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Atteikuma termiņš (dienas)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1658
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Dienu skaits pēc izvēlētā sākuma statusa, kura laikā var iesniegt atteikuma "
+"pieteikumu."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Atteikuma termiņš sākas no"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1688
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Izvēlieties vienu vai vairākus pasūtījumu statusus. Atskaite sākas no agrākā"
+" datuma, kad pasūtījums sasniedz kādu no izvēlētajiem statusiem."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Iemesls obligāts"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1703
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr "Pieprasīt klientiem norādīt iemeslu, iesniedzot atteikuma pieteikumu."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Izslēgtie produktu veidi"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Produktu veidi, kas ir izslēgti no atteikuma tiesībām."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
+msgid "Virtual"
+msgstr "Virtuāls"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
+msgid "Downloadable"
+msgstr "Lejupielādējams"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
+msgid "Grouped"
+msgstr "Grupēts"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:234
+msgid "External / Affiliate"
+msgstr "Ārējais / Partnerprogrammas"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Izslēgtās kategorijas"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Produktu kategorijas, kas ir izslēgtas no atteikuma tiesībām."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Izslēgtie produkti"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Konkrēti produkti, kas ir izslēgti no atteikuma tiesībām."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Izslēgšanas uzvedība"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Kā izslēgtie produkti tiek apstrādāti atteikuma veidlapā."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Slēpt izslēgtās preces"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Rādīt atspējotas ar paziņojumu"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Pasūtījuma statuss"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Kontrolēt, vai pasūtījumu statusi tiek automātiski mainīti atteikuma "
+"darbplūsmas laikā."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1794
+msgid "Change order status on submission"
+msgstr "Mainīt pasūtījuma statusu pēc iesniegšanas"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1795
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr ""
+"Automātiski mainīt pasūtījuma statusu, kad tiek iesniegts atteikuma "
+"pieteikums."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Iesniegšanas pasūtījuma statuss"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr ""
+"Pasūtījuma statuss, kas jāiestata, kad tiek iesniegts atteikuma pieteikums."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1819
+msgid "Change order status on approval"
+msgstr "Mainīt pasūtījuma statusu pēc apstiprināšanas"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1820
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Automātiski mainīt pasūtījuma statusu, kad atteikuma pieteikums tiek "
+"apstiprināts."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Apstiprināšanas pasūtījuma statuss"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr ""
+"Pasūtījuma statuss, kas jāiestata, kad atteikuma pieteikums tiek "
+"apstiprināts."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "E-pasta paziņojumi"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr ""
+"Konfigurējiet administratora adresātus atteikuma paziņojumu e-pastiem."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1857
+msgid "Recipient(s)"
+msgstr "Adresāts(-i)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"Ar komatu atdalītas e-pasta adreses administratora atteikuma paziņojumiem."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Atteikuma pogas īskods"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Datu pārvaldība"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Dzēst datus pie atinstalēšanas"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Noņemt visus spraudņa datus (iestatījumus, atteikuma pieteikumus, datubāzes "
+"tabulas), kad spraudnis tiek atinstalēts."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Brīdinājums: šī darbība ir neatgriezeniska."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1010
+msgid "Order created"
+msgstr "Pasūtījums izveidots"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1897
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Pievienojiet atteikuma pieteikuma pogu jebkurā lapā vai ierakstā. Poga "
+"savieno ar jūsu konfigurēto atteikuma lapu."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1902
+msgid "Examples"
+msgstr "Piemēri"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Neobligāts. Pielāgots pogas teksts. Ja nav norādīts, izmanto noklusējuma "
+"īskoda etiķeti."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Neobligāts. Papildu CSS klases, kas pievienotas pogai."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Deaktivēt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Apstrādā..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Lūdzu, ievadiet derīgu e-pasta adresi."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Iesniegt un deaktivēt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Problēma ar atteikuma darbplūsmu"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Viesa atteikums"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Vai varat pastāstīt nedaudz vairāk?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:172
+msgid "Partial withdrawal"
+msgstr "Daļējs atteikums"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1849
+msgid "Email notifications"
+msgstr "E-pasta paziņojumi"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "ES atbilstība / juridiski jautājumi"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Cits"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Es atradu labāku spraudni"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Kuru spraudni?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Spraudnis ir lielisks, bet man ir nepieciešama konkrēta funkcija, ko jūs "
+"neatbalstāt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Vai varat pastāstīt vairāk par šo funkciju?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Tas nav tas, ko es meklēju"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Konflikts ar citu spraudni"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Ja jums ir brīdis, lūdzu, pastāstiet, kāpēc jūs deaktivējat:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee var sazināties ar mani par šo atsauksmi."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Ievadiet savu e-pasta adresi."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Ievadiet e-pasta adresi"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Iesniedzot šo veidlapu, mēs nevācam nekādus personas datus. Mēs novērtējam "
+"jūsu atsauksmes."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Privātuma politika"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Doties uz atbalstu"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:391
+#: react/src/components/SettingsPage.jsx:616
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Es labāk neteiktu"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Jums nav atļaujas veikt šo darbību."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr ""
+"Nederīgs drošības marķieris. Lūdzu, atsvaidziniet lapu un mēģiniet vēlreiz."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"Pieteikušamies klientiem jāiesniedz atteikuma pieteikumi no sava konta."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "Viesa piekļuvei ir nepieciešams pasūtījuma numurs un e-pasts."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Lūdzu, norādiet derīgu e-pasta adresi."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr ""
+"Nav atrasts neviens pasūtījums, kas atbilst norādītajam pasūtījuma numuram."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
+msgid "The email address does not match the order."
+msgstr "E-pasta adrese neatbilst pasūtījumam."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Pasūtījuma numurs neatbilst pieprasītajam pasūtījumam."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:841
+msgid "WooCommerce order ID."
+msgstr "WooCommerce pasūtījuma ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Pasūtījuma numurs (obligāts viesa piekļuvei)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "Klienta e-pasts (obligāts viesa piekļuvei)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "WooCommerce pasūtījuma ID. Norādiet šo vai order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Klientam redzamais pasūtījuma numurs. Norādiet šo vai order_id."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "Klienta e-pasta adrese (obligāta viesiem)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Vai šis ir pilnīgs vai daļējs atteikums."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Rindas preces daļējam atteikumam. Obligātas, ja request_type ir partial."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "WooCommerce rindas preces ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "WooCommerce produkta ID."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Atteikuma daudzums."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:884
+msgid "Customer reason for the withdrawal."
+msgstr "Klienta atteikuma iemesls."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:365
+msgid "Guest withdrawal service is not available."
+msgstr "Viesa atteikuma pakalpojums nav pieejams."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:376
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Lūdzu, atlasiet vismaz vienu preci, no kuras atteikties."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
+msgid "Withdrawal request submitted successfully."
+msgstr "Atteikuma pieteikums veiksmīgi iesniegts."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Viesu atteikuma pieteikumi pirms izveidošanas ir jāverificē ar e-pastu."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:437
+msgid "Either order_id or order_number is required."
+msgstr "Ir nepieciešams order_id vai order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:446
+msgid "Items are required for partial withdrawal requests."
+msgstr "Daļēja atteikuma pieteikumiem ir nepieciešamas preces."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
+msgid "The specified order could not be found."
+msgstr "Norādīto pasūtījumu nevarēja atrast."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:483
+msgid "A reason is required for withdrawal requests."
+msgstr "Atteikuma pieteikumiem ir jānorāda iemesls."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
+msgid "Request service is not available."
+msgstr "Pieteikumu pakalpojums nav pieejams."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:574
+msgid "This order does not belong to your account."
+msgstr "Šis pasūtījums nepieder jūsu kontam."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:590
+msgid "Order number is required for guest withdrawal requests."
+msgstr "Viesa atteikuma pieteikumiem ir nepieciešams pasūtījuma numurs."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:598
+msgid "Email is required for guest withdrawal requests."
+msgstr "Viesa atteikuma pieteikumiem ir nepieciešams e-pasts."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:606
+msgid "The order number does not match this order."
+msgstr "Pasūtījuma numurs neatbilst šim pasūtījumam."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:654
+msgid "Eligibility service is not available."
+msgstr "Atbilstības pakalpojums nav pieejams."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:712
+msgid "This item is not eligible for withdrawal."
+msgstr "Šī prece nav tiesīga atteikumam."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:722
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Šī prece jau ir iekļauta gaidošā vai apstiprinātā atteikuma pieteikumā."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:835
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:512
+msgid "Unique identifier for the withdrawal request."
+msgstr "Unikāls atteikuma pieteikuma identifikators."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:846
+#: includes/api/class-wbte-ewb-rest-requests.php:523
+msgid "Customer-facing order number."
+msgstr "Klientam redzamais pasūtījuma numurs."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:851
+msgid "Status of the withdrawal request."
+msgstr "Atteikuma pieteikuma statuss."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:858
+msgid "Full or partial withdrawal."
+msgstr "Pilnīgs vai daļējs atteikums."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:864
+msgid "Line items included in the withdrawal."
+msgstr "Atteikumā iekļautās rindas preces."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:889
+msgid "Date the request was created."
+msgstr "Datums, kad pieteikums tika izveidots."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce nav pieejams."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Neobligāta piezīme apstiprināšanai."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Iemesls atteikuma pieteikuma noraidīšanai."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Noraidot pieteikumu, ir jānorāda piezīme."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtrēt pēc pieteikuma statusa."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr ""
+"Filtrēt pieteikumus, kas izveidoti šajā datumā vai pēc tā (GGGG-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr ""
+"Filtrēt pieteikumus, kas izveidoti šajā datumā vai pirms tā (GGGG-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtrēt pēc klienta e-pasta vai vārda."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by request ID, order number or receipt hash."
+msgstr "Meklēt pēc pieteikuma ID, pasūtījuma numura vai kvīts jaucējkoda."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtrēt pēc pasūtījuma numura."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Filtrēt pēc kvīts jaucējkoda (pilnīga vai daļēja atbilstība)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Maksimālais atgriezto vienību skaits vienā lapā."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Pašreizējā kolekcijas lapa."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:484
+msgid "Request repository is not available."
+msgstr "Pieteikumu repozitorijs nav pieejams."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:513
+#: includes/core/class-wbte-ewb-request-service.php:607
+msgid "Withdrawal request not found."
+msgstr "Atteikuma pieteikums nav atrasts."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Viesis"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:424
+msgid "Withdrawal request approved successfully."
+msgstr "Atteikuma pieteikums veiksmīgi apstiprināts."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:466
+msgid "Withdrawal request rejected."
+msgstr "Atteikuma pieteikums noraidīts."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:518
+msgid "Associated WooCommerce order ID."
+msgstr "Saistītais WooCommerce pasūtījuma ID."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:528
+msgid "Customer email address."
+msgstr "Klienta e-pasta adrese."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:534
+msgid "Customer user ID (0 or null for guests)."
+msgstr "Klienta lietotāja ID (0 vai null viesiem)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:539
+msgid "Current status of the withdrawal request."
+msgstr "Pašreizējais atteikuma pieteikuma statuss."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:545
+msgid "Type of withdrawal request."
+msgstr "Atteikuma pieteikuma veids."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:551
+msgid "JSON-encoded array of line items."
+msgstr "JSON kodēts rindas preču masīvs."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:556
+msgid "Customer-provided reason for withdrawal."
+msgstr "Klienta norādītais atteikuma iemesls."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:561
+msgid "Date the request was created (ISO 8601)."
+msgstr "Datums, kad pieteikums tika izveidots (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:568
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Datums, kad pieteikums pēdējo reizi tika atjaunināts (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:575
+msgid "Admin user ID who processed the request."
+msgstr "Administratora lietotāja ID, kurš apstrādāja pieteikumu."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:581
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Datums, kad pieteikums tika apstrādāts (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:588
+msgid "Activity log entries for this request."
+msgstr "Šī pieteikuma darbību žurnāla ieraksti."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Atsauksmes reklāmkaroga darbība."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Atsauksmes reklāmkarogs atjaunināts."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "Atteikuma veidlapas lapas ID."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Vai rādīt atteikuma saiti vietnes kājenē."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Kur attēlot kājenes saiti."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Vai atļaut daļējus pasūtījumu atteikumus."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Dienu skaits, kuru laikā atteikums ir atļauts."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+msgid "%s must be at least 1."
+msgstr "%s jābūt vismaz 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr "Pasūtījumu statusi, no kuriem var sākties atteikuma termiņa atskaite."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Vai ir jānorāda iemesls, iesniedzot atteikumu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Produktu veidi, kas izslēgti no atteikuma."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "Produktu kategoriju ID, kas izslēgti no atteikuma."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "Produktu ID, kas izslēgti no atteikuma."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "Kā apstrādāt izslēgtās preces atteikuma veidlapā."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Vai mainīt pasūtījuma statusu, kad tiek iesniegts atteikums."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Pasūtījuma statuss, kas jāiestata, iesniedzot atteikumu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Vai mainīt pasūtījuma statusu, kad atteikums tiek apstiprināts."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Pasūtījuma statuss, kas jāiestata, apstiprinot atteikumu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Vai dzēst visus spraudņa datus, atinstalējot."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr "E-pasta adreses, kas saņem administratora atteikuma paziņojumus."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Klientam redzamā kontakta e-pasta adrese, kas tiek rādīta noraidīto "
+"atteikumu e-pastos."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+msgid "%s must be an array of email addresses."
+msgstr "%s jābūt e-pasta adrešu masīvam."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Ir nepieciešams vismaz viens administratora paziņojumu adresāts."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr "Viens vai vairāki paziņojumu adresāti satur nederīgu e-pasta adresi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "Klienta kontakta e-pasta adrese ir nederīga."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Atteikuma termiņa sākuma statusiem jābūt masīvam."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr "Viens vai vairāki atteikuma termiņa sākuma statusi ir nederīgi."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "Iestatījumu klase nav pieejama."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Nav norādīti derīgi iestatījumi atjaunināšanai."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Iestatījumi veiksmīgi atjaunināti."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "atteikuma-pieteikums"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Atteikuma pieteikums"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Gaida atteikumu"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Gaida atteikumu <span class=\"count\">(%s)</span>"
+msgstr[1] "Gaida atteikumu <span class=\"count\">(%s)</span>"
+msgstr[2] "Gaida atteikumu <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Atteikts"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Atteikts <span class=\"count\">(%s)</span>"
+msgstr[1] "Atteikti <span class=\"count\">(%s)</span>"
+msgstr[2] "Atteikts <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+msgid "Change status to %s"
+msgstr "Mainīt statusu uz %s"
+
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1629
+msgid "Request Withdrawal"
+msgstr "Pieprasīt atteikumu"
+
+#: includes/core/class-wbte-ewb-eligibility.php:354
+msgid "This product type cannot be withdrawn."
+msgstr "Šo produktu veidu nevar atteikt."
+
+#: includes/core/class-wbte-ewb-eligibility.php:358
+msgid "Virtual products cannot be withdrawn."
+msgstr "Virtuālos produktus nevar atteikt."
+
+#: includes/core/class-wbte-ewb-eligibility.php:362
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Lejupielādējamos produktus nevar atteikt."
+
+#: includes/core/class-wbte-ewb-eligibility.php:371
+msgid "This product cannot be withdrawn."
+msgstr "Šo produktu nevar atteikt."
+
+#: includes/core/class-wbte-ewb-eligibility.php:380
+msgid "Products in this category cannot be withdrawn."
+msgstr "Šīs kategorijas produktus nevar atteikt."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+msgid "Please enter your order number."
+msgstr "Lūdzu, ievadiet sava pasūtījuma numuru."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Lūdzu, norādiet sava atteikuma pieteikuma iemeslu."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Neizdevās ievietot jūsu atteikuma pieteikumu rindā. Lūdzu, mēģiniet vēlreiz."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
+msgid "The email address does not match the billing email on this order."
+msgstr "E-pasta adrese neatbilst šī pasūtījuma norēķinu e-pastam."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
+msgid "This order is not eligible for withdrawal."
+msgstr "Šis pasūtījums nav tiesīgs atteikumam."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
+msgid "This verification link is invalid or has already been used."
+msgstr "Šī verifikācijas saite ir nederīga vai jau izmantota."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
+msgid "This withdrawal request has already been submitted."
+msgstr "Šis atteikuma pieteikums jau ir iesniegts."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
+msgid "Verification link expired."
+msgstr "Verifikācijas saites derīguma termiņš beidzies."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Šīs verifikācijas saites derīguma termiņš ir beidzies. Lūdzu, iesniedziet "
+"jaunu atteikuma pieteikumu."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Atteikuma pakalpojums īslaicīgi nav pieejams."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
+msgid "This verification session is invalid or has expired."
+msgstr "Šī verifikācijas sesija ir nederīga vai beigusies."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Verificējiet savu atteikuma pieteikumu"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Lūdzu, verificējiet savu atteikuma pieteikumu, noklikšķinot uz zemāk esošās saites:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Pasūtījums: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "Norādītais pasūtījums neeksistē."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Jums nav tiesību iesniegt atteikumu šim pasūtījumam."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Neizdevās izveidot atteikuma pieteikumu."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Atteikuma pieteikums iesniegts."
+
+#: includes/core/class-wbte-ewb-request-service.php:278
+msgid "The submitted withdrawal items are invalid."
+msgstr "Iesniegtās atteikuma preces ir nederīgas."
+
+#: includes/core/class-wbte-ewb-request-service.php:322
+msgid "No items are currently available for withdrawal on this order."
+msgstr "Pašlaik šim pasūtījumam nav pieejamu preču atteikumam."
+
+#: includes/core/class-wbte-ewb-request-service.php:416
+#: includes/core/class-wbte-ewb-request-service.php:429
+#: includes/core/class-wbte-ewb-request-service.php:439
+msgid "One or more selected items are invalid for this order."
+msgstr "Viena vai vairākas atlasītās preces ir nederīgas šim pasūtījumam."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:449
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "\"%s\" nav tiesīgs atteikumam šajā pasūtījumā."
+
+#: includes/core/class-wbte-ewb-request-service.php:450
+#: includes/core/class-wbte-ewb-request-service.php:468
+msgid "This item"
+msgstr "Šī prece"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:467
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "\"%s\" vairs nav pieejams atteikumam šajā pasūtījumā."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:479
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "Atteikuma daudzums priekš \"%1$s\" nedrīkst pārsniegt %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:480
+msgid "this item"
+msgstr "šī prece"
+
+#: includes/core/class-wbte-ewb-request-service.php:521
+msgid "Only pending requests can be approved."
+msgstr "Var apstiprināt tikai gaidošos pieteikumus."
+
+#: includes/core/class-wbte-ewb-request-service.php:615
+msgid "Only pending requests can be rejected."
+msgstr "Var noraidīt tikai gaidošos pieteikumus."
+
+#: includes/core/class-wbte-ewb-request-service.php:703
+msgid "Withdrawal request pending review."
+msgstr "Atteikuma pieteikums gaida pārskatīšanu."
+
+#: includes/core/class-wbte-ewb-request-service.php:740
+msgid "Withdrawal request approved."
+msgstr "Atteikuma pieteikums apstiprināts."
+
+#: includes/core/class-wbte-ewb-request-service.php:783
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Daļējs atteikums apstiprināts. Atjauno pasūtījuma statusu atlikušajām "
+"precēm."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:412
+msgid "%1$d of %2$d"
+msgstr "%1$d no %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:592
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:254
+msgid "Partial"
+msgstr "Daļējs"
+
+#: includes/core/class-wbte-ewb-request.php:595
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:255
+msgid "Full"
+msgstr "Pilnīgs"
+
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone
+#. offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:618
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s plkst. %2$s (%3$s)"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
+msgid ""
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
+msgstr ""
+"Jūsu veikals atvieglo ES atteikuma tiesību izmantošanu klientiem. Vai jums "
+"patīk WebToffee EU Withdrawal Button? Atstājiet atsauksmi!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr ""
+"Jūs izmantojat WebToffee EU Withdrawal Button jau nedēļu. Mēs būtu ļoti "
+"pateicīgi, ja jūs varētu veltīt brīdi un atstāt mums atsauksmi"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Nederīga atsauksmes reklāmkaroga darbība."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Viesa pasūtījums nav tiesīgs"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Tiek nosūtīts viesa klientiem, kad viņu pasūtījums nav tiesīgs atteikumam."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Jūsu pasūtījums #{order_number} nav tiesīgs atteikumam"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "Pasūtījums nav tiesīgs atteikumam"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Viesa atteikuma verifikācija"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Tiek nosūtīts viesa klientiem, lai verificētu viņu atteikuma pieteikumu "
+"pirms tā izveidošanas."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Verificējiet savu atteikuma pieteikumu pasūtījumam "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Verificējiet savu atteikuma pieteikumu"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
+msgid "I would like to return this order."
+msgstr "Es vēlētos atgriezt šo pasūtījumu."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr "Šo pieteikumu nevar apstiprināt, jo atteikuma termiņš ir beidzies."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:230
+msgid "Sample product"
+msgstr "Parauga produkts"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Atteikuma pieteikums apstiprināts"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Tiek nosūtīts klientam, kad atteikuma pieteikums tiek apstiprināts."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Jūsu atteikuma pieteikums pasūtījumam #{order_number} ir "
+"apstiprināts"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
+msgid "Available placeholders: %s"
+msgstr "Pieejamie vietturi: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
+msgstr "Iespējot/Atspējot"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
+msgid "Enable this email notification"
+msgstr "Iespējot šo e-pasta paziņojumu"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
+msgid "Subject"
+msgstr "Tēma"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
+msgid "Email heading"
+msgstr "E-pasta virsraksts"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
+msgstr "E-pasta veids"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
+msgid "Choose which format of email to send."
+msgstr "Izvēlieties, kādā formātā sūtīt e-pastu."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Atteikuma pieteikums noraidīts"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Tiek nosūtīts klientam, kad atteikuma pieteikums tiek noraidīts."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Jūsu atteikuma pieteikums pasūtījumam #{order_number} ir "
+"noraidīts"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Jauns atteikuma pieteikums (administrators)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Tiek nosūtīts vietnes administratoram, kad tiek iesniegts jauns atteikuma "
+"pieteikums."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Jauns atteikuma pieteikums pasūtījumam #{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Jauns atteikuma pieteikums"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Neobligāts pārraksts tikai šim e-pastam. Atstājiet tukšu, lai izmantotu "
+"atteikuma iestatījumos konfigurētos adresātus (noklusējums: %s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Atteikuma pieteikums iesniegts"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Tiek nosūtīts klientam, kad atteikuma pieteikums tiek iesniegts."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Atteikuma pieteikums pasūtījumam #{order_number} saņemts"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Atteikuma pieteikums saņemts"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Drošības pārbaude neizdevās. Lūdzu, mēģiniet vēlreiz."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Please select an order."
+msgstr "Lūdzu, atlasiet pasūtījumu."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Jums nav atļaujas pieprasīt atteikumu šim pasūtījumam."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Jūsu atteikuma pieteikums ir veiksmīgi iesniegts. Drīzumā saņemsiet "
+"apstiprinājuma e-pastu."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:157
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Jūsu atteikuma pieteikums ir veiksmīgi iesniegts."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:118
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "Esmu izlasījis un piekrītu atteikuma noteikumiem un nosacījumiem"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Loading..."
+msgstr "Ielādē..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:152
+msgid "Please select at least one item."
+msgstr "Lūdzu, atlasiet vismaz vienu preci."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:153
+msgid "quantity"
+msgstr "daudzums"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:154
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Lūdzu, ievadiet derīgu daudzumu katrai atlasītajai precei."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:155
+msgid "Please provide a reason for withdrawal."
+msgstr "Lūdzu, norādiet atteikuma iemeslu."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:160
+msgid "Fetching eligible items..."
+msgstr "Ielādē atbilstošās preces..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:161
+msgid "No eligible items found for this order."
+msgstr "Šim pasūtījumam nav atrasta neviena atbilstoša prece."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:162
+msgid "Review your withdrawal request"
+msgstr "Pārskatiet savu atteikuma pieteikumu"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:163
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Lūdzu, pārskatiet zemāk esošo informāciju. Lai pabeigtu likumā noteikto "
+"atteikumu, noklikšķiniet uz Apstiprināt atteikumu."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+msgid "Confirm withdrawal"
+msgstr "Apstiprināt atteikumu"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Customer"
+msgstr "Klients"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:167
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
+msgid "Order"
+msgstr "Pasūtījums"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:168
+msgid "Withdrawal type"
+msgstr "Atteikuma veids"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:169
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Preces, no kurām atteikties"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:170
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Atteikuma iemesls"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:171
+msgid "Full withdrawal"
+msgstr "Pilnīgs atteikums"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Pieteikums iesniegts"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid ""
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
+msgstr ""
+"Paldies. Ja jūsu norādītā informācija ir pareiza, jūs saņemsiet e-pastu par "
+"savu atteikuma pieteikumu. Lūdzu, pārbaudiet savu iesūtni."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"Mēs nevarējām verificēt jūsu atteikuma pieteikumu. Lūdzu, mēģiniet vēlreiz."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Lai apskatītu savus atteikuma pieteikumus, jums jābūt pieteikušamies."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Jūs vēl neesat iesnieguši nevienu atteikuma pieteikumu."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Pieteikums"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:200
+msgid "Date"
+msgstr "Datums"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:198
+msgid "Type"
+msgstr "Veids"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:261
+#: react/src/components/RequestsList.jsx:199
+msgid "Status"
+msgstr "Statuss"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:261
+msgid "Withdrawal Request"
+msgstr "Atteikuma pieteikums"
+
+#. translators: %s: request ID
+#: includes/frontend/class-wbte-ewb-my-account.php:302
+msgid "Request #%s"
+msgstr "Pieteikums #%s"
+
+#. translators: %s: withdrawal request type label
+#: includes/frontend/class-wbte-ewb-my-account.php:313
+msgid "Type: %s"
+msgstr "Veids: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Iesniegts"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
+msgid "Processed"
+msgstr "Apstrādāts"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Iemesls"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Jūsu e-pasts ir verificēts. Atlasiet preces, no kurām vēlaties atteikties, "
+"un iesniedziet savu pieteikumu zemāk."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Pasūtījuma numurs"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Norēķinu e-pasta adrese"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Ielādē preces..."
+
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
+msgid "Submit Withdrawal Request"
+msgstr "Iesniegt atteikuma pieteikumu"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "obligāts"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive an email with further instructions."
+msgstr ""
+"Ievadiet savu pasūtījuma numuru un norēķinu e-pastu, lai sāktu. Ja jūsu dati"
+" atbilst mūsu ierakstiem, jūs saņemsiet e-pastu ar turpmākajiem "
+"norādījumiem."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Pašlaik jums nav neviena pasūtījuma, kas būtu tiesīgs atteikumam."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Atlasīt pasūtījumu --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-pasts"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Vārds"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Uzvārds"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "Pasūtījumam #%s ir iesniegts jauns atteikuma pieteikums."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Klienta informācija"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Klienta vārds"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
+msgid "Customer Email"
+msgstr "Klienta e-pasts"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Pieteikuma informācija"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Pasūtījuma numurs"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
+msgid "Request Type"
+msgstr "Pieteikuma veids"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Iesniegšanas datums"
+
+#: templates/emails/admin-withdrawal-submitted.php:140
+msgid "Items Included in This Request"
+msgstr "Šajā pieteikumā iekļautās preces"
+
+#: templates/emails/admin-withdrawal-submitted.php:146
+msgid "Item"
+msgstr "Prece"
+
+#: templates/emails/admin-withdrawal-submitted.php:149
+#: templates/emails/customer-withdrawal-approved.php:135
+#: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
+msgid "Quantity"
+msgstr "Daudzums"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:177
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Lai pārskatītu un pārvaldītu šo pieteikumu, apmeklējiet <a "
+"href=\"%s\">Atteikuma pieteikumu paneli</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order"
+" is not currently eligible for withdrawal."
+msgstr ""
+"Mēs saņēmām jūsu atteikuma pieteikumu pasūtījumam #%s. Diemžēl šis "
+"pasūtījums pašlaik nav tiesīgs atteikumam."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "Iespējamie iemesli:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "Šī pasūtījuma atteikuma termiņš ir beidzies."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Šim pasūtījumam jau ir apstrādāts atteikums."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "Nav atlikušu preču, kas būtu tiesīgas atteikumam."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Ja uzskatāt, ka tā ir kļūda, vai jums ir jautājumi, lūdzu, sazinieties ar "
+"mums: %s."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Mēs saņēmām jūsu atteikuma pieteikumu. Lai to pabeigtu, lūdzu, verificējiet "
+"savu norēķinu e-pasta adresi, noklikšķinot uz zemāk esošās pogas."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Pasūtījuma numurs:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Verificēt atteikuma pieteikumu"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Ja jūs nepieprasījāt atteikumu, varat ignorēt šo e-pastu."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+msgid "Hi %s,"
+msgstr "Sveiki, %s!"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Lieliskas ziņas! Jūsu atteikuma pieteikums pasūtījumam #%s ir apstiprināts."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Apstrādes datums"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:114
+msgid "Items"
+msgstr "Preces"
+
+#: templates/emails/customer-withdrawal-approved.php:134
+#: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
+msgid "Product"
+msgstr "Produkts"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid "Next Steps"
+msgstr "Nākamie soļi"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Jūsu atteikums ir apstrādāts. Atkarībā no pieteikuma veida var būt "
+"piemērojams sekojošais:"
+
+#: templates/emails/customer-withdrawal-approved.php:158
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Ja pienākas atmaksa, tā tiks apstrādāta uz jūsu sākotnējo maksājuma metodi. "
+"Lūdzu, atļaujiet dažas darba dienas, lai tā parādītos."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Ja jums ir jāatgriež kādas preces, jūs saņemsiet atsevišķas atgriešanas "
+"instrukcijas."
+
+#: templates/emails/customer-withdrawal-approved.php:163
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Ja jums ir kādi jautājumi, lūdzu, nevilcinieties sazināties ar mums."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Mēs esam izskatījuši jūsu atteikuma pieteikumu pasūtījumam #%s. Diemžēl "
+"šobrīd mēs nevaram apstiprināt šo pieteikumu."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Ja uzskatāt, ka šis lēmums ir pieņemts kļūdaini, vai ja jums ir papildu "
+"informācija, lūdzu, sazinieties ar mums, un mēs ar prieku izskatīsim jūsu "
+"lietu atkārtoti."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+msgid "You can reach us at %s."
+msgstr "Jūs varat sazināties ar mums: %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Mēs esam saņēmuši jūsu atteikuma pieteikumu pasūtījumam #%s. Paldies, ka "
+"informējāt mūs."
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid "What Happens Next?"
+msgstr "Kas notiks tālāk?"
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Mūsu komanda izskatīs jūsu pieteikumu un sazināsies ar jums pēc iespējas "
+"ātrāk. Jūs saņemsiet vēl vienu e-pastu, kad būs pieņemts lēmums."
+
+#: templates/emails/customer-withdrawal-submitted.php:151
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr ""
+"Ja pa to laiku jums rodas jautājumi, lūdzu, nevilcinieties sazināties ar "
+"mums."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
+msgid "Receipt hash"
+msgstr "Kvīts jaucējkods"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Mēs saņēmām jūsu atteikuma pieteikumu. Lai to pabeigtu, lūdzu, verificējiet "
+"savu norēķinu e-pasta adresi, izmantojot zemāk esošo saiti."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+msgid "Order number: %s"
+msgstr "Pasūtījuma numurs: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+msgid "Reason: %s"
+msgstr "Iemesls: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"WebToffee EU Withdrawal Button for WooCommerce prasa, lai WooCommerce būtu "
+"instalēts un aktīvs."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr "Klienta ierosinātie pasūtījumu atteikumi un daļējas atmaksas."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Pieteikumi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Atsauksmes pieprasījums"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Visi statusi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Datums no"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Datums līdz"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Meklēt"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Pasūtījuma # vai kvīts jaucējkods"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Atiestatīt"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Lietot filtrus"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr "Automātiski apstiprināt atteikuma pieteikumus"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr "Automātiski veikt atmaksu un atjaunot noliktavas krājumus"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Rādīt atteikuma pogu tikai ES klientiem"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Ģenerēt atteikuma noteikumu un nosacījumu lapu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr "Apkopot bankas datus pēcmaksas un bankas pārskaitījuma atmaksām"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr "Atvērt atteikuma veidlapu uznirstošajā logā"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Bloķēt surogātpasta iesnegumus ar reCAPTCHA v3"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr "Kopēt iestatījumus starp testa un ražošanas vidi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr "ES atteikuma poga"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatizējiet atteikuma darbplūsmu ar Premium jauninājumu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr "Iegūt spraudni tagad"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr "Nav izmaiņu salīdzinājumā ar pagājušo nedēļu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr "Nav datu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr "Nav izmaiņu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr "Atvērtie pieteikumi"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr "Apstiprināti (30d)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr "ID"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr "Pasūtījums #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr "Darbības"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr "Skatīt"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Rāda %1$d–%2$d no %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr "Rāda 0 no 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Automātiska apstiprināšana"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Lietotājs"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "Nav reģistrētas statusa izmaiņas."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
+msgid "No activity recorded."
+msgstr "Nav reģistrēta darbība."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Avots"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
+msgid "Action"
+msgstr "Darbība"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
+msgid "Note"
+msgstr "Piezīme"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Atpakaļ uz sarakstu"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Pieteikuma informācija"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "Iemesls nav norādīts"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Atmaksas metodes informācija"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Izveidots"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Pasūtījuma preces"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Rindas kopsumma"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Atteikums apstiprināts"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Atteikums noraidīts"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Atteikuma pieteikums iesniegts"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "Nav iekļauts"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr "Šim pieteikumam nav atrasta neviena pasūtījuma prece."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr "Statusa laika skala"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr "Darbību žurnāls"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr "Noraidīt pieteikumu"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr "Noraidīšanas iemesls"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d atlasīts"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Notīrīt visu"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Noņemt produktu"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Meklēt produktu…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Meklē…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Produkti nav atrasti."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Noņemt kategoriju"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Meklēt kategorijas…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Neviena kategorija neatbilst jūsu meklēšanai."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Rakstiet, lai filtrētu kategorijas…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Produktu kategorijas nav atrastas."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Noņemt statusu"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Meklēt pasūtījumu statusus…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Neviens pasūtījuma statuss neatbilst jūsu meklēšanai."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Rakstiet, lai filtrētu pasūtījumu statusus…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Pasūtījumu statusi nav atrasti."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Šī e-pasta adrese jau ir pievienota."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Noņemt e-pastu"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Pievienojiet vismaz vienu adresātu, lai saglabātu iestatījumus."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Ievadiet e-pasta adresi…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Pievienot"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr "Globāli"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr "Tikai WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr "Vispārīgi"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr "Noteikumi un izslēgumi"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr "Darbplūsma"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr "Papildu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr "Apstiprināt importu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr "Eksporta versija:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr "Pašreizējā versija:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:585
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible"
+" with your current version. Consider updating the plugin before importing."
+msgstr ""
+"Eksporta fails ir no jaunākas versijas. Daži iestatījumi var nebūt saderīgi "
+"ar jūsu pašreizējo versiju. Apsveriet spraudņa atjaunināšanu pirms "
+"importēšanas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"Tas pārrakstīs visus pašreizējos spraudņa iestatījumus. Šo darbību nevar "
+"atsaukt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr "Importē iestatījumus..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Iestatījumi veiksmīgi importēti. Pārlādē lapu..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr "Iestatījumi veiksmīgi eksportēti."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr "Eksportēt iestatījumus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr "Importēt iestatījumus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr "Nederīgs iestatījumu fails. Lūdzu, atlasiet derīgu eksporta failu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr "Nevarēja nolasīt failu. Pārliecinieties, ka tas ir derīgs JSON fails."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:645
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Eksportēt visus spraudņa iestatījumus kā JSON failu vai importēt "
+"iestatījumus no iepriekš eksportēta faila."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr "Atteikuma noteikumi un nosacījumi"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr "Publicēts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr "Priekšskatījums"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr "Rediģēt lapu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr "Vai tiešām vēlaties dzēst noteikumu un nosacījumu lapu?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr "Neizdevās dzēst lapu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr "Lapa dzēsta."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr "Dzēst"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:833
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Pieejamie īskodi: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:730
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive "
+"2011/83/EU. The page includes dynamic shortcodes for excluded products, "
+"categories, and product types that stay in sync with your settings."
+msgstr ""
+"Ģenerēt atteikuma noteikumu un nosacījumu lapu, pamatojoties uz ES Direktīvu"
+" 2011/83/ES. Lapa ietver dinamiskus īskodus izslēgtajiem produktiem, "
+"kategorijām un produktu veidiem, kas sinhronizējas ar jūsu iestatījumiem."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr "Neizdevās izveidot lapu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr "Lapa izveidota."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr "Izveido…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr "Ģenerēt noteikumu un nosacījumu lapu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr "-- Atlasīt lapu --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr "Neizdevās ielādēt iestatījumus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr "Ielādē iestatījumus..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr "Nevar ielādēt iestatījumus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr "reCAPTCHA atslēgas atvienotas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr "Neizdevās atvienot."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr "Atvienot"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr "reCAPTCHA atslēgas veiksmīgi saglabātas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr "Neizdevās saglabāt atslēgas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr "Lūdzu, ievadiet gan vietnes atslēgu, gan slepeno atslēgu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr "Saglabāt atslēgas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr "Īskods"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr "Galvenās atteikuma veidlapas uzvedība un attēlošanas preferences."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr "Atteikuma lapa"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr "Rādīt atteikuma pogu kājenē"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Attēlot atteikuma pogu vai saiti vietnes kājenē."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr "Pielāgot izskatu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr "Kājene"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr "Mana konta lapa"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr "Iespējojiet \"Rādīt atteikuma pogu kājenē\" augstāk, lai pielāgotu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr "Iespējojiet \"Rādīt atteikuma pogu Manā kontā\" augstāk, lai pielāgotu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr "Saites teksts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr "Pogas teksts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr "Attēlot kā"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr "Saite"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr "Poga"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr "Krāsas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr "Tēmas noklusējums"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr "Pielāgots"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr "Fons"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr "Teksts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr "Virzīšanas fons"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr "Virzīšanas teksts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr "Kājenes saites teksts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Teksts, kas tiek attēlots kājenes atteikuma saitei."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr "Attēlošanas tvērums"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr "Atļaut daļējus atteikumus"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr "Ieteicams"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr "Atteikuma termiņš"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr "dienas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr "Sākt atskaiti no"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr "Iemesls obligāts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr "Izslēgumi"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1728
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Izslēgt produktu veidus, kategorijas vai konkrētus produktus no atteikuma "
+"tiesībām."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr "Izslēgtie produktu veidi"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr "Produktu veidi, kurus nevar atteikt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr "Izslēgtās kategorijas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Šo kategoriju produktus nevar atteikt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr "Izslēgtie produkti"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr "Meklējiet un atlasiet konkrētus produktus, kurus nevar atteikt."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr "Pasūtījuma statuss"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1786
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Automātiski atjaunināt pasūtījumu statusus, kad atteikuma pieteikumi tiek "
+"iesniegti vai apstiprināti."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr "Iestatīt statusu uz"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1852
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Konfigurējiet administratora paziņojumu adresātus un klienta kontakta "
+"e-pastu, kas tiek rādīts noraidīto atteikumu e-pastos."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr "E-pasta adreses, kas saņem jauna atteikuma pieteikuma paziņojumu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr "Klienta kontakta e-pasts"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1867
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"E-pasta adrese, kas tiek rādīta klientiem, kad atteikuma pieteikums tiek "
+"noraidīts un viņiem ir jāsazinās ar jums."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr "Atteikuma pogas īskods"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1908
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Neobligāts. Pielāgots pogas teksts. Ja nav norādīts, izmanto noklusējuma "
+"īskoda etiķeti."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Neobligāts. Papildu CSS klases, kas pievienotas pogai."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr "Datu pārvaldība"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Kontrolēt, kas notiek ar spraudņa datiem, kad spraudnis tiek noņemts."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr "Dzēst datus pie atinstalēšanas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1941
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Noņemt visus spraudņa datus (iestatījumus, atteikuma pieteikumus, datubāzes "
+"tabulas), kad spraudnis tiek atinstalēts. Šī darbība ir neatgriezeniska."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr "Destruktīvs"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr "Pievienojiet vismaz vienu adresātu, lai saglabātu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr "Nesaglabātas izmaiņas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr "Visas izmaiņas saglabātas"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr "Atmest"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr "Iestatījumi veiksmīgi saglabāti."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr "Neizdevās saglabāt iestatījumus."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Pievienojiet vismaz vienu administratora paziņojumu adresātu pirms "
+"saglabāšanas."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr "Saglabā..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
+msgstr "Saglabāt iestatījumus"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Labot šo"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr "Dokumentācija"
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr "Noraidīt brīdinājumu"

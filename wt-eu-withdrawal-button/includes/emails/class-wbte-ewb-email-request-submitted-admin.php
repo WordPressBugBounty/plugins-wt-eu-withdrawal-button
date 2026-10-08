@@ -122,10 +122,8 @@ class Wbte_Ewb_Email_Request_Submitted_Admin extends WC_Email {
 		$this->object  = $order;
 
 		// Admin email: use the site default language, not the order's customer language.
-		$admin_lang = apply_filters( 'wpml_default_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-		if ( $admin_lang ) {
-			do_action( 'wpml_switch_language', $admin_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-		}
+		$admin_lang    = Wbte_Ewb_Multilingual::get_default_language();
+		$switched_lang = Wbte_Ewb_Multilingual::switch_email_language( $admin_lang );
 
 		$this->setup_locale();
 
@@ -140,8 +138,8 @@ class Wbte_Ewb_Email_Request_Submitted_Admin extends WC_Email {
 
 		$this->restore_locale();
 
-		if ( $admin_lang ) {
-			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		if ( $switched_lang ) {
+			Wbte_Ewb_Multilingual::restore_email_language();
 		}
 	}
 

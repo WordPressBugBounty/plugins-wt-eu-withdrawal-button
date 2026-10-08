@@ -168,7 +168,7 @@ class Wbte_Ewb_Order_Meta_Box {
 			echo '<strong>' . esc_html__( 'Items:', 'wt-eu-withdrawal-button' ) . '</strong>';
 			echo '<ul>';
 			foreach ( $items as $item ) {
-				$name = isset( $item['name'] ) ? $item['name'] : __( 'Unknown item', 'wt-eu-withdrawal-button' );
+				$name = isset( $item['name'] ) ? wp_strip_all_tags( $item['name'] ) : __( 'Unknown item', 'wt-eu-withdrawal-button' );
 				$qty  = isset( $item['qty'] ) ? absint( $item['qty'] ) : 1;
 				echo '<li>' . esc_html( $name ) . ' &times; ' . esc_html( $qty ) . '</li>';
 			}
@@ -307,7 +307,7 @@ class Wbte_Ewb_Order_Meta_Box {
 					$line_item = $order->get_item( $line_item_id );
 
 					if ( $line_item instanceof WC_Order_Item_Product ) {
-						$name = $line_item->get_name();
+						$name = wp_strip_all_tags( $line_item->get_name() );
 					}
 				}
 

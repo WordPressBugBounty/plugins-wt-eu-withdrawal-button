@@ -1685,6 +1685,12 @@
 	overflow-y: hidden;
 }
 
+.wbte-ewb-req-card--refreshing {
+	position: relative;
+	opacity: 0.65;
+	pointer-events: none;
+}
+
 .wbte-ewb-req-grid {
 	display: grid;
 	grid-template-columns: 60px minmax(110px, max-content) minmax(0, 1.6fr) 110px 130px 130px minmax(max-content, auto);
@@ -1907,6 +1913,18 @@
 .wbte-ewb-req-pagination__pages {
 	display: flex;
 	gap: 4px;
+	align-items: center;
+}
+
+.wbte-ewb-req-pagination__ellipsis {
+	min-width: 26px;
+	height: 26px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--muted);
+	font-size: 12px;
+	letter-spacing: 0.08em;
 }
 
 .wbte-ewb-req-pagination__page-btn {

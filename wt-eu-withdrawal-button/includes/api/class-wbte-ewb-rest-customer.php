@@ -327,13 +327,12 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 			);
 		}
 
-		// Switch WPML language to the order's language for the response message.
-		$order = $guest_service->resolve_order_by_number( $order_number );
+		// Switch to the order's language for the response message (WPML, TranslatePress, Polylang).
+		$order          = $guest_service->resolve_order_by_number( $order_number );
+		$switched_lang  = false;
 		if ( $order instanceof WC_Order ) {
-			$order_lang = $order->get_meta( 'wpml_language' );
-			if ( $order_lang ) {
-				do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-			}
+			$order_lang    = Wbte_Ewb_Multilingual::get_order_language( $order );
+			$switched_lang = Wbte_Ewb_Multilingual::switch_email_language( $order_lang );
 		}
 
 		$response = $this->success_response(
@@ -342,8 +341,8 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 			201
 		);
 
-		if ( ! empty( $order_lang ) ) {
-			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		if ( $switched_lang ) {
+			Wbte_Ewb_Multilingual::restore_email_language();
 		}
 
 		return $response;
@@ -736,7 +735,7 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 				foreach ( $bundled_children[ $bundle_key ] as $child_item ) {
 					$child_qty = $child_item instanceof \WC_Order_Item_Product ? absint( $child_item->get_quantity() ) : 1;
 					$children[] = array(
-						'name'     => $child_item->get_name(),
+						'name'     => wp_strip_all_tags( $child_item->get_name() ),
 						'quantity' => $child_qty,
 					);
 
@@ -771,7 +770,7 @@ class Wbte_Ewb_REST_Customer extends Wbte_Ewb_REST_Controller {
 			$item_data = array(
 				'line_item_id'     => absint( $item->get_id() ),
 				'product_id'       => absint( $item->get_product_id() ),
-				'name'             => $item->get_name(),
+				'name'             => wp_strip_all_tags( $item->get_name() ),
 				'quantity'         => $display_qty,
 				'ordered_quantity' => $ordered_qty,
 				'total'            => $line_total,

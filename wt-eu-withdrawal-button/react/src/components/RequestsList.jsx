@@ -17,6 +17,42 @@ import formatWithdrawalDatetime from '../utils/formatWithdrawalDatetime';
 const PER_PAGE = 20;
 
 /**
+ * Build a compact page list with ellipses for large result sets.
+ *
+ * @param {number} current Current page number.
+ * @param {number} total   Total page count.
+ * @return {Array<number|string>} Page numbers and ellipsis markers.
+ */
+const getVisiblePages = ( current, total ) => {
+	if ( total < 1 ) {
+		return [];
+	}
+
+	if ( total <= 7 ) {
+		return Array.from( { length: total }, ( _, i ) => i + 1 );
+	}
+
+	const items = [ 1 ];
+	const start = Math.max( 2, current - 1 );
+	const end = Math.min( total - 1, current + 1 );
+
+	if ( start > 2 ) {
+		items.push( 'ellipsis-start' );
+	}
+
+	for ( let page = start; page <= end; page++ ) {
+		items.push( page );
+	}
+
+	if ( end < total - 1 ) {
+		items.push( 'ellipsis-end' );
+	}
+
+	items.push( total );
+	return items;
+};
+
+/**
  * Format a date string for the requests list.
  *
  * @param {Object} request Request row from the REST API.
@@ -62,10 +98,16 @@ const RequestsList = () => {
 
 	const [ , navigate ] = useLocation();
 	const [ stats, setStats ] = useState( null );
+	const [ filters, setFilters ] = useState( {
+		status: '',
+		date_from: '',
+		date_to: '',
+		search: '',
+	} );
 
 	useEffect( () => {
-		fetchData( { page: currentPage, per_page: PER_PAGE } );
-	}, [ currentPage ] ); // eslint-disable-line react-hooks/exhaustive-deps
+		fetchData( { ...filters, page: currentPage, per_page: PER_PAGE } );
+	}, [ currentPage, filters ] ); // eslint-disable-line react-hooks/exhaustive-deps
 
 	useEffect( () => {
 		fetchStats().then( ( res ) => {
@@ -75,7 +117,7 @@ const RequestsList = () => {
 
 	const handleFilter = ( params ) => {
 		setCurrentPage( 1 );
-		fetchData( { ...params, page: 1, per_page: PER_PAGE } );
+		setFilters( params );
 	};
 
 	const handleRowClick = ( id ) => {
@@ -86,11 +128,7 @@ const RequestsList = () => {
 		setCurrentPage( page );
 	};
 
-	/* Build numbered page list */
-	const pageNumbers = [];
-	for ( let i = 1; i <= totalPages; i++ ) {
-		pageNumbers.push( i );
-	}
+	const pageNumbers = getVisiblePages( currentPage, totalPages );
 
 	const showFrom = ( currentPage - 1 ) * PER_PAGE + 1;
 	const showTo = Math.min( currentPage * PER_PAGE, total );
@@ -174,7 +212,7 @@ const RequestsList = () => {
 			) }
 
 			{ /* ── Loading ── */ }
-			{ loading && (
+			{ loading && requests.length === 0 && (
 				<div className="wbte-ewb-req-card wbte-ewb-req-loading">
 					<Spinner />
 				</div>
@@ -188,8 +226,11 @@ const RequestsList = () => {
 			) }
 
 			{ /* ── Table ── */ }
-			{ ! loading && requests.length > 0 && (
-				<div className="wbte-ewb-req-card">
+			{ requests.length > 0 && (
+				<div
+					className={ `wbte-ewb-req-card${ loading ? ' wbte-ewb-req-card--refreshing' : '' }` }
+					aria-busy={ loading ? 'true' : 'false' }
+				>
 					{ /* Header */ }
 					<div className="wbte-ewb-req-grid wbte-ewb-req-grid--header">
 						<span>{ __( 'ID', 'wt-eu-withdrawal-button' ) }</span>
@@ -298,17 +339,23 @@ const RequestsList = () => {
 						</span>
 						<div className="wbte-ewb-req-pagination__pages">
 							{ pageNumbers.map( ( p ) => (
-								<button
-									key={ p }
-									type="button"
-									className={
-										`wbte-ewb-req-pagination__page-btn` +
-										( p === currentPage ? ' wbte-ewb-req-pagination__page-btn--active' : '' )
-									}
-									onClick={ () => handlePageClick( p ) }
-								>
-									{ p }
-								</button>
+								typeof p === 'number' ? (
+									<button
+										key={ p }
+										type="button"
+										className={
+											`wbte-ewb-req-pagination__page-btn` +
+											( p === currentPage ? ' wbte-ewb-req-pagination__page-btn--active' : '' )
+										}
+										onClick={ () => handlePageClick( p ) }
+									>
+										{ p }
+									</button>
+								) : (
+									<span key={ p } className="wbte-ewb-req-pagination__ellipsis" aria-hidden="true">
+										&hellip;
+									</span>
+								)
 							) ) }
 						</div>
 						<span className="wbte-ewb-req-pagination__rows">

@@ -932,6 +932,41 @@ class Wbte_Ewb_Request {
 	}
 
 	/**
+	 * Convert this request to a lightweight array for the admin list.
+	 *
+	 * Avoids loading WooCommerce orders, line items, and receipt hashes.
+	 * Those belong on the single-request endpoint via to_array().
+	 *
+	 * @since 1.1.1
+	 *
+	 * @return array<string, mixed>
+	 */
+	public function to_list_array() {
+		$data = array(
+			'id'                        => (int) $this->id,
+			'order_id'                  => (int) $this->order_id,
+			'order_number'              => $this->order_number,
+			'customer_email'            => $this->customer_email,
+			'status'                    => $this->status,
+			'request_type'              => $this->request_type,
+			'is_partial'                => 'partial' === $this->request_type,
+			'created_at'                => $this->created_at,
+			'created_at_formatted'      => $this->get_created_at_formatted(),
+			'created_at_date_formatted' => self::format_datetime_date( $this->created_at ),
+		);
+
+		/**
+		 * Filters the lightweight request data used by the admin list REST endpoint.
+		 *
+		 * @since 1.1.1
+		 *
+		 * @param array<string, mixed> $data    The list-row data.
+		 * @param Wbte_Ewb_Request     $request The request object.
+		 */
+		return apply_filters( 'wbte_ewb_request_list_data', $data, $this );
+	}
+
+	/**
 	 * Convert all properties to an associative array.
 	 *
 	 * Suitable for REST API responses.

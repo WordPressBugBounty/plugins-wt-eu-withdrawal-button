@@ -1,0 +1,3042 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebToffee EU Order Withdrawal Button for WooCommerce 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wt-eu-withdrawal-button\n"
+"POT-Creation-Date: 2026-10-06T09:17:11+00:00\n"
+"PO-Revision-Date: 2026-10-06 15:29+0000\n"
+"Last-Translator: WebToffee <info@webtoffee.com>\n"
+"Language-Team: sk_SK\n"
+"Language: sk-SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Domain: wt-eu-withdrawal-button\n"
+"X-Generator: WebToffee Translation Generator\n"
+
+#. Plugin Name of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee EU Order Withdrawal Button for WooCommerce"
+msgstr "WebToffee EU tlačidlo na odstúpenie od zmluvy pre WooCommerce"
+
+#. Plugin URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+msgstr "https://www.wordpress.org/plugins/wt-eu-withdrawal-button"
+
+#. Description of the plugin
+#: wt-eu-withdrawal-button.php
+msgid ""
+"Manage withdrawal of contract / order cancellation requests for WooCommerce "
+"orders. EU-compliant, HPOS-compatible."
+msgstr ""
+"Spravujte žiadosti o odstúpenie od zmluvy / zrušenie objednávok pre "
+"WooCommerce objednávky. V súlade s právom EÚ, kompatibilné s HPOS."
+
+#. Author of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin
+#: wt-eu-withdrawal-button.php
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:112
+#: includes/admin/class-wbte-ewb-order-meta-box.php:554
+#: includes/frontend/class-wbte-ewb-my-account.php:456
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:54
+#: react/src/components/RequestsList.jsx:223
+#: react/src/components/StatusBadge.jsx:28
+msgid "Pending"
+msgstr "Čakajúce"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:113
+#: includes/admin/class-wbte-ewb-order-meta-box.php:555
+#: includes/frontend/class-wbte-ewb-my-account.php:457
+#: templates/emails/customer-withdrawal-approved.php:102
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:55
+#: react/src/components/RequestsList.jsx:220
+#: react/src/components/StatusBadge.jsx:29
+msgid "Approved"
+msgstr "Schválené"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:114
+#: includes/admin/class-wbte-ewb-order-meta-box.php:556
+#: includes/frontend/class-wbte-ewb-my-account.php:458
+#: templates/emails/customer-withdrawal-rejected.php:115
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:56
+#: react/src/components/RequestsList.jsx:222
+#: react/src/components/StatusBadge.jsx:30
+msgid "Rejected"
+msgstr "Zamietnuté"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:115
+#: includes/admin/class-wbte-ewb-admin-assets.php:182
+#: includes/admin/class-wbte-ewb-order-meta-box.php:240
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:180
+msgid "Approve"
+msgstr "Schváliť"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:116
+#: includes/admin/class-wbte-ewb-admin-assets.php:183
+#: includes/admin/class-wbte-ewb-order-meta-box.php:243
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:188
+msgid "Reject"
+msgstr "Zamietnuť"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:117
+#: includes/admin/class-wbte-ewb-order-meta-box.php:160
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:228
+msgid "Full Withdrawal"
+msgstr "Úplné odstúpenie"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:118
+#: includes/admin/class-wbte-ewb-order-meta-box.php:158
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:227
+msgid "Partial Withdrawal"
+msgstr "Čiastočné odstúpenie"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:119
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:186
+msgid "No withdrawal requests found."
+msgstr "Nenašli sa žiadne žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:120
+msgid "Loading…"
+msgstr "Načítava sa…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:121
+#: includes/admin/class-wbte-ewb-admin-assets.php:189
+#: includes/frontend/class-wbte-ewb-frontend.php:156
+msgid "An error occurred. Please try again."
+msgstr "Vyskytla sa chyba. Skúste to prosím znova."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:122
+#: includes/admin/class-wbte-ewb-admin-assets.php:184
+msgid "Are you sure you want to approve this withdrawal request?"
+msgstr "Naozaj chcete schváliť túto žiadosť o odstúpenie?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:123
+#: includes/admin/class-wbte-ewb-admin-assets.php:185
+msgid "Are you sure you want to reject this withdrawal request?"
+msgstr "Naozaj chcete zamietnuť túto žiadosť o odstúpenie?"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:181
+msgid "Processing…"
+msgstr "Spracováva sa…"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:186
+msgid "Please enter a reason for rejecting this withdrawal request:"
+msgstr "Zadajte prosím dôvod zamietnutia tejto žiadosti o odstúpenie:"
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:187
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:378
+msgid "A reason is required when rejecting a request."
+msgstr "Pri zamietnutí žiadosti je dôvod povinný."
+
+#: includes/admin/class-wbte-ewb-admin-assets.php:188
+msgid "Request updated successfully."
+msgstr "Žiadosť bola úspešne aktualizovaná."
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:50
+#: includes/admin/class-wbte-ewb-order-meta-box.php:62
+#: includes/frontend/class-wbte-ewb-my-account.php:260
+msgid "Withdrawal Requests"
+msgstr "Žiadosti o odstúpenie"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:51
+#: includes/frontend/class-wbte-ewb-my-account.php:80
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:21
+#: react/src/layouts/AdminLayout.jsx:24
+msgid "Withdrawals"
+msgstr "Odstúpenia"
+
+#: includes/admin/class-wbte-ewb-admin-menu.php:88
+msgid "Loading withdrawal dashboard…"
+msgstr "Načítava sa prehľad odstúpení…"
+
+#: includes/admin/class-wbte-ewb-admin.php:115
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:43
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: includes/admin/class-wbte-ewb-admin.php:116
+msgid "Support"
+msgstr "Podpora"
+
+#: includes/admin/class-wbte-ewb-admin.php:117
+msgid "Review"
+msgstr "Recenzia"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:82
+#: includes/frontend/class-wbte-ewb-form-handler.php:111
+msgid "Order not found."
+msgstr "Objednávka sa nenašla."
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:96
+msgid "No withdrawal request for this order."
+msgstr "K tejto objednávke neexistuje žiadosť o odstúpenie."
+
+#. translators: 1: request position, 2: total requests, 3: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:134
+msgid "Request %1$d of %2$d (#%3$d)"
+msgstr "Žiadosť %1$d z %2$d (#%3$d)"
+
+#. translators: %d: request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:142
+msgid "Request #%d"
+msgstr "Žiadosť #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:150
+msgid "Status:"
+msgstr "Stav:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:156
+msgid "Type:"
+msgstr "Typ:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:168
+msgid "Items:"
+msgstr "Položky:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:171
+#: includes/admin/class-wbte-ewb-order-meta-box.php:315
+#: templates/emails/admin-withdrawal-submitted.php:157
+#: templates/emails/customer-withdrawal-approved.php:141
+#: templates/emails/customer-withdrawal-submitted.php:131
+msgid "Unknown item"
+msgstr "Neznáma položka"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:182
+#: templates/emails/customer-guest-verification.php:37
+msgid "Reason:"
+msgstr "Dôvod:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:189
+msgid "Submitted:"
+msgstr "Odoslané:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:197
+msgid "Receipt hash:"
+msgstr "Hash potvrdenia:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:215
+msgid "Processed:"
+msgstr "Spracované:"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:221
+msgid "by"
+msgstr "spracoval/a"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:231
+msgid "View in dashboard"
+msgstr "Zobraziť v prehľade"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:271
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:94
+msgid "Leave a review"
+msgstr "Zanechať recenziu"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:274
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:101
+msgid "Remind me later"
+msgstr "Pripomenúť neskôr"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:277
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:107
+msgid "Dismiss review request"
+msgstr "Odmietnuť žiadosť o recenziu"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:441
+msgid "Approve withdrawal request #%d"
+msgstr "Schváliť žiadosť o odstúpenie #%d"
+
+#. translators: %d: withdrawal request ID
+#: includes/admin/class-wbte-ewb-order-meta-box.php:446
+msgid "Reject withdrawal request #%d"
+msgstr "Zamietnuť žiadosť o odstúpenie #%d"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:450
+msgid "Approve withdrawal request"
+msgstr "Schváliť žiadosť o odstúpenie"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:451
+msgid "Reject withdrawal request"
+msgstr "Zamietnuť žiadosť o odstúpenie"
+
+#: includes/admin/class-wbte-ewb-order-meta-box.php:537
+msgid "Rejected from orders list."
+msgstr "Zamietnuté zo zoznamu objednávok."
+
+#. translators: %s: quantity withdrawn
+#: includes/admin/class-wbte-ewb-order-meta-box.php:642
+msgctxt "item badge"
+msgid "Withdrawn %sx"
+msgstr "Odstúpené %sx"
+
+#. translators: %s: quantity requested
+#: includes/admin/class-wbte-ewb-order-meta-box.php:653
+msgctxt "item badge"
+msgid "Requested %sx"
+msgstr "Požadované %sx"
+
+#: includes/admin/class-wbte-ewb-settings.php:74
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:266
+#: react/src/components/RequestDetail.jsx:300
+msgid "Withdrawal"
+msgstr "Odstúpenie"
+
+#: includes/admin/class-wbte-ewb-settings.php:127
+msgid "Withdrawal Settings"
+msgstr "Nastavenia odstúpenia"
+
+#: includes/admin/class-wbte-ewb-settings.php:129
+msgid ""
+"Configure how withdrawal / right-of-return requests work in your store."
+msgstr ""
+"Nastavte, ako fungujú žiadosti o odstúpenie od zmluvy / vrátenie tovaru vo "
+"vašom obchode."
+
+#: includes/admin/class-wbte-ewb-settings.php:134
+msgid "Withdrawal Page"
+msgstr "Stránka odstúpenia"
+
+#: includes/admin/class-wbte-ewb-settings.php:135
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1594
+msgid "Select the page where customers can submit withdrawal requests."
+msgstr ""
+"Vyberte stránku, na ktorej môžu zákazníci odosielať žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:145
+msgid "Embed Footer Link"
+msgstr "Vložiť odkaz do pätičky"
+
+#: includes/admin/class-wbte-ewb-settings.php:146
+msgid "Automatically add a link to the withdrawal page in the site footer."
+msgstr "Automaticky pridať odkaz na stránku odstúpenia do pätičky webu."
+
+#: includes/admin/class-wbte-ewb-settings.php:153
+msgid "Display Scope"
+msgstr "Rozsah zobrazenia"
+
+#: includes/admin/class-wbte-ewb-settings.php:154
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1638
+msgid "Where the withdrawal form and links are displayed."
+msgstr "Kde sa zobrazuje formulár na odstúpenie a odkazy."
+
+#: includes/admin/class-wbte-ewb-settings.php:158
+msgid "Global (all pages)"
+msgstr "Globálne (všetky stránky)"
+
+#: includes/admin/class-wbte-ewb-settings.php:159
+msgid "WooCommerce pages only"
+msgstr "Iba stránky WooCommerce"
+
+#: includes/admin/class-wbte-ewb-settings.php:168
+msgid "Allow Partial Withdrawals"
+msgstr "Povoliť čiastočné odstúpenia"
+
+#: includes/admin/class-wbte-ewb-settings.php:169
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1652
+msgid "Let customers withdraw individual items instead of the entire order."
+msgstr ""
+"Umožnite zákazníkom odstúpiť od jednotlivých položiek namiesto celej "
+"objednávky."
+
+#: includes/admin/class-wbte-ewb-settings.php:176
+msgid "Withdrawal Period (days)"
+msgstr "Lehota na odstúpenie (dní)"
+
+#: includes/admin/class-wbte-ewb-settings.php:177
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1658
+msgid ""
+"Number of days after the selected start status during which a withdrawal "
+"request can be submitted."
+msgstr ""
+"Počet dní po vybranom počiatočnom stave, počas ktorých je možné odoslať "
+"žiadosť o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:190
+msgid "Withdrawal Period Starts From"
+msgstr "Lehota na odstúpenie začína od"
+
+#: includes/admin/class-wbte-ewb-settings.php:191
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1688
+msgid ""
+"Select one or more order statuses. The countdown begins on the earliest date"
+" the order reaches any selected status."
+msgstr ""
+"Vyberte jeden alebo viac stavov objednávky. Odpočítavanie začína dátumom, "
+"kedy objednávka prvýkrát dosiahne niektorý z vybraných stavov."
+
+#: includes/admin/class-wbte-ewb-settings.php:202
+msgid "Reason Required"
+msgstr "Dôvod povinný"
+
+#: includes/admin/class-wbte-ewb-settings.php:203
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1703
+msgid ""
+"Require customers to provide a reason when submitting a withdrawal request."
+msgstr ""
+"Vyžadovať od zákazníkov uvedenie dôvodu pri odoslaní žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:210
+msgid "Excluded Product Types"
+msgstr "Vylúčené typy produktov"
+
+#: includes/admin/class-wbte-ewb-settings.php:211
+msgid "Product types that are excluded from withdrawal eligibility."
+msgstr "Typy produktov, ktoré sú vylúčené z práva na odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:215
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:231
+msgid "Virtual"
+msgstr "Virtuálny"
+
+#: includes/admin/class-wbte-ewb-settings.php:216
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:232
+msgid "Downloadable"
+msgstr "Na stiahnutie"
+
+#: includes/admin/class-wbte-ewb-settings.php:217
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:233
+msgid "Grouped"
+msgstr "Skupinový"
+
+#: includes/admin/class-wbte-ewb-settings.php:218
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:234
+msgid "External / Affiliate"
+msgstr "Externý / Partnerský"
+
+#: includes/admin/class-wbte-ewb-settings.php:227
+msgid "Excluded Categories"
+msgstr "Vylúčené kategórie"
+
+#: includes/admin/class-wbte-ewb-settings.php:228
+msgid "Product categories that are excluded from withdrawal eligibility."
+msgstr "Kategórie produktov, ktoré sú vylúčené z práva na odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:239
+msgid "Excluded Products"
+msgstr "Vylúčené produkty"
+
+#: includes/admin/class-wbte-ewb-settings.php:240
+msgid "Specific products that are excluded from withdrawal eligibility."
+msgstr "Konkrétne produkty, ktoré sú vylúčené z práva na odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:250
+msgid "Excluded Behavior"
+msgstr "Správanie pri vylúčení"
+
+#: includes/admin/class-wbte-ewb-settings.php:251
+msgid "How excluded products are handled in the withdrawal form."
+msgstr "Ako sa zaobchádza s vylúčenými produktmi vo formulári na odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:255
+msgid "Hide excluded items"
+msgstr "Skryť vylúčené položky"
+
+#: includes/admin/class-wbte-ewb-settings.php:256
+msgid "Show disabled with notice"
+msgstr "Zobraziť neaktívne s upozornením"
+
+#: includes/admin/class-wbte-ewb-settings.php:271
+msgid "Order Status"
+msgstr "Stav objednávky"
+
+#: includes/admin/class-wbte-ewb-settings.php:273
+msgid ""
+"Control whether order statuses are changed automatically during the "
+"withdrawal workflow."
+msgstr ""
+"Nastavte, či sa stavy objednávok menia automaticky počas procesu odstúpenia."
+
+#: includes/admin/class-wbte-ewb-settings.php:278
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1794
+msgid "Change order status on submission"
+msgstr "Zmeniť stav objednávky pri odoslaní"
+
+#: includes/admin/class-wbte-ewb-settings.php:279
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1795
+msgid ""
+"Automatically change the order status when a withdrawal request is "
+"submitted."
+msgstr "Automaticky zmeniť stav objednávky po odoslaní žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:286
+msgid "Submission order status"
+msgstr "Stav objednávky pri odoslaní"
+
+#: includes/admin/class-wbte-ewb-settings.php:287
+msgid "The order status to set when a withdrawal request is submitted."
+msgstr "Stav objednávky, ktorý sa nastaví po odoslaní žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:298
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1819
+msgid "Change order status on approval"
+msgstr "Zmeniť stav objednávky pri schválení"
+
+#: includes/admin/class-wbte-ewb-settings.php:299
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1820
+msgid ""
+"Automatically change the order status when a withdrawal request is approved."
+msgstr ""
+"Automaticky zmeniť stav objednávky po schválení žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:306
+msgid "Approval order status"
+msgstr "Stav objednávky pri schválení"
+
+#: includes/admin/class-wbte-ewb-settings.php:307
+msgid "The order status to set when a withdrawal request is approved."
+msgstr "Stav objednávky, ktorý sa nastaví po schválení žiadosti o odstúpenie."
+
+#: includes/admin/class-wbte-ewb-settings.php:324
+msgid "Email Notifications"
+msgstr "E-mailové upozornenia"
+
+#: includes/admin/class-wbte-ewb-settings.php:326
+msgid "Configure admin recipients for withdrawal notification emails."
+msgstr ""
+"Nastavte príjemcov administrátorských e-mailov s upozorneniami na "
+"odstúpenia."
+
+#: includes/admin/class-wbte-ewb-settings.php:331
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:211
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1857
+msgid "Recipient(s)"
+msgstr "Príjemca(-ovia)"
+
+#: includes/admin/class-wbte-ewb-settings.php:332
+msgid "Comma-separated email addresses for admin withdrawal notifications."
+msgstr ""
+"E-mailové adresy oddelené čiarkou pre administrátorské upozornenia na "
+"odstúpenia."
+
+#: includes/admin/class-wbte-ewb-settings.php:348
+msgid "Withdrawal Button Shortcode"
+msgstr "Shortcode tlačidla na odstúpenie"
+
+#: includes/admin/class-wbte-ewb-settings.php:361
+msgid "Data Management"
+msgstr "Správa údajov"
+
+#: includes/admin/class-wbte-ewb-settings.php:368
+msgid "Delete Data on Uninstall"
+msgstr "Odstrániť údaje pri odinštalovaní"
+
+#: includes/admin/class-wbte-ewb-settings.php:369
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled."
+msgstr ""
+"Odstrániť všetky údaje pluginu (nastavenia, žiadosti o odstúpenie, "
+"databázové tabuľky) pri odinštalovaní pluginu."
+
+#: includes/admin/class-wbte-ewb-settings.php:371
+msgid "Warning: This action is irreversible."
+msgstr "Upozornenie: Túto akciu nie je možné vrátiť."
+
+#: includes/admin/class-wbte-ewb-settings.php:403
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1010
+msgid "Order created"
+msgstr "Objednávka vytvorená"
+
+#: includes/admin/class-wbte-ewb-settings.php:447
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1897
+msgid ""
+"Add a withdrawal request button to any page or post. The button links to "
+"your configured withdrawal page."
+msgstr ""
+"Pridajte tlačidlo žiadosti o odstúpenie na ľubovoľnú stránku alebo "
+"príspevok. Tlačidlo odkazuje na vašu nakonfigurovanú stránku odstúpenia."
+
+#: includes/admin/class-wbte-ewb-settings.php:448
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1902
+msgid "Examples"
+msgstr "Príklady"
+
+#: includes/admin/class-wbte-ewb-settings.php:451
+msgid ""
+"Optional. Custom button text. Uses the default shortcode label when omitted."
+msgstr ""
+"Voliteľné. Vlastný text tlačidla. Ak nie je zadaný, použije sa predvolený "
+"text shortcode."
+
+#: includes/admin/class-wbte-ewb-settings.php:452
+msgid "Optional. Extra CSS classes added to the button."
+msgstr "Voliteľné. Ďalšie CSS triedy pridané k tlačidlu."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:89
+msgid "Deactivate"
+msgstr "Deaktivovať"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:130
+msgid "Processing..."
+msgstr "Spracováva sa..."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:131
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:71
+#: includes/frontend/class-wbte-ewb-frontend.php:159
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:34
+msgid "Please enter a valid email address."
+msgstr "Zadajte prosím platnú e-mailovú adresu."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:132
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:286
+msgid "Submit & Deactivate"
+msgstr "Odoslať a deaktivovať"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:149
+msgid "Issue with the withdrawal workflow"
+msgstr "Problém s procesom odstúpenia"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:154
+msgid "Guest withdrawal"
+msgstr "Odstúpenie pre hostí"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:156
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:162
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:168
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:174
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:180
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:200
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:212
+msgid "Could you tell us a bit more?"
+msgstr "Mohli by ste nám povedať viac?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:160
+#: includes/frontend/class-wbte-ewb-frontend.php:172
+msgid "Partial withdrawal"
+msgstr "Čiastočné odstúpenie"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:166
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1849
+msgid "Email notifications"
+msgstr "E-mailové upozornenia"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:172
+msgid "EU compliance / legal concerns"
+msgstr "Súlad s právom EÚ / právne otázky"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:178
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:210
+msgid "Other"
+msgstr "Iné"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:186
+msgid "I found a better plugin"
+msgstr "Našiel/našla som lepší plugin"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:188
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:206
+msgid "Which plugin?"
+msgstr "Ktorý plugin?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:192
+msgid ""
+"The plugin is great, but I need a specific feature that you don't support"
+msgstr ""
+"Plugin je skvelý, ale potrebujem konkrétnu funkciu, ktorú nepodporujete"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:194
+msgid "Could you tell us more about that feature?"
+msgstr "Mohli by ste nám povedať viac o tejto funkcii?"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:198
+msgid "It's not what I was looking for"
+msgstr "Nie je to to, čo som hľadal/a"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:204
+msgid "A conflict with another plugin"
+msgstr "Konflikt s iným pluginom"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:237
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "Ak máte chvíľku, dajte nám prosím vedieť, prečo deaktivujete:"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:266
+msgid "WebToffee can contact me about this feedback."
+msgstr "WebToffee ma môže kontaktovať ohľadom tejto spätnej väzby."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:270
+msgid "Enter your email address."
+msgstr "Zadajte svoju e-mailovú adresu."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:272
+msgid "Enter email address"
+msgstr "Zadajte e-mailovú adresu"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:277
+msgid ""
+"We do not collect any personal data when you submit this form. It's your "
+"feedback that we value."
+msgstr ""
+"Pri odoslaní tohto formulára nezhromažďujeme žiadne osobné údaje. Ceníme si "
+"vašu spätnú väzbu."
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:278
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobných údajov"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:284
+msgid "Go to support"
+msgstr "Prejsť na podporu"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:287
+#: includes/frontend/class-wbte-ewb-frontend.php:165
+#: react/build/admin-dashboard.js:2 react/build/admin-dashboard.js:5
+#: react/src/components/RequestDetail.jsx:391
+#: react/src/components/SettingsPage.jsx:616
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: includes/admin/class-wbte-ewb-uninstall-feedback.php:288
+msgid "I rather wouldn't say"
+msgstr "Radšej by som nepovedal/a"
+
+#: includes/api/class-wbte-ewb-rest-controller.php:91
+#: includes/api/class-wbte-ewb-rest-review-banner.php:79
+msgid "You do not have permission to perform this action."
+msgstr "Nemáte oprávnenie vykonať túto akciu."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:110
+msgid "Invalid security token. Please refresh the page and try again."
+msgstr "Neplatný bezpečnostný token. Obnovte stránku a skúste to znova."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:118
+msgid ""
+"Logged-in customers should submit withdrawal requests from their account."
+msgstr ""
+"Prihlásení zákazníci by mali odosielať žiadosti o odstúpenie zo svojho účtu."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:149
+msgid "Order number and email are required for guest access."
+msgstr "Pre prístup hostí je potrebné číslo objednávky a e-mail."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:160
+msgid "Please provide a valid email address."
+msgstr "Zadajte prosím platnú e-mailovú adresu."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:171
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:178
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:182
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:281
+#: includes/frontend/class-wbte-ewb-guest-verification.php:240
+#: templates/withdrawal-form.php:75
+msgid "No order found matching the provided order number."
+msgstr "Nenašla sa žiadna objednávka zodpovedajúca zadanému číslu objednávky."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:181
+#: includes/api/class-wbte-ewb-rest-customer.php:614
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:187
+msgid "The email address does not match the order."
+msgstr "E-mailová adresa nezodpovedá objednávke."
+
+#: includes/api/class-wbte-ewb-rest-controller.php:191
+msgid "The order number does not match the requested order."
+msgstr "Číslo objednávky nezodpovedá požadovanej objednávke."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:155
+#: includes/api/class-wbte-ewb-rest-customer.php:841
+msgid "WooCommerce order ID."
+msgstr "ID objednávky WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:162
+msgid "Order number (required for guest access)."
+msgstr "Číslo objednávky (povinné pre prístup hostí)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:169
+msgid "Customer email (required for guest access)."
+msgstr "E-mail zákazníka (povinný pre prístup hostí)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:192
+msgid "WooCommerce order ID. Provide this or order_number."
+msgstr "ID objednávky WooCommerce. Zadajte toto alebo order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:199
+msgid "Customer-facing order number. Provide this or order_id."
+msgstr "Zákaznícke číslo objednávky. Zadajte toto alebo order_id."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:206
+msgid "Customer email address (required for guests)."
+msgstr "E-mailová adresa zákazníka (povinná pre hostí)."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:214
+msgid "Whether this is a full or partial withdrawal."
+msgstr "Či ide o úplné alebo čiastočné odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:222
+msgid ""
+"Line items for partial withdrawal. Required if request_type is partial."
+msgstr ""
+"Položky pre čiastočné odstúpenie. Povinné, ak je request_type čiastočné."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:229
+msgid "WooCommerce line item ID."
+msgstr "ID položky WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:234
+msgid "WooCommerce product ID."
+msgstr "ID produktu WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:239
+msgid "Quantity to withdraw."
+msgstr "Množstvo na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:250
+#: includes/api/class-wbte-ewb-rest-customer.php:884
+msgid "Customer reason for the withdrawal."
+msgstr "Dôvod zákazníka pre odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:304
+#: includes/api/class-wbte-ewb-rest-customer.php:365
+msgid "Guest withdrawal service is not available."
+msgstr "Služba odstúpenia pre hostí nie je dostupná."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:376
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:309
+#: includes/core/class-wbte-ewb-request-service.php:149
+msgid "Please select at least one item to withdraw."
+msgstr "Vyberte prosím aspoň jednu položku na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:404
+#: includes/api/class-wbte-ewb-rest-customer.php:547
+msgid "Withdrawal request submitted successfully."
+msgstr "Žiadosť o odstúpenie bola úspešne odoslaná."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:421
+msgid ""
+"Guest withdrawal requests must be verified by email before they are created."
+msgstr ""
+"Žiadosti o odstúpenie od hostí musia byť pred vytvorením overené e-mailom."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:437
+msgid "Either order_id or order_number is required."
+msgstr "Je potrebné zadať order_id alebo order_number."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:446
+msgid "Items are required for partial withdrawal requests."
+msgstr "Pre žiadosti o čiastočné odstúpenie sú povinné položky."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:465
+#: includes/api/class-wbte-ewb-rest-customer.php:637
+msgid "The specified order could not be found."
+msgstr "Zadanú objednávku sa nepodarilo nájsť."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:483
+msgid "A reason is required for withdrawal requests."
+msgstr "Pre žiadosti o odstúpenie je povinný dôvod."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:526
+#: includes/api/class-wbte-ewb-rest-requests.php:403
+#: includes/api/class-wbte-ewb-rest-requests.php:445
+msgid "Request service is not available."
+msgstr "Služba žiadostí nie je dostupná."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:574
+msgid "This order does not belong to your account."
+msgstr "Táto objednávka nepatrí k vášmu účtu."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:590
+msgid "Order number is required for guest withdrawal requests."
+msgstr "Číslo objednávky je povinné pre žiadosti o odstúpenie od hostí."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:598
+msgid "Email is required for guest withdrawal requests."
+msgstr "E-mail je povinný pre žiadosti o odstúpenie od hostí."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:606
+msgid "The order number does not match this order."
+msgstr "Číslo objednávky nezodpovedá tejto objednávke."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:654
+msgid "Eligibility service is not available."
+msgstr "Služba oprávnenosti nie je dostupná."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:712
+msgid "This item is not eligible for withdrawal."
+msgstr "Táto položka nie je oprávnená na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:722
+msgid ""
+"This item is already included in a pending or approved withdrawal request."
+msgstr ""
+"Táto položka je už zahrnutá v čakajúcej alebo schválenej žiadosti o "
+"odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:835
+#: includes/api/class-wbte-ewb-rest-requests.php:81
+#: includes/api/class-wbte-ewb-rest-requests.php:104
+#: includes/api/class-wbte-ewb-rest-requests.php:133
+#: includes/api/class-wbte-ewb-rest-requests.php:512
+msgid "Unique identifier for the withdrawal request."
+msgstr "Jedinečný identifikátor žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:846
+#: includes/api/class-wbte-ewb-rest-requests.php:523
+msgid "Customer-facing order number."
+msgstr "Zákaznícke číslo objednávky."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:851
+msgid "Status of the withdrawal request."
+msgstr "Stav žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:858
+msgid "Full or partial withdrawal."
+msgstr "Úplné alebo čiastočné odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:864
+msgid "Line items included in the withdrawal."
+msgstr "Položky zahrnuté v odstúpení."
+
+#: includes/api/class-wbte-ewb-rest-customer.php:889
+msgid "Date the request was created."
+msgstr "Dátum vytvorenia žiadosti."
+
+#: includes/api/class-wbte-ewb-rest-lookups.php:106
+msgid "WooCommerce is not available."
+msgstr "WooCommerce nie je dostupné."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:111
+msgid "Optional note for the approval."
+msgstr "Voliteľná poznámka k schváleniu."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:140
+msgid "Reason for rejecting the withdrawal request."
+msgstr "Dôvod zamietnutia žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:149
+msgid "A note is required when rejecting a request."
+msgstr "Pri zamietnutí žiadosti je poznámka povinná."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:171
+msgid "Filter by request status."
+msgstr "Filtrovať podľa stavu žiadosti."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:179
+msgid "Filter requests created on or after this date (YYYY-MM-DD)."
+msgstr "Filtrovať žiadosti vytvorené v tento dátum alebo neskôr (RRRR-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:187
+msgid "Filter requests created on or before this date (YYYY-MM-DD)."
+msgstr "Filtrovať žiadosti vytvorené v tento dátum alebo skôr (RRRR-MM-DD)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:195
+msgid "Filter by customer email or name."
+msgstr "Filtrovať podľa e-mailu alebo mena zákazníka."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:202
+msgid "Search by request ID, order number or receipt hash."
+msgstr "Hľadať podľa ID žiadosti, čísla objednávky alebo hash potvrdenia."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:209
+msgid "Filter by order number."
+msgstr "Filtrovať podľa čísla objednávky."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:216
+msgid "Filter by receipt hash (full or partial match)."
+msgstr "Filtrovať podľa hash potvrdenia (úplná alebo čiastočná zhoda)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:223
+msgid "Maximum number of items to be returned per page."
+msgstr "Maximálny počet položiek zobrazených na stránku."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:233
+msgid "Current page of the collection."
+msgstr "Aktuálna stránka kolekcie."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:278
+#: includes/api/class-wbte-ewb-rest-requests.php:332
+#: includes/api/class-wbte-ewb-rest-requests.php:484
+msgid "Request repository is not available."
+msgstr "Úložisko žiadostí nie je dostupné."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:342
+#: includes/core/class-wbte-ewb-request-service.php:513
+#: includes/core/class-wbte-ewb-request-service.php:607
+msgid "Withdrawal request not found."
+msgstr "Žiadosť o odstúpenie sa nenašla."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:360
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:25
+msgid "Guest user"
+msgstr "Hosť"
+
+#: includes/api/class-wbte-ewb-rest-requests.php:424
+msgid "Withdrawal request approved successfully."
+msgstr "Žiadosť o odstúpenie bola úspešne schválená."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:466
+msgid "Withdrawal request rejected."
+msgstr "Žiadosť o odstúpenie bola zamietnutá."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:518
+msgid "Associated WooCommerce order ID."
+msgstr "Priradené ID objednávky WooCommerce."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:528
+msgid "Customer email address."
+msgstr "E-mailová adresa zákazníka."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:534
+msgid "Customer user ID (0 or null for guests)."
+msgstr "ID používateľa zákazníka (0 alebo null pre hostí)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:539
+msgid "Current status of the withdrawal request."
+msgstr "Aktuálny stav žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:545
+msgid "Type of withdrawal request."
+msgstr "Typ žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:551
+msgid "JSON-encoded array of line items."
+msgstr "JSON-kódované pole položiek."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:556
+msgid "Customer-provided reason for withdrawal."
+msgstr "Dôvod odstúpenia uvedený zákazníkom."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:561
+msgid "Date the request was created (ISO 8601)."
+msgstr "Dátum vytvorenia žiadosti (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:568
+msgid "Date the request was last updated (ISO 8601)."
+msgstr "Dátum poslednej aktualizácie žiadosti (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:575
+msgid "Admin user ID who processed the request."
+msgstr "ID administrátora, ktorý spracoval žiadosť."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:581
+msgid "Date the request was processed (ISO 8601)."
+msgstr "Dátum spracovania žiadosti (ISO 8601)."
+
+#: includes/api/class-wbte-ewb-rest-requests.php:588
+msgid "Activity log entries for this request."
+msgstr "Záznamy denníka aktivít pre túto žiadosť."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:51
+msgid "Review banner action."
+msgstr "Akcia bannera recenzie."
+
+#: includes/api/class-wbte-ewb-rest-review-banner.php:114
+msgid "Review banner updated."
+msgstr "Banner recenzie bol aktualizovaný."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:70
+#: includes/api/class-wbte-ewb-rest-settings.php:522
+msgid "Page ID for the withdrawal form."
+msgstr "ID stránky pre formulár na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:77
+#: includes/api/class-wbte-ewb-rest-settings.php:527
+msgid "Whether to show a withdrawal link in the site footer."
+msgstr "Či zobraziť odkaz na odstúpenie v pätičke webu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:85
+#: includes/api/class-wbte-ewb-rest-settings.php:533
+msgid "Where to display the footer link."
+msgstr "Kde zobraziť odkaz v pätičke."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:93
+#: includes/api/class-wbte-ewb-rest-settings.php:539
+msgid "Whether to allow partial order withdrawals."
+msgstr "Či povoliť čiastočné odstúpenia od objednávky."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:101
+#: includes/api/class-wbte-ewb-rest-settings.php:545
+msgid "Number of days within which withdrawal is allowed."
+msgstr "Počet dní, počas ktorých je odstúpenie povolené."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:112
+msgid "%s must be at least 1."
+msgstr "%s musí byť aspoň 1."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:119
+#: includes/api/class-wbte-ewb-rest-settings.php:550
+msgid "Order statuses from which the withdrawal period countdown may begin."
+msgstr ""
+"Stavy objednávky, od ktorých môže začať odpočítavanie lehoty na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:129
+#: includes/api/class-wbte-ewb-rest-settings.php:558
+msgid "Whether a reason is required when submitting a withdrawal."
+msgstr "Či je dôvod povinný pri odoslaní žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:137
+#: includes/api/class-wbte-ewb-rest-settings.php:564
+msgid "Product types excluded from withdrawal."
+msgstr "Typy produktov vylúčené z odstúpenia."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:147
+#: includes/api/class-wbte-ewb-rest-settings.php:572
+msgid "Product category IDs excluded from withdrawal."
+msgstr "ID kategórií produktov vylúčených z odstúpenia."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:157
+#: includes/api/class-wbte-ewb-rest-settings.php:580
+msgid "Product IDs excluded from withdrawal."
+msgstr "ID produktov vylúčených z odstúpenia."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:167
+#: includes/api/class-wbte-ewb-rest-settings.php:588
+msgid "How to handle excluded items in the withdrawal form."
+msgstr "Ako zaobchádzať s vylúčenými položkami vo formulári na odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:175
+#: includes/api/class-wbte-ewb-rest-settings.php:594
+msgid "Whether to change order status when a withdrawal is submitted."
+msgstr "Či zmeniť stav objednávky po odoslaní žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:183
+#: includes/api/class-wbte-ewb-rest-settings.php:600
+msgid "Order status to set on withdrawal submission."
+msgstr "Stav objednávky nastavený pri odoslaní žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:190
+#: includes/api/class-wbte-ewb-rest-settings.php:605
+msgid "Whether to change order status when a withdrawal is approved."
+msgstr "Či zmeniť stav objednávky po schválení žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:198
+#: includes/api/class-wbte-ewb-rest-settings.php:611
+msgid "Order status to set on withdrawal approval."
+msgstr "Stav objednávky nastavený pri schválení žiadosti o odstúpenie."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:205
+#: includes/api/class-wbte-ewb-rest-settings.php:616
+msgid "Whether to delete all plugin data when uninstalling."
+msgstr "Či odstrániť všetky údaje pluginu pri odinštalovaní."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:213
+msgid "Email addresses that receive admin withdrawal notifications."
+msgstr ""
+"E-mailové adresy, ktoré dostávajú administrátorské upozornenia na "
+"odstúpenia."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:223
+msgid "Customer-facing contact email shown in rejected withdrawal emails."
+msgstr ""
+"Kontaktný e-mail pre zákazníkov zobrazený v e-mailoch o zamietnutom "
+"odstúpení."
+
+#. translators: %s: parameter name
+#: includes/api/class-wbte-ewb-rest-settings.php:295
+msgid "%s must be an array of email addresses."
+msgstr "%s musí byť pole e-mailových adries."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:302
+msgid "At least one admin notification recipient is required."
+msgstr "Je potrebný aspoň jeden príjemca administrátorských upozornení."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:312
+msgid "One or more notification recipients contain an invalid email address."
+msgstr ""
+"Jeden alebo viac príjemcov upozornení obsahuje neplatnú e-mailovú adresu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:340
+msgid "The customer contact email address is invalid."
+msgstr "Kontaktná e-mailová adresa zákazníka je neplatná."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:379
+msgid "Withdrawal period start statuses must be an array."
+msgstr "Počiatočné stavy lehoty na odstúpenie musia byť pole."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:395
+msgid "One or more withdrawal period start statuses are invalid."
+msgstr ""
+"Jeden alebo viac počiatočných stavov lehoty na odstúpenie je neplatných."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:415
+#: includes/api/class-wbte-ewb-rest-settings.php:450
+msgid "Settings class is not available."
+msgstr "Trieda nastavení nie je dostupná."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:470
+msgid "No valid settings provided to update."
+msgstr "Neboli zadané žiadne platné nastavenia na aktualizáciu."
+
+#: includes/api/class-wbte-ewb-rest-settings.php:500
+msgid "Settings updated successfully."
+msgstr "Nastavenia boli úspešne aktualizované."
+
+#: includes/class-wbte-ewb-install.php:268
+msgctxt "Page slug"
+msgid "withdrawal-request"
+msgstr "ziadost-o-odstupenie"
+
+#: includes/class-wbte-ewb-install.php:270
+msgctxt "Page title"
+msgid "Withdrawal Request"
+msgstr "Žiadosť o odstúpenie"
+
+#: includes/class-wbte-ewb-post-types.php:55
+msgctxt "Order status"
+msgid "Pending Withdrawal"
+msgstr "Čakajúce odstúpenie"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:61
+msgid "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Withdrawal <span class=\"count\">(%s)</span>"
+msgstr[0] "Čakajúce odstúpenie <span class=\"count\">(%s)</span>"
+msgstr[1] "Čakajúce odstúpenia <span class=\"count\">(%s)</span>"
+msgstr[2] "Čakajúcich odstúpení <span class=\"count\">(%s)</span>"
+
+#: includes/class-wbte-ewb-post-types.php:68
+msgctxt "Order status"
+msgid "Withdrawn"
+msgstr "Odstúpené"
+
+#. translators: %s: number of orders
+#: includes/class-wbte-ewb-post-types.php:74
+msgid "Withdrawn <span class=\"count\">(%s)</span>"
+msgid_plural "Withdrawn <span class=\"count\">(%s)</span>"
+msgstr[0] "Odstúpené <span class=\"count\">(%s)</span>"
+msgstr[1] "Odstúpené <span class=\"count\">(%s)</span>"
+msgstr[2] "Odstúpených <span class=\"count\">(%s)</span>"
+
+#. translators: %s: order status label (e.g. "Withdrawal Requested").
+#: includes/class-wbte-ewb-post-types.php:139
+msgid "Change status to %s"
+msgstr "Zmeniť stav na %s"
+
+#: includes/class-wbte-ewb-settings.php:316 react/build/admin-dashboard.js:5
+#: react/src/components/SettingsPage.jsx:1629
+msgid "Request Withdrawal"
+msgstr "Požiadať o odstúpenie"
+
+#: includes/core/class-wbte-ewb-eligibility.php:354
+msgid "This product type cannot be withdrawn."
+msgstr "Tento typ produktu nie je možné odstúpiť."
+
+#: includes/core/class-wbte-ewb-eligibility.php:358
+msgid "Virtual products cannot be withdrawn."
+msgstr "Virtuálne produkty nie je možné odstúpiť."
+
+#: includes/core/class-wbte-ewb-eligibility.php:362
+msgid "Downloadable products cannot be withdrawn."
+msgstr "Produkty na stiahnutie nie je možné odstúpiť."
+
+#: includes/core/class-wbte-ewb-eligibility.php:371
+msgid "This product cannot be withdrawn."
+msgstr "Tento produkt nie je možné odstúpiť."
+
+#: includes/core/class-wbte-ewb-eligibility.php:380
+msgid "Products in this category cannot be withdrawn."
+msgstr "Produkty v tejto kategórii nie je možné odstúpiť."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:64
+#: includes/frontend/class-wbte-ewb-frontend.php:158
+msgid "Please enter your order number."
+msgstr "Zadajte prosím číslo vašej objednávky."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:78
+#: includes/frontend/class-wbte-ewb-form-handler.php:95
+msgid "Please provide a reason for your withdrawal request."
+msgstr "Uveďte prosím dôvod vašej žiadosti o odstúpenie."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:132
+msgid "Unable to queue your withdrawal request. Please try again."
+msgstr ""
+"Nepodarilo sa zaradiť vašu žiadosť o odstúpenie do frontu. Skúste to prosím "
+"znova."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:191
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:288
+#: includes/frontend/class-wbte-ewb-guest-verification.php:241
+msgid "The email address does not match the billing email on this order."
+msgstr ""
+"E-mailová adresa nezodpovedá fakturačnému e-mailu na tejto objednávke."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:196
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:200
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:295
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:548
+#: includes/core/class-wbte-ewb-request-service.php:129
+#: includes/frontend/class-wbte-ewb-guest-verification.php:242
+msgid "This order is not eligible for withdrawal."
+msgstr "Táto objednávka nie je oprávnená na odstúpenie."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:243
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:250
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:661
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:668
+#: includes/frontend/class-wbte-ewb-guest-verification.php:238
+msgid "This verification link is invalid or has already been used."
+msgstr "Tento overovací odkaz je neplatný alebo už bol použitý."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:257
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:532
+#: includes/frontend/class-wbte-ewb-guest-verification.php:243
+msgid "This withdrawal request has already been submitted."
+msgstr "Táto žiadosť o odstúpenie už bola odoslaná."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:266
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:677
+msgid "Verification link expired."
+msgstr "Overovací odkaz vypršal."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:272
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:539
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:683
+#: includes/frontend/class-wbte-ewb-guest-verification.php:239
+msgid ""
+"This verification link has expired. Please submit a new withdrawal request."
+msgstr ""
+"Platnosť tohto overovacieho odkazu vypršala. Odošlite prosím novú žiadosť o "
+"odstúpenie."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:318
+#: includes/frontend/class-wbte-ewb-form-handler.php:129
+#: includes/frontend/class-wbte-ewb-form-handler.php:178
+#: includes/frontend/class-wbte-ewb-guest-verification.php:170
+msgid "The withdrawal service is temporarily unavailable."
+msgstr "Služba odstúpenia je dočasne nedostupná."
+
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:525
+msgid "This verification session is invalid or has expired."
+msgstr "Toto overenie je neplatné alebo jeho platnosť vypršala."
+
+#. translators: %s: site name
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:570
+msgid "[%s] Verify your withdrawal request"
+msgstr "[%s] Overte svoju žiadosť o odstúpenie"
+
+#. translators: 1: verification URL, 2: order number
+#: includes/core/class-wbte-ewb-guest-withdrawal-service.php:576
+msgid ""
+"Please verify your withdrawal request by clicking the link below:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Order: %2$s"
+msgstr ""
+"Overte prosím svoju žiadosť o odstúpenie kliknutím na odkaz nižšie:\n"
+"\n"
+"%1$s\n"
+"\n"
+"Objednávka: %2$s"
+
+#: includes/core/class-wbte-ewb-request-service.php:89
+msgid "The specified order does not exist."
+msgstr "Zadaná objednávka neexistuje."
+
+#: includes/core/class-wbte-ewb-request-service.php:117
+msgid "You are not authorised to submit a withdrawal for this order."
+msgstr "Nemáte oprávnenie odoslať žiadosť o odstúpenie pre túto objednávku."
+
+#: includes/core/class-wbte-ewb-request-service.php:182
+msgid "Failed to create the withdrawal request."
+msgstr "Nepodarilo sa vytvoriť žiadosť o odstúpenie."
+
+#: includes/core/class-wbte-ewb-request-service.php:208
+msgid "Withdrawal request submitted."
+msgstr "Žiadosť o odstúpenie bola odoslaná."
+
+#: includes/core/class-wbte-ewb-request-service.php:278
+msgid "The submitted withdrawal items are invalid."
+msgstr "Odoslané položky na odstúpenie sú neplatné."
+
+#: includes/core/class-wbte-ewb-request-service.php:322
+msgid "No items are currently available for withdrawal on this order."
+msgstr ""
+"Pre túto objednávku nie sú momentálne dostupné žiadne položky na odstúpenie."
+
+#: includes/core/class-wbte-ewb-request-service.php:416
+#: includes/core/class-wbte-ewb-request-service.php:429
+#: includes/core/class-wbte-ewb-request-service.php:439
+msgid "One or more selected items are invalid for this order."
+msgstr ""
+"Jedna alebo viac vybraných položiek je pre túto objednávku neplatných."
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:449
+msgid "\"%s\" is not eligible for withdrawal on this order."
+msgstr "\"%s\" nie je oprávnený na odstúpenie v tejto objednávke."
+
+#: includes/core/class-wbte-ewb-request-service.php:450
+#: includes/core/class-wbte-ewb-request-service.php:468
+msgid "This item"
+msgstr "Táto položka"
+
+#. translators: %s: product name
+#: includes/core/class-wbte-ewb-request-service.php:467
+msgid "\"%s\" is no longer available for withdrawal on this order."
+msgstr "\"%s\" už nie je dostupný na odstúpenie v tejto objednávke."
+
+#. translators: 1: product name, 2: maximum quantity
+#: includes/core/class-wbte-ewb-request-service.php:479
+msgid "The withdrawal quantity for \"%1$s\" cannot exceed %2$d."
+msgstr "Množstvo na odstúpenie pre \"%1$s\" nemôže prekročiť %2$d."
+
+#: includes/core/class-wbte-ewb-request-service.php:480
+msgid "this item"
+msgstr "táto položka"
+
+#: includes/core/class-wbte-ewb-request-service.php:521
+msgid "Only pending requests can be approved."
+msgstr "Schváliť je možné iba čakajúce žiadosti."
+
+#: includes/core/class-wbte-ewb-request-service.php:615
+msgid "Only pending requests can be rejected."
+msgstr "Zamietnuť je možné iba čakajúce žiadosti."
+
+#: includes/core/class-wbte-ewb-request-service.php:703
+msgid "Withdrawal request pending review."
+msgstr "Žiadosť o odstúpenie čaká na posúdenie."
+
+#: includes/core/class-wbte-ewb-request-service.php:740
+msgid "Withdrawal request approved."
+msgstr "Žiadosť o odstúpenie bola schválená."
+
+#: includes/core/class-wbte-ewb-request-service.php:783
+msgid ""
+"Partial withdrawal approved. Restoring order status for remaining items."
+msgstr ""
+"Čiastočné odstúpenie schválené. Obnovuje sa stav objednávky pre zostávajúce "
+"položky."
+
+#. translators: 1: requested quantity, 2: order line quantity
+#: includes/core/class-wbte-ewb-request.php:412
+msgid "%1$d of %2$d"
+msgstr "%1$d z %2$d"
+
+#: includes/core/class-wbte-ewb-request.php:592
+#: includes/frontend/class-wbte-ewb-my-account.php:168
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:254
+msgid "Partial"
+msgstr "Čiastočné"
+
+#: includes/core/class-wbte-ewb-request.php:595
+#: includes/emails/class-wbte-ewb-email-preview.php:93
+#: includes/emails/class-wbte-ewb-email-preview.php:204
+#: includes/frontend/class-wbte-ewb-my-account.php:169
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:255
+msgid "Full"
+msgstr "Úplné"
+
+#. translators: 1: date (DD/MM/YYYY), 2: time (hh:mm AM/PM), 3: timezone
+#. offset label e.g. UTC+10
+#: includes/core/class-wbte-ewb-request.php:618
+msgid "%1$s at %2$s (%3$s)"
+msgstr "%1$s o %2$s (%3$s)"
+
+#: includes/core/class-wbte-ewb-review-banner.php:187
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:71
+msgid ""
+"Your store is making EU right-of-withdrawal easy for customers. Enjoying "
+"WebToffee EU Withdrawal Button? Leave a review!"
+msgstr ""
+"Váš obchod uľahčuje zákazníkom uplatniť právo na odstúpenie od zmluvy podľa "
+"EÚ. Ste spokojní s WebToffee EU Withdrawal Button? Zanechajte recenziu!"
+
+#: includes/core/class-wbte-ewb-review-banner.php:190
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:72
+msgid ""
+"You've been using WebToffee EU Withdrawal Button for a week. We'd really "
+"appreciate if you could take a moment to leave us a review"
+msgstr ""
+"WebToffee EU Withdrawal Button používate už týždeň. Veľmi by sme ocenili, "
+"keby ste si našli chvíľku a zanechali nám recenziu"
+
+#: includes/core/class-wbte-ewb-review-banner.php:235
+msgid "Invalid review banner action."
+msgstr "Neplatná akcia bannera recenzie."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:29
+msgid "Guest Order Not Eligible"
+msgstr "Objednávka hosťa nie je oprávnená"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:30
+msgid ""
+"Sent to guest customers when their order is not eligible for withdrawal."
+msgstr ""
+"Odoslaný hosťovským zákazníkom, keď ich objednávka nie je oprávnená na "
+"odstúpenie."
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:53
+msgid ""
+"[{site_title}]: Your order #{order_number} is not eligible for withdrawal"
+msgstr ""
+"[{site_title}]: Vaša objednávka #{order_number} nie je oprávnená na "
+"odstúpenie"
+
+#: includes/emails/class-wbte-ewb-email-guest-ineligible.php:62
+msgid "Order not eligible for withdrawal"
+msgstr "Objednávka nie je oprávnená na odstúpenie"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:40
+msgid "Guest Withdrawal Verification"
+msgstr "Overenie odstúpenia pre hosťa"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:41
+msgid ""
+"Sent to guest customers to verify their withdrawal request before it is "
+"created."
+msgstr ""
+"Odoslaný hosťovským zákazníkom na overenie ich žiadosti o odstúpenie pred "
+"jej vytvorením."
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:61
+msgid ""
+"[{site_title}]: Verify your withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Overte svoju žiadosť o odstúpenie pre objednávku "
+"#{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-guest-verification.php:70
+msgid "Verify your withdrawal request"
+msgstr "Overte svoju žiadosť o odstúpenie"
+
+#: includes/emails/class-wbte-ewb-email-preview.php:166
+#: includes/emails/class-wbte-ewb-email-preview.php:224
+msgid "I would like to return this order."
+msgstr "Chcel/a by som vrátiť túto objednávku."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:198
+#: includes/emails/class-wbte-ewb-email-preview.php:244
+msgid ""
+"This request cannot be approved because the withdrawal period has expired."
+msgstr ""
+"Túto žiadosť nie je možné schváliť, pretože lehota na odstúpenie uplynula."
+
+#: includes/emails/class-wbte-ewb-email-preview.php:230
+msgid "Sample product"
+msgstr "Vzorový produkt"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:46
+#: includes/emails/class-wbte-ewb-email-request-approved.php:84
+msgid "Withdrawal Request Approved"
+msgstr "Žiadosť o odstúpenie schválená"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:47
+msgid "Sent to the customer when a withdrawal request is approved."
+msgstr "Odoslaný zákazníkovi po schválení žiadosti o odstúpenie."
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:73
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"approved"
+msgstr ""
+"[{site_title}]: Vaša žiadosť o odstúpenie pre objednávku #{order_number} "
+"bola schválená"
+
+#. translators: %s: list of available placeholder tags.
+#: includes/emails/class-wbte-ewb-email-request-approved.php:183
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:204
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:201
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:183
+msgid "Available placeholders: %s"
+msgstr "Dostupné zástupné znaky: %s"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:187
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:208
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:205
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:187
+msgid "Enable/Disable"
+msgstr "Povoliť/Zakázať"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:189
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:210
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:207
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:189
+msgid "Enable this email notification"
+msgstr "Povoliť toto e-mailové upozornenie"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:193
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:214
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:220
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:193
+msgid "Subject"
+msgstr "Predmet"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:201
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:222
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:228
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:201
+msgid "Email heading"
+msgstr "Hlavička e-mailu"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:209
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:230
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:236
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:209
+msgid "Email type"
+msgstr "Typ e-mailu"
+
+#: includes/emails/class-wbte-ewb-email-request-approved.php:211
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:232
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:238
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:211
+msgid "Choose which format of email to send."
+msgstr "Vyberte, v akom formáte sa má e-mail odoslať."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:54
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:92
+msgid "Withdrawal Request Rejected"
+msgstr "Žiadosť o odstúpenie zamietnutá"
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:55
+msgid "Sent to the customer when a withdrawal request is rejected."
+msgstr "Odoslaný zákazníkovi po zamietnutí žiadosti o odstúpenie."
+
+#: includes/emails/class-wbte-ewb-email-request-rejected.php:81
+msgid ""
+"[{site_title}]: Your withdrawal request for order #{order_number} has been "
+"rejected"
+msgstr ""
+"[{site_title}]: Vaša žiadosť o odstúpenie pre objednávku #{order_number} "
+"bola zamietnutá"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:45
+msgid "New Withdrawal Request (Admin)"
+msgstr "Nová žiadosť o odstúpenie (Admin)"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:46
+msgid ""
+"Sent to the site administrator when a new withdrawal request is submitted."
+msgstr ""
+"Odoslaný administrátorovi stránky po odoslaní novej žiadosti o odstúpenie."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:92
+msgid "[{site_title}]: New withdrawal request for order #{order_number}"
+msgstr ""
+"[{site_title}]: Nová žiadosť o odstúpenie pre objednávku #{order_number}"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:103
+msgid "New Withdrawal Request"
+msgstr "Nová žiadosť o odstúpenie"
+
+#. translators: %s: default store email address.
+#: includes/emails/class-wbte-ewb-email-request-submitted-admin.php:214
+msgid ""
+"Optional override for this email only. Leave blank to use recipients "
+"configured in Withdrawal settings (defaults to %s)."
+msgstr ""
+"Voliteľné prepísanie len pre tento e-mail. Ponechajte prázdne, ak chcete "
+"použiť príjemcov nakonfigurovaných v nastaveniach odstúpenia (predvolene "
+"%s)."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:46
+msgid "Withdrawal Request Submitted"
+msgstr "Žiadosť o odstúpenie odoslaná"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:47
+msgid "Sent to the customer when a withdrawal request is submitted."
+msgstr "Odoslaný zákazníkovi po odoslaní žiadosti o odstúpenie."
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:73
+msgid "[{site_title}]: Withdrawal request for order #{order_number} received"
+msgstr ""
+"[{site_title}]: Žiadosť o odstúpenie pre objednávku #{order_number} bola "
+"prijatá"
+
+#: includes/emails/class-wbte-ewb-email-request-submitted-customer.php:84
+msgid "Withdrawal Request Received"
+msgstr "Žiadosť o odstúpenie prijatá"
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:68
+msgid "Security check failed. Please try again."
+msgstr "Bezpečnostná kontrola zlyhala. Skúste to prosím znova."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:104
+#: includes/frontend/class-wbte-ewb-frontend.php:151
+msgid "Please select an order."
+msgstr "Vyberte prosím objednávku."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:117
+msgid "You do not have permission to request withdrawal for this order."
+msgstr "Nemáte oprávnenie požiadať o odstúpenie pre túto objednávku."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:199
+#: includes/frontend/class-wbte-ewb-guest-verification.php:198
+#: includes/frontend/views/verification-success.php:23
+msgid ""
+"Your withdrawal request has been submitted successfully. You will receive a "
+"confirmation email shortly."
+msgstr ""
+"Vaša žiadosť o odstúpenie bola úspešne odoslaná. Čoskoro dostanete "
+"potvrdzujúci e-mail."
+
+#: includes/frontend/class-wbte-ewb-form-handler.php:263
+#: includes/frontend/class-wbte-ewb-frontend.php:157
+msgid "Your withdrawal request has been submitted successfully."
+msgstr "Vaša žiadosť o odstúpenie bola úspešne odoslaná."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:118
+#: includes/frontend/views/form-guest.php:104
+#: includes/frontend/views/form-logged-in.php:131
+msgid "I have read and agree to the withdrawal terms and conditions"
+msgstr "Prečítal/a som si a súhlasím s podmienkami odstúpenia od zmluvy"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:150
+msgid "Loading..."
+msgstr "Načítava sa..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:152
+msgid "Please select at least one item."
+msgstr "Vyberte prosím aspoň jednu položku."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:153
+msgid "quantity"
+msgstr "množstvo"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:154
+msgid "Please enter a valid quantity for each selected item."
+msgstr "Zadajte prosím platné množstvo pre každú vybranú položku."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:155
+msgid "Please provide a reason for withdrawal."
+msgstr "Uveďte prosím dôvod odstúpenia."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:160
+msgid "Fetching eligible items..."
+msgstr "Načítavajú sa oprávnené položky..."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:161
+msgid "No eligible items found for this order."
+msgstr "Pre túto objednávku sa nenašli žiadne oprávnené položky."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:162
+msgid "Review your withdrawal request"
+msgstr "Skontrolujte svoju žiadosť o odstúpenie"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:163
+msgid ""
+"Please review the details below. To complete your statutory withdrawal, "
+"click Confirm withdrawal."
+msgstr ""
+"Skontrolujte prosím údaje nižšie. Na dokončenie zákonného odstúpenia "
+"kliknite na Potvrdiť odstúpenie."
+
+#: includes/frontend/class-wbte-ewb-frontend.php:164
+msgid "Confirm withdrawal"
+msgstr "Potvrdiť odstúpenie"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:166
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:197
+msgid "Customer"
+msgstr "Zákazník"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:167
+#: includes/frontend/class-wbte-ewb-my-account.php:140
+#: includes/frontend/class-wbte-ewb-my-account.php:159
+#: includes/frontend/views/form-logged-in.php:52
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:271
+msgid "Order"
+msgstr "Objednávka"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:168
+msgid "Withdrawal type"
+msgstr "Typ odstúpenia"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:169
+#: includes/frontend/views/form-guest-verified.php:61
+#: includes/frontend/views/form-logged-in.php:73
+msgid "Items to withdraw"
+msgstr "Položky na odstúpenie"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:170
+#: includes/frontend/views/form-guest-verified.php:55
+#: includes/frontend/views/form-guest.php:75
+#: includes/frontend/views/form-logged-in.php:106
+msgid "Reason for withdrawal"
+msgstr "Dôvod odstúpenia"
+
+#: includes/frontend/class-wbte-ewb-frontend.php:171
+msgid "Full withdrawal"
+msgstr "Úplné odstúpenie"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:197
+#: includes/frontend/views/verification-success.php:19
+msgid "Request submitted"
+msgstr "Žiadosť odoslaná"
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:221
+msgid ""
+"Thank you. If the details you provided are correct, you will receive an "
+"email regarding your withdrawal request. Please check your inbox."
+msgstr ""
+"Ďakujeme. Ak sú vami zadané údaje správne, dostanete e-mail týkajúci sa "
+"vašej žiadosti o odstúpenie. Skontrolujte prosím svoju doručenú poštu."
+
+#: includes/frontend/class-wbte-ewb-guest-verification.php:250
+msgid "We could not verify your withdrawal request. Please try again."
+msgstr ""
+"Nepodarilo sa overiť vašu žiadosť o odstúpenie. Skúste to prosím znova."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:113
+msgid "You must be logged in to view your withdrawal requests."
+msgstr "Na zobrazenie vašich žiadostí o odstúpenie musíte byť prihlásení."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:120
+msgid "You have not submitted any withdrawal requests yet."
+msgstr "Zatiaľ ste neodoslali žiadne žiadosti o odstúpenie."
+
+#: includes/frontend/class-wbte-ewb-my-account.php:137
+#: includes/frontend/class-wbte-ewb-my-account.php:156
+msgid "Request"
+msgstr "Žiadosť"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:143
+#: includes/frontend/class-wbte-ewb-my-account.php:162
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/ActivityLog.jsx:33
+#: react/src/components/RequestsList.jsx:200
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:146
+#: includes/frontend/class-wbte-ewb-my-account.php:165
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:198
+msgid "Type"
+msgstr "Typ"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:149
+#: includes/frontend/class-wbte-ewb-my-account.php:172
+#: templates/emails/customer-withdrawal-approved.php:99
+#: templates/emails/customer-withdrawal-rejected.php:112
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/Filters.jsx:46
+#: react/src/components/RequestDetail.jsx:261
+#: react/src/components/RequestsList.jsx:199
+msgid "Status"
+msgstr "Stav"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:261
+msgid "Withdrawal Request"
+msgstr "Žiadosť o odstúpenie"
+
+#. translators: %s: request ID
+#: includes/frontend/class-wbte-ewb-my-account.php:302
+msgid "Request #%s"
+msgstr "Žiadosť #%s"
+
+#. translators: %s: withdrawal request type label
+#: includes/frontend/class-wbte-ewb-my-account.php:313
+msgid "Type: %s"
+msgstr "Typ: %s"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:322
+msgid "Submitted"
+msgstr "Odoslané"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:332
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:277
+msgid "Processed"
+msgstr "Spracované"
+
+#: includes/frontend/class-wbte-ewb-my-account.php:342
+#: templates/emails/admin-withdrawal-submitted.php:108
+#: templates/emails/customer-withdrawal-rejected.php:121
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:233
+msgid "Reason"
+msgstr "Dôvod"
+
+#: includes/frontend/views/form-guest-verified.php:23
+msgid ""
+"Your email has been verified. Select the items you wish to withdraw and "
+"submit your request below."
+msgstr ""
+"Váš e-mail bol overený. Vyberte položky, od ktorých chcete odstúpiť, a "
+"odošlite žiadosť nižšie."
+
+#: includes/frontend/views/form-guest-verified.php:45
+#: includes/frontend/views/form-guest.php:62
+msgid "Order number"
+msgstr "Číslo objednávky"
+
+#: includes/frontend/views/form-guest-verified.php:50
+#: includes/frontend/views/form-guest.php:68
+msgid "Billing email address"
+msgstr "Fakturačná e-mailová adresa"
+
+#: includes/frontend/views/form-guest-verified.php:66
+#: includes/frontend/views/form-logged-in.php:80
+msgid "Loading items..."
+msgstr "Načítavajú sa položky..."
+
+#: includes/frontend/views/form-guest-verified.php:81
+#: includes/frontend/views/form-guest.php:120
+#: includes/frontend/views/form-logged-in.php:148
+msgid "Submit Withdrawal Request"
+msgstr "Odoslať žiadosť o odstúpenie"
+
+#: includes/frontend/views/form-guest.php:62
+#: includes/frontend/views/form-guest.php:68
+#: includes/frontend/views/form-guest.php:77
+#: includes/frontend/views/form-logged-in.php:52
+#: includes/frontend/views/form-logged-in.php:108
+msgid "required"
+msgstr "povinné"
+
+#: includes/frontend/views/form-guest.php:84
+msgid ""
+"Enter your order number and billing email to start. If your details match "
+"our records, you will receive an email with further instructions."
+msgstr ""
+"Pre začatie zadajte číslo objednávky a fakturačný e-mail. Ak sa vaše údaje "
+"zhodujú s našimi záznamami, dostanete e-mail s ďalšími pokynmi."
+
+#: includes/frontend/views/form-logged-in.php:45
+msgid "You currently have no orders eligible for withdrawal."
+msgstr "Momentálne nemáte žiadne objednávky oprávnené na odstúpenie."
+
+#: includes/frontend/views/form-logged-in.php:54
+msgid "-- Select an order --"
+msgstr "-- Vyberte objednávku --"
+
+#. translators: 1: order number, 2: order date
+#: includes/frontend/views/form-logged-in.php:60
+msgid "#%1$s — %2$s"
+msgstr "#%1$s — %2$s"
+
+#: includes/frontend/views/form-logged-in.php:86
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/frontend/views/form-logged-in.php:93
+msgid "First name"
+msgstr "Meno"
+
+#: includes/frontend/views/form-logged-in.php:98
+msgid "Last name"
+msgstr "Priezvisko"
+
+#. translators: %s: order number.
+#: templates/emails/admin-withdrawal-submitted.php:32
+msgid "A new withdrawal request has been submitted for order #%s."
+msgstr "Nová žiadosť o odstúpenie bola odoslaná pre objednávku #%s."
+
+#: templates/emails/admin-withdrawal-submitted.php:39
+msgid "Customer Information"
+msgstr "Informácie o zákazníkovi"
+
+#: templates/emails/admin-withdrawal-submitted.php:47
+msgid "Customer Name"
+msgstr "Meno zákazníka"
+
+#: templates/emails/admin-withdrawal-submitted.php:55
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:220
+msgid "Customer Email"
+msgstr "E-mail zákazníka"
+
+#: templates/emails/admin-withdrawal-submitted.php:65
+#: templates/emails/customer-withdrawal-approved.php:49
+#: templates/emails/customer-withdrawal-rejected.php:49
+#: templates/emails/customer-withdrawal-submitted.php:49
+msgid "Request Details"
+msgstr "Podrobnosti žiadosti"
+
+#: templates/emails/admin-withdrawal-submitted.php:73
+#: templates/emails/customer-withdrawal-approved.php:57
+#: templates/emails/customer-withdrawal-rejected.php:70
+#: templates/emails/customer-withdrawal-submitted.php:57
+msgid "Order Number"
+msgstr "Číslo objednávky"
+
+#: templates/emails/admin-withdrawal-submitted.php:83
+#: templates/emails/customer-withdrawal-approved.php:65
+#: templates/emails/customer-withdrawal-rejected.php:78
+#: templates/emails/customer-withdrawal-submitted.php:65
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:224
+msgid "Request Type"
+msgstr "Typ žiadosti"
+
+#: templates/emails/admin-withdrawal-submitted.php:91
+#: templates/emails/customer-withdrawal-approved.php:73
+#: templates/emails/customer-withdrawal-rejected.php:86
+#: templates/emails/customer-withdrawal-submitted.php:73
+msgid "Date Submitted"
+msgstr "Dátum odoslania"
+
+#: templates/emails/admin-withdrawal-submitted.php:140
+msgid "Items Included in This Request"
+msgstr "Položky zahrnuté v tejto žiadosti"
+
+#: templates/emails/admin-withdrawal-submitted.php:146
+msgid "Item"
+msgstr "Položka"
+
+#: templates/emails/admin-withdrawal-submitted.php:149
+#: templates/emails/customer-withdrawal-approved.php:135
+#: templates/emails/customer-withdrawal-submitted.php:123
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:297
+msgid "Quantity"
+msgstr "Množstvo"
+
+#. translators: %s: admin URL to manage withdrawal requests.
+#: templates/emails/admin-withdrawal-submitted.php:177
+msgid ""
+"To review and manage this request, visit the <a href=\"%s\">Withdrawal "
+"Requests dashboard</a>."
+msgstr ""
+"Na posúdenie a správu tejto žiadosti navštívte <a href=\"%s\">prehľad "
+"žiadostí o odstúpenie</a>."
+
+#. translators: %s: order number
+#: templates/emails/customer-guest-ineligible.php:29
+#: templates/emails/plain/customer-guest-ineligible.php:25
+msgid ""
+"We received your withdrawal request for order #%s. Unfortunately, this order"
+" is not currently eligible for withdrawal."
+msgstr ""
+"Prijali sme vašu žiadosť o odstúpenie pre objednávku #%s. Bohužiaľ, táto "
+"objednávka momentálne nie je oprávnená na odstúpenie."
+
+#: templates/emails/customer-guest-ineligible.php:36
+#: templates/emails/plain/customer-guest-ineligible.php:30
+msgid "This may be because:"
+msgstr "Môže to byť z týchto dôvodov:"
+
+#: templates/emails/customer-guest-ineligible.php:40
+#: templates/emails/plain/customer-guest-ineligible.php:31
+msgid "The withdrawal period for this order has expired."
+msgstr "Lehota na odstúpenie pre túto objednávku uplynula."
+
+#: templates/emails/customer-guest-ineligible.php:41
+#: templates/emails/plain/customer-guest-ineligible.php:32
+msgid "A withdrawal has already been processed for this order."
+msgstr "Odstúpenie pre túto objednávku už bolo spracované."
+
+#: templates/emails/customer-guest-ineligible.php:42
+#: templates/emails/plain/customer-guest-ineligible.php:33
+msgid "There are no remaining items eligible for withdrawal."
+msgstr "Nezostávajú žiadne položky oprávnené na odstúpenie."
+
+#. translators: %s: store contact email
+#: templates/emails/customer-guest-ineligible.php:53
+#: templates/emails/plain/customer-guest-ineligible.php:39
+msgid ""
+"If you believe this is an error or have questions, please contact us at %s."
+msgstr ""
+"Ak si myslíte, že ide o chybu, alebo máte otázky, kontaktujte nás na %s."
+
+#: templates/emails/customer-guest-verification.php:27
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address by clicking the button below."
+msgstr ""
+"Prijali sme vašu žiadosť o odstúpenie. Na jej dokončenie prosím overte svoju"
+" fakturačnú e-mailovú adresu kliknutím na tlačidlo nižšie."
+
+#: templates/emails/customer-guest-verification.php:31
+msgid "Order number:"
+msgstr "Číslo objednávky:"
+
+#: templates/emails/customer-guest-verification.php:62
+msgid "Verify withdrawal request"
+msgstr "Overiť žiadosť o odstúpenie"
+
+#: templates/emails/customer-guest-verification.php:68
+#: templates/emails/plain/customer-guest-verification.php:30
+msgid "If you did not request a withdrawal, you can ignore this email."
+msgstr "Ak ste nepožiadali o odstúpenie, môžete tento e-mail ignorovať."
+
+#. translators: %s: customer first name.
+#: templates/emails/customer-withdrawal-approved.php:32
+#: templates/emails/customer-withdrawal-rejected.php:32
+#: templates/emails/customer-withdrawal-submitted.php:32
+msgid "Hi %s,"
+msgstr "Dobrý deň %s,"
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-approved.php:42
+msgid "Great news! Your withdrawal request for order #%s has been approved."
+msgstr ""
+"Skvelá správa! Vaša žiadosť o odstúpenie pre objednávku #%s bola schválená."
+
+#: templates/emails/customer-withdrawal-approved.php:90
+#: templates/emails/customer-withdrawal-rejected.php:103
+msgid "Date Processed"
+msgstr "Dátum spracovania"
+
+#: templates/emails/customer-withdrawal-approved.php:130
+#: templates/emails/customer-withdrawal-submitted.php:114
+msgid "Items"
+msgstr "Položky"
+
+#: templates/emails/customer-withdrawal-approved.php:134
+#: templates/emails/customer-withdrawal-submitted.php:120
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:296
+msgid "Product"
+msgstr "Produkt"
+
+#: templates/emails/customer-withdrawal-approved.php:150
+msgid "Next Steps"
+msgstr "Ďalšie kroky"
+
+#: templates/emails/customer-withdrawal-approved.php:154
+msgid ""
+"Your withdrawal has been processed. Depending on the type of request, the "
+"following may apply:"
+msgstr ""
+"Vaše odstúpenie bolo spracované. V závislosti od typu žiadosti sa môže "
+"uplatniť nasledovné:"
+
+#: templates/emails/customer-withdrawal-approved.php:158
+msgid ""
+"If a refund is due, it will be processed to your original payment method. "
+"Please allow a few business days for it to appear."
+msgstr ""
+"Ak vám náleží vrátenie peňazí, bude spracované na váš pôvodný platobný "
+"spôsob. Počkajte prosím niekoľko pracovných dní, kým sa zobrazí."
+
+#: templates/emails/customer-withdrawal-approved.php:159
+msgid ""
+"If you need to return any items, you will receive separate return "
+"instructions."
+msgstr ""
+"Ak potrebujete vrátiť nejaký tovar, dostanete samostatné pokyny na vrátenie."
+
+#: templates/emails/customer-withdrawal-approved.php:163
+msgid "If you have any questions, please do not hesitate to contact us."
+msgstr "Ak máte akékoľvek otázky, neváhajte nás kontaktovať."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-rejected.php:42
+msgid ""
+"We have reviewed your withdrawal request for order #%s. Unfortunately, we "
+"are unable to approve this request at this time."
+msgstr ""
+"Posúdili sme vašu žiadosť o odstúpenie pre objednávku #%s. Bohužiaľ, túto "
+"žiadosť v súčasnosti nemôžeme schváliť."
+
+#: templates/emails/customer-withdrawal-rejected.php:132
+msgid ""
+"If you believe this decision was made in error or if you have additional "
+"information to provide, please contact us and we will be happy to review "
+"your case again."
+msgstr ""
+"Ak si myslíte, že toto rozhodnutie bolo urobené omylom, alebo ak máte "
+"dodatočné informácie, kontaktujte nás a radi váš prípad opätovne posúdime."
+
+#. translators: %s: store contact email address or comma-separated list of
+#. addresses.
+#: templates/emails/customer-withdrawal-rejected.php:149
+msgid "You can reach us at %s."
+msgstr "Môžete nás kontaktovať na %s."
+
+#. translators: %s: order number.
+#: templates/emails/customer-withdrawal-submitted.php:42
+msgid ""
+"We have received your withdrawal request for order #%s. Thank you for "
+"letting us know."
+msgstr ""
+"Prijali sme vašu žiadosť o odstúpenie pre objednávku #%s. Ďakujeme, že ste "
+"nám dali vedieť."
+
+#: templates/emails/customer-withdrawal-submitted.php:143
+msgid "What Happens Next?"
+msgstr "Čo bude nasledovať?"
+
+#: templates/emails/customer-withdrawal-submitted.php:147
+msgid ""
+"Our team will review your request and get back to you as soon as possible. "
+"You will receive another email once a decision has been made."
+msgstr ""
+"Náš tím posúdi vašu žiadosť a ozve sa vám čo najskôr. Po prijatí rozhodnutia"
+" dostanete ďalší e-mail."
+
+#: templates/emails/customer-withdrawal-submitted.php:151
+msgid ""
+"If you have any questions in the meantime, please do not hesitate to contact"
+" us."
+msgstr "Ak máte medzitým akékoľvek otázky, neváhajte nás kontaktovať."
+
+#: templates/emails/parts/withdrawal-verification-code-row.php:27
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:248
+msgid "Receipt hash"
+msgstr "Hash potvrdenia"
+
+#: templates/emails/plain/customer-guest-verification.php:15
+msgid ""
+"We received your withdrawal request. To complete it, please verify your "
+"billing email address using the link below."
+msgstr ""
+"Prijali sme vašu žiadosť o odstúpenie. Na jej dokončenie prosím overte svoju"
+" fakturačnú e-mailovú adresu pomocou odkazu nižšie."
+
+#. translators: %s: order number
+#: templates/emails/plain/customer-guest-verification.php:19
+msgid "Order number: %s"
+msgstr "Číslo objednávky: %s"
+
+#. translators: %s: reason
+#: templates/emails/plain/customer-guest-verification.php:24
+msgid "Reason: %s"
+msgstr "Dôvod: %s"
+
+#: wt-eu-withdrawal-button.php:111
+msgid ""
+"WebToffee EU Withdrawal Button for WooCommerce requires WooCommerce to be "
+"installed and active."
+msgstr ""
+"WebToffee EU Withdrawal Button pre WooCommerce vyžaduje, aby bol WooCommerce"
+" nainštalovaný a aktívny."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:19
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:27
+msgid "Customer-initiated order cancellations and partial refunds."
+msgstr ""
+"Zákazníkom iniciované zrušenia objednávok a čiastočné vrátenia peňazí."
+
+#: react/build/admin-dashboard.js:1 react/src/layouts/AdminLayout.jsx:36
+msgid "Requests"
+msgstr "Žiadosti"
+
+#: react/build/admin-dashboard.js:1 react/src/components/ReviewBanner.jsx:75
+msgid "Review request"
+msgstr "Žiadosť o recenziu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:53
+msgid "All Statuses"
+msgstr "Všetky stavy"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:61
+msgid "Date From"
+msgstr "Dátum od"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:73
+msgid "Date To"
+msgstr "Dátum do"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:85
+msgid "Search"
+msgstr "Hľadať"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:92
+msgid "Order # or receipt hash"
+msgstr "Objednávka # alebo hash potvrdenia"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:109
+msgid "Reset"
+msgstr "Obnoviť"
+
+#: react/build/admin-dashboard.js:1 react/src/components/Filters.jsx:120
+msgid "Apply Filters"
+msgstr "Použiť filtre"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:14
+msgid "Auto-approve withdrawal requests"
+msgstr "Automaticky schvaľovať žiadosti o odstúpenie"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:15
+msgid "Issue refund and restock inventory automatically"
+msgstr "Automaticky vrátiť peniaze a doplniť zásoby"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:16
+msgid "Show the withdrawal button only to EU customers"
+msgstr "Zobraziť tlačidlo na odstúpenie iba zákazníkom z EÚ"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:17
+msgid "Generate a withdrawal terms and conditions page"
+msgstr "Vygenerovať stránku s podmienkami odstúpenia od zmluvy"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:18
+msgid "Collect bank details for COD and bank transfer refunds"
+msgstr ""
+"Zhromaždiť bankové údaje pre vrátenie peňazí pri dobierke a bankovom prevode"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:19
+msgid "Open the withdrawal form in a popup"
+msgstr "Otvoriť formulár na odstúpenie vo vyskakovacom okne"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:20
+msgid "Block spam submissions with reCAPTCHA v3"
+msgstr "Blokovať spamové odoslania pomocou reCAPTCHA v3"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:21
+msgid "Copy your settings between staging and live"
+msgstr "Kopírovať nastavenia medzi testovacím a produkčným prostredím"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:34
+msgid "EU Withdrawal Button"
+msgstr "EU tlačidlo na odstúpenie"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:47
+msgid "Automate Withdrawal Workflow With Premium Upgrade"
+msgstr "Automatizujte proces odstúpenia s prémiovou verziou"
+
+#: react/build/admin-dashboard.js:1 react/src/components/UpgradeBanner.jsx:65
+msgid "Get Plugin Now"
+msgstr "Získať plugin teraz"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:103
+msgid "No change vs last week"
+msgstr "Žiadna zmena oproti minulému týždňu"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:114
+msgid "No data"
+msgstr "Žiadne údaje"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:120
+msgid "No change"
+msgstr "Žiadna zmena"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:139
+msgid "Open Requests"
+msgstr "Otvorené žiadosti"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:153
+msgid "Approved (30d)"
+msgstr "Schválené (30d)"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:195
+msgid "ID"
+msgstr "ID"
+
+#: react/build/admin-dashboard.js:1 react/build/admin-dashboard.js:2
+#: react/src/components/RequestDetail.jsx:203
+#: react/src/components/RequestsList.jsx:196
+msgid "Order #"
+msgstr "Objednávka #"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:201
+msgid "Actions"
+msgstr "Akcie"
+
+#: react/build/admin-dashboard.js:1 react/src/components/RequestsList.jsx:277
+msgid "View"
+msgstr "Zobraziť"
+
+#. translators: 1: first visible item number, 2: last visible item number, 3:
+#. total item count
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:291
+msgid "Showing %1$d–%2$d of %3$d"
+msgstr "Zobrazuje sa %1$d–%2$d z %3$d"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestsList.jsx:296
+msgid "Showing 0 of 0"
+msgstr "Zobrazuje sa 0 z 0"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:11
+msgid "Auto-approval"
+msgstr "Automatické schválenie"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:21
+msgid "User"
+msgstr "Používateľ"
+
+#: react/build/admin-dashboard.js:2 react/src/utils/getActorLabel.js:28
+msgid "Unknown"
+msgstr "Neznáme"
+
+#: react/build/admin-dashboard.js:2 react/src/components/StatusTimeline.jsx:30
+msgid "No status changes recorded."
+msgstr "Neboli zaznamenané žiadne zmeny stavu."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:24
+msgid "No activity recorded."
+msgstr "Nebola zaznamenaná žiadna aktivita."
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:34
+msgid "Source"
+msgstr "Zdroj"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:35
+msgid "Action"
+msgstr "Akcia"
+
+#: react/build/admin-dashboard.js:2 react/src/components/ActivityLog.jsx:36
+msgid "Note"
+msgstr "Poznámka"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:104
+#: react/src/components/RequestDetail.jsx:169
+msgid "Back to List"
+msgstr "Späť na zoznam"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:198
+msgid "Request Information"
+msgstr "Informácie o žiadosti"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:234
+msgid "No reason provided"
+msgstr "Dôvod nebol uvedený"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:238
+msgid "Refund method details"
+msgstr "Podrobnosti spôsobu vrátenia peňazí"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:243
+msgid "Created"
+msgstr "Vytvorené"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:289
+msgid "Order Items"
+msgstr "Položky objednávky"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:298
+msgid "Line Total"
+msgstr "Celková suma riadku"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:127
+msgid "Withdrawal approved"
+msgstr "Odstúpenie schválené"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:134
+msgid "Withdrawal rejected"
+msgstr "Odstúpenie zamietnuté"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:140
+msgid "Withdrawal request submitted"
+msgstr "Žiadosť o odstúpenie odoslaná"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:120
+msgid "Not included"
+msgstr "Nezahrnuté"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:343
+msgid "No order items were found for this request."
+msgstr "Pre túto žiadosť sa nenašli žiadne položky objednávky."
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:352
+msgid "Status Timeline"
+msgstr "Časová os stavov"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:362
+msgid "Activity Log"
+msgstr "Denník aktivít"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:370
+#: react/src/components/RequestDetail.jsx:400
+msgid "Reject Request"
+msgstr "Zamietnuť žiadosť"
+
+#: react/build/admin-dashboard.js:2 react/src/components/RequestDetail.jsx:377
+msgid "Rejection Reason"
+msgstr "Dôvod zamietnutia"
+
+#. translators: %d: number of selected products
+#. translators: %d: number of selected categories
+#. translators: %d: number of selected order statuses
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:86
+#: react/src/components/OrderStatusPickerField.jsx:106
+#: react/src/components/ProductSearchField.jsx:186
+msgid "%d selected"
+msgstr "%d vybraný"
+
+#: react/build/admin-dashboard.js:3 react/build/admin-dashboard.js:4
+#: react/build/admin-dashboard.js:5
+#: react/src/components/CategoryExclusionField.jsx:95
+#: react/src/components/OrderStatusPickerField.jsx:116
+#: react/src/components/ProductSearchField.jsx:195
+msgid "Clear all"
+msgstr "Vymazať všetko"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:206
+msgid "Remove product"
+msgstr "Odstrániť produkt"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:221
+msgid "Search for a product…"
+msgstr "Hľadať produkt…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:237
+msgid "Searching…"
+msgstr "Vyhľadáva sa…"
+
+#: react/build/admin-dashboard.js:3
+#: react/src/components/ProductSearchField.jsx:239
+msgid "No products found."
+msgstr "Nenašli sa žiadne produkty."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:106
+msgid "Remove category"
+msgstr "Odstrániť kategóriu"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:121
+msgid "Search categories…"
+msgstr "Hľadať kategórie…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:160
+msgid "No categories match your search."
+msgstr "Vášmu hľadaniu nezodpovedajú žiadne kategórie."
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:136
+msgid "Type to filter categories…"
+msgstr "Zadajte text na filtrovanie kategórií…"
+
+#: react/build/admin-dashboard.js:4
+#: react/src/components/CategoryExclusionField.jsx:73
+msgid "No product categories found."
+msgstr "Nenašli sa žiadne kategórie produktov."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:129
+msgid "Remove status"
+msgstr "Odstrániť stav"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:144
+msgid "Search order statuses…"
+msgstr "Hľadať stavy objednávok…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:183
+msgid "No order statuses match your search."
+msgstr "Vášmu hľadaniu nezodpovedajú žiadne stavy objednávok."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:159
+msgid "Type to filter order statuses…"
+msgstr "Zadajte text na filtrovanie stavov objednávok…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/OrderStatusPickerField.jsx:93
+msgid "No order statuses found."
+msgstr "Nenašli sa žiadne stavy objednávok."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:39
+msgid "This email address is already added."
+msgstr "Táto e-mailová adresa je už pridaná."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:70
+msgid "Remove email"
+msgstr "Odstrániť e-mail"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:80
+msgid "Add at least one recipient to save settings."
+msgstr "Na uloženie nastavení pridajte aspoň jedného príjemcu."
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:89
+msgid "Enter email address…"
+msgstr "Zadajte e-mailovú adresu…"
+
+#: react/build/admin-dashboard.js:5
+#: react/src/components/EmailRecipientsField.jsx:103
+msgid "Add"
+msgstr "Pridať"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:238
+msgid "Global"
+msgstr "Globálne"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:239
+msgid "WooCommerce only"
+msgstr "Iba WooCommerce"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:254
+#: react/src/components/SettingsPage.jsx:1585
+msgid "General"
+msgstr "Všeobecné"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:255
+msgid "Rules & Exclusions"
+msgstr "Pravidlá a vylúčenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:256
+msgid "Workflow"
+msgstr "Pracovný postup"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:257
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:567
+#: react/src/components/SettingsPage.jsx:604
+msgid "Confirm import"
+msgstr "Potvrdiť import"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:577
+msgid "Export version:"
+msgstr "Verzia exportu:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:579
+msgid "Current version:"
+msgstr "Aktuálna verzia:"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:585
+msgid ""
+"The export file is from a newer version. Some settings may not be compatible"
+" with your current version. Consider updating the plugin before importing."
+msgstr ""
+"Súbor exportu pochádza z novšej verzie. Niektoré nastavenia nemusia byť "
+"kompatibilné s vašou aktuálnou verziou. Zvážte aktualizáciu pluginu pred "
+"importom."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:590
+msgid ""
+"This will overwrite all current plugin settings. This action cannot be "
+"undone."
+msgstr ""
+"Tým sa prepíšu všetky aktuálne nastavenia pluginu. Túto akciu nie je možné "
+"vrátiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:512
+msgid "Importing settings..."
+msgstr "Importujú sa nastavenia..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:524
+msgid "Settings imported successfully. Reloading page..."
+msgstr "Nastavenia boli úspešne importované. Stránka sa znova načítava..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:474
+msgid "Settings exported successfully."
+msgstr "Nastavenia boli úspešne exportované."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:633
+msgid "Export settings"
+msgstr "Exportovať nastavenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:640
+msgid "Import settings"
+msgstr "Importovať nastavenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:497
+msgid "Invalid settings file. Please select a valid export file."
+msgstr "Neplatný súbor nastavení. Vyberte prosím platný súbor exportu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:503
+msgid "Could not read the file. Make sure it is a valid JSON file."
+msgstr "Nepodarilo sa prečítať súbor. Uistite sa, že ide o platný súbor JSON."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:645
+msgid ""
+"Export all plugin settings as a JSON file, or import settings from a "
+"previously exported file."
+msgstr ""
+"Exportujte všetky nastavenia pluginu ako súbor JSON alebo importujte "
+"nastavenia z predtým exportovaného súboru."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:764
+msgid "Withdrawal Terms & Conditions"
+msgstr "Podmienky odstúpenia od zmluvy"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:767
+msgid "Published"
+msgstr "Publikované"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:788
+msgid "Preview"
+msgstr "Náhľad"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:808
+msgid "Edit page"
+msgstr "Upraviť stránku"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:686
+msgid "Are you sure you want to delete the Terms & Conditions page?"
+msgstr "Naozaj chcete odstrániť stránku s podmienkami odstúpenia?"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:701
+#: react/src/components/SettingsPage.jsx:704
+msgid "Failed to delete page."
+msgstr "Nepodarilo sa odstrániť stránku."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:699
+msgid "Page deleted."
+msgstr "Stránka bola odstránená."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:827
+msgid "Delete"
+msgstr "Odstrániť"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:833
+msgid ""
+"Available shortcodes: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+msgstr ""
+"Dostupné shortcody: [wbte_ewb_excluded_product_types], "
+"[wbte_ewb_excluded_categories], [wbte_ewb_excluded_products], "
+"[wbte_ewb_withdrawal_period], [wbte_ewb_store_name], [wbte_ewb_store_email]"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:730
+msgid ""
+"Generate a withdrawal Terms & Conditions page based on EU Directive "
+"2011/83/EU. The page includes dynamic shortcodes for excluded products, "
+"categories, and product types that stay in sync with your settings."
+msgstr ""
+"Vygenerujte stránku s podmienkami odstúpenia od zmluvy na základe smernice "
+"EÚ 2011/83/EÚ. Stránka obsahuje dynamické shortcody pre vylúčené produkty, "
+"kategórie a typy produktov, ktoré sa automaticky synchronizujú s vašimi "
+"nastaveniami."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:676
+#: react/src/components/SettingsPage.jsx:679
+msgid "Failed to create page."
+msgstr "Nepodarilo sa vytvoriť stránku."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:674
+msgid "Page created."
+msgstr "Stránka bola vytvorená."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Creating…"
+msgstr "Vytvára sa…"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:749
+msgid "Generate T&C page"
+msgstr "Vygenerovať stránku podmienok"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:896
+msgid "-- Select a page --"
+msgstr "-- Vyberte stránku --"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:909
+msgid "Failed to load settings."
+msgstr "Nepodarilo sa načítať nastavenia."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:989
+msgid "Loading settings..."
+msgstr "Načítavajú sa nastavenia..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:998
+msgid "Unable to load settings."
+msgstr "Nie je možné načítať nastavenia."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1432
+msgid "reCAPTCHA keys disconnected."
+msgstr "Kľúče reCAPTCHA boli odpojené."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1434
+msgid "Failed to disconnect."
+msgstr "Nepodarilo sa odpojiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1438
+msgid "Disconnect"
+msgstr "Odpojiť"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1412
+msgid "reCAPTCHA keys saved successfully."
+msgstr "Kľúče reCAPTCHA boli úspešne uložené."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1414
+msgid "Failed to save keys."
+msgstr "Nepodarilo sa uložiť kľúče."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1404
+msgid "Please enter both site key and secret key."
+msgstr "Zadajte prosím kľúč webu aj tajný kľúč."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1418
+msgid "Save keys"
+msgstr "Uložiť kľúče"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1474
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1588
+msgid "Core withdrawal form behaviour and display preferences."
+msgstr "Základné správanie formulára na odstúpenie a preferencie zobrazenia."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1593
+msgid "Withdrawal page"
+msgstr "Stránka odstúpenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1611
+msgid "Show withdrawal button in footer"
+msgstr "Zobraziť tlačidlo na odstúpenie v pätičke"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1612
+msgid "Display a withdrawal button or link in the site footer."
+msgstr "Zobraziť tlačidlo alebo odkaz na odstúpenie v pätičke webu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1133
+msgid "Customize appearance"
+msgstr "Prispôsobiť vzhľad"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1137
+msgid "Footer"
+msgstr "Pätička"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1138
+msgid "My account page"
+msgstr "Stránka Môj účet"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1148
+msgid "Enable \"Show withdrawal button in footer\" above to customize."
+msgstr ""
+"Povoľte vyššie \"Zobraziť tlačidlo na odstúpenie v pätičke\" pre "
+"prispôsobenie."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1149
+msgid "Enable \"Show withdrawal button in My Account\" above to customize."
+msgstr ""
+"Povoľte vyššie \"Zobraziť tlačidlo na odstúpenie v Mojom účte\" pre "
+"prispôsobenie."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Link text"
+msgstr "Text odkazu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1156
+msgid "Button text"
+msgstr "Text tlačidla"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1167
+msgid "Display as"
+msgstr "Zobraziť ako"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1170
+msgid "Link"
+msgstr "Odkaz"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1171
+msgid "Button"
+msgstr "Tlačidlo"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1178
+msgid "Colors"
+msgstr "Farby"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Theme default"
+msgstr "Predvolené témy"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1180
+msgid "Custom"
+msgstr "Vlastné"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1201
+msgid "Background"
+msgstr "Pozadie"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1209
+msgid "Text"
+msgstr "Text"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1217
+msgid "Hover bg"
+msgstr "Pozadie pri nabehnutí"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1225
+msgid "Hover text"
+msgstr "Text pri nabehnutí"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1621
+msgid "Footer link text"
+msgstr "Text odkazu v pätičke"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1622
+msgid "The text displayed for the footer withdrawal link."
+msgstr "Text zobrazený pre odkaz na odstúpenie v pätičke."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1637
+msgid "Display scope"
+msgstr "Rozsah zobrazenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1651
+msgid "Allow partial withdrawals"
+msgstr "Povoliť čiastočné odstúpenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1653
+msgid "Recommended"
+msgstr "Odporúčané"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1657
+msgid "Withdrawal period"
+msgstr "Lehota na odstúpenie"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1669
+msgid "days"
+msgstr "dní"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1687
+msgid "Start countdown from"
+msgstr "Začať odpočítavanie od"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1702
+msgid "Reason required"
+msgstr "Dôvod povinný"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1725
+msgid "Exclusions"
+msgstr "Vylúčenia"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1728
+msgid ""
+"Exclude product types, categories, or specific products from withdrawal "
+"eligibility."
+msgstr ""
+"Vylúčte typy produktov, kategórie alebo konkrétne produkty z práva na "
+"odstúpenie."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1733
+msgid "Excluded product types"
+msgstr "Vylúčené typy produktov"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1734
+msgid "Product types that cannot be withdrawn."
+msgstr "Typy produktov, ktoré nie je možné odstúpiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1749
+msgid "Excluded categories"
+msgstr "Vylúčené kategórie"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1750
+msgid "Products in these categories cannot be withdrawn."
+msgstr "Produkty v týchto kategóriách nie je možné odstúpiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1760
+msgid "Excluded products"
+msgstr "Vylúčené produkty"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1761
+msgid "Search and select specific products that cannot be withdrawn."
+msgstr "Vyhľadajte a vyberte konkrétne produkty, ktoré nie je možné odstúpiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1783
+msgid "Order status"
+msgstr "Stav objednávky"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1786
+msgid ""
+"Automatically update order statuses when withdrawal requests are submitted "
+"or approved."
+msgstr ""
+"Automaticky aktualizovať stavy objednávok pri odoslaní alebo schválení "
+"žiadostí o odstúpenie."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1800
+#: react/src/components/SettingsPage.jsx:1825
+msgid "Set status to"
+msgstr "Nastaviť stav na"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1852
+msgid ""
+"Configure admin notification recipients and the customer contact email shown"
+" in rejected withdrawal emails."
+msgstr ""
+"Nastavte príjemcov administrátorských upozornení a kontaktný e-mail "
+"zákazníkov zobrazený v e-mailoch o zamietnutom odstúpení."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1858
+msgid "Email addresses that receive the new withdrawal request notification."
+msgstr ""
+"E-mailové adresy, ktoré dostávajú upozornenie na novú žiadosť o odstúpenie."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1866
+msgid "Customer contact email"
+msgstr "Kontaktný e-mail zákazníka"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1867
+msgid ""
+"Email address shown to customers when a withdrawal request is rejected and "
+"they need to contact you."
+msgstr ""
+"E-mailová adresa zobrazená zákazníkom, keď je žiadosť o odstúpenie "
+"zamietnutá a potrebujú vás kontaktovať."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1894
+msgid "Withdrawal button shortcode"
+msgstr "Shortcode tlačidla na odstúpenie"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1908
+msgid ""
+" — Optional. Custom button text. Uses the default shortcode label when "
+"omitted."
+msgstr ""
+" — Voliteľné. Vlastný text tlačidla. Ak nie je zadaný, použije sa predvolený"
+" text shortcode."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1912
+msgid " — Optional. Extra CSS classes added to the button."
+msgstr " — Voliteľné. Ďalšie CSS triedy pridané k tlačidlu."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1929
+msgid "Data management"
+msgstr "Správa údajov"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1932
+msgid "Control what happens to plugin data when the plugin is removed."
+msgstr "Nastavte, čo sa stane s údajmi pluginu po jeho odstránení."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1940
+msgid "Delete data on uninstall"
+msgstr "Odstrániť údaje pri odinštalovaní"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1941
+msgid ""
+"Remove all plugin data (settings, withdrawal requests, database tables) when"
+" the plugin is uninstalled. This action is irreversible."
+msgstr ""
+"Odstrániť všetky údaje pluginu (nastavenia, žiadosti o odstúpenie, "
+"databázové tabuľky) pri odinštalovaní pluginu. Túto akciu nie je možné "
+"vrátiť."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1942
+msgid "Destructive"
+msgstr "Deštruktívne"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1982
+msgid "Add at least one recipient to save"
+msgstr "Na uloženie pridajte aspoň jedného príjemcu"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1984
+msgid "Unsaved changes"
+msgstr "Neuložené zmeny"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1985
+msgid "All changes saved"
+msgstr "Všetky zmeny uložené"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:1996
+msgid "Discard"
+msgstr "Zahodiť"
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:964
+msgid "Settings saved successfully."
+msgstr "Nastavenia boli úspešne uložené."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:969
+msgid "Failed to save settings."
+msgstr "Nepodarilo sa uložiť nastavenia."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:950
+msgid "Add at least one admin notification recipient before saving."
+msgstr ""
+"Pred uložením pridajte aspoň jedného príjemcu administrátorských upozornení."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2006
+msgid "Saving..."
+msgstr "Ukladá sa..."
+
+#: react/build/admin-dashboard.js:5 react/src/components/SettingsPage.jsx:2007
+msgid "Save settings"
+msgstr "Uložiť nastavenia"
+
+#: react/src/components/AdminWarnings.jsx:59
+msgid "Fix this"
+msgstr "Opraviť"
+
+#: react/src/components/AdminWarnings.jsx:69
+msgid "Documentation"
+msgstr ""
+
+#: react/src/components/AdminWarnings.jsx:76
+msgid "Dismiss warning"
+msgstr ""

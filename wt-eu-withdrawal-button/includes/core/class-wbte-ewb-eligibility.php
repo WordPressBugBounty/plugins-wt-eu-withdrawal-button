@@ -388,6 +388,8 @@ class Wbte_Ewb_Eligibility {
 	 * Get all eligible orders for a given customer.
 	 *
 	 * Supports both logged-in users (by ID) and guest customers (by email).
+	 * Orders are queried in ID batches so stores with large customer histories
+	 * do not exhaust PHP memory by hydrating every order and its meta at once.
 	 *
 	 * @since 1.0.0
 	 *
@@ -395,11 +397,20 @@ class Wbte_Ewb_Eligibility {
 	 * @return \WC_Order[] Array of eligible WooCommerce orders.
 	 */
 	public function get_eligible_orders_for_customer( $customer_id_or_email ) {
+		$page     = 1;
+		$per_page = (int) apply_filters( 'wbte_ewb_eligible_orders_query_limit', 50 );
+
+		if ( $per_page < 1 ) {
+			$per_page = 50;
+		}
+
 		$args = array(
-			'limit'   => -1,
-			'return'  => 'objects',
+			'limit'   => $per_page,
+			'page'    => $page,
+			'return'  => 'ids',
 			'orderby' => 'date',
 			'order'   => 'DESC',
+			'type'    => 'shop_order',
 		);
 
 		if ( is_numeric( $customer_id_or_email ) ) {
@@ -408,14 +419,48 @@ class Wbte_Ewb_Eligibility {
 			$args['billing_email'] = sanitize_email( $customer_id_or_email );
 		}
 
-		$orders          = wc_get_orders( $args );
-		$eligible_orders = array();
+		if ( class_exists( 'Wbte_Ewb_Withdrawal_Period' ) ) {
+			$start_statuses = Wbte_Ewb_Withdrawal_Period::get_start_statuses();
 
-		foreach ( $orders as $order ) {
-			if ( $this->is_order_eligible( $order ) ) {
-				$eligible_orders[] = $order;
+			if ( in_array( Wbte_Ewb_Withdrawal_Period::START_ORDER_CREATED, $start_statuses, true ) ) {
+				$withdrawal_period = (int) Wbte_Ewb_Settings::get( 'withdrawal_period', 14 );
+				$cutoff            = time() - ( max( 1, $withdrawal_period ) * DAY_IN_SECONDS );
+
+				$args['date_created'] = '>=' . gmdate( 'Y-m-d H:i:s', $cutoff );
 			}
 		}
+
+		/**
+		 * Filters the WooCommerce order query used to collect eligible customer orders.
+		 *
+		 * @since 1.1.1
+		 *
+		 * @param array      $args                  Query arguments passed to wc_get_orders().
+		 * @param int|string $customer_id_or_email  Customer user ID or email.
+		 */
+		$args = apply_filters( 'wbte_ewb_eligible_orders_query_args', $args, $customer_id_or_email );
+
+		$eligible_orders = array();
+
+		do {
+			$args['page'] = $page;
+			$order_ids    = wc_get_orders( $args );
+
+			if ( ! is_array( $order_ids ) || empty( $order_ids ) ) {
+				break;
+			}
+
+			foreach ( $order_ids as $order_id ) {
+				$order = wc_get_order( $order_id );
+
+				if ( $this->is_order_eligible( $order ) ) {
+					$eligible_orders[] = $order;
+				}
+			}
+
+			$found = count( $order_ids );
+			++$page;
+		} while ( $found === $per_page );
 
 		return $eligible_orders;
 	}

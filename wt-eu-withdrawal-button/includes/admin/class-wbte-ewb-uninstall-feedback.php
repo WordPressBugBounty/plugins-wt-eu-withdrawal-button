@@ -229,7 +229,7 @@ class Wbte_Ewb_Uninstall_Feedback {
 		}
 
 		$reasons     = $this->get_uninstall_reasons();
-		$support_url = 'https://wordpress.org/support/plugin/wt-eu-withdrawal-button/#new-topic-0';
+		$support_url = 'https://wordpress.org/support/plugin/wt-eu-withdrawal-button/';
 		?>
 		<div class="wbte-ewb-uninstall-modal" id="wbte-ewb-uninstall-modal" aria-hidden="true">
 			<div class="wbte-ewb-uninstall-modal__wrap">

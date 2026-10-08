@@ -468,10 +468,10 @@ class Wbte_Ewb_Guest_Withdrawal_Service {
 			$base = home_url( '/' );
 		}
 
-		// Get the translated URL for the order's language (WPML/Polylang).
+		// Get the translated URL for the order's language (WPML/Polylang/TranslatePress).
 		$order = $this->resolve_order_by_number( $pending->order_number );
 		if ( $order instanceof WC_Order ) {
-			$order_lang = $order->get_meta( 'wpml_language' );
+			$order_lang = Wbte_Ewb_Multilingual::get_order_language( $order );
 			if ( $order_lang ) {
 				$base = apply_filters( 'wpml_permalink', $base, $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 			}

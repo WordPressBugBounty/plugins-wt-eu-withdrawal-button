@@ -504,9 +504,6 @@
 					? ( i18n.guest_queue_success || 'Thank you. If the details you provided are correct, you will receive a verification email to complete your withdrawal request.' )
 					: ( i18n.submit_success || 'Your withdrawal request has been submitted successfully.' );
 
-				if ( response && response.message ) {
-					msg = response.message;
-				}
 				showMessages( [ msg ], 'success' );
 
 				// Reset form.

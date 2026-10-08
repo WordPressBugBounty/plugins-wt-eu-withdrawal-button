@@ -103,11 +103,9 @@ class Wbte_Ewb_Email_Request_Approved extends WC_Email {
 		$this->recipient = $request->customer_email;
 		$this->object    = $order;
 
-		// Switch WPML language to the order's language for email translation.
-		$order_lang = $order->get_meta( 'wpml_language' );
-		if ( $order_lang ) {
-			do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-		}
+		// Switch to the order's language for email translation (WPML, TranslatePress, Polylang).
+		$order_lang    = Wbte_Ewb_Multilingual::get_order_language( $order );
+		$switched_lang = Wbte_Ewb_Multilingual::switch_email_language( $order_lang );
 
 		$this->setup_locale();
 
@@ -122,8 +120,8 @@ class Wbte_Ewb_Email_Request_Approved extends WC_Email {
 
 		$this->restore_locale();
 
-		if ( $order_lang ) {
-			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		if ( $switched_lang ) {
+			Wbte_Ewb_Multilingual::restore_email_language();
 		}
 	}
 

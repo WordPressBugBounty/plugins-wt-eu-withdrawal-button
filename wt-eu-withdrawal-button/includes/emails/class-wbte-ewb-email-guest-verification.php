@@ -81,9 +81,8 @@ class Wbte_Ewb_Email_Guest_Verification extends WC_Email {
 			return;
 		}
 
-		// Resolve the order to provide language context for WPML/WCML.
+		// Resolve the order to provide language context for multilingual plugins.
 		$order         = null;
-		$order_lang    = '';
 		$switched_lang = false;
 
 		if ( ! empty( $pending->order_number ) && function_exists( 'wbte_ewb' ) ) {
@@ -95,13 +94,10 @@ class Wbte_Ewb_Email_Guest_Verification extends WC_Email {
 
 		if ( $order instanceof WC_Order ) {
 			$this->object = $order;
-			$order_lang   = $order->get_meta( 'wpml_language' );
 
-			// Switch WPML language so gettext and WCML string translations use the order language.
-			if ( $order_lang ) {
-				do_action( 'wpml_switch_language', $order_lang ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-				$switched_lang = true;
-			}
+			// Switch to the order's language for email translation (WPML, TranslatePress, Polylang).
+			$order_lang    = Wbte_Ewb_Multilingual::get_order_language( $order );
+			$switched_lang = Wbte_Ewb_Multilingual::switch_email_language( $order_lang );
 		}
 
 		$this->setup_locale();
@@ -118,9 +114,8 @@ class Wbte_Ewb_Email_Guest_Verification extends WC_Email {
 
 		$this->restore_locale();
 
-		// Restore WPML language.
 		if ( $switched_lang ) {
-			do_action( 'wpml_switch_language', null ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+			Wbte_Ewb_Multilingual::restore_email_language();
 		}
 	}
 
